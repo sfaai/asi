@@ -1,0 +1,826 @@
+﻿@model WebApplication1.CSCOMSTR
+@using WebApplication1.Utility;
+@{
+
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+@if (@Html.Action() == "Delete")
+{
+    <div class="border border-info bg-warning" style="width:98vw">
+        <br />
+        <h4 class="h4 text-center">ARE YOU SURE YOU WANT TO DELETE THIS</h4>
+        <br />
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.CONO)
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.COREGNO, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.COREGNO, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.COREGNO, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+
+                    @Html.LabelFor(model => model.INCDATE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.INCDATE, new { htmlAttributes = new { @Value = Model.INCDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+
+                    @Html.ValidationMessageFor(model => model.INCDATE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.INCCTRY, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.DropDownListFor(model => model.INCCTRY, null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.INCCTRY, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.CONSTCODE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.DropDownListFor(model => model.CONSTCODE, null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.CONSTCODE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.INTYPE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.DropDownListFor(model => model.INTYPE, null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.INTYPE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.PRINOBJStr, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.PRINOBJStr, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PRINOBJStr, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.CONAME, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.CONAME, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CONAME, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.PINDCODE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.PINDCODE, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PINDCODE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.SINDCODE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.SINDCODE, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SINDCODE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.WEB, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.WEB, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.WEB, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.STAFFCODE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.DropDownListFor(model => model.STAFFCODE, null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.STAFFCODE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+
+                <div class="form-group col-md-6 form-check-inline">
+                    <div class="col-md-8">
+                        @Html.LabelFor(model => model.SPECIALREBool, htmlAttributes: new { @class = "control-label" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.SPECIALREBool, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.SPECIALREBool, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6 form-check-inline">
+                    <div class="col-md-8">
+                        @Html.LabelFor(model => model.ARREBool, htmlAttributes: new { @class = "control-label" })
+                    </div>
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.ARREBool, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ARREBool, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @Html.HiddenFor(model => model.COSTAT)
+        @Html.HiddenFor(model => model.COSTATD)
+        @Html.HiddenFor(model => model.FILETYPE)
+        @Html.HiddenFor(model => model.FILELOC)
+        @Html.HiddenFor(model => model.SEALLOC)
+
+        @*<div class="form-group col-md-4 form-check-inline">
+            <div class="col-md-4">
+            @Html.LabelFor(model => model.COSTAT, htmlAttributes: new { @class = "control-label" })
+            </div>
+            <div class="col-md-8">
+            @Html.EditorFor(model => model.COSTAT, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.COSTAT, "", new { @class = "text-danger" })
+            </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+            <div class="col-md-4">
+            @Html.LabelFor(model => model.COSTATD, htmlAttributes: new { @class = "control-label" })
+            </div>
+            <div class="col-md-8">
+            @Html.EditorFor(model => model.COSTATD, new { htmlAttributes = new { @Value = Model.COSTATD.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+
+            @Html.ValidationMessageFor(model => model.COSTATD, "", new { @class = "text-danger" })
+            </div>
+            </div>
+            <div class="form-group col-md-8 form-check-inline">
+            @Html.LabelFor(model => model.FILETYPE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+            @Html.EditorFor(model => model.FILETYPE, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.FILETYPE, "", new { @class = "text-danger" })
+            </div>
+            </div>
+
+            <div class="form-group col-md-8 form-check-inline">
+            @Html.LabelFor(model => model.FILELOC, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+            @Html.EditorFor(model => model.FILELOC, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.FILELOC, "", new { @class = "text-danger" })
+            </div>
+            </div>
+
+            <div class="form-group col-md-8 form-check-inline">
+            @Html.LabelFor(model => model.SEALLOC, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+            @Html.EditorFor(model => model.SEALLOC, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.SEALLOC, "", new { @class = "text-danger" })
+            </div>
+            </div>*@
+
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.CMMTStr, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.CMMTStr, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CMMTStr, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.SXCODE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.SXCODE, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SXCODE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.SXNAME, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.SXNAME, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SXNAME, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.REFCODE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.REFCODE, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.REFCODE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-8 form-check-inline">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        @*<div class="form-group col-md-8 form-check-inline">
+            @Html.LabelFor(model => model.SEQNO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+            @Html.EditorFor(model => model.SEQNO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.SEQNO, "", new { @class = "text-danger" })
+            </div>
+            </div>
+
+            <div class="form-group col-md-8 form-check-inline">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+            @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+            </div>*@
+
+        @Html.HiddenFor(model => model.SEQNO)
+        @Html.HiddenFor(model => model.STAMP)
+
+        @if ((Model.STAMP > 0) || (!ViewData.ModelState.IsValid))
+        {
+        <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist" style="width:96vw">
+                <li class="nav-item">
+                    <a class="nav-link active" id="tab-Status" data-toggle="tab" href="#Status">Status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Fee" data-toggle="tab" href="#Fee">Fee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Contact" data-toggle="tab" href="#Contact">Contact </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Name" data-toggle="tab" href="#Name">Name</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Address" data-toggle="tab" href="#Address">Address</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-AGM" data-toggle="tab" href="#AGM">AGM/FS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Annual" data-toggle="tab" href="#Annual">AR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Director" data-toggle="tab" href="#Director">Director</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Member" data-toggle="tab" href="#Member">Member</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Secretary" data-toggle="tab" href="#Secretary">Secretary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Manager" data-toggle="tab" href="#Manager">Manager</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Auditor" data-toggle="tab" href="#Auditor">Auditor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-TaxAgent" data-toggle="tab" href="#TaxAgent">Tax Agent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Authorised" data-toggle="tab" href="#Authorised">Authorised Capital</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-PaidUp" data-toggle="tab" href="#PaidUp">Paid up Capital</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Banker" data-toggle="tab" href="#Banker">Banker</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Charge" data-toggle="tab" href="#Charge">Charge/Mortgage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Debenture" data-toggle="tab" href="#Debenture">Debenture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Parent" data-toggle="tab" href="#Parent">Parent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Agent" data-toggle="tab" href="#Agent">Agent</a>
+                </li>
+                @*<li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#CEO">CEO</a>
+                    </li>*@
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-book" data-toggle="tab" href="#Book">Book Keeper</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-payroll" data-toggle="tab" href="#Payroll">Payroll</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-LastNo" data-toggle="tab" href="#LastNo">Last No</a>
+                </li>
+            </ul>
+
+        <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="Status" class="container no-gutters tab-pane active ">
+                    <div class="border border-info bg-info" style="width:96vw">
+
+                        <div class="row">
+                            <div class="col-md-5">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="col-md-7 h5">
+                                Status
+                            </div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Fee" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOFEEs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Fees</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOFEEs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+
+                </div>
+
+
+                <div id="Contact" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOPICs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Contact</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOPICs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+
+                </div>
+
+
+                <div id="Name" class="container  no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCONAMEs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Name</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCONAMEs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+                <div id="Address" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOADDRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Address</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOADDRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="AGM" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOAGMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">AGM/FS</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOAGMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Annual" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOARs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Annual Return</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOARs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Director" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCODRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Director</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCODRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Member" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOSHes", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                    @:&nbsp;
+                                    @Html.ActionLink("Share Movement", "ShareMove", "CSCOSHes", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Member</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOSHes", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Secretary" class="container  no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOSECs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Secretary</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOSECs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Manager" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOMGRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Manager</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOMGRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Auditor" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOADTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Auditor</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOADTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="TaxAgent" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOTXes", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Tax Agent</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOTXes", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Authorised" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOAKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Authorised Capital</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOAKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="PaidUp" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOPUKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Paid up Capital</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOPUKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Banker" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOBANKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Banker</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOBANKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Charge" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOCMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Charge/Mortgage</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOCMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Debenture" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCODEBs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Debentures</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCODEBs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Parent" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOPARENTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Parent</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOPARENTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Agent" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {            
+                                    @Html.ActionLink("Add", "Create", "CSCOAGTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Agent</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOAGTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+                @*<div id="Book" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOBKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Book Keeper</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOBKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+
+                <div id="Payroll" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @if (Html.Action() == "Edit")
+                                {
+                                    @Html.ActionLink("Add", "Create", "CSCOPR1s", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })
+                                }
+                            </div>
+                            <div class="h5 text-center col-md-4">Payroll</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOPR1s", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>*@
+
+
+
+                @*<div id="CEO" class="container no-gutters tab-pane fade">
+                        <div class="border border-info bg-info" style="width:96vw">
+                            <h2 class="h5 text-center">CEO</h2>
+                        </div>
+                    </div>*@
+
+
+                <div id="LastNo" class="container no-gutters tab-pane fade">
+                    <div class="border border-info bg-info" style="width:96vw">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @*@Html.ActionLink("Add", "Create", "CSCOLASATNOs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h5" })*@
+                            </div>
+                            <div class="h5 text-center col-md-4">Last No.</div>
+                        </div>
+                    </div>
+                    @Html.Action("PartialCSCOLASTNOs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+
+            </div>
+        }
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+
+            @if (@Html.Action() == "Details")
+                {
+                @Html.ActionLink(" Edit", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary fa fa-edit", title = "Edit" })
+
+            }
+            else
+            {
+                <input type="submit" value="Confirm" class="btn btn-primary fa fa-flash" Title="Execute" />
+            }
+            @if (Model.CONO != null)
+                {
+                @Html.ActionLink(" Company Register", "Register", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-info fa fa-print", title = "print" })
+            }
+            @Html.ActionLink(" Back", "Index", null, new { @class = "btn btn-info fa fa-arrow-left" })
+        </div>
+    </div>
+}
+@section Scripts
+{
+
+    <script>
+        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+        window.location.hash = '';
+        $(document).ready(function () {
+
+            if (hash) {
+
+
+                $('#tab-' + hash).click(); //function () { alert('clicked ' + hash); });
+                //window.location.hash = '#' + hash;
+
+                // hash found
+            } else {
+                // No hash found
+            }
+        })
+
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-3d',
+
+                });
+
+            })
+        }
+
+
+
+        if (("@Html.Action()" == "Details") || ("@Html.Action()" == "Delete")) {
+            $(":input").attr("readonly", true);
+            $("select").attr("disabled", true);
+            $("input[type=checkbox]").attr("disabled", true);
+            $("#btnTax").hide();
+        }
+    </script>
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

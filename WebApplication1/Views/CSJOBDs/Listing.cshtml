@@ -1,0 +1,315 @@
+﻿@model IQueryable<WebApplication1.CSJOBD>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Job Case Status Listing</title>
+    @Styles.Render("~/Content/css")
+
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+        }
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 400px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 70px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="letter">
+            <header>
+                <div class="text-center">
+                    <h4 class="h4">@ViewBag.Company</h4>
+                    <br />
+                    <u>Job Case Status Listing from @ViewBag.RPT_START to @ViewBag.RPT_END by @ViewBag.SORTBy</u>
+                </div>
+            </header>
+        </div>
+        <div id="main">
+            <table class="table table-bordered table-hover table-responsive-lg table-sm">
+                <thead>
+                    <tr class="label-primary">
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().JOBNO)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().CASENO)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().CSJOBM.CONO)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().CSJOBM.CSCOMSTR.CONAME)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().STAGE)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().STAGEDATE)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().STAGETIME)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().Stages)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().CSJOBM.JOBSTAFF)
+                        </th>
+                        @*<th>
+                                @Html.DisplayNameFor(model => model.First().CSJOBM.HKSTAFF.STAFFDESC)
+                            </th>*@
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().CASECODE)
+                        </th>
+                        @*<th>
+                                @Html.DisplayNameFor(model => model.First().CSCASE.CASEDESC)
+                            </th>*@
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().CASEMEMO)
+                        </th>
+                        @*<th>
+                                @Html.DisplayNameFor(model => model.First().CASEREM)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.First().CSJOBSTs.First().SENDMODE)
+                            </th>*@
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().CSJOBSTs.First().REM)
+                        </th>
+
+
+
+                    </tr>
+                </thead>
+
+                @{
+
+                    string SORTBy = "";
+                    string LSORTBy = "";
+                    int cnt = 0;
+                }
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        if (ViewBag.SORTBy == "JOBSTAFF")
+                        {
+                            SORTBy = "Base " + item.CSJOBM.JOBSTAFF;
+                        }
+                        else if (ViewBag.SORTBy == "STAGE")
+                        {
+                            SORTBy = item.STAGE;
+                        }
+                        else if (ViewBag.SORTBy == "JOBNOLAST")
+                        {
+                            SORTBy = "";
+                        }
+                        else if (ViewBag.SORTBy == "STAGEDATE")
+                        {
+                            SORTBy = item.STAGEDATE.ToString("dd/MM/yyyy");
+                        }
+                        else if (ViewBag.SORTBy == "CONAME")
+                        {
+                            SORTBy = item.CSJOBM.CSCOMSTR.CONAME;
+                        }
+                        else
+                        {
+                            SORTBy = "";
+                        }
+
+                        if ((LSORTBy != SORTBy) && (LSORTBy != ""))
+                        {
+                            if (cnt > 2)
+                            {
+                                <tr>
+                                    <td></td>
+                                    <td colspan="3"><strong> Total @LSORTBy</strong> </td>
+                                    <td><strong> @cnt</strong></td>
+                                </tr>
+                            }
+                            cnt = 0;
+                        }
+                        <tr>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.JOBNO)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CASENO)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CSJOBM.CSCOMSTR.COREGNO)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CSJOBM.CSCOMSTR.CONAME)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.STAGE)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.STAGEDATE)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.STAGETIME)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Stages)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CSJOBM.JOBSTAFF)
+                            </td>
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.CSJOBM.HKSTAFF.STAFFDESC)
+                                </td>*@
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CASECODE)
+                            </td>
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.CSCASE.CASEDESC)
+                                </td>*@
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CASEMEMO)
+                            </td>
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.CASEREM)
+                                </td>
+                                <td class="text-nowrap">
+                                    @Html.DisplayFor(modelItem => item.CSJOBSTs.OrderByDescending(x => x.INIDX).FirstOrDefault().SENDMODE)
+                                </td>*@
+                            <td colspan="6">
+                                @Html.DisplayFor(modelItem => item.CSJOBSTs.OrderByDescending(x => x.INIDX).FirstOrDefault().REM)
+                            </td>
+
+                        </tr>
+
+                        {
+                            LSORTBy = SORTBy;
+                            cnt++;
+                        }
+
+                        @*foreach (CSJOBST detItem in item.CSJOBSTs.OrderByDescending(x => x.INIDX))
+                            {
+                                <tr>
+                                    <td colspan="4"></td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => detItem.STAGETO)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => detItem.INDATE)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => detItem.INTIME)
+                                    </td>
+                                    <td class="text-nowrap">
+                                        @Html.DisplayFor(modelItem => detItem.SENDMODE)
+                                    </td>
+                                    <td colspan="6">
+                                        @Html.DisplayFor(modelItem => detItem.REM)
+                                    </td>
+                                </tr>
+                            }*@
+                    }
+                    <tr>
+                        @if (cnt > 1) {
+                        <td></td>
+                        <td colspan="3"><strong> Total @LSORTBy</strong> </td>
+                        <td><strong> @cnt</strong></td>
+                        }
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <footer>
+            <div class="row">
+
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+
+</body>
+</html>

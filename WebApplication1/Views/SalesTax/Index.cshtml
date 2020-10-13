@@ -1,0 +1,147 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<WebApplication1.TaxRecord>
+
+@{
+    ViewBag.Title = "Sales Tax";
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+    @Html.Action("Search")
+</div>
+
+<div class="border-0">
+    <div class="row form-inline" style="width:98vw">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+
+        @*@Html.ActionLink(" Listing", "Listing", null, new { @class = "btn btn-sm fa fa-print", title = "Listing" })*@
+        @Html.ActionLink(" Report", "SalesTax", "Report", new { DateFr = ViewBag.RPT_START, DateTo = ViewBag.RPT_END}, new { @class = "btn btn-sm fa fa-print", title = "Sales Tax Report" })
+        @Html.ActionLink(" Checking", "SalesTaxChecking", "Report", new { DateFr = ViewBag.RPT_START, DateTo = ViewBag.RPT_END }, new { @class = "btn btn-sm fa fa-print", title = "Checking" })
+    </div>
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <thead>
+            <tr class="label-primary text-nowrap">
+
+                <th>
+                    @Html.DisplayNameFor(model => model.First().entdate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().cono)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().coname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().rate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().amt)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().tax)
+                </th>
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                DateTime lastdate = new DateTime(1, 1, 1);
+                decimal totDayAmt = 0;
+                decimal totDayTax = 0;
+                decimal totAmt = 0;
+                decimal totTax = 0;
+                int cnt = 0;
+
+            }
+            @foreach (var Item in Model)
+            {
+                if (lastdate == Item.entdate) { }
+                else
+                {
+                    if ((lastdate != new DateTime(1, 1, 1)) && (cnt > 1))
+                    {
+
+                        <tr>
+                            <td class="text-right" colspan="4">@lastdate.ToString("dd/MM/yyyy")</td>
+                            <td class="text-right"><strong> @totDayAmt.ToString("N2") </strong>  </td>
+                            <td class="text-right"><strong> @totDayTax.ToString("N2")</strong></td>
+                        </tr>
+
+                        totDayAmt = 0;
+                        totDayTax = 0;
+                        cnt = 0;
+                    }
+
+
+
+
+                }
+
+                <tr>
+                    @{ totDayAmt += Item.amt;
+                        totDayTax += Item.tax;
+                        totAmt += Item.amt;
+                        totTax += Item.tax;
+                        cnt++;
+                    }
+                    <td>
+                        @if (lastdate == Item.entdate) { }
+                        else
+                        {
+                            @Html.DisplayFor(item => Item.entdate)
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(item => Item.coregno)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(item => Item.coname)
+                    </td>
+
+                    <td class="text-right">
+                        @Html.DisplayFor(item => Item.rate)
+                    </td>
+                    <td class="text-right">
+                        @Html.DisplayFor(item => Item.amt)
+                    </td>
+                    <td class="text-right">
+                        @Html.DisplayFor(item => Item.tax)
+                    </td>
+
+                </tr>
+
+                            lastdate = Item.entdate;
+
+                        }
+
+            @if (cnt > 1)
+            {
+                <tr>
+                    <td class="text-right" colspan="4">@lastdate.ToString("dd/MM/yyyy")</td>
+                    <td class="text-right"><strong> @totDayAmt.ToString("N2") </strong>  </td>
+                    <td class="text-right"><strong> @totDayTax.ToString("N2")</strong></td>
+                </tr>
+            }
+
+            @if (cnt > 1)
+            {
+                <tr>
+                    <td class="text-right" colspan="4"><strong>Total</strong> </td>
+                    <td class="text-right"><strong> @totAmt.ToString("N2") </strong>  </td>
+                    <td class="text-right"><strong> @totTax.ToString("N2")</strong></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

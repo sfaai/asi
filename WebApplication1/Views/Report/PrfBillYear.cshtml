@@ -1,0 +1,453 @@
+﻿@model IEnumerable<PrfBillYearRecord>
+@{
+//Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>@ViewBag.Title</title>
+    <style>
+        td {
+            /*background-color: #555555;
+            color: #FFF;
+            font-weight: bold;*/
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #debug {
+            background-color: #CCC;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+            #debug .debugLine {
+                margin: 2px 0;
+                padding: 1px 5px;
+                background-color: #EEE;
+            }
+
+        .CellWithComment {
+            position: relative;
+        }
+
+        .CellComment {
+            display: none;
+            position: absolute;
+            z-index: 100;
+            border: 1px;
+            background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-color: red;
+            padding: 3px;
+            color: red;
+            top: 20px;
+            left: 20px;
+        }
+
+        .CellWithComment:hover span.CellComment {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        @*<div class="text-center">
+                <h4 class="h4">@ViewBag.Company</h4>
+
+            </div>*@
+    </header>
+    @*<br /><br />
+        <span class="h4"><strong>@ViewBag.Title as at @DateTime.Today.ToString("dd/MM/yyyy")</strong></span>
+        <br /><br />*@
+    @{
+        int colno = 0;
+        decimal amt = 0;
+
+        decimal tot01 = 0;
+        decimal tot02 = 0;
+        decimal tot03 = 0;
+        decimal tot04 = 0;
+        decimal tot05 = 0;
+        decimal tot06 = 0;
+        decimal tot07 = 0;
+        decimal tot08 = 0;
+        decimal tot09 = 0;
+        decimal tot10 = 0;
+        decimal tot11 = 0;
+        decimal tot12 = 0;
+        decimal tot13 = 0;
+        decimal tot14 = 0;
+        decimal tot15 = 0;
+        decimal tot16 = 0;
+        decimal tot17 = 0;
+        decimal tot18 = 0;
+        decimal tot19 = 0;
+        decimal tot20 = 0;
+        decimal tot21 = 0;
+        decimal tot22 = 0;
+        decimal tot23 = 0;
+        decimal tot24 = 0;
+        decimal tot25 = 0;
+        decimal tot26 = 0;
+        decimal tot27 = 0;
+        decimal tot28 = 0;
+        decimal tot29 = 0;
+        decimal tot30 = 0;
+        decimal tot31 = 0;
+        decimal tot32 = 0;
+        decimal tot33 = 0;
+        decimal tot34 = 0;
+        decimal tot35 = 0;
+        decimal tot36 = 0;
+    }
+    <div class="border border-info bg-info" style="width:98vw">
+        @Html.Action("Search")
+    </div>
+
+
+    <table id="mainTable" class="table table-bordered table-hover table-responsive-lg table-sm">
+        <thead>
+            <tr>
+                <th class="text-center" colspan="7">@ViewBag.Company</th>
+                <th class="text-center" colspan="16">@ViewBag.Title</th>
+            </tr>
+
+            @*@foreach (var item in Model)
+                {
+                    <tr>
+                        @foreach (var property in typeof(PrfBillYearRecord).GetProperties())
+                        {
+                            <th>@(property.GetValue(item, null))</th>
+                        }
+                    </tr>
+                }*@
+
+            @*<tr>
+                    @foreach (var property in typeof(PrfBillYearRecord).GetProperties())
+                    {
+                        <th>@(property.Name)</th>
+                    }
+                </tr>*@
+
+
+
+            <tr class="text-nowrap">
+
+                <th class="text-center">Case Code</th>
+                <th class="text-center">Description</th>
+                <th class="text-center CellWithComment">2001<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2002<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2003<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2004<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2005<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2006<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2007<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2008<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2009<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2010<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2011<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2012<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2013<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2014<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2015<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2016<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2017<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2018<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2019<span class="CellComment">Click for summary of the year</span></th>
+                <th class="text-center CellWithComment">2020<span class="CellComment">Click for summary of the year</span></th>
+                @*<th class="text-center">2021</th>
+                    <th class="text-center">2022</th>
+                    <th class="text-center">2023</th>
+                    <th class="text-center">2024</th>
+                    <th class="text-center">2025</th>
+                    <th class="text-center">2026</th>
+                    <th class="text-center">2027</th>
+                    <th class="text-center">2028</th>
+                    <th class="text-center">2029</th>
+                    <th class="text-center">2030</th>
+                    <th class="text-center">2031</th>
+                    <th class="text-center">2032</th>
+                    <th class="text-center">2033</th>
+                    <th class="text-center">2034</th>
+                    <th class="text-center">2035</th>
+                    <th class="text-center">2036</th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (PrfBillYearRecord Item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(item => Item.casecode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(item => Item.casedesc)
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2001 != 0)
+                        {
+
+                            @Html.DisplayFor(item => Item.y2001)
+                        }
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2002 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.y2002)}
+                    </td>
+
+                    <td class="text-right">
+                        @if (Item.y2003 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.y2003)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2004 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.y2004)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2005 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.y2005)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2006 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.y2006)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2007 != 0)
+                        {      @Html.DisplayFor(item => Item.y2007)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2008 != 0)
+                        {      @Html.DisplayFor(item => Item.y2008)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2009 != 0)
+                        {      @Html.DisplayFor(item => Item.y2009)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2010 != 0)
+                        {       @Html.DisplayFor(item => Item.y2010)}
+                    </td>
+
+                    <td class="text-right">
+                        @if (Item.y2011 != 0)
+                        {       @Html.DisplayFor(item => Item.y2011)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2012 != 0)
+                        {        @Html.DisplayFor(item => Item.y2012)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2013 != 0)
+                        {      @Html.DisplayFor(item => Item.y2013)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2014 != 0)
+                        {        @Html.DisplayFor(item => Item.y2014)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2015 != 0)
+                {         @Html.DisplayFor(item => Item.y2015)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2016 != 0)
+                        {       @Html.DisplayFor(item => Item.y2016)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2017 != 0)
+                        {        @Html.DisplayFor(item => Item.y2017)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2018 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.y2018)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2019 != 0)
+                        {        @Html.DisplayFor(item => Item.y2019)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.y2020 != 0)
+                {         @Html.DisplayFor(item => Item.y2020) }
+                    </td>
+
+                    @{
+                        colno = 0;
+
+                        foreach (var property in typeof(PrfBillYearRecord).GetProperties())
+                        {
+                            colno++;
+                            if (colno > 2) { amt = (decimal)property.GetValue(Item, null); }
+                            if (colno == 3) { tot01 += amt; }
+                            if (colno == 4) { tot02 += amt; }
+                            if (colno == 5) { tot03 += amt; }
+                            if (colno == 6) { tot04 += amt; }
+                            if (colno == 7) { tot05 += amt; }
+                            if (colno == 8) { tot06 += amt; }
+                            if (colno == 9) { tot07 += amt; }
+                            if (colno == 10) { tot08 += amt; }
+                            if (colno == 11) { tot09 += amt; }
+                            if (colno == 12) { tot10 += amt; }
+                            if (colno == 13) { tot11 += amt; }
+                            if (colno == 14) { tot12 += amt; }
+                            if (colno == 15) { tot13 += amt; }
+                            if (colno == 16) { tot14 += amt; }
+                            if (colno == 17) { tot15 += amt; }
+                            if (colno == 18) { tot16 += amt; }
+                            if (colno == 19) { tot17 += amt; }
+                            if (colno == 20) { tot18 += amt; }
+                            if (colno == 21) { tot19 += amt; }
+                            if (colno == 22) { tot20 += amt; }
+                            if (colno == 23) { tot21 += amt; }
+                            if (colno == 24) { tot22 += amt; }
+                            if (colno == 25) { tot23 += amt; }
+                            if (colno == 26) { tot24 += amt; }
+                            if (colno == 27) { tot25 += amt; }
+                            if (colno == 28) { tot26 += amt; }
+                            if (colno == 29) { tot27 += amt; }
+                            if (colno == 30) { tot28 += amt; }
+                            if (colno == 31) { tot29 += amt; }
+                            if (colno == 32) { tot30 += amt; }
+                            if (colno == 33) { tot31 += amt; }
+                            if (colno == 34) { tot32 += amt; }
+                            if (colno == 35) { tot33 += amt; }
+                            if (colno == 36) { tot34 += amt; }
+                            if (colno == 37) { tot35 += amt; }
+                            if (colno == 38) { tot36 += amt; }
+
+
+                        }
+
+                    }
+                </tr>
+                        }
+
+            <tr>
+
+                @{colno = 0;}
+                @foreach (var property in typeof(PrfBillYearRecord).GetProperties())
+                {
+                    colno++;
+                    if (colno > 22) { break; }
+
+                    if (colno == 3) { amt = tot01; }
+                    if (colno == 4) { amt = tot02; }
+                    if (colno == 5) { amt = tot03; }
+                    if (colno == 6) { amt = tot04; }
+                    if (colno == 7) { amt = tot05; }
+                    if (colno == 8) { amt = tot06; }
+                    if (colno == 9) { amt = tot07; }
+                    if (colno == 10) { amt = tot08; }
+                    if (colno == 11) { amt = tot09; }
+                    if (colno == 12) { amt = tot10; }
+                    if (colno == 13) { amt = tot11; }
+                    if (colno == 14) { amt = tot12; }
+                    if (colno == 15) { amt = tot13; }
+                    if (colno == 16) { amt = tot14; }
+                    if (colno == 17) { amt = tot15; }
+                    if (colno == 18) { amt = tot16; }
+                    if (colno == 19) { amt = tot17; }
+                    if (colno == 20) { amt = tot18; }
+                    if (colno == 21) { amt = tot19; }
+                    if (colno == 22) { amt = tot20; }
+                    if (colno == 23) { amt = tot21; }
+                    if (colno == 24) { amt = tot22; }
+                    if (colno == 25) { amt = tot23; }
+                    if (colno == 26) { amt = tot24; }
+                    if (colno == 27) { amt = tot25; }
+                    if (colno == 28) { amt = tot26; }
+                    if (colno == 29) { amt = tot27; }
+                    if (colno == 30) { amt = tot28; }
+                    if (colno == 31) { amt = tot29; }
+                    if (colno == 32) { amt = tot30; }
+                    if (colno == 33) { amt = tot31; }
+                    if (colno == 34) { amt = tot32; }
+                    if (colno == 35) { amt = tot33; }
+                    if (colno == 36) { amt = tot34; }
+                    if (colno == 37) { amt = tot35; }
+                    if (colno == 38) { amt = tot36; }
+
+                    if (colno == 2)
+                    {
+                        <td><strong>Total</strong></td>}
+                    else if (colno < 3)
+                    {
+                        <td></td>
+                    }
+                    else
+                    {
+                        if (@amt == 0)
+                        {
+                            <td></td>
+                        }
+                        else
+                        {
+                            <td class="text-right" style="text-align:right">
+                                <strong>@amt.ToString("N2")</strong>
+
+                            </td>
+
+                            @*<td class="text-right CellWithComment" style="text-align:right">
+                                    <strong>@amt.ToString("N2")</strong>
+                                    <span class="CellComment">Click for details</span>
+                                </td>*@
+                        }
+                    }
+
+                }
+
+            </tr>
+
+        </tbody>
+    </table>
+    <div id="debug"></div>
+</body>
+
+</html>
+
+@Scripts.Render("~/bundles/jquery")
+
+<script>
+
+    $(document).ready(function () {
+        $('#mainTable1').click(function (event) {
+            var target = $(event.target);
+            $th = target.closest('th');
+
+            //$td.html(parseInt($td.html()) + 1);
+            var col = $th.index();
+            var row = $th.closest('tr').index();
+
+            var year = 0;
+            {
+                row += 2;
+
+                year = parseInt(document.getElementById("mainTable").rows[1].cells.item(col).innerHTML);
+
+                var newlink = '@Url.Action("PrfBillMonth", "Report")' + '?Year=' + year + '&AmountType=' + $('#AmountType').val();
+                window.location = newlink;
+            }
+            $('#debug').prepend('<div class="debugLine">Cell at position (' + [col, row].join(',') + newlink + ') clicked!</div>');
+
+        });
+    });
+</script>
+
+
+
+

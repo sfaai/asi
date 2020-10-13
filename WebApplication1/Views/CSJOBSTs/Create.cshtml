@@ -1,0 +1,139 @@
+﻿
+
+@model WebApplication1.CSJOBST
+
+@{
+    ViewBag.Title = "Create  CSJOBST";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.JOBNO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.JOBNO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.JOBNO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CASENO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.CASENO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CASENO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAGEFR, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.STAGEFR, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAGEFR, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAGETO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.STAGETO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAGETO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.INDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.INDATE, new { htmlAttributes = new {  @Value = Model.INDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                @Html.ValidationMessageFor(model => model.INDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.INTIME, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.INTIME, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.INTIME, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.OUTDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.OUTDATE, new { htmlAttributes = new {  @Value = Model.OUTDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                @Html.ValidationMessageFor(model => model.OUTDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SENDMODE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.SENDMODE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SENDMODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.INIDX, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.INIDX, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.INIDX, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary fa fa-save" Title="Create" />
+				@Html.ActionLink(" Back", "Index", null, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+
+<script>
+            var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+    if (datefield.type != "date") { 
+        jQuery(function ($) { 
+            $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                startDate: '-30000d',
+
+            });
+
+        })
+    }
+</script>
+    @Scripts.Render("~/bundles/jqueryval")
+}

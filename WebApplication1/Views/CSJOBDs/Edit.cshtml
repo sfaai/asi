@@ -1,0 +1,199 @@
+﻿@model WebApplication1.CSJOBD
+@using WebApplication1.Utility
+
+@{
+    ViewBag.Title = ViewBag.Title + Model.JOBNO + " / " + Model.CASENO;
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+@if (@Html.Action() == "Delete")
+{
+    <div class="border border-info bg-warning" style="width:98vw">
+        <br />
+        <h4 class="h4 text-center">ARE YOU SURE YOU WANT TO DELETE THIS</h4>
+        <br />
+    </div>
+}
+
+
+@if (@Html.Action() == "Post")
+{
+    <div class="border border-info bg-primary" style="width:98vw">
+        <br />
+        <h4 class="h4 text-center">ARE YOU SURE YOU WANT TO POST THIS</h4>
+        <br />
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.JOBNO)
+
+        @Html.HiddenFor(model => model.CASENO)
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CASECODE, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.DropDownList("CASECODE", null,"No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CASECODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CASEMEMO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.CASEMEMO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CASEMEMO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CASEREM, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.CASEREM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CASEREM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.STAGE, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.STAGE, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.STAGE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.STAGEDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                        @Html.EditorFor(model => model.STAGEDATE, new { htmlAttributes = new {  @Value = Model.STAGEDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                    @Html.ValidationMessageFor(model => model.STAGEDATE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.STAGETIME, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.STAGETIME, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.STAGETIME, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.COMPLETE, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.COMPLETE, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.COMPLETE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.COMPLETED, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                        @Html.EditorFor(model => model.COMPLETED, new { htmlAttributes = new {  @Value = Model.COMPLETED.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                    @Html.ValidationMessageFor(model => model.COMPLETED, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        @Html.HiddenFor(model => model.STAGE)
+        @Html.HiddenFor(model => model.STAGEDATE)
+        @Html.HiddenFor(model => model.STAGETIME)
+        @Html.HiddenFor(model => model.COMPLETE)
+        @Html.HiddenFor(model => model.COMPLETED)
+        @Html.HiddenFor(model => model.STAMP)
+        @Html.HiddenFor(model => model.CSCASE)
+        @Html.HiddenFor(model => model.CSJOBM)
+
+
+        @if ((!((Model.JOBNO == null) || (Model.JOBNO == "")) || (!ViewData.ModelState.IsValid))  && (Model.CSJOBM != null) && (Model.CSJOBM.JOBPOST == "Y"))
+        {
+            if ((Html.Action() == "Details") || (Html.Action() == "Post") || (Html.Action() == "Delete"))
+            {
+                <div id="divCSJOBST">
+                    @{ViewBag.Id = Model.JOBNO; Html.RenderPartial("Partial/CSJOBST", @Model.CSJOBSTs.OrderByDescending(x => x.INIDX));}
+                </div>
+                        }
+                        else
+                        {
+                            <div id="divCSJOBST">
+                                @{ViewBag.Id = Model.JOBNO; Html.RenderPartial("Partial/CSJOBST", @Model.CSJOBSTs.OrderByDescending(x => x.INIDX));}
+                            </div>
+                                        }
+                                    }
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @if (@Html.Action() == "Details")
+                {
+           
+                        @Html.ActionLink(" Edit", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.JOBNO), row = Model.CASENO }, new { @class = "btn btn-primary fa fa-edit", title = "Edit" })
+                  
+                }
+                else
+                {
+                    if ((Html.Action() == "Delete") && (!ViewData.ModelState.IsValid)) { }
+                    else
+                    {
+                        <input type="submit" value="Confirm" class="btn btn-primary fa fa-flash" Title="Execute" />
+                    }
+                }
+                @if ((Model.CSJOBM != null) && (Model.CSJOBM.JOBPOST == "Y"))
+                {
+                    @Html.ActionLink(" Back", "Index", "CSJOBDs", null, new { @class = "btn btn-info fa fa-arrow-left" })
+                }
+                else
+                {
+                    @Html.ActionLink(" Back", "Edit", "CSJOBMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.JOBNO),  page = ViewBag.page  }, new { @class = "btn btn-info fa fa-arrow-left" })
+                }
+              
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        if (("@Html.Action()" == "Details") || ("@Html.Action()" == "Delete")) {
+            $(":input").attr("readonly", true);
+            $("select").attr("disabled", true);
+            $("input[type=checkbox]").attr("disabled", true);
+
+        }
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

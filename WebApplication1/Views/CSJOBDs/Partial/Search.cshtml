@@ -1,0 +1,118 @@
+﻿@model WebApplication1.CSJOBD
+
+
+
+@using (Html.BeginForm("SearchPost","CSJOBDs", FormMethod.Post, new { id = "SearchRecForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container form-check-inline" style="width:96vw">
+
+        @*<div class="form-group col-md-1">
+            <div class="align-text-bottom">
+                <br />
+                <input type="submit" value="Search" class="btn btn-lg btn-primary fa fa-search" />
+             
+            </div>
+        </div>*@
+        <div class="form-group col-md-2">
+
+            @Html.Label("Sort by", null, htmlAttributes: new { @class = "control-label" })
+            <div class="form-check-inline">
+                <button class="btn btn-lg btn-primary fa fa-search" onclick="document.getElementById('SearchRecForm').submit()"></button>
+                @Html.DropDownList("SORTBY",null,  htmlAttributes: new { @class = "form-control" })
+                
+            </div>
+        </div>
+
+        <div class="form-group col-md-3">
+            @Html.LabelFor(model => model.CSJOBM.CSCOMSTR.CONAME, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.CSJOBM.CSCOMSTR.CONAME, new { htmlAttributes = new { @class = "form-control" } })
+                
+            </div>
+        </div>
+
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.CSJOBM.CSCOMSTR.CONO, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.CSJOBM.CSCOMSTR.COREGNO, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.STAGE, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.DropDownListFor(model => model.STAGE, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.CSJOBM.JOBSTAFF, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.DropDownListFor(model => model.CSJOBM.JOBSTAFF, (IEnumerable<SelectListItem>)ViewBag.JOBSTAFF, "No Selection", htmlAttributes: new { @class = "form-control" })
+
+            </div>
+        </div>
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.JOBNO, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.JOBNO, new { htmlAttributes = new { @class = "form-control" } })
+               
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.STAGEDATE, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.STAGEDATE, new { htmlAttributes = new { @class = "form-control date datepicker", @Value = Model.STAGEDATE.ToString("yyyy-MM-dd") } })
+
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.Label("End Date", htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.DUEDATE, new { htmlAttributes = new { @class = "form-control date datepicker" , @Value = Model.DUEDATE.ToString("yyyy-MM-dd") } })
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+
+    <script>
+        $("#SORTBY").change(function () {
+            $("#SearchRecForm").submit()
+        })
+
+        $("#CSJOBM_JOBSTAFF").change(function () {
+            $("#SearchRecForm").submit()
+        })
+
+        $("#STAGE").change(function () {
+            $("#SearchRecForm").submit()
+        })
+
+        $("#VDATE").change(
+function () {
+    if ($("#VDATE").val() == "") {
+        $("#VDATE").val("0001-01-01");
+    }
+})
+
+        $("#DUEDATE").change(
+function () {
+    if ($("#DUEDATE").val() == "") {
+        $("#DUEDATE").val("0001-01-01");
+    }
+})
+    </script>
+}

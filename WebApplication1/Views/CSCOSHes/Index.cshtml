@@ -1,0 +1,69 @@
+﻿@model IEnumerable<WebApplication1.CSCOSH>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EFFDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TERDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENDDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FOLIONO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPR.CONSTCODE)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EFFDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TERDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENDDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FOLIONO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSPR.CONSTCODE)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,27 @@
+﻿@model SACOMP
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<br /><br />
+<h3>@ViewBag.Message</h3>
+<br />
+<hr />
+<br />
+    <address class="h4">
+        @Model.CONAME <br /> @Model.COADDR1 @Model.COADDR2 @Model.COADDR3 <br />@Model.COADDR4
+
+        <br /><br />
+        <abbr title="Phone">P:</abbr>
+        @Model.COPHONE1 @Model.COPHONE2
+        <br /><br />
+        <abbr title="Fax">F:</abbr>
+        @Model.COFAX1 @Model.COFAX2
+    </address>
+<br/>
+<hr/>
+<address>
+    <strong>Support:</strong>   <a href="Mailto:@Model.COWEB">@Model.COWEB</a><br />
+
+</address>

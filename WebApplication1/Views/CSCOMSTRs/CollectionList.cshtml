@@ -1,0 +1,123 @@
+﻿@using WebApplication1.Utility;
+
+@model List<WebApplication1.CSCOMSTR>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Collection List</title>
+
+    @Styles.Render("~/Content/css")
+
+    <style>
+        media print {
+            page-break-after: always;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div>
+
+        @foreach (CSCOMSTR rec in @Model)
+        {
+
+            @Html.Action("Collection", new { id = MyHtmlHelpers.ConvertIdToByteStr(rec.CONO) })
+
+            @*<div style="clear:both!important;"></div>*@
+            <div style="page-break-after:always"></div>
+            @*<div style="clear:both!important;"> </div>*@
+        }
+        <br />
+        @{
+            decimal gtotal = (decimal)Session["collectionStatusTotal"];
+            decimal reimb = (decimal)Session["collectionStatusReimb"];
+            decimal receipt = (decimal)Session["collectionStatusReceipt"];
+            decimal advance = (decimal)Session["collectionStatusAdvance"];
+            decimal deposit = (decimal)Session["collectionStatusDeposit"];
+            decimal oFee = (decimal)Session["collectionStatusOwnFeeTotal"];
+            decimal oWork = (decimal)Session["collectionStatusOwnWorkTotal"];
+            decimal oTax = (decimal)Session["collectionStatusOwnTaxTotal"];
+            decimal oDisb = (decimal)Session["collectionStatusOwnDisbTotal"];
+            decimal thdFee = (decimal)Session["collectionStatus3pFeeTotal"];
+            decimal thdWork = (decimal)Session["collectionStatus3pWorkTotal"];
+            decimal thdTax = (decimal)Session["collectionStatus3pTaxTotal"];
+            decimal thdDisb = (decimal)Session["collectionStatus3pDisbTotal"];
+        }
+
+        <div class="container-fluid">
+
+            <div id="main">
+
+                <div class="row">
+                    <div class="col-md-3 text-right row">
+                        <div class="col-md-3 text-left">
+
+                        </div>
+
+                        <div class="col-md-4 text-left">
+
+                        </div>
+                        <div class="col-md-5 text-right border-top">
+                            <strong>Grand Total</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-right row">
+                        <div class="col-md-3 text-right border-top">
+                            <strong>@oFee.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-3 text-right border-top">
+                            <strong>@oWork.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-3 text-right border-top">
+                            <strong>@oTax.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-3 text-right border-top">
+                            <strong>@oDisb.ToString("N2")</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-right row">
+                        <div class="col-md-3 text-right border-top">
+                            <strong>@thdFee.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-3 text-right border-top">
+                            <strong>@thdWork.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-3 text-right border-top">
+                            <strong>@thdTax.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-3 text-right border-top">
+                            <strong>@thdDisb.ToString("N2")</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-right row">
+                        <div class="col-md-2 text-right border-top">
+                            <strong>@reimb.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-3 text-right border-top">
+                            <strong>@gtotal.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-3 text-right border-top">
+                            <strong>@receipt.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-2 text-right border-top">
+                            <strong>@advance.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-2 text-right border-top">
+                            <strong>@deposit.ToString("N2")</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+﻿@model WebApplication1.CSCOSH
+
+@using WebApplication1.Utility
+
+@{
+    ViewBag.Title = "Share Movement";
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.CSCOMSTR.CONAME</h4>
+</div>
+
+
+     <div>
+            <br/>
+        <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist" style="width:98vw">
+                <li class="nav-item">
+                    <a class="nav-link active" id="tab-Allotment" data-toggle="tab" href="#Allotment">Allotment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Transfer" data-toggle="tab" href="#Transfer">Transfer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Split" data-toggle="tab" href="#Split">Split</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Conversion" data-toggle="tab" href="#Conversion">Conversion</a>
+                </li>
+            </ul>
+
+         
+
+               <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="Allotment" class="tab-pane active" style="width:98vw">
+
+                    @Html.Action("PartialCOSHAllotment", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+                <div id="Transfer" class=" tab-pane" style="width:98vw">
+         
+                    @Html.Action("PartialCOSHTransfer", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO)})
+                </div>
+                <div id="Split" class="tab-pane" style="width:98vw">
+        
+                    @Html.Action("PartialCOSHSplit", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+                <div id="Conversion" class="tab-pane" style="width:98vw">
+
+                    @Html.Action("PartialCOSHConversion", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+                </div>
+            </div>
+  
+       
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+             
+                @Html.ActionLink(" Back", "Edit", "cSCOMSTRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+
+
+@section Scripts {
+
+    <script>
+        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+        window.location.hash = '';
+        $(document).ready(function () {
+
+            if (hash) {
+
+
+                $('#tab-' + hash).click(); //function () { alert('clicked ' + hash); });
+                //window.location.hash = '#' + hash;
+
+                // hash found
+            } else {
+                // No hash found
+            }
+        })
+
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

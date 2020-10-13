@@ -1,0 +1,688 @@
+﻿@model WebApplication1.CSPRF
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Proforma Bill</title>
+    @Styles.Render("~/Content/css")
+
+
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+        }
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 400px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 70px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+                .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+
+        .no-gutters > .col,
+        .no-gutters > [class*="col-"] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+        .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+        .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+        .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+        .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+        .col-xl-auto {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .col {
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        .col-auto {
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+            width: auto;
+            max-width: none;
+        }
+
+        .col-1 {
+            -ms-flex: 0 0 8.333333%;
+            flex: 0 0 8.333333%;
+            max-width: 8.333333%;
+        }
+
+        .col-2 {
+            -ms-flex: 0 0 16.666667%;
+            flex: 0 0 16.666667%;
+            max-width: 16.666667%;
+        }
+
+        .col-3 {
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+
+        .col-4 {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        .col-5 {
+            -ms-flex: 0 0 41.666667%;
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%;
+        }
+
+        .col-6 {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-7 {
+            -ms-flex: 0 0 58.333333%;
+            flex: 0 0 58.333333%;
+            max-width: 58.333333%;
+        }
+
+        .col-8 {
+            -ms-flex: 0 0 66.666667%;
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+        }
+
+        .col-9 {
+            -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+
+        .col-10 {
+            -ms-flex: 0 0 83.333333%;
+            flex: 0 0 83.333333%;
+            max-width: 83.333333%;
+        }
+
+        .col-11 {
+            -ms-flex: 0 0 91.666667%;
+            flex: 0 0 91.666667%;
+            max-width: 91.666667%;
+        }
+
+        .col-12 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        
+.border {
+  border: 1px solid #dee2e6 !important;
+}
+
+.border-top {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.border-right {
+  border-right: 1px solid #dee2e6 !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.border-left {
+  border-left: 1px solid #dee2e6 !important;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.border-top-0 {
+  border-top: 0 !important;
+}
+
+.border-right-0 {
+  border-right: 0 !important;
+}
+
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+.border-left-0 {
+  border-left: 0 !important;
+}
+
+.border-primary {
+  border-color: #007bff !important;
+}
+
+.border-secondary {
+  border-color: #6c757d !important;
+}
+
+.border-success {
+  border-color: #28a745 !important;
+}
+
+.border-info {
+  border-color: #17a2b8 !important;
+}
+
+.border-warning {
+  border-color: #ffc107 !important;
+}
+
+.border-danger {
+  border-color: #dc3545 !important;
+}
+
+.border-light {
+  border-color: #f8f9fa !important;
+}
+
+.border-dark {
+  border-color: #343a40 !important;
+}
+
+.border-white {
+  border-color: #fff !important;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="letter">
+            <header>
+                <div class="text-center">
+                    <h3 class="h3">@ViewBag.Company</h3>
+                    <p>
+                        @ViewBag.Address
+                        <br />@ViewBag.Contact
+                    </p>
+                </div>
+            </header>
+        </div>
+        <div id="main">
+            <h3 class="h3"><u>Proforma Bill</u></h3>
+            <br />
+            <div class="row">
+                <div class="col-6" style="text-align:left">@Model.ATTN</div>
+                <div class="col-6" style="text-align:right">P.B. : @Model.PRFNO</div>
+            </div>
+            <div class="row">
+                <div class="col-6" style="text-align:left"><b>@Model.CSCOMSTR.CONAME (@Model.CSCOMSTR.COREGNO)</b></div>
+                <div class="col-6" style="text-align:right">Date : @Model.VDATE.ToString("dd MMM yyyy")</div>
+            </div>
+            <div class="row">
+                <div class="col-6">@ViewBag.Addr1</div>
+                <div class="col-6 " style="text-align:right">Due : @Model.DUEDATE.ToString("dd MMM yyyy")</div>
+            </div>
+            <div class="row">
+                <div class="col-6">@ViewBag.Addr2</div>
+
+            </div>
+            <div class="row">
+                <div class="col-6">@ViewBag.Addr3</div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <br />
+                    Attention : @Model.ATTN
+
+                </div>
+                <br />
+
+            </div>
+            <br />
+            @if (((List<CSBILL>)ViewBag.CSBILL_fee).Count > 0)
+            {
+                <div class="row">
+                    <div class="col-6" style="text-align:left; border-bottom: 1px solid black;">
+                        Fees
+                    </div>
+                    <div class="col-2" style="text-align:center; border-bottom: 1px solid black;">
+                        Job No/Case
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right; border-bottom: 1px solid black;">
+                        RM
+                    </div>
+                    <br />
+                </div>
+                <br />
+            }
+            @foreach (CSBILL Item in ViewBag.CSBILL_fee)
+            {
+                <div class="row">
+                    <div class="col-6" style="text-align:left;">
+                        @Html.DisplayFor(item => Item.ITEMDESC)<br />
+                        @if (!Item.ITEMSPEC.IsEmpty())
+                        {
+                            <pre>@Html.DisplayFor(item => Item.ITEMSPEC)</pre>
+                        }
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+                        @Html.DisplayFor(item => Item.JOBNO)
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right; ">
+                        @Html.DisplayFor(item => Item.ITEMAMT)
+                    </div>
+                </div>
+
+            }
+
+            @if (((List<CSBILL>)ViewBag.CSBILL_work).Count > 0)
+            {
+                @*<br />
+                    <div class="row">
+                        <div class="col-6" style="text-align:left; border-bottom: 1px solid black;">
+                            Secretarial Work
+                        </div>
+                        <div class="col-2" style="text-align:center; border-bottom: 1px solid black;">
+                            Job No/Case
+                        </div>
+                        <div class="col-2" style="text-align:right;">
+
+                        </div>
+                        <div class="col-2" style="text-align:right; border-bottom: 1px solid black;">
+                            RM
+                        </div>
+                        <br />
+                    </div>
+                    <br />*@
+
+                <br />
+                <div class="row">
+                    <div class="col-6" style="text-align:left">
+                        <u>Secretarial Work</u>
+                    </div>
+                    <div class="col-2" style="text-align:center">
+                        <u>Job No/Case</u>
+                    </div>
+                    <div class="col-2" style="text-align:right">
+
+                    </div>
+                    <div class="col-2" style="text-align:right">
+                       <u>RM</u> 
+                    </div>
+                    <br />
+                </div>
+                <br />
+            }
+            @foreach (CSBILL Item in ViewBag.CSBILL_work)
+            {
+                <div class="row">
+                    <div class="col-6" style="text-align:left;">
+                        @Html.DisplayFor(item => Item.ITEMDESC)<br />
+                        @if (!Item.ITEMSPEC.IsEmpty())
+                        {
+                            <pre>@Html.DisplayFor(item => Item.ITEMSPEC)</pre>
+                        }
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+                        @Html.DisplayFor(item => Item.JOBNO)
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right; ">
+                        @Html.DisplayFor(item => Item.ITEMAMT)
+                    </div>
+                </div>
+
+            }
+
+            @if (((List<CSBILL>)ViewBag.CSBILL_disbursement).Count > 0)
+            {
+                <br />
+                <div class="row">
+                    <div class="col-6" style="text-align:left; border-bottom: 1px solid black;">
+                        Disbursements
+                    </div>
+                    <div class="col-2" style="text-align:center; border-bottom: 1px solid black;">
+                        Job No/Case
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right; border-bottom: 1px solid black;">
+                        RM
+                    </div>
+                    <br />
+                </div>
+                <br />
+            }
+            @foreach (CSBILL Item in ViewBag.CSBILL_disbursement)
+            {
+
+                <div class="row">
+
+                    <div class="col-6" style="text-align:left;">
+                        @Html.DisplayFor(item => Item.ITEMDESC)<br />
+                        @if (!Item.ITEMSPEC.IsEmpty())
+                        {
+                            <pre>@Html.DisplayFor(item => Item.ITEMSPEC)</pre>
+                        }
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+                        @Html.DisplayFor(item => Item.JOBNO)
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right; ">
+                        @Html.DisplayFor(item => Item.ITEMAMT)
+                    </div>
+                </div>
+            }
+
+            @if ((((List<CSBILL>)ViewBag.CSBILL_disbursement).Count > 0) || (((List<CSBILL>)ViewBag.CSBILL_work).Count > 0) || (((List<CSBILL>)ViewBag.CSBILL_fee).Count > 0))
+            {
+                <br />
+                <div class="row">
+                    <div class="col-6" style="text-align:left;">
+                        Gross
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right; border-top: 1px solid black;">
+                        @ViewBag.totalItem
+                    </div>
+                    <br />
+                </div>
+
+                <div class="row">
+                    <div class="col-6" style="text-align:left;">
+                        Add @ViewBag.TaxRate @ViewBag.TaxCode
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right; border-bottom: 1px solid black;">
+                        @ViewBag.totalTax
+                    </div>
+                    <br />
+                </div>
+
+                <div class="row">
+                    <div class="col-6" style="text-align:left;">
+
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+                        @ViewBag.totalAmt
+                    </div>
+                    <br />
+                </div>
+                <br />
+            }
+            @if (((List<CSBILL>)ViewBag.CSBILL_reimbursement).Count > 0)
+            {
+                <br />
+                <div class="row">
+                    <div class="col-6" style="text-align:left; border-bottom: 1px solid black;">
+                        Reimbursements
+                    </div>
+                    <div class="col-2" style="text-align:center; border-bottom: 1px solid black;">
+                        Job No/Case
+                    </div>
+                    <div class="col-2" style="text-align:right; border-bottom: 1px solid black;">
+                        RM
+                    </div>
+                    <div class="col-2" style="text-align:right; border-bottom: 1px solid black;">
+                        RM
+                    </div>
+                    <br />
+                </div>
+                <br />
+            }
+            @foreach (CSBILL Item in ViewBag.CSBILL_reimbursement)
+            {
+                <div class="row">
+                    <div class="col-6 " style="text-align:left;">
+                        @Html.DisplayFor(item => Item.ITEMDESC)<br />
+                        @if (!Item.ITEMSPEC.IsEmpty())
+                        {
+                            <pre>@Html.DisplayFor(item => Item.ITEMSPEC)</pre>
+                        }
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+                        @Html.DisplayFor(item => Item.JOBNO)
+                        @Html.DisplayFor(item => Item.TAXRCODE)
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                        @Html.DisplayFor(item => Item.ITEMAMT)
+                    </div>
+                    <div class="col-2" style="text-align:right; ">
+
+                    </div>
+                </div>
+            }
+            @if (((List<CSBILL>)ViewBag.CSBILL_reimbursement).Count > 0)
+            {
+                <br />
+                <div class="row">
+                    <div class="col-6" style="text-align:left;">
+                        Gross
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right; border-top: 1px solid black;">
+                        @ViewBag.reimbItem
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <br />
+                </div>
+
+                <div class="row">
+                    <div class="col-6" style="text-align:left;">
+                        Add @ViewBag.RTaxRate @ViewBag.RTaxCode
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right; border-bottom: 1px solid black;">
+                        @ViewBag.reimbTax
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <br />
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-6" style="text-align:left;">
+                        Total Disbursement
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+                        @ViewBag.reimbAmt
+                    </div>
+                    <div class="col-2" style="text-align:right;">
+
+                    </div>
+                    <br />
+                </div>
+                <br />
+            }
+            <div class="row">
+                <div class="col-6" style="text-align:left;">
+                    Total Payable
+                </div>
+                <div class="col-2" style="text-align:center;">
+
+                </div>
+                <div class="col-2" style="text-align:right;">
+
+                </div>
+                <div class="col-2" style="text-align:right;border-bottom: 1px solid black;border-top: 1px solid black;">
+                    @ViewBag.payable
+                </div>
+                <br />
+            </div>
+            <br />
+        </div>
+
+
+        <footer>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <br />
+                    <br />
+                    Account Name	: ASI SECRETARIAL SERVICES SDN. BHD.
+                    <br />
+                    Bank Name		: RHB Bank Berhad
+                    <br />
+                    Bank Account No	: 2142-31000-44202
+                    <br />
+                    Swift Code		: RHBBMYKL
+                    <br />
+                    <br />
+                    We appreciate your full payment via bank direct transfer and forward us the transaction receipt for our accounting records
+                    <br />
+                    <br />
+                    Thank you.
+                    <br />
+                    ASI SECRETARIAL SERVICES SDN. BHD.
+                    <br />
+                    <br />
+                    @ViewBag.StaffName
+                    <br />
+                    Secretarial Executive
+                    <br />
+                    * This is a computer generated statement. No signature is required.
+                    <br />
+
+
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

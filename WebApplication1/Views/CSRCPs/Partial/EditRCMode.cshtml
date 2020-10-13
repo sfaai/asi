@@ -1,0 +1,84 @@
+﻿@model WebApplication1.CSRCP
+
+<div class="form-horizontal">
+    @if (ViewBag.DETFLAG == "Y")
+    {
+        <div class="form-group form-check-inline"  style="width:96vw">
+            <div class="form-group col-md-6 form-check-inline">
+                <div class="col-md-3">
+                    @Html.LabelFor(model => model.ISSBANK, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-9">
+                    @Html.DropDownList("ISSBANK", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ISSBANK, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-6 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.ISSLOC, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.DropDownList("ISSLOC", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ISSLOC, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-6 form-check-inline">
+                <div class="col-md-3">
+                    @Html.LabelFor(model => model.ISSREFNO, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.ISSREFNO, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ISSREFNO, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-6 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.ISSDATE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.ISSDATE, new { htmlAttributes = new { @Value = Model.ISSDATE?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                    @Html.ValidationMessageFor(model => model.ISSDATE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+<script>
+    $(document).ready(function () {
+
+        @*if (JModel == null) {
+        JModel = { "CONO": "@Model.CONO",  "ATTN": "@Model.ATTN",  "COADDR": "@Model.COADDR", "REM": "@Model.REM","STAMP": @Model.STAMP }
+            }
+
+        $('#CONO').change(function () {
+
+            JModel.CONO = $('#CONO').val();
+            JModel.ATTN = $('#ATTN').val();
+            JModel.COADDR = $('#COADDR').val();
+            JModel.REM = $('#REM').val();
+            JModel.STAMP = $('#STAMP').val();
+
+
+            var jData = JSON.stringify(JModel);
+
+
+            $("#divEditCompany").load('@Url.Action("EditCompany")', JModel, function () {
+                // callback once completed async call
+                // $("#divEditFileLoc2").text(jData);
+            });
+
+        })*@
+
+    })
+</script>
+
+
+

@@ -1,0 +1,162 @@
+﻿@model WebApplication1.CSCOSH
+@using WebApplication1.Utility
+@{
+    ViewBag.Title = "View Members of ";
+}
+
+<div class="border border-info bg-info"  style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.CSCOMSTR.CONAME</h4>
+</div>
+
+<div class="form-horizontal">
+
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.CONO)
+
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.EFFDATE, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.EFFDATE, new { htmlAttributes = new { @Value = Model.EFFDATE.ToString("yyyy-MM-dd"), @class = "form-control datepicker" } })
+            @Html.ValidationMessageFor(model => model.EFFDATE, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.TERDATE, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TERDATE, new { htmlAttributes = new { @Value = Model.TERDATE?.ToString("yyyy-MM-dd"), @class = "form-control datepicker" } })
+            @Html.ValidationMessageFor(model => model.TERDATE, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.FOLIONO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.FOLIONO, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.FOLIONO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.PRSCODE, null, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+
+            @if ((Model.CSCOSHCHGs.Count > 0) || (Model.CSCOSHEQs.Count > 0))
+            {
+                @Html.EditorFor(model => model.CSPR.PRSNAME, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+            }
+            else
+            {
+                @Html.DropDownList("PRSCODE", null, htmlAttributes: new { @class = "form-control" })
+            }
+            @Html.ValidationMessageFor(model => model.PRSCODE, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.ENDDATE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ENDDATE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ENDDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+    @Html.HiddenFor(Model => Model.STAMP)
+    @Html.HiddenFor(Model => Model.ENDDATE)
+
+    @if ((Model.STAMP > 0) || (!ViewData.ModelState.IsValid))
+    {
+        <br />
+        <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist" style="width:96vw">
+                <li class="nav-item">
+                    <a class="nav-link active" id="tab-Summary" data-toggle="tab" href="#Summary">Summary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Movemnt" data-toggle="tab" href="#Movement">Movement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab-Register" data-toggle="tab" href="#Register">Register</a>
+                </li>
+            </ul>
+
+
+
+               <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="Summary" class="container no-gutters tab-pane active" style="width:96vw">
+
+                    @Html.Action("PartialSum", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO), person = Model.PRSCODE })
+                </div>
+                <div id="Movement" class="container no-gutters tab-pane" style="width:96vw">
+
+                    @Html.Action("PartialMove", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO), person = Model.PRSCODE })
+                </div>
+                <div id="Register" class="container no-gutters tab-pane" style="width:96vw">
+
+                    @Html.Action("EditRegChg", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO), person = Model.PRSCODE })
+                </div>
+            </div>
+
+    }
+
+</div>
+
+<p>
+    @Html.ActionLink(" Edit", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO), person = Model.PRSCODE }, new { @class = "btn btn-info fa fa-edit" })
+    @Html.ActionLink(" Back", "Details", "cSCOMSTRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-info fa fa-arrow-left" })
+</p>
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+
+
+        if (("@Html.Action()" == "Details") || ("@Html.Action()" == "Delete"))  {
+            $(":input").attr("readonly", true);
+            $("select").attr("disabled", true);
+            $("input[type=checkbox]").attr("disabled", true);
+
+        }
+
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

@@ -1,0 +1,28 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.V_CSCOAGM>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ReminderList</title>
+</head>
+<body>
+    
+    <div>
+        @foreach (V_CSCOAGM rec in @Model)
+        {
+            @Html.Action("ReminderM", new { id = MyHtmlHelpers.ConvertIdToByteStr(rec.CONO) })
+
+            @*<div style="clear:both!important;"></div>*@
+            <div style="page-break-after:always"></div>
+            @*<div style="clear:both!important;"> </div>*@
+        }
+    </div>
+</body>
+</html>

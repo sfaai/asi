@@ -1,0 +1,537 @@
+﻿@model IEnumerable<CostatDayRecord>
+@{
+//Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>@ViewBag.Title</title>
+    <style>
+        td {
+            /*background-color: #555555;
+            color: #FFF;
+            font-weight: bold;*/
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #debug {
+            background-color: #CCC;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+            #debug .debugLine {
+                margin: 2px 0;
+                padding: 1px 5px;
+                background-color: #EEE;
+            }
+
+        .CellWithComment {
+            position: relative;
+        }
+
+        .CellComment {
+            display: none;
+            position: absolute;
+            z-index: 100;
+            border: 1px;
+            background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-color: red;
+            padding: 3px;
+            color: red;
+            top: 20px;
+            left: 20px;
+        }
+
+        .CellWithComment:hover span.CellComment {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        @*<div class="text-center">
+                <h4 class="h4">@ViewBag.Company</h4>
+
+            </div>*@
+    </header>
+    @*<br /><br />
+        <span class="h4"><strong>@ViewBag.Title as at @DateTime.Today.ToString("dd/MM/yyyy")</strong></span>
+        <br /><br />*@
+    @{
+        int colno = 0;
+        int amt = 0;
+
+        int tot01 = 0;
+        int tot02 = 0;
+        int tot03 = 0;
+        int tot04 = 0;
+        int tot05 = 0;
+        int tot06 = 0;
+        int tot07 = 0;
+        int tot08 = 0;
+        int tot09 = 0;
+        int tot10 = 0;
+        int tot11 = 0;
+        int tot12 = 0;
+        int tot13 = 0;
+        int tot14 = 0;
+        int tot15 = 0;
+        int tot16 = 0;
+        int tot17 = 0;
+        int tot18 = 0;
+        int tot19 = 0;
+        int tot20 = 0;
+        int tot21 = 0;
+        int tot22 = 0;
+        int tot23 = 0;
+        int tot24 = 0;
+        int tot25 = 0;
+        int tot26 = 0;
+        int tot27 = 0;
+        int tot28 = 0;
+        int tot29 = 0;
+        int tot30 = 0;
+        int tot31 = 0;
+        int tot32 = 0;
+        int tot33 = 0;
+        int tot34 = 0;
+        int tot35 = 0;
+        int tot36 = 0;
+    }
+
+
+
+    <table id="mainTable" class="table table-bordered table-hover table-responsive-lg table-sm">
+        <thead>
+            <tr>
+                <th class="text-center" colspan="13">@ViewBag.Company</th>
+                <th class="text-center" colspan="20">@ViewBag.Title</th>
+            </tr>
+
+            @*@foreach (var item in Model)
+                {
+                    <tr>
+                        @foreach (var property in typeof(PrfBillYearRecord).GetProperties())
+                        {
+                            <th>@(property.GetValue(item, null))</th>
+                        }
+                    </tr>
+                }*@
+
+            @*<tr>
+                    @foreach (var property in typeof(PrfBillYearRecord).GetProperties())
+                    {
+                        <th>@(property.Name)</th>
+                    }
+                </tr>*@
+
+
+
+            <tr class="text-nowrap">
+
+                <th class="text-center">Status</th>
+
+                <th class="text-center ">01</th>
+                <th class="text-center ">02</th>
+                <th class="text-center ">03</th>
+                <th class="text-center ">04</th>
+                <th class="text-center ">05</th>
+                <th class="text-center ">06</th>
+                <th class="text-center ">07</th>
+                <th class="text-center ">08</th>
+                <th class="text-center ">09</th>
+                <th class="text-center ">10</th>
+                <th class="text-center ">11</th>
+                <th class="text-center ">12</th>
+                <th class="text-center ">13</th>
+                <th class="text-center ">14</th>
+                <th class="text-center ">15</th>
+                <th class="text-center ">16</th>
+                <th class="text-center ">17</th>
+                <th class="text-center ">18</th>
+                <th class="text-center ">19</th>
+                <th class="text-center ">20</th>
+                <th class="text-center">21</th>
+                <th class="text-center">22</th>
+                <th class="text-center">23</th>
+                <th class="text-center">24</th>
+                <th class="text-center">25</th>
+                <th class="text-center">26</th>
+                <th class="text-center">27</th>
+                <th class="text-center">28</th>
+                <th class="text-center">29</th>
+                <th class="text-center">30</th>
+                <th class="text-center">31</th>
+                <th class="text-center">Total</th>
+                @*<th class="text-center">2032</th>
+                    <th class="text-center">2033</th>
+                    <th class="text-center">2034</th>
+                    <th class="text-center">2035</th>
+                    <th class="text-center">2036</th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (CostatDayRecord Item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(item => Item.costat)
+                    </td>
+    
+                    <td class="text-right">
+                        @if (Item.D01 != 0)
+                        {
+
+                            @Html.DisplayFor(item => Item.D01)
+                        }
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D02 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.D02)}
+                    </td>
+
+                    <td class="text-right">
+                        @if (Item.D03 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.D03)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D04 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.D04)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D05 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.D05)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D06 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.D06)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D07 != 0)
+                        {      @Html.DisplayFor(item => Item.D07)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D08 != 0)
+                        {      @Html.DisplayFor(item => Item.D08)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D09 != 0)
+                        {      @Html.DisplayFor(item => Item.D09)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D10 != 0)
+                        {       @Html.DisplayFor(item => Item.D10)}
+                    </td>
+
+                    <td class="text-right">
+                        @if (Item.D11 != 0)
+                        {       @Html.DisplayFor(item => Item.D11)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D12 != 0)
+                        {        @Html.DisplayFor(item => Item.D12)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D13 != 0)
+                        {      @Html.DisplayFor(item => Item.D13)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D14 != 0)
+                        {        @Html.DisplayFor(item => Item.D14)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D15 != 0)
+                {         @Html.DisplayFor(item => Item.D15)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D16 != 0)
+                        {       @Html.DisplayFor(item => Item.D16)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D17 != 0)
+                        {        @Html.DisplayFor(item => Item.D17)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D18 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.D18)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D19 != 0)
+                        {        @Html.DisplayFor(item => Item.D19)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D20 != 0)
+                {         @Html.DisplayFor(item => Item.D20) }
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D21 != 0)
+                        {       @Html.DisplayFor(item => Item.D21)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D22 != 0)
+                        {        @Html.DisplayFor(item => Item.D22)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D23 != 0)
+                        {      @Html.DisplayFor(item => Item.D23)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D24 != 0)
+                        {        @Html.DisplayFor(item => Item.D24)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D25 != 0)
+                {         @Html.DisplayFor(item => Item.D25)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D26 != 0)
+                        {       @Html.DisplayFor(item => Item.D26)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D27 != 0)
+                        {        @Html.DisplayFor(item => Item.D27)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D28 != 0)
+                        {
+                            @Html.DisplayFor(item => Item.D28)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D29 != 0)
+                        {        @Html.DisplayFor(item => Item.D29)}
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D30 != 0)
+                {         @Html.DisplayFor(item => Item.D30) }
+                    </td>
+                    <td class="text-right">
+                        @if (Item.D31 != 0)
+                {         @Html.DisplayFor(item => Item.D31) }
+                    </td>
+                    <td class="text-right">
+                        @if (Item.total != 0)
+                {         @Html.DisplayFor(item => Item.total) }
+                    </td>
+                    @{
+                        colno = -1;
+
+                        foreach (var property in typeof(CostatDayRecord).GetProperties())
+                        {
+                            colno++;
+                            if (colno > 2) { amt = (int)property.GetValue(Item, null); }
+                            if (colno == 3) { tot01 += amt; }
+                            if (colno == 4) { tot02 += amt; }
+                            if (colno == 5) { tot03 += amt; }
+                            if (colno == 6) { tot04 += amt; }
+                            if (colno == 7) { tot05 += amt; }
+                            if (colno == 8) { tot06 += amt; }
+                            if (colno == 9) { tot07 += amt; }
+                            if (colno == 10) { tot08 += amt; }
+                            if (colno == 11) { tot09 += amt; }
+                            if (colno == 12) { tot10 += amt; }
+                            if (colno == 13) { tot11 += amt; }
+                            if (colno == 14) { tot12 += amt; }
+                            if (colno == 15) { tot13 += amt; }
+                            if (colno == 16) { tot14 += amt; }
+                            if (colno == 17) { tot15 += amt; }
+                            if (colno == 18) { tot16 += amt; }
+                            if (colno == 19) { tot17 += amt; }
+                            if (colno == 20) { tot18 += amt; }
+                            if (colno == 21) { tot19 += amt; }
+                            if (colno == 22) { tot20 += amt; }
+                            if (colno == 23) { tot21 += amt; }
+                            if (colno == 24) { tot22 += amt; }
+                            if (colno == 25) { tot23 += amt; }
+                            if (colno == 26) { tot24 += amt; }
+                            if (colno == 27) { tot25 += amt; }
+                            if (colno == 28) { tot26 += amt; }
+                            if (colno == 29) { tot27 += amt; }
+                            if (colno == 30) { tot28 += amt; }
+                            if (colno == 31) { tot29 += amt; }
+                            if (colno == 32) { tot30 += amt; }
+                            if (colno == 33) { tot31 += amt; }
+                            if (colno == 34) { tot32 += amt; }
+                            if (colno == 35) { tot33 += amt; }
+                            if (colno == 36) { tot34 += amt; }
+                            if (colno == 37) { tot35 += amt; }
+                            if (colno == 38) { tot36 += amt; }
+
+
+                        }
+
+                    }
+                </tr>
+                        }
+
+            <tr>
+
+                @{colno = -1;
+                    int tamt = 0;
+                    amt = 0;
+                    }
+                @foreach (var property in typeof(CostatDayRecord).GetProperties())
+                {
+                    colno++;
+                    if (colno > 34)
+                    {
+                        break;
+                    }
+                    amt = 0;
+                    if (colno == 3) { amt = tot01; }
+                    if (colno == 4) { amt = tot02; }
+                    if (colno == 5) { amt = tot03; }
+                    if (colno == 6) { amt = tot04; }
+                    if (colno == 7) { amt = tot05; }
+                    if (colno == 8) { amt = tot06; }
+                    if (colno == 9) { amt = tot07; }
+                    if (colno == 10) { amt = tot08; }
+                    if (colno == 11) { amt = tot09; }
+                    if (colno == 12) { amt = tot10; }
+                    if (colno == 13) { amt = tot11; }
+                    if (colno == 14) { amt = tot12; }
+                    if (colno == 15) { amt = tot13; }
+                    if (colno == 16) { amt = tot14; }
+                    if (colno == 17) { amt = tot15; }
+                    if (colno == 18) { amt = tot16; }
+                    if (colno == 19) { amt = tot17; }
+                    if (colno == 20) { amt = tot18; }
+                    if (colno == 21) { amt = tot19; }
+                    if (colno == 22) { amt = tot20; }
+                    if (colno == 23) { amt = tot21; }
+                    if (colno == 24) { amt = tot22; }
+                    if (colno == 25) { amt = tot23; }
+                    if (colno == 26) { amt = tot24; }
+                    if (colno == 27) { amt = tot25; }
+                    if (colno == 28) { amt = tot26; }
+                    if (colno == 29) { amt = tot27; }
+                    if (colno == 30) { amt = tot28; }
+                    if (colno == 31) { amt = tot29; }
+                    if (colno == 32) { amt = tot30; }
+                    if (colno == 33) { amt = tot31; }
+                    if (colno == 34) { amt = tot32; }
+                    if (colno == 35) { amt = tot33; }
+                    if (colno == 36) { amt = tot34; }
+                    if (colno == 37) { amt = tot35; }
+                    if (colno == 38) { amt = tot36; }
+
+                    tamt += amt;
+
+                                @*@tamt @:&nbsp;*@
+
+                                if (colno == 0)
+                                {
+                    
+                        <td><strong>Total</strong></td>
+            
+                    }
+                                else if (colno < 3)
+                                {
+
+                                }
+                                else if (colno == 34)
+                                {
+                        <td class="text-right" style="text-align:right">
+                            <strong>@tamt.ToString("N0")</strong>
+
+                        </td>
+                    }
+                    else
+                    {
+                        if (@amt == 0)
+                        {
+                            <td></td>
+                                    }
+                                    else
+                                    {
+                            <td class="text-right" style="text-align:right">
+                                <strong>@amt.ToString("N0")</strong>
+
+                            </td>
+
+                        }
+                }
+
+                }
+
+            </tr>
+
+        </tbody>
+    </table>
+    @*<div id="debug"></div>*@
+</body>
+
+</html>
+
+@Scripts.Render("~/bundles/jquery")
+
+<script>
+
+    $(document).ready(function () {
+        $('#mainTable').click(function (event) {
+            var target = $(event.target);
+            $th = target.closest('th');
+            $td = target.closest('td');
+
+            //$td.html(parseInt($td.html()) + 1);
+            var col = $th.index();
+            var row = $th.closest('tr').index();
+
+            var dcol = $td.index();
+            var drow = $td.closest('tr').index();
+            var newlink = '';
+            var year = 0;
+            var month = 0;
+            var day = 0;
+            {
+                drow += 2;
+
+                status = document.getElementById("mainTable").rows[drow].cells.item(0).innerHTML.split('<')[0];
+                status = status.trim();
+                year = @ViewBag.year;
+                month = @ViewBag.month;
+                if (dcol == -1) {
+                    day = col;
+                } else {
+                    day = dcol;
+                }
+                if (day > 31) { day = 0;}
+                if (row == 1) {
+                   
+                } else {
+                    if ((dcol > 0)) {
+                        newlink = '@Url.Action("CompanyList", "CSCOMSTRs")' + '?Year=' + year + '&Month=' + month + '&Day=' + day + '&status=' + status;
+                    }
+                }
+
+                if (newlink == '') { } else {
+                    window.location = newlink;
+                }
+            }
+            $('#debug').prepend('<div class="debugLine">Cell at position (' + [col,row,dcol, drow].join(',') + newlink + '-' + status +  ') clicked!</div>');
+
+        });
+    });
+</script>
+
+
+
+

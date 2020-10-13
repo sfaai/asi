@@ -1,0 +1,55 @@
+﻿@model WebApplication1.CSCOSHEQ
+@using WebApplication1.Utility
+
+<div class="form-group col-md-10 form-check-inline">
+    @Html.LabelFor(model => model.EQCODE, htmlAttributes: new { @class = "control-label col-md-4" })
+    <div class="col-md-10">
+        @Html.DropDownListFor(model => model.EQID, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.EQCODE, "", new { @class = "text-danger" })
+    </div>
+</div>
+@Html.HiddenFor(model => model.EQCODE)
+@Html.HiddenFor(model => model.SCRIPT)
+@Html.HiddenFor(model => model.CERTNO)
+
+
+@*<div class="form-group col-md-10 form-check-inline">
+        @Html.LabelFor(model => model.SCRIPT, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-1">
+            @Html.EditorFor(model => model.SCRIPTBool, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.SCRIPT, "", new { @class = "text-danger" })
+        </div>
+        @Html.LabelFor(model => model.CERTNO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-9">
+            @Html.EditorFor(model => model.CERTNO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CERTNO, "", new { @class = "text-danger" })
+        </div>
+    </div>*@
+
+<div class="form-group col-md-10 form-check-inline">
+    @Html.LabelFor(model => model.SHAREAMT, htmlAttributes: new { @class = "control-label col-md-4" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.SHAREAMT, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.SHAREAMT, "", new { @class = "text-danger" })
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+
+<script>
+
+    $("#EQID").change(function () {
+        var eqdesc = $("#EQID option:selected").text();
+        var eqcode = eqdesc.split(" | ")[0];
+        var script = eqdesc.split(" | ")[3];
+        var certno = eqdesc.split(" | ")[4];
+        var shareamt = eqdesc.split(" | ")[5];
+        $("#EQCODE").val(eqcode);
+        $("#SCRIPT").val(script);
+        $("#CERTNO").val(certno);
+        $("#SHAREAMT").val(shareamt);
+        $("#SHAREOS").val(shareamt);
+    })
+</script>
+
+

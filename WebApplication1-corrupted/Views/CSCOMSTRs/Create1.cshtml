@@ -1,0 +1,253 @@
+﻿
+
+@model WebApplication1.CSCOMSTR
+
+@{
+    ViewBag.Title = "New Company";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">@ViewBag.Title</h2>
+</div>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CONO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.CONO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CONO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.INCDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.INCDATE, new { htmlAttributes = new {  @Value = Model.INCDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                @Html.ValidationMessageFor(model => model.INCDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.INCCTRY, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.DropDownList("INCCTRY", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.INCCTRY, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CONSTCODE, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.DropDownList("CONSTCODE", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CONSTCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.INTYPE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.INTYPE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.INTYPE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.PRINOBJStr, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.PRINOBJStr, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PRINOBJStr, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CONAME, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.CONAME, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CONAME, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.PINDCODE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.PINDCODE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PINDCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SINDCODE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.SINDCODE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SINDCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.WEB, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.WEB, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.WEB, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.COSTAT, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.COSTAT, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.COSTAT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.COSTATD, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.COSTATD, new { htmlAttributes = new {  @Value = Model.COSTATD.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                @Html.ValidationMessageFor(model => model.COSTATD, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.FILETYPE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.FILETYPE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FILETYPE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.FILELOC, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.FILELOC, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FILELOC, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SEALLOC, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.SEALLOC, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SEALLOC, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAFFCODE, "STAFFCODE", htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.DropDownList("STAFFCODE", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.STAFFCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SPECIALREBool, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.SPECIALREBool, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SPECIALRE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.ARREBool, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ARREBool, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ARREBool, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CMMTStr, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.CMMTStr, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CMMTStr, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SXCODE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.SXCODE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SXCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SXNAME, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.SXNAME, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SXNAME, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REFCODE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.REFCODE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REFCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SEQNO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.SEQNO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SEQNO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary fa fa-save" Title="Create" />
+				@Html.ActionLink(" Back", "Index", null, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+
+<script>
+            var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+    if (datefield.type != "date") { 
+        jQuery(function ($) { 
+            $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                startDate: '-30000d',
+
+            });
+
+        })
+    }
+</script>
+    @Scripts.Render("~/bundles/jqueryval")
+}

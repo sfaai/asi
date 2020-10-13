@@ -1,0 +1,117 @@
+﻿@model WebApplication1.CSPRSREG
+@using WebApplication1.Utility
+
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "Edit Entity Registration ";
+}
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.PRSCODE</h4>
+</div>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.PRSCODE)
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CTRYCODE, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.DropDownList("CTRYCODE", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CTRYCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REGTYPE, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.REGTYPE, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.REGTYPE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REGNO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.REGNO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REGNO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        @Html.HiddenFor(model => model.STAMP)
+
+        @Html.HiddenFor(model => model.CSCOAGTCHGs)
+        @Html.HiddenFor(model => model.CSCOAGTCHGs1)
+        @Html.HiddenFor(model => model.CSCODRCHGs)
+        @Html.HiddenFor(model => model.CSCODRCHGs1)
+        @Html.HiddenFor(model => model.CSCOMGRCHGs)
+        @Html.HiddenFor(model => model.CSCOMGRCHGs1)
+        @Html.HiddenFor(model => model.CSCOSECCHGs)
+        @Html.HiddenFor(model => model.CSCOSECCHGs1)
+        @Html.HiddenFor(model => model.CSCOSECCHGs2)
+        @Html.HiddenFor(model => model.CSCOSHCHGs)
+        @Html.HiddenFor(model => model.CSCOSHCHGs1)
+        @Html.HiddenFor(model => model.HKCTRY)
+        @Html.HiddenFor(model => model.SFMYNEWDRs)
+        @Html.HiddenFor(model => model.SFMYNEWMGs)
+        @Html.HiddenFor(model => model.SFMYNEWMGs1)
+        @Html.HiddenFor(model => model.SFMYNEWSCs)
+        @Html.HiddenFor(model => model.SFMYNEWSCs1)
+        @Html.HiddenFor(model => model.SFMYNEWSCs2)
+        @Html.HiddenFor(model => model.SFMYNEWSHes)
+        @Html.HiddenFor(model => model.SFMYNEWSHes1)
+        @Html.HiddenFor(model => model.SFMYSCMVD1)
+        @Html.HiddenFor(model => model.SFMYSCMVD11)
+        @Html.HiddenFor(model => model.SFMYSCMVD12)
+        @Html.HiddenFor(model => model.SFSGDRMVD1)
+        @Html.HiddenFor(model => model.SFSGDRMVD11)
+        @Html.HiddenFor(model => model.SFSGNEWDRs)
+        @Html.HiddenFor(model => model.SFSGNEWDRs1)
+        @Html.HiddenFor(model => model.SFSGNEWMGs)
+        @Html.HiddenFor(model => model.SFSGNEWMGs1)
+        @Html.HiddenFor(model => model.SFSGNEWSCs)
+        @Html.HiddenFor(model => model.SFSGNEWSCs1)
+        @Html.HiddenFor(model => model.SFSGNEWSCs2)
+        @Html.HiddenFor(model => model.SFSGNEWSHes)
+        @Html.HiddenFor(model => model.SFSGNEWSHes1)
+        @Html.HiddenFor(model => model.SFSGSCMVD1)
+        @Html.HiddenFor(model => model.SFSGSCMVD11)
+        @Html.HiddenFor(model => model.SFSGSCMVD12)
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary fa fa-save" Title="Save" />
+                @Html.ActionLink(" Back", "Edit", "CSPRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.PRSCODE) }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<WebApplication1.CSCONAME>
+@using WebApplication1.Utility;
+
+<div style="width:96vw">
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.EFFDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CONAME)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.STAMP)
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (Html.Action() == "Edit")
+                    {
+                        @Html.ActionLink(" ", "Edit", "CSCONAMEs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-edit", title = "Edit" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Details", "CSCONAMEs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Delete", "CSCONAMEs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                    else if (Html.Action() == "Details")
+                    {
+                        @Html.ActionLink(" ", "Details", "CSCONAMEs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EFFDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CONAME)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+</div>

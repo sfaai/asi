@@ -1,0 +1,59 @@
+﻿@model System.Data.DataTable
+@{
+   }
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>@ViewBag.Title</title>
+
+</head>
+
+<body>
+    <span class="h2">@ViewBag.Title</span>
+    @using (Html.BeginForm("Index", "DataConversion", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+    {
+
+        <input type="file" name="postedFile" />
+        <input type="text" name="dbTableName" id="dbTableName" />
+        <input type="text" name="dbKey" id="dbKey" />
+        <input type="text" name="localKey" id="localKey" />
+        <input type="submit" value="Import" />
+
+    }
+
+    <table border="1">
+        <thead>
+            <tr>
+                @foreach (System.Data.DataColumn col in Model.Columns)
+                {
+                    <th>@col.Caption</th>
+                }
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (System.Data.DataRow row in Model.Rows)
+            {
+            <tr>
+                @foreach (var cell in row.ItemArray)
+                {
+                <td>@cell.ToString()</td>
+                }
+            </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+
+</html>
+

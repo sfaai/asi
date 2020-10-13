@@ -1,0 +1,94 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSJOBST>
+
+@{
+    ViewBag.Title = "Job/Case Stage Details";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+
+        @if ((Html.Action() == "Details") || (Html.Action() == "Post") || (Html.Action() == "Delete")) { }
+            else
+            {
+            <th>
+                @Html.ActionLink("Add", "Create", "CSJOBSTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(ViewBag.Id), row = ViewBag.row }, new { @class = "btn btn-primary h4" })
+            </th>     }
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().STAGEFR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().STAGETO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().INDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().INTIME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SENDMODE)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().REM)
+        </th>
+
+
+
+    </tr>
+    @{ int cnt = 0; }
+    @foreach (var item in Model)
+    {
+        cnt++;
+
+        <tr class="text-nowrap">
+
+            @if ((Html.Action() == "Details") || (Html.Action() == "Post") || (Html.Action() == "Delete")) { }
+                else
+                {
+                <td>
+                    @if (cnt == 1)
+                    {
+                        @Html.ActionLink(" ", "Edit", "CSJOBSTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO), row = item.CASENO, indate = item.INDATE, intime = item.INTIME, rel=1 }, new { @class = "fa fa-edit", title = "Edit" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Details", "CSJOBSTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO), row = item.CASENO, indate = item.INDATE, intime = item.INTIME, rel = 1 }, new { @class = "fa fa-folder", title = "Details" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Delete", "CSJOBSTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO), row = item.CASENO, indate = item.INDATE, intime = item.INTIME, rel = 1 }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                </td>
+            }
+            <td>
+
+
+                @Html.DisplayFor(modelItem => item.STAGEFR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STAGETO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.INDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.INTIME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SENDMODE)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.REM)
+            </td>
+
+
+        </tr>
+    }
+
+</table>

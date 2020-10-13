@@ -1,0 +1,130 @@
+﻿@model WebApplication1.CSPR
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CSPR</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PRSNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRSNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOBILE1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOBILE1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MOBILE2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MOBILE2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OCCUPATION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OCCUPATION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HKCONST.CONSTDESC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKCONST.CONSTDESC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HKTITLE.TITLE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKTITLE.TITLE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HKNATION.NATION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKNATION.NATION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HKRACE.RACE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKRACE.RACE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HKCTRY.CTRYDESC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKCTRY.CTRYDESC)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PRSCODE }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

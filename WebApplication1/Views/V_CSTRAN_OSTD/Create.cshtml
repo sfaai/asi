@@ -1,0 +1,154 @@
+﻿
+
+@model WebApplication1.V_CSTRAN_OSTD
+
+@{
+    ViewBag.Title = "Create  V_CSTRAN_OSTD";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">@ViewBag.Title</h2>
+</div>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CONAME, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.CONAME, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CONAME, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CONO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.CONO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CONO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.COREGNO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.COREGNO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.COREGNO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.ENTDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.ENTDATE, new { htmlAttributes = new {  @Value = Model.ENTDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                @Html.ValidationMessageFor(model => model.ENTDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.PARTICULARS, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.PARTICULARS, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PARTICULARS, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.PARTICULARS1, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.PARTICULARS1, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PARTICULARS1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.PARTICULARS2, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.PARTICULARS2, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PARTICULARS2, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SOURCE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.SOURCE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SOURCE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SOURCENO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.SOURCENO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SOURCENO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.TRAMT, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.TRAMT, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TRAMT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.TROS, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.TROS, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TROS, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.MINAMT, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.MINAMT, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MINAMT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.MAXAMT, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+					@Html.EditorFor(model => model.MAXAMT, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MAXAMT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary fa fa-save" Title="Create" />
+				@Html.ActionLink(" Back", "Index", null, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+
+<script>
+            var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+    if (datefield.type != "date") { 
+        jQuery(function ($) { 
+            $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                startDate: '-30000d',
+
+            });
+
+        })
+    }
+</script>
+    @Scripts.Render("~/bundles/jqueryval")
+}

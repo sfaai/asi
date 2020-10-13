@@ -1,0 +1,81 @@
+﻿@model IEnumerable<WebApplication1.CSCODEB>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.REFDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DEEDDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SECUREAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ISSUEAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DEBCOND)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DEBINFO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPR.CONSTCODE)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.REFDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DEEDDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SECUREAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ISSUEAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DEBCOND)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DEBINFO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSPR.CONSTCODE)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

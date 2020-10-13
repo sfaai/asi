@@ -1,0 +1,625 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using WebApplication1.Utility;
+@model IPagedList<WebApplication1.CSOFF>
+
+@{
+    ViewBag.Title = "Item Offset";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+    @Html.Action("Search")
+</div>
+
+<div class="border-0">
+    <div class="row form-inline">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+        @*@Html.ActionLink(" Receipts", "ReceiptList", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print receipts" })
+        @Html.ActionLink(" Listing", "Listing", null, new { @class = "btn btn-sm fa fa-print", title = "Listing" })*@
+    </div>
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr>
+            <th colspan="5">Transaction Details</th>
+            <th colspan="7">Debit Details</th>
+            <th colspan="6">Debit Transaction</th>
+            <th colspan="6">Debit Balance</th>
+            <th colspan="6">Debit Oustanding</th>
+            <th colspan="9">Debit Apply</th>
+            <th colspan="7">Credit Details</th>
+            <th colspan="6">Credit Transaction</th>
+            <th colspan="6">Credit Balance</th>
+            <th colspan="6">Credit Oustanding</th>
+            <th colspan="9">Credit Apply</th>
+        </tr>
+        <tr class="label-primary text-nowrap">
+            <th>
+                @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().TRNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().VDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DBTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DBNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DBID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.ENTDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.DUEDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TRTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TRDESC)
+            </th>
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.APPITEM1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.APPTAX1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.APPAMT1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.APPITEM2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.APPTAX2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.APPAMT2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.APPITEM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.APPTAX)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.APPAMT)
+            </th>
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TRITEMOS1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TRTAXOS1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TROS1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TRITEMOS2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TRTAXOS2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TROS2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TRITEMOS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TRTAXOS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.TROS)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPDBITEM1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPDBITEM2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPDBITEM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPDBTAX1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPDBTAX2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPDBTAX)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPDBAMT1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPDBAMT2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPDBAMT)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().CRTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CRNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CRID)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.ENTDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.DUEDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TRTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TRDESC)
+            </th>
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.APPITEM1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.APPTAX1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.APPAMT1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.APPITEM2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM.APPTAX2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.APPAMT2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.APPITEM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.APPTAX)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.APPAMT)
+            </th>
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TRITEMOS1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TRTAXOS1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TROS1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TRITEMOS2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TRTAXOS2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TROS2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TRITEMOS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TRTAXOS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSTRANM1.TROS)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPCRITEM1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPCRITEM2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPCRITEM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPCRTAX1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPCRTAX2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPCRTAX)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPCRAMT1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPCRAMT2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().APPCRAMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SEQNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().POST)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAMP)
+            </th>
+
+        </tr>
+        @{
+            decimal tot101 = 0;
+            decimal tot102 = 0;
+            decimal tot103 = 0;
+            decimal tot104 = 0;
+            decimal tot105 = 0;
+            decimal tot106 = 0;
+            decimal tot107 = 0;
+            decimal tot108 = 0;
+            decimal tot109 = 0;
+
+            decimal tot201 = 0;
+            decimal tot202 = 0;
+            decimal tot203 = 0;
+            decimal tot204 = 0;
+            decimal tot205 = 0;
+            decimal tot206 = 0;
+            decimal tot207 = 0;
+            decimal tot208 = 0;
+            decimal tot209 = 0;
+
+            decimal tot301 = 0;
+            decimal tot302 = 0;
+            decimal tot303 = 0;
+            decimal tot304 = 0;
+            decimal tot305 = 0;
+            decimal tot306 = 0;
+            decimal tot307 = 0;
+            decimal tot308 = 0;
+            decimal tot309 = 0;
+        }
+        @foreach (var item in Model)
+        {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO) }, new { @class = "fa fa-edit", title = "Edit" })
+                    @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO) }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO) }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TRNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.COREGNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.CSCOMSTR.CONAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DBTYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DBNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DBID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSTRANM.ENTDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSTRANM.DUEDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSTRANM.TRTYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSTRANM.TRDESC)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRITEM1)
+                    @{tot101 += item.CSTRANM.TRITEM1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRTAX1)
+                    @{tot102 += item.CSTRANM.TRTAX1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRAMT1)
+                    @{tot103 += item.CSTRANM.TRAMT1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRITEM2)
+                    @{tot104 += item.CSTRANM.TRITEM2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRTAX2)
+                    @{tot105 += item.CSTRANM.TRTAX2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRAMT2)
+                    @{tot106 += item.CSTRANM.TRAMT2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRITEM)
+                    @{tot107 += item.CSTRANM.TRITEM;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRTAX)
+                    @{tot108 += item.CSTRANM.TRTAX;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRAMT)
+                    @{tot109 += item.CSTRANM.TRAMT;}
+                </td>
+
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRITEMOS1)
+                    @{tot201 += item.CSTRANM.TRITEMOS1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRTAXOS1)
+                    @{tot202 += item.CSTRANM.TRTAXOS1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TROS1)
+                    @{tot203 += item.CSTRANM.TROS1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRITEMOS2)
+                    @{tot204 += item.CSTRANM.TRITEMOS2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRTAXOS2)
+                    @{tot205 += item.CSTRANM.TRTAXOS2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TROS2)
+                    @{tot206 += item.CSTRANM.TROS2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRITEMOS)
+                    @{tot207 += item.CSTRANM.TRITEMOS;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TRTAXOS)
+                    @{tot208 += item.CSTRANM.TRTAXOS;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM.TROS)
+                    @{tot209 += item.CSTRANM.TROS;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPDBITEM1)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPDBITEM2)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPDBITEM)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPDBTAX1)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPDBTAX2)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPDBTAX)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPDBAMT1)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPDBAMT2)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPDBAMT)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.CRTYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CRNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CRID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSTRANM1.ENTDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSTRANM1.DUEDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSTRANM1.TRTYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSTRANM1.TRDESC)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRITEM1)
+                    @{tot101 += item.CSTRANM1.TRITEM1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRTAX1)
+                    @{tot102 += item.CSTRANM1.TRTAX1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRAMT1)
+                    @{tot103 += item.CSTRANM1.TRAMT1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRITEM2)
+                    @{tot104 += item.CSTRANM1.TRITEM2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRTAX2)
+                    @{tot105 += item.CSTRANM1.TRTAX2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRAMT2)
+                    @{tot106 += item.CSTRANM1.TRAMT2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRITEM)
+                    @{tot107 += item.CSTRANM1.TRITEM;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRTAX)
+                    @{tot108 += item.CSTRANM1.TRTAX;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRAMT)
+                    @{tot109 += item.CSTRANM1.TRAMT;}
+                </td>
+
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRITEMOS1)
+                    @{tot201 += item.CSTRANM1.TRITEMOS1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRTAXOS1)
+                    @{tot202 += item.CSTRANM1.TRTAXOS1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TROS1)
+                    @{tot203 += item.CSTRANM1.TROS1;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRITEMOS2)
+                    @{tot204 += item.CSTRANM1.TRITEMOS2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRTAXOS2)
+                    @{tot205 += item.CSTRANM1.TRTAXOS2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TROS2)
+                    @{tot206 += item.CSTRANM1.TROS2;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRITEMOS)
+                    @{tot207 += item.CSTRANM1.TRITEMOS;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TRTAXOS)
+                    @{tot208 += item.CSTRANM1.TRTAXOS;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(citem => item.CSTRANM1.TROS)
+                    @{tot209 += item.CSTRANM1.TROS;}
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPCRITEM1)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPCRITEM2)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPCRITEM)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPCRTAX1)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPCRTAX2)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPCRTAX)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPCRAMT1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.APPCRAMT2)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.APPCRAMT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SEQNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.POST)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+
+
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

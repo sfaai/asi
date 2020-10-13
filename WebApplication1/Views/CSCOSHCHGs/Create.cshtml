@@ -1,0 +1,200 @@
+﻿@model WebApplication1.CSCOSHCHG
+@using WebApplication1.Utility
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "Add Member Register";
+}
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.PRSNAME</h4>
+</div>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.CONO)
+
+        @Html.HiddenFor(model => model.PRSCODE)
+
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CHGEFFDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.CHGEFFDATE, new { htmlAttributes = new { @Value = Model.CHGEFFDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                @Html.ValidationMessageFor(model => model.CHGEFFDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CHGREM, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.DropDownListFor(model => model.CHGREM, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CHGREM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.PRSNAME, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.PRSNAME, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PRSNAME, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.NATION, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.DropDownList("NATION", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.NATION, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.RACE, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.DropDownList("RACE", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.RACE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.ADDRID, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.DropDownList("ADDRID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ADDRID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.OCCUPATION, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.OCCUPATION, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.OCCUPATION, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.REGCTRY1, null, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.Editor("REGCTRY1", null, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.REGCTRY1, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.REGTYPE1, null, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.Editor("REGTYPE1", null, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.REGTYPE1, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+        @Html.HiddenFor(Model => Model.REGCTRY1)
+        @Html.HiddenFor(Model => Model.REGTYPE1)
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REGID1, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.DropDownList("REGID1", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.REGID1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.REGCTRY2, "REGCTRY2", htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.DropDownList("REGCTRY2", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.REGCTRY2, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.REGTYPE2, "REGTYPE2", htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.DropDownList("REGTYPE2", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.REGTYPE2, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        @Html.HiddenFor(Model => Model.REGCTRY2)
+        @Html.HiddenFor(Model => Model.REGTYPE2)
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REGID2, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.DropDownList("REGID2", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.REGID2, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @Html.HiddenFor(model => model.ROWNO)
+        @Html.HiddenFor(model => model.STAMP)
+
+        @*<div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        @Html.HiddenFor(model => model.HKNATION)
+        @Html.HiddenFor(model => model.HKRACE)
+        @Html.HiddenFor(model => model.CSPRSADDR)
+        @Html.HiddenFor(model => model.CSPRSREG)
+        @Html.HiddenFor(model => model.CSPRSREG1)
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                @Html.ActionLink(" Back", "Edit", "cSCOSHes", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO), person = Model.PRSCODE }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        $('#REGID1').change(function () {
+            var itemtype = $("#REGID1 option:selected").text();
+            $('#REGTYPE1').val(itemtype.split(' | ')[1]);
+            $('#REGCTRY1').val(itemtype.split(' | ')[0]);
+        })
+
+        $('#REGID2').change(function () {
+            var itemtype = $("#REGID2 option:selected").text();
+            $('#REGTYPE2').val(itemtype.split(' | ')[1]);
+            $('#REGCTRY2').val(itemtype.split(' | ')[0]);
+        })
+    </script>
+    @Scripts.Render("~/bundles/jqueryval")
+}

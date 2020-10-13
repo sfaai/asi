@@ -1,0 +1,507 @@
+﻿@using WebApplication1;
+@using DCSoft.RTF;
+
+@model WebApplication1.CSCOMSTR
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Company Register</title>
+    @Styles.Render("~/Content/css")
+
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .regSect {
+            background-color: darkgray;
+            text-align: center;
+            border: solid;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+        }
+
+
+
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+
+            pre {
+                border: none;
+            }
+
+            @@page {
+                size: landscape;
+            }
+
+            /*body {
+                writing-mode: vertical-rl;
+            }*/
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 400px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 70px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@page {
+            size: auto;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="letter">
+            <header>
+                <div class="text-left">
+                    @ViewBag.Company
+                    <br /><br />
+                    <u>Collection Status from @ViewBag.RPT_START to @ViewBag.RPT_END</u>
+                    <br />
+                    @Model.CONAME (@Model.COREGNO)
+                </div>
+            </header>
+        </div>
+        <div id="main">
+
+
+
+            @if (ViewBag.CSLDG != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Collection Status
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 text-right row">
+                            <div class="col-md-3 text-left">
+
+                            </div>
+
+                            <div class="col-md-3 text-center">
+                                &minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus; Own &minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;
+                            </div>
+                            <div class="col-md-3 text-center">
+                                &minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus; Third Party &minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;
+                            </div>
+                            <div class="col-md-3 text-left">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-2 text-left">
+                                <u>Date</u>
+                            </div>
+
+                            <div class="col-md-4 text-left">
+                                <u>Receipt</u>
+                            </div>
+                            <div class="col-md-5 text-left">
+                                <u>Apply Item</u>
+                            </div>
+                            <div class="col-md-1 text-left">
+                                <u>Staff</u>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-3 text-right">
+                                <u>Fee</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Work</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Tax</u>
+                            </div>
+                            <div class="col-md-3 text-right">
+                                <u>Disbursement</u>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-3 text-right">
+                                <u>Fee</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Work</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Tax</u>
+                            </div>
+                            <div class="col-md-3 text-right">
+                                <u>Disbursement</u>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-2 text-right">
+                                <u>Reimbursement</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Total</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Receipt</u>
+                            </div>
+
+                            <div class="col-md-2 text-right">
+                                <u>Advance</u>
+                            </div>
+
+                            <div class="col-md-2 text-right">
+                                <u>Deposit</u>
+                            </div>
+                        </div>
+                    </div>
+
+                    @{
+                        decimal oFee = 0;
+                        decimal oWork = 0;
+                        decimal oTax = 0;
+                        decimal oDisb = 0;
+
+                        decimal thdFee = 0;
+                        decimal thdWork = 0;
+                        decimal thdTax = 0;
+                        decimal thdDisb = 0;
+
+                        decimal reimb0 = 0;
+                        decimal reimb = 0;
+                        decimal total = 0;
+                        decimal gtotal = 0;
+                        decimal receipt = 0;
+                        decimal advance = 0;
+                        decimal deposit = 0;
+                        string AppRef = "";
+                        string staff = "";
+                    }
+                    @foreach (CSLDG rec in ViewBag.CSLDG)
+                    {
+                        {
+                            oFee += rec.FEE1;
+                            oWork += rec.WORK1;
+                            oTax += rec.TAX1;
+                            oDisb += rec.DISB1;
+
+                            thdFee += rec.FEE2;
+                            thdWork += rec.WORK2;
+                            thdTax += rec.TAX2;
+                            thdDisb += rec.DISB2;
+
+                            reimb0 = (rec.REIMB1 ?? 0) + (rec.REIMB2 ?? 0);
+                            reimb += reimb0;
+                            total = reimb0;
+                            total += rec.FEE1 + rec.WORK1 + rec.TAX1 + rec.DISB1 + rec.FEE2 + rec.WORK2 + rec.TAX2 + rec.DISB2;
+                            gtotal += total;
+                            receipt += rec.RECEIPT;
+                            advance += rec.ADVANCE;
+                            deposit += rec.DEP;
+
+
+
+                            if (ViewBag.CSJOB != null)
+                            {
+                                staff = ((IQueryable<CSJOBM>)ViewBag.CSJOB).Where(x => x.JOBNO == rec.JOBNO).Select(y => y.JOBSTAFF).FirstOrDefault();
+                            }
+                            AppRef = ((IQueryable<CSTRANM>)ViewBag.CSTRANM).Where(x => x.SOURCE == rec.SOURCE && x.SOURCEID == rec.SOURCEID && x.SOURCENO == rec.SOURCENO).Select(y => y.APPTYPE + " " + y.APPNO + " " + y.APPID).FirstOrDefault();
+                        }
+                        decimal reimb1 = @rec.REIMB1 ?? 0;
+
+
+                        <div class="row">
+                            <div class="col-md-3 text-right row">
+                                <div class="col-md-2 text-left">
+                                    @rec.ENTDATE.ToString("dd/MM/yyyy")
+
+                                </div>
+                                <div class="col-md-4 text-left">
+                                    @rec.SOURCENO @rec.SOURCEID
+                                </div>
+                                <div class="col-md-5 text-left">
+                                    @AppRef
+                                </div>
+                                <div class="col-md-1 text-left">
+                                    @staff
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-right row">
+                                <div class="col-md-3 text-right">
+                                    @rec.FEE1.ToString("N2")
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    @rec.WORK1.ToString("N2")
+                                </div>
+
+                                <div class="col-md-3 text-right">
+                                    @rec.TAX1.ToString("N2")
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    @rec.DISB1.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-right row">
+                                <div class="col-md-3 text-right">
+                                    @rec.FEE2.ToString("N2")
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    @rec.WORK2.ToString("N2")
+                                </div>
+
+                                <div class="col-md-3 text-right">
+                                    @rec.TAX2.ToString("N2")
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    @rec.DISB2.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-right row">
+                                <div class="col-md-2 text-right">
+                                    @reimb0.ToString("N2")
+                                </div>
+
+                                <div class="col-md-3 text-right">
+                                    @total.ToString("N2")
+                                </div>
+
+                                <div class="col-md-3 text-right">
+                                    @rec.RECEIPT.ToString("N2")
+                                </div>
+
+                                <div class="col-md-2 text-right">
+                                    @rec.ADVANCE.ToString("N2")
+                                </div>
+
+                                <div class="col-md-2 text-right">
+                                    @rec.DEP.ToString("N2")
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    @{
+                        if (Session["collectionStatusTotal"] == null) { Session["collectionStatusTotal"] = 0; }
+                        decimal myTotal = decimal.Parse(Session["collectionStatusTotal"].ToString());
+                        myTotal = myTotal + gtotal;
+                        Session["collectionStatusTotal"] = myTotal;
+
+                        if (Session["collectionStatusReceipt"] == null) { Session["collectionStatusReceipt"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatusReceipt"].ToString());
+                        myTotal = myTotal + receipt;
+                        Session["collectionStatusReceipt"] = myTotal;
+
+                        if (Session["collectionStatusReimb"] == null) { Session["collectionStatusReimb"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatusReimb"].ToString());
+                        myTotal = myTotal + reimb;
+                        Session["collectionStatusReimb"] = myTotal;
+
+                        if (Session["collectionStatusAdvance"] == null) { Session["collectionStatusAdvance"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatusAdvance"].ToString());
+                        myTotal = myTotal + advance;
+                        Session["collectionStatusAdvance"] = myTotal;
+
+                        if (Session["collectionStatusDeposit"] == null) { Session["collectionStatusDeposit"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatusDeposit"].ToString());
+                        myTotal = myTotal + deposit;
+                        Session["collectionStatusDeposit"] = myTotal;
+
+                        if (Session["collectionStatusOwnFeeTotal"] == null) { Session["collectionStatusOwnFeeTotal"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatusOwnFeeTotal"].ToString());
+                        myTotal = myTotal + oFee;
+                        Session["collectionStatusOwnFeeTotal"] = myTotal;
+
+                        if (Session["collectionStatusOwnWorkTotal"] == null) { Session["collectionStatusOwnWorkTotal"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatusOwnWorkTotal"].ToString());
+                        myTotal = myTotal + oWork;
+                        Session["collectionStatusOwnWorkTotal"] = myTotal;
+
+                        if (Session["collectionStatusOwnTaxTotal"] == null) { Session["collectionStatusOwnTaxTotal"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatusOwnTaxTotal"].ToString());
+                        myTotal = myTotal + oTax;
+                        Session["collectionStatusOwnTaxTotal"] = myTotal;
+
+                        if (Session["collectionStatusOwnDisbTotal"] == null) { Session["collectionStatusOwnDisbTotal"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatusOwnDisbTotal"].ToString());
+                        myTotal = myTotal + oDisb;
+                        Session["collectionStatusOwnDisbTotal"] = myTotal;
+
+                        if (Session["collectionStatus3pFeeTotal"] == null) { Session["collectionStatus3pFeeTotal"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatus3pFeeTotal"].ToString());
+                        myTotal = myTotal + thdFee;
+                        Session["collectionStatus3pFeeTotal"] = myTotal;
+
+                        if (Session["collectionStatus3pWorkTotal"] == null) { Session["collectionStatus3pWorkTotal"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatus3pWorkTotal"].ToString());
+                        myTotal = myTotal + thdWork;
+                        Session["collectionStatus3pWorkTotal"] = myTotal;
+
+                        if (Session["collectionStatus3pTaxTotal"] == null) { Session["collectionStatus3pTaxTotal"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatus3pTaxTotal"].ToString());
+                        myTotal = myTotal + thdTax;
+                        Session["collectionStatus3pTaxTotal"] = myTotal;
+
+                        if (Session["collectionStatus3pDisbTotal"] == null) { Session["collectionStatus3pDisbTotal"] = 0; }
+                        myTotal = decimal.Parse(Session["collectionStatus3pDisbTotal"].ToString());
+                        myTotal = myTotal + thdDisb;
+                        Session["collectionStatus3pDisbTotal"] = myTotal;
+                    }
+
+                    <div class="row">
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-3 text-left">
+
+                            </div>
+
+                            <div class="col-md-4 text-left">
+
+                            </div>
+                            <div class="col-md-5 text-right border-top">
+                                <strong>Total</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@oFee.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@oWork.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@oTax.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@oDisb.ToString("N2")</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@thdFee.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@thdWork.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@thdTax.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@thdDisb.ToString("N2")</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-2 text-right border-top">
+                                <strong>@reimb.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@gtotal.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@receipt.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-2 text-right border-top">
+                                <strong>@advance.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-2 text-right border-top">
+                                <strong>@deposit.ToString("N2")</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                        }
+
+        </div>
+
+        @*<footer>
+
+                <div class="row">
+                    <div class="col-12">
+
+
+
+                    </div>
+
+                </div>
+            </footer>*@
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

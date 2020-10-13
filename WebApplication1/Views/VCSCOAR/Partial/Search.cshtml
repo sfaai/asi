@@ -1,0 +1,140 @@
+﻿@model WebApplication1.V_CSCOAR
+
+@using (Html.BeginForm("SearchPost","VCSCOAR", FormMethod.Post, new { id = "SearchRecForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container form-check-inline" style="width:96vw">
+
+        @*<div class="form-group col-md-1">
+            <div class="align-text-bottom">
+                <br />
+                <input type="submit" value="Search" class="btn btn-lg btn-primary fa fa-filter fa-search" />
+            </div>
+        </div>*@
+        <div class="form-group col-md-2">
+            @Html.Label("Sort by", null, htmlAttributes: new { @class = "control-label" })
+            <div class="form-check-inline">
+                <button class="btn btn-lg btn-primary fa fa-search" onclick="document.getElementById('SearchRecForm').submit()"></button>
+
+                @Html.DropDownList("SORTBY", null, htmlAttributes: new { @class = "form-control" })
+
+            </div>
+        </div>
+
+        <div class="form-group col-md-3">
+            @Html.LabelFor(model => model.CONAME, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.CONAME, new { htmlAttributes = new { @class = "form-control" } })
+                
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.CONO, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.COREGNO, new { htmlAttributes = new { @class = "form-control" } })
+                
+            </div>
+        </div>
+
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.STAFFCODE, htmlAttributes: new { @class = "control-label" })
+            <div>
+            
+                @Html.DropDownListFor(model => model.STAFFCODE, null, "No Selection", htmlAttributes: new { @class = "form-control" }) 
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.LASTAR, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.LASTAR, new { htmlAttributes = new { @class = "form-control", @Value = Model.LASTAR?.ToString("yyyy-MM-dd") } })
+
+            </div>
+        </div>
+
+ 
+
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    <script>
+        $("#SORTBY").change(function () {
+            $("#SearchRecForm").submit();
+        })
+
+        $("#STAFFCODE").change(function () {
+            $("#SearchRecForm").submit();
+        })
+    </script>
+
+    @section Scripts {
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/base/jquery-ui.css">
+
+        <script type="text/javascript">
+        $(document).ready(function () {
+            $(".monthPicker").datepicker({
+                dateFormat: 'MM yy',
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true,
+
+                onClose: function (dateText, inst) {
+                    var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                    var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                    $(this).val($.datepicker.formatDate('MM yy', new Date(year, month, 1)));
+                }
+            });
+
+            $(".monthPicker").focus(function () {
+                $(".ui-datepicker-calendar").hide();
+                $("#ui-datepicker-div").position({
+                    my: "center top",
+                    at: "center bottom",
+                    of: $(this)
+                });
+            });
+        });
+
+
+        </script>
+
+        @*<script type="text/javascript">
+                $(function() {
+                    $('.date-picker').datepicker( {
+                        changeMonth: true,
+                        changeYear: true,
+                        showButtonPanel: true,
+                        dateFormat: 'MM yy',
+                        onClose: function(dateText, inst) {
+                            var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                            $(this).datepicker('setDate', new Date(year, month, 1));
+                        },
+                        beforeShow : function(input, inst) {
+                            var datestr;
+                            if ((datestr = $(this).val()).length > 0) {
+                                year = datestr.substring(datestr.length-4, datestr.length);
+                                month = jQuery.inArray(datestr.substring(0, datestr.length-5), $(this).datepicker('option', 'monthNamesShort'));
+                                $(this).datepicker('option', 'defaultDate', new Date(year, month, 1));
+                                $(this).datepicker('setDate', new Date(year, month, 1));
+                            }
+                        }
+                    });
+                });
+            </script>*@
+        <style>
+            .ui-datepicker-calendar {
+                display: none;
+            }
+        </style>
+    }
+
+
+}

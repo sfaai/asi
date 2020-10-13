@@ -1,0 +1,161 @@
+﻿@using WebApplication1.Utility;
+@model WebApplication1.CSCOSTAT
+
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "Edit Company Status";
+}
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.CSCOMSTR.CONAME</h4>
+</div>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.CONO)
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SDATE, new { htmlAttributes = new { @Value = Model.SDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+
+                @Html.ValidationMessageFor(model => model.SDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.COSTAT, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.COSTAT, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.DropDownList("COSTAT", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.COSTAT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.FILETYPE, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.FILETYPE, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.FILETYPE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.FILELOC, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.FILELOC, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.FILELOC, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.SEALLOC, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.SEALLOC, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SEALLOC, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div id="divEditFileLoc">
+            @{Html.RenderPartial("Partial/EditFileLoc", @Model);}
+        </div>
+
+        @*<div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.EDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.EDATE, new { htmlAttributes = new { @Value = Model.EDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" , @readonly=true} })
+
+
+                @Html.ValidationMessageFor(model => model.EDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        @Html.HiddenFor(model => model.EDATE)
+
+        @Html.HiddenFor(model => model.ROWNO)
+        @Html.HiddenFor(model => model.STAMP)
+        @*<div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary fa fa-save" title="Save" />
+                @Html.ActionLink(" Back", "Edit", "cSCOMSTRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+
+
+                }
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+                });
+                
+            })
+        }
+        
+        JModel = null;
+
+        $(document).ready(
+            function()
+            {
+                JModel = {};
+                @*JModel = @Html.Raw(Json.Encode(@Model));*@ }
+            )
+
+
+
+        $('#COSTAT').change(function () {
+            var status = $('#COSTAT').val();
+
+            JModel.COSTAT = $('#COSTAT').val();
+            JModel.FILETYPE = $('#FILETYPE').val();
+            JModel.FILELOC = $('#FILELOC').val();
+            JModel.SEALLOC = $('#SEALLOC').val();
+            JModel.SDATE = $('#SDATE').val();
+            JModel.EDATE = $('#EDATE').val();
+
+            var jData = JSON.stringify(JModel);   
+
+         $("#divEditFileLoc").load('@Url.Action("EditFileLoc")',JModel, function(){
+                // callback once completed async call
+           // $("#divEditFileLoc2").text(jData);
+            }
+            );
+
+        })
+
+        //if (status == 'Active') {  $('#FILETYPE').val('A'); $('#FILETYPE').removeAttr("disabled") }
+        //if (status == 'Vacate') {  $('#FILETYPE').val('T'); $('#FILETYPE').removeAttr("disabled") }
+        //if (status == 'Deregister') { $('#FILETYPE').val('S'); $('#FILETYPE').removeAttr("disabled") }
+        //if (status == 'Terminate') {  $('#FILETYPE').val(''); $('#FILETYPE').attr("disabled", "disabled") }
+
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

@@ -1,0 +1,351 @@
+﻿@model IEnumerable<WebApplication1.CSTRANM>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CONO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JOBNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CASENO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CASECODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DUEDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENTDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRITEM1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRITEM2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRITEM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTAX1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTAX2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTAX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRSIGN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRSITEM1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRSITEM2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRSITEM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRSTAX1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRSTAX2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRSTAX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRSAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRSAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRSAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRITEMOS1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRITEMOS2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRITEMOS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTAXOS1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTAXOS2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTAXOS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TROS1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TROS2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TROS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPITEM1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPITEM2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPITEM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPTAX1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPTAX2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPTAX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COMPLETE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COMPLETED)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SEQNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REFCNT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSCOMSTR.COREGNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JOBNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CASENO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CASECODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DUEDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENTDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRTYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRITEM1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRITEM2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRITEM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRTAX1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRTAX2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRTAX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRAMT1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRAMT2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRSIGN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRSITEM1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRSITEM2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRSITEM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRSTAX1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRSTAX2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRSTAX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRSAMT1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRSAMT2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRSAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRITEMOS1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRITEMOS2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRITEMOS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRTAXOS1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRTAXOS2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRTAXOS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TROS1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TROS2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TROS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPTYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPITEM1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPITEM2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPITEM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPTAX1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPTAX2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPTAX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPAMT1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPAMT2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APPAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COMPLETE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COMPLETED)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SEQNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REFCNT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

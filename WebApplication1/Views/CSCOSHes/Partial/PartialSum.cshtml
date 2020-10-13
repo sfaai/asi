@@ -1,0 +1,87 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSCOSHEQ>
+
+@{
+    ViewBag.Title = "Summary";
+}
+
+<div class="border border-info bg-info" style="width:96vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.EQCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SCRIPT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CERTNO)
+        </th>
+
+        <th style="text-align:right">
+            @Html.DisplayNameFor(model => model.SHAREOS)
+        </th>
+
+        <th style="text-align:right">
+            @Html.DisplayNameFor(model => model.SAMT)
+        </th>
+
+
+    </tr>
+
+    @{
+        decimal totshr = 0;
+        decimal totamt = 0;
+        int cnt = 0;
+
+    }
+    @foreach (var item in Model)
+    {
+        totshr = totshr + item.SHAREOS;
+        totamt = totamt + item.SSHAREAMT;
+        cnt++;
+
+        <tr class="text-nowrap">
+
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.EQCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SCRIPTBool)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CERTNO)
+            </td>
+
+            <td style="text-align:right">
+                @Html.DisplayFor(modelItem => item.SHAREOS)
+            </td>
+
+            <td style="text-align:right">
+                @Html.DisplayFor(modelItem => item.SAMT)
+            </td>
+
+        </tr>
+    }
+    @if (cnt > 1)
+    {
+        <tr>
+            <td colspan="3" style="text-align:right"><strong>Total</strong></td>
+            <td style="text-align:right">
+                <strong> @totshr.ToString("N2")</strong>
+            </td>
+
+            <td style="text-align:right">
+                <strong>  @totamt.ToString("N2")</strong>
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,656 @@
+payment_id|company_id|payment_date|payment_taxrate|payment_amount|payment_calculatedtax|payment_total|payment_method|payment_remark|payment_confirmed|payment_cancelationreason|payment_createdby|mode_map|issue_bank|issue_date|issue_location|issue_refno|payment_no
+1|760|2018-01-06|0.00|0.00|0.00|0.00|Cash|""|f|system error|10|RHB Islamic Bank Berhad|||||21587
+3|690|2018-01-05|6.00|308.68|11.32|320.00|Transfer|""|t||10|Affin Bank Berhad|||||21589
+5|483|2018-01-11|6.00|283.77|17.03|300.80|Cheque|""|t||10|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-01-11|Local|MBB#395043|21631
+6|69|2018-01-11|6.00|400.00|15.00|415.00|Cheque|""|t||10|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-01-11|Local|417695|21633
+7|725|2018-01-11|6.00|45.00|2.70|47.70|Cheque|""|t||10|RHB Bank Berhad|Al Rajhi Banking & Investment Corporation (Malaysia) Berhad|2018-01-11|Local|000258|21634
+8|408|2018-01-11|6.00|95.00|5.70|100.70|Transfer|""|t||10|RHB Bank Berhad|||||21639
+9|101|2018-01-12|6.00|840.00|50.40|890.40|Transfer|""|t||10|RHB Bank Berhad|||||21640
+10|81|2018-01-12|6.00|80.00|4.80|84.80|Transfer|""|t||10|RHB Bank Berhad|||||21647
+11|84|2018-01-12|6.00|80.00|4.80|84.80|Transfer|""|t||10|RHB Bank Berhad|||||21648
+12|350|2018-01-12|6.00|238.68|11.32|250.00|Transfer|""|t||10|RHB Bank Berhad|||||21651
+13|662|2018-01-15|6.00|110.00|6.60|116.60|Cheque|""|t||10|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-01-05|Local|394849|21658
+14|25|2018-01-15|6.00|280.00|4.80|284.80|Transfer|""|t||10|RHB Bank Berhad|||||21659
+16|100|2018-01-16|6.00|100.00|6.00|106.00|Cash|""|t||10|RHB Bank Berhad|||||21665
+17|380|2018-01-16|6.00|840.00|50.40|890.40|Cheque|""|t||10|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-01-16|Local|164146|21666
+18|7|2018-01-16|6.00|238.68|11.32|250.00|Transfer|""|t||10|RHB Bank Berhad|||||21667
+19|776|2018-01-16|6.00|474.53|25.47|500.00|Transfer|""|t||10|RHB Bank Berhad|||||21669
+20|693|2018-01-17|6.00|569.00|32.34|601.34|Bankdraft|""|t||10|Affin Bank Berhad|||||21670
+21|136|2018-01-17|6.00|93.21|5.59|98.80|Cheque|""|t||10|RHB Bank Berhad|Public Bank Berhad|2018-01-17|Local|269526|21671
+22|360|2018-01-17|6.00|840.00|50.40|890.40|Transfer|""|t||10|RHB Bank Berhad|||||21676
+23|126|2018-01-17|6.00|223.00|13.38|236.38|Transfer|""|t||10|RHB Bank Berhad|||||21677
+24|337|2018-01-19|6.00|2077.55|124.65|2202.20|Cheque|""|f|Diffrent Company Name|10|RHB Bank Berhad|Public Bank Berhad|2018-01-12|Local|160313|21678
+25|295|2018-01-18|6.00|840.00|50.40|890.40|Cheque|""|t||10|RHB Bank Berhad|Hong Leong Bank Berhad|2018-01-18|Local|346824|21678
+15|751|2018-01-16|6.00|2850.11|149.89|3000.00|Cheque|""|f|Incorrect Gst amount|10|RHB Bank Berhad|CIMB Bank Berhad|2018-01-16|Local|000047|21664
+2|760|2018-01-06|6.00|1318.50|77.52|1396.02|Cash|""|f|Incorrect GST amount|10|RHB Bank Berhad|||||21587
+4|755|2018-01-10|6.00|2892.62|107.38|3000.00|Transfer|""|f|Incorect GST Amount|10|RHB Bank Berhad|||||21606
+26|755|2018-01-10|6.00|2889.62|110.38|3000.00|Other|""|t||2|RHB Bank Berhad|||||21606
+27|765|2018-01-11|6.00|985.00|59.10|1044.10|Bankdraft|""|f|havent finish key in|2|Affin Bank Berhad|||||21630
+28|765|2018-01-11|6.00|1004.72|60.28|1065.00|Cash|""|t||2|RHB Bank Berhad|||||21630
+29|132|2018-01-15|6.00|471.70|28.30|500.00|Cash|""|t||2|RHB Bank Berhad|||||21656
+30|751|2018-01-16|6.00|2843.21|156.79|3000.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-01-16|Local|000047|21664
+31|776|2018-01-18|6.00|2415.09|84.91|2500.00|Transfer|""|t||2|RHB Bank Berhad|||||21680
+32|600|2018-01-18|6.00|630.00|37.80|667.80|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-01-18|Local|993351|21681
+33|90|2018-01-18|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-01-23|Local|831324|21684
+34|404|2018-01-18|6.00|295.00|5.70|300.70|Transfer|""|t||2|RHB Bank Berhad|||||21686
+35|597|2018-01-18|6.00|180.00|4.80|184.80|Transfer|""|t||2|RHB Bank Berhad|||||21689
+36|402|2018-01-18|6.00|90.00|5.40|95.40|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-01-18|Local|480737|21690
+37|82|2018-01-19|6.00|280.00|4.80|284.80|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||21693
+38|378|2018-01-19|6.00|245.00|14.70|259.70|Transfer|""|t||2|RHB Bank Berhad|||||21694
+39|718|2018-01-19|6.00|120.00|7.20|127.20|Transfer|""|t||2|RHB Bank Berhad|||||21695
+40|307|2018-01-22|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-01-22|Local|665669|21700
+41|777|2018-01-23|6.00|474.53|25.47|500.00|Transfer|""|t||10|RHB Bank Berhad|||||21705
+42|629|2018-01-23|6.00|840.00|50.40|890.40|Cheque|""|t||10|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-01-23|Local|433287|21706
+43|285|2018-01-23|6.00|100.00|6.00|106.00|Transfer|""|t||10|RHB Bank Berhad|||||21709
+44|439|2018-01-23|6.00|650.00|15.00|665.00|Transfer|""|t||10|RHB Bank Berhad|||||21710
+45|121|2018-01-24|6.00|400.00|15.00|415.00|Cheque|""|t||10|RHB Bank Berhad|Public Bank Berhad|2018-01-24|Local|157593|21712
+46|453|2018-01-24|6.00|716.04|30.96|747.00|Cheque|""|t||10|RHB Bank Berhad|Public Bank Berhad|2018-01-24|Local|106440|21713
+47|285|2018-01-25|6.00|50.00|3.00|53.00|Transfer|""|t||2|RHB Bank Berhad|||||21717
+48|343|2018-01-25|6.00|455.00|25.50|480.50|Transfer|""|t||2|RHB Bank Berhad|||||21721
+49|454|2018-01-25|6.00|455.00|25.50|480.50|Other|""|t||10|RHB Bank Berhad|||||21722
+50|342|2018-01-25|6.00|1110.00|24.60|1134.60|Transfer|""|t||10|RHB Bank Berhad|||||21724
+51|188|2018-01-26|6.00|400.00|15.00|415.00|Cheque|""|t||10|RHB Bank Berhad|RHB Bank Berhad|2018-01-24|Local|""|21726
+52|185|2018-01-26|6.00|400.00|15.00|415.00|Cheque|""|t||10|RHB Bank Berhad|RHB Bank Berhad|2018-01-24|Local|828462|21727
+53|459|2018-01-26|6.00|238.68|11.32|250.00|Bankdraft|""|t||10|Affin Bank Berhad|||||21729
+54|436|2018-01-26|6.00|840.00|50.40|890.40|Cheque|""|t||10|RHB Bank Berhad|Public Bank Berhad|2018-01-24|Local|182764|21730
+55|436|2018-01-26|6.00|590.00|23.40|613.40|Cheque|""|t||10|RHB Bank Berhad|Public Bank Berhad|2018-01-26|Local|182763|21731
+56|53|2018-01-26|6.00|180.00|10.80|190.80|Transfer|""|t||10|RHB Bank Berhad|||||21732
+57|449|2018-01-26|6.00|238.68|11.32|250.00|Transfer|""|t||10|RHB Bank Berhad|||||21733
+58|448|2018-01-26|6.00|455.00|27.30|482.30|Transfer|""|t||10|RHB Bank Berhad|||||21734
+59|477|2018-01-29|6.00|418.02|16.08|434.10|Cash|""|t||10|RHB Bank Berhad|||||21736
+60|468|2018-01-29|6.00|1500.02|69.18|1569.20|Cheque|""|t||10|RHB Bank Berhad|Alliance Bank Malaysia Berhad|2018-01-26|Local|000007|21737
+61|250|2018-01-29|6.00|840.00|50.40|890.40|Cheque|""|t||10|RHB Bank Berhad|Public Bank Berhad|2018-01-29|Local|453322|21739
+62|376|2018-01-29|6.00|515.00|21.90|536.90|Cheque|""|t||10|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-01-29|Local|637673|21740
+63|345|2018-01-29|6.00|227.36|13.64|241.00|Transfer|""|t||10|RHB Bank Berhad|||||21741
+64|315|2018-01-29|6.00|238.68|11.32|250.00|Cheque|""|t||10|RHB Bank Berhad|Affin Bank Berhad|2018-01-29|Local|""|21743
+65|258|2018-01-29|6.00|840.00|50.40|890.40|Transfer|""|t||10|RHB Bank Berhad|||||21744
+66|632|2018-01-29|6.00|119.00|7.14|126.14|Transfer|""|t||10|RHB Bank Berhad|||||21745
+67|123|2018-01-30|6.00|400.00|15.00|415.00|Cheque|""|t||10|RHB Bank Berhad|Citibank Berhad|2018-01-26|Local|602974|21747
+68|701|2018-01-30|6.00|238.68|11.32|250.00|Cheque|""|t||10|RHB Bank Berhad|CIMB Bank Berhad|2018-01-30|Local|335487|21748
+69|106|2018-01-30|6.00|840.00|50.40|890.40|Transfer|""|t||10|RHB Bank Berhad|||||21750
+70|54|2018-01-30|6.00|840.00|50.40|890.40|Transfer|""|t||10|RHB Bank Berhad|||||21751
+71|702|2018-02-02|6.00|91.00|5.46|96.46|Transfer|""|t||10|RHB Bank Berhad|||||21755
+72|641|2018-02-02|6.00|237.00|12.42|249.42|Transfer|""|t||10|RHB Bank Berhad|||||21757
+73|677|2018-02-02|6.00|400.00|15.00|415.00|Transfer|""|t||10|RHB Bank Berhad|||||21762
+74|552|2018-02-03|6.00|100.00|0.00|100.00|Transfer|""|t||10|RHB Bank Berhad|||||21765
+75|291|2018-02-05|6.00|1490.00|68.40|1558.40|Cheque|""|t||10|RHB Bank Berhad|CIMB Bank Berhad|2018-02-05|Local|""|21766
+76|693|2018-02-05|6.00|550.00|15.00|565.00|Cheque|""|t||10|RHB Bank Berhad|CIMB Bank Berhad|2018-01-28|Local|331169|21767
+77|391|2018-02-06|6.00|1258.02|66.48|1324.50|Transfer|""|t||10|RHB Bank Berhad|||||21768
+78|295|2018-02-06|6.00|100.00|0.00|100.00|Cheque|""|t||10|RHB Bank Berhad|Hong Leong Bank Berhad|2018-02-06|Local|346920|21769
+79|399|2018-02-06|6.00|400.00|15.00|415.00|Cheque|""|t||10|RHB Bank Berhad|OCBC Bank (Malaysia) Berhad|2018-02-05|Local|600983|21770
+80|702|2018-02-06|6.00|130.00|7.80|137.80|Transfer|""|t||10|RHB Bank Berhad|||||21772
+81|738|2018-02-07|6.00|128.10|7.69|135.79|Cash|""|t||10|RHB Bank Berhad|||||21773
+82|39|2018-02-07|6.00|122.70|7.36|130.06|Transfer|""|t||10|RHB Bank Berhad|||||21780
+83|172|2018-02-08|6.00|69.00|4.14|73.14|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-02-08|Local|492962|21781
+84|104|2018-02-08|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-02-08|Local|618408|21783
+85|45|2018-02-08|6.00|430.00|25.80|455.80|Transfer|""|t||2|RHB Bank Berhad|||||21784
+86|641|2018-02-08|6.00|200.00|0.00|200.00|Other|""|t||2|RHB Bank Berhad|||||21785
+87|45|2018-02-08|6.00|80.00|4.80|84.80|Transfer|""|t||2|RHB Bank Berhad|||||21786
+88|199|2018-02-09|6.00|240.00|14.40|254.40|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-09|Local|478589|21788
+89|705|2018-02-09|6.00|2168.00|109.08|2277.08|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-08|Local|369383|21789
+90|613|2018-02-09|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||21791
+91|786|2018-02-09|6.00|2889.62|110.38|3000.00|Transfer|""|t||2|RHB Bank Berhad|||||21792
+92|228|2018-02-09|6.00|990.00|56.40|1046.40|Transfer|""|t||2|RHB Bank Berhad|||||21793
+93|77|2018-02-09|6.00|80.00|4.80|84.80|Transfer|""|t||2|RHB Bank Berhad|||||21794
+94|419|2018-02-12|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-02-09|Local|805330|21795
+95|183|2018-02-12|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-01-22|Local|368321|21797
+96|157|2018-02-12|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-01-22|Local|313084|21798
+97|58|2018-02-12|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-09|Local|194819|21800
+99|292|2018-02-12|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||21803
+100|227|2018-02-12|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||21804
+101|610|2018-02-12|6.00|115.00|6.90|121.90|Transfer|""|t||2|RHB Bank Berhad|||||21805
+102|787|2018-02-12|6.00|474.53|25.47|500.00|Transfer|""|t||2|RHB Bank Berhad|||||21806
+98|110|2018-02-12|6.00|418.00|16.08|434.08|Cheque|""|f|key in wrongly|2|RHB Bank Berhad|CIMB Bank Berhad|2018-02-10|Local|000074|21801
+103|110|2018-02-12|6.00|807.08|39.43|846.51|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-02-10|Local|000074|21801
+104|695|2018-02-13|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-02-13|Local|107368|21808
+105|169|2018-02-13|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-06|Local|511319|21809
+106|415|2018-02-13|6.00|90.00|5.40|95.40|Cheque|""|t||2|Affin Bank Berhad|Affin Bank Berhad|2018-02-08|Local|213609|21810
+107|285|2018-02-13|6.00|238.68|11.32|250.00|Transfer|""|t||2|RHB Bank Berhad|||||21811
+108|780|2018-02-13|6.00|2989.62|116.38|3106.00|Transfer|""|t||2|RHB Bank Berhad|||||21812
+109|553|2018-02-14|6.00|400.00|15.00|415.00|Cheque|""|f|wrong or number|2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-12|Local|984145|21813
+110|553|2018-02-15|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-12|Local|984145|21814
+111|333|2018-02-15|6.00|65.00|3.90|68.90|Transfer|""|t||2|RHB Bank Berhad|||||21815
+112|35|2018-02-19|6.00|50.00|0.00|50.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-02-09|Local|520404|21817
+113|164|2018-02-19|6.00|1240.00|65.40|1305.40|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-02-19|Local|161402|21818
+114|198|2018-02-20|6.00|321.00|19.26|340.26|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||21819
+115|198|2018-02-20|6.00|396.00|23.76|419.76|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||21820
+116|331|2018-02-20|6.00|1240.00|65.40|1305.40|Transfer|""|t||2|RHB Bank Berhad|||||21821
+117|735|2018-02-20|6.00|381.40|22.88|404.28|Transfer|""|t||2|RHB Bank Berhad|||||21822
+118|44|2018-02-20|6.00|526.68|31.42|558.10|Transfer|""|t||2|RHB Bank Berhad|||||21823
+119|306|2018-02-21|6.00|1058.02|63.48|1121.50|Cash|""|t||2|RHB Bank Berhad|||||21824
+120|720|2018-02-21|6.00|250.68|11.32|262.00|Other|""|t||2|Malayan Banking Berhad (Maybank)|||||21826
+121|695|2018-02-21|6.00|601.32|36.08|637.40|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||21827
+122|533|2018-02-21|6.00|238.68|11.32|250.00|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||21828
+123|723|2018-02-21|6.00|3.00|0.00|3.00|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||21829
+124|448|2018-02-21|6.00|135.00|8.10|143.10|Transfer|""|t||2|RHB Bank Berhad|||||21830
+125|378|2018-02-22|6.00|245.00|14.70|259.70|Transfer|""|t||2|RHB Bank Berhad|||||21831
+126|460|2018-02-22|6.00|640.00|23.40|663.40|Cheque|""|t||2|RHB Bank Berhad|Standard Chartered Bank Malaysia Berhad|2018-02-14|Local|101466|21833
+127|623|2018-02-22|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-20|Local|394865|21834
+128|108|2018-02-22|6.00|47.70|2.86|50.56|Transfer|""|t||2|RHB Bank Berhad|||||21835
+129|315|2018-02-22|6.00|80.00|4.80|84.80|Transfer|""|t||2|RHB Bank Berhad|||||21836
+130|594|2018-02-22|6.00|1240.00|65.40|1305.40|Transfer|""|t||2|RHB Bank Berhad|||||21837
+131|777|2018-02-22|6.00|2595.09|92.71|2687.80|Transfer|""|t||2|RHB Bank Berhad|||||21838
+132|695|2018-02-23|6.00|235.85|14.15|250.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-02-23|Local|351850|21839
+133|622|2018-02-23|6.00|238.68|11.32|250.00|Transfer|""|t||2|RHB Bank Berhad|||||21840
+134|552|2018-02-23|6.00|120.00|7.20|127.20|Transfer|""|t||2|RHB Bank Berhad|||||21841
+135|64|2018-02-26|6.00|160.00|9.60|169.60|Transfer|""|t||2|RHB Bank Berhad|||||21844
+136|155|2018-02-26|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-02-21|Local|196826|21845
+137|165|2018-02-26|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-02-21|Local|365347|21846
+138|312|2018-02-26|6.00|238.68|11.32|250.00|Transfer|""|t||2|RHB Bank Berhad|||||21847
+139|51|2018-02-26|6.00|2059.54|43.24|2102.78|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-02-14|Local|997268|21848
+140|556|2018-02-26|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||21849
+141|153|2018-02-26|6.00|105.00|6.30|111.30|Transfer|""|t||2|RHB Bank Berhad|||||21850
+142|792|2018-02-22|6.00|974.53|25.47|1000.00|Cash|""|t||2|RHB Bank Berhad|||||21832
+143|643|2018-02-27|6.00|877.36|40.64|918.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-02-25|Local|157778|21851
+144|792|2018-02-27|6.00|1915.09|84.91|2000.00|Cash|""|t||2|RHB Bank Berhad|||||21852
+145|132|2018-02-27|6.00|238.68|11.32|250.00|Cash|""|t||2|RHB Bank Berhad|||||21853
+146|132|2018-02-27|6.00|20.00|1.20|21.20|Cash|""|t||2|RHB Bank Berhad|||||21854
+147|764|2018-02-27|6.00|339.00|20.34|359.34|Transfer|""|t||2|RHB Bank Berhad|||||21855
+148|586|2018-02-27|6.00|227.00|13.62|240.62|Cheque|""|t||2|Malayan Banking Berhad (Maybank)|Affin Bank Berhad|2018-02-15|Local|323852|21856
+149|330|2018-02-27|6.00|804.72|45.28|850.00|Cheque|""|t||2|Malayan Banking Berhad (Maybank)|Affin Bank Berhad|2018-02-26|Local|156118|21857
+150|337|2018-02-27|6.00|1512.45|75.75|1588.20|Transfer|""|t||2|RHB Bank Berhad|||||21858
+152|426|2018-02-28|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-28|Local|688539|21860
+153|146|2018-02-28|6.00|1240.00|65.40|1305.40|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-02-28|Local|109731|21861
+154|19|2018-02-28|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-02-28|Local|579293|21862
+155|534|2018-02-28|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-28|Local|624672|21863
+156|547|2018-02-28|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-02-26|Local|139394|21864
+157|268|2018-02-28|6.00|1095.00|65.70|1160.70|Transfer|""|t||2|RHB Bank Berhad|||||21865
+158|794|2018-02-28|6.00|50.00|0.00|50.00|Transfer|""|t||2|RHB Bank Berhad|||||21869
+159|788|2018-02-28|6.00|2415.09|84.91|2500.00|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-02-28|Local|003788|21870
+160|788|2018-02-09|6.00|474.53|25.47|500.00|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-02-09|Local|4003750|21790
+161|795|2018-02-26|6.00|474.53|25.47|500.00|Cash|""|t||2|RHB Bank Berhad|||||21842
+162|797|2018-02-28|6.00|474.53|25.47|500.00|Transfer|""|t||2|RHB Bank Berhad|||||21868
+163|309|2018-03-01|6.00|85.00|5.10|90.10|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-08|Local|000832|21871
+164|355|2018-03-01|6.00|80.00|4.80|84.80|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-08|Local|000042|21872
+165|339|2018-03-01|6.00|80.00|4.80|84.80|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-08|Local|000050|21873
+166|245|2018-03-01|6.00|205.00|12.30|217.30|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-08|Local|000059|21874
+167|742|2018-03-01|6.00|180.00|10.80|190.80|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-08|Local|158166|21875
+168|781|2018-03-01|6.00|228.68|13.72|242.40|Cheque|""|t||2|RHB Bank Berhad|Alliance Bank Malaysia Berhad|2018-03-08|Local|165384|21876
+169|784|2018-03-01|6.00|228.68|13.72|242.40|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-08|Local|000024|21877
+170|197|2018-03-01|6.00|110.00|6.60|116.60|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-08|Local|828509|21878
+171|184|2018-03-01|6.00|77.00|4.62|81.62|Bankdraft|""|t||2|Affin Bank Berhad|||||21879
+172|188|2018-03-01|6.00|992.00|59.52|1051.52|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-08|Local|828509|21880
+173|507|2018-03-01|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-22|Local|670049|21883
+174|402|2018-03-02|6.00|1270.00|67.20|1337.20|Cheque|""|t||2|RHB Bank Berhad|CIMB Islamic Bank Berhad|2018-02-23|Local|480754|21884
+175|549|2018-03-02|6.00|400.00|15.00|415.00|Cash|""|t||2|RHB Bank Berhad|||||21885
+176|540|2018-03-02|6.00|615.00|27.90|642.90|Cash|""|f|key in not complite.|2|RHB Bank Berhad|||||21886
+177|540|2018-03-05|0.00|0.00|0.00|0.00|Bankdraft|""|f|wrong company name|2|Affin Bank Berhad|||||21887
+178|414|2018-03-05|6.00|1091.60|65.40|1157.00|Cash|""|t||2|RHB Bank Berhad|||||21887
+179|458|2018-03-05|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-03-02|Local|766481|21888
+180|286|2018-03-05|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-02|Local|162335|21889
+181|209|2018-03-05|6.00|1310.90|65.40|1376.30|Transfer|""|t||2|RHB Bank Berhad|||||21890
+182|726|2018-03-05|6.00|262.00|15.72|277.72|Transfer|""|t||2|RHB Bank Berhad|||||21891
+183|108|2018-03-05|6.00|178.00|10.68|188.68|Transfer|""|t||2|RHB Bank Berhad|||||21892
+151|727|2018-02-27|6.00|400.00|15.00|415.00|Transfer|""|f|wrong invoices|2|RHB Bank Berhad|||||21859
+184|527|2018-03-05|6.00|15.00|0.90|15.90|Transfer|""|t||2|RHB Bank Berhad|||||21893
+185|746|2018-03-05|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||21894
+186|318|2018-03-06|6.00|400.00|12.00|412.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-09|Local|217754|21895
+187|317|2018-03-06|6.00|278.68|13.72|292.40|Cheque|""|t||2|Malayan Banking Berhad (Maybank)|Hong Leong Bank Berhad|2018-03-02|Local|914284|21896
+188|795|2018-03-06|6.00|2415.09|84.91|2500.00|Transfer|""|t||2|RHB Bank Berhad|||||21897
+189|346|2018-03-06|6.00|1563.70|84.82|1648.52|Transfer|""|t||2|RHB Bank Berhad|||||21898
+190|712|2018-03-06|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||21899
+191|499|2018-03-06|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||21900
+192|696|2018-03-06|6.00|188.68|11.32|200.00|Transfer|""|t||2|RHB Bank Berhad|||||21901
+193|748|2018-03-06|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||21902
+194|250|2018-03-07|6.00|610.00|24.60|634.60|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-01|Local|453327|21904
+195|498|2018-03-07|6.00|335.00|20.10|355.10|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-27|Local|521800|21905
+196|739|2018-03-07|6.00|1558.25|84.50|1642.75|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-07|Local|958276|21906
+197|290|2018-03-07|6.00|1245.00|62.70|1307.70|Transfer|""|t||2|RHB Bank Berhad|||||21907
+198|800|2018-03-07|6.00|1588.00|95.28|1683.28|Transfer|""|t||2|RHB Bank Berhad|||||21908
+199|608|2018-03-08|6.00|188.68|11.32|200.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-03-08|Local|192230|21909
+200|53|2018-03-08|6.00|80.00|4.80|84.80|Transfer|""|t||2|RHB Bank Berhad|||||21910
+201|801|2018-03-14|6.00|474.53|25.47|500.00|Cash|""|t||2|RHB Bank Berhad|||||21813
+202|727|2018-02-27|6.00|525.68|21.00|546.68|Transfer|""|t||2|RHB Bank Berhad|||||21859
+203|804|2018-03-08|6.00|946.23|53.77|1000.00|Transfer|""|t||2|RHB Bank Berhad|||||21911
+204|408|2018-03-08|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||21912
+205|801|2018-03-09|6.00|2915.09|114.91|3030.00|Cash|""|t||2|RHB Bank Berhad|||||21913
+206|802|2018-03-09|6.00|200.00|0.00|200.00|Cash|""|t||2|RHB Bank Berhad|||||21915
+207|805|2018-03-12|6.00|474.53|25.47|500.00|Cash|""|t||2|RHB Bank Berhad|||||21916
+208|678|2018-03-09|6.00|420.00|16.20|436.20|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-03-01|Local|335493|21914
+209|419|2018-03-12|6.00|368.96|16.20|385.16|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-03-27|Local|805339|21917
+210|308|2018-03-12|6.00|420.00|16.20|436.20|Cheque|""|t||2|Public Bank Berhad|Affin Bank Berhad|2018-03-06|Local|206851|21918
+211|8|2018-03-12|6.00|80.00|4.80|84.80|Transfer|""|t||2|RHB Bank Berhad|||||21919
+212|600|2018-03-12|6.00|727.68|38.86|766.54|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-01|Local|993439|21920
+213|599|2018-03-12|6.00|338.68|17.32|356.00|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-12|Local|001303|21921
+214|601|2018-03-12|6.00|318.68|16.12|334.80|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-01|Local|000874|21922
+215|104|2018-03-12|6.00|391.51|23.49|415.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-12|Local|618416|21923
+216|128|2018-03-12|6.00|130.00|7.80|137.80|Transfer|""|t||2|RHB Bank Berhad|||||21924
+217|787|2018-03-12|6.00|2415.09|84.91|2500.00|Cheque|""|t||2|RHB Bank Berhad|Standard Chartered Bank Malaysia Berhad|2018-03-10|Local|800111|21925
+218|126|2018-03-12|6.00|148.00|8.88|156.88|Transfer|""|t||2|RHB Bank Berhad|||||21926
+219|475|2018-03-12|6.00|238.68|11.32|250.00|Transfer|""|t||2|RHB Bank Berhad|||||21927
+220|805|2018-03-13|6.00|2415.09|84.91|2500.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-03-13|Local|679455|21928
+221|591|2018-03-13|6.00|185.00|11.10|196.10|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-02-28|Local|778112|21929
+222|738|2018-03-14|6.00|194.68|5.32|200.00|Cash|""|t||2|RHB Bank Berhad|||||21932
+223|344|2018-03-14|6.00|348.68|17.92|366.60|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-03-14|Local|038875|21933
+224|529|2018-03-14|6.00|498.68|25.12|523.80|Cheque|""|t||10|RHB Bank Berhad|CIMB Bank Berhad|2018-03-14|Local|344778|21934
+225|54|2018-03-14|6.00|258.20|15.49|273.69|Transfer|""|t||10|RHB Bank Berhad|||||21936
+226|124|2018-03-14|6.00|80.00|4.80|84.80|Transfer|""|t||10|RHB Bank Berhad|||||21937
+227|797|2018-03-15|6.00|2415.09|84.91|2500.00|Transfer|""|t||10|RHB Bank Berhad|||||21938
+228|188|2018-03-15|6.00|984.17|58.87|1043.04|Cheque|""|t||10|RHB Bank Berhad|RHB Bank Berhad|2018-03-14|Local|828537|21939
+229|189|2018-03-15|6.00|170.00|10.20|180.20|Cheque|""|t||10|RHB Bank Berhad|RHB Bank Berhad|2018-03-14|Local|828536|21940
+230|692|2018-03-15|6.00|400.00|15.00|415.00|Cheque|""|t||10|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-15|Local|164615|21941
+231|33|2018-03-15|6.00|50.00|0.00|50.00|Cheque|""|t||10|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-15|Local|644075|21942
+232|665|2018-03-15|6.00|457.57|27.45|485.02|Transfer|""|t||10|RHB Bank Berhad|||||21945
+233|543|2018-03-15|6.00|430.00|16.80|446.80|Transfer|""|t||10|RHB Bank Berhad|||||21946
+234|172|2018-03-16|6.00|89.00|5.34|94.34|Cheque|""|t||10|RHB Bank Berhad|Public Bank Berhad|2018-03-12|Local|492967|21947
+235|193|2018-03-16|6.00|89.00|5.34|94.34|Cheque|""|t||10|RHB Bank Berhad|Hong Leong Bank Berhad|2018-03-12|Local|364732|21948
+236|147|2018-03-16|6.00|89.00|5.34|94.34|Cheque|""|t||10|RHB Bank Berhad|Hong Leong Bank Berhad|2018-03-12|Local|364733|21949
+237|543|2018-03-16|6.00|130.00|7.80|137.80|Transfer|""|t||10|RHB Bank Berhad|||||21950
+238|263|2018-03-16|6.00|320.00|19.20|339.20|Transfer|""|t||10|RHB Bank Berhad|||||21951
+239|767|2018-03-16|6.00|160.00|9.60|169.60|Transfer|""|t||10|RHB Bank Berhad|||||21952
+240|767|2018-03-16|6.00|25.00|1.50|26.50|Transfer|""|t||10|RHB Bank Berhad|||||21953
+241|84|2018-03-16|6.00|400.00|15.00|415.00|Transfer|""|t||10|RHB Bank Berhad|||||21954
+242|473|2018-02-12|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-02-09|Local|348333|21796
+243|50|2018-01-12|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-01-12|Local|965879|21646
+244|808|2018-03-19|6.00|1110.00|66.60|1176.60|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-03-19|Local|000082|21955
+245|671|2018-03-19|6.00|338.68|11.32|350.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-16|Local|666773|21956
+246|552|2018-03-19|6.00|44.00|2.64|46.64|Transfer|""|t||2|RHB Bank Berhad|||||21957
+247|398|2018-03-19|6.00|67.08|4.02|71.10|Transfer|""|t||2|RHB Bank Berhad|||||21958
+248|538|2018-03-19|6.00|90.00|5.40|95.40|Transfer|""|t||2|RHB Bank Berhad|||||21959
+249|538|2018-03-19|6.00|570.00|34.20|604.20|Transfer|""|t||2|RHB Bank Berhad|||||21960
+250|34|2018-03-19|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||21961
+251|401|2018-03-19|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-19|Local|116736|21962
+252|307|2018-03-19|6.00|774.25|44.65|818.90|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-16|Local|046447|21963
+253|682|2018-03-20|6.00|650.00|18.00|668.00|Transfer|""|t||2|RHB Bank Berhad|||||21964
+254|770|2018-03-20|6.00|325.00|19.50|344.50|Transfer|""|t||2|Affin Bank Berhad|||||21965
+255|399|2018-03-20|6.00|1138.68|65.32|1204.00|Transfer|""|t||2|RHB Bank Berhad|||||21966
+256|572|2018-03-21|6.00|1600.00|85.20|1685.20|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-21|Local|000049|21967
+257|130|2018-03-21|6.00|671.98|40.32|712.30|Cheque|""|t||2|Malayan Banking Berhad (Maybank)|Affin Bank Berhad|2018-03-20|Local|""|21968
+258|807|2018-03-21|6.00|1179.00|70.74|1249.74|Transfer|""|t||2|RHB Bank Berhad|||||21969
+259|139|2018-01-17|6.00|80.80|4.85|85.65|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-01-17|Local|428034|21674
+260|131|2018-03-22|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||21970
+261|153|2018-03-22|6.00|232.00|13.92|245.92|Transfer|""|t||2|RHB Bank Berhad|||||21971
+262|272|2018-03-22|6.00|460.00|18.60|478.60|Transfer|""|t||2|RHB Bank Berhad|||||21972
+263|742|2018-03-22|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||21973
+264|251|2018-03-22|6.00|630.00|25.80|655.80|Transfer|""|t||2|RHB Bank Berhad|||||21974
+265|456|2018-03-22|6.00|460.00|15.60|475.60|Transfer|""|t||2|RHB Bank Berhad|||||21975
+266|448|2018-03-22|6.00|666.78|19.42|686.20|Transfer|""|t||2|RHB Bank Berhad|||||21976
+267|482|2018-03-22|6.00|600.00|24.00|624.00|Transfer|""|t||2|RHB Bank Berhad|||||21977
+268|357|2018-03-22|6.00|1548.73|65.30|1614.03|Transfer|""|t||2|RHB Bank Berhad|||||21978
+269|67|2018-03-22|6.00|1043.40|56.60|1100.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-03-20|Local|364735|21979
+270|798|2018-03-23|6.00|720.00|31.20|751.20|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-03-23|Local|000274|21980
+271|268|2018-03-23|6.00|44.00|2.64|46.64|Transfer|""|t||2|RHB Bank Berhad|||||21981
+272|503|2018-03-23|6.00|1500.00|90.00|1590.00|Transfer|""|t||2|RHB Bank Berhad|||||21982
+273|504|2018-03-23|6.00|4845.00|290.70|5135.70|Transfer|""|t||2|RHB Bank Berhad|||||21983
+274|561|2018-03-23|6.00|4950.00|288.00|5238.00|Transfer|""|t||2|RHB Bank Berhad|||||21984
+275|615|2018-03-26|6.00|342.00|17.52|359.52|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-26|Local|850905|21985
+276|111|2018-03-26|6.00|602.36|36.14|638.50|Transfer|""|t||2|RHB Bank Berhad|||||21986
+277|809|2018-03-26|6.00|1330.00|79.80|1409.80|Transfer|""|t||2|RHB Bank Berhad|||||21987
+278|489|2018-03-26|6.00|315.00|18.90|333.90|Transfer|""|t||2|RHB Bank Berhad|||||21988
+279|408|2018-03-26|6.00|63.00|3.78|66.78|Transfer|""|t||2|RHB Bank Berhad|||||21989
+280|360|2018-03-26|6.00|77.00|4.62|81.62|Transfer|""|t||2|RHB Bank Berhad|||||21990
+281|711|2018-03-27|6.00|668.68|28.12|696.80|Cheque|""|t||2|Public Bank Berhad|Affin Bank Berhad|2018-03-26|Local|338366|21991
+282|45|2018-03-27|6.00|238.68|11.32|250.00|Transfer|""|t||2|RHB Bank Berhad|||||21992
+283|353|2018-03-27|6.00|155.00|9.30|164.30|Transfer|""|t||2|RHB Bank Berhad|||||21993
+284|703|2018-03-27|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|376865|21994
+285|427|2018-03-27|6.00|606.00|32.40|638.40|Transfer|""|t||2|RHB Bank Berhad|||||21996
+286|641|2018-03-28|6.00|210.00|12.60|222.60|Transfer|""|t||2|RHB Bank Berhad|||||21997
+287|718|2018-03-28|6.00|160.38|9.62|170.00|Transfer|""|t||2|RHB Bank Berhad|||||21998
+288|698|2018-03-28|6.00|139.00|8.34|147.34|Transfer|""|t||2|RHB Bank Berhad|||||21999
+289|107|2018-03-28|6.00|400.00|15.00|415.00|Transfer|""|t||2|Affin Bank Berhad|||||22000
+290|673|2018-03-28|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22001
+291|117|2018-03-29|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-27|Local|397655|22002
+292|718|2018-03-29|6.00|2940.00|162.60|3102.60|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-03-29|Local|002081|22003
+293|774|2018-03-29|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-29|Local|468809|22004
+294|108|2018-03-29|6.00|91.00|5.46|96.46|Transfer|""|t||2|RHB Bank Berhad|||||22005
+295|803|2018-03-29|6.00|161.00|9.66|170.66|Transfer|""|t||2|RHB Bank Berhad|||||22006
+296|133|2018-03-29|6.00|176.20|10.57|186.77|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|282243|22007
+297|139|2018-03-29|6.00|136.20|8.17|144.37|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|428111|22008
+298|119|2018-03-29|6.00|176.20|10.57|186.77|Cheque|""|t||2|RHB Bank Berhad|AmBank (M) Berhad|2018-03-26|Local|159230|22009
+299|157|2018-03-29|6.00|136.20|8.17|144.37|Cheque|""|t||2|RHB Bank Berhad|AmBank (M) Berhad|2018-03-26|Local|313085|22010
+300|138|2018-03-29|6.00|194.20|11.65|205.85|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|461427|22012
+301|56|2018-03-29|6.00|176.20|10.57|186.77|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|451177|22013
+302|165|2018-03-29|6.00|176.20|10.57|186.77|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|010322|22014
+303|178|2018-03-29|6.00|176.20|10.57|186.77|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|461364|22015
+304|172|2018-03-29|6.00|20.00|1.20|21.20|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|492972|22016
+305|38|2018-04-02|6.00|868.68|41.32|910.00|Transfer|""|t||2|RHB Bank Berhad|||||22017
+306|83|2018-03-29|6.00|176.20|10.57|186.77|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|010322|22018
+307|183|2018-03-29|6.00|176.20|10.57|186.77|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|010322|22019
+308|750|2018-03-29|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22020
+309|662|2018-03-30|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-30|Local|394882|22021
+310|497|2018-03-30|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-30|Local|722742|22022
+311|565|2018-03-30|6.00|400.00|15.00|415.00|Cash|""|t||2|RHB Bank Berhad|||||22023
+312|314|2018-03-30|6.00|471.70|28.30|500.00|Transfer|""|t||2|RHB Bank Berhad|||||22025
+313|549|2018-03-30|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22026
+314|40|2018-03-30|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22027
+315|39|2018-03-30|6.00|420.00|16.20|436.20|Transfer|""|t||2|RHB Bank Berhad|||||22028
+316|816|2018-03-30|6.00|474.53|25.47|500.00|Transfer|""|t||2|RHB Bank Berhad|||||22024
+317|606|2018-03-30|6.00|1920.00|103.20|2023.20|Transfer|""|t||2|RHB Bank Berhad|||||22029
+318|39|2018-03-30|6.00|98.00|5.88|103.88|Transfer|""|t||2|RHB Bank Berhad|||||22030
+319|688|2018-03-30|6.00|450.00|15.00|465.00|Transfer|""|t||2|RHB Bank Berhad|||||22031
+320|459|2018-03-30|6.00|1240.00|65.40|1305.40|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-26|Local|185013|22032
+321|447|2018-04-02|6.00|1168.23|41.77|1210.00|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-03-27|Local|862269|22033
+322|408|2018-04-02|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22034
+323|364|2018-04-02|6.00|1286.00|65.76|1351.76|Transfer|""|t||2|RHB Bank Berhad|||||22035
+324|186|2018-04-02|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22036
+325|437|2018-04-02|6.00|48.02|2.88|50.90|Transfer|""|t||2|RHB Bank Berhad|||||22037
+326|401|2018-04-03|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-03|Local|116744|22038
+327|381|2018-04-03|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22039
+328|700|2018-04-03|6.00|130.00|7.80|137.80|Transfer|""|t||2|Affin Bank Berhad|||||22040
+329|84|2018-04-04|6.00|50.00|0.00|50.00|Transfer|""|t||2|RHB Bank Berhad|||||22041
+330|340|2018-04-04|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-28|Local|968335|22043
+331|453|2018-04-04|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-03|Local|161680|22044
+332|818|2018-04-04|6.00|474.53|25.47|500.00|Cash|""|t||2|RHB Bank Berhad|||||22045
+333|250|2018-04-04|6.00|68.00|4.08|72.08|Transfer|""|t||2|RHB Bank Berhad|||||22046
+334|76|2018-04-04|6.00|155.00|9.30|164.30|Transfer|""|t||2|RHB Bank Berhad|||||22047
+335|263|2018-04-04|6.00|110.00|6.60|116.60|Transfer|""|t||2|RHB Bank Berhad|||||22048
+336|128|2018-04-04|6.00|85.00|5.10|90.10|Transfer|""|t||2|RHB Bank Berhad|||||22049
+337|257|2018-04-04|6.00|1200.59|63.04|1263.63|Transfer|""|t||2|RHB Bank Berhad|||||22050
+338|400|2018-04-05|6.00|1515.00|86.10|1601.10|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-04-05|Local|000300|22052
+339|725|2018-04-05|6.00|582.00|34.92|616.92|Transfer|""|t||2|RHB Bank Berhad|||||22053
+340|576|2018-04-05|6.00|550.00|18.00|568.00|Transfer|""|t||2|RHB Bank Berhad|||||22054
+341|610|2018-04-05|6.00|115.00|6.90|121.90|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-03|Local|036487|22055
+342|187|2018-04-05|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22056
+343|118|2018-04-06|6.00|418.00|16.08|434.08|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-04-02|Local|000069|22057
+345|343|2018-04-06|6.00|610.00|24.60|634.60|Transfer|""|t||2|RHB Bank Berhad|||||22059
+346|454|2018-04-06|6.00|588.68|23.32|612.00|Transfer|""|t||2|RHB Bank Berhad|||||22060
+347|290|2018-04-06|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22061
+348|75|2018-04-06|6.00|130.19|4.81|135.00|Transfer|""|t||2|RHB Bank Berhad|||||22062
+349|489|2018-04-06|6.00|268.68|13.12|281.80|Transfer|""|t||2|RHB Bank Berhad|||||22063
+350|455|2018-04-09|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-04-05|Local|566911|22066
+351|704|2018-04-09|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-04|Local|048171|22069
+352|819|2018-04-09|6.00|2889.62|110.38|3000.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-04|Local|048171|22070
+353|124|2018-04-09|6.00|931.40|55.88|987.28|Transfer|""|t||2|RHB Bank Berhad|||||22071
+354|748|2018-04-09|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Islamic Banking Berhad|2018-04-09|Local|005902|22072
+355|423|2018-04-10|6.00|468.02|19.08|487.10|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-10|Local|817727|22073
+356|423|2018-04-10|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-10|Local|817726|22074
+357|788|2018-04-10|6.00|160.00|9.60|169.60|Transfer|""|t||2|RHB Bank Berhad|||||22075
+358|126|2018-04-10|6.00|80.00|4.80|84.80|Transfer|""|t||2|RHB Bank Berhad|||||22076
+359|421|2018-04-10|6.00|1300.00|69.00|1369.00|Transfer|""|t||2|RHB Bank Berhad|||||22077
+360|312|2018-04-11|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-09|Local|757824|22078
+361|809|2018-04-11|6.00|110.00|6.60|116.60|Cash|""|t||2|RHB Bank Berhad|||||22079
+362|804|2018-04-11|6.00|3068.91|115.09|3184.00|Transfer|""|t||2|RHB Bank Berhad|||||22080
+363|213|2018-04-11|6.00|600.00|21.00|621.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-28|Local|734962|22081
+364|490|2018-04-11|6.00|238.68|11.32|250.00|Transfer|""|t||2|RHB Bank Berhad|||||22082
+365|350|2018-04-11|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-04-12|Local|""|22083
+366|258|2018-04-11|6.00|465.00|26.10|491.10|Transfer|""|t||2|RHB Bank Berhad|||||22084
+367|740|2018-04-11|6.00|1196.00|71.76|1267.76|Transfer|""|t||2|RHB Bank Berhad|||||22085
+368|680|2018-04-11|6.00|192.00|11.52|203.52|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-06|Local|713520|22086
+369|498|2018-04-11|6.00|192.00|11.52|203.52|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-06|Local|667507|22087
+370|666|2018-04-11|6.00|192.00|11.52|203.52|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-06|Local|273185|22088
+371|553|2018-04-11|6.00|192.00|11.52|203.52|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-06|Local|984146|22089
+372|307|2018-04-12|6.00|115.00|6.90|121.90|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-10|Local|665678|22090
+373|367|2018-04-12|6.00|34.00|2.04|36.04|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-09|Local|615854|22091
+374|376|2018-04-12|6.00|10.00|0.60|10.60|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-26|Local|693702|22092
+375|591|2018-04-12|6.00|214.00|12.84|226.84|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-03|Local|783177|22093
+376|656|2018-04-12|6.00|37.00|2.22|39.22|Cash|""|t||2|RHB Bank Berhad|||||22094
+377|440|2018-04-12|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-12|Local|688543|22095
+378|34|2018-04-12|6.00|238.68|11.32|250.00|Transfer|""|t||2|RHB Bank Berhad|||||22096
+379|326|2018-04-12|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|AmBank (M) Berhad|2018-04-09|Local|116258|22097
+380|326|2018-04-12|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-04-02|Local|115098|22098
+381|405|2018-04-12|6.00|1240.00|65.40|1305.40|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-04-05|Local|512083|22099
+382|469|2018-04-12|6.00|1240.00|65.40|1305.40|Transfer|""|t||2|RHB Bank Berhad|||||22100
+383|52|2018-04-13|6.00|584.81|26.09|610.90|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-02|Local|261374|22101
+384|398|2018-04-13|6.00|500.00|21.00|521.00|Transfer|""|t||2|RHB Bank Berhad|||||22102
+385|374|2018-04-13|6.00|735.00|39.30|774.30|Transfer|""|t||2|RHB Bank Berhad|||||22103
+386|153|2018-04-13|6.00|54.00|3.24|57.24|Transfer|""|t||2|RHB Bank Berhad|||||22104
+387|45|2018-04-13|6.00|1043.40|56.60|1100.00|Transfer|""|t||2|RHB Bank Berhad|||||22105
+388|258|2018-04-13|6.00|356.04|18.36|374.40|Transfer|""|t||2|RHB Bank Berhad|||||22106
+389|543|2018-04-13|6.00|210.00|12.60|222.60|Transfer|""|t||2|RHB Bank Berhad|||||22107
+390|12|2018-04-13|6.00|135.00|8.10|143.10|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-12|Local|133046|22108
+391|657|2018-04-13|6.00|1037.43|53.25|1090.68|Transfer|""|t||2|RHB Bank Berhad|||||22109
+392|719|2018-04-16|6.00|1043.40|56.60|1100.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-02-27|Local|666733|22110
+393|180|2018-04-16|6.00|1043.40|56.60|1100.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-16|Local|058764|22111
+394|295|2018-04-16|6.00|100.00|6.00|106.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-02-26|Local|346978|22113
+395|665|2018-04-16|6.00|1403.00|68.40|1471.40|Transfer|""|t||2|RHB Bank Berhad|||||22114
+396|204|2018-04-16|6.00|640.38|33.62|674.00|Transfer|""|t||2|RHB Bank Berhad|||||22115
+397|470|2018-04-16|6.00|640.38|33.62|674.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-04-17|Local|""|22116
+398|328|2018-04-16|6.00|670.38|35.42|705.80|Transfer|""|t||2|RHB Bank Berhad|||||22117
+399|43|2018-04-17|6.00|332.50|19.95|352.45|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-13|Local|455427|22118
+400|287|2018-04-17|6.00|1050.00|49.20|1099.20|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-04-13|Local|971677|22119
+401|541|2018-04-17|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-03-29|Local|462035|22120
+402|35|2018-04-17|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-04-13|Local|520317|22121
+403|655|2018-04-18|6.00|400.00|15.00|415.00|Cash|""|t||2|RHB Bank Berhad|||||22122
+404|265|2018-04-18|6.00|1340.00|71.40|1411.40|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-03-31|Local|496220|22123
+405|273|2018-04-18|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-16|Local|007622|22124
+406|782|2018-04-18|6.00|381.40|22.88|404.28|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-02|Local|488602|22125
+407|813|2018-04-18|6.00|1110.00|66.60|1176.60|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-10|Local|234918|22127
+408|402|2018-04-18|6.00|110.00|6.60|116.60|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-04-18|Local|480773|22128
+409|513|2018-04-19|6.00|192.00|11.52|203.52|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-05|Local|400299|22130
+410|507|2018-04-19|6.00|192.00|11.52|203.52|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-05|Local|670067|22131
+411|50|2018-04-19|6.00|608.68|27.52|636.20|Cheque|""|t||2|RHB Bank Berhad|AmBank (M) Berhad|2018-04-18|Local|979117|22132
+412|67|2018-04-19|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-04-20|Local|364739|22133
+413|310|2018-04-19|6.00|1045.00|38.70|1083.70|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-19|Local|217682|22134
+414|189|2018-04-19|6.00|1143.60|66.82|1210.42|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-04-18|Local|828545|22135
+415|188|2018-04-19|6.00|128.00|7.68|135.68|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-04-18|Local|828545|22136
+416|438|2018-04-19|6.00|1190.00|66.00|1256.00|Transfer|""|t||2|RHB Bank Berhad|||||22137
+417|295|2018-04-20|6.00|111.04|6.66|117.70|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-04-19|Local|347169|22138
+418|186|2018-04-20|6.00|955.00|57.30|1012.30|Transfer|""|t||2|RHB Bank Berhad|||||22139
+419|253|2018-04-20|6.00|498.00|29.70|527.70|Transfer|""|t||2|RHB Bank Berhad|||||22140
+420|406|2018-04-20|6.00|95.00|5.70|100.70|Transfer|""|t||2|RHB Bank Berhad|||||22141
+421|531|2018-04-20|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-16|Local|171618|22142
+422|812|2018-04-20|6.00|2889.62|110.38|3000.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-04-17|Local|364738|22143
+423|55|2018-04-20|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-04-17|Local|364738|22144
+424|147|2018-04-20|6.00|554.00|24.24|578.24|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-04-17|Local|364738|22145
+425|178|2018-04-20|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-18|Local|461367|22146
+426|83|2018-04-20|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-17|Local|010333|22147
+427|183|2018-04-20|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-04-17|Local|010333|22148
+428|193|2018-04-20|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-17|Local|010333|22149
+429|165|2018-04-20|6.00|974.00|58.44|1032.44|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-17|Local|010333|22150
+430|133|2018-04-23|6.00|634.00|29.04|663.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-18|Local|282247|22151
+431|139|2018-04-20|6.00|974.00|58.44|1032.44|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-18|Local|428122|22152
+432|119|2018-04-20|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|AmBank (M) Berhad|2018-04-18|Local|159232|22153
+433|155|2018-04-20|6.00|205.00|12.30|217.30|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-18|Local|196829|22154
+434|157|2018-04-20|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-04-18|Local|313086|22155
+435|136|2018-04-20|6.00|134.00|8.04|142.04|Cheque|""|t||2|Affin Bank Berhad|Affin Bank Berhad|2018-04-18|Local|269527|22156
+436|138|2018-04-20|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-18|Local|461431|22157
+437|56|2018-04-18|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-18|Local|451179|22158
+438|2|2018-04-20|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-18|Local|454261|22159
+439|533|2018-04-23|6.00|1646.00|87.96|1733.96|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||22160
+440|818|2018-04-23|6.00|2415.09|84.91|2500.00|Cash|""|t||2|RHB Bank Berhad|||||22161
+441|41|2018-04-23|6.00|2341.00|18.60|2359.60|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-19|Local|169491|22162
+442|633|2018-04-23|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22163
+443|345|2018-04-23|6.00|1240.00|65.40|1305.40|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-04-24|Local|""|22164
+444|738|2018-04-23|6.00|1114.80|65.09|1179.89|Transfer|""|t||2|RHB Bank Berhad|||||22165
+445|28|2018-04-24|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22166
+446|559|2018-04-24|6.00|110.00|6.60|116.60|Transfer|""|t||2|RHB Bank Berhad|||||22167
+447|816|2018-04-24|6.00|2415.09|84.91|2500.00|Transfer|""|t||2|RHB Bank Berhad|||||22168
+448|228|2018-04-24|6.00|90.00|5.40|95.40|Transfer|""|t||2|RHB Bank Berhad|||||22169
+449|821|2018-04-24|6.00|1179.00|70.74|1249.74|Transfer|""|t||2|RHB Bank Berhad|||||22170
+450|333|2018-04-24|6.00|350.00|18.00|368.00|Transfer|""|t||2|RHB Bank Berhad|||||22171
+451|353|2018-04-24|6.00|470.00|19.20|489.20|Transfer|""|t||2|RHB Bank Berhad|||||22172
+344|316|2018-04-06|6.00|840.00|50.40|890.40|Cheque|""|f|Key in wrongly|2|RHB Bank Berhad|OCBC Bank (Malaysia) Berhad|2018-04-04|Local|000026|22058
+452|316|2018-04-06|6.00|1240.00|65.40|1305.40|Cheque|""|t||2|RHB Bank Berhad|OCBC Bank (Malaysia) Berhad|2018-04-04|Local|000026|22058
+453|413|2018-04-25|6.00|651.32|39.08|690.40|Transfer|""|t||2|RHB Bank Berhad|||||22173
+455|701|2018-04-25|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-04-23|Local|335503|22176
+456|617|2018-04-25|6.00|1818.60|100.12|1918.72|Transfer|""|t||2|RHB Bank Berhad|||||22177
+457|128|2018-04-25|6.00|27.00|1.62|28.62|Transfer|""|t||2|RHB Bank Berhad|||||22179
+458|538|2018-04-25|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22181
+459|202|2018-04-25|6.00|1520.00|82.20|1602.20|Transfer|""|t||2|RHB Bank Berhad|||||22182
+460|795|2018-04-25|6.00|416.04|24.96|441.00|Transfer|""|t||2|RHB Bank Berhad|||||22183
+454|724|2018-04-25|6.00|1300.00|69.00|1369.00|Cheque|""|f|Wrong Company|2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-25|Local|945774|22174
+461|827|2018-04-25|6.00|15.00|0.90|15.90|Cash|""|t||2|RHB Bank Berhad|||||22174
+463|597|2018-04-26|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22184
+464|135|2018-04-26|6.00|1072.00|61.32|1133.32|Transfer|""|t||2|RHB Bank Berhad|||||22185
+465|595|2018-04-26|6.00|64.00|3.84|67.84|Cheque|""|t||2|RHB Bank Berhad|HSBC Bank Malaysia Berhad|2018-04-26|Local|433524|22186
+466|596|2018-04-26|6.00|69.00|4.14|73.14|Cheque|""|t||2|RHB Bank Berhad|HSBC Bank Malaysia Berhad|2018-04-26|Local|403870|22187
+467|488|2018-04-26|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-26|Local|096211|22188
+468|126|2018-04-26|6.00|583.40|33.20|616.60|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-04-27|Local|003921|22189
+470|556|2018-04-26|6.00|339.00|20.34|359.34|Transfer|""|t||2|RHB Bank Berhad|||||22191
+471|550|2018-04-26|6.00|339.00|20.34|359.34|Transfer|""|t||2|RHB Bank Berhad|||||22192
+472|397|2018-04-26|6.00|1348.02|56.88|1404.90|Transfer|""|t||2|RHB Bank Berhad|||||22193
+473|364|2018-04-26|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22195
+474|624|2018-04-27|6.00|1240.00|65.40|1305.40|Transfer|""|t||2|RHB Bank Berhad|||||22196
+475|359|2018-04-27|6.00|400.00|15.00|415.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-04-24|Local|620391|22197
+476|308|2018-04-27|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-04-24|Local|822332|22198
+477|354|2018-04-27|6.00|399.98|15.00|414.98|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-04-24|Local|582458|22200
+478|100|2018-04-27|6.00|420.00|25.20|445.20|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-26|Local|058768|22201
+479|168|2018-04-27|6.00|840.00|50.40|890.40|Transfer|""|f|wrongly key in|2|RHB Bank Berhad|||||22203
+480|168|2018-04-27|6.00|1240.00|65.40|1305.40|Transfer|""|t||2|RHB Bank Berhad|||||22203
+481|670|2018-04-27|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22204
+482|824|2018-04-25|6.00|474.53|25.47|500.00|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||22178
+483|825|2018-04-19|6.00|474.53|25.47|500.00|Cash|""|t||2|RHB Bank Berhad|||||22129
+484|825|2018-04-30|6.00|2465.09|84.91|2550.00|Cash|""|t||2|RHB Bank Berhad|||||22205
+485|142|2018-04-30|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22206
+486|141|2018-04-30|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22207
+469|163|2018-04-26|6.00|291.54|14.74|306.28|Cheque|""|f|WRONGLY KEY IN|2|RHB Bank Berhad|RHB Bank Berhad|2018-04-13|Local|866167|22190
+487|40|2018-04-30|6.00|96.00|5.76|101.76|Transfer|""|t||2|RHB Bank Berhad|||||22208
+488|680|2018-04-30|6.00|161.00|9.66|170.66|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-25|Local|713536|22209
+489|539|2018-04-30|6.00|280.00|16.80|296.80|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-04-19|Local|040970|22211
+490|593|2018-05-04|6.00|400.00|15.00|415.00|Cash|""|t||2|RHB Bank Berhad|||||22212
+491|548|2018-04-30|6.00|400.00|15.00|415.00|Cash|""|t||2|RHB Bank Berhad|||||22213
+492|95|2018-04-30|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22214
+493|290|2018-05-02|6.00|16934.72|28.48|16963.20|Transfer|""|t||2|RHB Bank Berhad|||||22215
+494|290|2018-05-02|6.00|9460.00|156.00|9616.00|Transfer|""|t||2|RHB Bank Berhad|||||22216
+495|325|2018-05-02|6.00|328.68|16.72|345.40|Transfer|""|t||2|RHB Bank Berhad|||||22217
+496|336|2018-05-02|6.00|370.00|16.20|386.20|Transfer|""|t||2|RHB Bank Berhad|||||22218
+497|787|2018-05-02|6.00|65.90|3.00|68.90|Transfer|""|t||2|RHB Bank Berhad|||||22219
+498|824|2018-05-03|6.00|2415.09|84.91|2500.00|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-05-03|Local|000020|22220
+499|36|2018-05-03|6.00|998.00|59.88|1057.88|Transfer|""|t||2|RHB Bank Berhad|||||22221
+500|35|2018-05-03|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22222
+501|431|2018-05-03|6.00|238.68|11.32|250.00|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||22223
+502|365|2018-05-03|6.00|410.00|15.60|425.60|Cheque|""|t||2|RHB Bank Berhad|OCBC Bank (Malaysia) Berhad|2018-05-02|Local|000998|22224
+503|366|2018-05-03|6.00|400.76|21.04|421.80|Cheque|""|t||2|RHB Bank Berhad|OCBC Bank (Malaysia) Berhad|2018-05-02|Local|000998|22225
+504|55|2018-05-03|6.00|44.00|2.64|46.64|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-04-26|Local|364741|22226
+505|610|2018-05-03|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-05-04|Local|0366529|22227
+506|677|2018-05-03|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-05-04|Local|""|22228
+507|494|2018-05-03|6.00|230.00|13.80|243.80|Cheque|""|t||2|Public Bank Berhad|Public Bank Berhad|2018-04-10|Local|095131|22229
+508|591|2018-05-03|6.00|1810.00|99.60|1909.60|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-02|Local|783348|22230
+509|112|2018-05-04|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-05-07|Local|""|22231
+510|272|2018-05-04|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22232
+511|815|2018-05-04|6.00|180.00|10.80|190.80|Transfer|""|t||2|RHB Bank Berhad|||||22233
+512|742|2018-05-04|6.00|330.00|19.80|349.80|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-05-07|Local|158211|22234
+513|626|2018-05-04|6.00|180.00|10.80|190.80|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-02|Local|023783|22235
+514|693|2018-05-04|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-05-05|Local|331172|22236
+515|535|2018-05-04|6.00|342.68|17.56|360.24|Transfer|""|t||2|RHB Bank Berhad|||||22237
+516|268|2018-05-04|6.00|220.00|13.20|233.20|Transfer|""|t||2|RHB Bank Berhad|||||22238
+517|280|2018-05-04|6.00|1240.00|65.40|1305.40|Transfer|""|t||2|RHB Bank Berhad|||||22239
+518|390|2018-05-04|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22240
+519|390|2018-05-04|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22241
+520|670|2018-05-07|6.00|440.00|17.40|457.40|Transfer|""|t||2|RHB Bank Berhad|||||22242
+521|701|2018-05-07|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-05-02|Local|335507|22243
+522|163|2018-05-07|6.00|24.00|1.44|25.44|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-04-27|Local|866185|22244
+523|804|2018-05-07|6.00|500.00|0.00|500.00|Transfer|""|t||2|RHB Bank Berhad|||||22245
+524|268|2018-05-07|6.00|985.00|57.30|1042.30|Transfer|""|t||2|RHB Bank Berhad|||||22246
+525|377|2018-05-07|6.00|471.70|28.30|500.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-05-08|Local|""|22247
+526|693|2018-05-07|6.00|1912.26|87.74|2000.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-05-05|Local|331171|22248
+527|290|2018-05-08|6.00|988.35|59.30|1047.65|Transfer|""|t||2|RHB Bank Berhad|||||22249
+528|288|2018-05-14|6.00|1240.00|65.40|1305.40|Transfer|""|t||2|RHB Bank Berhad|||||22253
+529|468|2018-05-14|6.00|333.68|20.02|353.70|Transfer|""|t||2|RHB Bank Berhad|||||22254
+530|344|2018-05-14|6.00|50.00|0.00|50.00|Transfer|""|t||2|RHB Bank Berhad|||||22255
+531|340|2018-05-14|6.00|250.00|15.00|265.00|Transfer|""|t||2|RHB Bank Berhad|||||22256
+532|741|2018-05-14|6.00|1137.74|62.26|1200.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-04-30|Local|000133|22257
+533|741|2018-05-14|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-04-30|Local|000134|22258
+534|342|2018-05-15|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-05-16|Local|""|22259
+535|380|2018-05-15|6.00|430.00|25.80|455.80|Transfer|""|t||2|RHB Bank Berhad|||||22260
+536|380|2018-05-15|6.00|639.00|24.30|663.30|Transfer|""|t||2|RHB Bank Berhad|||||22261
+537|505|2018-05-15|6.00|1240.00|65.40|1305.40|Transfer|""|t||2|RHB Bank Berhad|||||22262
+538|748|2018-05-15|6.00|161.04|9.66|170.70|Transfer|""|t||2|RHB Bank Berhad|||||22263
+539|434|2018-05-15|6.00|610.00|24.60|634.60|Transfer|""|t||2|RHB Bank Berhad|||||22264
+540|604|2018-05-15|6.00|648.00|38.88|686.88|Transfer|""|t||2|RHB Bank Berhad|||||22265
+541|359|2018-05-16|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-05-02|Local|620395|22266
+542|455|2018-05-16|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-05-02|Local|566915|22267
+543|230|2018-05-16|6.00|65.00|3.90|68.90|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-05-02|Local|000089|22268
+544|808|2018-05-16|6.00|480.19|19.81|500.00|Transfer|""|t||2|RHB Bank Berhad|||||22269
+545|580|2018-05-16|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22271
+546|700|2018-05-16|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22272
+547|611|2018-05-16|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22273
+548|24|2018-05-16|6.00|188.68|11.32|200.00|Transfer|""|t||2|RHB Bank Berhad|||||22274
+549|543|2018-05-16|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22275
+550|58|2018-05-16|6.00|1275.00|67.50|1342.50|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-16|Local|194832|22276
+551|533|2018-05-17|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22278
+552|438|2018-05-17|6.00|1437.87|1.13|1439.00|Transfer|""|t||2|RHB Bank Berhad|||||22279
+553|828|2018-05-18|6.00|2889.62|110.38|3000.00|Transfer|""|t||2|RHB Bank Berhad|||||22280
+554|726|2018-05-18|6.00|34.00|2.04|36.04|Transfer|""|t||2|RHB Bank Berhad|||||22282
+555|810|2018-05-18|6.00|1572.50|85.35|1657.85|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-17|Local|4416991|22283
+556|398|2018-05-18|6.00|416.96|25.02|441.98|Transfer|""|t||2|RHB Bank Berhad|||||22284
+557|352|2018-05-21|6.00|348.02|17.88|365.90|Transfer|""|t||2|RHB Bank Berhad|||||22285
+558|154|2018-05-21|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22286
+559|592|2018-05-21|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22287
+560|154|2018-05-21|6.00|135.20|8.11|143.31|Transfer|""|t||2|RHB Bank Berhad|||||22288
+561|154|2018-05-21|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22289
+562|592|2018-05-21|6.00|238.68|11.32|250.00|Transfer|""|t||2|RHB Bank Berhad|||||22290
+563|412|2018-05-21|6.00|1107.02|43.92|1150.94|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-05-02|Local|582281|22291
+564|341|2018-05-21|6.00|883.02|34.98|918.00|Cheque|""|t||2|RHB Bank Berhad|CIMB Bank Berhad|2018-05-21|Local|619501|22292
+565|697|2018-05-22|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-11|Local|334389|22293
+567|647|2018-05-22|6.00|33.00|1.98|34.98|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-03|Local|000514|22295
+568|101|2018-05-22|6.00|161.90|8.76|170.66|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-18|Local|402330|22296
+569|307|2018-05-22|6.00|455.00|27.30|482.30|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-22|Local|665682|22297
+570|660|2018-05-22|6.00|678.00|40.68|718.68|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-07|Local|168158|22298
+571|559|2018-05-22|6.00|254.00|15.24|269.24|Transfer|""|t||2|RHB Bank Berhad|||||22299
+572|680|2018-05-23|6.00|740.00|23.40|763.40|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-22|Local|713571|22300
+573|365|2018-05-23|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22301
+574|803|2018-05-23|6.00|81.00|4.86|85.86|Transfer|""|t||2|RHB Bank Berhad|||||22303
+575|108|2018-05-23|6.00|578.00|34.68|612.68|Transfer|""|t||2|RHB Bank Berhad|||||22304
+576|830|2018-05-23|6.00|65.00|3.90|68.90|Transfer|""|t||2|RHB Bank Berhad|||||22305
+577|251|2018-05-23|6.00|890.00|50.40|940.40|Transfer|""|t||2|RHB Bank Berhad|||||22306
+578|382|2018-05-23|6.00|238.68|11.32|250.00|Transfer|""|t||2|RHB Bank Berhad|||||22307
+579|448|2018-05-23|6.00|50.00|0.00|50.00|Transfer|""|t||2|RHB Bank Berhad|||||22308
+580|456|2018-05-23|6.00|50.00|0.00|50.00|Transfer|""|t||2|RHB Bank Berhad|||||22309
+581|284|2018-05-23|6.00|624.06|37.44|661.50|Transfer|""|t||2|RHB Bank Berhad|||||22310
+582|310|2018-05-24|6.00|639.05|0.00|639.05|Cash|""|t||2|RHB Bank Berhad|||||22311
+583|367|2018-05-24|6.00|508.00|30.48|538.48|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-02|Local|615869|22312
+584|275|2018-05-24|6.00|333.68|17.02|350.70|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-05-24|Local|169468|22313
+585|739|2018-05-24|6.00|239.55|14.37|253.92|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-17|Local|958284|22314
+586|130|2018-05-24|6.00|164.00|9.84|173.84|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-23|Local|669088|22315
+587|170|2018-05-24|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22316
+462|724|2018-04-25|6.00|1300.00|69.00|1369.00|Cheque|""|f|WRONG INVOICE|2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-27|Local|945774|22175
+588|724|2018-04-25|6.00|460.00|18.60|478.60|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-04-25|Local|945774|22175
+589|25|2018-05-25|6.00|499.31|28.16|527.47|Transfer|""|t||2|RHB Bank Berhad|||||22317
+590|82|2018-05-25|6.00|499.31|28.16|527.47|Transfer|""|t||2|RHB Bank Berhad|||||22318
+591|835|2018-05-25|6.00|2889.62|110.38|3000.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-05-22|Local|364743|22319
+592|477|2018-05-25|6.00|1043.40|56.60|1100.00|Transfer|""|t||2|RHB Bank Berhad|||||22321
+593|198|2018-05-25|6.00|80.00|4.80|84.80|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||22322
+594|198|2018-05-25|6.00|89.00|5.34|94.34|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||22323
+595|198|2018-05-25|6.00|400.00|15.00|415.00|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||22324
+596|198|2018-05-25|6.00|65.00|3.90|68.90|Transfer|""|t||2|Malayan Banking Berhad (Maybank)|||||22325
+597|338|2018-05-25|6.00|1250.00|66.00|1316.00|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-05-28|Local|""|22326
+598|102|2018-05-25|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-22|Local|""|22327
+599|219|2018-05-25|6.00|858.68|46.72|905.40|Transfer|""|t||2|RHB Bank Berhad|||||22328
+600|815|2018-05-28|6.00|1535.47|75.33|1610.80|Transfer|""|t||2|RHB Bank Berhad|||||22329
+601|688|2018-05-28|6.00|50.00|0.00|50.00|Transfer|""|t||2|RHB Bank Berhad|||||22330
+602|386|2018-05-28|6.00|1430.00|73.80|1503.80|Transfer|""|t||2|RHB Bank Berhad|||||22331
+603|838|2018-05-30|6.00|65.00|3.90|68.90|Transfer|""|t||2|RHB Bank Berhad|||||22332
+604|538|2018-05-30|6.00|1038.00|62.28|1100.28|Transfer|""|t||2|RHB Bank Berhad|||||22333
+605|595|2018-05-30|6.00|1855.00|100.50|1955.50|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-05-21|Local|433558|22334
+606|596|2018-05-30|6.00|1853.00|100.38|1953.38|Cheque|""|t||2|RHB Bank Berhad|HSBC Bank Malaysia Berhad|2018-05-31|Local|403886|22335
+607|635|2018-05-30|6.00|510.00|21.60|531.60|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-05-23|Local|448374|22336
+608|186|2018-05-30|6.00|186.42|10.58|197.00|Transfer|""|t||2|RHB Bank Berhad|||||22337
+609|186|2018-06-30|6.00|840.00|50.40|890.40|Transfer|""|t||2|RHB Bank Berhad|||||22338
+566|807|2018-05-22|6.00|177.04|10.62|187.66|Transfer|""|f|Wrong amount|2|RHB Bank Berhad|||||22294
+610|228|2018-06-04|6.00|3303.59|196.41|3500.00|Cheque|""|t||2|RHB Bank Berhad|Standard Chartered Bank Malaysia Berhad|2018-05-25|Local|800383|22339
+611|367|2018-05-25|6.00|250.00|15.00|265.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-25|Local|615877|22340
+612|120|2018-05-31|6.00|238.68|11.32|250.00|Transfer|""|t||2|RHB Bank Berhad|||||22341
+613|253|2018-05-31|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22342
+614|17|2018-05-31|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22343
+615|552|2018-05-31|6.00|723.68|40.42|764.10|Transfer|""|t||2|RHB Bank Berhad|||||22344
+616|249|2018-05-31|6.00|400.00|15.00|415.00|Transfer|""|t||2|RHB Bank Berhad|||||22345
+617|763|2018-05-31|6.00|1628.68|76.72|1705.40|Transfer|""|t||2|RHB Bank Berhad|||||22346
+618|309|2018-05-31|6.00|675.00|35.70|710.70|Transfer|""|t||2|RHB Bank Berhad|||||22347
+619|781|2018-05-31|6.00|1070.00|50.40|1120.40|Transfer|""|t||2|RHB Bank Berhad|||||22348
+620|784|2018-05-31|6.00|675.00|35.70|710.70|Transfer|""|t||2|RHB Bank Berhad|||||22349
+621|742|2018-05-31|6.00|675.00|35.70|710.70|Transfer|""|t||2|RHB Bank Berhad|||||22350
+622|245|2018-05-31|6.00|675.00|35.70|710.70|Transfer|""|t||2|RHB Bank Berhad|||||22351
+623|272|2018-05-31|6.00|675.00|35.70|710.70|Transfer|""|t||2|RHB Bank Berhad|||||22352
+624|339|2018-05-31|6.00|675.00|35.70|710.70|Transfer|""|t||2|RHB Bank Berhad|||||22353
+625|355|2018-05-31|6.00|675.00|35.70|710.70|Transfer|""|t||2|RHB Bank Berhad|||||22354
+626|447|2018-05-31|6.00|610.00|24.60|634.60|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-05-24|Local|862379|22355
+627|295|2018-05-31|6.00|480.00|27.00|507.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-05-28|Local|348367|22356
+628|294|2018-05-31|6.00|690.00|36.60|726.60|Transfer|""|t||2|RHB Bank Berhad|||||22357
+630|403|2018-05-31|6.00|1450.00|75.00|1525.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-05-28|Local|348365|22359
+631|671|2018-05-31|6.00|360.00|9.60|369.60|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-25|Local|737725|22360
+632|321|2018-05-31|6.00|50.00|3.00|53.00|Cheque|""|t||2|RHB Bank Berhad|RHB Bank Berhad|2018-05-31|Local|""|22361
+633|380|2018-05-31|6.00|75.00|4.50|79.50|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-31|Local|164149|22362
+634|626|2018-05-31|0.00|0.00|0.00|0.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-30|Local|023792|22363
+635|660|2018-05-31|6.00|24.00|0.00|24.00|Cheque|""|t||2|RHB Bank Berhad|Malayan Banking Berhad (Maybank)|2018-05-31|Local|168159|22364
+636|136|2018-05-31|6.00|772.68|34.36|807.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-05-31|Local|269528|22365
+637|172|2018-05-31|6.00|1472.68|76.36|1549.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|492979|22366
+638|56|2018-05-31|6.00|772.68|34.36|807.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|451187|22367
+639|133|2018-06-04|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|010515|22368
+640|813|2018-06-04|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|234920|22369
+641|119|2018-06-04|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|AmBank (M) Berhad|2018-06-01|Local|159234|22370
+642|139|2018-06-04|6.00|134.00|8.04|142.04|Transfer|""|t||2|RHB Bank Berhad|||||22371
+643|155|2018-06-04|6.00|266.20|15.97|282.17|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|196833|22372
+644|138|2018-06-04|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|461439|22373
+645|83|2018-06-04|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|011556|22374
+646|83|2018-06-04|6.00|229.68|10.78|240.46|Cheque|""|f|Wrong Company|2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|011556|22375
+647|165|2018-06-04|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|011556|22375
+648|183|2018-06-04|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|011556|22376
+649|193|2018-06-04|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Public Bank Berhad|2018-06-01|Local|011556|22377
+650|157|2018-06-04|6.00|134.00|8.04|142.04|Cheque|""|t||2|RHB Bank Berhad|Affin Bank Berhad|2018-06-01|Local|313687|22378
+651|748|2018-06-04|6.00|330.00|19.80|349.80|Transfer|""|t||2|RHB Bank Berhad|||||22379
+652|740|2018-06-04|6.00|233.20|13.99|247.19|Transfer|""|t||2|RHB Bank Berhad|||||22380
+629|302|2018-05-31|6.00|238.68|11.32|250.00|Cheque|""|f|Wrong Company|2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-05-28|Local|348368|22358
+653|304|2018-05-31|6.00|238.68|11.32|250.00|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-05-28|Local|348368|22358
+654|807|2018-05-22|6.00|177.04|10.62|187.66|Transfer|""|t||2|RHB Bank Berhad|||||22294
+655|304|2018-01-22|6.00|840.00|50.40|890.40|Cheque|""|t||2|RHB Bank Berhad|Hong Leong Bank Berhad|2018-01-22|Local|346858|21699

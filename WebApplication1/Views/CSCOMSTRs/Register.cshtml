@@ -1,0 +1,1594 @@
+﻿@using WebApplication1;
+@using DCSoft.RTF;
+
+@model WebApplication1.CSCOMSTR
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Company Register</title>
+    @Styles.Render("~/Content/css")
+
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .regSect {
+            background-color: darkgray;
+            text-align: center;
+            border: solid;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+        }
+
+
+
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+
+            pre {
+                border: none;
+            }
+
+            @@page {
+                size: portrait;
+            }
+
+            /*body {
+                writing-mode: vertical-rl;
+            }*/
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 400px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 70px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@page {
+            size: auto;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="letter">
+            <header>
+                <div class="text-left">
+                    @ViewBag.Company
+                    <br /><br />
+                    <u>Company Register from @ViewBag.RPT_START to @ViewBag.RPT_END</u>
+                    <br />
+                    (Company : @Model.COREGNO)
+                </div>
+            </header>
+        </div>
+        <div id="main">
+
+            <br />
+            <div id="company_particulars" class="border">
+                <div class="row">
+                    <div class="col-md-2 text-right">
+                        Company :
+                    </div>
+                    <div class="col-md-6 text-left">
+                        @Model.CONAME
+                    </div>
+                    <div class="col-md-1 text-right">
+                        In Type:
+                    </div>
+                    <div class="col-md-3 text-left">
+                        @Model.INTYPE
+                    </div>
+                </div>
+                @if (ViewBag.HEAD != "SIMPLE")
+                {
+                <div class="row">
+                    <div class="col-md-2 text-right">
+                        Incorporation :
+                    </div>
+                    <div class="col-md-1 text-left">
+                        @Model.INCDATE.ToString("dd/MM/yyyy")
+                    </div>
+                    <div class="col-md-1 text-right">
+                        Country:
+                    </div>
+                    <div class="col-md-1 text-left">
+                        @Model.INCCTRY
+                    </div>
+                    <div class="col-md-1 text-right">
+                        Constitution:
+                    </div>
+                    <div class="col-md-2 text-left">
+                        @Model.CONSTCODE - @Model.HKCONST.CONSTDESC
+                    </div>
+                    <div class="col-md-1 text-right">
+                        Ref Code:
+                    </div>
+                    <div class="col-md-3 text-left">
+                        @Model.REFCODE
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 text-right">
+                        Website :
+                    </div>
+                    <div class="col-md-5 text-left">
+                        @Model.WEB
+                    </div>
+                    <div class="col-md-2 text-right">
+                        Stock Exchange Code:
+                    </div>
+                    <div class="col-md-3 text-left">
+                        @Model.SXCODE
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 text-right">
+                        Current Status :
+                    </div>
+                    <div class="col-md-1 text-left">
+                        @Model.COSTAT
+                    </div>
+                    <div class="col-md-1 text-right">
+                        Status Since:
+                    </div>
+                    <div class="col-md-3 text-left">
+                        @Model.COSTATD.ToString("dd/MM/yyyy")
+                        &nbsp;  &nbsp;
+                        File No:
+                        &nbsp;
+                        @Model.FILELOC
+                        &nbsp;&nbsp;
+                        Seal No:
+                        &nbsp;
+                        @Model.SEALLOC
+                    </div>
+                    <div class="col-md-2 text-right">
+                        Stock Exchange Name:
+                    </div>
+                    <div class="col-md-3 text-left">
+                        @Model.SXNAME
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 text-right">
+                        Staff in Charge :
+                    </div>
+                    <div class="col-md-2 text-left">
+                        @Model.STAFFCODE
+                    </div>
+                    <div class="col-md-2 text-right">
+                        Special Reminder FS:
+                    </div>
+                    <div class="col-md-1 text-left">
+                        @Model.SPECIALRE
+                    </div>
+                    <div class="col-md-2 text-right">
+                        Special Reminder AR:
+                    </div>
+                    <div class="col-md-2 text-left">
+                        @Model.ARRE
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 text-right">
+                        Remarks :
+                    </div>
+                    <div class="col-md-10 text-left">
+                        @Model.REM
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 text-right">
+                        Primary Industry :
+                    </div>
+                    <div class="col-md-5 text-left">
+                        @Model.PINDCODE
+                    </div>
+                    <div class="col-md-2 text-right">
+                        Secondary Industry:
+                    </div>
+                    <div class="col-md-3 text-left">
+                        @Model.SINDCODE
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 text-right">
+                        Primary Objective :
+                    </div>
+                    <div class="col-md-5 text-left">
+                        <pre>@Model.PRINOBJStr</pre>
+                    </div>
+                    <div class="col-md-2 text-right">
+                        Comment:
+                    </div>
+                    <div class="col-md-3 text-left">
+                        <pre>@Model.CMMTStr</pre>
+                    </div>
+                </div>
+                }
+            </div>
+
+            @if (ViewBag.CSCOSTAT != null)
+            {
+                <div id="company_status" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Status
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2 text-left">
+                            <u>Effective Date</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>Status</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>File No</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>Seal No</u>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2 text-left">
+                            @ViewBag.CSCOSTAT.SDATE.ToString("dd/MM/yyyy")
+                        </div>
+                        <div class="col-md-2 text-left">
+                            @ViewBag.CSCOSTAT.COSTAT
+                        </div>
+                        <div class="col-md-2 text-left">
+                            @ViewBag.CSCOSTAT.FILELOC
+                        </div>
+                        <div class="col-md-2 text-left">
+                            @ViewBag.CSCOSTAT.SEALLOC
+                        </div>
+                    </div>
+
+
+                </div>
+            }
+
+            @if (ViewBag.CSCOFEE != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Fee
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 text-left">
+                            <u>Fee Description</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>Fee</u>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <u>Amount</u>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <u>Duration (Month)</u>
+                        </div>
+                        <div class="col-md-1 text-right">
+                            <u>Type</u>
+                        </div>
+                        <div class="col-md-1 text-right">
+                            <u>Bill To</u>
+                        </div>
+                    </div>
+
+                    @foreach (var item in (IEnumerable<CSCOFEE>) ViewBag.CSCOFEE)
+                    {
+                    <div class="row">
+                        <div class="col-md-4 text-left">
+                            @item.CSCASE.CASEDESC
+                        </div>
+                        <div class="col-md-2 text-left">
+                            @item.FEECODE
+                        </div>
+                        <div class="col-md-2 text-right">
+                            @item.FEEAMT.ToString("N2")
+                        </div>
+                        <div class="col-md-2 text-right">
+                            @item.FEEMTH.ToString()
+                        </div>
+                        <div class="col-md-1 text-right">
+                            @item.FEETYPE
+                        </div>
+                        <div class="col-md-1 text-right">
+                            @item.LASTTOUCH.ToString("dd/MM/yyyy")
+                        </div>
+                    </div>
+                    }
+
+                </div>
+            }
+
+            @if (ViewBag.CSCOPIC != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Contact
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 text-left">
+                            <u>Name</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>Entity No</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>Designation</u>
+                        </div>
+                        <div class="col-md-4 text-left">
+                            <u>Remark</u>
+                        </div>
+
+                    </div>
+
+                    @foreach (CSCOPIC rec in ViewBag.CSCOPIC)
+                    {
+                        <div class="row">
+                            <div class="col-md-4 text-left">
+                                @rec.CSPR.PRSNAME
+                            </div>
+                            <div class="col-md-2 text-left">
+                                @rec.PRSCODE
+                            </div>
+                            <div class="col-md-2 text-left">
+                                @rec.DESIG
+                            </div>
+                            <div class="col-md-4 text-left">
+                                @rec.REM
+                            </div>
+
+                        </div>
+                    }
+
+                </div>
+            }
+
+
+
+            @if (ViewBag.CSCONAME != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Name
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2 text-left">
+                            <u>Effective</u>
+                        </div>
+                        <div class="col-md-10 text-left">
+                            <u>Company Name</u>
+                        </div>
+
+
+                    </div>
+
+                    @foreach (CSCONAME rec in ViewBag.CSCONAME)
+                    {
+                        <div class="row">
+                            <div class="col-md-2 text-left">
+                                @rec.EFFDATE.ToString("dd/MM/yyyy")
+                            </div>
+                            <div class="col-md-10 text-left">
+                                @rec.CONAME
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            }
+
+            @if (ViewBag.CSCOADDR != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Address
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1 text-left">
+                            <u>ID</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Mailing</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Start Date</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>End Date</u>
+                        </div>
+                        <div class="col-md-3 text-left">
+                            <u>Address</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Phone</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Fax</u>
+                        </div>
+                        <div class="col-md-3 text-left">
+                            <u>Remark</u>
+                        </div>
+                    </div>
+
+                    @foreach (CSCOADDR rec in ViewBag.CSCOADDR)
+                    {
+                        <div class="row">
+
+                            <div class="col-md-1 text-left">
+                                @rec.ADDRID
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.MAILADDR
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.SDATE.ToString("dd/MM/yyyy")
+                            </div>
+                            <div class="col-md-1 text-left">
+
+                                @rec.EDATE
+
+
+                            </div>
+                            <div class="col-md-3 text-left">
+                                @rec.ADDR1 @rec.ADDR2 @rec.ADDR3 @rec.POSTAL
+                                @if (rec.HKCITY != null)
+                                {
+                                    @rec.HKCITY.CITYDESC}
+                                @if (rec.HKCTRY != null)
+                                {
+                                    @rec.HKCTRY.CTRYDESC}
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.PHONE1 @rec.PHONE2
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.FAX1 @rec.FAX2
+                            </div>
+                            <div class="col-md-3 text-left">
+                                @rec.REM
+                            </div>
+                        </div>
+
+                        if (@rec.OPRHRSStr != string.Empty)
+                        {
+                            RTFDomDocument doc = new RTFDomDocument();
+                            doc.LoadRTFText(@rec.OPRHRSStr);
+
+                            <div class="row">
+                                <div class="col-md-2 text-right">
+                                    Operating Hours
+                                </div>
+                                <div class="col-md-10 text-left">
+                                    <pre>@doc.InnerText</pre>
+                                </div>
+                            </div>
+                        }
+
+                    }
+
+                </div>
+            }
+
+            @if (ViewBag.CSCOAGM != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Audited Financial Statement
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1 text-left">
+                            <u>AGM No</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Last FYE Filed</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>FYE Due</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>AGM Extension</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Reminder 1</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Reminder 2d</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Final Reminder</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>FYE Filed</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>AGM Held</u>
+                        </div>
+                        <div class="col-md-3 text-left">
+                            <u>Remark</u>
+                        </div>
+
+                    </div>
+
+                    @foreach (CSCOAGM rec in ViewBag.CSCOAGM)
+                    {
+                        <div class="row">
+                            <div class="col-md-1 text-left">
+                                @rec.AGMNO
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.LASTFYE.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.LASTFYE).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.FYETOFILE.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.FYETOFILE).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.AGMEXT.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.AGMEXT).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.REMINDER1.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.REMINDER1).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.REMINDER2.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.REMINDER2).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.REMINDER3.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.REMINDER3).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.FILEDFYE.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.FILEDFYE).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.AGMFILED.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.AGMFILED).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-3 text-left">
+                                @rec.REM
+                            </div>
+
+                        </div>
+                    }
+
+                </div>
+            }
+
+            @if (ViewBag.CSCOAR != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Annual Return
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1 text-left">
+                            <u>AR No</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Last AR Filed</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>AR Due</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Reminder</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Submit AR</u>
+                        </div>
+
+                        <div class="col-md-1 text-left">
+                            <u>AR Filed</u>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <u>Remark</u>
+                        </div>
+
+                    </div>
+
+                    @foreach (CSCOAR rec in ViewBag.CSCOAR)
+                    {
+                        <div class="row">
+                            <div class="col-md-1 text-left">
+                                @rec.ARNO
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.LASTAR.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.LASTAR).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.ARTOFILE.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.ARTOFILE).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.REMINDER1.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.REMINDER1).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.SUBMITAR.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.SUBMITAR).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.FILEDAR.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.FILEDAR).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+
+                            <div class="col-md-6 text-left">
+                                @rec.REM
+                            </div>
+
+                        </div>
+                    }
+
+                </div>
+            }
+
+            @if (ViewBag.CSCOSH != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Member
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 text-left">
+                            <u>Name</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Entity No</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Folio No</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Effective</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Terminate</u>
+                        </div>
+
+                        <div class="col-md-4 text-left">
+                            <u>Remark</u>
+                        </div>
+
+                    </div>
+
+                    @foreach (CSCOSH rec in ViewBag.CSCOSH)
+                    {
+
+                        <div class="row">
+                            <div class="col-md-4 text-left">
+                                @rec.CSPR.PRSNAME
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.PRSCODE
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.FOLIONO
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.EFFDATE.ToString("dd/MM/yyyy")
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.TERDATE.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.TERDATE).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+
+                            <div class="col-md-4 text-left">
+                                @rec.REM
+                            </div>
+
+                        </div>
+                    }
+
+                </div>
+            }
+
+
+            @if (ViewBag.CSCOADT != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Auditor
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1 text-left">
+                            <u>Resignation</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Appointment</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Auditor</u>
+                        </div>
+                        <div class="col-md-3 text-left">
+                            <u>Auditor Description</u>
+                        </div>
+                        <div class="col-md-3 text-left">
+                            <u>Name</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Entity No</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>Remark</u>
+                        </div>
+
+                    </div>
+
+                    @foreach (CSCOADT rec in ViewBag.CSCOADT)
+                    {
+
+                        <div class="row">
+                            <div class="col-md-1 text-left">
+                                @if (rec.RDATE.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.RDATE).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.ADATE.ToString("dd/MM/yyyy")
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.ADTCODE
+                            </div>
+                            <div class="col-md-3 text-left">
+                                @rec.CSADT.ADTDESC
+                            </div>
+                            <div class="col-md-3 text-left">
+                                @if (rec.CSPR != null)
+                                {
+                                    @rec.CSPR.PRSNAME
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.PRSCODE
+                            </div>
+                            <div class="col-md-2 text-left">
+                                @rec.REM
+                            </div>
+
+                        </div>
+                    }
+
+                </div>
+            }
+
+            @if (ViewBag.CSCOTX != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Tax Agent
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1 text-left">
+                            <u>Resignation</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Appointment</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>Tax Agent</u>
+                        </div>
+                        <div class="col-md-3 text-left">
+                            <u>Tax Agent Description</u>
+                        </div>
+
+                        <div class="col-md-5 text-left">
+                            <u>Remark</u>
+                        </div>
+
+                    </div>
+
+                    @foreach (CSCOTX rec in ViewBag.CSCOTX)
+                    {
+
+                        <div class="row">
+                            <div class="col-md-1 text-left">
+                                @if (rec.RDATE.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.RDATE).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @rec.ADATE.ToString("dd/MM/yyyy")
+                            </div>
+                            <div class="col-md-2 text-left">
+                                @rec.TXCODE
+                            </div>
+                            <div class="col-md-3 text-left">
+                                @rec.CSTX.TXDESC
+                            </div>
+
+                            <div class="col-md-5 text-left">
+                                @rec.REM
+                            </div>
+
+                        </div>
+                    }
+
+                </div>
+            }
+
+
+            @if (ViewBag.CSCOAK != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Authorised Capital
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2 text-left">
+                            <u>Effective</u>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <u>Authorised Capital</u>
+                        </div>
+                        <div class="col-md-8 text-left">
+                            <u>Remark</u>
+                        </div>
+
+
+                    </div>
+
+                    @foreach (CSCOAK rec in ViewBag.CSCOAK)
+                    {
+
+                        <div class="row">
+                            <div class="col-md-2 text-left">
+                                @rec.EFFDATE.ToString("dd/MM/yyyy")
+
+                            </div>
+                            <div class="col-md-2 text-right">
+                                @rec.AK.ToString("N2")
+                            </div>
+                            <div class="col-md-8 text-left">
+                                @rec.REM
+                            </div>
+
+
+                        </div>
+                    }
+
+                </div>
+            }
+
+            @if (ViewBag.CSTRANM != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Activity
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1 text-left">
+                            <u>Date</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>Source</u>
+                        </div>
+                        <div class="col-md-1 text-left">
+                            <u>Due Date</u>
+                        </div>
+                        <div class="col-md-3 text-left">
+                            <u>Item Description</u>
+                        </div>
+                        <div class="col-md-1 text-right">
+                            <u>Item Amt</u>
+                        </div>
+
+                        <div class="col-md-2 text-left">
+                            <u>Apply Item</u>
+                        </div>
+                        <div class="col-md-1 text-right">
+                            <u>Apply Amt</u>
+                        </div>
+                        <div class="col-md-1 text-right">
+                            <u>Movement</u>
+                        </div>
+                    </div>
+
+                    @{
+                        decimal Movement = 0;
+                    }
+                    @foreach (CSTRANM rec in ViewBag.CSTRANM)
+                    {
+                        Movement = Movement + rec.TRSAMT;
+                    }
+
+                    @foreach (CSTRANM rec in ViewBag.CSTRANM)
+                    {
+
+
+                        <div class="row">
+                            <div class="col-md-1 text-left">
+                                @rec.ENTDATE.ToString("dd/MM/yyyy")
+                            </div>
+                            <div class="col-md-2 text-left">
+                                @rec.SOURCE @rec.SOURCENO @rec.SOURCEID
+                            </div>
+                            <div class="col-md-1 text-left">
+                                @if (rec.DUEDATE.HasValue)
+                                {
+                                    <div>
+                                        @(((DateTime)rec.DUEDATE).ToString("dd/MM/yyyy"))
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-3 text-left">
+                                @rec.TRTYPE @rec.TRDESC
+                            </div>
+                            <div class="col-md-1 text-right">
+                                @rec.TRSAMT.ToString("N2")
+                            </div>
+
+                            <div class="col-md-2 text-left">
+                                @rec.APPTYPE @rec.APPNO @rec.APPID
+                            </div>
+                            <div class="col-md-1 text-right">
+                                @rec.APPAMT.ToString("N2")
+                            </div>
+                            <div class="col-md-1 text-right">
+                                @Movement.ToString("N2")
+                            </div>
+
+                            @{Movement = Movement - rec.TRSAMT;
+                            }
+
+
+                        </div>
+                                }
+
+                </div>
+                                }
+
+
+            @if (ViewBag.V_CSTRAN_OSTD != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Outstanding Items Due To Client
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1 text-left">
+                            <u>Date</u>
+                        </div>
+
+                        <div class="col-md-7 text-left">
+                            <u>Particulars</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>Reference</u>
+                        </div>
+                        <div class="col-md-1 text-right">
+                            <u>Item Amt</u>
+                        </div>
+                        <div class="col-md-1 text-right">
+                            <u>Outstanding</u>
+                        </div>
+                    </div>
+
+                    @{
+                        decimal total = 0;
+                        decimal totalos = 0;
+                    }
+                    @foreach (V_CSTRAN_OSTD rec in ViewBag.V_CSTRAN_OSTD)
+                    {
+                        {
+                            total = total + rec.TRAMT;
+                            totalos = totalos + rec.TROS;
+                        }
+
+                        <div class="row">
+                            <div class="col-md-1 text-left">
+                                @if (rec.ENTDATE.HasValue) {
+                                @(((DateTime)rec.ENTDATE).ToString("dd/MM/yyyy"))
+                                }
+                            </div>
+                            <div class="col-md-7 text-left">
+                                @rec.PARTICULARS2
+                            </div>
+                            <div class="col-md-2 text-left">
+                                @rec.SOURCE @rec.SOURCENO
+                            </div>
+                            <div class="col-md-1 text-right">
+                                @rec.TRAMT.ToString("N2")
+                            </div>
+                            <div class="col-md-1 text-right">
+                                @rec.TROS.ToString("N2")
+                            </div>
+
+
+
+                        </div>
+                    }
+
+
+                    <div class="row">
+                        <div class="col-md-1 text-left">
+
+                        </div>
+
+                        <div class="col-md-7 text-left">
+
+                        </div>
+                        <div class="col-md-2 text-right border-top">
+                            <strong>Total</strong>
+                        </div>
+                        <div class="col-md-1 text-right border-top">
+                            <strong>@total.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-1 text-right border-top">
+                            <strong>@totalos.ToString("N2")</strong>
+                        </div>
+                    </div>
+
+                </div>
+                        }
+
+            @if (ViewBag.V_CSTRAN_OSTD1 != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Outstanding Items Due To Us
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1 text-left">
+                            <u>Date</u>
+                        </div>
+
+                        <div class="col-md-7 text-left">
+                            <u>Particulars</u>
+                        </div>
+                        <div class="col-md-2 text-left">
+                            <u>Reference</u>
+                        </div>
+                        <div class="col-md-1 text-right">
+                            <u>Item Amt</u>
+                        </div>
+                        <div class="col-md-1 text-right">
+                            <u>Outstanding</u>
+                        </div>
+                    </div>
+
+                    @{
+                        decimal total = 0;
+                        decimal totalos = 0;
+                    }
+                    @foreach (V_CSTRAN_OSTD rec in ViewBag.V_CSTRAN_OSTD1)
+                    {
+                        {
+                            total = total + rec.TRAMT;
+                            totalos = totalos + rec.TROS;
+                        }
+
+                        <div class="row">
+                            <div class="col-md-1 text-left">
+                                @if (rec.ENTDATE.HasValue) {
+                                @(((DateTime)rec.ENTDATE).ToString("dd/MM/yyyy"))
+                                }
+
+                            </div>
+                            <div class="col-md-7 text-left">
+                                @rec.PARTICULARS2
+                            </div>
+                            <div class="col-md-2 text-left">
+                                @rec.SOURCE @rec.SOURCENO
+                            </div>
+                            <div class="col-md-1 text-right">
+                                @rec.TRAMT.ToString("N2")
+                            </div>
+                            <div class="col-md-1 text-right">
+                                @rec.TROS.ToString("N2")
+                            </div>
+
+
+
+                        </div>
+                    }
+
+
+                    <div class="row">
+                        <div class="col-md-1 text-left">
+
+                        </div>
+
+                        <div class="col-md-7 text-left">
+
+                        </div>
+                        <div class="col-md-2 text-right border-top">
+                            <strong>Total</strong>
+                        </div>
+                        <div class="col-md-1 text-right border-top">
+                            <strong>@total.ToString("N2")</strong>
+                        </div>
+                        <div class="col-md-1 text-right border-top">
+                            <strong>@totalos.ToString("N2")</strong>
+                        </div>
+                    </div>
+
+                </div>
+                        }
+
+            @if (ViewBag.CSLDG != null)
+            {
+                <div id="company_fees" class="border">
+                    <div class="regSect col-md-12">
+                        <div>
+                            Collection Status
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 text-right row">
+                            <div class="col-md-3 text-left">
+
+                            </div>
+
+                            <div class="col-md-3 text-center">
+                                &minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus; Own &minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;
+                            </div>
+                            <div class="col-md-3 text-center">
+                                &minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus; Third Party &minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;
+                            </div>
+                            <div class="col-md-3 text-left">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-2 text-left">
+                                <u>Date</u>
+                            </div>
+
+                            <div class="col-md-3 text-left">
+                                <u>Receipt</u>
+                            </div>
+                            <div class="col-md-6 text-left">
+                                <u>Apply Item</u>
+                            </div>
+                            <div class="col-md-1 text-left">
+                                <u>Staff</u>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-3 text-right">
+                                <u>Fee</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Work</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Tax</u>
+                            </div>
+                            <div class="col-md-3 text-right">
+                                <u>Disbursement</u>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-3 text-right">
+                                <u>Fee</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Work</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Tax</u>
+                            </div>
+                            <div class="col-md-3 text-right">
+                                <u>Disbursement</u>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-2 text-right">
+                                <u>Reimbursement</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Total</u>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <u>Receipt</u>
+                            </div>
+
+                            <div class="col-md-2 text-right">
+                                <u>Advance</u>
+                            </div>
+
+                            <div class="col-md-2 text-right">
+                                <u>Deposit</u>
+                            </div>
+                        </div>
+                    </div>
+
+                    @{
+                        decimal oFee = 0;
+                        decimal oWork = 0;
+                        decimal oTax = 0;
+                        decimal oDisb = 0;
+
+                        decimal thdFee = 0;
+                        decimal thdWork = 0;
+                        decimal thdTax = 0;
+                        decimal thdDisb = 0;
+
+                        decimal reimb = 0;
+                        decimal total = 0;
+                        decimal gtotal = 0;
+                        decimal receipt = 0;
+                        decimal advance = 0;
+                        decimal deposit = 0;
+                        string AppRef = "";
+                        string staff = "";
+                    }
+                    @foreach (CSLDG rec in ViewBag.CSLDG)
+                    {
+                        {
+                            oFee += rec.FEE1;
+                            oWork += rec.WORK1;
+                            oTax += rec.TAX1;
+                            oDisb += rec.DISB1;
+
+                            thdFee += rec.FEE2;
+                            thdWork += rec.WORK2;
+                            thdTax += rec.TAX2;
+                            thdDisb += rec.DISB2;
+
+                            reimb += rec.REIMB1 ?? 0;
+                            total = rec.REIMB1 ?? 0;
+                            total += rec.FEE1 + rec.WORK1 + rec.TAX1 + rec.DISB1 + rec.FEE2 + rec.WORK2 + rec.TAX2 + rec.DISB2;
+                            gtotal += total;
+                            receipt += rec.RECEIPT;
+                            advance += rec.ADVANCE;
+                            deposit += rec.DEP;
+
+                            if (ViewBag.CSJOB != null)
+                            {
+                                staff = ((IQueryable<CSJOBM>)ViewBag.CSJOB).Where(x => x.JOBNO == rec.JOBNO).Select(y => y.JOBSTAFF).FirstOrDefault();
+                            }
+                            AppRef = ((IQueryable<CSTRANM>)ViewBag.CSTRANM).Where(x => x.SOURCE == rec.SOURCE && x.SOURCEID == rec.SOURCEID && x.SOURCENO == rec.SOURCENO).Select(y => y.APPTYPE + " " + y.APPNO + " " + y.APPID).FirstOrDefault();
+                        }
+                        decimal reimb1 = @rec.REIMB1 ?? 0;
+
+
+                        <div class="row">
+                            <div class="col-md-3 text-right row">
+                                <div class="col-md-2 text-left">
+                                    @rec.ENTDATE.ToString("dd/MM/yyyy")
+
+                                </div>
+                                <div class="col-md-3 text-left">
+                                    @rec.SOURCENO @rec.SOURCEID
+                                </div>
+                                <div class="col-md-6 text-left">
+                                    @AppRef
+                                </div>
+                                <div class="col-md-1 text-left">
+                                    @staff
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-right row">
+                                <div class="col-md-3 text-right">
+                                    @rec.FEE1.ToString("N2")
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    @rec.WORK1.ToString("N2")
+                                </div>
+
+                                <div class="col-md-3 text-right">
+                                    @rec.TAX1.ToString("N2")
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    @rec.DISB1.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-right row">
+                                <div class="col-md-3 text-right">
+                                    @rec.FEE2.ToString("N2")
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    @rec.WORK2.ToString("N2")
+                                </div>
+
+                                <div class="col-md-3 text-right">
+                                    @rec.TAX2.ToString("N2")
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    @rec.DISB2.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-right row">
+                                <div class="col-md-2 text-right">
+                                    @reimb1.ToString("N2")
+                                </div>
+
+                                <div class="col-md-3 text-right">
+                                    @total.ToString("N2")
+                                </div>
+
+                                <div class="col-md-3 text-right">
+                                    @rec.RECEIPT.ToString("N2")
+                                </div>
+
+                                <div class="col-md-2 text-right">
+                                    @rec.ADVANCE.ToString("N2")
+                                </div>
+
+                                <div class="col-md-2 text-right">
+                                    @rec.DEP.ToString("N2")
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+                    <div class="row">
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-3 text-left">
+
+                            </div>
+
+                            <div class="col-md-3 text-left">
+
+                            </div>
+                            <div class="col-md-6 text-right border-top">
+                                <strong>Total</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@oFee.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@oWork.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@oTax.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@oDisb.ToString("N2")</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@thdFee.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@thdWork.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@thdTax.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@thdDisb.ToString("N2")</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-right row">
+                            <div class="col-md-2 text-right border-top">
+                                <strong>@reimb.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@gtotal.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-3 text-right border-top">
+                                <strong>@receipt.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-2 text-right border-top">
+                                <strong>@advance.ToString("N2")</strong>
+                            </div>
+                            <div class="col-md-2 text-right border-top">
+                                <strong>@deposit.ToString("N2")</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                        }
+
+        </div>
+
+        @*<footer>
+
+                <div class="row">
+                    <div class="col-12">
+
+
+
+                    </div>
+
+                </div>
+            </footer>*@
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

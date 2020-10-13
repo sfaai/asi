@@ -1,0 +1,63 @@
+﻿@using WebApplication1.Utility
+@model IEnumerable<WebApplication1.CSCOSTAT> 
+    
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th>
+            @Html.DisplayNameFor(model => model.SDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COSTAT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FILETYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FILELOC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SEALLOC)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.EDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>*@
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+            <td>
+                @Html.DisplayFor(modelItem => item.SDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COSTAT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FILETYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FILELOC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SEALLOC)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.EDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STAMP)
+            </td>*@
+            <td>
+                @Html.ActionLink(" ", "Edit", "CSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-edit", title="Edit" }) |
+                @Html.ActionLink(" ", "Details", "CSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" }) |
+                @Html.ActionLink(" ", "Delete", "CSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-trash", title = "Delete" })
+            </td>
+        </tr>
+    }
+
+</table>

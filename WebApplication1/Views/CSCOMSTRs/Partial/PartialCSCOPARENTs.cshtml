@@ -1,0 +1,76 @@
+﻿@model IEnumerable<WebApplication1.CSCOPARENT>
+@using WebApplication1.Utility;
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="width:96vw">
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ADATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().RDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONOPARENT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAMP)
+            </th>
+
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (Html.Action() == "Edit")
+                    {
+                        @Html.ActionLink(" ", "Edit", "CSCOPARENTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-edit", title = "Edit" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Details", "CSCOPARENTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Delete", "CSCOPARENTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                    else if (Html.Action() == "Details")
+                    {
+                        @Html.ActionLink(" ", "Details", "CSCOPARENTs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                    }
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ADATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.COREGNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.CONAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+
+
+            </tr>
+        }
+
+    </table>
+
+</div>

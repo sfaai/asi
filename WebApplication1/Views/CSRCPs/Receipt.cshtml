@@ -1,0 +1,258 @@
+﻿@model WebApplication1.CSRCP
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Official Receipt</title>
+    @Styles.Render("~/Content/css")
+
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+        }
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 400px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 70px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="letter">
+            <header>
+                <div class="text-center">
+                    <h3 class="h3">@ViewBag.Company</h3>
+                    <p>
+                        @ViewBag.Address
+                        <br />@ViewBag.Contact
+                    </p>
+                </div>
+            </header>
+        </div>
+        <div id="main">
+            <br />
+            <h3 class="h3"><strong>Official Receipt</strong></h3>
+            <br />
+            <div class="row">
+                <div class="col-6" style="text-align:left"></div>
+                <div class="col-6" style="text-align:right">No : @Model.TRNO</div>
+            </div>
+            <div class="row">
+                <div class="col-6" style="text-align:left">From <b>@Model.CSCOMSTR.CONAME (@Model.CSCOMSTR.COREGNO)</b></div>
+                <div class="col-6" style="text-align:right">Date : @Model.VDATE.ToString("dd MMM yyyy")</div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-12">
+                    <br />
+                    Being Payment for
+
+                </div>
+                <br />
+
+            </div>
+
+            <br />
+
+            @{ IQueryable<CSTRANM> iqo = (IQueryable<CSTRANM>)ViewBag.CSTRANM; }
+
+                @if (iqo.ToList().Count() > 0)
+                {
+                    <div class="row">
+                        <div class="col-1 " style="text-align:center;border: 1px solid black;">
+                            No.
+                        </div>
+                        <div class="col-7 " style="text-align:left; border: 1px solid black;">
+                            Particulars
+                        </div>
+                        <div class="col-2 " style="text-align:left; border: 1px solid black;">
+                            Ref. No.
+                        </div>
+
+                        <div class="col-2" style="text-align:right; border: 1px solid black;">
+                            Amount (RM)
+                        </div>
+                        <br />
+                    </div>
+                }
+                @{decimal total = 0; int cnt = 0; }
+
+                @foreach (CSTRANM Item in iqo)
+            {
+                total += Item.TRAMT;
+                cnt++;
+
+                    <div class="row">
+                        <div class="col-1 " style="text-align:center; border: 1px solid black;">
+                            @cnt
+                        </div>
+                        <div class="col-7 " style="text-align:left; border: 1px solid black;">
+                            @Html.DisplayFor(item => Item.TRDESC)<br />
+                        </div>
+                        <div class="col-2 " style="text-align:center; border: 1px solid black;">
+                            @Html.DisplayFor(item => Item.APPTYPE)/@Html.DisplayFor(item => Item.APPNO)/@Html.DisplayFor(item => Item.APPID)
+                        </div>
+
+                        <div class="col-2" style="text-align:right; border: 1px solid black; ">
+                            @Html.DisplayFor(item => Item.TRAMT)
+                        </div>
+                    </div>
+
+                }
+            <br/>
+
+                <div class="row">
+                    <div class="col-1 " style="text-align:right;">
+
+                    </div>
+                    <div class="col-7 " style="text-align:left;">
+
+                    </div>
+                    <div class="col-2 " style="text-align:center;">
+                        Total Amount :
+                    </div>
+
+                    <div class="col-2" style="text-align:right;">
+                        @total.ToString("N2")
+                    </div>
+                    <br />
+                </div>
+                <br />
+                <br />
+</div>
+
+
+        <footer>
+
+            <div class="row">
+                <div class="col-12">
+                    Receive RM @Model.NETAMT.ToString("N2")
+                    <br />
+                    <br />
+                    <br />
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="row col-8 " style="text-align:left;">
+
+                    <div class="col-2 border border-dark">Mode</div>
+                    <div class="col-2 border border-dark">Bank</div>
+                    <div class="col-2 border border-dark">Location</div>
+                    <div class="col-3 border border-dark">No</div>
+                    <div class="col-3 border border-dark">Date</div>
+                </div>
+                <div class="col-4 " style="text-align:center;">
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="row col-8 " style="text-align:left;">
+
+                    <div class="col-2 border border-dark">@Model.RCMODE</div>
+                    <div class="col-2 border border-dark">@Model.ISSBANK</div>
+                    <div class="col-2 border border-dark">@Model.ISSLOC</div>
+                    <div class="col-3 border border-dark">@Model.ISSREFNO</div>
+                    <div class="col-3 border border-dark">
+                        @if (Model.ISSDATE != null)
+                        {
+
+                            var dt = ((DateTime)(Model.ISSDATE)).ToString("dd/MM/yyyy");
+
+                            @dt
+                        }
+                    </div>
+                </div>
+ 
+                <div class="col-4 " style="text-align:center;">
+                    <div class="col-12 border-top">
+                        Authorised Signatory
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

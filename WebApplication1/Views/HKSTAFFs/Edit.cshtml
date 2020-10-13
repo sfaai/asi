@@ -1,0 +1,95 @@
+﻿@model WebApplication1.HKSTAFF
+@using WebApplication1.Utility
+
+@{
+    ViewBag.Title = "Edit  HKSTAFF";
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.STAFFCODE)
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAFFDESC, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.STAFFDESC, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAFFDESC, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAFFLEVEL, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.STAFFLEVEL, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAFFLEVEL, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.MSTRSTAFF, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.MSTRSTAFF, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MSTRSTAFF, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REFCNT, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.REFCNT, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REFCNT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+		   @Html.HiddenFor(model => model.CSCOMSTRs)
+		   @Html.HiddenFor(model => model.CSJOBMs)
+		   @Html.HiddenFor(model => model.CSJOBSTFs)
+		   @Html.HiddenFor(model => model.CSQTs)
+		   @Html.HiddenFor(model => model.HKLOGINMAPs)
+		   @Html.HiddenFor(model => model.SFMYADDRCHGs)
+		   @Html.HiddenFor(model => model.SFMYNAMEAPPs)
+		   @Html.HiddenFor(model => model.SFMYNAMECHGs)
+		   @Html.HiddenFor(model => model.SFMYNEWs)
+		   @Html.HiddenFor(model => model.SFMYSCMVs)
+		   @Html.HiddenFor(model => model.SFSGADDRCHGs)
+		   @Html.HiddenFor(model => model.SFSGDRMVs)
+		   @Html.HiddenFor(model => model.SFSGNAMEAPPs)
+		   @Html.HiddenFor(model => model.SFSGNAMECHGs)
+		   @Html.HiddenFor(model => model.SFSGNEWs)
+		   @Html.HiddenFor(model => model.SFSGSCMVs)
+		   @Html.HiddenFor(model => model.HKSTAFFRELs)
+		   @Html.HiddenFor(model => model.HKSTAFFRELs1)
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary fa fa-save" Title="Save" />
+				@Html.ActionLink(" Back", "Index", null, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

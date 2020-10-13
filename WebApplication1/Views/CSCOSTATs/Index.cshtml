@@ -1,0 +1,191 @@
+﻿@using WebApplication1.Utility;
+@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<WebApplication1.CSCOSTAT>
+
+@{
+    ViewBag.Title = "Company Status List";
+}
+
+<style>
+
+    #debug {
+        background-color: #CCC;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+        #debug .debugLine {
+            margin: 2px 0;
+            padding: 1px 5px;
+            background-color: #EEE;
+        }
+
+    .CellWithComment {
+        position: relative;
+    }
+
+    .CellComment {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        border: 1px;
+        background-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
+        padding: 3px;
+        color: red;
+        top: 20px;
+        left: 20px;
+    }
+
+    .CellWithComment:hover span.CellComment {
+        display: block;
+    }
+</style>
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+    @Html.Action("Search")
+</div>
+
+<div class="border-0">
+    <div class="row form-inline">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+
+        @Html.ActionLink(" Listing", "Listing", null, new { @class = "btn btn-sm fa fa-print", title = "Listing" })
+    </div>
+    <table id="mainTable" class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th>
+                @Html.ActionLink("Add", "Create1", null, new { @class = "btn btn-primary h4" })
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.INCDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.INTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.STAFFCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.HKSTAFF.STAFFDESC)
+            </th>  
+            <th>
+                @Html.DisplayNameFor(model => model.First().SDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COSTAT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().FILETYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().FILELOC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SEALLOC)
+            </th>
+
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit1", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO , ViewBag.page }, new { @class = "fa fa-edit", title = "Edit" })
+                    @Html.ActionLink(" ", "Details1", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO, ViewBag.page }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete1", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO, ViewBag.page }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+                <td class="CellWithComment">
+                    @Html.DisplayFor(modelItem => item.CONO)
+                    <span class="CellComment">Click for details</span>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.CONAME)
+                 
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.INCDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.INTYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.STAFFCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.HKSTAFF.STAFFDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COSTAT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILETYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILELOC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SEALLOC)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+    @*<div id="debug"></div>*@
+</div>
+
+
+<script>
+
+
+    $(document).ready(function () {
+        $('#mainTable').dblclick(function (event) {
+            var target = $(event.target);
+            $td = target.closest('td');
+
+            //$td.html(parseInt($td.html()) + 1);
+            var col = $td.index();
+            var row = $td.closest('tr').index();
+            var id = '';
+            var company = '';
+            if ((row > 0) && (col == 1)) { 
+              
+                company = document.getElementById("mainTable").rows[row].cells.item(col).innerHTML;
+                company = company.split("<")[0];
+                id = ConvertIdToByteStr(company.trim())
+              
+                var newlink = '@Url.Action("Details", "CSCOMSTRs",null, "Http")' + '?id=' + id;
+    
+                window.open( newlink, '_blank');
+                //window.location = newlink;
+            }
+            $('#debug').prepend('<div class="debugLine">Cell at position (' + [col, row].join(',') + '-' + company + '-' + id + '-' + newlink + ') clicked!</div>');
+
+        });
+    });
+
+</script>

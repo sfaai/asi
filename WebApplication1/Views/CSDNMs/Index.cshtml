@@ -1,0 +1,239 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using WebApplication1.Utility;
+@model IPagedList<WebApplication1.CSDNM>
+
+@{
+    ViewBag.Title = "Debit Notes";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+    @Html.Action("Search")
+</div>
+
+<div class="border-0">
+
+    
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+    <div class="row form-inline">
+        @Html.ActionLink(" Debit Notes", "DNoteList", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print Debit Notes" })
+        @Html.ActionLink(" Listing", "Listing", null, new { @class = "btn btn-sm fa fa-print", title = "Listing" })
+        @Html.Editor("RPT_START", new { htmlAttributes = new { @type = "date", @Value = ViewBag.RPT_START.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+        @Html.Editor("RPT_END", new { htmlAttributes = new { @type = "date", @Value = ViewBag.RPT_END.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+
+    </div>
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th>
+                @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().TRNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().VDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COADDR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ATTN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NETAMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().detcnt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().refcnt)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.First().POSTBool)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().SEQNO)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.First().STAMP)
+                </th>*@
+
+        </tr>
+        @{ decimal netamt = 0;}
+        @foreach (var item in Model)
+        {
+            netamt += item.NETAMT;
+
+            <tr class="text-nowrap">
+                <td>
+                    @if (!item.archived)
+                    {
+                    @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO), page = ViewBag.page }, new { @class = "fa fa-edit", title = "Edit" })
+                    }
+                    @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO), page = ViewBag.page }, new { @class = "fa fa-folder", title = "Details" })
+                    @if ((item.refcnt == 0) && (!item.archived))
+                    {
+                        @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO), page = ViewBag.page }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                    @Html.ActionLink(" ", "DNote", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO) }, new { @class = "fa fa-print", title = "print" })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TRNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.COREGNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.CONAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ATTN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.NETAMT)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.detcnt)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.refcnt)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.POSTBool)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SEQNO)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.STAMP)
+                    </td>*@
+            </tr>
+        }
+
+        <tr>
+            <td colspan="8" style="text-align:right">
+                <strong>Total</strong>
+            </td>
+            <td style="text-align:right">
+                <strong> @netamt.ToString("N2")</strong>
+            </td>
+
+        </tr>
+
+    </table>
+
+    @Html.ActionLink(" Debit Notes", "DNoteList", new { page = ViewBag.page }, new { @class = "btn btn-sm fa fa-print", title = "print Debit Notes" })
+</div>
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        var ParamModel = null;
+        var rptStart = $('#RPT_START').val();
+        var rptEnd = $('#RPT_END').val();
+
+        $(document).ready(
+
+            function () {
+                rptStart = $('#RPT_START').val();
+                rptEnd = $('#RPT_END').val();
+                ParamModel = { "RPT_START": rptStart, "RPT_END": rptEnd }
+            })
+
+        $('#RPT_START').change(function () {
+
+
+            ParamModel.RPT_START = $('#RPT_START').val();
+            ParamModel.RPT_END = $('#RPT_END').val();
+
+
+            var jData = JSON.stringify(ParamModel);
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SetRptParam", "Home")',
+                data: jData,
+                //data: JSON.stringify( {RPT_START:'1/8/2018',RPT_END:'31/8/2018'} ),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    //alert(msg);
+                }
+            });
+
+        })
+
+        $('#RPT_END').change(function () {
+
+
+            ParamModel.RPT_START = $('#RPT_START').val();
+            ParamModel.RPT_END = $('#RPT_END').val();
+
+
+            var jData = JSON.stringify(ParamModel);
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SetRptParam", "Home")',
+                data: jData,
+                //data: JSON.stringify( {RPT_START:'1/8/2018',RPT_END:'31/8/2018'} ),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    //alert(msg);
+                }
+            });
+
+        })
+
+
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

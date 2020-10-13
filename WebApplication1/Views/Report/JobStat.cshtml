@@ -1,0 +1,271 @@
+﻿@model System.Data.DataTable
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>@ViewBag.Title</title>
+    <style>
+        td {
+            background-color: #555555;
+            color: #FFF;
+            font-weight: bold;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #debug {
+            background-color: #CCC;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+            #debug .debugLine {
+                margin: 2px 0;
+                padding: 1px 5px;
+                background-color: #EEE;
+            }
+
+        .CellWithComment {
+            position: relative;
+        }
+
+        .CellComment {
+            display: none;
+            position: absolute;
+            z-index: 100;
+            border: 1px;
+            background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-color: red;
+            padding: 3px;
+            color: red;
+            top: 20px;
+            left: 20px;
+        }
+
+        .CellWithComment:hover span.CellComment {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        @*<div class="text-center">
+                <h4 class="h4">@ViewBag.Company</h4>
+
+            </div>*@
+    </header>
+    @*<br /><br />
+        <span class="h4"><strong>@ViewBag.Title as at @DateTime.Today.ToString("dd/MM/yyyy")</strong></span>
+        <br /><br />*@
+    @{
+        int colno = 0;
+        int amt = 0;
+
+        int tot01 = 0;
+        int tot02 = 0;
+        int tot03 = 0;
+        int tot04 = 0;
+        int tot05 = 0;
+        int tot06 = 0;
+        int tot07 = 0;
+        int tot08 = 0;
+        int tot09 = 0;
+        int tot10 = 0;
+        int tot11 = 0;
+        int tot12 = 0;
+        int tot13 = 0;
+        int tot14 = 0;
+        int tot15 = 0;
+        int tot16 = 0;
+        int tot17 = 0;
+        int tot18 = 0;
+        int tot19 = 0;
+        int tot20 = 0;
+    }
+
+
+
+    <table id="mainTable" class="table table-bordered table-hover table-responsive-lg table-sm">
+        <thead>
+            <tr>
+                <th class="text-center" colspan="7">@ViewBag.Company</th>
+                <th class="text-center" colspan="6">@ViewBag.Title as at @DateTime.Today.ToString("dd/MM/yyyy")</th>
+            </tr>
+            <tr class="text-nowrap">
+
+
+                <th class="text-center">Row</th>
+
+                <th class="text-center">Staff</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">New</th>
+                <th class="text-center">Out</th>
+                <th class="text-center">AGM</th>
+                <th class="text-center">SSM/Statutory</th>
+                <th class="text-center">Return</th>
+                <th class="text-center">Cancel</th>
+                <th class="text-center">Complete</th>
+                <th class="text-center">WIP</th>
+                <th class="text-center">Total</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (System.Data.DataRow row in Model.Rows)
+            {
+                colno = 0;
+                <tr>
+                    @foreach (var cell in row.ItemArray)
+                    {
+                        System.Data.DataColumn col = Model.Columns[colno];
+
+                        if (colno == 2)
+                        {
+                            <td class="text-nowrap">@cell.ToString()</td>
+                        }
+                        else
+                        if (colno >= 3)
+                        {
+                            amt = (int)cell;
+
+                            if (@amt == 0)
+                            {
+                                <td></td>
+                            }
+                            else
+                            {
+                                <td class="text-right CellWithComment"style="text-align:right">
+                                    @amt.ToString("N0")
+                                    <span class="CellComment">Click for details</span>
+                                </td>
+                            }
+
+                            if (colno == 3) { tot01 += amt; }
+                            if (colno == 4) { tot02 += amt; }
+                            if (colno == 5) { tot03 += amt; }
+                            if (colno == 6) { tot04 += amt; }
+                            if (colno == 7) { tot05 += amt; }
+                            if (colno == 8) { tot06 += amt; }
+                            if (colno == 9) { tot07 += amt; }
+                            if (colno == 10) { tot08 += amt; }
+                            if (colno == 11) { tot09 += amt; }
+                            if (colno == 11) { tot10 += amt; }
+                            if (colno == 13) { tot11 += amt; }
+                            if (colno == 14) { tot12 += amt; }
+                            if (colno == 15) { tot13 += amt; }
+                            if (colno == 16) { tot14 += amt; }
+                            if (colno == 17) { tot15 += amt; }
+                            if (colno == 18) { tot16 += amt; }
+
+
+                        }
+                        else
+                        {
+
+                            <td class="text-nowrap">@cell.ToString()</td>
+                        }
+
+                        colno++;
+                    }
+                </tr>
+
+            }
+
+            <tr>
+
+                @foreach (System.Data.DataColumn col in Model.Columns)
+                {
+                    colno = col.Ordinal;
+
+                    if (colno == 3) { amt = tot01; }
+                    if (colno == 4) { amt = tot02; }
+                    if (colno == 5) { amt = tot03; }
+                    if (colno == 6) { amt = tot04; }
+                    if (colno == 7) { amt = tot05; }
+                    if (colno == 8) { amt = tot06; }
+                    if (colno == 9) { amt = tot07; }
+                    if (colno == 10) { amt = tot08; }
+                    if (colno == 11) { amt = tot09; }
+                    if (colno == 12) { amt = tot10; }
+                    if (colno == 13) { amt = tot11; }
+                    if (colno == 14) { amt = tot12; }
+                    if (colno == 15) { amt = tot13; }
+                    if (colno == 16) { amt = tot14; }
+                    if (colno == 17) { amt = tot15; }
+                    if (colno == 18) { amt = tot16; }
+
+
+
+
+                    if (colno < 3)
+                    {
+                        <td></td>
+                    }
+                    else
+                    {
+                        if (@amt == 0)
+                        {
+                           <td></td>
+                        }
+                        else
+                        {
+                            <td class="text-right CellWithComment"style="text-align:right">
+                                <strong>@amt.ToString("N0")</strong>
+                                <span class="CellComment">Click for details</span>
+                            </td>
+                        }
+                    }
+
+
+                }
+
+            </tr>
+
+        </tbody>
+    </table>
+    <div id="debug"></div>
+</body>
+
+</html>
+
+@Scripts.Render("~/bundles/jquery")
+
+<script>
+
+    $(document).ready(function () {
+        $('#mainTable').click(function (event) {
+            var target = $(event.target);
+            $td = target.closest('td');
+
+            //$td.html(parseInt($td.html()) + 1);
+            var col = $td.index();
+            var row = $td.closest('tr').index();
+            var staff = '';
+            var status = '';
+            if ((row == -1) || (col < 3)) { }
+            else {
+                row += 2;
+                staff = document.getElementById("mainTable").rows[row].cells.item(1).innerHTML;
+                status = document.getElementById("mainTable").rows[1].cells.item(col).innerHTML;
+                if (status == "Total") { status = ""; }
+                var newlink = '@Url.Action("Index1", "CSJOBDs")' + '?staff=' + staff + '&stage=' + status;
+                window.location = newlink;
+            }
+            $('#debug').prepend('<div class="debugLine">Cell at position (' + [col, row].join(',') + '-' + staff + '-' + status + ') clicked!</div>');
+
+        });
+    });
+</script>

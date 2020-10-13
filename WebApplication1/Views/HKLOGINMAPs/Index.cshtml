@@ -1,0 +1,57 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.HKLOGINMAP>
+
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "User Id to Staff Mapping List";
+}
+
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th>
+            @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().USERID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().STAFFCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().HKSTAFF.STAFFDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().STAMP)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+            <td>
+                @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.USERID) }, new { @class = "fa fa-edit", title = "Edit" })
+                @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.USERID) }, new { @class = "fa fa-folder", title = "Details" })
+                @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.USERID) }, new { @class = "fa fa-trash", title = "Delete" })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.USERID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STAFFCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HKSTAFF.STAFFDESC)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.STAMP)
+            </td>
+        </tr>
+    }
+
+</table>

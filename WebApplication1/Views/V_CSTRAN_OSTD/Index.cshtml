@@ -1,0 +1,110 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.V_CSTRAN_OSTD>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">@ViewBag.Title</h2>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr  class="label-primary">
+	   <th>
+         @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary h4" })
+       </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CONAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CONO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COREGNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENTDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PARTICULARS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PARTICULARS1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PARTICULARS2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SOURCE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SOURCENO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TROS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MINAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MAXAMT)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new {  /* id=item.PrimaryKey */  }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new {  /* id=item.PrimaryKey */ }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new {  /* id=item.PrimaryKey */  }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.CONAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CONO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COREGNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENTDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PARTICULARS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PARTICULARS1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PARTICULARS2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SOURCE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SOURCENO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TROS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MINAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MAXAMT)
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,80 @@
+﻿@model WebApplication1.CSCOADT
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CSCOADT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ADATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENDDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENDDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CSADT.ADTDESC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CSADT.ADTDESC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CSPR.CONSTCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CSPR.CONSTCODE)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

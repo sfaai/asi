@@ -1,0 +1,106 @@
+﻿@model IEnumerable<WebApplication1.SAUSERM>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.USERNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PW)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CRDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EXPDAYS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LUDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EXUSER)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MAXSESSION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USERTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PWMINCHAR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PWRECYCLE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PWFAILLOCK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USERLOCK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.USERNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PW)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CRDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EXPDAYS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LUDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EXUSER)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MAXSESSION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USERTYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PWMINCHAR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PWRECYCLE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PWFAILLOCK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USERLOCK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.USERID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.USERID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.USERID })
+        </td>
+    </tr>
+}
+
+</table>

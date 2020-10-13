@@ -1,0 +1,1 @@
+group_id|group_department|group_code|group_event|group_display

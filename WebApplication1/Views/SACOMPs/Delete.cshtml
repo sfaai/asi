@@ -1,0 +1,128 @@
+﻿@model WebApplication1.SACOMP
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SACOMP</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.COREGNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COREGNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COADDR1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COADDR1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COADDR2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COADDR2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COADDR3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COADDR3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COADDR4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COADDR4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COPHONE1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COPHONE1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COPHONE2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COPHONE2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COFAX1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COFAX1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COFAX2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COFAX2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COWEB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COWEB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTRYOPR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTRYOPR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ACCMETHOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ACCMETHOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

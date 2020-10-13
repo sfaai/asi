@@ -1,0 +1,84 @@
+﻿@model WebApplication1.CSOFF
+
+
+<style>
+    .ad-left {
+        border: medium;
+        float: left;
+        width: 53vw;
+    }
+
+    .ad-right {
+        border: medium;
+        float: right;
+        margin-left: 0px;
+        width: 45vw;
+    }
+
+    .entire-thing {
+        width: 98vw;
+    }
+</style>
+
+<div class="entire-thing">
+    <div  class="ad-left border">
+        <div id="divEditDBItem" style="width:96vw">
+            @{Html.RenderPartial("Partial/EditDBItem", @Model);}
+        </div>
+         
+    </div>
+
+
+
+    <div  class="ad-right border">
+
+        <div id="divEditCRItem" style="width:96vw">
+            @{Html.RenderPartial("Partial/EditCRItem", @Model);}
+        </div>
+
+    </div>
+    <div class="clear"></div>
+
+
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+<script>
+    $(document).ready(function () {
+
+        @*$('#DBKey').change(function () {
+            JModel.CONO = $('#CONO').val();
+            JModel.VDATE = $('#VDATE').val();
+            JModel.DBKey = $('#DBKey').val();
+            JModel.CRKey = $('#CRKey').val();
+            JModel.REM = $('#REM').val();
+            JModel.STAMP = $('#STAMP').val();
+
+            $("#divEditCompany").load('@Url.Action("EditCompany")', JModel, function (response, status, xhr) {
+                if (status != "success") {
+                    alert(xhr.statusText + "\nPlease Refresh and try again");
+                }
+            });
+        })
+
+        $('#CRKey').change(function () {
+            JModel.CONO = $('#CONO').val();
+            JModel.VDATE = $('#VDATE').val();
+            JModel.DBKey = $('#DBKey').val();
+            JModel.CRKey = $('#CRKey').val();
+            JModel.REM = $('#REM').val();
+            JModel.STAMP = $('#STAMP').val();
+
+            $("#divEditCompany").load('@Url.Action("EditCompany")', JModel, function (response, status, xhr) {
+                if (status != "success") {
+                    alert(xhr.statusText + "\nPlease Refresh and try again");
+                }
+            });
+        })*@
+
+    })
+</script>
+
+
+

@@ -1,0 +1,110 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSCOSHEQD>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr  class="label-primary">
+	   <th>
+         @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+       </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MVTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MVNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MVID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INMVTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INMVNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INMVID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OUTMVTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OUTMVNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OUTMVID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MVDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SHAREAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSCOSH.REM)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new {  /* id=item.PrimaryKey */  }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new {  /* id=item.PrimaryKey */ }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new {  /* id=item.PrimaryKey */  }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.MVTYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MVNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MVID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INMVTYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INMVNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INMVID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OUTMVTYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OUTMVNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OUTMVID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MVDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SHAREAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSCOSH.REM)
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,284 @@
+﻿@model WebApplication1.CSDND
+@using WebApplication1.Utility
+
+@{
+
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.TRNO)
+
+        @Html.HiddenFor(model => model.TRID)
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-6 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.CASECODE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.DropDownList("CASECODE", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.CASECODE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-6 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.ITEMTYPE, null, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.DropDownList("ITEMTYPE", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ITEMTYPE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-6 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.ITEMDESC, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.ITEMDESC, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ITEMDESC, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-6 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.ITEMSPEC, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.ITEMSPEC, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ITEMSPEC, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TAXRATE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TAXRATE, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TAXRATE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                <button id="btnTax" name="btnTax" type="button" class="btn btn-primary">Update Tax</button>
+            </div>
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.ITEMAMT1, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.ITEMAMT1, new { htmlAttributes = new { @class = "form-control text-right" } })
+                    @Html.ValidationMessageFor(model => model.ITEMAMT1, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.Label("Calc Own Tax", htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.Editor("ITEMCALC1", new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+
+                </div>
+            </div>
+
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TAXAMT1, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TAXAMT1, new { htmlAttributes = new { @class = "form-control text-right" } })
+                    @Html.ValidationMessageFor(model => model.TAXAMT1, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.NETAMT1, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.NETAMT1, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.NETAMT1, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.ITEMAMT2, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.ITEMAMT2, new { htmlAttributes = new { @class = "form-control text-right" } })
+                    @Html.ValidationMessageFor(model => model.ITEMAMT2, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.Label("Calc 3rd Party Tax", htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.Editor("ITEMCALC2", new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+
+                </div>
+            </div>
+
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TAXAMT2, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TAXAMT2, new { htmlAttributes = new { @class = "form-control text-right" } })
+                    @Html.ValidationMessageFor(model => model.TAXAMT2, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.NETAMT2, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.NETAMT2, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.NETAMT2, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.ITEMAMT, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.ITEMAMT, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.ITEMAMT, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.Label("Calc Net Tax", htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.Editor("ITEMCALC", new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                   
+                </div>
+            </div>
+
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TAXAMT, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TAXAMT, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.TAXAMT, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.NETAMT, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.NETAMT, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.NETAMT, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        @*<div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        @Html.HiddenFor(model => model.CSCASE)
+        @Html.HiddenFor(model => model.STAMP)
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary fa fa-save" Title="Save" />
+                @Html.ActionLink(" Back", "Edit", "CSDNMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.TRNO) }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+
+<script>
+    $(document).ready(function () {
+        $('#TAXRATE').change('#TAXRATE', CalcTax);
+        $('#ITEMAMT1').change('#ITEMAMT1', AddItem);
+        $('#ITEMAMT2').change('#ITEMAMT2', AddItem);
+        $('#TAXAMT1').change('#TAXAMT1', AddItem);
+        $('#TAXAMT2').change('#TAXAMT2', AddItem);
+        $('#btnTax').click(UpdateTax);
+        CalcTax('#TAXRATE');
+        UpdateTotal();
+    })
+
+    function UpdateTax() {
+        $('#TAXAMT1').val($('#ITEMCALC1').val());
+        $('#TAXAMT2').val($('#ITEMCALC2').val());
+        $('#TAXAMT').val($('#ITEMCALC').val());
+
+        UpdateTotal();
+    }
+
+    function UpdateTotal() {
+        var item1 = $('#ITEMAMT1').val();
+        var item2 = $('#ITEMAMT2').val();
+        var tax1 = $('#TAXAMT1').val();
+        var tax2 = $('#TAXAMT2').val();
+        $('#ITEMAMT').val(parseFloat(parseFloat(item1) + parseFloat(item2)).toFixed(2));
+        $('#TAXAMT').val(parseFloat(parseFloat(tax1) + parseFloat(tax2)).toFixed(2));
+        $('#NETAMT1').val(parseFloat(parseFloat(item1) + parseFloat(tax1)).toFixed(2));
+        $('#NETAMT2').val(parseFloat(parseFloat(item2) + parseFloat(tax2)).toFixed(2));
+        $('#NETAMT').val(parseFloat(parseFloat(item1) + parseFloat(tax1) + parseFloat(item2) + parseFloat(tax2)).toFixed(2));
+
+    }
+
+    function CalcTax(id) {
+        UpdateTotal();
+        var rate = $('#TAXRATE').val();
+        var item1 = $('#ITEMAMT1').val();
+        var item2 = $('#ITEMAMT2').val();
+        var item = $('#ITEMAMT').val();
+
+        $('#ITEMCALC1').val(parseFloat(rate * item1 / 100).toFixed(2));
+        $('#ITEMCALC2').val(parseFloat(rate * item2 / 100).toFixed(2));
+        $('#ITEMCALC').val(parseFloat(rate * item / 100).toFixed(2));
+        $(id.data).val(parseFloat($(id.data).val()).toFixed(2));
+    }
+
+    function AddItem(id) {
+
+        CalcTax('#TAXRATE');
+        $(id.data).val(parseFloat($(id.data).val()).toFixed(2));
+    }
+    </script>
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,210 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using WebApplication1.Utility;
+@model IPagedList<WebApplication1.CSPRF>
+
+@{
+    ViewBag.Title = "Proforma Bill";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.title</h4>
+    @Html.Action("Search")
+</div>
+<div class="border-0">
+    <div class="row">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+        @Html.ActionLink(" Proforma Bills", "ProformaList", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print proforma bills" })
+        @Html.ActionLink(" Listing", "Listing", null, new { @class = "btn btn-sm fa fa-print", title = "print listing" })
+    </div>
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th>
+                @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().PRFNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().VDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COADDR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DUEDAYS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DUEDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ATTN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NETAMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AllocAmt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().billcnt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().refcnt)
+            </th>
+
+            @*<th>
+                    @Html.DisplayNameFor(model => model.First().SEQNO)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().INVALLOCBool)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().INVNO)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().INVID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().STAMP)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().CSCOADDR.MAILADDRBool)
+                </th>*@
+
+        </tr>
+        @{
+            decimal netamt = 0;
+            decimal allocamt = 0;
+            string myWarning = "White";
+        }
+
+        @foreach (var item in Model)
+        {
+            netamt += item.NETAMT;
+            allocamt += item.AllocAmt;
+            if (item.NETAMT != item.AllocAmt)
+            {
+                myWarning = "rosybrown";
+            }
+            else
+            {
+                myWarning = "white";
+            }
+
+            <tr class="text-nowrap" style="background-color: @myWarning">
+                <td style="background-color: white">
+                    @if (!item.archived)
+                    {
+                    @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRFNO), page = ViewBag.page }, new { @class = "fa fa-edit", title = "Edit" })
+                    }
+                    @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRFNO), page = ViewBag.page }, new { @class = "fa fa-folder", title = "Details" })
+                    @if ((item.refcnt == 0) && (!item.archived))
+                    {
+                        @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRFNO), page = ViewBag.page }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                    @Html.ActionLink(" ", "Proforma", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRFNO) }, new { @class = "fa fa-print", title = "print" })
+                    @*@if (string.IsNullOrEmpty(item.CSCOMSTR.WEB)) { }
+                    else
+                    {
+                    @Html.ActionLink(" ", "Email", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRFNO) }, new { @class = "fa fa-envelope-o", title = "Email" })
+                    }*@
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PRFNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.CSCOMSTR.COREGNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.CSCOMSTR.CONAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DUEDAYS)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DUEDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ATTN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.NETAMT)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.AllocAmt)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.billcnt)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.refcnt)
+                </td>
+   
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.SEQNO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.INVALLOCBool)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.INVNO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.INVID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.STAMP)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CSCOADDR.MAILADDRBool)
+                    </td>*@
+            </tr>
+        }
+        <tr>
+            <td colspan="10" style="text-align:right">
+                <strong>Total</strong>
+            </td>
+            <td style="text-align:right">
+                <strong> @netamt.ToString("N2")</strong>
+            </td>
+            <td style="text-align:right">
+                <strong> @allocamt.ToString("N2")</strong>
+            </td>
+        </tr>
+    </table>
+
+    @Html.ActionLink(" Proforma Bills", "ProformaList", new { page = ViewBag.page }, new { @class = "btn btn-sm fa fa-print", title = "print this page proforma bills" })
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,67 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.HKSTAFF>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr  class="label-primary">
+	   <th>
+         @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+       </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAFFCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAFFDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAFFLEVEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MSTRSTAFF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REFCNT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new { id =  MyHtmlHelpers.ConvertIdToByteStr(item.STAFFCODE ) }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.STAFFCODE ) }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.STAFFCODE ) }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAFFCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAFFDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAFFLEVEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MSTRSTAFF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REFCNT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+    </tr>
+}
+
+</table>

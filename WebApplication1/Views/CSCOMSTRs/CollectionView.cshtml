@@ -1,0 +1,295 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSLDG>
+
+@{
+    ViewBag.Title = "Collection Status";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title from @ViewBag.RPT_START to @ViewBag.RPT_END</h4>
+</div>
+@ViewBag.Company
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th colspan="9"class="text-center border border-dark">Particulars</th>
+        <th colspan="4" class="text-center border border-dark">Own Items</th>
+        <th colspan="5"class="text-center border border-dark">3rd Party Items</th>
+        <th colspan="5"class="text-center border border-dark">Total</th>
+    </tr>
+    <tr class="label-primary">
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().SOURCE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SOURCENO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SOURCEID)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().JOBNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CASENO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CASECODE)
+        </th>
+        <th>
+            Apply Item
+        </th>
+        <th>
+            Staff
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ENTDATE)
+        </th>
+
+        <th >
+            @Html.DisplayNameFor(model => model.First().FEE1)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().WORK1)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAX1)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().DISB1)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().FEE2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().WORK2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAX2)
+        </th>
+
+
+
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().DISB2)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().REIMB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TotalItems)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().RECEIPT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ADVANCE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().DEP)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().SEQNO)
+        </th>
+    </tr>
+    @{
+        string AppRef = "";
+        string staff = "";
+        decimal totfee1 = 0;
+        decimal totfee2 = 0;
+        decimal totwork1 = 0;
+        decimal totwork2 = 0;
+        decimal totdisb1 = 0;
+        decimal totdisb2 = 0;
+        decimal tottax1 = 0;
+        decimal tottax2 = 0;
+        decimal totreimb = 0;
+        decimal totitem = 0;
+        decimal totreceipt = 0;
+        decimal totadvance = 0;
+        decimal totdeposit = 0;
+        decimal totdiff = 0;
+    }
+    @foreach (var item in Model)
+    {
+        totfee1 += item.FEE1;
+        totfee2 += item.FEE1;
+        totwork1 += item.WORK1;
+        totwork2 += item.WORK2;
+        totdisb1 += item.DISB1;
+        totdisb2 += item.DISB2;
+        tottax1 += item.TAX1;
+        tottax2 += item.TAX2;
+        totreimb += item.REIMB;
+        totitem += item.TotalItems;
+        totreceipt += item.RECEIPT;
+        totadvance += item.ADVANCE;
+        totdeposit += item.DEP;
+
+        if (ViewBag.CSJOB != null)
+        {
+            staff = ((IQueryable<CSJOBM>)ViewBag.CSJOB).Where(x => x.JOBNO == item.JOBNO).Select(y => y.JOBSTAFF).FirstOrDefault();
+        }
+        AppRef = ((IQueryable<CSTRANM>)ViewBag.CSTRANM).Where(x => x.SOURCE == item.SOURCE && x.SOURCEID == item.SOURCEID && x.SOURCENO == item.SOURCENO).Select(y => y.APPTYPE + " " + y.APPNO + " " + y.APPID).FirstOrDefault();
+
+        <tr class="text-nowrap">
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.SOURCE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SOURCENO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SOURCEID)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.JOBNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CASENO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CASECODE)
+            </td>
+            <td>
+                @AppRef
+            </td>
+            <td>
+                @staff
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ENTDATE)
+            </td>
+
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.FEE1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.WORK1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAX1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.DISB1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.FEE2)
+            </td>
+
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.WORK2)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAX2)
+            </td>
+
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.DISB2)
+            </td>
+
+
+
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.REIMB)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TotalItems)
+            </td>
+
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.RECEIPT)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.ADVANCE)
+            </td>
+
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.DEP)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.SEQNO)
+            </td>
+
+        </tr>
+    }
+
+    @{ totdiff = totreceipt - totitem - totadvance - totdeposit;
+    }
+    <tr >
+
+
+        <td colspan="7">
+        
+        </td>
+        <td>Difference</td>
+        <td>@totdiff.ToString("N2")</td>
+
+        <td class="border text-right">
+            @totfee1.ToString("N2")
+        </td>
+        <td class="border text-right">
+            @totwork1.ToString("N2")
+        </td>
+        <td class="border text-right">
+            @tottax1.ToString("N2")
+        </td>
+        <td class="border text-right">
+            @totdisb1.ToString("N2")
+        </td>
+        <td class="border text-right">
+            @totfee2.ToString("N2")
+        </td>
+        <td class="border text-right">
+            @totwork2.ToString("N2")
+        </td>
+        <td class="border text-right">
+            @tottax2.ToString("N2")
+        </td>
+        <td class="border text-right">
+            @totdisb2.ToString("N2")
+        </td>
+
+
+
+        <td class="border text-right">
+            @totreimb.ToString("N2")
+        </td>
+        <td class="border border-dark text-right">
+            @totitem.ToString("N2")
+        </td>
+
+        <td class="border border-dark text-right">
+            @totreceipt.ToString("N2")
+        </td>
+        <td class="border text-right">
+            @totadvance.ToString("N2")
+        </td>
+
+        <td class="border text-right">
+            @totdeposit.ToString("N2")
+        </td>
+
+        <td>
+           
+        </td>
+
+    </tr>
+</table>

@@ -1,0 +1,2293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5F7EEF0-2745-4573-8251-17B6D73CA5FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <ApplicationInsightsResourceId>/subscriptions/01a5af60-ba19-4630-8075-9c1b182accab/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/SirisCS</ApplicationInsightsResourceId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DCSoft.RTF, Version=1.0.0.34176, Culture=neutral, PublicKeyToken=2e40e961ea876340, processorArchitecture=MSIL">
+      <HintPath>..\packages\RtfDomParser.1.0.0\lib\DCSoft.RTF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.Firebird, Version=5.11.0.0, Culture=neutral, PublicKeyToken=42d22d092898e5f8, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Firebird.5.11.0\lib\net452\EntityFramework.Firebird.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=5.11.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.5.11.0\lib\net452\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.TextTemplating.14.0, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="UtilityClass">
+      <HintPath>..\UtilityClass\bin\Release\UtilityClass.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APCND.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APCNM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APDOD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APDOM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APGLJR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APINVD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APINVM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APOFF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APPOD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APPOM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APPYM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="APRF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APTRAND.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APTRANM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ASPNETROLE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ASPNETUSER.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ASPNETUSERCLAIM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ASPNETUSERLOGIN.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CICL.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CICLADDR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CICLPIC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CICLREG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CMRCCT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CMRECD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CMRECM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\APCNDsController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CSADTsController.cs" />
+    <Compile Include="Controllers\CSBILLDESCsController.cs" />
+    <Compile Include="Controllers\CSBILLsController.cs" />
+    <Compile Include="Controllers\CSBKsController.cs" />
+    <Compile Include="Controllers\CSCASEDOCsController.cs" />
+    <Compile Include="Controllers\CSCASEFEEsController.cs" />
+    <Compile Include="Controllers\CSCASEsController.cs" />
+    <Compile Include="Controllers\CSCHGREMsController.cs" />
+    <Compile Include="Controllers\CSCOAGTCHGsController.cs" />
+    <Compile Include="Controllers\CSCODRCHGsController.cs" />
+    <Compile Include="Controllers\CSCOMGRCHGsController.cs" />
+    <Compile Include="Controllers\CSCOSECCHGsController.cs" />
+    <Compile Include="Controllers\CSCOSHCHGsController.cs" />
+    <Compile Include="Controllers\CSCOSHEQDsController.cs" />
+    <Compile Include="Controllers\CSCOSHEQsController.cs" />
+    <Compile Include="Controllers\CSDNDsController.cs" />
+    <Compile Include="Controllers\CSCNDsController.cs" />
+    <Compile Include="Controllers\CSDNMsController.cs" />
+    <Compile Include="Controllers\CSCNMsController.cs" />
+    <Compile Include="Controllers\CSCOADDRsController.cs" />
+    <Compile Include="Controllers\CSCOADTsController.cs" />
+    <Compile Include="Controllers\CSCOAGMsController.cs" />
+    <Compile Include="Controllers\CSCOAGTsController.cs" />
+    <Compile Include="Controllers\CSCOAKsController.cs" />
+    <Compile Include="Controllers\CSCOARsController.cs" />
+    <Compile Include="Controllers\CSCOBANKsController.cs" />
+    <Compile Include="Controllers\CSCOCMsController.cs" />
+    <Compile Include="Controllers\CSCODEBsController.cs" />
+    <Compile Include="Controllers\CSCODRsController.cs" />
+    <Compile Include="Controllers\CSCOFEEsController.cs" />
+    <Compile Include="Controllers\CSCOLASTNOesController.cs" />
+    <Compile Include="Controllers\CSCOMGRsController.cs" />
+    <Compile Include="Controllers\CSCOMSTRsController.cs" />
+    <Compile Include="Controllers\CSCONAMEsController.cs" />
+    <Compile Include="Controllers\CSCOPARENTsController.cs" />
+    <Compile Include="Controllers\CSCOPICsController.cs" />
+    <Compile Include="Controllers\CSCOPUKsController.cs" />
+    <Compile Include="Controllers\CSCOSECsController.cs" />
+    <Compile Include="Controllers\CSCOSHesController.cs" />
+    <Compile Include="Controllers\CSCOSTATsController.cs" />
+    <Compile Include="Controllers\CSCOTXesController.cs" />
+    <Compile Include="Controllers\CSEQsController.cs" />
+    <Compile Include="Controllers\CSGRPDsController.cs" />
+    <Compile Include="Controllers\CSGRPMsController.cs" />
+    <Compile Include="Controllers\CSGRPPICsController.cs" />
+    <Compile Include="Controllers\CSITEMsController.cs" />
+    <Compile Include="Controllers\CSJOBDsController.cs" />
+    <Compile Include="Controllers\CSJOBMsController.cs" />
+    <Compile Include="Controllers\CSJOBSTFsController.cs" />
+    <Compile Include="Controllers\CSJOBSTsController.cs" />
+    <Compile Include="Controllers\CSOFFsController.cs" />
+    <Compile Include="Controllers\CSPRFsController.cs" />
+    <Compile Include="Controllers\CSPRSADDRsController.cs" />
+    <Compile Include="Controllers\CSPRsController.cs" />
+    <Compile Include="Controllers\CSPRSREGsController.cs" />
+    <Compile Include="Controllers\CSPYRController.cs" />
+    <Compile Include="Controllers\CSRCPsController.cs" />
+    <Compile Include="Controllers\CSSTATsController.cs" />
+    <Compile Include="Controllers\CSTAXTYPEsController.cs" />
+    <Compile Include="Controllers\CSTRANMsController.cs" />
+    <Compile Include="Controllers\CSTXesController.cs" />
+    <Compile Include="Controllers\HKLOGINMAPsController.cs" />
+    <Compile Include="Controllers\HKSTAFFsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Controllers\SACOMPsController.cs" />
+    <Compile Include="Controllers\SalesTaxController.cs" />
+    <Compile Include="Controllers\SAUSERMsController.cs" />
+    <Compile Include="Controllers\VCSCOAGMController.cs" />
+    <Compile Include="Controllers\VCSCOARController.cs" />
+    <Compile Include="Controllers\V_CSTRAN_OSTDController.cs" />
+    <Compile Include="COSTAT_IVTAB.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CQBANK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CQCHQ.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CQGLJR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CQITEM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CQPAPER.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CQPARAM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CQREG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSADT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSBILL.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSBILLDESC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSBK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCANC3P.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCASE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCASEDOC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCASEFEE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCHGREM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCND.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCNM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOADDR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOADT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOAGM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOAGT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOAGTCHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOAK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOAR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOBANK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOCM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCODEB.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCODR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCODRCHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOFEE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOLASTNO.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOMGR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOMGRCHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOMSTR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCONAME.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOPARENT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOPIC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOPUK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOSEC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOSECCHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOSH.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOSHCHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOSHEQ.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOSHEQD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOSTAT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSCOTX.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSDND.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSDNM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSEQ.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSGLJR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSGRPD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSGRPM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSGRPPIC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSINV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSITEM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSJOBD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSJOBM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSJOBST.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSJOBSTF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSLDG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSOFF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSPARAM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSPR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSPR1.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSPRF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSPRSADDR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSPRSREG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSPYM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSQT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSQTST.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSQTSTG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSRCP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSRF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSSTAT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSSTG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSSTG_IVTAB.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSTAXTYPE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSTRAND.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSTRANM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CSTX.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataModule.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModule.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataModule.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EMTRA.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMTRCD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMTRCM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMTRSD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMTRSM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMTRTD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMTRTM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAALLC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FACLSD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FACLSM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAGLJR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FALDG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FALOC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FALOCCHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAMSTR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAOUT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FARCP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FASPLIT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FASTCHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLACC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLACCREL.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLBATCH.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLBGD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLBGM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLBRANCH.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLCURR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLCURRCVD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLCURRCVM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLJOUR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GLPARAM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLPERIOD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLPRJ.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLRECURD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLRECURM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLSTAFF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLSUBSY.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLTRAND.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLTRANM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLUNIT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLYEAR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GLYTD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKBANK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKCITY.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKCONST.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKCTRY.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKHOL.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKLOGINMAP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKMAP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKNATION.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKRACE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKRCISSLOC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKRCMODE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKREGTYPE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKREL.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKSTAFF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKSTAFFREL.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKSTATE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HKTITLE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\DAY_IVTAB.cs" />
+    <Compile Include="Models\CSCOSHEQD.cs" />
+    <Compile Include="Models\CSCOSHEQ.cs" />
+    <Compile Include="Models\CSCOSHCHG.cs" />
+    <Compile Include="Models\CSCOMGRCHG.cs" />
+    <Compile Include="Models\CSCODRCHG.cs" />
+    <Compile Include="Models\CSCOSECCHG.cs" />
+    <Compile Include="Models\CSCOAGTCHG.cs" />
+    <Compile Include="Models\CSGRPD.cs" />
+    <Compile Include="Models\CSGRPM.cs" />
+    <Compile Include="Models\CSPRSREG.cs" />
+    <Compile Include="Models\CSCHGREM.cs" />
+    <Compile Include="Models\CSBILLDESC.cs" />
+    <Compile Include="Models\CSPRSADDR.cs" />
+    <Compile Include="Models\CSSTAT.cs" />
+    <Compile Include="Models\CSTX.cs" />
+    <Compile Include="Models\CSCOTX.cs" />
+    <Compile Include="Models\CSCOSH.cs" />
+    <Compile Include="Models\CSCOSEC.cs" />
+    <Compile Include="Models\CSEQ.cs" />
+    <Compile Include="Models\CSCOPUK.cs" />
+    <Compile Include="Models\CSCOPARENT.cs" />
+    <Compile Include="Models\CSCONAME.cs" />
+    <Compile Include="Models\CSCOMGR.cs" />
+    <Compile Include="Models\CSCOLASTNO.cs" />
+    <Compile Include="Models\CSADT.cs" />
+    <Compile Include="Models\CSCODR.cs" />
+    <Compile Include="Models\CSCODEB.cs" />
+    <Compile Include="Models\CSCOCM.cs" />
+    <Compile Include="Models\CSCOBANK.cs" />
+    <Compile Include="Models\CSCOAGT.cs" />
+    <Compile Include="Models\CSCOAK.cs" />
+    <Compile Include="Models\CSCOADT.cs" />
+    <Compile Include="Models\EmailModel.cs" />
+    <Compile Include="Models\CostatViewModels.cs" />
+    <Compile Include="Models\MONTH_IVTAB.cs" />
+    <Compile Include="Models\PrfBillViewModels.cs" />
+    <Compile Include="Models\FbRepository.cs" />
+    <Compile Include="Models\TaxViewModels.cs" />
+    <Compile Include="Models\CSJOBSTF.cs" />
+    <Compile Include="Models\CSJOBD.cs" />
+    <Compile Include="Models\CSJOBM.cs" />
+    <Compile Include="Models\CSLDG.cs" />
+    <Compile Include="Models\CSOFF.cs" />
+    <Compile Include="Models\CSJOBST.cs" />
+    <Compile Include="Models\CSTRANM.cs" />
+    <Compile Include="Models\CSDND.cs" />
+    <Compile Include="Models\CSCND.cs" />
+    <Compile Include="Models\CSBILL.cs" />
+    <Compile Include="Models\CSCASE.cs" />
+    <Compile Include="Models\CSCASEDOC.cs" />
+    <Compile Include="Models\CSCASEFEE.cs" />
+    <Compile Include="Models\CSDNM.cs" />
+    <Compile Include="Models\CSCOADDR.cs" />
+    <Compile Include="Models\CSCOAGM.cs" />
+    <Compile Include="Models\CSCOAR.cs" />
+    <Compile Include="Models\CSCOFEE.cs" />
+    <Compile Include="Models\CSCOMSTR.cs" />
+    <Compile Include="Models\CSCOPIC.cs" />
+    <Compile Include="Models\CSCOSTAT.cs" />
+    <Compile Include="Models\CSCNM.cs" />
+    <Compile Include="Models\CSITEM.cs" />
+    <Compile Include="Models\CSPR.cs" />
+    <Compile Include="Models\CSPRF.cs" />
+    <Compile Include="Models\CSTAXTYPE.cs" />
+    <Compile Include="Models\HKLOGINMAP.cs" />
+    <Compile Include="Models\SACOMP.cs" />
+    <Compile Include="Models\HKRCMODE.cs" />
+    <Compile Include="Models\HKISSLOC.cs" />
+    <Compile Include="Models\HKCONST.cs" />
+    <Compile Include="Models\CSRCP.cs" />
+    <Compile Include="Models\HKBANK.cs" />
+    <Compile Include="Models\HKMAP.cs" />
+    <Compile Include="Models\HKCTRY.cs" />
+    <Compile Include="Models\HKSTAFF.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\V_CSCOAGM.cs" />
+    <Compile Include="Models\V_CSCOAR.cs" />
+    <Compile Include="Models\V_CSTRAN_OSTD.cs" />
+    <Compile Include="Models\YEAR_IVTAB.cs" />
+    <Compile Include="PCCAT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PCGLJR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PCINJ.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PCLDG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PCOFF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PCPARAM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PCTRAND.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PCTRANM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SAAUDITD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAAUDITM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SACOMP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAGRPD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAGRPM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SALASTNO.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SALOCKH.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAMODULE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAPARAM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAPRG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAPWH.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SATEM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAUSERDG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAUSERDP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAUSERM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYADDRCHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYNAMEAPP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYNAMECHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYNEW.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYNEWDR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYNEWMG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYNEWPUK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYNEWSC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYNEWSH.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYNEWSHD1.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYNEWSHD2.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYSCMV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYSCMVD1.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFMYSCMVD2.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFPARAM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGADDRCHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGDRMV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGDRMVD1.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGDRMVD2.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNAMEAPP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNAMECHG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEW.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWBK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWBKD1.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWDR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWDRD1.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWDRD2.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWDRD3.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWFEE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWMG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWPUK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWSC.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWSH.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWSHD1.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGNEWSHD2.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGSCMV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGSCMVD1.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFSGSCMVD2.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SFTEMPLATE.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIADJ.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIBF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SICHRG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIDP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIDPREL.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIGLJR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILN.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNCAP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNCN.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNDD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNINV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNINVMV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNINVWK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNLDG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNMETHOD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNMSTR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNMV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNRCD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNRCM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNSCHD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNSCHM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNST.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNTRST.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNWO.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILNWV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SILV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIPARAM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIRATED.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIRATEM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIRK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIRKBF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIRKLN.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIRKLV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFADDR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFREG.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFST.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFSTBF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFSTBFMV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFSTLN.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFSTLNMV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFSTLV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFSTLVADJ.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFSTLVMV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFSTMV.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISTFSTREL.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGBANK.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGDA.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGIPODBF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGIPODPF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGIPODWF.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGIPOM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGIPOSTAT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGPART.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGPPD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGPPM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGRID.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGRID1.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGRIM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGSCRIPT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SRSGSR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSBFTRD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSBFTRM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSLNTRD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSLNTRM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSLVCT.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSLVPLAN.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSLVTRD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSLVTRDL.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSLVTRM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSSPPD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SSSPPM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_IVTAB.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="UTEMAILD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UTEMAILGD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UTEMAILGM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UTEMAILM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UTEMAILSVR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\myHtmlHelper.cs" />
+    <Compile Include="V_CSCOAGM.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="V_CSCOAR.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="V_CSTRAN_OSTD.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+    <Compile Include="XDesigner\RTF.cs" />
+    <Compile Include="ZZTMP.cs">
+      <DependentUpon>DataModule.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\WebApplication1.dll" />
+    <Content Include="bin\WebApplication1.pdb" />
+    <Content Include="CodeTemplates\ApiControllerEmpty\Controller.cs.t4" />
+    <Content Include="CodeTemplates\ApiControllerEmpty\Controller.vb.t4" />
+    <Content Include="CodeTemplates\ApiControllerWithActions\Controller.cs.t4" />
+    <Content Include="CodeTemplates\ApiControllerWithActions\Controller.vb.t4" />
+    <Content Include="CodeTemplates\ApiControllerWithContext\Controller.cs.t4" />
+    <Content Include="CodeTemplates\ApiControllerWithContext\Controller.vb.t4" />
+    <Content Include="CodeTemplates\ApiDependencyCodeGenerator\Global.asax.cs.t4" />
+    <Content Include="CodeTemplates\ApiDependencyCodeGenerator\Global.asax.vb.t4" />
+    <Content Include="CodeTemplates\ApiDependencyCodeGenerator\Global.cs.t4" />
+    <Content Include="CodeTemplates\ApiDependencyCodeGenerator\Global.vb.t4" />
+    <Content Include="CodeTemplates\ApiDependencyCodeGenerator\WebApiConfig.cs.t4" />
+    <Content Include="CodeTemplates\ApiDependencyCodeGenerator\WebApiConfig.vb.t4" />
+    <Content Include="CodeTemplates\AssemblyVersions.xml" />
+    <Content Include="CodeTemplates\MvcArea\Area.cs.t4" />
+    <Content Include="CodeTemplates\MvcArea\Area.vb.t4" />
+    <Content Include="CodeTemplates\MvcArea\web.cs.t4" />
+    <Content Include="CodeTemplates\MvcArea\web.vb.t4" />
+    <Content Include="CodeTemplates\MvcControllerEmpty\Controller.cs.t4" />
+    <Content Include="CodeTemplates\MvcControllerEmpty\Controller.vb.t4" />
+    <Content Include="CodeTemplates\MvcControllerWithActions\Controller.cs.t4" />
+    <Content Include="CodeTemplates\MvcControllerWithActions\Controller.vb.t4" />
+    <Content Include="CodeTemplates\MvcControllerWithContext\Controller.cs.t4" />
+    <Content Include="CodeTemplates\MvcControllerWithContext\Controller.vb.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\BundleConfig.cs.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\BundleConfig.vb.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\Error.cshtml" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\Error.vbhtml" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\FilterConfig.cs.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\FilterConfig.vb.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\Global.asax.cs.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\Global.asax.vb.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\Global.cs.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\Global.vb.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\RouteConfig.cs.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\RouteConfig.vb.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\Site.cs.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\Site.vb.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\web.cs.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\web.vb.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\_Layout.cs.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\_Layout.vb.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\_ViewStart.cs.t4" />
+    <Content Include="CodeTemplates\MvcFullDependencyCodeGenerator\_ViewStart.vb.t4" />
+    <Content Include="CodeTemplates\MvcMinimalDependencyCodeGenerator\Global.asax.cs.t4" />
+    <Content Include="CodeTemplates\MvcMinimalDependencyCodeGenerator\Global.asax.vb.t4" />
+    <Content Include="CodeTemplates\MvcMinimalDependencyCodeGenerator\Global.cs.t4" />
+    <Content Include="CodeTemplates\MvcMinimalDependencyCodeGenerator\Global.vb.t4" />
+    <Content Include="CodeTemplates\MvcMinimalDependencyCodeGenerator\RouteConfig.cs.t4" />
+    <Content Include="CodeTemplates\MvcMinimalDependencyCodeGenerator\RouteConfig.vb.t4" />
+    <Content Include="CodeTemplates\MvcMinimalDependencyCodeGenerator\web.cs.t4" />
+    <Content Include="CodeTemplates\MvcMinimalDependencyCodeGenerator\web.vb.t4" />
+    <Content Include="CodeTemplates\MvcViewWithoutModel\Empty.cs.t4" />
+    <Content Include="CodeTemplates\MvcViewWithoutModel\Empty.vb.t4" />
+    <Content Include="CodeTemplates\MvcViewWithoutModel\Imports.include.t4" />
+    <Content Include="CodeTemplates\MvcView\Create.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\Create.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\Delete.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\Delete.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\Details.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\Details.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\Edit.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\Edit.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\Empty.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\Empty.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\Imports.include.t4" />
+    <Content Include="CodeTemplates\MvcView\List.cs.t4" />
+    <Content Include="CodeTemplates\MvcView\List.vb.t4" />
+    <Content Include="CodeTemplates\MvcView\ModelMetadataFunctions.cs.include.t4" />
+    <Content Include="CodeTemplates\MvcView\ModelMetadataFunctions.vb.include.t4" />
+    <Content Include="CodeTemplates\MvcView\PageList.cs.t4" />
+    <Content Include="CodeTemplates\ODataControllerWithActions\Controller.cs.t4" />
+    <Content Include="CodeTemplates\ODataControllerWithActions\Controller.vb.t4" />
+    <Content Include="CodeTemplates\ODataControllerWithContext\Controller.cs.t4" />
+    <Content Include="CodeTemplates\ODataControllerWithContext\Controller.vb.t4" />
+    <Content Include="CodeTemplates\PackageVersions5.0.0.xml" />
+    <Content Include="CodeTemplates\PackageVersions5.1.0.xml" />
+    <Content Include="CodeTemplates\PackageVersions5.1.1.xml" />
+    <Content Include="CodeTemplates\PackageVersions5.1.2.xml" />
+    <Content Include="CodeTemplates\PackageVersions5.2.0.xml" />
+    <Content Include="CodeTemplates\PackageVersions5.2.2.xml" />
+    <Content Include="CodeTemplates\PackageVersions5.2.3.xml" />
+    <Content Include="Content\bootstrap-datepicker.css" />
+    <Content Include="Content\bootstrap-datepicker.min.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.css" />
+    <Content Include="Content\bootstrap-datepicker3.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="DataModule.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataModule.edmx</DependentUpon>
+      <LastGenOutput>DataModule.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataModule.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataModule.edmx</DependentUpon>
+      <LastGenOutput>DataModule.cs</LastGenOutput>
+    </Content>
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="DataModule.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DataModule.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DataModule.edmx.diagram">
+      <DependentUpon>DataModule.edmx</DependentUpon>
+    </Content>
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="Content\bootstrap-datepicker3.css.map" />
+    <Content Include="Content\bootstrap-datepicker.standalone.css.map" />
+    <Content Include="Content\bootstrap-datepicker.css.map" />
+    <None Include="Properties\PublishProfiles\testBackup.pubxml" />
+    <None Include="Properties\PublishProfiles\testDeploy.pubxml" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker-en-CA.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ar-tn.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.bn.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.br.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-IE.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-NZ.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-ZA.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hi.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.km.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nb.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.oc.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.si.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ta.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.tg.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.uz-cyrl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.uz-latn.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\utility\myCommonUtil.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\APCNDs\Create.cshtml" />
+    <Content Include="Views\APCNDs\Delete.cshtml" />
+    <Content Include="Views\APCNDs\Details.cshtml" />
+    <Content Include="Views\APCNDs\Edit.cshtml" />
+    <Content Include="Views\APCNDs\Index.cshtml" />
+    <Content Include="Views\SAUSERMs\Create.cshtml" />
+    <Content Include="Views\SAUSERMs\Delete.cshtml" />
+    <Content Include="Views\SAUSERMs\Details.cshtml" />
+    <Content Include="Views\SAUSERMs\Edit.cshtml" />
+    <Content Include="Views\SAUSERMs\Index.cshtml" />
+    <Content Include="Views\SACOMPs\Create.cshtml" />
+    <Content Include="Views\SACOMPs\Delete.cshtml" />
+    <Content Include="Views\SACOMPs\Details.cshtml" />
+    <Content Include="Views\SACOMPs\Edit.cshtml" />
+    <Content Include="Views\SACOMPs\Index.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Create.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Delete.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Details.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Edit.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Index.cshtml" />
+    <Content Include="Views\Home\main.cshtml" />
+    <Content Include="Views\Home\main4.cshtml" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Shared\_LayoutK.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Details - Copy.cshtml" />
+    <Content Include="Views\CSCOSTATs\Create.cshtml" />
+    <Content Include="Views\CSCOSTATs\Delete.cshtml" />
+    <Content Include="Views\CSCOSTATs\Details.cshtml" />
+    <Content Include="Views\CSCOSTATs\Edit1.cshtml" />
+    <Content Include="Views\CSCOSTATs\Index.cshtml" />
+    <Content Include="Views\CSCOFEEs\Create.cshtml" />
+    <Content Include="Views\CSCOFEEs\Delete.cshtml" />
+    <Content Include="Views\CSCOFEEs\Details.cshtml" />
+    <Content Include="Views\CSCOFEEs\Edit.cshtml" />
+    <Content Include="Views\CSCOFEEs\Index.cshtml" />
+    <Content Include="Views\CSCONAMEs\Create.cshtml" />
+    <Content Include="Views\CSCONAMEs\Delete.cshtml" />
+    <Content Include="Views\CSCONAMEs\Details.cshtml" />
+    <Content Include="Views\CSCONAMEs\Edit.cshtml" />
+    <Content Include="Views\CSCONAMEs\Index.cshtml" />
+    <Content Include="Views\CSCOADDRs\Create.cshtml" />
+    <Content Include="Views\CSCOADDRs\Delete.cshtml" />
+    <Content Include="Views\CSCOADDRs\Details.cshtml" />
+    <Content Include="Views\CSCOADDRs\Edit.cshtml" />
+    <Content Include="Views\CSCOADDRs\Index.cshtml" />
+    <Content Include="Views\CSCOAGMs\Create.cshtml" />
+    <Content Include="Views\CSCOAGMs\Delete.cshtml" />
+    <Content Include="Views\CSCOAGMs\Details.cshtml" />
+    <Content Include="Views\CSCOAGMs\Edit.cshtml" />
+    <Content Include="Views\CSCOAGMs\Index.cshtml" />
+    <Content Include="Views\CSCODRs\Create.cshtml" />
+    <Content Include="Views\CSCODRs\Delete.cshtml" />
+    <Content Include="Views\CSCODRs\Details.cshtml" />
+    <Content Include="Views\CSCODRs\Edit.cshtml" />
+    <Content Include="Views\CSCODRs\Index.cshtml" />
+    <Content Include="Views\CSCOSHes\Create.cshtml" />
+    <Content Include="Views\CSCOSHes\Delete.cshtml" />
+    <Content Include="Views\CSCOSHes\Details.cshtml" />
+    <Content Include="Views\CSCOSHes\Edit.cshtml" />
+    <Content Include="Views\CSCOSHes\Index.cshtml" />
+    <Content Include="Views\CSCOSECs\Create.cshtml" />
+    <Content Include="Views\CSCOSECs\Delete.cshtml" />
+    <Content Include="Views\CSCOSECs\Details.cshtml" />
+    <Content Include="Views\CSCOSECs\Edit.cshtml" />
+    <Content Include="Views\CSCOSECs\Index.cshtml" />
+    <Content Include="Views\CSCOMGRs\Create.cshtml" />
+    <Content Include="Views\CSCOMGRs\Delete.cshtml" />
+    <Content Include="Views\CSCOMGRs\Details.cshtml" />
+    <Content Include="Views\CSCOMGRs\Edit.cshtml" />
+    <Content Include="Views\CSCOMGRs\Index.cshtml" />
+    <Content Include="Views\CSCOADTs\Create.cshtml" />
+    <Content Include="Views\CSCOADTs\Delete.cshtml" />
+    <Content Include="Views\CSCOADTs\Details.cshtml" />
+    <Content Include="Views\CSCOADTs\Edit.cshtml" />
+    <Content Include="Views\CSCOADTs\Index.cshtml" />
+    <Content Include="Views\CSCOTXes\Create.cshtml" />
+    <Content Include="Views\CSCOTXes\Delete.cshtml" />
+    <Content Include="Views\CSCOTXes\Details.cshtml" />
+    <Content Include="Views\CSCOTXes\Edit.cshtml" />
+    <Content Include="Views\CSCOTXes\Index.cshtml" />
+    <Content Include="Views\CSCOAKs\Create.cshtml" />
+    <Content Include="Views\CSCOAKs\Delete.cshtml" />
+    <Content Include="Views\CSCOAKs\Details.cshtml" />
+    <Content Include="Views\CSCOAKs\Edit.cshtml" />
+    <Content Include="Views\CSCOAKs\Index.cshtml" />
+    <Content Include="Views\CSCOPUKs\Create.cshtml" />
+    <Content Include="Views\CSCOPUKs\Delete.cshtml" />
+    <Content Include="Views\CSCOPUKs\Details.cshtml" />
+    <Content Include="Views\CSCOPUKs\Edit.cshtml" />
+    <Content Include="Views\CSCOPUKs\Index.cshtml" />
+    <Content Include="Views\CSCOBANKs\Create.cshtml" />
+    <Content Include="Views\CSCOBANKs\Delete.cshtml" />
+    <Content Include="Views\CSCOBANKs\Details.cshtml" />
+    <Content Include="Views\CSCOBANKs\Edit.cshtml" />
+    <Content Include="Views\CSCOBANKs\Index.cshtml" />
+    <Content Include="Views\CSCOCMs\Create.cshtml" />
+    <Content Include="Views\CSCOCMs\Delete.cshtml" />
+    <Content Include="Views\CSCOCMs\Details.cshtml" />
+    <Content Include="Views\CSCOCMs\Edit.cshtml" />
+    <Content Include="Views\CSCOCMs\Index.cshtml" />
+    <Content Include="Views\CSCODEBs\Create.cshtml" />
+    <Content Include="Views\CSCODEBs\Delete.cshtml" />
+    <Content Include="Views\CSCODEBs\Details.cshtml" />
+    <Content Include="Views\CSCODEBs\Edit.cshtml" />
+    <Content Include="Views\CSCODEBs\Index.cshtml" />
+    <Content Include="Views\CSCOPARENTs\Create.cshtml" />
+    <Content Include="Views\CSCOPARENTs\Delete.cshtml" />
+    <Content Include="Views\CSCOPARENTs\Details.cshtml" />
+    <Content Include="Views\CSCOPARENTs\Edit.cshtml" />
+    <Content Include="Views\CSCOPARENTs\Index.cshtml" />
+    <Content Include="Views\CSCOAGTs\Create.cshtml" />
+    <Content Include="Views\CSCOAGTs\Delete.cshtml" />
+    <Content Include="Views\CSCOAGTs\Details.cshtml" />
+    <Content Include="Views\CSCOAGTs\Edit.cshtml" />
+    <Content Include="Views\CSCOAGTs\Index.cshtml" />
+    <Content Include="Views\CSCOLASTNOes\Create.cshtml" />
+    <Content Include="Views\CSCOLASTNOes\Delete.cshtml" />
+    <Content Include="Views\CSCOLASTNOes\Details.cshtml" />
+    <Content Include="Views\CSCOLASTNOes\Edit.cshtml" />
+    <Content Include="Views\CSCOLASTNOes\Index.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOSTATs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOFEEs.cshtml" />
+    <Content Include="Views\CSCOPICs\Create.cshtml" />
+    <Content Include="Views\CSCOPICs\Delete.cshtml" />
+    <Content Include="Views\CSCOPICs\Details.cshtml" />
+    <Content Include="Views\CSCOPICs\Edit.cshtml" />
+    <Content Include="Views\CSCOPICs\Index.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOPICs.cshtml" />
+    <Content Include="Views\CSPRs\Create.cshtml" />
+    <Content Include="Views\CSPRs\Delete.cshtml" />
+    <Content Include="Views\CSPRs\Details.cshtml" />
+    <Content Include="Views\CSPRs\Edit.cshtml" />
+    <Content Include="Views\CSPRs\Index.cshtml" />
+    <Content Include="Views\CSTRANMs\Create.cshtml" />
+    <Content Include="Views\CSTRANMs\Delete.cshtml" />
+    <Content Include="Views\CSTRANMs\Details.cshtml" />
+    <Content Include="Views\CSTRANMs\Edit.cshtml" />
+    <Content Include="Views\CSTRANMs\Index.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOAGMs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOARs.cshtml" />
+    <Content Include="Views\CSCOARs\Create.cshtml" />
+    <Content Include="Views\CSCOARs\Delete.cshtml" />
+    <Content Include="Views\CSCOARs\Details.cshtml" />
+    <Content Include="Views\CSCOARs\Edit.cshtml" />
+    <Content Include="Views\CSCOARs\Index.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Date.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\SelectYN.cshtml" />
+    <Content Include="Views\CSCOMSTRs\EditNG.cshtml" />
+    <Content Include="Views\CSCOMSTRs\IndexNG.cshtml" />
+    <Content Include="Views\CSCOMSTRs\IndexNG2.cshtml" />
+    <Content Include="Views\CSCOMSTRs\IndexPg.cshtml" />
+    <Content Include="Views\CSCOSTATs\Edit.cshtml" />
+    <Content Include="Views\CSCOSTATs\Partial\EditFileLoc.cshtml" />
+    <Content Include="Views\CSCOSTATs\Partial\EditFileOnly.cshtml" />
+    <Content Include="Views\CSCOSTATs\Partial\EditSealOnly.cshtml" />
+    <Content Include="Views\CSCOSTATs\Partial\EditNoFileSeal.cshtml" />
+    <Content Include="Views\CSCOSTATs\Edit2.cshtml" />
+    <Content Include="Views\CSCOSTATs\Index1.cshtml" />
+    <Content Include="Views\CSCOSTATs\Create1.cshtml" />
+    <Content Include="Views\CSCOAGMs\Create1.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\Search.cshtml" />
+    <Content Include="Views\CSCASEs\Create.cshtml" />
+    <Content Include="Views\CSCASEs\Delete.cshtml" />
+    <Content Include="Views\CSCASEs\Details.cshtml" />
+    <Content Include="Views\CSCASEs\Edit.cshtml" />
+    <Content Include="Views\CSCASEs\Index.cshtml" />
+    <Content Include="Views\CSCASEDOCs\Create.cshtml" />
+    <Content Include="Views\CSCASEDOCs\Delete.cshtml" />
+    <Content Include="Views\CSCASEDOCs\Details.cshtml" />
+    <Content Include="Views\CSCASEDOCs\Edit.cshtml" />
+    <Content Include="Views\CSCASEDOCs\Index.cshtml" />
+    <Content Include="Views\CSCASEFEEs\Index.cshtml" />
+    <Content Include="Views\CSCASEFEEs\Details.cshtml" />
+    <Content Include="Views\CSCASEFEEs\Edit.cshtml" />
+    <Content Include="Views\CSCASEFEEs\Create.cshtml" />
+    <Content Include="Views\CSCASEFEEs\IndexByCase.cshtml" />
+    <Content Include="Views\CSCASEFEEs\Delete.cshtml" />
+    <Content Include="Views\CSBILLs\Create.cshtml" />
+    <Content Include="Views\CSBILLs\Delete.cshtml" />
+    <Content Include="Views\CSBILLs\Details.cshtml" />
+    <Content Include="Views\CSBILLs\Edit.cshtml" />
+    <Content Include="Views\CSBILLs\Index.cshtml" />
+    <Content Include="Views\CSBILLs\Partial\Search.cshtml" />
+    <Content Include="Views\CSBILLs\Partial\EditCompanyJob.cshtml" />
+    <Content Include="Views\CSBILLs\Partial\EditJobCase.cshtml" />
+    <Content Include="Views\CSBILLs\Partial\EditJobCaseNoJOBD.cshtml" />
+    <Content Include="Views\CSTAXTYPEs\Create.cshtml" />
+    <Content Include="Views\CSTAXTYPEs\Delete.cshtml" />
+    <Content Include="Views\CSTAXTYPEs\Details.cshtml" />
+    <Content Include="Views\CSTAXTYPEs\Edit.cshtml" />
+    <Content Include="Views\CSTAXTYPEs\Index.cshtml" />
+    <Content Include="Views\CSPRFs\Create.cshtml" />
+    <Content Include="Views\CSPRFs\Delete.cshtml" />
+    <Content Include="Views\CSPRFs\Details.cshtml" />
+    <Content Include="Views\CSPRFs\Edit.cshtml" />
+    <Content Include="Views\CSPRFs\Index.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Create1.cshtml" />
+    <Content Include="Views\CSPRFs\Partial\EditCompany.cshtml" />
+    <Content Include="Views\CSPRFs\Partial\BillAllocated.cshtml" />
+    <Content Include="Views\CSPRFs\Partial\BillOpen.cshtml" />
+    <Content Include="Views\DataConversion\Index.cshtml" />
+    <Content Include="Views\DataConversion\Index1.cshtml" />
+    <Content Include="Views\CSPRFs\Proforma.cshtml" />
+    <Content Include="Views\CSPRFs\Partial\Search.cshtml" />
+    <Content Include="Views\CSPRFs\ProformaList.cshtml" />
+    <Content Include="Views\VCSCOAR\Create.cshtml" />
+    <Content Include="Views\VCSCOAR\Delete.cshtml" />
+    <Content Include="Views\VCSCOAR\Details.cshtml" />
+    <Content Include="Views\VCSCOAR\Edit.cshtml" />
+    <Content Include="Views\VCSCOAR\Index.cshtml" />
+    <Content Include="Views\VCSCOAGM\Create.cshtml" />
+    <Content Include="Views\VCSCOAGM\Delete.cshtml" />
+    <Content Include="Views\VCSCOAGM\Details.cshtml" />
+    <Content Include="Views\VCSCOAGM\Edit.cshtml" />
+    <Content Include="Views\VCSCOAGM\Index.cshtml" />
+    <Content Include="Views\VCSCOAGM\PgIndex.cshtml" />
+    <Content Include="Views\VCSCOAGM\Partial\Search.cshtml" />
+    <Content Include="Views\VCSCOAGM\Listing.cshtml" />
+    <Content Include="Views\VCSCOAGM\Reminder.cshtml" />
+    <Content Include="Views\VCSCOAGM\ReminderList.cshtml" />
+    <Content Include="Views\VCSCOAR\PgIndex.cshtml" />
+    <Content Include="Views\VCSCOAR\Partial\Search.cshtml" />
+    <Content Include="Views\VCSCOAR\Reminder.cshtml" />
+    <Content Include="Views\VCSCOAR\Listing.cshtml" />
+    <Content Include="Views\VCSCOAR\ReminderList.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Register.cshtml" />
+    <Content Include="Views\V_CSTRAN_OSTD\Create.cshtml" />
+    <Content Include="Views\V_CSTRAN_OSTD\Delete.cshtml" />
+    <Content Include="Views\V_CSTRAN_OSTD\Details.cshtml" />
+    <Content Include="Views\V_CSTRAN_OSTD\Edit.cshtml" />
+    <Content Include="Views\V_CSTRAN_OSTD\Index.cshtml" />
+    <Content Include="Views\V_CSTRAN_OSTD\pIndex.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Collection.cshtml" />
+    <Content Include="Views\CSCOMSTRs\CollectionList.cshtml" />
+    <Content Include="Views\CSCOMSTRs\RegisterList.cshtml" />
+    <Content Include="Views\CSCNMs\Create.cshtml" />
+    <Content Include="Views\CSCNMs\Delete.cshtml" />
+    <Content Include="Views\CSCNMs\Details.cshtml" />
+    <Content Include="Views\CSCNMs\Edit.cshtml" />
+    <Content Include="Views\CSCNMs\Index.cshtml" />
+    <Content Include="Views\CSCNMs\Partial\EditCompany.cshtml" />
+    <Content Include="Views\CSCNMs\Partial\Search.cshtml" />
+    <Content Include="Views\CSCNDs\Create.cshtml" />
+    <Content Include="Views\CSCNDs\Delete.cshtml" />
+    <Content Include="Views\CSCNDs\Details.cshtml" />
+    <Content Include="Views\CSCNDs\Edit.cshtml" />
+    <Content Include="Views\CSCNDs\Index.cshtml" />
+    <Content Include="Views\CSCNMs\Partial\CSCND.cshtml" />
+    <Content Include="Views\CSCNMs\Partial\CSCNDView.cshtml" />
+    <Content Include="Views\CSCNMs\CNote.cshtml" />
+    <Content Include="Views\CSCNMs\CNoteList.cshtml" />
+    <Content Include="Views\CSDNMs\DNote.cshtml" />
+    <Content Include="Views\CSDNMs\DNoteList.cshtml" />
+    <Content Include="Views\CSDNMs\Create.cshtml" />
+    <Content Include="Views\CSDNMs\Delete.cshtml" />
+    <Content Include="Views\CSDNMs\Details.cshtml" />
+    <Content Include="Views\CSDNMs\Edit.cshtml" />
+    <Content Include="Views\CSDNMs\Index.cshtml" />
+    <Content Include="Views\CSDNMs\Partial\CSDND.cshtml" />
+    <Content Include="Views\CSDNMs\Partial\CSDNDView.cshtml" />
+    <Content Include="Views\CSDNMs\Partial\EditCompany.cshtml" />
+    <Content Include="Views\CSDNMs\Partial\Search.cshtml" />
+    <Content Include="Views\CSDNDs\Create.cshtml" />
+    <Content Include="Views\CSDNDs\Delete.cshtml" />
+    <Content Include="Views\CSDNDs\Details.cshtml" />
+    <Content Include="Views\CSDNDs\Edit.cshtml" />
+    <Content Include="Views\CSDNDs\Index.cshtml" />
+    <Content Include="Views\CSRCPs\Create.cshtml" />
+    <Content Include="Views\CSRCPs\Delete.cshtml" />
+    <Content Include="Views\CSRCPs\Details.cshtml" />
+    <Content Include="Views\CSRCPs\Edit.cshtml" />
+    <Content Include="Views\CSRCPs\Index.cshtml" />
+    <Content Include="Views\CSRCPs\Partial\CSTRANMAllocated.cshtml" />
+    <Content Include="Views\CSRCPs\Partial\CSTRANMOpen.cshtml" />
+    <Content Include="Views\CSRCPs\Partial\EditRCMode.cshtml" />
+    <Content Include="Views\CSRCPs\Partial\Search.cshtml" />
+    <Content Include="Views\CSRCPs\Receipt.cshtml" />
+    <Content Include="Views\CSRCPs\ReceiptList.cshtml" />
+    <Content Include="Views\CSRCPs\Partial\CSTRANMAdvance.cshtml" />
+    <Content Include="Views\CSBILLs\Listing.cshtml" />
+    <Content Include="Views\Shared\_LayoutG.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Listing.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Publish.cshtml" />
+    <Content Include="Views\CSPRFs\Listing.cshtml" />
+    <Content Include="Views\CSDNMs\Listing.cshtml" />
+    <Content Include="Views\CSCNMs\Listing.cshtml" />
+    <Content Include="Views\CSRCPs\Listing.cshtml" />
+    <Content Include="Views\CSRCPs\IndexC.cshtml" />
+    <Content Include="Views\CSRCPs\Partial\SearchC.cshtml" />
+    <Content Include="Views\CSRCPs\EditC.cshtml" />
+    <Content Include="Views\CSRCPs\Partial\CSTRANMAllocatedC.cshtml" />
+    <Content Include="Views\CSRCPs\ListingC.cshtml" />
+    <Content Include="Views\CSOFFs\Create.cshtml" />
+    <Content Include="Views\CSOFFs\Delete.cshtml" />
+    <Content Include="Views\CSOFFs\Details.cshtml" />
+    <Content Include="Views\CSOFFs\Edit.cshtml" />
+    <Content Include="Views\CSOFFs\Index.cshtml" />
+    <Content Include="Views\CSOFFs\Partial\Search.cshtml" />
+    <Content Include="Views\CSCOMSTRs\CollectionView.cshtml" />
+    <Content Include="Views\CSOFFs\Partial\EditCompany.cshtml" />
+    <Content Include="Views\CSOFFs\Partial\EditDBItem.cshtml" />
+    <Content Include="Views\CSOFFs\Partial\EditCRItem.cshtml" />
+    <Content Include="Views\CSJOBMs\Create.cshtml" />
+    <Content Include="Views\CSJOBMs\Delete.cshtml" />
+    <Content Include="Views\CSJOBMs\Details.cshtml" />
+    <Content Include="Views\CSJOBMs\Edit.cshtml" />
+    <Content Include="Views\CSJOBMs\Index.cshtml" />
+    <Content Include="Views\CSJOBMs\Partial\Search.cshtml" />
+    <Content Include="Views\Report\CustOstd.cshtml" />
+    <Content Include="Views\CSJOBDs\Create.cshtml" />
+    <Content Include="Views\CSJOBDs\Delete.cshtml" />
+    <Content Include="Views\CSJOBDs\Details.cshtml" />
+    <Content Include="Views\CSJOBDs\Edit.cshtml" />
+    <Content Include="Views\CSJOBDs\Index.cshtml" />
+    <Content Include="Views\CSJOBMs\Partial\CSJOBD.cshtml" />
+    <Content Include="Views\CSJOBSTs\Create.cshtml" />
+    <Content Include="Views\CSJOBSTs\Delete.cshtml" />
+    <Content Include="Views\CSJOBSTs\Details.cshtml" />
+    <Content Include="Views\CSJOBSTs\Edit.cshtml" />
+    <Content Include="Views\CSJOBSTs\Index.cshtml" />
+    <Content Include="Views\CSJOBDs\Partial\Search.cshtml" />
+    <Content Include="Views\CSJOBDs\Partial\CSJOBST.cshtml" />
+    <Content Include="Views\Report\JobStat.cshtml" />
+    <Content Include="Views\CSJOBDs\Listing.cshtml" />
+    <Content Include="Views\CSJOBMs\Listing.cshtml" />
+    <Content Include="Views\CSJOBSTFs\Create.cshtml" />
+    <Content Include="Views\CSJOBSTFs\Delete.cshtml" />
+    <Content Include="Views\CSJOBSTFs\Details.cshtml" />
+    <Content Include="Views\CSJOBSTFs\Edit.cshtml" />
+    <Content Include="Views\CSJOBSTFs\Index.cshtml" />
+    <Content Include="Views\CSJOBMs\EditStaff.cshtml" />
+    <Content Include="Views\CSJOBMs\Partial\CSJOBSTF.cshtml" />
+    <Content Include="Views\CSITEMs\Create.cshtml" />
+    <Content Include="Views\CSITEMs\Delete.cshtml" />
+    <Content Include="Views\CSITEMs\Details.cshtml" />
+    <Content Include="Views\CSITEMs\Edit.cshtml" />
+    <Content Include="Views\CSITEMs\Index.cshtml" />
+    <Content Include="Views\Report\BillYear.cshtml" />
+    <Content Include="Views\Report\SummaryBill.cshtml" />
+    <Content Include="Views\Report\BillMonth.cshtml" />
+    <Content Include="Views\Report\SummaryBillMth.cshtml" />
+    <Content Include="Views\Report\LdgYear.cshtml" />
+    <Content Include="Views\Report\LdgMonth.cshtml" />
+    <Content Include="Views\Report\SummaryLdg.cshtml" />
+    <Content Include="Views\Report\SummaryLdgMth.cshtml" />
+    <Content Include="Views\Report\LdgType.cshtml" />
+    <Content Include="Views\Report\SummaryLdgType.cshtml" />
+    <Content Include="Views\HKLOGINMAPs\Create.cshtml" />
+    <Content Include="Views\HKLOGINMAPs\Delete.cshtml" />
+    <Content Include="Views\HKLOGINMAPs\Details.cshtml" />
+    <Content Include="Views\HKLOGINMAPs\Edit.cshtml" />
+    <Content Include="Views\HKLOGINMAPs\Index.cshtml" />
+    <Content Include="Views\HKSTAFFs\Create.cshtml" />
+    <Content Include="Views\HKSTAFFs\Delete.cshtml" />
+    <Content Include="Views\HKSTAFFs\Details.cshtml" />
+    <Content Include="Views\HKSTAFFs\Edit.cshtml" />
+    <Content Include="Views\HKSTAFFs\Index.cshtml" />
+    <Content Include="Views\CSCOSTATs\Partial\Search.cshtml" />
+    <Content Include="Views\Home\samples.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Listing - blanktemplate - Copy.cshtml" />
+    <Content Include="Views\Home\Partial\Publish.cshtml" />
+    <Content Include="Views\Home\Work.cshtml" />
+    <Content Include="Views\CSCOSTATs\Listing.cshtml" />
+    <Content Include="Views\Report\SummaryStaffOstd.cshtml" />
+    <Content Include="Views\Report\SummaryCostatOstd.cshtml" />
+    <Content Include="Views\Report\SalesTax.cshtml" />
+    <Content Include="Views\Report\SalesTaxChecking.cshtml" />
+    <Content Include="Views\SalesTax\Index.cshtml" />
+    <Content Include="Views\SalesTax\Partial\Search.cshtml" />
+    <Content Include="Views\Report\PrfBillYear.cshtml" />
+    <Content Include="Views\Report\Partial\Search.cshtml" />
+    <Content Include="Views\Report\PrfBillMonth.cshtml" />
+    <Content Include="Views\Report\PrfBillStaff.cshtml" />
+    <Content Include="Views\Report\PrfBillDay.cshtml" />
+    <Content Include="Views\Report\LdgDetail.cshtml" />
+    <Content Include="Views\Report\SummaryLdgDetail.cshtml" />
+    <Content Include="Views\Home\ContactViaEmail.cshtml" />
+    <Content Include="Views\Home\Sent.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCODRs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCODEBs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOCMs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOBANKs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOAKs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOAGTs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOADTs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOADDRs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOLASTNOs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOMGRs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCONAMEs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOPARENTs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOPUKs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOSECs.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOSHes.cshtml" />
+    <Content Include="Views\CSCOMSTRs\Partial\PartialCSCOTXes.cshtml" />
+    <Content Include="Views\Report\CostatYear.cshtml" />
+    <Content Include="Views\Report\CostatMonth.cshtml" />
+    <Content Include="Views\Report\CostatDay.cshtml" />
+    <Content Include="Views\CSEQs\Create.cshtml" />
+    <Content Include="Views\CSEQs\Delete.cshtml" />
+    <Content Include="Views\CSEQs\Details.cshtml" />
+    <Content Include="Views\CSEQs\Edit.cshtml" />
+    <Content Include="Views\CSEQs\Index.cshtml" />
+    <Content Include="Views\CSTXes\Create.cshtml" />
+    <Content Include="Views\CSTXes\Delete.cshtml" />
+    <Content Include="Views\CSTXes\Details.cshtml" />
+    <Content Include="Views\CSTXes\Edit.cshtml" />
+    <Content Include="Views\CSTXes\Index.cshtml" />
+    <Content Include="Views\CSADTs\Create.cshtml" />
+    <Content Include="Views\CSADTs\Delete.cshtml" />
+    <Content Include="Views\CSADTs\Details.cshtml" />
+    <Content Include="Views\CSADTs\Edit.cshtml" />
+    <Content Include="Views\CSADTs\Index.cshtml" />
+    <Content Include="Views\CSPRSADDRs\Create.cshtml" />
+    <Content Include="Views\CSPRSADDRs\Delete.cshtml" />
+    <Content Include="Views\CSPRSADDRs\Details.cshtml" />
+    <Content Include="Views\CSPRSADDRs\Edit.cshtml" />
+    <Content Include="Views\CSPRSADDRs\Index.cshtml" />
+    <Content Include="Views\CSPRSREGs\Create.cshtml" />
+    <Content Include="Views\CSPRSREGs\Delete.cshtml" />
+    <Content Include="Views\CSPRSREGs\Details.cshtml" />
+    <Content Include="Views\CSPRSREGs\Edit.cshtml" />
+    <Content Include="Views\CSPRSREGs\Index.cshtml" />
+    <Content Include="Views\CSSTATs\Create.cshtml" />
+    <Content Include="Views\CSSTATs\Delete.cshtml" />
+    <Content Include="Views\CSSTATs\Details.cshtml" />
+    <Content Include="Views\CSSTATs\Edit.cshtml" />
+    <Content Include="Views\CSSTATs\Index.cshtml" />
+    <Content Include="Views\CSBILLDESCs\Create.cshtml" />
+    <Content Include="Views\CSBILLDESCs\Delete.cshtml" />
+    <Content Include="Views\CSBILLDESCs\Details.cshtml" />
+    <Content Include="Views\CSBILLDESCs\Edit.cshtml" />
+    <Content Include="Views\CSBILLDESCs\Index.cshtml" />
+    <Content Include="Views\CSGRPMs\Create.cshtml" />
+    <Content Include="Views\CSGRPMs\Delete.cshtml" />
+    <Content Include="Views\CSGRPMs\Details.cshtml" />
+    <Content Include="Views\CSGRPMs\Edit.cshtml" />
+    <Content Include="Views\CSGRPMs\Index.cshtml" />
+    <Content Include="Views\CSGRPDs\Create.cshtml" />
+    <Content Include="Views\CSGRPDs\Delete.cshtml" />
+    <Content Include="Views\CSGRPDs\Details.cshtml" />
+    <Content Include="Views\CSGRPDs\Edit.cshtml" />
+    <Content Include="Views\CSGRPDs\Index.cshtml" />
+    <Content Include="Views\CSGRPPICs\Create.cshtml" />
+    <Content Include="Views\CSGRPPICs\Delete.cshtml" />
+    <Content Include="Views\CSGRPPICs\Details.cshtml" />
+    <Content Include="Views\CSGRPPICs\Edit.cshtml" />
+    <Content Include="Views\CSGRPPICs\Index.cshtml" />
+    <Content Include="Views\CSCHGREMs\Create.cshtml" />
+    <Content Include="Views\CSCHGREMs\Delete.cshtml" />
+    <Content Include="Views\CSCHGREMs\Details.cshtml" />
+    <Content Include="Views\CSCHGREMs\Edit.cshtml" />
+    <Content Include="Views\CSCHGREMs\Index.cshtml" />
+    <Content Include="Views\CSPRs\Partial\Search.cshtml" />
+    <Content Include="Views\CSPRs\Partial\CSPRSREG.cshtml" />
+    <Content Include="Views\CSPRs\Partial\CSPRSADDR.cshtml" />
+    <Content Include="Views\CSADTs\Listing.cshtml" />
+    <Content Include="Views\CSCASEs\Listing.cshtml" />
+    <Content Include="Views\CSEQs\Listing.cshtml" />
+    <Content Include="Views\CSBILLDESCs\Listing.cshtml" />
+    <Content Include="Views\CSCHGREMs\Listing.cshtml" />
+    <Content Include="Views\CSPRs\Listing.cshtml" />
+    <Content Include="Views\CSTXes\Listing.cshtml" />
+    <Content Include="Views\CSITEMs\Listing.cshtml" />
+    <Content Include="Views\CSTAXTYPEs\Listing.cshtml" />
+    <Content Include="Views\CSSTATs\Listing.cshtml" />
+    <Content Include="Views\CSGRPMs\Listing.cshtml" />
+    <Content Include="Views\CSCOCMs\Partial\EditPRSCODE.cshtml" />
+    <Content Include="Views\CSCOAGTCHGs\Create.cshtml" />
+    <Content Include="Views\CSCOAGTCHGs\Delete.cshtml" />
+    <Content Include="Views\CSCOAGTCHGs\Details.cshtml" />
+    <Content Include="Views\CSCOAGTCHGs\Edit.cshtml" />
+    <Content Include="Views\CSCOAGTCHGs\Index.cshtml" />
+    <Content Include="Views\CSCODRCHGs\Create.cshtml" />
+    <Content Include="Views\CSCODRCHGs\Delete.cshtml" />
+    <Content Include="Views\CSCODRCHGs\Details.cshtml" />
+    <Content Include="Views\CSCODRCHGs\Edit.cshtml" />
+    <Content Include="Views\CSCODRCHGs\Index.cshtml" />
+    <Content Include="Views\CSCOMGRCHGs\Create.cshtml" />
+    <Content Include="Views\CSCOMGRCHGs\Delete.cshtml" />
+    <Content Include="Views\CSCOMGRCHGs\Details.cshtml" />
+    <Content Include="Views\CSCOMGRCHGs\Edit.cshtml" />
+    <Content Include="Views\CSCOMGRCHGs\Index.cshtml" />
+    <Content Include="Views\CSCOSECCHGs\Create.cshtml" />
+    <Content Include="Views\CSCOSECCHGs\Delete.cshtml" />
+    <Content Include="Views\CSCOSECCHGs\Details.cshtml" />
+    <Content Include="Views\CSCOSECCHGs\Edit.cshtml" />
+    <Content Include="Views\CSCOSECCHGs\Index.cshtml" />
+    <Content Include="Views\CSCOAGTs\Partial\PartialChg.cshtml" />
+    <Content Include="Views\CSCOMGRs\Partial\PartialChg.cshtml" />
+    <Content Include="Views\CSCODRs\Partial\PartialChg.cshtml" />
+    <Content Include="Views\CSCOSECs\Partial\PartialChg.cshtml" />
+    <Content Include="Views\CSCOSHCHGs\Create.cshtml" />
+    <Content Include="Views\CSCOSHCHGs\Delete.cshtml" />
+    <Content Include="Views\CSCOSHCHGs\Details.cshtml" />
+    <Content Include="Views\CSCOSHCHGs\Edit.cshtml" />
+    <Content Include="Views\CSCOSHCHGs\Index.cshtml" />
+    <Content Include="Views\CSCOSHEQs\Create.cshtml" />
+    <Content Include="Views\CSCOSHEQs\Delete.cshtml" />
+    <Content Include="Views\CSCOSHEQs\Details.cshtml" />
+    <Content Include="Views\CSCOSHEQs\Edit.cshtml" />
+    <Content Include="Views\CSCOSHEQs\Index.cshtml" />
+    <Content Include="Views\CSCOSHEQDs\Create.cshtml" />
+    <Content Include="Views\CSCOSHEQDs\Delete.cshtml" />
+    <Content Include="Views\CSCOSHEQDs\Details.cshtml" />
+    <Content Include="Views\CSCOSHEQDs\Edit.cshtml" />
+    <Content Include="Views\CSCOSHEQDs\Index.cshtml" />
+    <Content Include="Views\CSCOSHes\Partial\PartialChg.cshtml" />
+    <Content Include="Views\CSCOSHes\Partial\PartialSum.cshtml" />
+    <Content Include="Views\CSCOSHes\Partial\PartialMove.cshtml" />
+    <Content Include="Views\CSCOSHes\ShareMove.cshtml" />
+    <Content Include="Views\CSCOSHes\Partial\PartialCOSHAllotment.cshtml" />
+    <Content Include="Views\CSCOSHes\Partial\PartialCOSHTransfer.cshtml" />
+    <Content Include="Views\CSCOSHes\Partial\PartialCOSHSplit.cshtml" />
+    <Content Include="Views\CSCOSHes\Partial\PartialCOSHConversion.cshtml" />
+    <Content Include="Views\CSCOSHEQs\Create1.cshtml" />
+    <Content Include="Views\CSCOSHEQs\Partial\EditPRSCODE.cshtml" />
+    <Content Include="Views\CSCOSHEQs\Edit1.cshtml" />
+    <Content Include="Views\CSCOSHEQs\Partial\PartialCOSH.cshtml" />
+    <Content Include="Views\CSCOSHEQs\Partial\EditSPLIT.cshtml" />
+    <Content Include="Views\Report\LdgDetail1.cshtml" />
+    <Content Include="Views\Report\SummaryLdgDetail1.cshtml" />
+    <Content Include="Views\CSRCPs\EditRcpNo.cshtml" />
+    <Content Include="Views\CSBKs\Create.cshtml" />
+    <Content Include="Views\CSBKs\Delete.cshtml" />
+    <Content Include="Views\CSBKs\Details.cshtml" />
+    <Content Include="Views\CSBKs\Edit.cshtml" />
+    <Content Include="Views\CSBKs\Index.cshtml" />
+    <Content Include="Views\CSPYR\Create.cshtml" />
+    <Content Include="Views\CSPYR\Delete.cshtml" />
+    <Content Include="Views\CSPYR\Details.cshtml" />
+    <Content Include="Views\CSPYR\Edit.cshtml" />
+    <Content Include="Views\CSPYR\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AspNetIdentity\IdentityLibrary\IdentityLibrary.csproj">
+      <Project>{0b7c5dbf-1868-4819-ab04-264331d881eb}</Project>
+      <Name>IdentityLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49829</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49830/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

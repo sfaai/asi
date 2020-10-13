@@ -1,0 +1,122 @@
+﻿@model WebApplication1.SACOMP
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SACOMP</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.COREGNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COREGNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COADDR1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COADDR1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COADDR2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COADDR2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COADDR3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COADDR3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COADDR4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COADDR4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COPHONE1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COPHONE1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COPHONE2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COPHONE2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COFAX1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COFAX1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COFAX2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COFAX2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COWEB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COWEB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTRYOPR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTRYOPR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ACCMETHOD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ACCMETHOD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CONAME }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

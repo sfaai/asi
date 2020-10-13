@@ -1,0 +1,122 @@
+﻿@model WebApplication1.APCND
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>APCND</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLCODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CNNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CNNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CNDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CNDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ITEMDESC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ITEMDESC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CRMAPCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CRMAPCODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BRANCHCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BRANCHCODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UNITCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UNITCODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRJCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRJCODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAFFCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAFFCODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CURRCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CURRCODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ITEMAMT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ITEMAMT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

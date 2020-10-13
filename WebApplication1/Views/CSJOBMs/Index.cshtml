@@ -1,0 +1,124 @@
+﻿@using WebApplication1.Utility;
+@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<WebApplication1.CSJOBM>
+
+@{
+
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+    @Html.Action("Search")
+</div>
+
+<div class="border-0">
+    <div class="row form-inline">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+
+        @Html.ActionLink(" Listing", "Listing", null, new { @class = "btn btn-sm fa fa-print", title = "Listing" })
+    </div>
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary text-nowrap">
+            <th>
+                @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().JOBNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().VDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.COREGNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().JOBPOST)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CASECNT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().JobCASE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().JobMEMO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().JobREM)
+            </th>
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKSTAFF.STAFFDESC)
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO), page = ViewBag.page }, new { @class = "fa fa-edit", title = "Edit" })
+                    @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO), page = ViewBag.page }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO), page = ViewBag.page }, new { @class = "fa fa-trash", title = "Delete" })
+                    @if (item.CSJOBDs.Count() > 0)
+                    {
+                        @Html.ActionLink(" ", "Post", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO), page = ViewBag.page }, new { @class = "fa fa-cog", title = "Post" })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JOBNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.CSCOMSTR.COREGNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.CSCOMSTR.CONAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JOBPOST)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CASECNT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JobCASE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JobMEMO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JobREM)
+                </td>
+
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKSTAFF.STAFFDESC)
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

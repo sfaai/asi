@@ -1,0 +1,184 @@
+﻿@model WebApplication1.CSCOAGM
+@using WebApplication1.Utility
+
+@{
+    ViewBag.Title = "Create AGM Record";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">ViewBag.Title</h2>
+</div>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group col-md-12 form-check-inline">
+            @Html.LabelFor(model => model.AGMNO, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.AGMNO, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.AGMNO, "", new { @class = "text-danger" })
+            </div>
+
+            @Html.LabelFor(model => model.LASTFYE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.LASTFYE, new { htmlAttributes = new { @Value = Model.LASTFYE?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.LASTFYE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 border border-info"><span class="badge badge-dark h4">Proposed</span>
+                <br />
+                <div class="form-group col-md-10 form-check-inline">
+                    @Html.LabelFor(model => model.FYETOFILE, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.FYETOFILE, new { htmlAttributes = new { @Value = Model.FYETOFILE?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                        @Html.ValidationMessageFor(model => model.FYETOFILE, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group col-md-10 form-check-inline">
+
+                    @Html.LabelFor(model => model.AGMLAST, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.AGMLAST, new { htmlAttributes = new { @Value = Model.AGMLAST?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                        @Html.ValidationMessageFor(model => model.AGMLAST, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+
+                <div class="form-group col-md-10 form-check-inline">
+                    @Html.LabelFor(model => model.AGMEXT, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.AGMEXT, new { htmlAttributes = new { @Value = Model.AGMEXT?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                        @Html.ValidationMessageFor(model => model.AGMEXT, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="form-group col-md-10 form-check-inline">
+                    @Html.LabelFor(model => model.REMINDER1, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.REMINDER1, new { htmlAttributes = new { @Value = Model.REMINDER1?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                        @Html.ValidationMessageFor(model => model.REMINDER1, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group col-md-10 form-check-inline">
+                    @Html.LabelFor(model => model.REMINDER2, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.REMINDER2, new { htmlAttributes = new { @Value = Model.REMINDER2?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                        @Html.ValidationMessageFor(model => model.REMINDER2, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group col-md-10 form-check-inline">
+                    @Html.LabelFor(model => model.REMINDER3, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.REMINDER3, new { htmlAttributes = new { @Value = Model.REMINDER3?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                        @Html.ValidationMessageFor(model => model.REMINDER3, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5 border border-info"><h4 class="badge badge-dark h4">Confirmed</h4>
+                <br />
+                <div class="form-group col-md-10 form-check-inline">
+                    @Html.LabelFor(model => model.FILEDFYE, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.FILEDFYE, new { htmlAttributes = new { @Value = Model.FILEDFYE?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                        @Html.ValidationMessageFor(model => model.FILEDFYE, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group col-md-10 form-check-inline">
+
+                    @Html.LabelFor(model => model.AGMDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.AGMDATE, new { htmlAttributes = new { @Value = Model.AGMDATE?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                        @Html.ValidationMessageFor(model => model.AGMDATE, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group col-md-10 form-check-inline">
+                    @Html.LabelFor(model => model.AGMFILED, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.AGMFILED, new { htmlAttributes = new { @Value = Model.AGMFILED?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                        @Html.ValidationMessageFor(model => model.AGMFILED, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group col-md-10 form-check-inline">
+                    @Html.LabelFor(model => model.CIRCDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CIRCDATE, new { htmlAttributes = new { @Value = Model.CIRCDATE?.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+                        @Html.ValidationMessageFor(model => model.CIRCDATE, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                @Html.HiddenFor(model => model.CONO)
+                @*<div class="form-group col-md-10 form-check-inline">
+                    @Html.LabelFor(model => model.CONO, htmlAttributes: new { @class = "control-label col-md-4" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CONO, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.CONO, "", new { @class = "text-danger" })
+                    </div>
+                </div>*@
+            </div>
+        </div>
+
+        <br />
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        @Html.HiddenFor(model => model.STAMP)
+        @*<div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+                @Html.ActionLink(" Back", "details", "cSCOMSTRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+    </script>
+    @Scripts.Render("~/bundles/jqueryval")
+}

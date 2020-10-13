@@ -1,0 +1,61 @@
+﻿@using WebApplication1.Utility;
+
+@model List<WebApplication1.CSCOMSTR>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Collection List</title>
+
+    @Styles.Render("~/Content/css")
+
+    <style>
+        media print {
+            page-break-after: always;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div>
+
+        @foreach (CSCOMSTR rec in @Model)
+        {
+            if (ViewBag.RptType == "Basic")
+            {
+                @Html.Action("Register", new { id = MyHtmlHelpers.ConvertIdToByteStr(rec.CONO) })
+            }
+            else if (ViewBag.RptType == "All")
+            {
+                @Html.Action("RegisterAll", new { id = MyHtmlHelpers.ConvertIdToByteStr(rec.CONO) })
+            }
+            else if (ViewBag.RptType == "Activity")
+            {
+                @Html.Action("RegisterActivity", new { id = MyHtmlHelpers.ConvertIdToByteStr(rec.CONO) })
+            }
+            else if (ViewBag.RptType == "Outstanding")
+            {
+                @Html.Action("Outstanding", new { id = MyHtmlHelpers.ConvertIdToByteStr(rec.CONO) })
+            }
+            @*<div style="clear:both!important;"></div>*@
+            <div style="page-break-after:always"></div>
+            @*<div style="clear:both!important;"> </div>*@
+        }
+        <br />
+
+
+        <div class="container-fluid">
+
+
+        </div>
+    </div>
+</body>
+</html>

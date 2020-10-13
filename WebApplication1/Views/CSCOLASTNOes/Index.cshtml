@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WebApplication1.CSCOLASTNO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LASTDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LASTPFIX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LASTNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LASTWD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AUTOGEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LASTDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LASTPFIX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LASTNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LASTWD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AUTOGEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

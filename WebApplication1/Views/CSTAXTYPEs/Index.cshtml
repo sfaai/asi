@@ -1,0 +1,88 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSTAXTYPE>
+
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "Tax Type";
+}
+
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr  class="label-primary">
+	   <th>
+         @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+       </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TAXCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TAXDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TAXTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TAXRCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TAXRATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EFFECTIVE_START)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EFFECTIVE_END)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACTIVE_FLAG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.ActionLink(" ", "Listing", null, new { @class = "btn btn-primary h4 fa fa-print", title = "Listing" })
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new { id =  MyHtmlHelpers.ConvertIdToByteStr(item.TAXCODE ) }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TAXCODE ) }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TAXCODE ) }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAXCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAXDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAXTYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAXRCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAXRATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EFFECTIVE_START)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EFFECTIVE_END)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACTIVE_FLAG)
+        </td>
+        <td colspan="2">
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,232 @@
+﻿@model WebApplication1.CSBILL
+@using WebApplication1.Utility
+
+@{
+
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">@ViewBag.Title</h2>
+</div>
+
+@if (@Html.Action() == "Delete")
+{
+    <div class="border border-info bg-warning" style="width:98vw">
+        <br />
+        <h4 class="h4 text-center">ARE YOU SURE YOU WANT TO DELETE THIS</h4>
+        <br />
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @*@Html.HiddenFor(model => model.BILLNO)*@
+
+        <div class="container form-check-inline" style="width:96vw">
+            <div class="form-group col-md-3">
+                @Html.LabelFor(model => model.BILLNO, htmlAttributes: new { @class = "control-label" })
+                <div>
+                    @Html.EditorFor(model => model.BILLNO, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.BILLNO, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+
+            <div class="form-group col-md-3">
+                @Html.LabelFor(model => model.ENTDATE, htmlAttributes: new { @class = "control-label" })
+                <div>
+                    @Html.EditorFor(model => model.ENTDATE, new { htmlAttributes = new { @Value = Model.ENTDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                    @Html.ValidationMessageFor(model => model.ENTDATE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-8">
+                @Html.LabelFor(model => model.CONO, htmlAttributes: new { @class = "control-label" })
+                <div>
+                    @Html.DropDownListFor(model => model.CONO, null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.CONO, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-3">
+                @Html.LabelFor(model => model.SYSGEN, htmlAttributes: new { @class = "control-label" })
+                <div>
+                    @Html.EditorFor(model => model.SYSGENBool, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SYSGENBool, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div id="divEditCompanyJob">
+            @{Html.RenderPartial("Partial/EditCompanyJob", @Model);}
+        </div>
+
+
+
+        <div id="divEditJobCase">
+            @{Html.RenderPartial("Partial/EditJobCaseNoJOBD", @Model);}
+            @*@{Html.RenderPartial("Partial/EditJobCase", @Model);}*@
+        </div>
+
+
+
+
+        <div class="container form-check-inline" style="width:96vw">
+            <div class="form-group col-md-4">
+                @Html.LabelFor(model => model.PRFALLOCBool, htmlAttributes: new { @class = "control-label" })
+                <div>
+                    @Html.EditorFor(model => model.PRFALLOCBool, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PRFALLOCBool, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                @Html.LabelFor(model => model.PRFNO, htmlAttributes: new { @class = "control-label" })
+                <div>
+                    @Html.EditorFor(model => model.PRFNO, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PRFNO, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                @Html.LabelFor(model => model.PRFID, htmlAttributes: new { @class = "control-label" })
+                <div>
+                    @Html.EditorFor(model => model.PRFID, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PRFID, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label" })
+                <div>
+                    @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        @Html.HiddenFor(model => model.CSITEM)
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @if (@Html.Action() == "Details")
+                {
+                    @Html.ActionLink(" Edit", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.BILLNO) }, new { @class = "btn btn-primary fa fa-edit", title = "Edit" })
+                    @:&nbsp; &nbsp; &nbsp; &nbsp;
+                    @Html.ActionLink(" Back", "Index", null, new { @class = "btn btn-info fa fa-arrow-left" })
+                }
+                else
+                {
+                    <input type="submit" value="Confirm" class="btn btn-primary fa fa-bolt" Title="Confirm Execution" />
+                    @Html.ActionLink(" Back", "Index", null, new { @class = "btn btn-info fa fa-arrow-left" })
+                  
+                }
+            </div>
+        </div>
+    </div>
+                }
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") { //if browser doesn't support input type="date", initialize date picker widget:
+            jQuery(function ($) { //on document.ready
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        JModel = null;
+
+        $(document).ready(
+            function () {
+
+                JModel = { "CONO": "@Model.", "JOBNO": "@Model.JOBNO","JOBCASE": "@Model.JOBCASE", "CASENO": "@Model.CASENO", "STAMP": @Model.STAMP }
+            })
+
+        $('#CONO').change(function () {
+            var status = $('#CONO').val();
+
+            JModel.CONO = $('#CONO').val();
+            JModel.JOBNO = $('#JOBNO').val();
+            JModel.CASENO = $('#CASENO').val();
+            //JModel.JOBCASE = $('#JOBCASE').val();
+            JModel.ENTDATE = $('#ENTDATE').val();
+            JModel.TAXRATE = $('#TAXRATE').val();
+
+            var jData = JSON.stringify(JModel);
+
+
+            $("#divEditCompanyJob").load('@Url.Action("EditCompanyJob")',JModel, function(){
+                // callback once completed async call
+                // $("#divEditFileLoc2").text(jData);
+                $("JOBCASE").val("");
+            }    );
+
+        })
+
+        if (("@Html.Action()" == "Details") || ("@Html.Action()" == "Delete"))  {
+            $(":input").attr("readonly", true);
+            $("select").attr("disabled", true);
+            $("input[type=checkbox]").attr("disabled", true);
+            $("#btnTax").hide();
+        }
+
+
+        function UpdateTax() {
+            $('#TAXAMT1').val($('#ITEMCALC1').val());
+            $('#TAXAMT2').val($('#ITEMCALC2').val());
+            $('#TAXAMT').val($('#ITEMCALC').val());
+
+            UpdateTotal();
+        }
+
+        function UpdateTotal() {
+            var item1 = $('#ITEMAMT1').val();
+            var item2 = $('#ITEMAMT2').val();
+            var tax1 = $('#TAXAMT1').val();
+            var tax2 = $('#TAXAMT2').val();
+            $('#ITEMAMT').val(parseFloat(parseFloat(item1) + parseFloat(item2)).toFixed(2));
+            $('#TAXAMT').val(parseFloat(parseFloat(tax1) + parseFloat(tax2)).toFixed(2));
+            $('#NETAMT1').val(parseFloat(parseFloat(item1) + parseFloat(tax1)).toFixed(2));
+            $('#NETAMT2').val(parseFloat(parseFloat(item2) + parseFloat(tax2)).toFixed(2));
+            $('#NETAMT').val(parseFloat(parseFloat(item1) + parseFloat(tax1) + parseFloat(item2) + parseFloat(tax2)).toFixed(2));
+
+        }
+
+        function CalcTax(id) {
+            UpdateTotal();
+            var rate = $('#TAXRATE').val();
+            var item1 = $('#ITEMAMT1').val();
+            var item2 = $('#ITEMAMT2').val();
+            var item = $('#ITEMAMT').val();
+
+            $('#ITEMCALC1').val(parseFloat(rate * item1 / 100).toFixed(2));
+            $('#ITEMCALC2').val(parseFloat(rate * item2 / 100).toFixed(2));
+            $('#ITEMCALC').val(parseFloat(rate * item / 100).toFixed(2));
+            $(id.data).val(parseFloat($(id.data).val()).toFixed(2));
+        }
+
+        function AddItem(id) {
+
+            CalcTax('#TAXRATE');
+            $(id.data).val(parseFloat($(id.data).val()).toFixed(2));
+        }
+    </script>
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+

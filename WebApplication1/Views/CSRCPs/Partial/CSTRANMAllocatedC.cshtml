@@ -1,0 +1,345 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSTRANM>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th colspan="5"></th>
+        <th colspan="9" style="text-align:center">Item</th>
+        <th colspan="9" style="text-align:center">Balance</th>
+        <th colspan="8"></th>
+    </tr>
+
+    <tr class="label-primary">
+      
+        <th>
+            @Html.DisplayNameFor(model => model.First().SOURCEID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ENTDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().DUEDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TRTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TRDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPITEM1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPTAX1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPITEM2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPTAX2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPITEM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPTAX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APPAMT)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.TRITEMOS1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTAXOS1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TROS1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRITEMOS2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTAXOS2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TROS2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRITEMOS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTAXOS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TROS)
+        </th>
+    
+        <th>
+            @Html.DisplayNameFor(model => model.First().REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().REFCNT)
+        </th>
+
+        @*<th>
+            @Html.DisplayNameFor(model => model.First().LinkRef)
+        </th>*@
+        @*<th>
+                @Html.DisplayNameFor(model => model.STAMP)
+            </th>*@
+
+
+
+    </tr>
+
+    @{
+        decimal tot101 = 0;
+        decimal tot102 = 0;
+        decimal tot103 = 0;
+        decimal tot104 = 0;
+        decimal tot105 = 0;
+        decimal tot106 = 0;
+        decimal tot107 = 0;
+        decimal tot108 = 0;
+        decimal tot109 = 0;
+
+        decimal tot201 = 0;
+        decimal tot202 = 0;
+        decimal tot203 = 0;
+        decimal tot204 = 0;
+        decimal tot205 = 0;
+        decimal tot206 = 0;
+        decimal tot207 = 0;
+        decimal tot208 = 0;
+        decimal tot209 = 0;
+
+        decimal tot301 = 0;
+        decimal tot302 = 0;
+        decimal tot303 = 0;
+        decimal tot304 = 0;
+        decimal tot305 = 0;
+        decimal tot306 = 0;
+        decimal tot307 = 0;
+        decimal tot308 = 0;
+        decimal tot309 = 0;
+    }
+
+    @foreach (var item in Model)
+    {
+
+        <tr class="text-nowrap">
+
+            <td>
+                @Html.DisplayFor(citem => item.SOURCEID)
+            </td>
+ 
+            <td>
+                @Html.DisplayFor(citem => item.ENTDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(citem => item.DUEDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(citem => item.TRTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(citem => item.TRDESC)
+            </td>
+
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRITEM1)
+                @{tot101 += item.TRITEM1;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRTAX1)
+                @{tot102 += item.TRTAX1;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRAMT1)
+                @{tot103 += item.TRAMT1;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRITEM2)
+                @{tot104 += item.TRITEM2;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRTAX2)
+                @{tot105 += item.TRTAX2;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRAMT2)
+                @{tot106 += item.TRAMT2;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRITEM)
+                @{tot107 += item.TRITEM;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRTAX)
+                @{tot108 += item.TRTAX;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRAMT)
+                @{tot109 += item.TRAMT;}
+            </td>
+
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRITEMOS1)
+                @{tot201 += item.TRITEMOS1;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRTAXOS1)
+                @{tot202 += item.TRTAXOS1;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TROS1)
+                @{tot203 += item.TROS1;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRITEMOS2)
+                @{tot204 += item.TRITEMOS2;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRTAXOS2)
+                @{tot205 += item.TRTAXOS2;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TROS2)
+                @{tot206 += item.TROS2;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRITEMOS)
+                @{tot207 += item.TRITEMOS;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TRTAXOS)
+                @{tot208 += item.TRTAXOS;}
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(citem => item.TROS)
+                @{tot209 += item.TROS;}
+            </td>
+            <td>
+                @Html.DisplayFor(citem => item.REM)
+            </td>
+            <td>
+                @Html.DisplayFor(citem => item.REFCNT)
+            </td>
+
+            @*<td>
+                @Html.DisplayFor(citem => item.LinkRef)
+            </td>*@
+            @*<td>
+                    @Html.DisplayFor(citem => item.STAMP)
+                </td>*@
+
+
+        </tr>
+                    }
+    <tr>
+        <td colspan="5" style="text-align:right"><strong>Total</strong></td>
+        <td style="text-align:right">
+            <strong>  @tot101.ToString("N2")  </strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot102.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot103.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot104.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot105.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>       @tot106.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>       @tot107.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>      @tot108.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>      @tot109.ToString("N2")</strong>
+        </td>
+
+        <td style="text-align:right">
+            <strong>  @tot201.ToString("N2")  </strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot202.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot203.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot204.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot205.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>       @tot206.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>       @tot207.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>      @tot208.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>      @tot209.ToString("N2")</strong>
+        </td>
+
+  
+    </tr>
+
+</table>
+
+<script>
+
+    function callEdit(id, trtype, trdesc) {
+
+
+        NModel.sourceno = $('#TRNO').val();
+        NModel.id = id;
+        NModel.trno = $('#TRNO').val();
+
+        var NData = JSON.stringify(NModel);
+
+        if ((trtype == 'Advance') && (trtype == trdesc)) {
+            $("#Advance1").load('@Url.Action("RemoveItem")', NModel, function (response, status, xhr) {
+                $('#tab_Advance').click();
+            })
+        } else {
+            $("#UnAllocated1").load('@Url.Action("RemoveItem")', NModel, function (response, status, xhr) {
+                //$('#tab_UnAlloted').click();
+                if (status != "success") {
+                    alert(xhr.statusText + "\nPlease Refresh and try again");
+                }
+            })
+        }
+
+        $("#Allocated1").load('@Url.Action("CSTRANMAllocated1")', NModel, function (response, status, xhr) {
+
+        })
+
+
+    }
+
+
+
+</script>

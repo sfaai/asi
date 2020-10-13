@@ -1,0 +1,88 @@
+﻿@model WebApplication1.CSCOSH
+@using WebApplication1.Utility
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "Delete Members of ";
+}
+
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.CSCOMSTR.CONAME</h4>
+</div>
+
+<div class="border border-info bg-warning">
+    <br />
+    <h4 class="h4 text-center">ARE YOU SURE YOU WANT TO DELETE THIS</h4>
+    <br />
+</div>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EFFDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EFFDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TERDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TERDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRSCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRSCODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CSPR.PRSNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CSPR.PRSNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FOLIONO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FOLIONO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-primary" />
+            @Html.ActionLink(" Back", "Edit", "cSCOMSTRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-info fa fa-arrow-left" })
+
+        </div>
+    }
+</div>

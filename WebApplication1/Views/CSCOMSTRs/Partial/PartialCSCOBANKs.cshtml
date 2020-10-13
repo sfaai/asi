@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WebApplication1.CSCOBANK>
+@using WebApplication1.Utility;
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="width:96vw">
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr>
+            <th></th>
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().TERDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().EFFDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().BANKCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKBANK.BANKDESC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ACTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAMP)
+            </th>
+
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (Html.Action() == "Edit")
+                    {
+                        @Html.ActionLink(" ", "Edit", "CSCOBANKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-edit", title = "Edit" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Details", "CSCOBANKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Delete", "CSCOBANKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                    else if (Html.Action() == "Details")
+                    {
+                        @Html.ActionLink(" ", "Details", "CSCOBANKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                    }
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.TERDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EFFDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BANKCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKBANK.BANKDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ACTYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+
+
+            </tr>
+        }
+
+    </table>
+</div>

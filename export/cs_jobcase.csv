@@ -1,0 +1,1847 @@
+case_id,job_id,case_no,case_entrydate,case_case,case_particular,case_remark,case_tempkey,case_casebillingdescription
+1,1,1,2017-10-12,SecFee,"","",22017-10-12T19:33:11.161,Secretarial Fee + Registered Office
+2,2,1,2017-12-09,TerSec,"","",32017-12-09T11:05:26.223,Termination of Secretarial Services
+3,3,1,2017-12-27,Sundry,Answer SSM Q on AR 19.6.2017 b4 3.1.2018,"",22017-12-27T08:48:35.518,Miscellaneous Secretarial Job
+4,4,1,2017-12-27,Sundry,Answer SSM Q for AR 18.8.2017 b4 3.1.2018.,"",22017-12-27T08:52:26.160,Miscellaneous Secretarial Job
+5,5,1,2017-12-27,Sundry,Answer SSM Q on S46(3)@22.11.2017 b4 3.1.2018,"",22017-12-27T08:53:45.704,Miscellaneous Secretarial Job
+24,23,1,2018-01-02,AC,FS@2016-12-31,"",92018-01-02T17:22:49.167,Financial Statement
+6,6,1,2017-12-29,WP,W/Up LLP,"",22017-12-29T09:04:22.644,Winding Up
+7,7,1,2018-01-02,T.O.,"
+","",42018-01-02T08:59:13.075,Take Over Secretarial File(s)
+8,8,1,2018-01-02,T.O.,"","",42018-01-02T09:00:59.473,Take Over Secretarial File(s)
+9,9,1,2018-01-02,T.O.,"","",42018-01-02T09:01:32.046,Take Over Secretarial File(s)
+10,10,1,2018-01-02,T.O.,"","",42018-01-02T09:01:59.136,Take Over Secretarial File(s)
+11,11,1,2018-01-02,DCR,"Director Fee for FYE 31 Dec 2014
+- Seow Voon Ping (RM3.05 Mil)","",42018-01-02T09:27:21.656,Misc Director Resolution-
+12,12,1,2018-01-02,CPO,CPO - D&P Innovation SB,"",22018-01-02T10:17:15.332,Purchase of CPO/Idaman
+13,13,1,2018-01-02,Div,Declaration of Dividend 4/2017 - RM600k,"",32018-01-02T11:34:03.609,Issuance of Dividends
+14,14,1,2018-01-02,AC,"FS@2014-12-31
+","",92018-01-02T11:45:20.748,Financial Statement
+15,15,1,2018-01-02,AC,FS@2017-07-31,"",92018-01-02T12:51:33.144,Financial Statement
+16,16,1,2018-01-02,S32,Adoption of Constitution,"",52018-01-02T14:12:12.598,Adoption of Constitution
+17,16,2,2018-01-02,S78,Allotment of 400K Preference Shares,"",52018-01-02T14:12:12.598,Increase in Paid Up Capital-Cash
+18,17,1,2018-01-02,S36,Object Clause 3(ii),"",42018-01-02T14:30:54.420,M&A/Constitution changes
+19,18,1,2018-01-02,PD 2/2017,PD 2/2017 - Notification of Change of Business Address,"",72018-01-02T14:42:58.275,Biz/Branch Add/Nature of biz changes
+31,30,1,2018-01-03,S105,LHDN STAMPING FEE,"",92018-01-03T16:22:49.862,Transfer of share(s)
+21,20,1,2018-01-02,PD 2/2017,PD 2/2017 - Notification on Chg of Address,"",72018-01-02T14:50:53.998,Biz/Branch Add/Nature of biz changes
+22,21,1,2018-01-02,PD 2/2017,PD 2/2017 - Notification on Chg of Address,"",72018-01-02T14:53:27.076,Biz/Branch Add/Nature of biz changes
+23,22,1,2018-01-02,PD 2/2017,PD 2/2017 - Notification on Chg of Business Address,"",72018-01-02T14:54:19.846,Biz/Branch Add/Nature of biz changes
+185,164,1,2018-01-15,AC,Financial Statement @ 2017-07-31 ,"",82018-01-15T10:30:56.893,Financial Statement
+25,24,1,2018-01-02,AC,FS@2017-05-31,"",92018-01-02T17:46:32.611,Financial Statement
+26,25,1,2018-01-03,PurVeh,Disposal of MV (WVX1200),"",52018-01-03T09:50:19.639,Vehicle Purchase/disposal
+27,26,1,2018-01-03,AC,FS@2016-12-31,"",92018-01-03T12:24:16.389,Financial Statement
+28,27,1,2018-01-03,DCR,DCR - Cash Management Services and Electronic Banking Services  (Maybank),"",72018-01-03T12:48:37.737,Misc Director Resolution-
+29,28,1,2018-01-03,ChAud,"Appt : Ling Kam Hoong & Co
+Resign : P.S. Yap, Isma & Associates
+","",42018-01-03T16:09:31.954,Change of Auditor
+190,169,1,2018-01-15,AR/AGM,Annual Return @2018-02-22,"",82018-01-15T16:16:51.624,Annual Return
+30,29,1,2018-01-03,S105,LHDN STAMPING FEE,"",92018-01-03T16:19:57.707,Transfer of share(s)
+32,31,1,2018-01-03,S105,LHDN STAMPING FEE,"",92018-01-03T16:48:42.240,Transfer of share(s)
+33,32,1,2018-01-03,S15,New Incorporation: BEAU DE WAAL SDN. BHD.,"",72018-01-03T17:46:52.979,Incorporation
+195,173,1,2018-01-16,S58,"Change passport 
+- Mahdi Ali Khan Zadeh
+- Toktam Tork Zadeh ","",82018-01-16T10:42:57.368,F49-ResDir/Change Information
+35,33,1,2018-01-03,IntBanking,Reflex Cash Management with RHB,"",52018-01-03T18:11:40.268,Internet Banking
+36,34,1,2018-01-03,IntBanking,Reflex Cash Management-RHB,"",52018-01-03T18:18:02.303,Internet Banking
+37,35,1,2018-01-04,AR/AGM,AR @ 2018-01-16,"",82018-01-04T12:50:34.840,Annual Return
+38,36,1,2018-01-04,ChBkSig,DCR - Chg of Bank Signatories (CIMB Islamic Bank Berhad),"",72018-01-04T13:44:27.560,Changing Banking Signatory
+39,37,1,2018-01-04,AR/AGM,Annual Return @ 2018-01-24 ,"",82018-01-04T14:23:38.328,Annual Return
+40,38,1,2018-01-04,BkFac,"Maybank Islamic Berhad - Bank Fac @ 2017-09-14
+- DCR, MWR","",32018-01-04T14:54:11.993,Bank-Facilities
+41,38,2,2018-01-04,ConfirmL,Confirmation Letter - MBB ,"",32018-01-04T14:54:11.993,Confirmation Letter
+42,38,3,2018-01-04,CTC,"CTC F24, F44, F49, M&A (x2)","",32018-01-04T14:54:11.993,Certified True Copies 
+43,39,1,2018-01-04,BkFac,"Maybank Islamic Berhad - Banking Fac
+- DCR, MWR","",32018-01-04T14:59:32.934,Bank-Facilities
+44,39,2,2018-01-04,ConfirmL,Confirmation Letter to MBB,"",32018-01-04T14:59:32.934,Confirmation Letter
+45,39,3,2018-01-04,CTC,"CTC F24, F44, F49, M&A (x2)","",32018-01-04T14:59:32.934,Certified True Copies 
+46,40,1,2018-01-04,AR/AGM,Annual Return @ 2018-01-25,"",72018-01-04T15:40:05.784,Annual Return
+47,41,1,2018-01-04,AC,FS@2016-09-30,"",92018-01-04T16:19:09.899,Financial Statement
+199,177,1,2018-01-16,AR/AGM,Annual Return @2018-02-12,"",82018-01-16T12:55:42.236,Annual Return
+203,181,1,2018-01-16,PurVeh,Purchase of MV - Nissan Navara ,"",32018-01-16T15:52:23.004,Vehicle Purchase/disposal
+204,181,2,2018-01-16,ConfirmL,Confirmation Letter to PBB,"",32018-01-16T15:52:23.004,Confirmation Letter
+208,184,1,2018-01-16,CTC,"","",92018-01-16T18:01:29.288,Certified True Copies 
+212,188,1,2018-01-16,DCR,DCR - Selling of Branch Business,"",32018-01-16T18:16:10.158,Misc Director Resolution-
+216,192,1,2018-01-17,OpBk,Access to Maybank2u Internet Banking,"",42018-01-17T12:13:55.670,Open Bank Account(s)
+220,196,1,2018-01-17,Invst,Investment in Myra Gardens SB,"",72018-01-17T13:46:00.561,Investment(s)
+224,199,1,2018-01-17,AC,FS@2017-07-31,"",92018-01-17T15:28:53.494,Financial Statement
+48,42,1,2018-01-04,AC,FS@2016-09-30,"",92018-01-04T16:20:53.329,Financial Statement
+49,43,1,2018-01-04,AC,FS@2016-09-30,"",92018-01-04T16:22:01.801,Financial Statement
+50,44,1,2018-01-04,AC,Financial Statement @ 2017-07-31,"",82018-01-04T17:11:36.925,Financial Statement
+51,45,1,2018-01-04,S58,Resignation of Farah,"",52018-01-04T17:41:25.546,F49-ResDir/Change Information
+52,46,1,2018-01-04,S105,Transfer of shares,"",52018-01-04T17:42:23.216,Transfer of share(s)
+53,47,1,2018-01-04,ChBkSig,PBeBank.com - Change Corporate User,"",32018-01-04T17:46:06.742,Changing Banking Signatory
+54,48,1,2018-01-04,ChBkSig,PBeBank.com - Change Corporate User,"",32018-01-04T17:46:36.618,Changing Banking Signatory
+55,49,1,2018-01-04,ChBkSig,PBeBank.com - Change Corporate User,"",32018-01-04T17:47:05.011,Changing Banking Signatory
+56,50,1,2018-01-04,DCR,"Open Fixed Deposit - Public Bank, Taman Maluri","",42018-01-04T19:52:25.424,Misc Director Resolution-
+57,51,1,2018-01-05,AR/AGM,Annual Return @ 2018-01-05,"",82018-01-05T08:47:05.585,Annual Return
+58,52,1,2018-01-05,S78,- Up to 10 shares. ,"",82018-01-05T09:26:09.648,Increase in Paid Up Capital-Cash
+59,53,1,2018-01-05,BkChsig,PBeBank.com - Change Corporate User,"",32018-01-05T09:30:41.495,Bank-Change Signatories
+60,54,1,2018-01-05,BkChsig,PBeBank.com - Change Corporate User,"",32018-01-05T09:31:20.779,Bank-Change Signatories
+61,55,1,2018-01-05,BkChsig,PBeBank.com - Change Corporate User,"",32018-01-05T09:31:40.705,Bank-Change Signatories
+62,56,1,2018-01-05,S105,"- share transfer Azmil to Azlin (1 shares) 
+","",82018-01-05T09:30:00.554,Transfer of share(s)
+63,57,1,2018-01-05,ChAud,Change of Auditor,"",92018-01-05T10:48:40.215,Change of Auditor
+64,58,1,2018-01-05,AR/AGM,Annual Return @ 2018-01-16,"",72018-01-05T11:03:07.401,Annual Return
+65,59,1,2018-01-05,S58,"Chg of Passport : Soh Wen Hao, Jermaine (E6562220A)","",72018-01-05T11:57:45.700,F49-ResDir/Change Information
+66,60,1,2018-01-05,CTC,"M&A/F24/F44/F49 (x1) @ 2018-01-05
+","",42018-01-05T12:24:45.680,Certified True Copies 
+67,61,1,2018-01-05,AR/AGM,Annual Return @ 2018-01-23,"",82018-01-05T12:57:36.170,Annual Return
+186,165,1,2018-01-15,OpBk,Opbk - OCBC,"",32018-01-15T11:13:30.688,Open Bank Account(s)
+68,62,1,2018-01-05,S58,Chg of Director Passport - Peter David Elliott-Hughes (518060019),"",72018-01-05T13:14:36.207,F49-ResDir/Change Information
+69,63,1,2018-01-05,CTC,CTC Financial Statement as at 31.12.2016 Form from Board of Engineering,"",52018-01-05T13:26:18.619,Certified True Copies 
+70,64,1,2018-01-05,S105,Preference Shares Transfer - 200k,"",32018-01-05T14:00:07.391,Transfer of share(s)
+196,174,1,2018-01-16,DCR,"DCR & POA - Appt Corp Rep - Hong K.S. 
+","",22018-01-16T11:33:17.286,Misc Director Resolution-
+200,178,1,2018-01-16,S27,Spartan Advanced Training Sdn. Bhd.,"",92018-01-16T14:44:42.081,Name Reservation-
+71,65,1,2018-01-05,S236,Appointment of Secretary,"",92018-01-05T14:38:17.770,Appointment of Secretary
+72,66,1,2018-01-05,AR/AGM,Annual Return @ 2018-01-28,"",72018-01-05T15:09:52.259,Annual Return
+73,67,1,2018-01-05,AC,FS@2017-09-30,"",92018-01-05T17:12:11.964,Financial Statement
+74,68,1,2018-01-06,CIBk,Hong Leong Bank,"",42018-01-06T11:03:52.106,Bank-Close Account(s)
+75,69,1,2018-01-06,AC,Financial Statement @ 2017-06-30,"",72018-01-06T11:19:43.299,Financial Statement
+76,70,1,2018-01-06,T.O.,Re-appoint us as Sec,"",32018-01-06T12:52:37.366,Take Over Secretarial File(s)
+77,71,1,2018-01-08,AR/AGM,AR@2018-01-30,"",92018-01-08T12:50:36.626,Annual Return
+78,72,1,2018-01-08,Misc,Prepare Proof of Debt (Form 77) ,"",32018-01-08T12:57:02.673,Non-secretarial assignments
+79,73,1,2018-01-08,AC,Financial Statement @ 2017-06-30,"",72018-01-08T13:04:11.105,Financial Statement
+205,181,3,2018-01-16,CTC,"CTC F24, F44, F49, M&A (1 set)","",32018-01-16T15:52:23.004,Certified True Copies 
+209,185,1,2018-01-16,CTC,"","",92018-01-16T18:03:11.967,Certified True Copies 
+81,74,1,2018-01-08,AR/AGM,AR@2018-01-30,"",92018-01-08T14:45:31.574,Annual Return
+82,75,1,2018-01-08,AR/AGM,AR@2018-01-27,"",92018-01-08T14:46:52.489,Annual Return
+83,76,1,2018-01-08,BkOp,Corporate Internet Banking Facility with Affin Bank Berhad,"",52018-01-08T15:13:59.245,Bank-Open Account[s]
+84,77,1,2018-01-08,Div,"Declaration of RM500,000 dividend FYE 31.12.2017 @ 26.12.2017","",42018-01-08T16:34:35.344,Issuance of Dividends
+85,78,1,2018-01-08,S36,"Amend AA Article 1, 3(a) and 3(d), Insert Article 5","",72018-01-08T16:52:09.516,M&A/Constitution changes
+86,78,2,2018-01-08,S58,Resignation Dir: Ms. Chen,"",72018-01-08T16:52:09.516,F49-ResDir/Change Information
+87,78,3,2018-01-08,ShCert,"Lost ShCert No.: 001,002,003,004
+Replace ShCert No.: 005,006","",72018-01-08T16:52:09.516,Lost Share certificates/amendments
+88,78,4,2018-01-08,S105,"ShTr from Ms. Chen to Mr. Tan Mark: 49,000 units","",72018-01-08T16:52:09.516,Transfer of share(s)
+89,79,1,2018-01-08,AR/AGM,AR@2018-01-21,"",92018-01-08T17:36:31.871,Annual Return
+213,189,1,2018-01-17,CTC,"F24, F49, S58, F9, F44, M&A (1set)","",62018-01-17T09:02:26.312,Certified True Copies 
+217,193,1,2018-01-17,Misc,GST Registration,"",32018-01-17T12:40:52.057,Non-secretarial assignments
+221,196,2,2018-01-17,FYE,Change of Fye from 30 June to 31 Dec 2017,"",72018-01-17T13:48:50.804,Fixing Financial Year End-DCR
+227,202,1,2018-01-17,FYE,Change of FYE from 30 June to 31 Dec 2017,"",72018-01-17T16:18:37.759,Fixing Financial Year End-DCR
+229,204,1,2018-01-18,OpBk,Open CIMB Bank Ara Damansara branch,"",42018-01-18T08:57:33.269,Open Bank Account(s)
+232,207,1,2018-01-18,CTC,"DCRs & MWRs purchase of property with Tropikal Task SB, F49, F24, F44, M&A & Directors'' IC requested by vendor''s solicitor, TAN, CHUA & LAWRENCE.","",42018-01-18T11:12:21.679,Certified True Copies 
+305,273,1,2018-01-23,AR/AGM,"","",92018-01-23T17:27:47.891,Annual Return
+182,161,1,2018-01-15,CTC,"","",92018-01-15T09:04:34.781,Certified True Copies 
+90,80,1,2018-01-08,T.O.,Take over sec file,"",32018-01-08T18:57:55.149,Take Over Secretarial File(s)
+91,81,1,2018-01-09,RO,"Change Registered Office to E-7-1, Megan Avenue 1, ","",82018-01-09T09:10:58.519,Registered Office
+92,82,1,2018-01-09,ChAud,Change of Auditor & Appointment of Tax Agent,"",92018-01-09T09:26:07.978,Change of Auditor
+93,83,1,2018-01-09,S58,Change of passport - Thomas John Jeffers 13.12.2017,"",42018-01-09T10:37:39.755,F49-ResDir/Change Information
+94,84,1,2018-01-09,S58,Change of passport - Thomas John Jeffers,"",42018-01-09T10:42:58.118,F49-ResDir/Change Information
+187,166,1,2018-01-15,OpBk,Opbk - OCBC,"",32018-01-15T11:14:30.096,Open Bank Account(s)
+192,170,1,2018-01-15,CTC,"
+Audited Account 2012, 2013, 2014, 2015, 2016 (1set)","",62018-01-15T16:47:26.126,Certified True Copies 
+95,85,1,2018-01-09,CTC,CTC,"",92018-01-09T11:05:02.029,Certified True Copies 
+96,86,1,2018-01-09,CTC,CTC,"",92018-01-09T11:08:38.827,Certified True Copies 
+97,87,1,2018-01-09,PurVeh,"Purchase of MV (Ford Ranger 2.2)
+Disposal of MV (Ford Ranger, BKU 8767)","",52018-01-09T11:29:45.410,Vehicle Purchase/disposal
+98,88,1,2018-01-09,AC,Financial Statement @ 2017-06-30,"",72018-01-09T11:32:35.597,Financial Statement
+99,89,1,2018-01-09,SecFee,- From 2018-01-03 to 2019-01-02,"",32018-01-09T13:50:23.415,Secretarial Fee + Registered Office
+100,90,1,2018-01-09,SecFee,- From 2018-01-07 to 2019-01-06,"",32018-01-09T13:51:10.222,Secretarial Fee + Registered Office
+101,91,1,2018-01-09,SecFee,- From 2018-01-06 to 2019-01-05,"",32018-01-09T13:51:58.623,Secretarial Fee + Registered Office
+102,92,1,2018-01-09,AR/AGM,AR@2018-01-27,"",92018-01-09T14:54:28.710,Annual Return
+103,93,1,2018-01-10,Div,"Declaration of RM578,000 dividend","",52018-01-10T09:26:11.863,Issuance of Dividends
+104,94,1,2018-01-10,AC,Financial Statement @ 2017-06-30,"",72018-01-10T09:48:34.418,Financial Statement
+105,95,1,2018-01-10,AC,Financial Statement@2017-06-30,"",72018-01-10T11:12:54.935,Financial Statement
+107,96,1,2018-01-10,CTC,"F49,F24,F44, M&A, DCRs & MCRs purchase of property C-63A-1, Dataran C180 dd 19.12.2017","",42018-01-10T12:42:13.624,Certified True Copies 
+108,97,1,2018-01-10,IntBanking,Internet Banking with MBB,"",52018-01-10T13:09:57.138,Internet Banking
+109,98,1,2018-01-10,AC,Financial Statement @ 2017-06-30,"",72018-01-10T13:08:31.243,Financial Statement
+110,99,1,2018-01-10,AR/AGM,Annual Return @ 2018-01-21,"",72018-01-10T13:44:11.117,Annual Return
+111,100,1,2018-01-10,AC,Financial Statement @ 2017-06-30,"",72018-01-10T13:46:24.362,Financial Statement
+112,101,1,2018-01-10,CTC,"CTC Forms, M&A, IC, DCRs & MCRs purchase of property C-63A-1 dd 19.12.2017","",42018-01-10T14:18:20.182,Certified True Copies 
+113,102,1,2018-01-10,S105,S105,"",92018-01-10T15:13:05.933,Transfer of share(s)
+114,103,1,2018-01-10,AC,FS@2016-12-31,"",92018-01-10T16:03:18.625,Financial Statement
+115,104,1,2018-01-10,AC,FS@2016-12-31,"",92018-01-10T16:05:09.827,Financial Statement
+116,105,1,2018-01-10,Div,Declaration of Dividend (2/2018) - RM150k,"",32018-01-10T17:28:01.789,Issuance of Dividends
+117,106,1,2018-01-10,Div,Declaration of Dividend (2/2018) - RM150,"",32018-01-10T17:33:18.599,Issuance of Dividends
+118,107,1,2018-01-10,PurVeh,Disposal of MV (WVB 1200),"",52018-01-10T17:36:27.285,Vehicle Purchase/disposal
+120,108,1,2018-01-10,S15,"New Incorporation: TFMY SERVICES SDN. BHD.
+Resubmit S27: 2018-01-10",Deadline S27: 2018-02-09,72018-01-10T17:47:05.468,Incorporation
+121,109,1,2018-01-11,CIBk,HLBB Bangsar branch,"",42018-01-11T09:48:22.151,Bank-Close Account(s)
+122,110,1,2018-01-11,AR/AGM,Annual Return @ 2018-01-25,"",82018-01-11T11:48:43.157,Annual Return
+123,111,1,2018-01-11,AR/AGM,Annual Return @2018-01-28,"",82018-01-11T13:41:17.163,Annual Return
+124,112,1,2018-01-11,BkFac,"Acceptance of Guarantee Facilty from RTM (RM299,000.00)","",52018-01-11T13:43:20.653,Bank-Facilities
+125,113,1,2018-01-11,DCR,Insurance claim for vehicle no: T/BE1115,"",52018-01-11T14:10:46.800,Misc Director Resolution-
+126,114,1,2018-01-11,S58,"Change of Residential Address to D-10-8
+","",82018-01-11T18:14:00.820,F49-ResDir/Change Information
+127,115,1,2018-01-11,"",Change Residential Address to D-10-8 & Sunway Damansara. ,"",82018-01-11T18:17:30.570,""
+128,116,1,2018-01-11,BkFac,OCBC - Banking Fac,"",32018-01-11T18:21:39.926,Bank-Facilities
+129,116,2,2018-01-11,ConfirmL,Confirmation Letter - board of director,"",32018-01-11T18:21:39.926,Confirmation Letter
+130,117,1,2018-01-11,S58,Change Residential Address  to D-10-8 & Sunway Damansara. ,"",82018-01-11T18:22:20.438,F49-ResDir/Change Information
+131,118,1,2018-01-12,S58,Updating of Passport for Smita,"",52018-01-12T08:56:10.340,F49-ResDir/Change Information
+132,119,1,2018-01-12,S58,Updating passport number for Mr. Wong Wai,"",52018-01-12T09:14:42.513,F49-ResDir/Change Information
+133,120,1,2018-01-12,CTC,"F24, F49, F44, F9, M&A (1set)","",62018-01-12T09:50:23.599,Certified True Copies 
+134,121,1,2018-01-12,PurVeh,Purchase MV (HP)- Volkswagen Tiguan (Follow Sample Given),"",72018-01-12T09:55:55.247,Vehicle Purchase/disposal
+135,121,2,2018-01-12,PurVeh,"Disposal MV - Toyota Harrier
+","",72018-01-12T09:55:55.247,Vehicle Purchase/disposal
+136,122,1,2018-01-12,ConfirmL,Confirmation Lttr - Directors/Shareholders,"",72018-01-12T10:10:46.650,Confirmation Letter
+137,123,1,2018-01-12,AC,Financial Statement@2017-06-30,"",72018-01-12T10:43:09.076,Financial Statement
+139,124,1,2018-01-12,CTC,Purchase MV Nissan Almera @ 12.01.2018,"",42018-01-12T10:49:37.265,Certified True Copies 
+140,125,1,2018-01-12,OpBk,open bank acc & internet banking with MBB,"",42018-01-12T11:04:03.506,Open Bank Account(s)
+141,126,1,2018-01-12,AR/AGM,Annual Return@2018-01-28,"",72018-01-12T11:42:04.530,Annual Return
+142,127,1,2018-01-12,CTC,"","",92018-01-12T11:51:26.114,Certified True Copies 
+143,128,1,2018-01-12,S36,"Change of Articles 1, 5 & 6
+Insertion: 8","",52018-01-12T13:55:15.612,M&A/Constitution changes
+144,128,2,2018-01-12,S58,"Resignation of:-
+Mohd Fahmi & Mohamad Azmi","",52018-01-12T13:55:15.612,F49-ResDir/Change Information
+145,129,1,2018-01-12,SecFee,"Secretarial Fee + Registered Office
+- From 2015-11-10 to 2016-11-09","",32018-01-12T14:18:02.756,Secretarial Fee + Registered Office
+146,129,2,2018-01-12,SecFee,"Secretarial Fee + Registered Office
+- From 2016-11-10 to 2017-11-09","",32018-01-12T14:18:02.756,Secretarial Fee + Registered Office
+147,130,1,2018-01-12,SecFee,"Secretarial Fee + Registered Office
+- From 2017-11-10 to 2018-11-09","",32018-01-12T14:22:23.801,Secretarial Fee + Registered Office
+148,131,1,2018-01-12,CIBk,Closing Bk Account - Standard Chartered Malaysia (MYR),"",72018-01-12T14:40:19.640,Bank-Close Account(s)
+149,132,1,2018-01-12,CIBk,Closing Bk Acc - Standard Chartered Bank Msia (MYR),"",72018-01-12T14:45:20.349,Bank-Close Account(s)
+150,134,1,2018-01-12,AR/AGM,Annual Return@2018-01-31,"",72018-01-12T15:51:22.950,Annual Return
+183,162,1,2018-01-15,CTC,"F49@2015-11-01, S58@2017-09-27 & S58@2017-11-03","",42018-01-15T09:40:11.879,Certified True Copies 
+151,133,1,2018-01-12,S36,Change of AA - AGM & sole director,"",32018-01-12T15:55:18.784,M&A/Constitution changes
+152,133,2,2018-01-12,S58,Resignation of Director (Daud Bin Hosnan),"",32018-01-12T15:55:18.784,F49-ResDir/Change Information
+153,135,1,2018-01-12,OpBk,"Opening of bank account and internet banking with MBB, TTDI branch","",42018-01-12T16:00:47.668,Open Bank Account(s)
+154,135,2,2018-01-12,CTC,"CTC
+2 sets Form 49
+1 sets of Form 24, Form 44, Form 9 & M&A","",42018-01-12T16:00:47.668,Certified True Copies 
+155,136,1,2018-01-12,CIBk,"close MBB,Pulau Tikus branch","",42018-01-12T16:06:02.894,Bank-Close Account(s)
+156,137,1,2018-01-12,CTC,"","",92018-01-12T16:12:50.504,Certified True Copies 
+157,138,1,2018-01-12,CTC,"","",92018-01-12T16:13:57.173,Certified True Copies 
+158,139,1,2018-01-12,CTC,"","",92018-01-12T16:14:46.855,Certified True Copies 
+159,140,1,2018-01-12,CTC,"","",92018-01-12T16:15:15.923,Certified True Copies 
+160,141,1,2018-01-12,CTC,"","",92018-01-12T16:15:42.775,Certified True Copies 
+161,142,1,2018-01-12,CTC,"","",92018-01-12T16:16:09.668,Certified True Copies 
+162,143,1,2018-01-12,CTC,"","",92018-01-12T16:16:34.850,Certified True Copies 
+163,144,1,2018-01-12,CTC,"","",92018-01-12T16:17:05.997,Certified True Copies 
+164,145,1,2018-01-12,CTC,"","",92018-01-12T16:17:27.722,Certified True Copies 
+165,146,1,2018-01-12,CTC,"","",92018-01-12T16:18:05.278,Certified True Copies 
+166,147,1,2018-01-12,CTC,"","",92018-01-12T16:18:29.185,Certified True Copies 
+167,148,1,2018-01-12,CTC,"","",92018-01-12T16:19:03.872,Certified True Copies 
+168,149,1,2018-01-12,CTC,"","",92018-01-12T16:19:31.882,Certified True Copies 
+169,150,1,2018-01-12,CTC,"","",92018-01-12T16:20:01.807,Certified True Copies 
+170,151,1,2018-01-12,CTC,"","",92018-01-12T16:20:50.823,Certified True Copies 
+171,152,1,2018-01-12,CTC,"","",92018-01-12T16:21:15.224,Certified True Copies 
+172,153,1,2018-01-12,CTC,"","",92018-01-12T16:21:36.189,Certified True Copies 
+173,154,1,2018-01-12,CTC,"","",92018-01-12T16:22:09.778,Certified True Copies 
+174,155,1,2018-01-12,CTC,"","",92018-01-12T16:22:45.227,Certified True Copies 
+175,156,1,2018-01-12,CTC,"","",92018-01-12T16:23:21.559,Certified True Copies 
+188,167,1,2018-01-15,ConfirmL,"Confirmation letter to Deloitte on the Capital, shareholding and resolution passed after FYE","",52018-01-15T11:32:20.024,Confirmation Letter
+193,171,1,2018-01-15,PurVeh,Disposal of MV (WWY 1200 & WWQ 1200),"",52018-01-15T17:55:08.573,Vehicle Purchase/disposal
+197,175,1,2018-01-16,CTC,Opbk with Sumitomo Mitsui Banking Corporation Malaysia Berhad & Bank of Tokyo-Mitsubishi UFJ (Malaysia) Berhad,"",42018-01-16T12:33:30.321,Certified True Copies 
+201,179,1,2018-01-16,S15,Incorporation ,"",92018-01-16T14:57:12.147,Incorporation
+206,182,1,2018-01-16,CTC,Vendor's copy - purchase of property dd 19 Dec 2017,"",42018-01-16T17:33:11.843,Certified True Copies 
+210,186,1,2018-01-16,CTC,"","",92018-01-16T18:04:47.106,Certified True Copies 
+214,190,1,2018-01-17,AC,FS@2016-12-31,"",92018-01-17T11:19:25.550,Financial Statement
+218,194,1,2018-01-17,Misc,GST Registration,"",32018-01-17T12:41:41.772,Non-secretarial assignments
+222,197,1,2018-01-17,FYE,Change of FYE 31 July to 31 Dec 2017,"",72018-01-17T14:26:47.863,Fixing Financial Year End-DCR
+225,200,1,2018-01-17,SecFee,- Form 2018-01-13 until 2019-01-12,"",32018-01-17T15:53:35.877,Secretarial Fee + Registered Office
+228,203,1,2018-01-17,CPO,Purchase of CPO,"",92018-01-17T17:27:02.181,Purchase of CPO/Idaman
+230,205,1,2018-01-18,AR/AGM,Annual Return @ 2018-02-03,"",72018-01-18T10:42:07.145,Annual Return
+233,208,1,2018-01-18,CTC,"DCR & MWR purchase of property with Tropikal Task SB dd 19 Dec 2017, F49, F24, F44, M&A & Directors'' IC requested by Vendors, Solicitor, TAN, CHUA & LAWRENCE","",42018-01-18T11:20:38.244,Certified True Copies 
+234,209,1,2018-01-18,IntBanking,PBB - Internet banking,"",32018-01-18T12:49:30.437,Internet Banking
+240,215,1,2018-01-18,AR/AGM,Annual Return@2018-02-18,"",82018-01-18T13:00:59.432,Annual Return
+244,219,1,2018-01-18,IntBanking,PBB - Internet Banking,"",22018-01-18T14:38:40.499,Internet Banking
+246,220,1,2018-01-18,CTC,CTC forms for RHB Annual Review,"",42018-01-18T15:44:52.781,Certified True Copies 
+176,157,1,2018-01-12,S36,Change of Articles - AGM & Sole Director,"",32018-01-12T16:38:02.091,M&A/Constitution changes
+177,157,2,2018-01-12,S58,Resignation of Director (Daud Bin Hosnan),"",32018-01-12T16:38:02.091,F49-ResDir/Change Information
+179,159,1,2018-01-12,S58,"","",52018-01-12T17:11:36.852,F49-ResDir/Change Information
+180,160,1,2018-01-12,AR/AGM,Annual Return @ 2018-01-06,"",72018-01-12T17:38:22.832,Annual Return
+181,160,2,2018-01-12,S58,"Chg of Passport :-
+- Seow Eng Hou : E4367091A
+- Seow Ling Tin : E5295395J","",72018-01-12T17:38:22.832,F49-ResDir/Change Information
+184,163,1,2018-01-15,Div,"Declaration of Dividend (5/2018) - RM1,000,000","",32018-01-15T10:21:39.807,Issuance of Dividends
+189,168,1,2018-01-15,AR/AGM,Annual Return @2018-02-03,"",72018-01-15T15:36:08.786,Annual Return
+194,172,1,2018-01-15,DCR,Application for extension of time FS @ 2017-01-31,"",42018-01-15T18:56:55.931,Misc Director Resolution-
+198,176,1,2018-01-16,CTC,"Form pursuant to Sect 17, Sect 15, Sect 14, Sect 58 & Passport of Kazuya Takeuchi & Yuji Hayashi","",42018-01-16T12:42:18.864,Certified True Copies 
+202,180,1,2018-01-16,AC,FS @ 2016-12-31,"",42018-01-16T15:11:28.170,Financial Statement
+207,183,1,2018-01-16,CTC,"","",92018-01-16T17:56:39.805,Certified True Copies 
+211,187,1,2018-01-16,DCR,DCR - Selling of Branch Business,"",32018-01-16T18:14:13.998,Misc Director Resolution-
+215,191,1,2018-01-17,FYE,Chg Fye from 30 June to 31 Dec 2017,"",72018-01-17T11:25:41.385,Fixing Financial Year End-DCR
+219,195,1,2018-01-17,OpBk,Access to Maybank2u internet banking services,"",42018-01-17T12:57:29.759,Open Bank Account(s)
+223,198,1,2018-01-17,AC,FS@2017-07-31,"",92018-01-17T15:21:11.639,Financial Statement
+226,201,1,2018-01-17,SecFee,- From 2018-01-11 until 2019-01-10,"",32018-01-17T15:54:32.133,Secretarial Fee + Registered Office
+231,206,1,2018-01-18,CTC,"DCRs & MWRs for Purchase of property with Tropikal Task Sdn. Bhd. dated 19 Dec 2017, Form 49, Sect 51, Form 24, Form 44, M&A & Directors'' IC","requested by TAN, CHUA & LAWRENCE",42018-01-18T11:03:55.346,Certified True Copies 
+241,216,1,2018-01-18,CTC,"F24, F49, F44, F9, F13, M&A (1set)","",62018-01-18T14:21:14.305,Certified True Copies 
+1047,925,1,2018-03-30,AC,"FS@2017-12-31
+","",112018-03-30T16:11:37.284,Financial Statement
+247,221,1,2018-01-18,AR/AGM,Annual Return@2018-02-27,"",82018-01-18T15:47:59.109,Annual Return
+248,222,1,2018-01-18,FYE,"-Fix FYE, Appoint Auditor & Tax Agent. ","",82018-01-18T16:15:42.361,Fixing Financial Year End-DCR
+249,223,1,2018-01-18,FYE,"Fixing FYE, Appointment of Auditor & Appointment of Tax Agent ","",82018-01-18T16:21:36.812,Fixing Financial Year End-DCR
+250,224,1,2018-01-18,CTC,CTC FS@2016-12-31 & S68@207-08-18 for RHB Annual review of banking facilities,"",42018-01-18T18:40:06.648,Certified True Copies 
+252,226,1,2018-01-18,AC,Financial Statements @ 2017-08-31,"",22018-01-18T19:24:45.850,Financial Statement
+254,228,1,2018-01-19,AC,Financial Statement @ 2017-06-30,"",82018-01-19T09:33:48.724,Financial Statement
+255,229,1,2018-01-19,AR/AGM,Annual Return@2018-02-06,"",82018-01-19T10:06:23.967,Annual Return
+1063,941,1,2018-04-02,AR/AGM,Annual Return @ 2018-03-28,"",72018-04-02T15:24:47.941,Annual Return
+1078,956,1,2018-04-03,S58,"Change of Secretaries 
+- Appt KSS
+- Resign KBT ","",82018-04-03T07:59:32.285,F49-ResDir/Change Information
+264,238,1,2018-01-19,AR/AGM,Annual Return@2017-12-27,"",72018-01-19T12:50:58.727,Annual Return
+260,234,1,2018-01-19,AC,Financial Statement @ 2017-06-30 ,"",82018-01-19T10:40:39.257,Financial Statement
+261,235,1,2018-01-19,CTC,"F24, F44, F49, F9, M&A (1set)","",62018-01-19T11:14:54.636,Certified True Copies 
+262,236,1,2018-01-19,ChBkSig,"Chbksg - CIMB KLCC
+Chbksg - CIMB Taman Maluri
+Chbksg - RHB Taman Shamelin","",22018-01-19T11:34:02.623,Changing Banking Signatory
+263,237,1,2018-01-19,CTC,"F24, F49 (5sets)","",62018-01-19T12:04:22.141,Certified True Copies 
+265,239,1,2018-01-19,ConfirmL,Confirmation Letter : Directors & Shareholders,"",72018-01-19T13:56:43.938,Confirmation Letter
+266,240,1,2018-01-19,CPO,Purchase of CPO for Spartan Shipcare Sdn. Bhd.,"",52018-01-19T14:01:39.119,Purchase of CPO/Idaman
+267,241,1,2018-01-19,AR/AGM,Annual Return@2018-02-22,"",82018-01-19T14:48:16.795,Annual Return
+269,243,1,2018-01-19,OpBk,Opbk - Bank Mendes Gans N.V.,"",22018-01-19T15:27:04.156,Open Bank Account(s)
+270,244,1,2018-01-19,AC,Financial Statements @ 2017-07-31 ,"",82018-01-19T16:46:17.609,Financial Statement
+271,245,1,2018-01-19,CTC,"-Certificate of Insurance (Zurich)
+-Certificate of MOF
+-Certificate of SPAN
+-Certificate of QAS
+-FS for FYE 2016-12-31","",52018-01-19T17:00:49.097,Certified True Copies 
+272,246,1,2018-01-22,S58,Change passport - Mahdi & Toktam  ,"",82018-01-22T09:01:43.780,F49-ResDir/Change Information
+273,247,1,2018-01-22,AR/AGM,Annual Return @ 2018-02-04 ,"",82018-01-22T13:27:00.132,Annual Return
+274,248,1,2018-01-22,AR/AGM,AR@2018-02-05,"",92018-01-22T14:41:30.447,Annual Return
+1091,968,2,2018-04-03,CTC,"CTC F9, S78, F44, F49, S58, M&A (x2)","",32018-04-03T19:22:01.831,Certified True Copies 
+276,250,1,2018-01-22,DCR,Write Off Plant & Equipment,"",22018-01-22T15:05:31.612,Misc Director Resolution-
+277,251,1,2018-01-22,CTC,"CTC F49,F24, F44 & M&A","",42018-01-22T16:39:42.673,Certified True Copies 
+278,252,1,2018-01-22,IntBanking,DCR - Maybank2u,"",22018-01-22T17:00:14.595,Internet Banking
+279,253,1,2018-01-22,S27,Incorporation documents,"",42018-01-22T17:01:35.498,Name Reservation-
+280,254,1,2018-01-22,S15,"3 CTC of Constitution & respective for:-
+-DCR on opening (1) Bank Account
+-Pre-Incorporation Consultancy","",42018-01-22T17:07:36.975,Incorporation
+281,254,2,2018-01-22,SecFee,-from January 2018 to January 2019,"",42018-01-22T17:07:36.975,Secretarial Fee + Registered Office
+282,254,3,2018-01-22,"",Statutory Stationery - Seal/Certificate/Minutes/Sec Files,"",42018-01-22T17:07:36.975,""
+283,255,1,2018-01-22,S15,"-3 CTC of Constitution & respective for:-
+-DCR on opening (1) Bank Account
+-Pre-Incorporation Consultancy
+","",42018-01-22T17:18:35.901,Incorporation
+303,271,1,2018-01-23,AR/AGM,AR@2017-07-05,"",92018-01-23T16:29:02.509,Annual Return
+284,256,1,2018-01-22,OpBk,OpBk Account - AmBank (M) Berhad (USD),"",72018-01-22T17:51:40.805,Open Bank Account(s)
+285,256,2,2018-01-22,OpBk,OpBk Account - AmBank (M) Berhad (EURO),"",72018-01-22T17:53:52.010,Open Bank Account(s)
+286,256,3,2018-01-22,OpBk,OpBk Account - AmBank (M) Berhad (MYR),"",72018-01-22T17:53:52.010,Open Bank Account(s)
+287,257,1,2018-01-23,S58,"Appointment of Director - Ulla-Christiane
+Resignation of Director - Andreas Schweinar","",32018-01-23T08:32:14.215,F49-ResDir/Change Information
+288,258,1,2018-01-23,S58,"Appointment of Director - Ulla-Christiane
+Resignation of Director - Andreas Schweinar","",22018-01-23T08:33:53.571,F49-ResDir/Change Information
+289,259,1,2018-01-23,CTC,CTC,"",92018-01-23T10:15:09.416,Certified True Copies 
+290,260,1,2018-01-23,AR/AGM,Annual Return @ 2018-01-13,"",72018-01-23T10:20:33.918,Annual Return
+291,261,1,2018-01-23,AR/AGM,Annual Return @ 2018-01-13,"",72018-01-23T10:22:22.826,Annual Return
+1092,968,3,2018-04-03,AC,FS@2017-12-31,"",32018-04-03T19:22:01.831,Financial Statement
+293,263,1,2018-01-23,AR/AGM,Annual Return @ 2017-11-22,"",22018-01-23T11:44:26.666,Annual Return
+294,263,2,2018-01-23,S58,Update of Director's passport,"",22018-01-23T11:44:26.666,F49-ResDir/Change Information
+295,264,1,2018-01-23,BkChsig,Change of bank Signatories,"",92018-01-23T11:51:18.297,Bank-Change Signatories
+1106,979,1,2018-04-05,AR/AGM,Annual Return @ 2018-04-15,"",122018-04-05T09:33:39.919,Annual Return
+1116,986,1,2018-04-05,CTC,"CTC : F24, F44, F49&58, AR2017, M&A","",112018-04-05T17:02:22.368,Certified True Copies 
+1128,996,1,2018-04-06,CIBk,"Close of Public Bank Berhad, Section 14 branch","",42018-04-06T13:43:46.481,Bank-Close Account(s)
+1137,1004,1,2018-04-07,CorpRep,Appointment of Corporate Representative,"",52018-04-07T14:03:59.630,Appointment of Corporate Representative
+296,265,1,2018-01-23,BkFac,Third Part Charge - OCBC,"",22018-01-23T14:40:29.331,Bank-Facilities
+297,265,2,2018-01-23,ConfirmL,Confirmation Letter - Board of Director,"",22018-01-23T14:40:29.331,Confirmation Letter
+298,266,1,2018-01-23,Misc,Email out Resolutions (1st Aug 2017 - Current) for Audit purpose to Auditor,"",72018-01-23T14:54:48.117,Non-secretarial assignments
+299,267,1,2018-01-23,TenAgr,Renewal of Tenancy Agreement,"",22018-01-23T15:25:22.236,Tenancy Agreement (s)-DCR
+300,268,1,2018-01-23,CTC,"M&A, F9, AR 2017, F24(fullsets), F44, S46, F49, S58 (2sets)","",62018-01-23T15:27:13.361,Certified True Copies 
+301,269,1,2018-01-23,CTC,"M&A, F9, AR 2017, F24(fullsets), F44, S46, F49, S58 (2sets)","",62018-01-23T15:29:36.218,Certified True Copies 
+302,270,1,2018-01-23,AR/AGM,AR@2017-07-05,"",92018-01-23T16:24:53.242,Annual Return
+304,272,1,2018-01-23,AR/AGM,AR@2017-07-05,"",92018-01-23T16:29:58.034,Annual Return
+306,274,1,2018-01-23,AR/AGM,Annual Return @ 2018-01-19,"",22018-01-23T17:34:12.521,Annual Return
+307,274,2,2018-01-23,AC,Financial Statements @ 2017-06-30,"",22018-01-23T17:34:12.521,Financial Statement
+308,275,1,2018-01-23,OpBk,Opening Bank Account - CIMB Selayang,"",72018-01-23T17:35:54.601,Open Bank Account(s)
+309,275,2,2018-01-23,IntBanking,InBK Account - CIMB Selayang,"",72018-01-23T17:35:54.601,Internet Banking
+310,276,1,2018-01-23,OpBk,OpBk Account - CIMB Selayang,"",72018-01-23T17:36:56.848,Open Bank Account(s)
+311,276,2,2018-01-23,IntBanking,InBk Account - CIMB Selayang,"",72018-01-23T17:36:56.848,Internet Banking
+312,277,1,2018-01-23,FYE,Fixing of FYE & Appointment of Auditor,"",22018-01-23T19:21:33.855,Fixing Financial Year End-DCR
+313,278,1,2018-01-23,AC,Financial Statements @ 2017-09-30,"",22018-01-23T19:22:07.969,Financial Statement
+314,279,1,2018-01-24,OpBk,"Open Public Bank Berhad, Bandar Puteri Puchong Branch","",42018-01-24T11:33:13.331,Open Bank Account(s)
+315,280,1,2018-01-24,AR/AGM,"Annual Return @ 2018-02-27 
+","",82018-01-24T12:54:25.381,Annual Return
+316,281,1,2018-01-24,CTC,CTC,"",92018-01-24T15:19:36.858,Certified True Copies 
+317,282,1,2018-01-24,CTC,"","",92018-01-24T15:20:17.417,Certified True Copies 
+318,283,1,2018-01-24,CTC,"","",92018-01-24T15:20:54.103,Certified True Copies 
+319,284,1,2018-01-24,CTC,"F24, F49, F44, F9, F13, M&A (1set)","",62018-01-24T16:28:56.170,Certified True Copies 
+320,285,1,2018-01-24,ChBkSig,"- RHB Bank Berhad (Current Acc)
+- Alliance Bank Malaysia Berhad (Savelink Current Acc)
+- Alliance Bank Malaysia Berhad (Fixed Loans Acc)
+- Alliance Islamic bank Berhad (Current Acc)
+","",72018-01-24T16:54:02.884,Changing Banking Signatory
+321,286,1,2018-01-24,S36,Change of Article 42,"",52018-01-24T17:00:09.701,M&A/Constitution changes
+322,287,1,2018-01-24,S36,Chnage of Articles 42,"",52018-01-24T17:03:18.525,M&A/Constitution changes
+323,288,1,2018-01-24,S28,Change of Name --> BEICIPFRANLAB ASIA SDN. BHD. ,"",22018-01-24T17:13:40.998,Change of Company Name
+324,289,1,2018-01-24,CTC,"F9, F49, S58, M&A, AR 2017, All Director ic (1set)","",62018-01-24T17:27:25.372,Certified True Copies 
+325,290,1,2018-01-25,BkFac,"","",92018-01-25T10:58:19.712,Bank-Facilities
+326,291,1,2018-01-25,AR/AGM,Annual Return @ 2018-02-29 ,"",82018-01-25T10:58:50.864,Annual Return
+327,292,1,2018-01-25,BkChsig,"","",92018-01-25T14:29:59.032,Bank-Change Signatories
+328,293,1,2018-01-25,AR/AGM,Annual Return @ 2018-01-10,"",72018-01-25T15:35:42.813,Annual Return
+329,294,1,2018-01-25,S105,LHDN ,"",92018-01-25T16:21:32.702,Transfer of share(s)
+330,295,1,2018-01-25,Div,"Declaration of Dividend (RM1,200,000.00)","",52018-01-25T16:35:36.765,Issuance of Dividends
+331,296,1,2018-01-25,S36,Change of AA- AGM Optional ,"",82018-01-25T16:50:27.476,M&A/Constitution changes
+332,297,1,2018-01-25,IntBanking,Internet Banking Ambank (M) SB,"",42018-01-25T16:59:20.294,Internet Banking
+333,298,1,2018-01-26,AC,Financial Statement @ 2017-06-30,"",82018-01-26T09:30:26.356,Financial Statement
+334,299,1,2018-01-26,BkOp,"Internet Banking - Ambank (M) Berhad
+","",82018-01-26T13:39:35.596,Bank-Open Account[s]
+335,301,1,2018-01-26,AC,FS@2016-06-30,"",92018-01-26T15:20:48.407,Financial Statement
+336,302,1,2018-01-26,S58,kp S58@2018-01-01,"",52018-01-26T15:27:32.736,F49-ResDir/Change Information
+337,303,1,2018-01-26,AC,FS@2016-06-30,"",92018-01-26T15:34:49.004,Financial Statement
+119,1,1,2018-01-10,S15,TFMY SERVICES SDN. BHD. - New Incorporation ,Last Date S27: 2018-02-09,72018-01-10T17:39:43.864,Incorporation
+338,304,1,2018-01-29,AC,FS@2017-01-31,"",92018-01-29T10:35:42.241,Financial Statement
+339,305,1,2018-01-29,DCR,"","",52018-01-29T14:10:28.036,Misc Director Resolution-
+340,306,1,2018-01-29,AR/AGM,AR@2018-02-27,"",92018-01-29T14:41:15.134,Annual Return
+341,307,1,2018-01-29,DCR,"","",52018-01-29T16:17:12.804,Misc Director Resolution-
+342,308,1,2018-01-29,CTC,"F24, F32A, F44, F49, M&A (2sets)","",62018-01-29T16:41:51.195,Certified True Copies 
+344,309,1,2018-01-29,AC,FS@2016-12-31,"",92018-01-29T16:49:46.753,Financial Statement
+345,310,1,2018-01-30,PurVeh,"Dispose MV - Honda Insight Hybrid 
+","",82018-01-30T09:54:13.625,Vehicle Purchase/disposal
+346,311,1,2018-01-30,S15,"New Incorporation: V PRO INDUSTRIAL SUPPLIES SDN. BHD.
+S27: Approved as at 2018-01-23
+Last Date S27: 2018-02-22","",72018-01-30T09:54:50.727,Incorporation
+347,312,1,2018-01-30,AC,FS@2017-06-30,"",92018-01-30T11:46:41.896,Financial Statement
+348,313,1,2018-01-30,AC,FS@2017-07-31,"",92018-01-30T12:23:29.091,Financial Statement
+349,314,1,2018-01-30,S105,LHDN Stamping Fee,"",92018-01-30T14:15:22.192,Transfer of share(s)
+350,315,1,2018-01-30,CTC,"F24, F49, F44, M&A (3sets)","",62018-01-30T14:16:56.263,Certified True Copies 
+351,316,1,2018-01-30,"",Financial Statement @ 2017-06-30,"",82018-01-30T14:29:34.381,""
+352,317,1,2018-01-30,AC,Financial Statement @ 2017-06-30 ,"",82018-01-30T14:35:07.171,Financial Statement
+353,318,1,2018-01-30,BkFac,Bank-Facilities,"",92018-01-30T17:01:39.648,Bank-Facilities
+425,383,1,2018-02-06,CTC,"CTC - F9, M&A (1 Set)","",72018-02-06T15:59:55.783,Certified True Copies 
+491,445,1,2018-02-09,AR/AGM,Annual Return @2018-02-08,"",112018-02-09T16:29:28.346,Annual Return
+538,482,1,2018-02-14,AR/AGM,Annual Return@2018-04-06,"",112018-02-14T11:53:53.630,Annual Return
+354,319,1,2018-01-30,PD 2/2017,"Change Business Add- Q- Sentral 
+","",82018-01-30T17:30:20.695,Biz/Branch Add/Nature of biz changes
+355,320,1,2018-01-30,PD 2/2017,Change of Business Address,"",32018-01-30T18:45:23.633,Biz/Branch Add/Nature of biz changes
+356,321,1,2018-01-30,PD 2/2017,Change of Business Address,"",22018-01-30T18:46:09.947,Biz/Branch Add/Nature of biz changes
+357,322,1,2018-02-02,AC,Financial Statement @ 2017-07-31,"",22018-02-02T08:11:34.623,Financial Statement
+358,323,1,2018-02-02,CTC,"Certified True Copies @ 2018-01-30
+","- F9, F13, F24, F49, F44, ROM, M&A (1 Set)",72018-02-02T09:08:00.368,Certified True Copies 
+359,324,1,2018-02-02,FYE,"Appointment of Auditor:  K.H. CHONG & CO (AF 1258)
+Appointment of T. Agent: TAXPAL SDN. BHD. (1133863-V) 
+FYE: 31 December 2017
+","",72018-02-02T09:24:47.829,Fixing Financial Year End-DCR
+360,325,1,2018-02-02,AC,Financial Statement @ 2017-03-31,- Late Filing Fee Purpose,72018-02-02T09:42:46.197,Financial Statement
+361,326,1,2018-02-02,IntBanking,E-Channel Application - HSBC Bank Malaysia Berhad,"",72018-02-02T11:39:41.672,Internet Banking
+362,327,1,2018-02-02,AR/AGM,AR@2018-02-05,"",92018-02-02T11:46:46.578,Annual Return
+363,328,1,2018-02-02,IntBanking,"E-Channel Application - HSBC Bank Malaysia Berhad
+","",72018-02-02T11:46:48.168,Internet Banking
+377,339,1,2018-02-02,DisPro,Disposal of Property,"",22018-02-02T14:31:50.317,Property Disposal-DCR/MCR
+364,329,1,2018-02-02,TenAgr,"TA AT 1ST WORLD PLAZA
+- From 1 Dec 2017 (3 yrs)","",22018-02-02T12:26:44.440,Tenancy Agreement (s)-DCR
+365,330,1,2018-02-02,PD 2/2017,Practice Directive 2/2017 - Change Business Address (B-6-23 to B-6-21),"",72018-02-02T12:26:40.760,Biz/Branch Add/Nature of biz changes
+366,331,1,2018-02-02,PD 2/2017,Practice Directive 2/2017: Change of Business Address (B-6-23 to B-6-21),"",72018-02-02T12:33:34.998,Biz/Branch Add/Nature of biz changes
+1048,926,1,2018-03-30,AC,FS@2017-12-31,"",112018-03-30T16:13:09.917,Financial Statement
+368,333,1,2018-02-02,CTC,"F9, F24, S76, F44, F49, S58, M&A (1set)","",62018-02-02T14:08:05.018,Certified True Copies 
+369,334,1,2018-02-02,CTC,"F9, F24, F44, F49, M&A (1set)","",62018-02-02T14:11:01.178,Certified True Copies 
+370,335,1,2018-02-02,CTC,Annual Return (1set),"",62018-02-02T14:12:35.711,Certified True Copies 
+371,336,1,2018-02-02,CTC,Annual Return (1set),"",62018-02-02T14:14:35.314,Certified True Copies 
+372,337,1,2018-02-02,CTC,"F9, F49 (1set)","",62018-02-02T14:15:17.781,Certified True Copies 
+373,338,1,2018-02-02,BkFac,Banking Facility - RHB,"",22018-02-02T14:29:37.073,Bank-Facilities
+374,338,2,2018-02-02,OpBk,RHB - Opbk & E-banking,"",22018-02-02T14:29:37.073,Open Bank Account(s)
+375,338,3,2018-02-02,PurPro,Purchase of Property,"",22018-02-02T14:29:37.073,Property Purchase-DCR/MCR
+376,338,4,2018-02-02,ConfirmL,Confirmation Letter (No Debenture),"",22018-02-02T14:29:37.073,Confirmation Letter
+378,339,2,2018-02-02,ConfirmL,Confirmation Letter (No Debenture),"",22018-02-02T14:31:50.317,Confirmation Letter
+689,616,1,2018-03-06,AR/AGM,"Annual Return @ 2018-02-24
+","",72018-03-06T09:48:26.120,Annual Return
+696,622,2,2018-03-06,S105,"Transfer of Shares From KSJ to TZF (2,000)","",72018-03-06T18:51:26.625,Transfer of share(s)
+379,340,1,2018-02-02,PurVeh,"Disposal of Motor Vehicle
+- WFW 2197
+- WQJ 1200","",22018-02-02T14:44:47.130,Vehicle Purchase/disposal
+380,341,1,2018-02-02,ChAud,"Auditor: Messrs Sekhar to Messrs P.S Yap
+Tax Agent : Messrs Sekhar to ASI Taxation
+","",72018-02-02T15:19:10.436,Change of Auditor
+381,342,1,2018-02-02,PurVeh,Purchase of Motor Vehicle - Proton Iswara ,"",32018-02-02T16:21:20.657,Vehicle Purchase/disposal
+382,343,1,2018-02-03,CTC,"F24, F49, F32A (2sets)","",62018-02-03T09:26:02.605,Certified True Copies 
+383,344,1,2018-02-03,CTC,"F24, F44, F49, M&A (3sets)","",62018-02-03T09:46:07.508,Certified True Copies 
+384,345,1,2018-02-03,CTC,"F24, F44, F49, M&A (3sets)","",62018-02-03T09:48:40.222,Certified True Copies 
+706,628,1,2018-03-07,S105,"Transfer of Shares (2,000 shares)","",22018-03-07T11:10:50.419,Transfer of share(s)
+386,347,1,2018-02-03,S78,From 2 to 5 shares - TLM,"",22018-02-03T10:23:50.784,Increase in Paid Up Capital-Cash
+387,348,1,2018-02-03,CTC,CTC,"",92018-02-03T10:45:13.074,Certified True Copies 
+388,349,1,2018-02-03,CCM kp,Additional compound reference no. CMCA22072016000084 & CMCA22072016000085,"",42018-02-03T11:22:09.945,CCM Compound(s)
+389,350,1,2018-02-03,OpBk,"OpBk Account - CIMB Bank Berhad
+Branch: Bukit Tunku","",72018-02-03T11:35:55.546,Open Bank Account(s)
+390,350,2,2018-02-03,IntBanking,Subscription InBk with CIMB,"",72018-02-03T11:36:53.866,Internet Banking
+391,351,1,2018-02-03,DCR,Fixed Deposit Account - RHB Bank Berhad,"",72018-02-03T12:26:50.319,Misc Director Resolution-
+392,351,2,2018-02-03,ChAud,"Auditor: Messrs Sekhar to Messrs P.S Yap
+Tax Agent : Messrs Sekhar to ASI Taxation
+","",72018-02-03T12:26:50.319,Change of Auditor
+393,352,1,2018-02-03,AR/AGM,AR@2018-02-06,"",92018-02-03T12:44:08.764,Annual Return
+394,353,1,2018-02-05,IntBanking,"Internet Banking - Public Bank Bandar Puteri Puchong branch 
+","",82018-02-05T08:55:20.394,Internet Banking
+395,354,1,2018-02-05,AR/AGM,"Annual Return @ 2018-02-21 
+","",82018-02-05T11:33:30.531,Annual Return
+396,356,1,2018-02-05,AC,Financial Statement @ 2017-07-31,"",72018-02-05T11:56:29.357,Financial Statement
+397,357,1,2018-02-05,CTC,"F24, F49, F32A, F44, M&A (2sets)","",62018-02-05T15:18:33.066,Certified True Copies 
+398,358,1,2018-02-05,S58,"Chge dir
+Appoint Fong Tyanne
+Resign Fong Chee Keong","",42018-02-05T15:01:26.817,F49-ResDir/Change Information
+399,359,1,2018-02-05,S105,Fong Chee Keong to Fong Tyanne (1 share),"",42018-02-05T15:28:13.893,Transfer of share(s)
+400,360,1,2018-02-05,AR/AGM,Section 68 (Annual Return) dated 2018-02-03,"",42018-02-05T15:29:13.211,Annual Return
+712,633,1,2018-03-07,BkOp,Open Bank Account with CIMB Bank,"",52018-03-07T15:27:53.363,Bank-Open Account[s]
+1064,942,1,2018-04-02,AR/AGM,AR@2018-04-03,"",92018-04-02T15:26:33.633,Annual Return
+1079,957,1,2018-04-03,S58,"Change of Secretaries 
+- Appt KSS 
+- Resign KBT ","",82018-04-03T08:07:52.589,F49-ResDir/Change Information
+401,361,1,2018-02-05,S58,"Change director
+Appoint Fong Tyanne
+Resign Fong Chee Keong","",42018-02-05T15:30:41.003,F49-ResDir/Change Information
+402,362,1,2018-02-05,S105,Fong Chee Keong to Fong Tyanne (1 share),"",42018-02-05T15:43:55.572,Transfer of share(s)
+403,363,1,2018-02-05,S105,Transfer of shares,"",92018-02-05T16:23:07.017,Transfer of share(s)
+404,364,1,2018-02-05,S201,"","",92018-02-05T16:44:56.001,Appointment of Directors
+405,365,1,2018-02-05,S78,From 5k to 500k,"",92018-02-05T16:51:07.995,Increase in Paid Up Capital-Cash
+406,366,1,2018-02-05,S78,Allotment of Preference Shares - RM250k (3 new P.shareholder),"",22018-02-05T17:16:11.846,Increase in Paid Up Capital-Cash
+407,367,1,2018-02-05,DCR,Investment in Unit Trust - Public Mutual Berhad,"",72018-02-05T19:25:40.465,Misc Director Resolution-
+408,367,2,2018-02-05,ChAud,"Auditor: Messrs Sekhar to Messrs P.S Yap
+Tax Agent : Messrs Sekhar to ASI Taxation
+","",72018-02-05T19:25:40.465,Change of Auditor
+409,368,1,2018-02-06,CTC,Phone line application with Telekom Malaysia Berhad,"",42018-02-06T08:52:41.614,Certified True Copies 
+410,369,1,2018-02-06,AC,Financial Statement @ 2017-07-31,"",122018-02-06T08:50:33.982,Financial Statement
+411,370,1,2018-02-06,AR/AGM,AR@2018-02-02,"",92018-02-06T10:15:56.236,Annual Return
+412,371,1,2018-02-06,AR/AGM,AR@2018-02-02,"",92018-02-06T10:17:27.962,Annual Return
+413,372,1,2018-02-06,AC,Financial Statement @ 2017-07-31,"",112018-02-06T10:22:24.078,Financial Statement
+690,617,1,2018-03-06,S36,Change of AA (AGM & Sole Director),"",22018-03-06T11:23:12.013,M&A/Constitution changes
+415,374,1,2018-02-06,"",FS @ 2017-07-31,"",112018-02-06T11:30:03.883,""
+697,623,1,2018-03-06,S36,Amendment of M&A,"",22018-03-06T19:13:39.971,M&A/Constitution changes
+698,623,2,2018-03-06,S58,Resignation of Director (Mr. Amar),"",22018-03-06T19:13:39.971,F49-ResDir/Change Information
+416,375,1,2018-02-06,AC,Financial Statement @ 2017-07-31,"",122018-02-06T11:36:29.921,Financial Statement
+707,629,1,2018-03-07,CTC,"Certified True Copies
+- Form 9 , Form 49 & Section 58 (3 copies each) ","",82018-03-07T11:15:21.581,Certified True Copies 
+418,376,1,2018-02-06,"",Financial Statement @ 2017-07-31,"",112018-02-06T11:43:41.669,""
+713,633,2,2018-03-07,IntBanking,Internet Banking with CIMB Bank,"",52018-03-07T15:27:53.363,Internet Banking
+1049,927,1,2018-03-30,AC,FS@2017-12-31,"",112018-03-30T16:14:17.601,Financial Statement
+947,836,1,2018-03-22,DeReg,"","",32018-03-22T18:34:05.397,De-registration
+419,378,1,2018-02-06,CTC,"F24, F49, F44, M&A, I/C Director (1set)","",62018-02-06T13:17:28.640,Certified True Copies 
+421,379,1,2018-02-06,S201,Appoint Director - Jaspall Singh,"",22018-02-06T14:57:33.466,Appointment of Directors
+422,380,1,2018-02-06,DCR,"Bank Guarantee of RM415,450.70 with HLBB","",52018-02-06T15:13:19.683,Misc Director Resolution-
+423,381,1,2018-02-06,AC,Financial Statement @ 2017-06-30 ,"",82018-02-06T15:14:20.323,Financial Statement
+721,639,1,2018-03-08,S58,Resignation of Director (Jay Dorfman),"",32018-03-08T10:05:11.460,F49-ResDir/Change Information
+780,694,1,2018-03-12,S15,"","",32018-03-12T16:59:19.970,Incorporation
+868,718,1,2018-03-20,AR/AGM,"","",112018-03-20T08:57:27.580,Annual Return
+424,382,1,2018-02-06,S78 Non Cash,"Issuance of bonus issue of 90,000 shares","",42018-02-06T15:51:18.368,Increase in Paid Up Capital- Otherwise Than Cash
+426,384,1,2018-02-06,AC,Financial Statement @ 2017-07-31,"",122018-02-06T17:15:07.210,Financial Statement
+427,385,1,2018-02-06,AR/AGM,AR@2018-02-17,"",92018-02-06T17:18:58.163,Annual Return
+428,386,1,2018-02-06,AR/AGM,AR@2018-02-17,"",92018-02-06T17:19:43.569,Annual Return
+429,387,1,2018-02-06,AR/AGM,AR@2018-02-17,"",92018-02-06T17:20:38.545,Annual Return
+430,388,1,2018-02-06,BkFac,"Banking facility with RHB Bank Berhad RM320,000.00","",42018-02-06T18:48:55.199,Bank-Facilities
+431,389,1,2018-02-06,BkOp,Open account & reflex cash management with RHB Bank Berhad,"",42018-02-06T18:49:47.924,Bank-Open Account[s]
+432,390,1,2018-02-06,DCR,RHB Business credit card,"",42018-02-06T18:50:58.299,Misc Director Resolution-
+433,391,1,2018-02-07,AR/AGM,AR@2018-02-12,"",92018-02-07T08:33:41.726,Annual Return
+434,392,1,2018-02-07,"","Financial Statement @ 2017-08-31
+","",112018-02-07T08:50:28.313,""
+435,393,1,2018-02-07,Misc,- Prepare docs required for TELEKOM registration,"",22018-02-07T08:52:21.022,Non-secretarial assignments
+436,394,1,2018-02-07,AC,Financial Statement @ 2017-07-31,"",122018-02-07T09:07:16.671,Financial Statement
+437,395,1,2018-02-07,S105,"","",92018-02-07T10:10:33.492,Transfer of share(s)
+439,396,1,2018-02-07,"","Financial Statement @ 2017-07-31
+","",112018-02-07T10:45:31.574,""
+446,401,1,2018-02-07,SecFee,- From [2018-01-19 to 2019-01-18] ,"",22018-02-07T14:25:40.293,Secretarial Fee + Registered Office
+440,397,1,2018-02-07,Immi,"Dependent Pass Application 
+- Rachel Ann [Wife of William Martin]","",22018-02-07T11:41:17.066,Immigration Works
+441,398,1,2018-02-07,Immi,"Employment Pass Application
+- Johnny Chan","",22018-02-07T11:42:17.603,Immigration Works
+442,399,1,2018-02-07,AC,Financial Statement @ 2010-12-31,"",72018-02-07T11:51:08.555,Financial Statement
+443,399,2,2018-02-07,AC,Financial Statement @ 2011-12-31,"",72018-02-07T11:51:08.555,Financial Statement
+445,400,1,2018-02-07,SecFee,- From [2018-01-19 to 2019-01-18],"",22018-02-07T14:10:40.736,Secretarial Fee + Registered Office
+447,402,1,2018-02-07,SecFee,- From [2018-01-19 to 2019-01-18] ,"",22018-02-07T14:33:05.975,Secretarial Fee + Registered Office
+448,403,1,2018-02-07,SecFee,- From [2018-01-31 to 2019-01-30],"",22018-02-07T14:43:41.590,Secretarial Fee + Registered Office
+449,404,1,2018-02-07,TenAgr,TENANCY AGREEMENT WITH MAYANG DEVELOPMENT SDN. BHD.,"",52018-02-07T15:31:19.962,Tenancy Agreement (s)-DCR
+450,405,1,2018-02-07,AR/AGM,Annual Return @ 2017-09-02,"",22018-02-07T16:36:41.685,Annual Return
+451,405,2,2018-02-07,DeReg,"","",22018-02-07T16:36:41.685,De-registration
+452,406,1,2018-02-07,S58,"Changes of Director
+- Appoint Fong Tynne
+- Resign Fong Chee Keong ","",82018-02-07T16:41:47.347,F49-ResDir/Change Information
+453,407,1,2018-02-07,AR/AGM,AR@2018-03-05,"",92018-02-07T17:08:01.875,Annual Return
+454,408,1,2018-02-07,AR/AGM,AR@2018-03-05,"",92018-02-07T17:09:14.712,Annual Return
+455,409,1,2018-02-07,CTC,"DCRs open of Alliance Bank Malaysia Berhad, Bandar Puteri Puchong branch dated 07.11.2017","",42018-02-07T17:17:14.604,Certified True Copies 
+456,410,1,2018-02-07,CTC,"CTC F49, F24, F44 & M&A (1 set)","",42018-02-07T17:21:15.785,Certified True Copies 
+457,411,1,2018-02-07,CTC,"Form 9, Form 24, Form 49, Director''s I/C & Bank Statement, Acc 2015 & 2016 (x1) ","",52018-02-07T18:14:38.262,Certified True Copies 
+458,412,1,2018-02-08,S58,Update in passport no - Shahid Ahmad,"",92018-02-08T08:56:10.229,F49-ResDir/Change Information
+459,413,1,2018-02-08,BkFac,Reflex Cash Management Services offered by RHB,"",52018-02-08T10:02:24.374,Bank-Facilities
+460,414,1,2018-02-08,S27,Name Reservation-SINERGI ASPIRASI GLOBAL SDN. BHD.,"",42018-02-08T10:09:01.204,Name Reservation-
+461,415,1,2018-02-08,S105,"Split shares #003
+Transfer from Immanual to Jaspall - 75k shares",Pending latest audited account to execute shares transfer.,22018-02-08T10:34:58.274,Transfer of share(s)
+462,416,1,2018-02-08,AR/AGM,Annual Return @ 2018-02-07,"",72018-02-08T11:18:51.521,Annual Return
+463,417,1,2018-02-08,DeReg,"","",22018-02-08T13:56:07.401,De-registration
+464,418,1,2018-02-08,"","FS @ 2017-08-31
+","",112018-02-08T13:58:41.598,""
+465,419,1,2018-02-08,AR/AGM,AR@2018-02-20,"",92018-02-08T14:04:51.464,Annual Return
+466,420,1,2018-02-08,AR/AGM,AR@2018-02-20,"",92018-02-08T14:06:13.622,Annual Return
+467,421,1,2018-02-08,OpBk,Open Term Deposit account with AmBank (M) Berhad,"",42018-02-08T14:12:30.015,Open Bank Account(s)
+468,422,1,2018-02-08,"","FS@ 2017-08-31
+","",112018-02-08T15:07:00.037,""
+691,618,1,2018-03-06,CTC,"- F24, F32A (fullsets), F49 (3sets)
+- F44, M&A (2sets)","",62018-03-06T11:56:05.366,Certified True Copies 
+469,423,1,2018-02-08,CTC,"3 sets CTC Form 49, Form 24, Form 44, M&A","",42018-02-08T15:27:15.609,Certified True Copies 
+470,424,1,2018-02-08,"",FS@2017-08-31,"",112018-02-08T15:53:45.381,""
+471,425,1,2018-02-08,AR/AGM,"",AR@2018-02-20,92018-02-08T16:15:25.585,Annual Return
+472,426,1,2018-02-08,OpBk,Opening of Bank Current Account - AmBank (M) Berhad,"",72018-02-08T17:35:02.959,Open Bank Account(s)
+699,623,3,2018-03-06,S105,"Transfer of Shares (300,000 shares)","",22018-03-06T19:13:39.971,Transfer of share(s)
+700,623,4,2018-03-06,AC,Financial Statements @ 2017-12-31,"",22018-03-06T19:13:39.971,Financial Statement
+473,427,1,2018-02-08,S58,"Change of directors
+Appoint - Eugene
+Resign - Keay Chin Hoe & Loke Mei Sun","",42018-02-08T18:31:02.995,F49-ResDir/Change Information
+708,630,1,2018-03-07,S58,Change Dir Address: Leong Sok Yin,"",72018-03-07T15:02:25.577,F49-ResDir/Change Information
+474,428,1,2018-02-08,OpBk,Opening of Bank Current Account - AmBank (M) Berhad,"",72018-02-08T18:43:55.050,Open Bank Account(s)
+475,429,1,2018-02-09,S15,New Incorporation: ALSAGGAF TRADING SDN. BHD.,"",72018-02-09T09:24:38.236,Incorporation
+476,430,1,2018-02-09,PurVeh,Disposal of MV (WXQ1200),"",52018-02-09T09:40:07.626,Vehicle Purchase/disposal
+477,431,1,2018-02-09,AR/AGM,AR@2018-02-21,"",122018-02-09T09:51:39.461,Annual Return
+714,634,1,2018-03-07,Misc,GST Registration,"",22018-03-07T15:47:37.518,Non-secretarial assignments
+478,432,1,2018-02-09,Div,"Declaration of 1st Interim Dividends (1/2018) - RM100,000.00)","",72018-02-09T09:59:57.123,Issuance of Dividends
+479,433,1,2018-02-09,Div,"Declaration of 1st Interim Dividend (1/2018) - RM100,000.00","",72018-02-09T10:03:12.333,Issuance of Dividends
+480,434,1,2018-02-09,PurVeh,Disposal of MV (WVY1200),"",52018-02-09T10:19:54.630,Vehicle Purchase/disposal
+481,435,1,2018-02-09,AC,FS@2016-12-31,"",92018-02-09T10:58:00.141,Financial Statement
+722,640,1,2018-03-08,AC,FS@2017-09-30,"",92018-03-08T10:30:07.630,Financial Statement
+482,436,1,2018-02-09,AR/AGM,Annual Return @ 2018-02-23,"",122018-02-09T11:20:03.084,Annual Return
+483,437,1,2018-02-09,AR/AGM,Annual Return @ 2018-02-23,"",122018-02-09T11:25:48.365,Annual Return
+484,438,1,2018-02-09,CIBk,Close Bank Acc with PB Berhad of Taman Mayang Branch,"",52018-02-09T11:39:11.651,Bank-Close Account(s)
+485,439,1,2018-02-09,S58,Resignation of Tang Hwa Loong,"",52018-02-09T12:14:53.635,F49-ResDir/Change Information
+486,440,1,2018-02-09,S15,New company by Mr. Ali and Mr. Maziar,"",22018-02-09T13:18:18.794,Incorporation
+487,441,1,2018-02-09,AR/AGM,Annual Return @ 2018-02-24,AR@2018-02-24,122018-02-09T14:52:42.709,Annual Return
+488,442,1,2018-02-09,AC,Financial Statement as at 31.12.2016,"",52018-02-09T16:20:30.918,Financial Statement
+1050,928,1,2018-03-30,S58,Appointment of Directors (Abd Mokhti & Muhammad Amin),"",52018-03-30T16:25:55.067,F49-ResDir/Change Information
+932,822,1,2018-03-22,AR/AGM,"","",92018-03-22T09:31:09.321,Annual Return
+1065,943,1,2018-04-02,FYE,"Appt of Auditor & Tax Agent, Fixing of FYE","",112018-04-02T15:56:23.230,Fixing Financial Year End-DCR
+1080,958,1,2018-04-03,S58,"Change of Secretaries 
+- Appt KSS
+- Resign KBT ","",82018-04-03T08:56:20.041,F49-ResDir/Change Information
+1093,969,1,2018-04-04,FYE,"Appt of Auditor & Tax Agent, Fixing of FYE
+","",112018-04-04T09:34:44.574,Fixing Financial Year End-DCR
+726,644,1,2018-03-08,PurVeh,"Purchase of Motor Vehicle
+","",92018-03-08T14:11:23.540,Vehicle Purchase/disposal
+728,646,1,2018-03-08,S36,Amendment of M&A,"",22018-03-08T16:33:04.286,M&A/Constitution changes
+731,649,1,2018-03-08,S78,"Increase of paid-up capital of 2,400 shares 
+Singularity Technologies Sdn. Bhd. (625 shares)
+TNSYS Sdn. Bhd. (1,125 shares)
+Hashim Bin Md Natt (650 Shares)","",42018-03-08T16:47:03.130,Increase in Paid Up Capital-Cash
+818,729,1,2018-03-15,AR/AGM,"AR@2018-03-23
+","",72018-03-15T12:13:30.842,Annual Return
+1107,980,1,2018-04-05,S201,Appointment of Director - Rosdi Bin Mat Nor,"",72018-04-05T11:39:15.746,Appointment of Directors
+492,446,1,2018-02-09,AR/AGM,Annual Return @ 2018-02-25,AR@2018-02-25,122018-02-09T17:02:05.771,Annual Return
+493,447,1,2018-02-12,AR/AGM,Annual Return @ 2018-03-03,Annual Return @ 2018-03-03,122018-02-12T09:13:04.613,Annual Return
+494,448,1,2018-02-12,AR/AGM,"Annual Return @ 2017-11-13
+","",72018-02-12T09:51:55.917,Annual Return
+495,448,2,2018-02-12,S201,Appt of Director: Halim & Azwan,"",72018-02-12T09:51:55.917,Appointment of Directors
+496,448,3,2018-02-12,S58,"Resignation of Directors: Shasha, Irwan, Azira","",72018-02-12T09:51:55.917,F49-ResDir/Change Information
+497,448,4,2018-02-12,S105,"TrSh: 
+1. Azira to Halim : 127,501
+2. Irwan to Halim : 10,000
+3. Irwan to Azwan : 112,501","",72018-02-12T09:51:55.917,Transfer of share(s)
+498,448,5,2018-02-12,PreCau,Pre Signed Docs by Halim & Irwan,"",72018-02-12T09:51:55.917,Pre-Cautionery doc for Nominee Directors
+499,449,1,2018-02-12,OpBk,Opening of FD Acc with RHB (RM200K),"",52018-02-12T12:53:10.245,Open Bank Account(s)
+500,450,1,2018-02-12,IntBanking,Revised DCRs access to Maybank2u dated 2018-02-12 & CTC IC,"",42018-02-12T12:54:29.100,Internet Banking
+501,451,1,2018-02-12,IntBanking,Revised DCRs internet banking with Maybank2u dated 2018-02-12 CTC IC,"",42018-02-12T12:59:16.631,Internet Banking
+502,452,1,2018-02-12,S58,"Appointment of Director - Gregory John Cooper
+Resignation of Director - Keith Ian Millar","",22018-02-12T13:35:21.056,F49-ResDir/Change Information
+503,452,2,2018-02-12,ChBkSig,Change Bank Signatory - Citibank,"",22018-02-12T13:35:21.056,Changing Banking Signatory
+504,453,1,2018-02-12,AR/AGM,AR@ 2018-02-12,"",112018-02-12T14:11:24.750,Annual Return
+505,454,1,2018-02-12,AR/AGM,Annual Return @ 2018-02-27,AR@2018-02-27,122018-02-12T15:13:12.835,Annual Return
+506,455,1,2018-02-12,AC,Financial Statement @ 2017-06-30,"- Preparation, circular, submission & filing",72018-02-12T16:42:22.182,Financial Statement
+507,456,1,2018-02-12,CTC,"CTC - M&A, F9, F24, F49, F44 & Annual Return (1 sets) ","",82018-02-12T16:41:56.881,Certified True Copies 
+508,457,1,2018-02-12,CIBk,Closing Bank Account - Malayan Banking Berhad,"",22018-02-12T19:08:00.266,Bank-Close Account(s)
+509,457,2,2018-02-12,S58,"Appointment of Director (3 new directors)
+Resignation of Director (Lai & Choo)","",22018-02-12T19:08:00.266,F49-ResDir/Change Information
+510,457,3,2018-02-12,ShCert,Splitting of Shares (#006),"",22018-02-12T19:08:00.266,Lost Share certificates/amendments
+511,457,4,2018-02-12,S105,"Transfer of Shares (10,000 shares)","",22018-02-12T19:08:00.266,Transfer of share(s)
+512,457,5,2018-02-12,AC,Financial Statements @ 2017-08-31,"",22018-02-12T19:08:00.266,Financial Statement
+513,458,1,2018-02-12,PurVeh,Disposal of Motor Vehicle - Proton Saga ,"",22018-02-12T19:10:44.085,Vehicle Purchase/disposal
+514,459,1,2018-02-13,AR/AGM,Annual Return@ 2018-02-12,"",112018-02-13T08:38:56.354,Annual Return
+515,460,1,2018-02-13,S36,Alter AA - AGM & counter-part signing for members,"",42018-02-13T08:43:07.436,M&A/Constitution changes
+516,461,1,2018-02-13,S27,Incorporation documents,"",42018-02-13T09:31:54.470,Name Reservation-
+517,462,1,2018-02-13,TenAgr,Tenancy Agreement & Air Conditioning Supply Agreement with GTower SB,"",42018-02-13T10:02:04.418,Tenancy Agreement (s)-DCR
+518,463,1,2018-02-13,PD 2/2017,Change of Business Add,"",22018-02-13T10:57:19.651,Biz/Branch Add/Nature of biz changes
+519,464,1,2018-02-13,AC,FS@2017-08-31,"",92018-02-13T11:17:39.483,Financial Statement
+520,465,1,2018-02-13,AC,"FS@2017-08-31
+","",92018-02-13T12:56:55.708,Financial Statement
+1051,929,1,2018-03-30,S58,"","",52018-03-30T16:28:20.174,F49-ResDir/Change Information
+522,467,1,2018-02-13,AR/AGM,Annual Return@ 2018-02-18,"",112018-02-13T14:09:35.911,Annual Return
+523,468,1,2018-02-13,AC,"FS@2017-08-31
+","",92018-02-13T14:10:09.588,Financial Statement
+524,469,1,2018-02-13,OpBk,OpBK Account - AmBank (M) Berhad,"",72018-02-13T14:17:48.612,Open Bank Account(s)
+525,470,1,2018-02-13,AR/AGM,Annual Return@ 2018-02-24,"",112018-02-13T15:49:13.668,Annual Return
+526,471,1,2018-02-13,AR/AGM,Annual Return @ 2018-03-16,AR@2018-03-16,122018-02-13T16:37:16.500,Annual Return
+527,472,1,2018-02-13,AR/AGM,Annual Return@ 2018-02-13,"",112018-02-13T16:45:04.225,Annual Return
+528,473,1,2018-02-13,CTC,"CTC - M&A, F9, F44, F24, & F49 
+","",82018-02-13T18:10:36.430,Certified True Copies 
+529,474,1,2018-02-13,CTC,"2 sets CTC of Form 24, 44, 49 & M&A","",42018-02-13T18:25:59.312,Certified True Copies 
+530,475,1,2018-02-14,AC,FS@2016-08-31,"",92018-02-14T09:11:07.372,Financial Statement
+531,476,1,2018-02-14,AC,"FS@2017-08-31
+","",92018-02-14T09:55:04.969,Financial Statement
+532,477,1,2018-02-14,S201,Appointment of Directors (Muhammad Fuadi Bin Mohd Taib),"",72018-02-14T09:58:33.073,Appointment of Directors
+533,477,2,2018-02-14,S58,Resignation of Directors - Khuzhairi Bin Mohamad Saleh,"",72018-02-14T09:58:33.073,F49-ResDir/Change Information
+534,478,1,2018-02-14,AC,Financial Statement@2017-12-31,"",112018-02-14T10:36:20.625,Financial Statement
+535,479,1,2018-02-14,S15,Incorporation documents,"",42018-02-14T10:39:12.491,Incorporation
+536,480,1,2018-02-14,CTC,2 sets of Section 68 dated 12 Feb 2017,"",42018-02-14T10:48:33.011,Certified True Copies 
+537,481,1,2018-02-14,AC,Financial Statement@2017-12-31,"",112018-02-14T11:25:20.479,Financial Statement
+539,483,1,2018-02-14,AC,Financial Statement@ 2017-12-31,"",112018-02-14T14:12:02.008,Financial Statement
+692,619,1,2018-03-06,CTC,CTC,"",92018-03-06T12:22:31.937,Certified True Copies 
+701,624,1,2018-03-07,S15,"Sec work on incorporation, bundled with:
+-3 CTC of respective 1st forms.
+-DCR on opening (1) Bank Account
+-Pre-Incorporation Consultancy (1 hour)","",42018-03-07T08:41:04.374,Incorporation
+709,631,1,2018-03-07,CTC,"DCRs open RHB Bank Bangunan Cheong Wing Chan, Jalan Maharajalela branch dated 21 July 2005","",42018-03-07T15:20:13.853,Certified True Copies 
+693,620,1,2018-03-06,TenAgr,Tenancy Agreement with MOFAZ CARD SDN. BHD.,"",42018-03-06T16:37:55.212,Tenancy Agreement (s)-DCR
+540,484,1,2018-02-14,DCR,Change of nature of business from Advertising to Automobile,"",42018-02-14T14:26:15.128,Misc Director Resolution-
+541,485,1,2018-02-14,AR/AGM,Annual Return@ 2018-03-01,"",112018-02-14T14:57:55.442,Annual Return
+702,625,1,2018-03-07,SecFee,Secretarial Fee + Registered Office -from March 2018 to March 2019,"",42018-03-07T08:42:03.566,Secretarial Fee + Registered Office
+1052,930,1,2018-03-30,DeReg,De-registration,"",82018-03-30T16:46:23.684,De-registration
+715,635,1,2018-03-07,T.O.,Take Over Secretarial Files ,"",82018-03-07T16:39:00.137,Take Over Secretarial File(s)
+716,635,2,2018-03-07,SecFee,-From 2017-12-29 to 2019-01-28,"",82018-03-07T16:39:00.137,Secretarial Fee + Registered Office
+723,641,1,2018-03-08,Misc,"Rectification on Shareholder name (Teo Choon Chye)
+-S602(1)","",52018-03-08T12:54:10.683,Non-secretarial assignments
+542,486,1,2018-02-14,AC,"FS@2017-08-31
+","",92018-02-14T15:11:19.257,Financial Statement
+543,487,1,2018-02-14,BkChsig,Change Bank Signatories with Alliance Bank Berhad,"",52018-02-14T15:34:13.168,Bank-Change Signatories
+544,488,1,2018-02-14,AR/AGM,Annual Return @ 2018-03-16,Annual Return @ 2018-03-16,122018-02-14T16:14:02.478,Annual Return
+545,489,1,2018-02-14,CPO,"CTC by SSM Form 49, Form 24, Form 9","",42018-02-14T16:38:25.298,Purchase of CPO/Idaman
+554,498,1,2018-02-19,CTC,CTC of Form 24 dated 18 Oct 2012,"",42018-02-19T11:45:54.879,Certified True Copies 
+547,491,1,2018-02-14,SecFee,- From [2018-02-10 until 2019-02-09],"",22018-02-14T16:57:05.297,Secretarial Fee + Registered Office
+729,647,1,2018-03-08,S58,"Change of directors
+Appoint Ahmad Fauzi Bin Ali & Baharudin Bin Mamat
+Resign Kho Han Yao & Jeanne Ee May Hui","",42018-03-08T16:42:22.465,F49-ResDir/Change Information
+548,492,1,2018-02-14,AR/AGM,Annual Return @ 2018-03-10,Annual Return @ 2018-03-10,122018-02-14T17:30:58.547,Annual Return
+732,650,1,2018-03-08,CorpRep,Appointment of Corporate Representative - Baharudin Bin Mamat,"",42018-03-08T17:26:01.477,Appointment of Corporate Representative
+734,652,1,2018-03-08,S36,Amendment of M&A,"",22018-03-08T17:52:45.048,M&A/Constitution changes
+735,652,2,2018-03-08,S58,Resignation of Director (Ms. Seetal),"",22018-03-08T17:52:45.048,F49-ResDir/Change Information
+737,652,4,2018-03-08,AC,Financial Statements @ 2017-12-31,"",22018-03-08T17:56:21.722,Financial Statement
+549,493,1,2018-02-14,ChBkSig,"DCR - Change of Signatories
+- CIMB KLCC
+- CIMB Taman Maluri
+- RHB Taman Shamelin","",72018-02-14T18:47:09.566,Changing Banking Signatory
+550,494,1,2018-02-15,SecFee,- From [2018-02-13 to 2019-02-12],"",22018-02-15T09:24:06.028,Secretarial Fee + Registered Office
+551,495,1,2018-02-15,AR/AGM,Annual Return @ 2018-03-10,Annual Return @ 2018-03-10,122018-02-15T12:11:39.160,Annual Return
+552,496,1,2018-02-15,S58,Appointment of director - Ibrahim Bin AB Rahman,"",42018-02-15T13:20:17.837,F49-ResDir/Change Information
+553,497,1,2018-02-15,BkChsig,"Change Signatories with BIMB, Taman Melawati branch","",42018-02-15T14:44:04.516,Bank-Change Signatories
+555,499,1,2018-02-19,ChAud,Change of auditor - Appoint AZMI ISMAIL & CO. - Resign AT KONSORTIUM,"",42018-02-19T12:58:54.471,Change of Auditor
+556,500,1,2018-02-19,AR/AGM,Annual Return@2018-02-28,"",112018-02-19T13:49:21.350,Annual Return
+557,501,1,2018-02-19,AR/AGM,Annual Return@2018-04-15,"",112018-02-19T15:17:33.462,Annual Return
+558,502,1,2018-02-19,AR/AGM,Annual Return@2018-02-29,"",112018-02-19T15:47:57.607,Annual Return
+559,503,1,2018-02-19,AR/AGM,Annual Return@2018-03-29,"",112018-02-19T16:56:30.024,Annual Return
+560,504,1,2018-02-19,AR/AGM,Annual Return@2018-03-29,"",112018-02-19T16:59:19.415,Annual Return
+561,505,1,2018-02-19,AR/AGM,"AR@2018-02-23
+","",92018-02-19T17:07:03.770,Annual Return
+562,506,1,2018-02-19,CTC,CTC,"",92018-02-19T17:14:07.611,Certified True Copies 
+563,507,1,2018-02-20,AR/AGM,Annual Return @ 2018-03-24,Annual Return @ 2018-03-24,122018-02-20T09:18:59.109,Annual Return
+564,508,1,2018-02-20,AR/AGM,Annual Return@2018-03-10,"",112018-02-20T10:09:49.782,Annual Return
+565,509,1,2018-02-20,OpBk,"Open CIMB ISLAMIC BANK BERHAD, Wakaf Che Yeh branch","",42018-02-20T10:53:31.903,Open Bank Account(s)
+566,510,1,2018-02-20,AR/AGM,"AR@2018-02-05
+","",92018-02-20T11:24:12.139,Annual Return
+567,511,1,2018-02-20,AR/AGM,Annual Return @ 2018-06-02,Annual Return @ 2018-06-02,122018-02-20T12:53:15.050,Annual Return
+568,512,1,2018-02-20,S58,"Change of Directorship
+-Appoint (Rina)
+-Resign (Zafarina)","",52018-02-20T14:41:04.714,F49-ResDir/Change Information
+569,513,1,2018-02-20,S201,Appt Dir: Roos Aqilah,"",72018-02-20T14:55:28.323,Appointment of Directors
+570,513,2,2018-02-20,S58,Resign Dir: Masnizam & Sohel,"",72018-02-20T14:55:28.323,F49-ResDir/Change Information
+571,513,3,2018-02-20,S105,"S105 - Masnizam to Roos (71)
+S105 - Sohel to Aminul (14)","",72018-02-20T14:55:28.323,Transfer of share(s)
+572,513,4,2018-02-20,S78,"Inc PUC: 300 --> From 100 to 400
+Aminul: 91
+Roos: 209","",72018-02-20T14:55:28.323,Increase in Paid Up Capital-Cash
+573,513,5,2018-02-20,PD 2/2017,"Chg Business Add: Jln 2/110A, Jln Klang Lama","",72018-02-20T14:55:28.323,Biz/Branch Add/Nature of biz changes
+574,513,6,2018-02-20,OpBk,Opbk Account - RHB Bank Berhad (Authorized: Aminul),"",72018-02-20T14:55:28.323,Open Bank Account(s)
+575,513,7,2018-02-20,IntBanking,RHB Reflex Services - Authorized: Aminul,"",72018-02-20T14:55:28.323,Internet Banking
+739,654,1,2018-03-09,AR/AGM,"AR@2018-03-22
+","",92018-03-09T10:14:12.565,Annual Return
+742,656,1,2018-03-09,AC,To issue kp FS@2017-06-30 (RM50.00),"",72018-03-09T13:41:00.739,Financial Statement
+744,658,1,2018-03-09,AR/AGM,Annual Return@2018-04-16,"",112018-03-09T14:41:27.788,Annual Return
+746,660,1,2018-03-09,AC,Financial Statement@2017-12-31,"",112018-03-09T15:45:18.773,Financial Statement
+747,661,1,2018-03-09,CTC,"F9, F11, F24, F44, F49, S46 (1set)","",62018-03-09T16:19:57.997,Certified True Copies 
+576,514,1,2018-02-20,AR/AGM,Annual Return@2018-03-10,"",112018-02-20T15:03:08.324,Annual Return
+577,515,1,2018-02-20,AR/AGM,Annual Return@2018-03-10,"",112018-02-20T15:05:30.915,Annual Return
+578,516,1,2018-02-20,AR/AGM,Annual Return@2018-03-10,"",112018-02-20T15:10:23.975,Annual Return
+703,626,1,2018-03-07,S58,Change of Secretary,"",52018-03-07T09:27:09.091,F49-ResDir/Change Information
+717,636,1,2018-03-07,S36,Amendment of M&A,"",22018-03-07T18:06:31.138,M&A/Constitution changes
+718,636,2,2018-03-07,AC,Financial Statements @ 2017-12-31,"",22018-03-07T18:06:31.138,Financial Statement
+724,642,1,2018-03-08,ConfirmL,To HLBB to close account & CPO,"",22018-03-08T13:30:01.567,Confirmation Letter
+579,517,1,2018-02-20,S58,"Change of Directorship
+-Appoint (Zafarina)
+-Resign (Dato'' Azhar)","",52018-02-20T16:49:38.672,F49-ResDir/Change Information
+1066,944,1,2018-04-02,S58,"Change of Secretaries 
+-Appt KSS 
+-Resign KBT ","",82018-04-02T16:05:45.456,F49-ResDir/Change Information
+581,519,1,2018-02-21,BkOp,Opbk with MBB TTDI branch Fixed Deposit account Commercial Card Facility Overdraft Facility with Maybank,"",42018-02-21T08:37:33.616,Bank-Open Account[s]
+582,520,1,2018-02-21,AC,Financial Statement @ 2017-06-30,"",72018-02-21T08:39:46.937,Financial Statement
+583,521,1,2018-02-21,AC,"FS@2017-09-30
+","",92018-02-21T09:34:27.816,Financial Statement
+1081,959,1,2018-04-03,FYE,"Appt of Auditor & Tax Agent, Fixing of FYE","",112018-04-03T09:14:23.008,Fixing Financial Year End-DCR
+584,522,1,2018-02-21,AC,Financial Statement @ 2017-06-30,"",72018-02-21T09:50:58.514,Financial Statement
+585,523,1,2018-02-21,AR/AGM,Annual Return@2018-04-06,"",112018-02-21T10:00:01.212,Annual Return
+586,524,1,2018-02-21,BkOp,DCRs fixed deposit account with RHB Bank Berhad,"",42018-02-21T11:45:15.029,Bank-Open Account[s]
+587,525,1,2018-02-21,AC,"FS@2017-08-31
+","",92018-02-21T11:50:11.953,Financial Statement
+588,526,1,2018-02-21,S58,Resignation of Director (Dato' Azhar),"",52018-02-21T12:08:47.469,F49-ResDir/Change Information
+589,527,1,2018-02-21,CTC,"CTC - F9, F24, F49, S58 & M&A (1 Set)","",72018-02-21T12:19:10.749,Certified True Copies 
+590,528,1,2018-02-21,OpBk,Op Account & Subs of Services - CIMB,"",72018-02-21T12:21:48.880,Open Bank Account(s)
+591,528,2,2018-02-21,CTC,"CTC - F9, F49, M&A & Bank Application Form","",72018-02-21T12:21:48.880,Certified True Copies 
+592,529,1,2018-02-21,ChAud,Change of Auditors to H.L. Lee & Co. and Tax Agents to SH Management Services,"",42018-02-21T13:54:54.881,Change of Auditor
+593,530,1,2018-02-21,CTC,"F24, F49, F444, S105, ROM @ 21/07/2017, 09/05/2017, Director Ic, M&A (2sets)","",62018-02-21T14:32:31.922,Certified True Copies 
+594,531,1,2018-02-21,AR/AGM,Annual Return @ 2018-02-15,"",82018-02-21T17:17:35.582,Annual Return
+595,532,1,2018-02-22,BkFac,Renewal of OD Facilities with MBB (RM500K),"",52018-02-22T08:58:10.223,Bank-Facilities
+596,532,2,2018-02-22,ConfirmL,Confirmation Letter on Directorship and Shareholdings to MBB,"",52018-02-22T08:58:10.223,Confirmation Letter
+597,533,1,2018-02-22,CTC,"3 sets CTC of Form 49, Form 24, Form 44 & M&A","",42018-02-22T11:43:16.440,Certified True Copies 
+598,534,1,2018-02-22,S36,"-Amend Article 1
+-Insertion Article 9","",52018-02-22T12:58:36.679,M&A/Constitution changes
+599,535,1,2018-02-22,TenAgr,"Tenancy Agreement with GTower (Suite 20-05 & 20-07, Level 20)","",42018-02-22T13:24:44.132,Tenancy Agreement (s)-DCR
+600,536,1,2018-02-22,AR/AGM,Annual Return@2018-02-18,"",112018-02-22T13:53:35.246,Annual Return
+601,537,1,2018-02-22,PurPro,DCR - Purcahase of MV- Axia 1000 G (M) & Hire Purchace (PBB) ,"",82018-02-22T14:28:01.347,Property Purchase-DCR/MCR
+602,538,1,2018-02-22,SecFee,"Secretarial Fee + Registered Office 
+- From 2017-12-29 until 2019-01-28 ","",82018-02-22T16:50:36.754,Secretarial Fee + Registered Office
+603,539,1,2018-02-22,AR/AGM,Annual Return@2018-02-26,"",112018-02-22T16:59:34.363,Annual Return
+604,540,1,2018-02-23,S15,"Sec work on incorporation, bundled with:
+-3 CTC of respective 1st forms.
+-DCR on opening (1) Bank Account
+-Pre-Incorporation Consultancy (1 hour)","",42018-02-23T08:38:16.847,Incorporation
+605,540,2,2018-02-23,SecFee,Secretarial Fee + Registered Office -from February 2018 to February 2019,"",42018-02-23T08:38:16.847,Secretarial Fee + Registered Office
+606,541,1,2018-02-23,TenAgr,Tenancy Agreement,"",52018-02-23T09:08:53.929,Tenancy Agreement (s)-DCR
+607,542,1,2018-02-23,CTC,M&A (2sets),"",62018-02-23T09:12:53.218,Certified True Copies 
+608,543,1,2018-02-23,PD 2/2017,Additional of Branch Address,"",22018-02-23T10:34:27.588,Biz/Branch Add/Nature of biz changes
+609,544,1,2018-02-23,AR/AGM,Annual Return@2018-02-16,"",112018-02-23T11:20:47.866,Annual Return
+610,545,1,2018-02-23,AR/AGM,Annual Return @ 2018-03-20,Annual Return @ 2018-03-20,122018-02-23T11:40:08.493,Annual Return
+611,546,1,2018-02-23,S36,"Change of Articles
+-Amend Article 1
+-Insert Article 9","",52018-02-23T12:12:13.889,M&A/Constitution changes
+612,547,1,2018-02-23,S36,Amendment of Article 42 (AGM),"",52018-02-23T14:37:06.261,M&A/Constitution changes
+613,548,1,2018-02-23,S78,Increase Paid Up Capital of RM250K (by Cash),"",52018-02-23T15:59:22.177,Increase in Paid Up Capital-Cash
+614,549,1,2018-02-26,S15,"","",92018-02-26T09:01:40.200,Incorporation
+615,550,1,2018-02-26,AC,Financial Statement@2017-12-31,"",112018-02-26T09:42:38.065,Financial Statement
+616,550,2,2018-02-26,AR/AGM,Annual Return@2018-03-01,"",112018-02-26T09:42:38.065,Annual Return
+617,551,1,2018-02-26,AR/AGM,"Annual Return @ 2018-03-15
+","",72018-02-26T09:54:16.618,Annual Return
+618,552,1,2018-02-26,S27,Proposed Name: CASHLOTUS MUTIARA SDN. BHD. ,"",72018-02-26T11:55:24.445,Name Reservation-
+619,553,1,2018-02-26,AR/AGM,Annual Return @ 2018-03-14,Annual Return @ 2018-03-14,122018-02-26T14:13:28.994,Annual Return
+620,554,1,2018-02-26,AR/AGM,Annual Return@2018-03-14,"",112018-02-26T14:54:03.936,Annual Return
+621,555,1,2018-02-26,CTC,"2 sets CTC of Form 49, Form 24, Form 44, M&A, Directors'' IC, FS @2016-03-31 & FS @ 2017-03-31","",42018-02-26T15:35:40.670,Certified True Copies 
+622,556,1,2018-02-26,S15,Incorporation of Company,"",52018-02-26T15:46:37.389,Incorporation
+1053,931,1,2018-03-30,AC,"FS@2017-12-31
+","",112018-03-30T16:48:59.908,Financial Statement
+623,557,1,2018-02-26,AC,Financial Statement@2017-12-31,"",112018-02-26T17:40:47.902,Financial Statement
+624,558,1,2018-02-26,S78 Non Cash,"Increase PUC to RM500,000","",22018-02-26T18:50:35.545,Increase in Paid Up Capital- Otherwise Than Cash
+625,558,2,2018-02-26,AR/AGM,Annual Return @ 2018-03-01,"",22018-02-26T18:50:35.545,Annual Return
+626,559,1,2018-02-27,S15,Certificate of Incorporation ,"",92018-02-27T08:35:12.577,Incorporation
+627,560,1,2018-02-27,AR/AGM,Annual Return@2018-02-20,"",112018-02-27T08:41:48.093,Annual Return
+628,561,1,2018-02-27,CTC,M&A (2sets),"",62018-02-27T09:46:53.088,Certified True Copies 
+629,562,1,2018-02-27,S15,Incorporation of Company,"",52018-02-27T11:06:29.389,Incorporation
+630,563,1,2018-02-27,CPO,Company profile @ 2018-02-27,"",42018-02-27T11:34:22.242,Purchase of CPO/Idaman
+694,621,1,2018-03-06,AC,Financial Statements @ 2017-12-31,"",72018-03-06T16:53:42.132,Financial Statement
+704,626,2,2018-03-07,S78,Increase Paid Up Capital to RM380K,"",52018-03-07T09:27:09.091,Increase in Paid Up Capital-Cash
+631,564,1,2018-02-27,AR/AGM,Annual Return@2018-02-28,"",112018-02-27T11:37:18.914,Annual Return
+632,565,1,2018-02-27,AC,"Financial Statements @ 2015-06-30
+Financial Statements @ 2016-06-30
+Financial Statements @ 2017-06-30","",72018-02-27T12:09:00.788,Financial Statement
+710,632,1,2018-03-07,PurPro,Purchase of Property (A-12-06 & A-08-08 9ine Sungai Putih Hill Cheras),"",22018-03-07T15:27:40.688,Property Purchase-DCR/MCR
+719,637,1,2018-03-08,S15,New Incorporation:- DIGITAL PLANT SPECIALISTS SDN. BHD.,"",72018-03-08T09:09:19.101,Incorporation
+633,566,1,2018-02-27,CTC,"F24, F49 (1set)","",62018-02-27T14:42:05.408,Certified True Copies 
+1067,945,1,2018-04-02,AR/AGM,AR@2018-04-05,"",92018-04-02T16:16:22.546,Annual Return
+634,567,1,2018-02-27,IntBanking,Application for internet banking with CIMB Bank Berhad,"",42018-02-27T15:07:35.282,Internet Banking
+635,568,1,2018-02-27,CTC,1 set CTC FS @ 2016-07-31,"",42018-02-27T16:55:25.239,Certified True Copies 
+636,569,1,2018-02-28,CTC,"CTC F9, F24 & F49","",122018-02-28T09:54:31.111,Certified True Copies 
+637,570,1,2018-02-28,AC,"Financial Statement@2017-09-30
+","",112018-02-28T11:59:46.425,Financial Statement
+638,571,1,2018-02-28,CTC,Certified True Copies ,- Annual Return dated 2017-05-06,82018-02-28T12:19:41.526,Certified True Copies 
+639,572,1,2018-02-28,AR/AGM,Annual Return@2018-02-21,"",112018-02-28T17:02:17.226,Annual Return
+1082,960,1,2018-04-03,S58,"Change of Secretaries
+- Appt KSS
+- Resign KBT ","",82018-04-03T09:35:16.434,F49-ResDir/Change Information
+641,574,1,2018-03-01,CIBk,Close Bank Account with Bank Muamalat,"",52018-03-01T08:52:42.073,Bank-Close Account(s)
+642,575,1,2018-03-01,S27,Second Name Reservation for Lunajaya Sdn. Bhd.,"",52018-03-01T09:16:21.822,Name Reservation-
+643,576,1,2018-03-01,S15,"New Incorporation: EHRAZ ENGINEERING SDN. BHD. 
+",(S27 Vaild till 2018-03-30),72018-03-01T13:29:01.798,Incorporation
+644,577,1,2018-03-01,AR/AGM,"AR@2018-03-06
+","",92018-03-01T15:07:47.002,Annual Return
+645,578,1,2018-03-01,S58,"Change of Director
+- Appoint Fong Tyanne
+- Resign Fong Chee Kong ","",82018-03-01T15:12:07.081,F49-ResDir/Change Information
+1094,970,1,2018-04-04,S27,Incorporation ,"",92018-04-04T09:53:26.814,Name Reservation-
+646,579,1,2018-03-01,AC,Financial Statement @ 2017-12-31,"",72018-03-01T15:17:30.018,Financial Statement
+647,580,1,2018-03-01,S36,Change of Memorandum & Articles,"",52018-03-01T15:21:11.453,M&A/Constitution changes
+648,581,1,2018-03-01,AR/AGM,KP S68 @ 2017-11-12,"",42018-03-01T15:29:00.411,Annual Return
+649,582,1,2018-03-01,ChAud,"Change of Auditor
+","",92018-03-01T16:56:42.586,Change of Auditor
+650,583,1,2018-03-01,S105,"Transfer of Shares
+-From Hiroaki to Hafezal (350K shares)
+Pre-sign docs for transfer of Shares
+-From Hafezal  to Hiroaki (350K shares)","",52018-03-01T17:06:57.501,Transfer of share(s)
+651,584,1,2018-03-01,S15,Certificate of Incorporation ,"",92018-03-01T18:10:34.721,Incorporation
+652,585,1,2018-03-02,CTC,Section 68 dated 2018-01-17,"",42018-03-02T09:09:16.949,Certified True Copies 
+653,586,1,2018-03-02,CTC,"CTC - M&A, F9, F49, F49, S58, ROM (2 Sets)","",72018-03-02T09:38:32.593,Certified True Copies 
+654,587,1,2018-03-02,CTC,"Certified True Copy(CTC)
+- FS @ 2017-06-30
+","",82018-03-02T11:36:25.090,Certified True Copies 
+655,588,1,2018-03-02,OpBk,Opening CDS & Trading Account,"",92018-03-02T12:15:53.478,Open Bank Account(s)
+656,589,1,2018-03-02,Letters,Drafting Trust Deed,"",52018-03-02T13:33:53.240,Misc Letters
+657,590,1,2018-03-02,BkChsig,Change Bank Signatories with RHB Bank,"",52018-03-02T13:38:17.954,Bank-Change Signatories
+658,591,1,2018-03-02,AR/AGM,"AR@2018-03-02
+","",92018-03-02T13:56:40.141,Annual Return
+659,592,1,2018-03-02,AC,SSM KP FS@2017-06-30,"",42018-03-02T16:24:49.884,Financial Statement
+660,593,1,2018-03-02,CTC,"CTC F44, 49, S58, M&A (1 set)","",22018-03-02T16:38:11.465,Certified True Copies 
+661,593,2,2018-03-02,ConfirmL,Confirmation Letter to Prasarana (Directors),"",22018-03-02T16:38:11.465,Confirmation Letter
+662,594,1,2018-03-03,AR/AGM,Annual Return @ 2018-06-02,"",122018-03-03T08:40:03.831,Annual Return
+663,595,1,2018-03-03,CTC,"CTC F24, AR 2017, FS 2017 (1 set)","",22018-03-03T08:53:31.070,Certified True Copies 
+664,595,2,2018-03-03,S105,Transfer of Shares (wholly to Park Place Technologies Private Limited - RM500k),"",22018-03-03T08:53:31.070,Transfer of share(s)
+665,595,3,2018-03-03,S201,Appointment of Directors (Pre-sign),"",22018-03-03T08:53:31.070,Appointment of Directors
+666,595,4,2018-03-03,S58,Resignation of Directors (Pre-sign),"",22018-03-03T08:53:31.070,F49-ResDir/Change Information
+667,595,5,2018-03-03,DCR,DCR - Revocation of POA,"",22018-03-03T08:53:31.070,Misc Director Resolution-
+668,595,6,2018-03-03,ChBkSig,Changing Banking Signatory - MBB (MYR & USD),"",22018-03-03T08:53:31.070,Changing Banking Signatory
+669,596,1,2018-03-03,S15,Incorporation Documents ,"",92018-03-03T09:24:09.811,Incorporation
+670,597,1,2018-03-03,AR/AGM,AR@2018-03-15,"",92018-03-03T11:34:01.239,Annual Return
+671,598,1,2018-03-03,S15,Incorporation Documents,"",92018-03-03T11:35:04.717,Incorporation
+672,599,1,2018-03-03,S15,Incorporation,"",92018-03-03T11:35:33.612,Incorporation
+673,600,1,2018-03-03,IntBanking,"Accept Cash Management Service with Maybank, TTDI branch","",42018-03-03T11:50:15.431,Internet Banking
+674,601,1,2018-03-03,AR/AGM,AR@2018-03-25,"",92018-03-03T12:33:52.664,Annual Return
+675,602,1,2018-03-05,AR/AGM,AR@2018-03-23,"",92018-03-05T10:32:16.993,Annual Return
+676,603,1,2018-03-05,AR/AGM,AR@2018-03-10,"",92018-03-05T11:00:18.287,Annual Return
+677,604,1,2018-03-05,AR/AGM,Annual Declaration @ 2017-09-09,"",22018-03-05T11:28:08.497,Annual Return
+695,622,1,2018-03-06,ShCert,Lost & Replacement of Share Certificates (#003),"",72018-03-06T18:51:26.625,Lost Share certificates/amendments
+678,605,1,2018-03-05,AR/AGM,AR@2018-03-15,"",92018-03-05T11:51:03.565,Annual Return
+679,606,1,2018-03-05,ChFYE,Change of Financial Year End from 30 June to 31 Dec 2017,"",42018-03-05T12:30:16.514,Change of Financial Year End
+680,607,1,2018-03-05,ChFYE,Change of Financial Year End from 30 June to 31 Dec 2017,"",42018-03-05T12:31:22.206,Change of Financial Year End
+681,608,1,2018-03-05,ChFYE,Change of Financial Year End from 30 June to 31 Dec 2017,"",42018-03-05T12:31:44.293,Change of Financial Year End
+682,609,1,2018-03-05,CorpGuaran,Corporate Guarantor: LKS Power Clean SB (Banking Facilities - PBB),"",72018-03-05T13:11:17.098,Corporate Guarantor
+705,627,1,2018-03-07,BkFac,Alliance - Subscription of Cash Management,"",92018-03-07T10:50:20.536,Bank-Facilities
+711,632,2,2018-03-07,BkFac,Banking Facility from Ambank,"",22018-03-07T15:27:40.688,Bank-Facilities
+683,610,1,2018-03-05,CTC,CTC,"",92018-03-05T14:06:12.247,Certified True Copies 
+684,611,1,2018-03-05,CTC,M&A (1set),"",62018-03-05T16:54:44.772,Certified True Copies 
+685,612,1,2018-03-05,CTC,M&A (1set),"",62018-03-05T16:55:22.714,Certified True Copies 
+720,638,1,2018-03-08,AR/AGM,AR@2018-03-20,"",92018-03-08T09:17:43.029,Annual Return
+686,613,1,2018-03-05,AC,FS@2016-06-30,"",92018-03-05T16:59:53.206,Financial Statement
+687,614,1,2018-03-05,PurMach,Disposal of Motor Vehicle - Kia Pregio (WLW 7398) ,- CTC Form 9 & Section 58 (1 copy) ,82018-03-05T17:26:44.280,Machinery Purchase/Disposal
+688,615,1,2018-03-06,AR/AGM,Late Filing Fee,"",92018-03-06T09:47:05.999,Annual Return
+1054,932,1,2018-03-30,AC,FS@2017-12-31,"",112018-03-30T16:52:13.470,Financial Statement
+725,643,1,2018-03-08,S36,"Chg AA - Modify AA Art.1, Inserting Art. 6
+","",72018-03-08T13:49:59.038,M&A/Constitution changes
+727,645,1,2018-03-08,AR/AGM,AR@2018-03-17,"",92018-03-08T15:05:04.568,Annual Return
+730,648,1,2018-03-08,S105,Transfer from TNCENTURY SDN. BHD. to TNSYS SDN. BHD. (100 shares),"",42018-03-08T16:44:13.747,Transfer of share(s)
+733,651,1,2018-03-08,Invst,"Authority to invest into TNSECURE SDN. BHD. (1,125 shares)","",42018-03-08T17:27:38.902,Investment(s)
+736,652,3,2018-03-08,Invst,Disposal of Investment in AS World Vacation SB,"",22018-03-08T17:52:45.048,Investment(s)
+738,653,1,2018-03-09,AR/AGM,"AR@2018-03-21
+","",92018-03-09T09:40:51.666,Annual Return
+741,655,1,2018-03-09,CCM kp,"CCM Compounds: RM2,940.00","",72018-03-09T11:27:06.325,CCM Compound(s)
+743,657,1,2018-03-09,PurVeh,Purchase of MV- Kembara 1.3 EZ (Auto) ,"",82018-03-09T14:11:37.461,Vehicle Purchase/disposal
+745,659,1,2018-03-09,CTC,"F24, F49, S58, F13, F9, M&A (2sets)","",62018-03-09T14:57:55.663,Certified True Copies 
+1068,946,1,2018-04-02,S58,"Change of Secretaries
+- Appt KSS
+- Resign KBT ","",82018-04-02T16:53:41.021,F49-ResDir/Change Information
+1083,961,1,2018-04-03,DCR,DCR Purchase of MV and Holding in Trust,"",52018-04-03T10:45:25.923,Misc Director Resolution-
+748,662,1,2018-03-09,CTC,CTC,"",92018-03-09T16:23:47.399,Certified True Copies 
+1095,971,1,2018-04-04,AR/AGM,Annual Return @ 2018-04-26,"",122018-04-04T11:17:36.822,Annual Return
+1109,980,3,2018-04-05,S105,Transfer of share - Rahim to Rosdi (125k),"",72018-04-05T11:39:15.746,Transfer of share(s)
+749,663,1,2018-03-09,CIBk,"Close Bank Account
+- Malayan Banking Berhad
+- RHB Bank Berhad ","",82018-03-09T16:38:45.066,Bank-Close Account(s)
+750,664,1,2018-03-09,CIBk,"Close Bank Account
+- Malayan Banking Berhad
+- RHB Bank Berhad ","",82018-03-09T16:44:00.793,Bank-Close Account(s)
+1117,987,1,2018-04-05,CTC,"True Copy of F9, F24 & F49","",122018-04-05T17:11:05.326,Certified True Copies 
+1129,997,1,2018-04-06,CTC,"Certified True Copies (CTC) 
+- CTC of FS@2016-12-31(x2), F24(x2), F49(x2), S58(x2), F9(x2), M&A","",82018-04-06T14:08:39.101,Certified True Copies 
+758,672,1,2018-03-12,OpBk,Open of current account with Hong Leong Bank Berhad,"",42018-03-12T09:52:58.112,Open Bank Account(s)
+751,665,1,2018-03-09,AC,Financial Statement@2017-12-31,"",112018-03-09T17:09:28.869,Financial Statement
+1138,1005,1,2018-04-07,CTC,Certified True Copies@2018-04-09,"",112018-04-07T14:08:37.971,Certified True Copies 
+1148,1014,1,2018-04-09,CTC,"Certified True Copies (CTC) 
+-F9(..x2), F49(..x2) and S58(..x2)","",82018-04-09T14:10:59.228,Certified True Copies 
+753,667,1,2018-03-12,PD 2/2017,Change of Business Address,"",92018-03-12T09:03:14.708,Biz/Branch Add/Nature of biz changes
+754,668,1,2018-03-12,HPAgr,Hire Purchase of Nissan Navara with PBB,"",42018-03-12T09:30:33.838,Hire Purchase Agreement(s)
+755,669,1,2018-03-12,HPAgr,Blanket Hire Purchase Facility of RM2million with Maybank,"",42018-03-12T09:31:21.681,Hire Purchase Agreement(s)
+756,670,1,2018-03-12,OpBk,Open of current account & internet banking with Ambank (M) Berhad,"",42018-03-12T09:50:08.872,Open Bank Account(s)
+757,671,1,2018-03-12,OpBk,Open of current account with RHB Bank Berhad,"",42018-03-12T09:52:17.347,Open Bank Account(s)
+759,673,1,2018-03-12,Object,Change of nature of business from advertising to wholesale and retail of new or used motor vehicles,"",42018-03-12T09:54:20.840,Change of Object Clause(s)/Article(s)
+760,674,1,2018-03-12,CTC,"3 sets CTC of DCRs open bank account, Section 14, Section 17, NRIC & Passport of directors","",42018-03-12T10:38:09.406,Certified True Copies 
+1055,933,1,2018-03-30,CTC,"F24, F49, S58, F44, F4, M&A, AR 2017 (1set)","",62018-03-30T17:48:44.637,Certified True Copies 
+1069,947,1,2018-04-02,FYE,"Appt Auditor & Tax Agent, Fixing FYE","",112018-04-02T17:00:40.717,Fixing Financial Year End-DCR
+1084,962,1,2018-04-03,S15,Incorporation ,"",82018-04-03T14:54:28.307,Incorporation
+1096,972,1,2018-04-04,AR/AGM,AR@2018-03-24,"",112018-04-04T11:26:19.675,Annual Return
+1110,980,4,2018-04-05,ChBkSig,ChBkSig - CIMB,"",72018-04-05T11:39:15.746,Changing Banking Signatory
+1130,998,1,2018-04-06,BkFac,Access to MayBank2U Biz Internet Banking Services ,"",82018-04-06T15:37:34.640,Bank-Facilities
+1139,1006,1,2018-04-09,AR/AGM,Annual Return @ 2018-03-10,"",82018-04-09T09:03:22.249,Annual Return
+1149,1015,1,2018-04-09,CTC,"Certified True Copies
+- F9(..x2), F49(..x2) & Section 58(..x2) ","",82018-04-09T14:26:53.179,Certified True Copies 
+1158,1021,1,2018-04-09,CTC,"CTC M&A, AR 2017, F9, F24, F44, F49 & F32A","",122018-04-09T16:52:02.053,Certified True Copies 
+1165,1028,1,2018-04-10,AR/AGM,Annual Return @ 2018-04-07,"",122018-04-10T09:51:42.638,Annual Return
+1172,1035,1,2018-04-10,AR/AGM,Annual Return @ 2018-04-30,"",122018-04-10T16:45:24.052,Annual Return
+1178,1041,1,2018-04-11,PD 2/2017,Change of Business Address,"",52018-04-11T17:30:08.702,Biz/Branch Add/Nature of biz changes
+1182,1045,1,2018-04-12,S36,Change of Memorandum & Aritcle of Association,"",112018-04-12T11:25:54.892,M&A/Constitution changes
+1187,1050,1,2018-04-12,Chg Sec,Documentations for change of secretary,"",52018-04-12T16:09:07.839,Change of Secretary
+1192,1055,1,2018-04-12,AR/AGM,AR@2018-04-11,"",92018-04-12T17:23:07.538,Annual Return
+1197,1059,1,2018-04-13,CPO,Purchase of CPO @ 2018-04-13,"",52018-04-13T11:02:14.903,Purchase of CPO/Idaman
+1202,1064,1,2018-04-13,CTC,"CTC F9, F32A, F49, F24, S51, AR & M&A","",122018-04-13T15:40:52.022,Certified True Copies 
+1206,1068,1,2018-04-13,AR/AGM,Annual Return @ 2018-04-15,"",122018-04-13T17:29:23.582,Annual Return
+1210,1072,1,2018-04-16,AC,FS@2017-10-31,"",92018-04-16T10:33:24.980,Financial Statement
+1214,1076,1,2018-04-16,CTC,"3 sets CTC of Section 58, Form 49, Form 24, Form 44 & M&A","",42018-04-16T12:08:54.196,Certified True Copies 
+1218,1080,1,2018-04-16,AC,"Financial Statement @ 2014-09-30
+Circulate FS @2013-09-30 & 2014-09-30","",42018-04-16T17:16:21.625,Financial Statement
+1221,1083,1,2018-04-17,CTC,"1 set CTC of Form 9, Section 68 & FS @ 2016-12-31","",42018-04-17T10:00:51.599,Certified True Copies 
+1225,1087,1,2018-04-17,OpBk,Opbk - MBSB Berhad,"",72018-04-17T14:40:04.001,Open Bank Account(s)
+1228,1089,1,2018-04-17,CTC,"CTC - Directors'' IC Copy, F24 & F49","",72018-04-17T15:12:27.721,Certified True Copies 
+1231,1092,1,2018-04-17,PurPro,"DCR Purchase of Property ( a piece of land held under individual Title GM 61, Lot 2791, Mukim Setapak) ","",52018-04-17T18:03:50.028,Property Purchase-DCR/MCR
+1234,1095,1,2018-04-18,CTC,CTC of Winding-up search from MYEG,"",42018-04-18T09:39:15.620,Certified True Copies 
+1237,1098,1,2018-04-18,Div,Declaration of Dividend (2/2017) ,"",72018-04-18T11:48:49.876,Issuance of Dividends
+1243,1103,1,2018-04-19,CTC,"CTC M&A, F49, S58, F44, F24 & F32A","",122018-04-19T10:31:20.766,Certified True Copies 
+1247,1106,1,2018-04-19,AR/AGM,Annual Return @ 2018-04-18,"",122018-04-19T14:12:50.161,Annual Return
+1249,1108,1,2018-04-19,AR/AGM,"AR@2018-04-27
+","",112018-04-19T15:07:54.191,Annual Return
+1251,1110,1,2018-04-19,ChAud,"Change of Auditor
+","",92018-04-19T16:00:21.868,Change of Auditor
+1253,1112,1,2018-04-20,AR/AGM,Annual Return @ 2018-04-19,"",122018-04-20T11:34:14.106,Annual Return
+1255,1114,1,2018-04-20,AR/AGM,"AR@2018-04-03
+","",112018-04-20T15:55:46.202,Annual Return
+1257,1116,1,2018-04-20,S201,Appointment of Director (Chan Nyok Siam),"",32018-04-20T18:20:05.925,Appointment of Directors
+1258,1116,2,2018-04-20,S105,"Splitting & Transfer of Shares (54,000 shares)","",32018-04-20T18:20:05.925,Transfer of share(s)
+1260,1118,1,2018-04-23,ConfirmL,Confirmation on Directors,"",72018-04-23T09:32:57.158,Confirmation Letter
+1262,1120,1,2018-04-23,S78,Increase of PUC - RM10,"",32018-04-23T13:46:41.365,Increase in Paid Up Capital-Cash
+1264,1122,1,2018-04-23,AR/AGM,"AR@2018-04-08
+","",112018-04-23T15:42:10.345,Annual Return
+1266,1123,2,2018-04-23,S78,"Increase PUC - 499 by cash, 499 otherwise","",32018-04-23T15:52:08.518,Increase in Paid Up Capital-Cash
+1265,1123,1,2018-04-23,S201,Appointment of Director (Madam Geh),"",32018-04-23T15:52:08.518,Appointment of Directors
+1267,1124,1,2018-04-23,S201,Appointment of Director (Madam Geh),"",32018-04-23T15:56:21.523,Appointment of Directors
+1268,1124,2,2018-04-23,S78,"Increase of PUC to RM1,000- 499 by cash, 499 otherwise","",32018-04-23T15:56:21.523,Increase in Paid Up Capital-Cash
+1269,1125,1,2018-04-23,S58,Appointment of Mr. Khairul Nashriq as Director,"",52018-04-23T15:58:29.227,F49-ResDir/Change Information
+1270,1126,1,2018-04-23,DeReg,De-registration of Company,"",52018-04-23T16:59:28.826,De-registration
+1271,1127,1,2018-04-24,S36,"Change of Memorandum & Aritcle of Association
+","",112018-04-24T11:02:29.654,M&A/Constitution changes
+1272,1128,1,2018-04-24,S58,"Change of director
+Appoint Fong Tyanne
+Resign Fong Chee Keong","",42018-04-24T11:29:48.703,F49-ResDir/Change Information
+1273,1129,1,2018-04-24,S105,"Transfer of share
+Fong Chee Keong to Fong Tyanne (1 share)","",42018-04-24T11:31:10.233,Transfer of share(s)
+761,675,1,2018-03-12,AC,Financial Statement@2017-12-31,"",112018-03-12T11:00:56.481,Financial Statement
+762,676,1,2018-03-12,AC,Financial Statement@2017-12-31,"",112018-03-12T11:01:39.835,Financial Statement
+763,677,1,2018-03-12,AC,Financial Statement@2017-12-31,"",112018-03-12T11:03:17.523,Financial Statement
+1070,948,1,2018-04-02,S58,"Change of Secretaries 
+-Appt KSS
+-Resign KBT ","",82018-04-02T17:27:12.202,F49-ResDir/Change Information
+1085,963,1,2018-04-03,AR/AGM,Annual Return @ 2018-02-06,"",82018-04-03T15:34:23.231,Annual Return
+1097,973,1,2018-04-04,DCR,Trust Deed Agreement (4 sets),"",32018-04-04T13:53:54.055,Misc Director Resolution-
+1108,980,2,2018-04-05,S58,Resignation of Director - Abdul Rahim Bin Abdul Jalil,"",72018-04-05T11:39:15.746,F49-ResDir/Change Information
+764,678,1,2018-03-12,AR/AGM,"AR@2018-03-19
+","",92018-03-12T11:25:04.002,Annual Return
+1119,988,1,2018-04-05,OpBk,"OPBK Acc (CIMB) - MYR, USD, Euro, GBP, AED, SGD, AUD","",72018-04-05T17:27:11.109,Open Bank Account(s)
+790,704,1,2018-03-13,AC,Financial Statement @ 2017-09-30,"",82018-03-13T15:06:32.925,Financial Statement
+766,680,1,2018-03-12,AC,Financial Statement@2017-12-31,"",112018-03-12T11:34:59.211,Financial Statement
+1120,988,2,2018-04-05,IntBanking,Internet Banking - CIMB,"",72018-04-05T17:27:11.109,Internet Banking
+1131,999,1,2018-04-06,BkFac,"Bank Guarantee with MBB (RM100,000.00)","",52018-04-06T16:31:58.062,Bank-Facilities
+1140,1007,1,2018-04-09,PurVeh,purchase of MV - 40f Hino Trailer from Prosper Spring Equipment SB,"",42018-04-09T09:07:32.032,Vehicle Purchase/disposal
+767,681,1,2018-03-12,CCM kp,"CMCAR2303201224778 CMCAR0401201362146 CMCAR0401201362253 in the name of LOW YUSHUO, NRIC NO.820711-71-5031","",42018-03-12T11:40:38.642,CCM Compound(s)
+768,682,1,2018-03-12,AR/AGM,AR@2018-03-19,"",92018-03-12T11:51:40.978,Annual Return
+769,683,1,2018-03-12,AR/AGM,AR@2018-03-29,"",92018-03-12T11:52:25.890,Annual Return
+770,684,1,2018-03-12,AC,FS@2017-12-31,"",72018-03-12T12:18:50.131,Financial Statement
+771,685,1,2018-03-12,OpBk,Open of bank account and subscription of services with CIMB Bank Berhad,"",42018-03-12T12:37:02.077,Open Bank Account(s)
+1150,1016,1,2018-04-09,Div,"Declaration of Dividend (1/2017) - RM196,857.00","",32018-04-09T14:47:10.374,Issuance of Dividends
+772,686,1,2018-03-12,AR/AGM,AR@2018-03-12,"",92018-03-12T12:47:02.155,Annual Return
+773,687,1,2018-03-12,CTC,CTC,"",92018-03-12T12:49:31.862,Certified True Copies 
+774,688,1,2018-03-12,TenAgr,"DCR - Tenancy Agreement ( IOI Mall, Batu 9, Jalan Puchong)","",72018-03-12T13:32:39.438,Tenancy Agreement (s)-DCR
+775,689,1,2018-03-12,AR/AGM,AR@2018-03-29,"",92018-03-12T14:15:09.524,Annual Return
+776,690,1,2018-03-12,AR/AGM,"AR@2018-03-30
+","",92018-03-12T15:37:43.669,Annual Return
+777,691,1,2018-03-12,S58,Resignation of director,"",92018-03-12T16:30:38.656,F49-ResDir/Change Information
+778,692,1,2018-03-12,S15,Berhad inorporation,"",32018-03-12T16:33:23.158,Incorporation
+779,693,1,2018-03-12,CTC,"CTC - M&A, F9, ROA, ROM, F44, F49 & S58 (1 Set)","",72018-03-12T16:56:23.058,Certified True Copies 
+781,695,1,2018-03-12,OpBk,Open of current account and internet banking with CIMB Bank Berhad,"",42018-03-12T17:46:37.033,Open Bank Account(s)
+782,696,1,2018-03-13,CTC,"F24, F49, S58, F44, M&A (4sets)","",62018-03-13T09:19:32.782,Certified True Copies 
+783,697,1,2018-03-13,SecFee,Secretarial Fee + Registered Office,"",122018-03-13T09:22:15.396,Secretarial Fee + Registered Office
+784,698,1,2018-03-13,SecFee,From [2018-03-02 to 2019-03-01],"",22018-03-13T10:00:50.035,Secretarial Fee + Registered Office
+785,699,1,2018-03-13,CTC,"Certified True Copy (CTC)
+- F9 (..x1), F49 (..x1), F24(x3), Audited Account (2014,2015&2016)","",82018-03-13T10:10:38.506,Certified True Copies 
+786,700,1,2018-03-13,SecFee,- From [2018-03-02 to 2019-03-01],"",22018-03-13T10:27:58.877,Secretarial Fee + Registered Office
+787,701,1,2018-03-13,AC,Financial Statement @ 2012-04-30,"",82018-03-13T13:30:47.610,Financial Statement
+788,702,1,2018-03-13,CTC,"CTC of Form 49, Form 24, Form 32A, Form 9, Form 13, & Section 68 - For visa application","",42018-03-13T14:55:23.117,Certified True Copies 
+791,705,1,2018-03-13,AC,Financial Statement @ 2017-09-30,"",82018-03-13T15:09:21.224,Financial Statement
+792,706,1,2018-03-13,AR/AGM,"AR@2018-06-22
+","",92018-03-13T15:43:51.974,Annual Return
+793,707,1,2018-03-13,CTC,"2 sets CTC section 58, Form 49, Form 24, Form 44, M&A, NRIC & Passport of directors","",42018-03-13T15:48:40.032,Certified True Copies 
+794,708,1,2018-03-13,CTC,"F24, S58, F49, F9, F13 (1set)","",62018-03-13T16:41:43.852,Certified True Copies 
+795,709,1,2018-03-13,AR/AGM,AR@2018-03-05,"",72018-03-13T17:06:48.725,Annual Return
+796,710,1,2018-03-14,Div,Declaration of RM500K dividend (#001/2018),"",52018-03-14T12:57:00.203,Issuance of Dividends
+797,711,1,2018-03-14,CTC,"1 set CTC of Section 14, Sectio 17 & Section 58","",42018-03-14T13:07:21.542,Certified True Copies 
+798,712,1,2018-03-14,S201,Appointment of Director - Hew Chee Meng,"",72018-03-14T14:48:24.015,Appointment of Directors
+799,712,2,2018-03-14,S58,Resignation of Director - Lee Kian Sen,"",72018-03-14T14:49:21.738,F49-ResDir/Change Information
+800,712,3,2018-03-14,S105,TrSh: Hew (1) #004 --> Lee (1) #005,"",72018-03-14T14:49:21.738,Transfer of share(s)
+801,713,1,2018-03-14,S27,Name Reservation - Cashlotus Mutiara SB,"",72018-03-14T15:15:07.674,Name Reservation-
+802,714,1,2018-03-14,CTC,CTC,"",92018-03-14T15:20:27.240,Certified True Copies 
+803,715,1,2018-03-14,AR/AGM,"AR@2018-03-06
+","",112018-03-14T15:30:56.314,Annual Return
+804,716,1,2018-03-14,AR/AGM,AR@2018-03-06,"",72018-03-14T15:33:08.351,Annual Return
+805,717,1,2018-03-14,AR/AGM,AR@2018-03-30,"",92018-03-14T15:51:02.743,Annual Return
+808,719,1,2018-03-14,AR/AGM,AR@2018-03-11,"",72018-03-14T16:35:53.672,Annual Return
+809,720,1,2018-03-14,SecFee,- From [2018-03-04 to 2019-03-03],"",22018-03-14T17:13:02.716,Secretarial Fee + Registered Office
+810,721,1,2018-03-14,SecFee,- From [2018-03-05 to 2019-03-04],"",22018-03-14T17:19:52.222,Secretarial Fee + Registered Office
+1056,934,1,2018-03-30,CTC,"","",52018-03-30T17:55:40.214,Certified True Copies 
+1071,949,1,2018-04-02,S58,"Change of Secretaries
+-Appt KSS
+-Resign KBT ","",82018-04-02T17:56:57.708,F49-ResDir/Change Information
+1086,964,1,2018-04-03,PurVeh,Purchase of MV - Honda HRV 1.8,"",42018-04-03T17:18:45.603,Vehicle Purchase/disposal
+811,722,1,2018-03-14,Misc,Arrangement of Stamping with LHDN - Advisory Agreement between Amprex International Sdn. Bhd. & Bike O Malaysia Sdn. Bhd.,"",42018-03-14T17:24:25.544,Non-secretarial assignments
+812,723,1,2018-03-14,CTC,"3 sets CTC of DCRs accept credit facilities of RM543,180.00 with Public Bank Berhad","",42018-03-14T17:45:29.802,Certified True Copies 
+814,725,1,2018-03-14,BkOp,Open Bank Account - MBB ,"",82018-03-14T18:51:47.590,Bank-Open Account[s]
+815,726,1,2018-03-15,Object,"Change AA - Clause 1, 3 & 5 ","",82018-03-15T09:23:46.459,Change of Object Clause(s)/Article(s)
+816,727,1,2018-03-15,CTC,1 set CTC Section 68 dated 22 Nov 2017 and 2 sets CTC of Form 34 dated 18 July 2014,"",42018-03-15T09:24:43.366,Certified True Copies 
+1098,974,1,2018-04-04,S15,"Incorporation
+","",92018-04-04T16:49:28.333,Incorporation
+819,730,1,2018-03-15,SecFee,- From [2017-03-06 to 2018-03-05],"",22018-03-15T12:19:16.944,Secretarial Fee + Registered Office
+820,731,1,2018-03-15,S58,Change Passport - Cameron ,"",82018-03-15T12:24:38.354,F49-ResDir/Change Information
+1121,989,1,2018-04-06,AR/AGM,Annual Return @ 2018-03-10,"",82018-04-06T08:57:54.306,Annual Return
+821,732,1,2018-03-15,SecFee,- From [2018-03-07 to 2019-03-06],"",22018-03-15T12:24:22.592,Secretarial Fee + Registered Office
+822,733,1,2018-03-15,S105,"Transfer share 
+- Sharifah to Fatemah/ Frederick 
+- Baharudin to Fatemah/ Frederick ","",82018-03-15T12:52:03.821,Transfer of share(s)
+823,734,1,2018-03-15,S58,"Change of Director 
+- Appt Fatemah
+- Appt Frederick ","",82018-03-15T13:01:15.277,F49-ResDir/Change Information
+824,735,1,2018-03-15,BkOp,Open Bank Account with CIMB,"",52018-03-15T13:15:09.727,Bank-Open Account[s]
+825,736,1,2018-03-15,AR/AGM,Annual Return @ 2018-03-15,"",72018-03-15T13:41:16.576,Annual Return
+826,736,2,2018-03-15,S36,"Change of M&A: 
+- AA Amend Art 1 & 3(a), Insert Art 3(d) & 7
+- MA Delete Art 6","",72018-03-15T13:41:16.576,M&A/Constitution changes
+827,736,3,2018-03-15,S58,Resignation of Director - Mohd Hazree Bin Johari,"",72018-03-15T13:41:16.576,F49-ResDir/Change Information
+828,736,4,2018-03-15,S105,S105 - Hazree #006 transfer to Farid (1) #007 ,"",72018-03-15T13:41:16.576,Transfer of share(s)
+829,736,5,2018-03-15,BkChsig,RHB - Chg Signatory (Solely signed by Farid),"",72018-03-15T13:41:16.576,Bank-Change Signatories
+1141,1008,1,2018-04-09,S36,Modify Object Caluse (ii) ,"",32018-04-09T09:45:18.734,M&A/Constitution changes
+1151,1017,1,2018-04-09,S58,SSM CTC-Section 58,"",52018-04-09T15:30:24.949,F49-ResDir/Change Information
+1159,1022,1,2018-04-09,CTC,-AR@2017,"",112018-04-09T17:00:35.122,Certified True Copies 
+830,737,1,2018-03-15,IntBanking,Change of Authorised Representative for internet banking with Ambank (M) Sdn. Bhd.,"",42018-03-15T14:00:27.032,Internet Banking
+831,738,1,2018-03-15,AR/AGM,AR@2018-04-11,"",72018-03-15T14:50:06.310,Annual Return
+1166,1029,1,2018-04-10,AC,Financial Statement @ 2017-10- 31,"",82018-04-10T10:28:51.950,Financial Statement
+1173,1036,1,2018-04-11,CTC,"S14, S15, ROA, ROM, S46(3), S58, DCR OPBK, Directors I/C & S105 (x3)
+-for MOF purpose","",52018-04-11T10:51:26.707,Certified True Copies 
+1179,1042,1,2018-04-11,PD 2/2017,Change of Business Address,"",52018-04-11T17:37:12.844,Biz/Branch Add/Nature of biz changes
+1183,1046,1,2018-04-12,CTC,Certified True Copy- AR (x5),"",52018-04-12T11:58:46.313,Certified True Copies 
+832,739,1,2018-03-15,IntBanking,"Internet Banking
+- Access Maybank2u
+- Public Bank Berhad ","",82018-03-15T15:02:36.398,Internet Banking
+1188,1051,1,2018-04-12,AR/AGM,AR@2018-04-08,"",92018-04-12T16:15:43.234,Annual Return
+1193,1056,1,2018-04-13,AR/AGM,AR@2018-04-28,"",92018-04-13T08:41:56.572,Annual Return
+1198,1060,1,2018-04-13,S36,"-Change of Memorandum & Aritcle of Association
+-Financial Statement@2017-12-31
+
+","",112018-04-13T11:47:18.626,M&A/Constitution changes
+1203,1065,1,2018-04-13,CPO,Purchase of CPO/Idaman,"",42018-04-13T16:23:56.481,Purchase of CPO/Idaman
+1207,1069,1,2018-04-16,CTC,"Certified True Copies@2018-04-16
+","",112018-04-16T09:16:36.729,Certified True Copies 
+1211,1073,1,2018-04-16,AC,FS@2017-10-31,"",92018-04-16T11:05:31.497,Financial Statement
+1215,1077,1,2018-04-16,S36,"-Change of Memorandum & Aritcle of Association
+-Financial Statement@2017-12-31","",112018-04-16T14:56:59.262,M&A/Constitution changes
+1219,1081,1,2018-04-16,CTC,"F24, F49, S58 , F44, I/C Director, M&A(1set)","",62018-04-16T17:26:46.291,Certified True Copies 
+1222,1084,1,2018-04-17,PD 2/2017,Purchase CTC PD 2/2017,"",72018-04-17T12:26:37.034,Biz/Branch Add/Nature of biz changes
+1226,1088,1,2018-04-17,CTC,Form 32A (all set) x2,"",52018-04-17T14:53:57.533,Certified True Copies 
+1229,1090,1,2018-04-17,ChAud,"Change Auditor, Tax Agents & FYE 31 December 2017","",42018-04-17T16:29:12.474,Change of Auditor
+1232,1093,1,2018-04-17,PurPro,"Purchase of property ( a piece of land held under individual Title GM 61, Lot 2791, Mukim Setapak) ","",52018-04-17T18:06:42.114,Property Purchase-DCR/MCR
+1235,1096,1,2018-04-18,DCR,DCR - Commercial Credit Facility (MBB),"",32018-04-18T10:40:44.716,Misc Director Resolution-
+1238,1099,1,2018-04-18,OpBk,Open Bank Current Account - Bank Muamalat ,"",82018-04-18T14:13:02.841,Open Bank Account(s)
+1240,1101,1,2018-04-18,DCR,DCR - Acceptance of Property Title Transfer,"",32018-04-18T16:36:06.067,Misc Director Resolution-
+1241,1101,2,2018-04-18,BkFac,Credit Facility - Public Bank,"",32018-04-18T16:36:06.067,Bank-Facilities
+1244,1104,1,2018-04-19,S58,Resignation of Director - LYK,"",72018-04-19T11:44:02.067,F49-ResDir/Change Information
+1245,1104,2,2018-04-19,ChBkSig,ChgBkSig - Remove LYK (Citibank Berhad),"",72018-04-19T11:44:02.067,Changing Banking Signatory
+833,740,1,2018-03-15,S78,"Increase of PUC to RM200,000 (Cash)","",22018-03-15T15:37:04.445,Increase in Paid Up Capital-Cash
+834,741,1,2018-03-15,Div,"Declaration of RM1,109,000.00 dividend (1/2018, #004)","",52018-03-15T16:45:59.434,Issuance of Dividends
+835,742,1,2018-03-15,CTC,"Certified True Copy
+-Form 9
+-Form 24
+-Form 11
+-Acc 2015
+-Acc 2016
+-License from Finas",request by Adam @ 2018-03-15,52018-03-15T16:51:38.623,Certified True Copies 
+836,743,1,2018-03-15,CTC,"-Form 9
+-Form 11
+-Form 24
+-Form 49
+-Finas License
+-MOF License
+-Acc 2015
+-Acc 2016
+-Acc 2017","",52018-03-15T16:56:46.884,Certified True Copies 
+837,744,1,2018-03-15,Chg Sec,Change Secretary and Registered Office,"",52018-03-15T18:17:51.729,Change of Secretary
+838,745,1,2018-03-15,T.O.,"- DCR, S58, S46 & Service Letter.
+- Update MyCOID.
+- Review & set up Sec File.","",22018-03-15T19:56:00.696,Take Over Secretarial File(s)
+1057,935,1,2018-04-02,FYE,"Appointment of Auditor & Tax Agent, Fixing of FYE
+","",112018-04-02T13:02:04.879,Fixing Financial Year End-DCR
+840,747,1,2018-03-16,AC,"FS@2017-10-31
+","",92018-03-16T09:47:16.466,Financial Statement
+841,748,1,2018-03-16,DeReg,Deregistration ,"",82018-03-16T11:16:28.502,De-registration
+842,749,1,2018-03-16,TenAgr,Renewal of Tenancy Agreement (x2) - Verdana & Mont Kiara,"",22018-03-16T12:16:03.523,Tenancy Agreement (s)-DCR
+843,749,2,2018-03-16,FYE,"Appointment of Auditor & Tax Agent, Fixing of FYE","",22018-03-16T12:16:03.523,Fixing Financial Year End-DCR
+844,749,3,2018-03-16,S36,Amendment of M&A,"",22018-03-16T12:16:03.523,M&A/Constitution changes
+845,749,4,2018-03-16,AC,FS@2017-10-31,"",22018-03-16T12:16:03.523,Financial Statement
+1072,950,1,2018-04-02,S58,Change of Passport - Daniel Endres,"",42018-04-02T18:09:49.956,F49-ResDir/Change Information
+1087,965,1,2018-04-03,AC,FS @ 2017-12-31,"",122018-04-03T17:27:43.294,Financial Statement
+846,750,1,2018-03-16,CPO,Purchase of CPO,"",92018-03-16T12:49:52.571,Purchase of CPO/Idaman
+848,751,1,2018-03-16,SecFee,Secretarial Fee + Registered Office - From 15 March 2018 to 14 March 2019,"",42018-03-16T16:34:09.612,Secretarial Fee + Registered Office
+849,752,1,2018-03-16,S236,Post Incorporation documents & Set up Sec File,"",42018-03-16T16:35:24.749,Appointment of Secretary
+1099,975,1,2018-04-04,PurVeh,Purchase MV under registration no. WLL9783 & T/WA9153 from MEECON ENGINEERING & TRADING SDN. BHD.,"",42018-04-04T17:25:49.416,Vehicle Purchase/disposal
+851,754,1,2018-03-16,BkFac,Banking Facilities - Malayan Banking Berhad ,"",82018-03-16T17:07:38.135,Bank-Facilities
+1111,981,1,2018-04-05,AR/AGM,Annual Return @ 2018-04-18,"",122018-04-05T11:54:49.413,Annual Return
+1122,990,1,2018-04-06,CTC,"Certified True Copies (CTC)
+- Form 49(..x3), S58(..x3), F44(..x3), F24(..x3)","",82018-04-06T09:16:15.673,Certified True Copies 
+1132,1000,1,2018-04-06,CTC,Certified True Copies@2018-04-06,"",112018-04-06T17:09:12.077,Certified True Copies 
+855,756,1,2018-03-16,S36,Chg M&A (Full amend),"",72018-03-16T17:25:02.710,M&A/Constitution changes
+856,756,2,2018-03-16,S58,Resign Director: Chou Chok Seen,"",72018-03-16T17:25:02.710,F49-ResDir/Change Information
+857,756,3,2018-03-16,S105,Transfer Shares: Chou #002 to Wong #003 (1),"",72018-03-16T17:25:02.710,Transfer of share(s)
+847,1,1,2018-03-16,SecFee,Secretarial Fee + Registered Office - from 15 March 2018 to 14 March 2019,"",42018-03-16T16:12:55.810,Secretarial Fee + Registered Office
+858,757,1,2018-03-19,Misc,Stamping Declaration of Trust,"",52018-03-19T09:52:00.261,Non-secretarial assignments
+859,758,1,2018-03-19,AR/AGM,AR@2018-03-16,"",92018-03-19T09:53:05.536,Annual Return
+860,759,1,2018-03-19,AR/AGM,Annual Return @ 2018-04-01,"",122018-03-19T10:44:22.444,Annual Return
+861,760,1,2018-03-19,CTC,"F9, F49, S58, S78, M&A (1set)","",62018-03-19T12:58:28.105,Certified True Copies 
+862,761,1,2018-03-19,AC,Financial Statement @ 2017-12-31 ,"",82018-03-19T14:33:33.457,Financial Statement
+863,762,1,2018-03-19,BkFac,Supplementary Letter Offer ,"",82018-03-19T15:37:02.627,Bank-Facilities
+864,763,1,2018-03-19,CTC,CTC,"",92018-03-19T15:54:15.679,Certified True Copies 
+865,764,1,2018-03-19,Misc,Order Rubber Stamp,"",72018-03-19T16:45:07.993,Non-secretarial assignments
+1142,1009,1,2018-04-09,DCR,Appointment of Proxy,"",52018-04-09T09:58:59.698,Misc Director Resolution-
+866,765,1,2018-03-19,AC,FS@2017-09-30,"",122018-03-19T17:17:35.768,Financial Statement
+867,766,1,2018-03-19,AR/AGM,Annual Return @ 2018-04-01,"",122018-03-19T17:23:19.888,Annual Return
+869,767,1,2018-03-20,Div,Declaration of RM5.4 Million dividend (#001/2018),"",52018-03-20T09:02:41.794,Issuance of Dividends
+870,768,1,2018-03-20,Misc,GST Registration,"",32018-03-20T09:09:25.945,Non-secretarial assignments
+871,769,1,2018-03-20,S58,"Appoint: Seow LL
+Resign: Khoo BT","",22018-03-20T09:16:42.254,F49-ResDir/Change Information
+872,770,1,2018-03-20,S58,"Sec58 - Change of Directors 
+Appt - Seow LL
+Resign-Khoo BT ","",82018-03-20T09:42:31.436,F49-ResDir/Change Information
+873,771,1,2018-03-20,"",Insurance Claim for vehicle No: WD120E,"",52018-03-20T09:50:16.676,""
+874,772,1,2018-03-20,OpBk,"Open Fixed Deposit Account with Hong Leong Bank Berhad, Bandar Puteri Puchong Branch","",42018-03-20T10:00:54.074,Open Bank Account(s)
+1152,1018,1,2018-04-09,S36,Change M&A,"",72018-04-09T16:12:49.950,M&A/Constitution changes
+1160,1023,1,2018-04-09,S78 Non Cash,Increase PUC (Otherwise) - RM250k,"",32018-04-09T17:21:16.478,Increase in Paid Up Capital- Otherwise Than Cash
+1167,1030,1,2018-04-10,CTC,"Certified True Copies@2018-04-10
+","",112018-04-10T11:28:12.617,Certified True Copies 
+1174,1037,1,2018-04-11,AR/AGM,Annual Return @ 2018-04-30,"",122018-04-11T11:37:49.374,Annual Return
+1184,1047,1,2018-04-12,Div,"Declaration of dividends
+- 4 Shareholders ","",82018-04-12T12:48:24.252,Issuance of Dividends
+1189,1052,1,2018-04-12,AC,FS@2017-08-31,"",92018-04-12T17:01:06.840,Financial Statement
+1194,1057,1,2018-04-13,OpBk,Open Bank Account - MAYBANK,"",72018-04-13T09:14:13.895,Open Bank Account(s)
+1199,1061,1,2018-04-13,S58,Resignation of Director - Koh Duan Bo,"",32018-04-13T11:53:18.718,F49-ResDir/Change Information
+875,773,1,2018-03-20,AR/AGM,AR@2018-03-18,"",112018-03-20T10:30:26.252,Annual Return
+876,774,1,2018-03-20,S58,"Sec58- Change of Director
+Appt : Seow LL
+Resign: Khoo BT ","",82018-03-20T10:39:00.886,F49-ResDir/Change Information
+877,775,1,2018-03-20,S58,"Appoint: Seow LL
+Resign: Khoo BT","",122018-03-20T11:07:41.150,F49-ResDir/Change Information
+878,776,1,2018-03-20,S58,"Sec58 - Change of Director 
+Appt: Seow LL
+Resign: Khoo BT ","",82018-03-20T11:26:12.951,F49-ResDir/Change Information
+879,777,1,2018-03-20,CTC,1 set CTC Section 68 dated 6 Aug 2017,"",42018-03-20T12:22:08.001,Certified True Copies 
+880,778,1,2018-03-20,S58,"Sec58- Change of Director 
+Appt : Kow LL
+Resign: Khoo BT ","",82018-03-20T12:47:14.585,F49-ResDir/Change Information
+881,779,1,2018-03-20,S58,"Sec58: Change of Director 
+Appt : Seow VP 
+Resign: KBT & Ahmad Faizal ","",82018-03-20T13:31:11.896,F49-ResDir/Change Information
+882,780,1,2018-03-20,Misc,Arrangement for collection of bid documents (PRICE AGREEMENT OF AMAZON WEB SERVICES (AWS) CLOUD COMPUTING SUBSCRIPTION AND ITS RELATED SERVICES),"",52018-03-20T13:50:12.510,Non-secretarial assignments
+883,781,1,2018-03-20,AR/AGM,AR@2018-03-29,"",32018-03-20T14:03:50.879,Annual Return
+884,781,2,2018-03-20,AC,FS@2017-10-31,"",32018-03-20T14:03:50.879,Financial Statement
+885,781,3,2018-03-20,FYE,"Appt of auditor, tax agent & fixing of FYE","",32018-03-20T14:03:50.879,Fixing Financial Year End-DCR
+886,782,1,2018-03-20,CTC,"F9, F24, F44, F49, S58, M&A (1set)","",62018-03-20T14:06:45.526,Certified True Copies 
+887,783,1,2018-03-20,S58,"Appoint: Seow LL
+Resign: Khoo BT","",122018-03-20T15:25:22.395,F49-ResDir/Change Information
+888,784,1,2018-03-20,AC,FS@2017-09-30,"",112018-03-20T15:34:39.894,Financial Statement
+889,785,1,2018-03-20,AC,Financial Statement @ 2017-04-30,"",72018-03-20T15:49:48.286,Financial Statement
+1058,936,1,2018-04-02,ChBkSig,"Change of Bank Signatories - Ambank, RHB, MBB (x2)","",32018-04-02T13:32:04.483,Changing Banking Signatory
+890,786,1,2018-03-20,S58,"Appoint: Seow LL
+Resign: Khoo BT","",122018-03-20T15:51:28.700,F49-ResDir/Change Information
+891,787,1,2018-03-20,S58,"Appoint: Seow LL
+Resign: Khoo BT","",122018-03-20T16:04:55.930,F49-ResDir/Change Information
+892,788,1,2018-03-20,S58,"Appoint: Seow LL
+Resign: Khoo BT","",122018-03-20T16:13:38.495,F49-ResDir/Change Information
+893,789,1,2018-03-20,S58,"Sec58-Change of Director 
+Appt : Seow LL
+Resign: Khoo BT ","",82018-03-20T16:25:40.119,F49-ResDir/Change Information
+894,790,1,2018-03-20,S58,"Sec58- Change of Director
+Appt - Seow LL
+Resign - Khoo BT ","",82018-03-20T16:30:13.452,F49-ResDir/Change Information
+1073,951,1,2018-04-02,S58,"Change of Secretaries
+- Appt KSS
+- Resign KBT ","",82018-04-02T18:16:32.018,F49-ResDir/Change Information
+1088,966,1,2018-04-03,FYE,Appoint Auditor - N.S. WONG & CO Tax agents - KTS Tax Consultancy Sdn Bhd Fixing financial period/year end 31 Dec,"",42018-04-03T17:53:01.879,Fixing Financial Year End-DCR
+1100,976,1,2018-04-04,PurVeh,Disposal of MV under registration no. WLL9783 & T/WA9153 to MEECON LOGISTIC SDN. BHD.,"",42018-04-04T17:28:55.690,Vehicle Purchase/disposal
+895,791,1,2018-03-20,CTC,"CTC Sec 17, Sec 46(3) & Sec 58","",122018-03-20T16:54:28.463,Certified True Copies 
+1112,982,1,2018-04-05,S27,Incorporation ,"",92018-04-05T13:53:55.970,Name Reservation-
+896,792,1,2018-03-20,CTC,"1 set CTC of Section 17, Section 14, Section 58 & Passport of Ryo Murakami","",42018-03-20T16:57:30.904,Certified True Copies 
+897,793,1,2018-03-20,S58,Change of Directorship,"",52018-03-20T18:20:41.756,F49-ResDir/Change Information
+898,793,2,2018-03-20,S105,Transfer of Shares,"",52018-03-20T18:20:41.756,Transfer of share(s)
+899,793,3,2018-03-20,S58,Pre-Sign Documents for resignation of Director and Transfer of Shares,"",52018-03-20T18:20:41.756,F49-ResDir/Change Information
+900,794,1,2018-03-20,S36,Chg M&A (Full amend),"",72018-03-20T18:49:57.781,M&A/Constitution changes
+901,795,1,2018-03-20,S36,Amendment of M&A,"",32018-03-20T19:28:37.492,M&A/Constitution changes
+902,796,1,2018-03-20,S36,Amendment of M&A,"",32018-03-20T19:41:44.319,M&A/Constitution changes
+903,797,1,2018-03-21,S36,Chg of M&A (Full amend),"",72018-03-21T08:55:06.492,M&A/Constitution changes
+904,798,1,2018-03-21,CTC,"Certified True Copies 
+- Form 49 @ 2015-03-06
+- Section 58 @ 2018-03-01","",82018-03-21T09:20:21.883,Certified True Copies 
+905,799,1,2018-03-21,SecFee,- From [2018-03-01 to 2019-02-28],"",22018-03-21T11:12:13.990,Secretarial Fee + Registered Office
+906,800,1,2018-03-21,S36,"Change of Memorandum and Articles of Association - Memorandum 6, Article 1, 3, 6 Amend to single person company","",42018-03-21T11:23:27.463,M&A/Constitution changes
+907,801,1,2018-03-21,S58,"Change of directors
+Appoint Mohammadjavad Abbasniatehrani
+Resign Mahdi Ali Khan Zadeh","",42018-03-21T11:28:09.263,F49-ResDir/Change Information
+908,802,1,2018-03-21,S105,"Share transfer from :-
+Mahdi Ali Khan Zadeh (342,000 shares)
+Toktam Tork Zadeh (38,000 shares)
+
+to 
+
+Mohammadjavad Abbasniatehrani (380,000 shares)","",42018-03-21T11:42:24.225,Transfer of share(s)
+909,803,1,2018-03-21,AR/AGM,AR@2018-03-06,"",112018-03-21T11:51:17.894,Annual Return
+910,804,1,2018-03-21,AR/AGM,Annual Return @ 2018-04-01,"",122018-03-21T11:54:20.737,Annual Return
+911,805,1,2018-03-21,CTC,"F24, F49, S58, F44, F9, M&A (2sets)","",62018-03-21T12:57:59.484,Certified True Copies 
+912,806,1,2018-03-21,CTC,"F24, F49, S58, F44, F9, M&A (2sets)","",62018-03-21T12:59:42.363,Certified True Copies 
+913,807,1,2018-03-21,CTC,"F24, F49, S58, F44, F9, M&A (2sets)","",62018-03-21T13:00:28.261,Certified True Copies 
+1123,991,1,2018-04-06,CTC,"Certified True Copies (CTC) 
+- 3 sets CTC of Section 58 & S236(2), Section 58, Section 14. ","",82018-04-06T09:35:57.902,Certified True Copies 
+1143,1010,1,2018-04-09,CTC,"CTC F9, F24, F49, M&A & Audited Account 2016","",122018-04-09T10:22:58.497,Certified True Copies 
+1153,1018,2,2018-04-09,S58,Resignation Director - Capt Abu & Mr. Razak.,"",72018-04-09T16:12:49.950,F49-ResDir/Change Information
+1161,1024,1,2018-04-09,S46,"Change of R.O to No. 9 & 11, Jalan TPP 1/19, Taman Perindustrian Puchong, 47100 Puchong Selangor","",42018-04-09T18:08:27.266,Change Registered Office
+1168,1031,1,2018-04-10,AR/AGM,Annual Return@2018-04-06,"",112018-04-10T14:02:35.247,Annual Return
+914,808,1,2018-03-21,S58,"Sec 58-Change of Director 
+Resign: Mahdi Ali Khan 
+Appoint : Abbasniaterahni ","",82018-03-21T13:08:53.564,F49-ResDir/Change Information
+915,809,1,2018-03-21,S105,"Transfer of shares
+-Toktam to Abbas 
+- Mahdi to Abbas 
+","",82018-03-21T13:13:09.145,Transfer of share(s)
+916,810,1,2018-03-21,S36,"Alteration Articles of Association
+- Clause 1, 3(a), 3(b) & 6 ","",82018-03-21T13:17:01.144,M&A/Constitution changes
+917,811,1,2018-03-21,SecFee,From [2018-03-17 to 2019-03-16],"",22018-03-21T13:29:59.036,Secretarial Fee + Registered Office
+918,812,1,2018-03-21,SecFee,- From [2018-03-10 to 2019-03-09],"",22018-03-21T13:48:32.226,Secretarial Fee + Registered Office
+919,813,1,2018-03-21,SecFee,- From [2018-03-15 to 2019-07-14],"",22018-03-21T13:53:17.635,Secretarial Fee + Registered Office
+920,814,1,2018-03-21,SecFee,- From [2018-03-15 to 2019-03-14],"",22018-03-21T14:01:00.812,Secretarial Fee + Registered Office
+921,815,1,2018-03-21,SecFee,- From [2018-03-07 to 2019-03-16],"",22018-03-21T14:08:01.066,Secretarial Fee + Registered Office
+922,816,1,2018-03-21,Div,Declaration of Dividend 2/2017 - RM100k,"",32018-03-21T16:39:17.038,Issuance of Dividends
+923,817,1,2018-03-21,Object,Change of Memorandum & Article,"",52018-03-21T17:08:59.052,Change of Object Clause(s)/Article(s)
+924,818,1,2018-03-21,BkOp,Opening Bank Account with CIMB Bank,"",52018-03-21T17:20:39.898,Bank-Open Account[s]
+1059,937,1,2018-04-02,S58,"Change of Secretaries 
+- Appoint KSS
+- Resign KBT ","",82018-04-02T14:19:40.089,F49-ResDir/Change Information
+925,819,1,2018-03-21,CIBk,Clbk - MBB,"",32018-03-21T17:49:51.894,Bank-Close Account(s)
+926,819,2,2018-03-21,S201,Appt of Director - Jamil,"",32018-03-21T17:49:51.894,Appointment of Directors
+927,819,3,2018-03-21,S58,Resignation of Director - Farida,"",32018-03-21T17:49:51.894,F49-ResDir/Change Information
+928,819,4,2018-03-21,S105,"Transfer of Shares (255,000 shares)","",32018-03-21T17:49:51.894,Transfer of share(s)
+929,819,5,2018-03-21,OpBk,Opbk - Alliance Bank & Internet Banking,"",32018-03-21T17:49:51.894,Open Bank Account(s)
+930,820,1,2018-03-21,IntBanking,Access to Maybank2U Biz Internet Banking Services,"",42018-03-21T18:32:51.892,Internet Banking
+931,821,1,2018-03-22,SecFee,- From [2018-02-21 to 2019-02-20],"",22018-03-22T09:13:03.027,Secretarial Fee + Registered Office
+933,823,1,2018-03-22,IntBanking,Corporate internet Banking Facility,"",72018-03-22T10:22:51.756,Internet Banking
+934,824,1,2018-03-22,OpBk,DCR - Opening Bank Account (Bank Islam),"",72018-03-22T11:15:17.056,Open Bank Account(s)
+935,825,1,2018-03-22,AR/AGM,AR@2018-03-02,"",112018-03-22T11:34:10.867,Annual Return
+936,826,1,2018-03-22,S105,Transfer of shares,"",92018-03-22T14:08:23.533,Transfer of share(s)
+937,827,1,2018-03-22,S36,Change of Memorandum & Articles,"",52018-03-22T14:28:14.435,M&A/Constitution changes
+938,828,1,2018-03-22,S36,Change of Memorandum & Articles,"",52018-03-22T14:35:51.750,M&A/Constitution changes
+939,829,1,2018-03-22,BkOp,Open Bank Account - CIMB (Klang Branch) ,"",82018-03-22T15:00:14.220,Bank-Open Account[s]
+940,830,1,2018-03-22,Object,Change of Memorandum & Articles,"",52018-03-22T15:50:17.987,Change of Object Clause(s)/Article(s)
+941,831,1,2018-03-22,AR/AGM,AR@2018-03-10,"",112018-03-22T15:56:03.770,Annual Return
+942,832,1,2018-03-22,S58,"Appoint: Seow LL
+Resign: Khoo BT","",122018-03-22T17:38:55.052,F49-ResDir/Change Information
+943,833,1,2018-03-22,Object,Change of Memorandum & Articles,"",52018-03-22T17:55:26.053,Change of Object Clause(s)/Article(s)
+944,834,1,2018-03-22,S78,"Increase 260,000. Total PUC 263,000","",72018-03-22T18:19:19.763,Increase in Paid Up Capital-Cash
+945,834,2,2018-03-22,S58,Appoint Director : Nikki,"",72018-03-22T18:19:19.763,F49-ResDir/Change Information
+1074,952,1,2018-04-02,S58,"Change of Secretaries  
+- Appt KSS
+- Resign KBT ","",82018-04-02T18:28:20.775,F49-ResDir/Change Information
+946,835,1,2018-03-22,S36,Change of Articles and Memorandum,"",52018-03-22T18:23:42.416,M&A/Constitution changes
+948,837,1,2018-03-23,AR/AGM,AR@2018-03-26,"",112018-03-23T09:58:35.056,Annual Return
+949,838,1,2018-03-23,AR/AGM,AR@2018-03-28,"",112018-03-23T10:46:24.499,Annual Return
+950,839,1,2018-03-23,AR/AGM,AR@2018-03-15,"",112018-03-23T11:48:15.413,Annual Return
+951,840,1,2018-03-23,AR/AGM,Annual Return @ 2018-04-26,"",122018-03-23T11:49:38.849,Annual Return
+952,841,1,2018-03-23,CPO,"CPO - Advanced Seating Solutions SB, Kraken Interactive SB & QIC Malaysia SB","",22018-03-23T13:42:43.152,Purchase of CPO/Idaman
+953,842,1,2018-03-23,AR/AGM,AR@2018-03-22,"",112018-03-23T14:08:12.620,Annual Return
+954,843,1,2018-03-23,AC,SSM- FS@2017-12-31,"",52018-03-23T14:12:49.568,Financial Statement
+955,844,1,2018-03-23,AR/AGM,AR@2018-04-10,"",92018-03-23T14:19:21.110,Annual Return
+956,845,1,2018-03-23,SecCharge,Secretary Charge out rate,"",52018-03-23T14:32:19.906,Secretary Charge out rate
+957,846,1,2018-03-23,S78 Non Cash,Inc PUC (Otherwise) - From 10k to 100k,"",72018-03-23T14:52:54.684,Increase in Paid Up Capital- Otherwise Than Cash
+958,846,2,2018-03-23,S58,Resignation Director - Lai Kwai Loong,"",72018-03-23T14:52:54.684,F49-ResDir/Change Information
+959,847,1,2018-03-23,DCR,"Over-The-Counter Bank Guarantee & Fixed Deposit placement with RHB Bank for Telekom Malaysia Berhad (RM2,376,505.16)","",42018-03-23T15:09:32.858,Misc Director Resolution-
+960,848,1,2018-03-23,AR/AGM,Annual Return @ 2018-04-15,"",122018-03-23T16:16:41.453,Annual Return
+1089,967,1,2018-04-03,BkFac,Credit Facility - HLBB ,"",32018-04-03T18:30:32.531,Bank-Facilities
+1101,977,1,2018-04-05,S36,Change of object clause to transportation with transportation agent,"",42018-04-05T08:41:52.778,M&A/Constitution changes
+1113,983,1,2018-04-05,S15,Incorporation,"",92018-04-05T14:25:47.007,Incorporation
+1124,992,1,2018-04-06,Div,Declaration of Preference Share Dividend (2/2018),"",32018-04-06T10:03:27.196,Issuance of Dividends
+1144,1011,1,2018-04-09,AR/AGM,AR@2018-04-04,"",112018-04-09T10:31:52.792,Annual Return
+1154,1018,3,2018-04-09,ShCert,"L&R ShCert - Capt Abu (#004, #008 to #009)","",72018-04-09T16:12:49.950,Lost Share certificates/amendments
+1175,1038,1,2018-04-11,S15,New Incorp: PLANT DESIGN ENGINEERS SDN. BHD.,"",72018-04-11T12:18:18.036,Incorporation
+961,849,1,2018-03-23,CTC,1 set CTC Section 105 dated 01.02.2016 & Section 68 dated 29.11.2017,"",42018-03-23T16:41:21.139,Certified True Copies 
+962,850,1,2018-03-23,AR/AGM,AR@2018-04-15,"",122018-03-23T16:47:51.537,Annual Return
+963,851,1,2018-03-26,PD 2/2017,Chg Business Address : Gasing Heights Maxwell Tower,"",72018-03-26T08:52:34.082,Biz/Branch Add/Nature of biz changes
+964,852,1,2018-03-26,AR/AGM,AR@2018-03-31,"",92018-03-26T09:42:17.968,Annual Return
+965,846,3,2018-03-26,Div,"Declare Div (1/2017) - RM200,000.00","",72018-03-26T09:53:11.747,Issuance of Dividends
+966,853,1,2018-03-26,S201,Appointment of Directors - Tan Kok Heng & Lee Keong Chai,"",72018-03-26T10:00:47.269,Appointment of Directors
+967,854,1,2018-03-26,S78 Non Cash,"Increase Paid Up Capital of RM999,998.00 by otherwise than cash","",52018-03-26T10:21:54.320,Increase in Paid Up Capital- Otherwise Than Cash
+968,855,1,2018-03-26,OpBk,Opbk - RHB (MYR & multi currency),"",32018-03-26T11:00:42.622,Open Bank Account(s)
+969,856,1,2018-03-26,S15,Incorporation ,"",82018-03-26T11:59:36.369,Incorporation
+1060,938,1,2018-04-02,S58,"Change of Secretaries 
+-Appoint KSS 
+- Resign KBT ","",82018-04-02T14:40:27.290,F49-ResDir/Change Information
+983,870,1,2018-03-27,AC,FS@2017-10-31,"",112018-03-27T11:15:19.854,Financial Statement
+971,858,1,2018-03-26,AR/AGM,AR@2018-03-29,"",92018-03-26T12:41:54.820,Annual Return
+972,859,1,2018-03-26,AR/AGM,Annual Return @ 2018-04-03 ,"",82018-03-26T13:10:12.931,Annual Return
+973,860,1,2018-03-26,AR/AGM,Annual Return @ 2018-04-05,"",122018-03-26T14:15:50.355,Annual Return
+974,861,1,2018-03-26,CTC,"F24, S58, F49, M&A (2sets)","",62018-03-26T15:10:21.262,Certified True Copies 
+1075,953,1,2018-04-02,S58,"Change of Secretaries 
+-Appt KSS
+-Resign KBT ","",82018-04-02T18:50:47.829,F49-ResDir/Change Information
+975,862,1,2018-03-26,DCR,ACCEPTANCE FOR SUBCONTRACT WORKS WITH IJM CONSTRUCTION SDN. BHD.,"",42018-03-26T18:40:32.437,Misc Director Resolution-
+976,863,1,2018-03-27,AR/AGM,Annual Return @ 2018-04-10,"",122018-03-27T08:49:35.053,Annual Return
+977,864,1,2018-03-27,AC,FS@2017-10-31,"",112018-03-27T09:10:21.388,Financial Statement
+978,865,1,2018-03-27,AR/AGM,Annual Return @ 2018-04-01,"",82018-03-27T09:30:57.402,Annual Return
+979,866,1,2018-03-27,S&P,Purchase of property with Primaparamount Sdn. Bhd.,"",42018-03-27T09:42:11.321,Sale & Purchase Agreement 
+980,867,1,2018-03-27,AR/AGM,Annual Return @ 2018-04-12,"",122018-03-27T10:52:55.756,Annual Return
+981,868,1,2018-03-27,RF,- From [2018-01-01 to 2018-03-31],"",22018-03-27T11:00:00.067,Rental
+982,869,1,2018-03-27,RF,- From [2018-01-01 to 2018-03-31],"",22018-03-27T11:13:45.113,Rental
+1102,978,1,2018-04-05,S201,Appointment of Director - Zulhaimi,"",72018-04-05T09:08:52.020,Appointment of Directors
+1103,978,2,2018-04-05,S58,Resignation of Director - Hafiza,"",72018-04-05T09:08:52.020,F49-ResDir/Change Information
+984,871,1,2018-03-27,RF,- From [2018-01-01 to 2018-03-31],"",22018-03-27T11:17:09.452,Rental
+985,872,1,2018-03-27,AC,FS@2017-10-31,"",112018-03-27T11:22:33.978,Financial Statement
+986,873,1,2018-03-27,AR/AGM,Annual Return @ 2018-04-29,"",82018-03-27T11:23:15.479,Annual Return
+987,874,1,2018-03-27,AR/AGM,Annual Return @ 2018-04-29,"",82018-03-27T11:38:32.364,Annual Return
+988,875,1,2018-03-27,PurVeh,Disposal of Kia Pregio (M) (WLW 7398),"",42018-03-27T11:36:49.366,Vehicle Purchase/disposal
+989,876,1,2018-03-27,AR/AGM,"AR@2018-04-01
+","",112018-03-27T14:08:40.179,Annual Return
+990,877,1,2018-03-27,AR/AGM,"AR@2018-04-01
+","",112018-03-27T14:16:03.843,Annual Return
+991,878,1,2018-03-27,S28,Change of Company name to MKS Spices Sdn. Bhd.,"",52018-03-27T15:02:09.056,Change of Company Name
+992,878,2,2018-03-27,S58,Appointment and Resignation of Director,"",52018-03-27T15:02:09.056,F49-ResDir/Change Information
+993,878,3,2018-03-27,S105,Transfer of Shares,"",52018-03-27T15:02:09.056,Transfer of share(s)
+994,878,4,2018-03-27,Object,Change of Memorandum & Articles,"",52018-03-27T15:02:09.056,Change of Object Clause(s)/Article(s)
+1125,993,1,2018-04-06,AR/AGM,AR@2018-04-03,"",92018-04-06T10:27:03.641,Annual Return
+1134,1001,1,2018-04-06,S105,"Transfer of Shares
+- Jumiati to See TWY (100%) ","",82018-04-06T17:16:37.446,Transfer of share(s)
+1145,1012,1,2018-04-09,PurPro,Purchase of Property (3 Storey Semi-Detached Factory),"",52018-04-09T12:51:49.136,Property Purchase-DCR/MCR
+1155,1018,4,2018-04-09,S105,Share Transfer - Capt Abu to LSY (300) / Razak to LSY (300),"",72018-04-09T16:12:49.950,Transfer of share(s)
+1162,1025,1,2018-04-10,AR/AGM,Annual Return @ 2018-04-03,"",122018-04-10T08:38:12.364,Annual Return
+1169,1032,1,2018-04-10,CTC,"Certified True Copy: Audited Account for FYE 2010,2011, 2012, 2013, 2014, 2015 & 2016 (x1)","",52018-04-10T15:21:42.396,Certified True Copies 
+1176,1039,1,2018-04-11,S201,"","",92018-04-11T14:17:49.717,Appointment of Directors
+1180,1043,1,2018-04-11,CTC,CTC,"",122018-04-11T17:51:59.048,Certified True Copies 
+1185,1048,1,2018-04-12,CTC,"CTC M&A, F24, F44 & F49","",122018-04-12T14:11:19.524,Certified True Copies 
+1190,1053,1,2018-04-12,PD 2/2017,Change of Business Address,"",52018-04-12T17:11:44.622,Biz/Branch Add/Nature of biz changes
+1195,1058,1,2018-04-13,PurVeh,PurVeh - Mitsubishi,"",72018-04-13T10:49:18.655,Vehicle Purchase/disposal
+1200,1062,1,2018-04-13,BkFac,Ad-hoc FX Agreement ,"",82018-04-13T12:48:26.390,Bank-Facilities
+1204,1066,1,2018-04-13,S36,"-Change of Memorandum & Aritcle of Association
+-Financial Statement@2017-12-31","",112018-04-13T16:27:52.544,M&A/Constitution changes
+1208,1070,1,2018-04-16,PurVeh,Transfer of Name to AO - Yamaha Nmax (BHW63),"",32018-04-16T09:25:14.966,Vehicle Purchase/disposal
+1212,1074,1,2018-04-16,AR/AGM,Annual Return @ 2018-04-17,"",122018-04-16T11:46:16.236,Annual Return
+1216,1078,1,2018-04-16,CTC,"1 sets CTC Form 49, Section 58, Form 24, Form 44, Form 9, Form 13 & Section 68","",42018-04-16T16:57:33.511,Certified True Copies 
+1223,1085,1,2018-04-17,CIBk,Closing Bank Account - CIMB,"",32018-04-17T13:52:31.646,Bank-Close Account(s)
+1299,1150,1,2018-04-26,S15,"","",32018-04-26T09:57:11.113,Incorporation
+995,879,1,2018-03-27,CTC,"3 sets CTC of Section 17, Section 14, Section 58, Section 58 & 236(2), Section 78, Section 51(ROM) 2 sets CTC Passport of Kazuya Takeuchi & Yuji Hayashi","",42018-03-27T15:25:20.149,Certified True Copies 
+996,880,1,2018-03-27,AR/AGM,Annual Return @ 2018-03-27,"",72018-03-27T16:43:06.055,Annual Return
+997,880,2,2018-03-27,AC,Financial Statement @ 2012-12-31,"",72018-03-27T16:43:06.055,Financial Statement
+1061,939,1,2018-04-02,AR/AGM,AR@2018-04-01,"",92018-04-02T14:47:32.227,Annual Return
+998,881,1,2018-03-27,ShCert,"Lost Share certificate no. 001 Genji Hashimoto (75,000 shares)","",42018-03-27T17:28:34.836,Lost Share certificates/amendments
+999,882,1,2018-03-27,S28,"",Change of Company name to Firdaus & Associates Property Management Services Sdn. Bhd.,52018-03-27T18:03:02.638,Change of Company Name
+1000,883,1,2018-03-28,CTC,CTC@2018-03-28,"",112018-03-28T09:03:46.441,Certified True Copies 
+1001,884,1,2018-03-28,S36,"Abolish M&A, Adopt New Constitution","",72018-03-28T13:16:19.643,M&A/Constitution changes
+1002,884,2,2018-03-28,S201,Appt New Dir - Satirah,"",72018-03-28T13:16:19.643,Appointment of Directors
+1003,885,1,2018-03-28,AC,Financial Statement @ 2017-07-31,"",122018-03-28T13:59:20.594,Financial Statement
+1004,886,1,2018-03-28,S105,Transfer of 400 Shares,"",52018-03-28T16:10:53.744,Transfer of share(s)
+1005,887,1,2018-03-28,Letters,"Prepare Demand Letter (Total outstanding RM3,041.20) ","",82018-03-28T16:37:51.155,Misc Letters
+1006,888,1,2018-03-28,T.O.,"Take Over Secretarial File(s)
+- DCR, S58, S46 & Service Letter
+- Update MyCOID
+- Review & set up Sec File","",42018-03-28T17:02:54.646,Take Over Secretarial File(s)
+1007,889,1,2018-03-28,SecFee,"Secretarial Fee + Registered Office
+- 2018-03-27 to 2019-03-26","",42018-03-28T17:24:08.666,Secretarial Fee + Registered Office
+1008,890,1,2018-03-28,CPO,Purchase of Directors Particular,"",32018-03-28T17:29:34.906,Purchase of CPO/Idaman
+1009,891,1,2018-03-28,CPO,Purchase of Directors Particulars,"",32018-03-28T17:35:15.110,Purchase of CPO/Idaman
+1010,892,1,2018-03-29,PurVeh,Purchase of Motor Vehicle (Mercedes-Benz) ,"",32018-03-29T09:33:53.456,Vehicle Purchase/disposal
+1011,893,1,2018-03-29,DCR,Application for bank guarantee with Ambank (M) Berhad for Telekom Malaysia Berhad,"",42018-03-29T10:15:12.953,Misc Director Resolution-
+1012,894,1,2018-03-29,ChAud,Change of Auditor,"",92018-03-29T10:25:22.757,Change of Auditor
+1013,895,1,2018-03-29,S36,Change of Memorandum & Aritcle of Association,"",112018-03-29T10:39:33.079,M&A/Constitution changes
+1014,896,1,2018-03-29,ChAud,Change of Auditor,"",92018-03-29T11:49:01.042,Change of Auditor
+1015,897,1,2018-03-29,ChAud,Change of Auditor,"",92018-03-29T11:58:06.364,Change of Auditor
+1016,898,1,2018-03-29,ChAud,Change of Auditor,"",92018-03-29T12:02:29.190,Change of Auditor
+1017,899,1,2018-03-29,ChAud,Change of Auditor,"",92018-03-29T12:28:11.984,Change of Auditor
+1018,900,1,2018-03-29,ChAud,Change of Auditor,"",92018-03-29T12:47:20.298,Change of Auditor
+1019,901,1,2018-03-29,ChAud,Change of Auditor,"",92018-03-29T14:02:08.864,Change of Auditor
+1020,902,1,2018-03-29,ChAud,Change of Auditor ,"",92018-03-29T14:07:03.287,Change of Auditor
+1021,903,1,2018-03-29,DeReg,Deregistration,"",82018-03-29T14:36:13.888,De-registration
+1022,904,1,2018-03-29,CTC,"F24, F49, S58, F9 (5sets)","",62018-03-29T17:30:19.303,Certified True Copies 
+1023,905,1,2018-03-29,PD 2/2017,PD 2/2017 - 5 Solaris Dutamas (Publika),"",72018-03-29T17:38:54.644,Biz/Branch Add/Nature of biz changes
+1024,906,1,2018-03-29,PurVeh,Disposal of Kato Rough Terrain Crane (BMJ 5605),"",42018-03-29T17:38:00.303,Vehicle Purchase/disposal
+1076,954,1,2018-04-02,S58,"Change of Secretaries 
+- Appt KSS
+- Resign KBT ","",82018-04-02T19:11:10.228,F49-ResDir/Change Information
+1027,909,1,2018-03-30,CTC,"CTC Form 9, 24, 44,49 & M&A","",122018-03-30T09:11:32.213,Certified True Copies 
+1026,908,1,2018-03-29,MinBk,New Minutes Book (x2),"",42018-03-29T18:03:07.058,New Minutes Book
+1028,910,1,2018-03-30,AC,"FS@2017-10-31
+","",112018-03-30T09:18:04.111,Financial Statement
+1029,911,1,2018-03-30,CTC,"2 sets CTC of Section 58, Form 49, Form 24, Form 44, M&A, Passport & IC of directors, AFS fye 30.06.2015, 30.06.2016 & 30.06.2017","",42018-03-30T08:40:34.015,Certified True Copies 
+1030,912,1,2018-03-30,DCR,DCR - Opening Acc with Saxo Capital Market Pte Ltd,"",32018-03-30T10:01:46.116,Misc Director Resolution-
+1031,913,1,2018-03-30,AC,Financial Statement @ 2017-09-30,"",82018-03-30T10:32:15.065,Financial Statement
+1032,914,1,2018-03-30,AC,Financial Statement@2017-10-31,"",112018-03-30T10:39:16.581,Financial Statement
+1033,915,1,2018-03-30,ConfirmL,To confirm on Directors,"",72018-03-30T10:44:21.817,Confirmation Letter
+1034,916,1,2018-03-30,ChAud,"From Sekhar & Tan to PS Yap 
+From Sekhar & Tan Tax Services to ASI Taxation
+","",72018-03-30T11:46:01.353,Change of Auditor
+1035,917,1,2018-03-30,AC,Financial Statement@2017-10-31,"",112018-03-30T11:58:12.202,Financial Statement
+1036,918,1,2018-03-30,AC,Financial Statement @ 2017-12-31,"",42018-03-30T11:21:36.853,Financial Statement
+1104,978,3,2018-04-05,ChBkSig,ChBkSig - CIMB,"",72018-04-05T09:08:52.020,Changing Banking Signatory
+1114,984,1,2018-04-05,S27,Incorporation documents,"",42018-04-05T14:28:24.817,Name Reservation-
+1126,994,1,2018-04-06,CTC,"Certified True Copies (CTC)
+- PD 2/2017 dated 2017-12-31 ","",82018-04-06T11:37:21.978,Certified True Copies 
+1135,1002,1,2018-04-06,S15,By Mrs. Lee,"",32018-04-06T18:18:06.437,Incorporation
+1146,1012,2,2018-04-09,PurVeh,	Purchase of MV (Volkswagen Touareg),"",52018-04-09T12:51:49.136,Vehicle Purchase/disposal
+1156,1019,1,2018-04-09,CTC,"CTC M&A, F9, F24, F44, F49, F32A & Annual Return","",122018-04-09T16:31:38.064,Certified True Copies 
+1163,1026,1,2018-04-10,CTC,"Certified True Copies 
+- S58(..x1), S78(..x1), F49(..x1), F44(..x1) & S51(..x1)","",82018-04-10T09:30:56.755,Certified True Copies 
+1170,1033,1,2018-04-10,AR/AGM,Annual Return@2018-04-28,"",112018-04-10T15:29:39.134,Annual Return
+1037,919,1,2018-03-30,DeReg,"De-registration
+- Checklist, Cover Letter, Declaration by Applicant (S550), DCR, MWR and Waiver Letter
+- Close Bank Account
+- Submission and follow up","",42018-03-30T12:20:54.796,De-registration
+1038,920,1,2018-03-30,DeReg,"De-registration
+- Checklist, Cover Letter, Declaration by Applicant (S550), DCR, MWR and Waiver Letter
+- Close Bank Account
+- Submission and follow up","",42018-03-30T12:23:54.880,De-registration
+1062,940,1,2018-04-02,AC,"FS@2017-12-31
+","",112018-04-02T14:51:33.684,Financial Statement
+1039,921,1,2018-03-30,AC,"Financial Statement@2017-10-31
+","",112018-03-30T12:28:48.196,Financial Statement
+1077,955,1,2018-04-02,S58,"Change of Secretaries 
+- Appt KSS
+- Resign KBT ","",82018-04-02T19:15:09.440,F49-ResDir/Change Information
+1090,968,1,2018-04-03,OpBk,Opbk - CIMB & MBB,"",32018-04-03T19:22:01.831,Open Bank Account(s)
+1105,978,4,2018-04-05,S105,Transfer of share - Hafiza to Zulhaimi (100k),"",72018-04-05T09:08:52.020,Transfer of share(s)
+1115,985,1,2018-04-05,SecFee,Secretarial Fee + Registered Office -from 6 April 2018 to 6 April 2019,"",42018-04-05T14:37:23.719,Secretarial Fee + Registered Office
+1127,995,1,2018-04-06,CTC,"Certified True Copies (CTC) 
+- 3 sets CTC of Annual Return dated 2017-10-12",Certified True Copies (CTC) ,82018-04-06T11:55:14.153,Certified True Copies 
+1040,922,1,2018-03-30,AR/AGM,Annual Return @ 2018-04-10,"",82018-03-30T14:03:52.078,Annual Return
+1041,923,1,2018-03-30,AC,Financial Statement@2017-12-31,"",112018-03-30T15:41:14.487,Financial Statement
+1136,1003,1,2018-04-07,S105,"Transfer of 100,000 shares","",52018-04-07T13:57:40.154,Transfer of share(s)
+1042,924,1,2018-03-30,S36,Amendments of M&A,"",32018-03-30T15:48:52.218,M&A/Constitution changes
+1043,924,2,2018-03-30,S58,Resignation of Directors (Siew & Yap),"",32018-03-30T15:48:52.218,F49-ResDir/Change Information
+1044,924,3,2018-03-30,S105,"Transfer of Shares (23,333 shares)","",32018-03-30T15:48:52.218,Transfer of share(s)
+1045,924,4,2018-03-30,AC,FS@2017-12-31,"",32018-03-30T15:48:52.218,Financial Statement
+1046,924,5,2018-03-30,ShCert,"#029 lost -> replace #030 (Yap Chow Ping - 11,666)","",32018-03-30T15:48:52.218,Lost Share certificates/amendments
+1147,1013,1,2018-04-09,DCR,Credit Card Application - AmBank (M) Berhad,"",72018-04-09T12:57:51.727,Misc Director Resolution-
+1157,1020,1,2018-04-09,PurVeh,Disposal of MV - Mazda BT50 2.2 (A) BMU5368,"",42018-04-09T16:46:15.929,Vehicle Purchase/disposal
+1171,1034,1,2018-04-10,CTC,"2 sets CTC AFS @ 2016-12-31
+CPO for winding up search
+MYEG for bankcruptcy search of 3 directors","",42018-04-10T15:55:36.542,Certified True Copies 
+1177,1040,1,2018-04-11,PD 2/2017,Change of Business Address,"",52018-04-11T17:27:23.088,Biz/Branch Add/Nature of biz changes
+1181,1044,1,2018-04-12,OpBk,Opening of Fixed Deposit Account - RHB ,"",32018-04-12T09:05:11.365,Open Bank Account(s)
+1186,1049,1,2018-04-12,AR/AGM,AR@2018-04-05,"",92018-04-12T15:46:42.755,Annual Return
+1209,1071,1,2018-04-16,AC,FS@2017-10-31,"",92018-04-16T10:06:06.210,Financial Statement
+1191,1054,1,2018-04-12,S36,"-Change of Memorandum & Aritcle of Association
+-Financial Statement@2017-12-31
+","",112018-04-12T17:20:17.063,M&A/Constitution changes
+1196,1058,2,2018-04-13,CTC,"CTC - M&A, F9, S58, F49, F24, F44","",72018-04-13T10:49:58.407,Certified True Copies 
+1201,1063,1,2018-04-13,AC,"FS@2017-10-31
+","",92018-04-13T15:43:56.802,Financial Statement
+1205,1067,1,2018-04-13,S78,"Increase PUC - Additional 17,000 shares (From 3k - 20k)","",72018-04-13T16:56:34.098,Increase in Paid Up Capital-Cash
+1213,1075,1,2018-04-16,AR/AGM,AR@2018-04-27,"",92018-04-16T11:50:44.272,Annual Return
+1217,1079,1,2018-04-16,AR/AGM,Annual Return @ 2018-04-18,"",122018-04-16T17:11:29.998,Annual Return
+1220,1082,1,2018-04-16,FYE,"Appt Auditors, Appt Tax Agent & Fixing FYE ","",82018-04-16T17:42:37.183,Fixing Financial Year End-DCR
+1224,1086,1,2018-04-17,BkFac,"Access to MayBank2U Internet Banking Services
+Internet Banking with Ambank ","",82018-04-17T14:34:47.080,Bank-Facilities
+1227,1088,2,2018-04-17,ConfirmL,"Confirmation Letter on Directorship, Shareholding & Section 51","",52018-04-17T14:53:57.533,Confirmation Letter
+1230,1091,1,2018-04-17,AR/AGM,Annual Return @ 2018-04-19,"",122018-04-17T17:23:54.238,Annual Return
+1233,1094,1,2018-04-18,CTC,CTC,"",92018-04-18T09:19:31.232,Certified True Copies 
+1236,1097,1,2018-04-18,AR/AGM,Annual Return @ 2018-04-18,"",122018-04-18T11:33:45.661,Annual Return
+1239,1100,1,2018-04-18,S105,"Splitting Share Cert No. #010 to #012 & #013
+Transfer of Shares - Mr Chong (#012) to Mdm Lai (440,000)","",72018-04-18T16:18:45.801,Transfer of share(s)
+1252,1111,1,2018-04-19,IntBanking,Internet Banking,"",92018-04-19T17:35:32.733,Internet Banking
+1242,1102,1,2018-04-19,PurVeh,"Hire Purchase of Toyota Hilux & BMW X5 with PBB Puchong & Section 14, PJ","",42018-04-19T10:10:37.185,Vehicle Purchase/disposal
+1246,1105,1,2018-04-19,AR/AGM,"AR@2018-04-27
+","",112018-04-19T13:46:59.138,Annual Return
+1164,1027,1,2018-04-10,PfrShr,"Variation on class IRNCPS to RNCPS
+Redeem Preference Share","",42018-04-10T09:37:27.455,Preference Share
+1248,1107,1,2018-04-19,AR/AGM,"AR@2018-04-27
+","",112018-04-19T14:57:52.738,Annual Return
+1250,1109,1,2018-04-19,ChAud,Change of Auditor,"",92018-04-19T15:41:17.520,Change of Auditor
+1254,1113,1,2018-04-20,CTC,"F9, F13, F24, F44, F49, S58, M&A (1set)","",62018-04-20T14:01:02.962,Certified True Copies 
+1256,1115,1,2018-04-20,S15,Incorporation of Company,"",52018-04-20T16:45:46.479,Incorporation
+1259,1117,1,2018-04-23,AR/AGM,Annual Return @2018-04-15,"",82018-04-23T09:18:42.003,Annual Return
+1261,1119,1,2018-04-23,AR/AGM,"AR@2018-04-29
+","",112018-04-23T11:59:16.717,Annual Return
+1263,1121,1,2018-04-23,AR/AGM,"AR@2018-04-12
+","",112018-04-23T13:47:01,Annual Return
+1297,1148,2,2018-04-25,CTC,"Certified True Copies @ 2018-04-24 
+- M&A, S58 & F49
+","",72018-04-25T18:09:16.556,Certified True Copies 
+1274,1130,1,2018-04-24,S36,"Change of Memorandum & Aritcle of Association
+","",112018-04-24T11:45:11.914,M&A/Constitution changes
+1275,1131,1,2018-04-24,CTC,"Certified True Copy
+-KWSP Statement and Acc","",52018-04-24T12:27:43.852,Certified True Copies 
+1276,1132,1,2018-04-24,AC,Financial Statement @ 2017-09-30,"",82018-04-24T14:36:16.474,Financial Statement
+1277,1133,1,2018-04-24,SecFee,- From [2018-04-26 to 2019-04-25],"",22018-04-24T16:12:35.103,Secretarial Fee + Registered Office
+1278,1134,1,2018-04-24,AC,FS@2017-12-31,"",92018-04-24T16:14:07.196,Financial Statement
+1279,1135,1,2018-04-24,CPO,Purchase of CPO for Design Review Sdn. Bhd.,"",52018-04-24T16:18:09.968,Purchase of CPO/Idaman
+1280,1136,1,2018-04-24,AR/AGM,Annual Return@2018-04-07,"",112018-04-24T16:29:01.604,Annual Return
+1281,1137,1,2018-04-24,CTC,"F24, F49, S58, F44, F9, M&A, Director IC, Audited Accounts (2014,2015, 2016) (1set)","",62018-04-24T16:48:50.212,Certified True Copies 
+1282,1138,1,2018-04-24,AR/AGM,"AR@2018-10-22
+","",112018-04-24T17:24:57.287,Annual Return
+1283,1139,1,2018-04-25,AC,FS@2017-12-31,"",92018-04-25T08:37:53.731,Financial Statement
+1284,1140,1,2018-04-25,AC,"Financial Statement@31-10-2017
+","",112018-04-25T09:26:35.948,Financial Statement
+1285,1141,1,2018-04-25,S36,Change of Memorandum & Article of Association,"",112018-04-25T11:54:26.149,M&A/Constitution changes
+1286,1142,1,2018-04-25,CPO,Purchase of CPO,"",32018-04-25T14:30:14.084,Purchase of CPO/Idaman
+1287,1143,1,2018-04-25,S58,Resignation of Alt. Director,"",72018-04-25T16:54:24.522,F49-ResDir/Change Information
+1288,1143,2,2018-04-25,ConfirmL,Confirmation Letter (Requested by Auditor) ,"",72018-04-25T16:54:24.522,Confirmation Letter
+1289,1144,1,2018-04-25,S78,Increase in Paid Up Capital,"",92018-04-25T16:57:24.506,Increase in Paid Up Capital-Cash
+1290,1145,1,2018-04-25,OpBk,Opbk Acc & Subs InBk - CIMB,"",72018-04-25T18:05:32.744,Open Bank Account(s)
+1291,1145,2,2018-04-25,CTC,"Certified True Copies @ 2018-04-24 
+- M&A, S58 & F49","",72018-04-25T18:05:32.744,Certified True Copies 
+1292,1146,1,2018-04-25,OpBk,Opbk Acc & Subs InBk – CIMB,"",72018-04-25T18:07:22.998,Open Bank Account(s)
+1293,1146,2,2018-04-25,CTC,"Certified True Copies @ 2018-04-24 
+- M&A, S58 & F49
+","",72018-04-25T18:07:22.998,Certified True Copies 
+1294,1147,1,2018-04-25,OpBk,Opbk Acc & Subs InBk – CIMB,"",72018-04-25T18:08:19.966,Open Bank Account(s)
+1295,1147,2,2018-04-25,CTC,"Certified True Copies @ 2018-04-24 
+- M&A, S58 & F49
+","",72018-04-25T18:08:19.966,Certified True Copies 
+1296,1148,1,2018-04-25,OpBk,Opbk Acc & Subs InBk – CIMB,"",72018-04-25T18:09:16.556,Open Bank Account(s)
+1298,1149,1,2018-04-26,AR/AGM,Annual Declaration 2017-01-31 & 2018-01-31,"",42018-04-26T09:46:03.407,Annual Return
+1300,1151,1,2018-04-26,CTC,"F24, F9, F49, S58, Audited Accounts 2015, 2016 (1set)","",62018-04-26T13:27:00.292,Certified True Copies 
+1301,1152,1,2018-04-26,S15,New Incorporation: IGENERATION INTERNATIONAL CULTURAL ORGANIZATION SDN. BHD.,"",72018-04-26T15:56:41.126,Incorporation
+1302,1153,1,2018-04-26,Object,Change of object clause 3,"",42018-04-26T18:20:34.096,Change of Object Clause(s)/Article(s)
+1303,1154,1,2018-04-27,ChAud,Change of Auditor & Tax Agent ,"",52018-04-27T08:54:29.506,Change of Auditor
+1305,1155,2,2018-04-27,S105,"Transfer of Shares (100,000 shares)","",32018-04-27T10:02:06.258,Transfer of share(s)
+1304,1155,1,2018-04-27,S201,Appointment & Resignation of Directors,"",32018-04-27T10:02:06.258,Appointment of Directors
+1306,1155,3,2018-04-27,S28,Change of Company Name --> HECTADATA SDN. BHD. ,"",32018-04-27T10:02:06.258,Change of Company Name
+1307,1156,1,2018-04-27,SecFee,Take Over Secretarial Files ,"",82018-04-27T11:45:00.680,Secretarial Fee + Registered Office
+1308,1157,1,2018-04-27,Misc,Ordering Rubber Stamp,"",32018-04-27T13:38:54.658,Non-secretarial assignments
+1309,1158,1,2018-04-27,Misc,Ordering Rubber Stamp,"",32018-04-27T13:45:29.690,Non-secretarial assignments
+1310,1159,1,2018-04-27,ShCert,"Lost Share certificate no. 016 CP GLOBAL HOLDINGS LIMITED 
+(4,790,295 IRNCPS)","",42018-04-27T15:23:40.559,Lost Share certificates/amendments
+1311,1160,1,2018-04-27,CPO,CPO - Fast & Best Business Products Impex SB,Walked in inquired client,22018-04-27T15:53:02.233,Purchase of CPO/Idaman
+1314,1162,1,2018-04-27,DCR,Insurance Claim for MV (T/BE4),"",52018-04-27T17:45:06.434,Misc Director Resolution-
+1315,1163,1,2018-04-30,S36,"Change of Memorandum & Article of Association
+","",112018-04-30T09:03:35.355,M&A/Constitution changes
+1316,1164,1,2018-04-30,S36,"Change of Memorandum & Article of Association
+","",112018-04-30T11:34:56.466,M&A/Constitution changes
+1318,1165,2,2018-04-30,AC,Financial Statements @ 2017-06-30,"",72018-04-30T11:47:44.686,Financial Statement
+1317,1165,1,2018-04-30,FYE,"Appointment of Auditors : PS Yap
+Appointment of Tax Agent : Sanjay
+Fye: 30/06/2017","",72018-04-30T11:47:44.686,Fixing Financial Year End-DCR
+1319,1166,1,2018-04-30,S36,"Change of Memorandum & Article of Association
+","",112018-04-30T13:14:26.685,M&A/Constitution changes
+1320,1167,1,2018-04-30,S36,"Change of Memorandum & Article of Association
+","",112018-04-30T14:55:55.341,M&A/Constitution changes
+1321,1168,1,2018-04-30,"",Incorporation of Company,"",52018-04-30T15:53:37.658,""
+1322,1169,1,2018-04-30,ConfirmL,"Confirmation Letter
+","",112018-04-30T16:09:18.630,Confirmation Letter
+1323,1169,2,2018-04-30,CTC,Certified True Copies@2018-04-30,"",112018-04-30T16:09:18.630,Certified True Copies 
+1324,1170,1,2018-04-30,S58,"Change of director
+Appoint Seow Li-Ling
+Resign Seow Lun Hoo @ Seow Wah Chong","",42018-04-30T17:23:37.477,F49-ResDir/Change Information
+1325,1170,2,2018-04-30,S105,"Share Transfer 
+Seow Voon Ping & Seow Lun Hoo to Newfields Capital Sdn. Bhd.","",42018-04-30T17:23:37.477,Transfer of share(s)
+1326,1171,1,2018-05-02,S78,Increase PUC - RM10 (Marcus),"",72018-05-02T10:02:08.893,Increase in Paid Up Capital-Cash
+1327,1172,1,2018-05-02,AC,FS @ 2013-06-30,"",122018-05-02T10:08:22.488,Financial Statement
+1328,1173,1,2018-05-02,Misc,Payment to TNB,"",32018-05-02T10:54:12.351,Non-secretarial assignments
+1329,1174,1,2018-05-02,CPO,SSM business profile - INTERMARK LGT TRADING,"",42018-05-02T11:00:17.542,Purchase of CPO/Idaman
+1330,1175,1,2018-05-02,"",Insurance claim vehicle No: WA1200U,"",52018-05-02T11:44:46.313,""
+1331,1176,1,2018-05-02,ShCert,"L&R Share Certificates (Mimi, Harits & Zainuddin)","",72018-05-02T14:47:50.522,Lost Share certificates/amendments
+1332,1176,2,2018-05-02,S105,"Transfer of Shares (4,900,000 Shares) ","",72018-05-02T14:47:50.522,Transfer of share(s)
+1333,1177,1,2018-05-02,Misc,Ad Hoc job - purchase business profile,"",32018-05-02T15:26:07.637,Non-secretarial assignments
+1334,1178,1,2018-05-02,CTC,"Certified True Copies (CTC) 
+- Form 9, 49 & S58 ","",82018-05-02T15:51:05.340,Certified True Copies 
+1335,1179,1,2018-05-02,BkFac,"Banking Facilities from RHB Bank Berhad (RM4,300,000.00)","",42018-05-02T17:08:12.350,Bank-Facilities
+1336,1180,1,2018-05-02,CorpGuaran,Corporate Guarantor for Trans Niaga SB for Banking Facilities with RHB Bank Berhad,"",42018-05-02T17:09:18.258,Corporate Guarantor
+1337,1181,1,2018-05-02,S352(1),Creation of charge,"",42018-05-02T17:33:55.950,Create Charges
+1339,1182,1,2018-05-02,AC,Financial Statement @ 2017-12-31,"",82018-05-02T18:15:42.209,Financial Statement
+1340,1183,1,2018-05-03,AR/AGM,AR@2018-05-04,"",92018-05-03T09:18:13.514,Annual Return
+1341,1184,1,2018-05-03,AC,"FS@2017-11-30
+","",112018-05-03T09:27:11.275,Financial Statement
+1342,1185,1,2018-05-03,PurVeh,Disposal of Motor Vehicles (BFC 1957 & WQC 1200),"",52018-05-03T09:42:20.449,Vehicle Purchase/disposal
+1343,1186,1,2018-05-03,AR/AGM,AR@2018-05-08,"",92018-05-03T09:58:41.032,Annual Return
+1344,1187,1,2018-05-03,AC,"FS@2017-11-30
+","",112018-05-03T10:01:12.434,Financial Statement
+1345,1188,1,2018-05-03,BkFac,Over the Counter Bank Guarantee (OTCBG) with RHB Bank,"",52018-05-03T10:37:08.309,Bank-Facilities
+1346,1189,1,2018-05-03,S78,Increase PUC (From 500K to 1M),"",72018-05-03T10:45:50.111,Increase in Paid Up Capital-Cash
+1347,1190,1,2018-05-03,AR/AGM,AR@2018-05-04,"",92018-05-03T10:54:15.089,Annual Return
+1348,1191,1,2018-05-03,Misc,- Purchase CTC documents from MyDATA SSM,"",72018-05-03T11:03:47.359,Non-secretarial assignments
+1350,1192,1,2018-05-03,AR/AGM,"AR@2018-05-03
+","",112018-05-03T11:37:43.318,Annual Return
+1351,1193,1,2018-05-03,AR/AGM,AR@2018-05-03,"",112018-05-03T11:38:52.284,Annual Return
+1349,1194,1,2018-05-03,S36,Change M&A - AGM & Authorised Capital,"",72018-05-03T11:52:23.036,M&A/Constitution changes
+1352,1195,1,2018-05-03,AR/AGM,AR@2018-05-09,"",92018-05-03T11:58:23.507,Annual Return
+1353,1196,1,2018-05-03,CTC,"F24, S51, F49, S58(fullsets), M&A, Director i/c (1set)","",62018-05-03T12:16:16.800,Certified True Copies 
+1354,1197,1,2018-05-03,AR/AGM,CTC Section 68 (Annual Return) dated 1 April 2018,"",42018-05-03T12:40:19.099,Annual Return
+1355,1198,1,2018-05-03,CPO,Purchase of CPO from mydata,"",52018-05-03T13:00:50.548,Purchase of CPO/Idaman
+1356,1199,1,2018-05-03,Object,"Alteration of Memorandum & Articles
+-Deletion Article 6 of Memorandum
+-Alteration Article 1 and Insertion Article 9 of Articles of Association","",52018-05-03T13:53:41.454,Change of Object Clause(s)/Article(s)
+1357,1200,1,2018-05-03,AR/AGM,"AR@2018-05-05
+","",92018-05-03T15:07:17.501,Annual Return
+1359,1202,1,2018-05-03,Object,Alteration of Articles & Memorandum,"",52018-05-03T16:49:18.863,Change of Object Clause(s)/Article(s)
+1360,1203,1,2018-05-03,CTC,"CTC doc (F9, F24, F49 & S58)","",122018-05-03T17:11:18.283,Certified True Copies 
+1362,1204,1,2018-05-03,PurVeh,Purchase MV - Volvo V90 T6,"",72018-05-03T17:30:00.920,Vehicle Purchase/disposal
+1363,1204,2,2018-05-03,CTC,"Certified True Copies @ 2018-05-03
+- M&A, F9, F49, S58, F44, & F24","",72018-05-03T17:30:42.425,Certified True Copies 
+1364,1205,1,2018-05-03,Div,Declaration of Dividends ,"",82018-05-03T18:24:09.999,Issuance of Dividends
+1365,1206,1,2018-05-04,CTC,"CTC F9, F44 & F24","",122018-05-04T09:53:52.573,Certified True Copies 
+1366,1207,1,2018-05-04,Misc,Purchase Company Charges Forms,"",72018-05-04T10:11:10.814,Non-secretarial assignments
+1367,1208,1,2018-05-04,AR/AGM,Annual Return @ 2018-05-02,"",122018-05-04T10:59:43.589,Annual Return
+1368,1209,1,2018-05-04,DCR,DCR - Corporate Internet Banking Facility (Affin Bank Berhad),"",72018-05-04T11:27:36.654,Misc Director Resolution-
+1369,1209,2,2018-05-04,S28,Change Company Name: Salur Kuasa Digitech SB,"",72018-05-04T11:27:36.654,Change of Company Name
+1370,1210,1,2018-05-04,DeReg,De-Registration of the Company,"",52018-05-04T11:48:41.113,De-registration
+1371,1211,1,2018-05-04,AR/AGM,Annual Return @ 2018-05-02,"",122018-05-04T11:55:06.537,Annual Return
+1372,1212,1,2018-05-04,S36,Change of Memorandum & Article of Association,"",112018-05-04T14:30:04.248,M&A/Constitution changes
+1373,1213,1,2018-05-04,S36,"Change of Memorandum & Article of Association
+","",112018-05-04T14:59:50.327,M&A/Constitution changes
+1374,1214,1,2018-05-04,S58,"Change Residential Add
+-Vyraveraja A/L Panjacharam
+- Chandra Segaran A/L Panjacharam","",82018-05-04T15:01:54.662,F49-ResDir/Change Information
+1375,1215,1,2018-05-04,Misc,"Review Mails collected, scan and email to Evelyn","",32018-05-04T15:33:54.093,Non-secretarial assignments
+1376,1216,1,2018-05-04,AC,Financial Statements @ 2017-08-31,"",72018-05-04T15:47:58.490,Financial Statement
+1377,1217,1,2018-05-04,Misc,"Mails collection - Review, Scan & Email","",32018-05-04T15:50:40.948,Non-secretarial assignments
+1378,1218,1,2018-05-04,S36,"Change of Memorandum & Article of Association
+","",112018-05-04T16:48:21.442,M&A/Constitution changes
+1379,1219,1,2018-05-04,AR/AGM,Annual Return @ 2018-05-06,"",122018-05-04T17:14:44.779,Annual Return
+1380,1220,1,2018-05-05,CTC,"CTC Reso, M&A, F44, F24 & F49","",122018-05-05T10:39:50.518,Certified True Copies 
+1381,1221,1,2018-05-05,S236,Appointment of Secretaries,"",52018-05-05T12:06:48.237,Appointment of Secretary
+1382,1222,1,2018-05-05,S58,"Change of Secretaries 
+-Appt WCF ","",82018-05-05T12:07:57.122,F49-ResDir/Change Information
+1402,1242,1,2018-05-07,S36,"Change of Memorandum & Article of Association
+","",112018-05-07T09:04:13.873,M&A/Constitution changes
+1403,1243,1,2018-05-07,CPO,"Purchase of CPO/Idaman
+- Jakros SB (52621-T) 
+- SBR Holding SB (78129-P) 
+- Vowifi Telecom SB (1120225-D)
+","",82018-05-07T09:04:07.828,Purchase of CPO/Idaman
+1404,1244,1,2018-05-07,S236,Appointment of Secretary,"",122018-05-07T09:33:53.342,Appointment of Secretary
+1405,1245,1,2018-05-07,S236,Appointment of Secretary,"",122018-05-07T10:41:25.601,Appointment of Secretary
+1406,1246,1,2018-05-07,S36,"Change of Memorandum & Article of Association
+","",112018-05-07T11:08:49.673,M&A/Constitution changes
+1407,1247,1,2018-05-07,S36,"Change of Memorandum & Article of Association
+
+","",112018-05-07T12:39:21.460,M&A/Constitution changes
+1408,1248,1,2018-05-07,S236,Appointment of Secretary,"",122018-05-07T14:38:57.505,Appointment of Secretary
+1409,1249,1,2018-05-07,CPO,Purchase CPO - MEECON ENGINEERING & TRADING SDN. BHD.,"",42018-05-07T15:21:46.479,Purchase of CPO/Idaman
+1410,1250,1,2018-05-07,S236,Appointment of Secretary,"",122018-05-07T16:11:56.862,Appointment of Secretary
+1411,1251,1,2018-05-07,PD 2/2017,Change of Business Address,"",112018-05-07T16:14:46.869,Biz/Branch Add/Nature of biz changes
+1412,1252,1,2018-05-07,S236,Appointment of Secretary,"",122018-05-07T16:47:48.126,Appointment of Secretary
+1413,1253,1,2018-05-07,S236,Appointment of Secretary,"",122018-05-07T16:52:24.481,Appointment of Secretary
+1414,1254,1,2018-05-07,S236,Appointment of secretary,"",122018-05-07T17:05:57.115,Appointment of Secretary
+1415,1255,1,2018-05-07,CTC,3 sets CTC of Form 49 & Section 58,"",42018-05-07T17:55:30.356,Certified True Copies 
+1416,1255,2,2018-05-07,ConfirmL,Confirmation letter of director & debenture,"",42018-05-07T17:55:30.356,Confirmation Letter
+1417,1256,1,2018-05-08,S236,Appointment of Secretary,WCF,122018-05-08T08:37:09.204,Appointment of Secretary
+1418,1257,1,2018-05-08,S236,Appointment of Secretary,"",122018-05-08T08:56:30.710,Appointment of Secretary
+1419,1258,1,2018-05-08,CTC,Certified True Copies ,"",112018-05-08T08:57:24.619,Certified True Copies 
+1420,1259,1,2018-05-08,Misc,"MOF Application
+-New Application
+-Additional Kod Bidang","",52018-05-08T09:03:42.342,Non-secretarial assignments
+1421,1260,1,2018-05-08,S236,Appoinment of Secretary,WCF,122018-05-08T09:12:03.297,Appointment of Secretary
+1422,1261,1,2018-05-08,S236,Appointment of Secretary,"",122018-05-08T09:30:42.813,Appointment of Secretary
+1423,1262,1,2018-05-08,S236,Appointment of Secretary,WCF,122018-05-08T09:44:29.390,Appointment of Secretary
+1424,1263,1,2018-05-08,AC,"-FS@2017-12-31
+-Amendment of Memorandum & Article of Association","",112018-05-08T10:02:41.822,Financial Statement
+1426,1264,1,2018-05-08,CTC,"CTC - F9, F13, F44, F49, S58, F24, AFS 2016 ","",72018-05-08T10:18:35.111,Certified True Copies 
+1425,1265,1,2018-05-08,S236,Appointment of Secretary,WCF,122018-05-08T10:19:00.777,Appointment of Secretary
+1427,1266,1,2018-05-08,S236,Appointment of Secretary,"",122018-05-08T10:42:35.893,Appointment of Secretary
+1428,1267,1,2018-05-08,Misc,GST Registration,"",32018-05-08T10:46:20.777,Non-secretarial assignments
+1429,1268,1,2018-05-08,AC,"-Appointment of Auditor, Tax Agent & Fixing FYE
+- FS@2017-12-31
+","",112018-05-08T11:46:40.573,Financial Statement
+1430,1269,1,2018-05-08,CTC,"Certified True Copies@2018-05-08
+","",112018-05-08T13:58:33.495,Certified True Copies 
+1431,1270,1,2018-05-08,Misc,Arrange for payment of TM Bill & Water Bill,"",32018-05-08T14:12:24.959,Non-secretarial assignments
+1432,1271,1,2018-05-08,AR/AGM,"AR@2018-05-15
+","",92018-05-08T14:18:44.559,Annual Return
+1433,1272,1,2018-05-08,AR/AGM,"AR@2018-05-12
+","",92018-05-08T14:49:34.524,Annual Return
+1434,1273,1,2018-05-08,AR/AGM,"AR@2018-05-14
+","",92018-05-08T15:21:19.785,Annual Return
+1435,1274,1,2018-05-08,ChTaxAg,"Change of Tax Agent
+-Appoint RJS TAX CONSULTANT SDN. BHD.","",52018-05-08T15:40:25.771,Change of Tax Agent
+1436,1275,1,2018-05-08,S36,Change of Memorandum and Article of Association,"",112018-05-08T15:42:04.606,M&A/Constitution changes
+1437,1276,1,2018-05-08,S36,Change of Memorandum & Article of Association,"",112018-05-08T15:43:50.009,M&A/Constitution changes
+1438,1277,1,2018-05-08,ChTaxAg,"Change of Tax Agent
+-Appoint RJS TAX CONSULTANT SDN. BHD.","",52018-05-08T15:45:25.708,Change of Tax Agent
+1441,1278,1,2018-05-08,AR/AGM,AR@2018-05-24,"",92018-05-08T16:07:26.728,Annual Return
+1440,1279,2,2018-05-08,BkOp,Opening of USD Acc-Alliance Bank,"",52018-05-08T15:57:09.139,Bank-Open Account[s]
+1439,1279,1,2018-05-08,OpBk,Opening of Bank Current Acc-Alliance Bank,"",52018-05-08T15:57:09.139,Open Bank Account(s)
+1442,1279,3,2018-05-08,IntBanking,Online Banking with Alliance Bank,"",52018-05-08T15:57:09.139,Internet Banking
+1443,1280,1,2018-05-08,BkOp,Open Current Acc- Alliance Bank,"",52018-05-08T16:36:58.710,Bank-Open Account[s]
+1444,1280,2,2018-05-08,BkOp,Open USD Acc-Alliance Bank,"",52018-05-08T16:36:58.710,Bank-Open Account[s]
+1445,1280,3,2018-05-08,IntBanking,Online Banking with Alliance Bank,"",52018-05-08T16:36:58.710,Internet Banking
+1446,1281,1,2018-05-08,SecFee,- From [2018-05-02 to 2019-05-01],"",22018-05-08T16:48:10.444,Secretarial Fee + Registered Office
+1447,1281,2,2018-05-08,SecFee,"",- From [2018-05-02 to 2019-05-01],22018-05-08T16:48:10.444,Secretarial Fee + Registered Office
+1448,1282,1,2018-05-08,SecFee,- From [2018-05-05 to 2019-05-04],"",22018-05-08T16:53:17.217,Secretarial Fee + Registered Office
+1449,1282,2,2018-05-08,"","","",22018-05-08T16:53:17.217,""
+1450,1283,1,2018-05-10,S36,"Change of Memorandum & Article of Association
+","",112018-05-10T09:33:04.711,M&A/Constitution changes
+1451,1284,1,2018-05-10,AR/AGM,AR@2018-05-27,"",92018-05-10T10:04:00.491,Annual Return
+1452,1285,1,2018-05-10,AR/AGM,AR@2018-05-25,"",92018-05-10T10:44:04.304,Annual Return
+1453,1286,1,2018-05-10,AR/AGM,AR@2018-05-12,"",92018-05-10T10:59:42.083,Annual Return
+1454,1287,1,2018-05-10,S36,"Change of Memorandum & Article of Association
+","",112018-05-10T11:02:17.833,M&A/Constitution changes
+1455,1288,1,2018-05-10,S36,Change of Memorandum & Article of Association,"",112018-05-10T11:07:26.282,M&A/Constitution changes
+1456,1289,1,2018-05-10,T.O.,"","",32018-05-10T12:10:57.605,Take Over Secretarial File(s)
+1457,1290,1,2018-05-10,AC,"Financial Statements @ 2017-12-31
+","",72018-05-10T13:42:38.030,Financial Statement
+1458,1290,2,2018-05-10,S36,Change of Memorandum & Articles of Association,"",72018-05-10T13:42:38.030,M&A/Constitution changes
+1459,1291,1,2018-05-10,CTC,"CTC dir IC&Passport, M&A, F9, F24, F49 & S58","",122018-05-10T13:51:10.370,Certified True Copies 
+1460,1292,1,2018-05-10,CTC,"CTC Dir IC&Passport, M&A, F9, F24, F49 & S58","",122018-05-10T14:10:40.745,Certified True Copies 
+1461,1293,1,2018-05-10,AC,Financial Statement @ 2017-12-31,"",42018-05-10T14:21:30.517,Financial Statement
+1462,1294,1,2018-05-10,S36,"Change of Memorandum & Article of Association 
+","",112018-05-10T14:24:57.046,M&A/Constitution changes
+1463,1295,1,2018-05-10,S36,Change of Memorandum & Article of Association,"",112018-05-10T16:17:22.167,M&A/Constitution changes
+1464,1296,1,2018-05-10,Sundry,Handling copy to auditor for statutory audit for Meecon group of companies,"",42018-05-10T16:26:45.144,Miscellaneous Secretarial Job
+1465,1297,1,2018-05-10,AC,Financial Statements @ 2017-12-31,"",72018-05-10T16:27:06.077,Financial Statement
+1466,1297,2,2018-05-10,S36,Change in Memorandum & Articles of Association,"",72018-05-10T16:27:06.077,M&A/Constitution changes
+1467,1298,1,2018-05-10,S36,"Change of Memorandum & Article of Association
+","",112018-05-10T16:59:09.735,M&A/Constitution changes
+1468,1299,1,2018-05-10,S36,Change of Memorandum & Article of Association,"",112018-05-10T17:01:28.692,M&A/Constitution changes
+1469,1300,1,2018-05-11,AC,FS@2017-11-30,"",92018-05-11T08:44:23.600,Financial Statement
+1470,1301,1,2018-05-11,AR/AGM,Annual Return @ 2018-05-28 ,"",82018-05-11T09:09:17.873,Annual Return
+1471,1302,1,2018-05-11,S58,Resignation of Director (Farah),"",52018-05-11T10:31:14.840,F49-ResDir/Change Information
+1472,1303,1,2018-05-11,S105,"Transfer of 4,000 shares","",52018-05-11T10:32:39.289,Transfer of share(s)
+1473,1304,1,2018-05-11,S105,"Transfer of 4,000 shares","",52018-05-11T10:33:21.315,Transfer of share(s)
+1474,1305,1,2018-05-11,CTC,"1 set CTC Section 17, Section 14, Section 58, Section 58 & 236(2), Section 51, Practice Directive 2/2017, Passport & NRIC of director & authorised signatories - For open Ambank TTDI branch","",42018-05-11T10:45:09.562,Certified True Copies 
+1475,1306,1,2018-05-11,S28,SK Information Engineering Services SB to Salur Kuasa Digital SB,"",72018-05-11T11:13:19.995,Change of Company Name
+1476,1307,1,2018-05-11,AR/AGM,Annual Return @ 2018-05-11,"",82018-05-11T11:17:28,Annual Return
+1477,1308,1,2018-05-11,AC,Financial Statements @ 2017-12-31,"",72018-05-11T13:31:42.834,Financial Statement
+1478,1308,2,2018-05-11,S36,Change of M&A,"",72018-05-11T13:31:42.834,M&A/Constitution changes
+1479,1309,1,2018-05-11,AC,Financial Statement @ 2017-12-31,"",82018-05-11T13:55:52.464,Financial Statement
+1480,1310,1,2018-05-11,AR/AGM,"AR@2018-05-29
+","",92018-05-11T14:09:15.338,Annual Return
+1481,1311,1,2018-05-11,AR/AGM,AR@2018-06-02,"",92018-05-11T14:34:15.680,Annual Return
+1482,1312,1,2018-05-11,AR/AGM,AR@2018-05-14,"",92018-05-11T15:07:29.463,Annual Return
+1483,1313,1,2018-05-11,AR/AGM,AR@2018-05-14,"",92018-05-11T15:16:10.007,Annual Return
+1484,1314,1,2018-05-11,AR/AGM,AR@2018-05-17,"",92018-05-11T15:31:16.038,Annual Return
+1485,1315,1,2018-05-11,AR/AGM,Annual Return @ 2018-05-30,"",122018-05-11T15:35:51.511,Annual Return
+1487,1316,1,2018-05-11,AR/AGM,"Annual Return @ 2018-06-23
+
+","",72018-05-11T16:50:42.315,Annual Return
+1488,1317,1,2018-05-14,Admin,Rectification of AR 2017 (S602),"",32018-05-14T08:35:05.282,Administration Support & Consultancy 
+1489,1318,1,2018-05-14,CIBk,Closing Bank Account,"",32018-05-14T08:51:50.384,Bank-Close Account(s)
+1490,1319,1,2018-05-14,AR/AGM,AR@2018-05-12,"",92018-05-14T10:02:10.368,Annual Return
+1491,1320,1,2018-05-14,RemDir,EGM - Removal of Director (Rob),"",32018-05-14T10:29:55.826,Removal of Director(s)
+1492,1321,1,2018-05-14,PurVeh,Purchase of MV - MyVi,"",72018-05-14T10:44:14.690,Vehicle Purchase/disposal
+1493,1322,1,2018-05-14,AR/AGM,Annual Return @ 2018-05-05 ,"",82018-05-14T11:18:36.353,Annual Return
+1494,1323,1,2018-05-14,AC,Financial Statement @ 2017-12-31,"",42018-05-14T11:52:28.680,Financial Statement
+1495,1324,1,2018-05-14,AR/AGM,Annual Return @ 2018-05-12,"",82018-05-14T14:14:39.862,Annual Return
+1496,1325,1,2018-05-14,S58,Appointment of Secretary - Wong Chi Fui,"",42018-05-14T14:44:50.031,F49-ResDir/Change Information
+1497,1326,1,2018-05-14,DeReg,"De-registration
+- Checklist, Cover Letter, Declaration by Applicant (S550), DCR, MWR and Waiver Letter
+- Submission and follow up","",42018-05-14T15:21:13.403,De-registration
+1498,1327,1,2018-05-14,AR/AGM,Annual Return @ 2018-05-18 ,"",82018-05-14T15:41:39.581,Annual Return
+1499,1328,1,2018-05-14,AC,FS@2017-12-31,"",92018-05-14T16:35:10.617,Financial Statement
+1500,1329,1,2018-05-14,SecFee,"",- from [2018-03-26 to 2019-03-25],22018-05-14T16:47:36.613,Secretarial Fee + Registered Office
+1501,1330,1,2018-05-14,SecFee, - From [2018-03-26 to 2019-03-25],"",22018-05-14T16:50:24.472,Secretarial Fee + Registered Office
+1502,1331,1,2018-05-15,CPO,Purchase of CPO ,"",92018-05-15T08:40:42.386,Purchase of CPO/Idaman
+1503,1332,1,2018-05-15,AC,Financial Statement @ 2017-12-31 ,"",82018-05-15T10:47:37.913,Financial Statement
+1504,1333,1,2018-05-15,S105,"Transfer of Shares (10,000) ","",52018-05-15T11:05:16.670,Transfer of share(s)
+1505,1334,1,2018-05-15,S36,Change of M&A,"",72018-05-15T11:54:31.179,M&A/Constitution changes
+1506,1334,2,2018-05-15,AC,Financial Statements @ 2017-12-31,"",72018-05-15T11:54:31.179,Financial Statement
+1508,1336,1,2018-05-15,CTC,"F24, F49, F44, S58, M&A, F9 (5sets),","",62018-05-15T13:06:26.085,Certified True Copies 
+1510,1337,1,2018-05-15,AC,Financial Statement @ 2017-12-31,"",82018-05-15T14:06:26.713,Financial Statement
+1511,1338,1,2018-05-15,PurVeh,Disposal of Motor Vehicle - Subaru ,"",32018-05-15T14:11:43.437,Vehicle Purchase/disposal
+1512,1339,1,2018-05-15,S28,Change of Company name to Kask-Services (MM2H) Sdn. Bhd.,"",52018-05-15T14:38:56.583,Change of Company Name
+1513,1340,1,2018-05-15,AC,Financial Statements @ 2017-12-31 ,"",82018-05-15T14:55:42.835,Financial Statement
+1514,1341,1,2018-05-15,AC,Financial Statements @ 2017-11-30,"",82018-05-15T16:18:11.518,Financial Statement
+1515,1342,1,2018-05-15,AC,FS@2017-12-31,"",122018-05-15T16:33:16.826,Financial Statement
+1516,1343,1,2018-05-15,S36,Amendment of M&A ,"",32018-05-15T18:11:45.336,M&A/Constitution changes
+1517,1343,2,2018-05-15,AC,FS@2017-12-31,"",32018-05-15T18:11:45.336,Financial Statement
+1525,1351,1,2018-05-16,Misc,Consultation ,"",92018-05-16T15:57:19.603,Non-secretarial assignments
+1518,1344,1,2018-05-16,S15,New incorporation ,"",42018-05-16T08:40:14.713,Incorporation
+1519,1345,1,2018-05-16,AR/AGM,Annual Return @ 2018-05-20,"",122018-05-16T08:41:25.993,Annual Return
+1520,1346,1,2018-05-16,AR/AGM,Annual Return @ 2018-06-02,"",42018-05-16T08:43:02.114,Annual Return
+1521,1347,1,2018-05-16,AR/AGM,Annual Return @ 2018-05-25,"",122018-05-16T08:57:16.971,Annual Return
+1522,1348,1,2018-05-16,AC,Financial Statement @ 2017-12-31,"",82018-05-16T11:45:05.199,Financial Statement
+1523,1349,1,2018-05-16,AC,Financial Statement as at 31.12.2017,"",52018-05-16T13:12:47.141,Financial Statement
+1524,1350,1,2018-05-16,AC,Financial Statement @ 2017-12-31,"",82018-05-16T14:33:29.095,Financial Statement
+1526,1352,1,2018-05-16,CTC,"CTC - F9, F13, F44, F24, AR 2017, F49, S58, ROM, S105","",72018-05-16T16:21:22.143,Certified True Copies 
+1527,1353,1,2018-05-16,AC,"FS@2017-11-30
+","",92018-05-16T16:21:43.050,Financial Statement
+1528,1354,1,2018-05-16,ChAud,Appointment of Auditor and Tax Agent ,"",92018-05-16T16:37:56.422,Change of Auditor
+1529,1355,1,2018-05-16,AC,FS@2018-12-31,"",122018-05-16T16:45:00.369,Financial Statement
+1530,1356,1,2018-05-16,AC,FS@2018-12-31,"",122018-05-16T16:47:15.766,Financial Statement
+1531,1357,1,2018-05-16,AC,FS@2017-12-31,"",122018-05-16T17:19:23.807,Financial Statement
+1532,1358,1,2018-05-17,AR/AGM,"Late Filing Fee
+","",92018-05-17T10:35:50.310,Annual Return
+1533,1359,1,2018-05-17,AR/AGM,Late Filing Fee,"",92018-05-17T11:04:50.004,Annual Return
+1534,1360,1,2018-05-17,AR/AGM,Late Filing Fee,"",92018-05-17T11:06:20.185,Annual Return
+1535,1361,1,2018-05-17,AR/AGM,Late Filing Fee,"",92018-05-17T11:07:35.633,Annual Return
+1536,1362,1,2018-05-17,AR/AGM,Late Filing Fee,"",92018-05-17T11:09:49.569,Annual Return
+1537,1363,1,2018-05-17,S36,Amendment of M&A,"",32018-05-17T14:28:15.574,M&A/Constitution changes
+1538,1363,2,2018-05-17,S78 Non Cash,"Increase PUC to RM1,000,000 (Otherwise than cash)","",32018-05-17T14:28:15.574,Increase in Paid Up Capital- Otherwise Than Cash
+1539,1363,3,2018-05-17,OpBk,RHB Reflex Link Account ,"",32018-05-17T14:28:15.574,Open Bank Account(s)
+1540,1364,1,2018-05-17,Misc,Courier Company Common seal to US,"",32018-05-17T15:28:14.706,Non-secretarial assignments
+1541,1365,1,2018-05-17,AC,FS @ 2017-12-31,"",122018-05-17T15:32:09.966,Financial Statement
+1542,1366,1,2018-05-17,AC,FS@2017-12-31,"",122018-05-17T15:43:32.969,Financial Statement
+1543,1367,1,2018-05-17,AC,FS@2017-12-31,"",122018-05-17T15:50:29.827,Financial Statement
+1544,1368,1,2018-05-18,CIBk,CIMB Bank - 80-0092088-6,"",72018-05-18T08:37:00.131,Bank-Close Account(s)
+1545,1369,1,2018-05-18,CTC,"CTC Notice of registration, Certificate of Incorporation, Superform (x5)","",32018-05-18T09:03:08.533,Certified True Copies 
+1546,1370,1,2018-05-18,AC,FS@2017-12-31,"",122018-05-18T09:31:03.883,Financial Statement
+1547,1371,1,2018-05-18,CTC,"F24(fullsets), F32A(fullsets), F49, S58, S44, AR 2017, M&A (1set)","",62018-05-18T10:08:59.215,Certified True Copies 
+1548,1372,1,2018-05-18,AR/AGM,Annual Return @ 2018-05-08,"",72018-05-18T13:43:47.921,Annual Return
+1549,1372,2,2018-05-18,AC,Financial Statements @ 2017-12-31,"",72018-05-18T13:43:47.921,Financial Statement
+1550,1373,1,2018-05-18,AR/AGM,Annual Return @ 2018-05-06,"",72018-05-18T14:57:16.012,Annual Return
+1551,1374,1,2018-05-18,PurVeh,Hire-purchase of Hyundai Ionic with Affin Bank Berhad,"",42018-05-18T15:53:31.966,Vehicle Purchase/disposal
+1552,1375,1,2018-05-18,Letters,"Letter confirmation of directors, shareholders, & paid-up capital","",42018-05-18T16:49:09.075,Misc Letters
+1553,1376,1,2018-05-18,S259(2),Extension of time for FS & AGM,"",32018-05-18T16:56:38.506,Extention period of AGM
+1554,1377,1,2018-05-18,S78,"Increase of PUC to RM500,000 (Cash)","",32018-05-18T17:52:25.858,Increase in Paid Up Capital-Cash

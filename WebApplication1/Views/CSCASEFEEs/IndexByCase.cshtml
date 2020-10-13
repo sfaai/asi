@@ -1,0 +1,141 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSCASEFEE>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm"style="width:96vw">
+    <tr class="label-primary">
+        <th colspan="6"></th>
+        <th colspan="3" class="text-center">Own</th>
+        <th colspan="3" class="text-center">3rd Party</th>
+        <th colspan="3" class="text-center">Total</th>
+        <th></th>
+    </tr>
+    <tr class="label-primary">
+        <th>
+           @* @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary h4" })*@
+            @if ((Html.Action() == "Delete") || (Html.Action() == "Details")) { }
+            else
+            {
+            @Html.ActionLink(" ", "Create", new { id = MyHtmlHelpers.ConvertIdToByteStr(ViewBag.Parent) }, new { @class = "btn btn-primary h4 fa fa-plus-square", title = "Create" })
+            }
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FEEID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ITEMDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ITEMSPEC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSITEM.ITEMDESC)
+        </th>
+        <th class="text-nowrap">
+            @Html.DisplayNameFor(model => model.TAXRATE)
+        </th>
+        <th>
+            Amount
+            @* @Html.DisplayNameFor(model => model.ITEMAMT1)*@
+        </th>
+        <th>
+            Tax
+            @*@Html.DisplayNameFor(model => model.TAXAMT1)*@
+        </th>
+        <th>
+            Net
+            @*@Html.DisplayNameFor(model => model.NETAMT1)*@
+        </th>
+        <th>
+            Amount
+            @*@Html.DisplayNameFor(model => model.ITEMAMT2)*@
+        </th>
+        <th>
+            Tax
+            @*@Html.DisplayNameFor(model => model.TAXAMT2)*@
+        </th>
+        <th>
+            Net
+            @*@Html.DisplayNameFor(model => model.NETAMT2)*@
+        </th>
+        <th>
+            Amount
+            @*@Html.DisplayNameFor(model => model.ITEMAMT)*@
+        </th>
+        <th>
+            Tax
+            @*@Html.DisplayNameFor(model => model.TAXAMT)*@
+        </th>
+        <th>
+            Net
+            @*@Html.DisplayNameFor(model => model.NETAMT)*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+            <td>
+               @if ((Html.Action() == "Delete") || (Html.Action() == "Details")) { }
+               else
+               {
+                @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CASECODE), seq = item.FEEID }, new { @class = "fa fa-edit", title = "Edit" })
+                @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CASECODE), seq = item.FEEID }, new { @class = "fa fa-folder", title = "Details" })
+                @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CASECODE), seq = item.FEEID }, new { @class = "fa fa-trash", title = "Delete" })
+               }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FEEID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEMDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEMSPEC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSITEM.ITEMDESC)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXRATE)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.ITEMAMT1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXAMT1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.NETAMT1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.ITEMAMT2)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXAMT2)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.NETAMT2)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.ITEMAMT)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXAMT)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.NETAMT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STAMP)
+            </td>
+
+        </tr>
+    }
+
+</table>

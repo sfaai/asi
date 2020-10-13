@@ -1,0 +1,3 @@
+profile_id|profile_reg|profile_gst|profile_name|profile_address|profile_country|profile_state|profile_city|profile_postal|profiile_contact|profile_fax
+1|340175-U|000793247744|ASI Secretarial Services Sdn. Bhd.|"E-7-1, Megan Avenue 1,
+189, Jalan Tun Razak,"|Malaysia|Wilayah Persekutuan Kuala Lumpur|Kuala Lumpur|54000|603 - 27708133|603 - 27708233

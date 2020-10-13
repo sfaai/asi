@@ -1,0 +1,67 @@
+
+
+select a.cono, a.casecode, extract(year from entdate) yearno, extract(month from entdate) monthno, count(*),
+sum(    RECEIPT) RECEIPT,
+sum(  DEP ) DEP,
+ sum( DEPREC ) DEPREC,
+sum(  FEE1 ) FEE1,
+sum(    FEE2) FEE2,
+sum(    FEEREC1) FEEREC1,
+sum(    FEEREC2) FEEREC2,
+sum(    TAX1) TAX1,
+sum(    TAX2) TAX2,
+sum(    TAXREC1) TAXREC1,
+sum(    WORK1) WORK1,
+ sum(   WORK2) WORK2,
+sum(    WORKREC1) WORKREC1,
+sum(    WORKREC2) WORKREC2,
+sum(    DISB1) DISB1,
+sum(    DISB2) DISB2,
+sum(    DISBREC1) DISBREC1,
+ sum(   DISBREC2) DISBREC2,
+
+ sum(   REIMB1) REIMB1,
+ sum(   REIMB2) REIMB2,
+ sum(   REIMBREC1) REIMBREC1,
+sum(    REIMBREC2) REIMBREC2,
+sum(    ADVANCE) ADVANCE
+
+from csldg a
+where source <> 'CSPYM' and source <> 'CSCANC3P'
+group by
+ a.cono, a.casecode, extract(year from entdate), extract(month from entdate)
+
+
+
+ 
+
+select a.cono, yearno,  monthno, sum(cnt) cnt,
+sum(    RECEIPT) RECEIPT,
+sum(  DEP ) DEP,
+ sum( DEPREC ) DEPREC,
+sum(  FEE1 ) FEE1,
+sum(    FEE2) FEE2,
+sum(    FEEREC1) FEEREC1,
+sum(    FEEREC2) FEEREC2,
+sum(    TAX1) TAX1,
+sum(    TAX2) TAX2,
+sum(    TAXREC1) TAXREC1,
+sum(    WORK1) WORK1,
+ sum(   WORK2) WORK2,
+sum(    WORKREC1) WORKREC1,
+sum(    WORKREC2) WORKREC2,
+sum(    DISB1) DISB1,
+sum(    DISB2) DISB2,
+sum(    DISBREC1) DISBREC1,
+ sum(   DISBREC2) DISBREC2,
+
+ sum(   REIMB1) REIMB1,
+ sum(   REIMB2) REIMB2,
+ sum(   REIMBREC1) REIMBREC1,
+sum(    REIMBREC2) REIMBREC2,
+sum(    ADVANCE) ADVANCE
+
+from v_csldg_sum a
+
+group by
+ a.cono,  yearno, monthno

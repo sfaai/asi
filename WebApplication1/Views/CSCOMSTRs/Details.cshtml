@@ -1,0 +1,672 @@
+﻿@model WebApplication1.CSCOMSTR
+@using WebApplication1.Utility;
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@*<div class="border border-info bg-info" style="width:96vw">
+        <h2 class="h2 text-center">Company details</h2>
+    </div>*@
+
+<div class="container-fluid" style="width:96vw">
+
+    <div class="row">
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info" style="color:white">
+                @Html.DisplayNameFor(model => model.COREGNO)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.COREGNO)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info" style="color:white">
+                @Html.DisplayNameFor(model => model.INTYPE)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.INTYPE)
+            </div>
+        </div>
+        <div class="col col-md-3">
+            <div class="row border border-info bg-info" style="color:white">
+                @Html.DisplayNameFor(model => model.CONAME)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.CONAME)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info" style="color:white">
+                @Html.DisplayNameFor(model => model.INCDATE)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.INCDATE)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.HKCTRY.CTRYDESC)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.HKCTRY.CTRYDESC)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info" style="color:white">
+                @Html.DisplayNameFor(model => model.HKCONST.CONSTDESC)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.HKCONST.CONSTDESC)
+            </div>
+        </div>
+        <div class="col col-md-4">
+            <div class="row border border-info bg-info" style="color:white">
+                @Html.DisplayNameFor(model => model.PRINOBJStr)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.PRINOBJStr)
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-2">
+            <div class="row border border-info bg-info" style="color:white">
+                @Html.DisplayNameFor(model => model.PINDCODE)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+
+                @Html.DisplayFor(model => model.PINDCODE)
+
+            </div>
+        </div>
+
+        <div class="col col-md-2">
+            <div class="row border border-info bg-info" style="color:white">
+                @Html.DisplayNameFor(model => model.SINDCODE)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.SINDCODE)
+            </div>
+        </div>
+        <div class="col col-md-2">
+            <div class="row border border-info bg-info" style="color:white">
+                @Html.DisplayNameFor(model => model.WEB)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.WEB)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info" style="color:white">
+                @Html.DisplayNameFor(model => model.COSTAT)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.COSTAT)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info"  style="color:white">
+                @Html.DisplayNameFor(model => model.COSTATD)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.COSTATD)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.FILETYPE)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.FILETYPE)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.FILELOC)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.FILELOC)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.SEALLOC)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.SEALLOC)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.HKSTAFF.STAFFDESC)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.HKSTAFF.STAFFDESC)
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.SPECIALREBool)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.SPECIALREBool)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.ARREBool)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.ARREBool)
+            </div>
+        </div>
+
+        <div class="col col-md-4">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.CMMTStr)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.CMMTStr)
+            </div>
+        </div>
+        <div class="col col-md-3">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.REM)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.REM)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.SXCODE)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.SXCODE)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.SXNAME)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.SXNAME)
+            </div>
+        </div>
+        <div class="col col-md-1">
+            <div class="row border border-info bg-info " style="color:white">
+                @Html.DisplayNameFor(model => model.REFCODE)
+            </div>
+            <div class="row border border-dark font-weight-bold">
+                @Html.DisplayFor(model => model.REFCODE)
+            </div>
+        </div>
+    </div>
+
+    @*<table class="table table-bordered table-hover table-responsive-lg table-sm">
+            <tr class="label-primary">
+                <th>
+                    @Html.DisplayNameFor(model => model.CONO)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.INTYPE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CONAME)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.INCDATE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HKCTRY.CTRYDESC)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HKCONST.CONSTDESC)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PRINOBJStr)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.PINDCODE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SINDCODE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.WEB)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.COSTAT)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.COSTATD)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FILETYPE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FILELOC)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SEALLOC)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HKSTAFF.STAFFDESC)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SPECIALRE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CMMT)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.REM)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SXCODE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SXNAME)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.REFCODE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SEQNO)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.STAMP)
+                </th>
+
+
+                <th></th>
+            </tr>
+
+            <tr class="text-nowrap">
+                <td>
+                    @Html.DisplayFor(modelItem => Model.CONO)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => Model.INTYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.CONAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.INCDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.HKCTRY.CTRYDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.HKCONST.CONSTDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.PRINOBJStr)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => Model.PINDCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.SINDCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.WEB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.COSTAT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.COSTATD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.FILETYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.FILELOC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.SEALLOC)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => Model.HKSTAFF.STAFFDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.SPECIALRE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.CMMTStr)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.REM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.SXCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.SXNAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.REFCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.SEQNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => Model.STAMP)
+                </td>
+            </tr>
+
+        </table>*@
+
+</div>
+<div class="row" style="display:inline">
+    @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "fa fa-edit", title = "Edit" })
+    @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "fa fa-trash", title = "Delete" })
+    @Html.ActionLink(" ", "Index", null, new { @class = "btn btn-info fa fa-arrow-left", title = "Back" })
+
+    @using (Html.BeginForm("ChangeCompanyReference","CSCOMSTRs")) {
+        @Html.HiddenFor(model => model.CONO);
+        @Html.Label("New Company No ")
+        @Html.Editor("New_Company_No","New_Company_No")
+        <input type="submit" value="Change" class="btn btn-default" />
+            }
+
+    @using (Html.BeginForm("RemoveCompanyReference", "CSCOMSTRs"))
+    {
+        @Html.HiddenFor(model => model.CONO);
+
+        <input type="submit" value="Remove" class="btn btn-default" />
+    }
+
+</div>
+<div class="container" style="width:96vw">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist" style="width:96vw">
+        <li class="nav-item">
+            <a class="nav-link active"  id = "tab-Status" data-toggle="tab" href="#Status">Status <p class="badge badge-dark">work</p></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id = "tab-Fee"  data-toggle="tab" href="#Fee">Fee <p class="badge badge-dark">not work</p></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id = "tab-Contact"  data-toggle="tab" href="#Contact">Contact <p class="badge badge-dark">not work</p></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Name">Name</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Address">Address</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id = "tab-AGM" data-toggle="tab" href="#AGM">AGM/FS <p class="badge badge-dark">work</p></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  id = "tab-Annual" data-toggle="tab" href="#Annual">AR <p class="badge badge-dark">work</p></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Director">Director</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Member">Member</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Secretary">Secretary</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Manager">Manager</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Auditor">Auditor</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#TaxAgent">Tax Agent</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Authorised">Authorised Capital</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#PaidUp">Paid up Capital</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Banker">Banker</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Charge">Charge/Mortgage</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Debenture">Debenture</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Parent">Parent</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#Agent">Agent</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#CEO">CEO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#LastNo">Last No</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="Status" class="container no-gutters tab-pane active ">
+            <div class="border border-info bg-info" style="width:94vw">
+                <div class="row">
+                    <div class="col-md-4">
+                        @Html.ActionLink("Create New", "Create", "CSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h4" })
+                    </div>
+                    <div class="h2 text-center col-md-4">Status</div>
+                </div>
+            </div>
+            @Html.Action("PartialCSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+        </div>
+
+
+        <div id="Fee" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <div class="row">
+                    <div class="col-md-4">
+                        @Html.ActionLink("Create New", "Create", "CSCOFEEs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h4" })
+                    </div>
+                    <div class="h2 text-center col-md-4">Fees</div>
+                </div>
+            </div>
+            @Html.Action("PartialCSCOFEEs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+
+        </div>
+
+
+        <div id="Contact" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <div class="row">
+                    <div class="col-md-4">
+                        @Html.ActionLink("Create New", "Create", "CSCOPICs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h4" })
+                    </div>
+                    <div class="h2 text-center col-md-4">Contact</div>
+                </div>
+            </div>
+            @Html.Action("PartialCSCOPICs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+
+        </div>
+
+
+        <div id="Name" class="container  no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Name</h2>
+            </div>
+        </div>
+
+        <div id="Address" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Address</h2>
+            </div>
+        </div>
+
+
+        <div id="AGM" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <div class="row">
+                    <div class="col-md-4">
+                        @Html.ActionLink("Create New", "Create", "CSCOAGMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h4" })
+                    </div>
+                    <div class="h2 text-center col-md-4">AGM/FS</div>
+                </div>
+            </div>
+            @Html.Action("PartialCSCOAGMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+        </div>
+
+
+        <div id="Annual" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <div class="row">
+                    <div class="col-md-4">
+                        @Html.ActionLink("Create New", "Create", "CSCOARs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-primary h4" })
+                    </div>
+                    <div class="h2 text-center col-md-4">Annual Return</div>
+                </div>
+            </div>
+            @Html.Action("PartialCSCOARs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+        </div>
+
+
+        <div id="Director" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Director</h2>
+            </div>
+        </div>
+
+
+        <div id="Member" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Member</h2>
+            </div>
+        </div>
+
+
+        <div id="Secretary" class="container  no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Secretary</h2>
+            </div>
+        </div>
+
+
+        <div id="Manager" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Manager</h2>
+            </div>
+        </div>
+
+
+        <div id="Auditor" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Auditor</h2>
+            </div>
+        </div>
+
+
+        <div id="TaxAgent" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Tax Agent</h2>
+            </div>
+        </div>
+
+
+        <div id="Authorised" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Authorised Capital</h2>
+            </div>
+        </div>
+
+
+        <div id="PaidUp" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Paid up Capital</h2>
+            </div>
+        </div>
+
+
+        <div id="Banker" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Banker</h2>
+            </div>
+        </div>
+
+
+        <div id="Charge" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Charge/Mortgage</h2>
+            </div>
+        </div>
+
+
+        <div id="Debenture" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Debentures</h2>
+            </div>
+        </div>
+
+
+        <div id="Parent" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Parent</h2>
+            </div>
+        </div>
+
+
+        <div id="Agent" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Agent</h2>
+            </div>
+        </div>
+
+
+        <div id="CEO" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">CEO</h2>
+            </div>
+        </div>
+
+
+        <div id="LastNo" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <h2 class="h2 text-center">Last No</h2>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts
+{
+
+    <script>
+        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+        window.location.hash = '';
+        $(document).ready(function () {
+
+            if (hash) {
+
+
+                $('#tab-' + hash).click(); //function () { alert('clicked ' + hash); });
+               //window.location.hash = '#' + hash;
+
+                // hash found
+            } else {
+                // No hash found
+            }
+        })
+    </script>
+}

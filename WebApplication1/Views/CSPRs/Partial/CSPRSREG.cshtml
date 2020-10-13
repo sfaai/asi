@@ -1,0 +1,70 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSPRSREG>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th>
+            @if ((@Html.Action() == "Delete") || (@Html.Action() == "Details")) { }
+            else
+            {
+                @Html.ActionLink("Add", "Create", "CSPRSREGs", new { id = MyHtmlHelpers.ConvertIdToByteStr(ViewBag.PRSCODE) }, new { @class = "btn btn-primary h4" })
+            }
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKCTRY.CTRYDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REGTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REGNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+            <td>
+                @if ((@Html.Action() == "Delete") || (@Html.Action() == "Details")) { }
+                else
+                {
+                    @Html.ActionLink(" ", "Edit", "CSPRSREGs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRSCODE), ctry = item.CTRYCODE, regtype = item.REGTYPE, regno = item.REGNO }, new { @class = "fa fa-edit", title = "Edit" })
+                    @Html.ActionLink(" ", "Details", "CSPRSREGs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRSCODE), ctry = item.CTRYCODE, regtype = item.REGTYPE, regno = item.REGNO }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", "CSPRSREGs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRSCODE), ctry = item.CTRYCODE, regtype = item.REGTYPE, regno = item.REGNO }, new { @class = "fa fa-trash", title = "Delete" })
+                }
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.HKCTRY.CTRYDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.REGTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.REGNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.REM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STAMP)
+            </td>
+
+        </tr>
+    }
+
+</table>

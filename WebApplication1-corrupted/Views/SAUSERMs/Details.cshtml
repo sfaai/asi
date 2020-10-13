@@ -1,0 +1,122 @@
+﻿@model WebApplication1.SAUSERM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SAUSERM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.USERNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USERNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PW)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PW)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CRDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CRDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EXPDAYS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EXPDAYS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LUDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LUDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EXUSER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EXUSER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MAXSESSION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MAXSESSION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USERTYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USERTYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PWMINCHAR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PWMINCHAR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PWRECYCLE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PWRECYCLE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PWFAILLOCK)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PWFAILLOCK)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USERLOCK)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USERLOCK)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.USERID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

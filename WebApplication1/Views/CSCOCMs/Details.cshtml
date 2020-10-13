@@ -1,0 +1,137 @@
+﻿@model WebApplication1.CSCOCM
+
+@using WebApplication1.Utility
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "View Charge/Mortgage of ";
+}
+
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.CSCOMSTR.CONAME</h4>
+</div>
+
+
+<div class="form-horizontal">
+
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.CONO)
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.REFNO, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.REFNO, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.REFNO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.REFDATE, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.REFDATE, new { htmlAttributes = new { @Value = Model.REFDATE.ToString("yyyy-MM-dd"), @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.REFDATE, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.CMSDATE, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CMSDATE, new { htmlAttributes = new { @Value = Model.CMSDATE.ToString("yyyy-MM-dd"), @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CMSDATE, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.CMEDATE, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CMEDATE, new { htmlAttributes = new { @Value = Model.CMEDATE?.ToString("yyyy-MM-dd"), @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CMEDATE, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.PRSCODE, null, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("PRSCODE", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.PRSCODE, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div id="divEditPRSCODE">
+        @{Html.RenderPartial("Partial/EditPRSCODE", @Model);}
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.CMNATURE, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CMNATURE, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CMNATURE, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.LS, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.LS, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.LS, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.CMINFOStr, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CMINFOStr, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CMINFO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @Html.HiddenFor(Model => Model.CMINFO)
+
+    <div class="form-group row">
+        @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    @Html.HiddenFor(Model => Model.STAMP)
+
+
+</div>
+<p>
+    @Html.ActionLink(" Edit", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO), refno = Model.REFNO }, new { @class = "btn btn-info fa fa-edit" })
+    @Html.ActionLink(" Back", "Details", "cSCOMSTRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-info fa fa-arrow-left" })
+</p>
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+
+
+        if (("@Html.Action()" == "Details") || ("@Html.Action()" == "Delete"))  {
+            $(":input").attr("readonly", true);
+            $("select").attr("disabled", true);
+            $("input[type=checkbox]").attr("disabled", true);
+
+        }
+
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

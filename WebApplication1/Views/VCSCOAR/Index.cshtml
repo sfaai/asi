@@ -1,0 +1,132 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using WebApplication1.Utility;
+@model IPagedList<WebApplication1.V_CSCOAR>
+
+@{
+    ViewBag.Title = "Annual Return Reminder";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">@ViewBag.title</h2>
+    @Html.Action("Search")
+</div>
+
+<div class="border-0">
+    <div class="row form-inline">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+
+        @Html.ActionLink(" Listing", "Listing", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "AR Listing" })
+        @Html.ActionLink(" Reminder", "ReminderList", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "AR Reminders" })
+        @Html.ActionLink(" Emails", "Emails", new { id = "All" }, new { @class = "btn btn-sm fa fa-envelope-o", title = "Email AR Reminders" })
+    </div>
+
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th>
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COREGNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ARNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().LASTAR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ARTOFILE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().FILEDAR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REMINDER2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REMINDER1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SUBMITAR)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAFFCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAFFDESC)
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr class="text-nowrap">
+                <td>
+
+                    @Html.ActionLink(" ", "Reminder", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-print", title = "print" })
+                    @if (string.IsNullOrEmpty(item.Email)) { }
+                    else
+                    {
+                        @Html.ActionLink(" ", "Email", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-envelope-o", title = "Email" })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CONAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COREGNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ARNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LASTAR)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ARTOFILE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILEDAR)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMINDER2Bool)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMINDER1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.SUBMITAR)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAFFCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAFFDESC)
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

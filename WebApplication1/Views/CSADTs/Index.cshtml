@@ -1,0 +1,49 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSADT>
+
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "Auditors";
+}
+
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr  class="label-primary">
+	   <th>
+         @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+       </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADTCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADTDESC)
+        </th>
+        <th>
+            @Html.ActionLink(" ", "Listing", null, new { @class = "btn btn-primary h4 fa fa-print", title = "Listing" })
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new { id =  MyHtmlHelpers.ConvertIdToByteStr(item.ADTCODE ) }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.ADTCODE ) }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.ADTCODE ) }, new { @class = "fa fa-trash", title = "Delete" })
+                    @Html.ActionLink(" ", "CompanyListAuditor", "CSCOMSTRs", new { Auditor = MyHtmlHelpers.ConvertIdToByteStr(item.ADTCODE) }, new { @class = "fa fa-print", title = "Company Listing" })
+                </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADTCODE)
+        </td>
+        <td colspan="2">
+            @Html.DisplayFor(modelItem => item.ADTDESC)
+        </td>
+
+    </tr>
+}
+
+</table>

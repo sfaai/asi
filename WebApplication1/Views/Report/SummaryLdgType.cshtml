@@ -1,0 +1,6 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Client Ledger Type Summary";
+}
+
+@Html.Action("LdgType","Report", new { rptType = ViewBag.rptType })

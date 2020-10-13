@@ -1,0 +1,33 @@
+address_id|entity_id|address_mailing|address_address|address_contact|address_fax|address_type|address_postal|address_city|address_state|address_country
+1|1|f|"24 Jalan Melur 15, 
+Taman Melur, 
+68000 Ampang, 
+Selangor Darul Ehsan."|||Resident|0|Other|Other|Austria
+2|2|f|"24 Jalan Melur 15, 
+Taman Melur, 
+68000 Ampang, 
+Selangor Darul Ehsan. "|||Registered|0|Other|Other|Austria
+3|3|t|"58B,
+1st Floor, Jalan Desa Bakti,
+Taman Desa,
+Off Jalan Klang Lama,
+58100 Kuala Lumpur,
+Wilayah Persekutuan."|||Resident|0|Other|Other|Austria
+4|4|t|"C-28-6 Setia Sky Residences,
+76, Jalan Raja Muda Abdul Aziz,
+Off Jalan Tun Razak,
+Off Jalan Tun Razak,
+50300 Kuala Lumpur,
+Wilayah Persekutuan."|017-9399373||Resident|0|Other|Other|Austria
+5|5|t|"No. 54, Jalan Intan 1/1,
+Taman Puchong Intan,
+47150 Puchong,
+Selangor Darul Ehsan."|018-5720060||Resident|0|Other|Other|Austria
+6|6|f|"No.65, Jalan 49, 
+Selayang Baru, 
+68100 Batu Caves,
+Selangor Darul Ehsan."| 014-6680530||Resident|0|Other|Other|Austria
+7|7|f|"C2-15-10, Neo Damansara Residence, 
+Jalan PJU 8/1, Damansara Perdana,
+47820 Petaling Jaya, 
+Selangor Darul Ehsan."|||Registered|0|Other|Other|Austria

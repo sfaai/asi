@@ -1,0 +1,6 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Client Ledger Monthly Detail By Staff Portfolio";
+}
+
+@Html.Action("LdgDetail1","Report", new { year = ViewBag.year, month = ViewBag.month })

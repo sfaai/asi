@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+    <title>@ViewBag.Title -CS Siris</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="@Url.Content("~/Scripts/Utility/myCommonUtil.js")"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+
+        @Html.ActionLink("CS SIRIS v0.9c", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        <!-- Links -->
+
+        <ul class="navbar-nav">
+            @*<li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>*@
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Company
+                </a>
+                <div class="dropdown-menu"> 
+                    <a class="dropdown-item" href="~/CSCOMSTRs/Index/">Company</a>
+                    <a class="dropdown-item" href="~/CSGRPMs/Index/">Company Grouping</a>
+                    <p class="dropdown-divider"></p>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Entity
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="~/CSPRs/Index/">Entity</a>
+                    <p class="dropdown-divider"></p>
+                </div>
+            </li>
+        
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Operation
+                </a>
+                <div class="dropdown-menu">
+                    <p class="dropdown-item"><strong>Job Management</strong></p>
+
+                    <a class="dropdown-item" href="~/CSJOBMs/Index/">Job Taking</a>
+                    <a class="dropdown-item" href="~/CSJOBDs/Index/">Job Status Tracking</a>
+                    <p class="dropdown-divider"></p>
+                    <p class="dropdown-item"><strong>Reminders</strong></p>
+                    <a class="dropdown-item" href="~/VCSCOAR/Index/">Annual Return Reminder </a>
+                    <a class="dropdown-item" href="~/VCSCOAGM/Index/">Audited Financial Statement Reminder</a>
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="~/CSCOSTATs/Index/">Change Company Status</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Client Accounts
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="~/CSBILLs/Index/">Billing Item </a>
+                    <a class="dropdown-item" href="~/CSPRFs/Index/">Proforma Bill </a>
+                    @*<a class="dropdown-item" href="#">Invoice</a>*@
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="~/CSRCPs/Index/">Receipt from client </a>
+                    <a class="dropdown-item" href="~/CSRCPs/IndexC/">Receipt from client cancellation </a>
+                    <a class="dropdown-item" href="~/CSCNMs/Index/">Discounted Bill </a>
+                    <a class="dropdown-item" href="~/CSDNMs/Index/">Debit Note </a>
+                    <p class="dropdown-divider"></p>
+                    @*<a class="dropdown-item" href="#">3rd party payment</a>
+                        <a class="dropdown-item" href="#">Refund to client</a>*@
+                    <a class="dropdown-item" href="~/CSOFFs/Index/">Item offset</a>
+                    @*<a class="dropdown-item" href="#">3rd party payment cancellation</a>*@
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Process
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="~/CSCOFEEs/Index/">Generate Fees </a>
+
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="#">End Day</a>
+
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Enquiry
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Entity</a>
+
+
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Report
+                </a>
+                <div class="dropdown-menu">
+
+                    <a class="dropdown-item" href="~/Report/PrfBillYear/">Proforma Billing Summary</a>
+                    <a class="dropdown-item"href="~/SalesTax/Index/">Sales Tax </a>
+                    <a class="dropdown-item" href="~/Report/SummaryBill/">Billing Summary </a>
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="~/Report/SummaryLdg/">Client Ledger Summary</a>
+                    <a class="dropdown-item" href="~/Report/SummaryStaffOstd/">Client Outstanding by Staff </a>
+                    <a class="dropdown-item" href="~/Report/SummaryCostatOstd/">Client Outstanding by status </a>
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="~/Report/CostatYear/">Company Status Summary </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Maintenance
+                </a>
+                <div class="dropdown-menu">
+
+                    <a class="dropdown-item" href="~/CSADTs/Index/">Auditor</a>
+                    <a class="dropdown-item" href="~/CSTXes/Index/">Tax Agent</a>
+                    <a class="dropdown-item" href="~/CSITEMs/Index/">Item Type </a>
+                    <a class="dropdown-item" href="~/CSTAXTYPEs/Index/">Tax Code </a>
+                    <a class="dropdown-item" href="~/CSCASEs/Index/">Case/Fee Code </a>
+                    <a class="dropdown-item" href="~/CSEQs/Index/">Equity Code</a>
+                    <a class="dropdown-item" href="~/CSSTATs/Index/">Status</a>
+                    <p class="dropdown-divider"></p>
+
+                    <a class="dropdown-item" href="~/CSBILLDESCs/Index/">Billing Description</a>
+                    <a class="dropdown-item" href="~/CSCHGREMs/Index/">Register Change Remark</a>
+
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="~/SACOMPs/Edit/065083073032083101099114101116097114105097108032083101114118105099101115032083100110046032066104100046">System Profile</a>
+                    <a class="dropdown-item" href="~/HKLOGINMAPs/Index/">User Id to Staff Mapping </a>
+
+
+                </div>
+            </li>
+            <li class="nav-item"> @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" }) </li>
+            @*<li class="nav-item"> @Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" }) </li>*@
+            <li class="nav-item"> @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" }) </li>
+        </ul>
+        @*<ul class="navbar-nav">
+                <li class="nav-item"> @Html.ActionLink("Company", "Index", "CSCOMSTRs", null, new { @class = "nav-link" }) </li>
+            </ul>*@
+        @Html.Partial("_LoginPartial")
+
+    </nav>
+    <br />
+
+    <div class="container body-content container-fluid no-gutters">
+        @RenderBody()
+        <hr />
+        <footer class="align-bottom">
+            <p>&copy; @DateTime.Now.Year - ASI Secretarial Services Sdn Bhd</p>
+        </footer>
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

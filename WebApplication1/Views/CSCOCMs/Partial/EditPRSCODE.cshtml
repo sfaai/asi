@@ -1,0 +1,27 @@
+﻿@model WebApplication1.CSCOCM
+
+
+
+
+
+<div class="form-group row">
+    @Html.LabelFor(model => model.ADDRID, null, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.DropDownList("ADDRID", null, htmlAttributes: new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.ADDRID, "", new { @class = "text-danger" })
+    </div>
+</div>
+
+
+
+
+@Scripts.Render("~/bundles/jquery")
+<script>
+    $(document).ready(function () {
+
+
+    })
+</script>
+
+
+

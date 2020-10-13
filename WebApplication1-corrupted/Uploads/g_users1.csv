@@ -1,0 +1,13 @@
+user_id|user_userid|user_password|user_name|user_email|group_groupid|user_addedby|user_superuser|user_since|user_department|user_staffid|user_activation
+1|ADMIN|COMSECADMIN|ComSec2017 Admin|-|DEFAULT|-|Y|01/07/2017|Secretarial|0|t
+3|TSY|920628|Shi Yun|sy@asi.my|DEFAULT|SZE|N|19/09/2017|Secretarial|6|t
+6|ROSSY|abc123|ROSSY||Normal Function + No delete|SZE|N|20/11/2017|Secretarial|8|t
+5|IDAH|abc123|Norfaidah|faidah@asi.my|DEFAULT|SZE|N|04/10/2017|Secretarial|7|t
+2|SZE|abc123|Sze Sze|sze@asi.my|DEFAULT|ADMIN|Y|19/09/2017|Secretarial|4|t
+8|FATIN|abc123|FATIN||DEFAULT|SZE|N|09/12/2017|Secretarial|2|t
+10|SHELA|abc123|SHELA||DEFAULT|SZE|N|09/12/2017|Secretarial|5|t
+9|IRINA|irina95|IRINA||DEFAULT|SZE|N|09/12/2017|Secretarial|12|t
+7|HANA|Study123|HANA||DEFAULT|SZE|N|09/12/2017|Secretarial|3|t
+11|TR|abc123|TR 1||Normal Function + No delete|SZE|N|05/02/2018|Secretarial|TR1|t
+12|TR2|abc123|TR 2||Normal Function + No delete|SZE|N|05/02/2018|Secretarial|TR2|t
+4|LIA|abc123|Lia|lia@asi.my|DEFAULT|SZE|N|04/10/2017|Secretarial|10|t

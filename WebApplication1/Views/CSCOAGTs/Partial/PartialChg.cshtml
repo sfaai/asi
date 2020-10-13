@@ -1,0 +1,142 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSCOAGTCHG>
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th>
+            @if (Html.Action() == "Edit")
+            {
+                @Html.ActionLink("Add", "Create", "CSCOAGTCHGs", new { id = MyHtmlHelpers.ConvertIdToByteStr(ViewBag.CONO), person = ViewBag.PRSCODE, adate = ViewBag.ADATE }, new { @class = "btn btn-primary h4" })
+            }
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ROWNO)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.CHGEFFDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CHGREM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRSNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OCCUPATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.NATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RACE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSADDR.ADDR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSREG.REGTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSREG.CTRYCODE)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSREG.REGNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSREG1.REGTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSREG1.CTRYCODE)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSREG1.REGNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+            <td>
+                @if (Html.Action() == "Edit")
+                {
+                    @Html.ActionLink(" ", "Edit", "CSCOAGTCHGs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, adate = item.ADATE, row = item.ROWNO }, new { @class = "fa fa-edit", title = "Edit" })
+                    @Html.ActionLink(" ", "Details", "CSCOAGTCHGs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, adate = item.ADATE, row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", "CSCOAGTCHGs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, adate = item.ADATE, row = item.ROWNO }, new { @class = "fa fa-trash", title = "Delete" })
+                }
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.ROWNO)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CHGEFFDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CHGREM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PRSNAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OCCUPATION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.REM)
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.HKNATION.NATION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HKRACE.RACE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSPRSADDR.ADDR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSPRSREG.REGTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSPRSREG.CTRYCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSPRSREG.REGNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSPRSREG1.REGTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSPRSREG1.CTRYCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSPRSREG1.REGNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STAMP)
+            </td>
+        </tr>
+    }
+
+</table>

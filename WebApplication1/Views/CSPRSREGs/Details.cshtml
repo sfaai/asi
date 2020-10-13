@@ -1,0 +1,76 @@
+﻿@using WebApplication1.Utility;
+@model WebApplication1.CSPRSREG
+
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "View Entity Registration ";
+}
+<div class="border border-info bg-info"">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.PRSCODE</h4>
+</div>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @Html.HiddenFor(model => model.PRSCODE)
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CTRYCODE, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CTRYCODE, null, new { htmlAttributes= new { @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.CTRYCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REGTYPE, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.REGTYPE, null, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.REGTYPE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REGNO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.REGNO, null, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.REGNO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+	        <div class="col-md-offset-2 col-md-10">
+				@Html.ActionLink(" Edit", "Edit", new { id =  MyHtmlHelpers.ConvertIdToByteStr(Model.PRSCODE ), ctry = Model.CTRYCODE, regtype = Model.REGTYPE, regno = Model.REGNO }, new {@class="btn btn-primary fa fa-edit", title="Edit"})
+				@Html.ActionLink(" Back", "Edit", "CSPRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.PRSCODE) }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

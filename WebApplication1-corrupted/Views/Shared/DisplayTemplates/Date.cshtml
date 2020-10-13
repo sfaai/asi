@@ -1,0 +1,3 @@
+﻿@model System.DateTime ?
+@*@Html.Label("", Model.HasValue ? Model.Value.ToString("dd/MM/yyyy") : string.Empty)*@
+@( Model.HasValue ? Model.Value.ToString("dd/MM/yyyy") : string.Empty)

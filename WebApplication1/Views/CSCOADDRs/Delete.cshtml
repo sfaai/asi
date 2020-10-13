@@ -1,0 +1,159 @@
+﻿@model WebApplication1.CSCOADDR
+
+@using WebApplication1.Utility
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "Delete Company Address ";
+}
+
+<style>
+            #myContent {
+            column-count: 2;
+            column-gap: 5px;
+            border: groove;
+            /*height: 350px;*/
+        }
+</style>
+
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.CSCOMSTR.CONAME</h4>
+</div>
+
+<div class="border border-info bg-warning">
+    <br />
+    <h4 class="h4 text-center">ARE YOU SURE YOU WANT TO DELETE THIS</h4>
+    <br />
+</div>
+
+<hr />
+<div id="myContent">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MAILADDR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MAILADDRBool)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDRTYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDRTYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDR1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.POSTAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.POSTAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CITYCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKCITY.CITYDESC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STATECODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKSTATE.STATEDESC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTRYCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKCTRY.CTRYDESC)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PHONE1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PHONE)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FAX1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FAX)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OPRHRS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OPRHRSStr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EDATE)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+    </dl>
+
+
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Delete" class="btn btn-primary" />
+        @Html.ActionLink(" Back", "Edit", "cSCOMSTRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-info fa fa-arrow-left" })
+    </div>
+}

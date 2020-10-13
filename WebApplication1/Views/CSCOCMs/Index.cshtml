@@ -1,0 +1,87 @@
+﻿@model IEnumerable<WebApplication1.CSCOCM>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.REFDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CMSDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CMEDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CMNATURE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CMINFO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPR.CONSTCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSADDR.MAILADDR)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.REFDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CMSDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CMEDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CMNATURE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CMINFO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSPR.CONSTCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSPRSADDR.MAILADDR)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

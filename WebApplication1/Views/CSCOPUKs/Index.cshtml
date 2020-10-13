@@ -1,0 +1,93 @@
+﻿@model IEnumerable<WebApplication1.CSCOPUK>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EFFDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EQCONSIDER)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOOFSHARES)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMINAL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PAIDAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DUEAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PREMIUM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NCDET)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENDDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSEQ.EQDESC)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EFFDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EQCONSIDER)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOOFSHARES)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMINAL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PAIDAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DUEAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PREMIUM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NCDET)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENDDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSEQ.EQDESC)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

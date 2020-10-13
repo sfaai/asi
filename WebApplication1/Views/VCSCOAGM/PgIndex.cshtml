@@ -1,0 +1,257 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using WebApplication1.Utility;
+@model IPagedList<WebApplication1.V_CSCOAGM>
+
+@{
+    ViewBag.Title = "Audited Financial Statement Reminder";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">@ViewBag.title</h2>
+    @Html.Action("Search")
+</div>
+
+<div class="border-0" style="width:98vw">
+    <div class="row form-inline">
+
+        @Html.PagedListPager(Model, page => Url.Action("PgIndex", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+
+        @Html.ActionLink(" Listing", "Listing", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "AGM Listing" })
+        @Html.ActionLink(" Reminder", "ReminderList", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print AGM Reminders" })
+        @Html.ActionLink(" First Reminder", "ReminderList", new { id = "FIRST" }, new { @class = "btn btn-sm fa fa-print", title = "print AGM First Reminders" })
+        @Html.ActionLink(" Second Reminder", "ReminderList", new { id = "SECOND" }, new { @class = "btn btn-sm fa fa-print", title = "print AGM Second Reminders" })
+        @Html.ActionLink(" Final Reminder", "ReminderList", new { id = "FINAL" }, new { @class = "btn btn-sm fa fa-print", title = "print AGM Final Reminders" })
+        @Html.ActionLink(" Special Reminder", "ReminderList", new { id = "SPECIAL" }, new { @class = "btn btn-sm fa fa-print", title = "print AGM Special Reminders" })
+    </div>
+    <div>
+        @Html.ActionLink(" Reminder", "EReminderList", new { id = "All" }, new { @class = "btn btn-sm fa fa-envelope-o", title = "Email AGM Reminders" })
+        @Html.ActionLink(" First Reminder", "EReminderList", new { id = "FIRST" }, new { @class = "btn btn-sm fa fa-envelope-o", title = "Email AGM First Reminders" })
+        @Html.ActionLink(" Second Reminder", "EReminderList", new { id = "SECOND" }, new { @class = "btn btn-sm fa fa-envelope-o", title = "Email AGM Second Reminders" })
+        @Html.ActionLink(" Final Reminder", "EReminderList", new { id = "FINAL" }, new { @class = "btn btn-sm fa fa-envelope-o", title = "Email AGM Final Reminders" })
+        @Html.ActionLink(" Special Reminder", "EReminderList", new { id = "SPECIAL" }, new { @class = "btn btn-sm fa fa-envelope-o", title = "Email AGM Special Reminders" })
+    </div>
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th>
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COREGNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AGMNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().LASTFYE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().FYETOFILE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().FILEDFYE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AGMLAST)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AGMEXT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CReminderType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REMINDER4Bool)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REMINDER1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REMINDER2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REMINDER3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AGMDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AGMFILED)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CIRCDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAFFCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAFFDESC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAMP)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            //item.ReminderMonth = 6;
+            //item.ReminderYear = 2018;
+
+            <tr class="text-nowrap">
+                <td>
+
+                    @Html.ActionLink(" ", "Reminder", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-print", title = "print" })
+
+                    @if (string.IsNullOrEmpty(item.Email)) { }
+                    else
+                    {
+                        @Html.ActionLink(" ", "Email", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-envelope-o", title = "Email" })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CONAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COREGNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGMNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LASTFYE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FYETOFILE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILEDFYE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGMLAST)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGMEXT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CReminderType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMINDER4Bool)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMINDER1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMINDER2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMINDER3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGMDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGMFILED)
+                </td>
+
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.CIRCDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAFFCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAFFDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+@section Scripts {
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/base/jquery-ui.css">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".monthPicker").datepicker({
+                dateFormat: 'MM yy',
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true,
+
+                onClose: function (dateText, inst) {
+                    var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                    var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                    $(this).val($.datepicker.formatDate('MM yy', new Date(year, month, 1)));
+                }
+            });
+
+            $(".monthPicker").focus(function () {
+                $(".ui-datepicker-calendar").hide();
+                $("#ui-datepicker-div").position({
+                    my: "center top",
+                    at: "center bottom",
+                    of: $(this)
+                });
+            });
+        });
+    </script>
+
+    @*<script type="text/javascript">
+            $(function() {
+                $('.date-picker').datepicker( {
+                    changeMonth: true,
+                    changeYear: true,
+                    showButtonPanel: true,
+                    dateFormat: 'MM yy',
+                    onClose: function(dateText, inst) {
+                        var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+                        var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+                        $(this).datepicker('setDate', new Date(year, month, 1));
+                    },
+                    beforeShow : function(input, inst) {
+                        var datestr;
+                        if ((datestr = $(this).val()).length > 0) {
+                            year = datestr.substring(datestr.length-4, datestr.length);
+                            month = jQuery.inArray(datestr.substring(0, datestr.length-5), $(this).datepicker('option', 'monthNamesShort'));
+                            $(this).datepicker('option', 'defaultDate', new Date(year, month, 1));
+                            $(this).datepicker('setDate', new Date(year, month, 1));
+                        }
+                    }
+                });
+            });
+        </script>*@
+    <style>
+        .ui-datepicker-calendar {
+            display: none;
+        }
+    </style>
+}

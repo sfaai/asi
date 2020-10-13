@@ -1,0 +1,378 @@
+﻿@using WebApplication1;
+@using DCSoft.RTF;
+
+@model IQueryable<WebApplication1.CSBILL>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Company Register</title>
+    @Styles.Render("~/Content/css")
+
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .regSect {
+            background-color: darkgray;
+            text-align: center;
+            border: solid;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+        }
+
+
+
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+
+            pre {
+                border: none;
+            }
+
+            @@page {
+                size: landscape;
+            }
+
+            /*body {
+                writing-mode: vertical-rl;
+            }*/
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 400px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 70px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@page {
+            size: auto;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="letter">
+            <header>
+                <div class="text-left">
+                    @ViewBag.Company
+                    <br /><br />
+                    <u>Billing Item from @ViewBag.RPT_START to @ViewBag.RPT_END</u>
+                    <br />
+
+                </div>
+            </header>
+        </div>
+        <div id="main">
+
+            <table class="table table-bordered table-hover table-responsive-lg table-sm">
+                <tr class="label-primary">
+                    <th>
+
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().BILLNO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().ENTDATE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().SYSGENBool)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CONO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().JOBNO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CSITEM.ITEMDESC)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CASENO)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CASECODE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CSCASEs.CASEDESC)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().ITEMDESC)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().ITEMSPEC)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().TAXCODE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().TAXTYPE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().TAXRCODE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().TAXRATE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().ITEMAMT1)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().TAXAMT1)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().NETAMT1)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().ITEMAMT2)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().TAXAMT2)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().NETAMT2)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().ITEMAMT)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().TAXAMT)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().NETAMT)
+                    </th>
+
+                    @*<th>
+                            @Html.DisplayNameFor(model => model.First().STAMP)
+                        </th>*@
+                </tr>
+                @{
+                    decimal tot101 = 0;
+                    decimal tot102 = 0;
+                    decimal tot103 = 0;
+                    decimal tot104 = 0;
+                    decimal tot105 = 0;
+                    decimal tot106 = 0;
+                    decimal tot107 = 0;
+                    decimal tot108 = 0;
+                    decimal tot109 = 0;
+                }
+
+                @foreach (var item in Model)
+                {
+                    tot101 += item.ITEMAMT1;
+                    tot102 += item.TAXAMT1;
+                    tot103 += item.NETAMT1;
+                    tot104 += item.ITEMAMT2;
+                    tot105 += item.TAXAMT2;
+                    tot106 += item.NETAMT2;
+                    tot107 += item.ITEMAMT;
+                    tot108 += item.TAXAMT;
+                    tot109 += item.NETAMT;
+
+                    <tr class="text-nowrap">
+                        <td></td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BILLNO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ENTDATE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SYSGENBool)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CSCOMSTR.COREGNO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CSCOMSTR.CONAME)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.JOBNO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CSITEM.ITEMDESC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CASENO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CSCASEs.CASEDESC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ITEMDESC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ITEMDESC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ITEMSPEC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TAXCODE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TAXTYPE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TAXRCODE)
+                        </td>
+                        <td class="text-right">
+                            @Html.DisplayFor(modelItem => item.TAXRATE)
+                        </td>
+                        <td class="text-right">
+                            @Html.DisplayFor(modelItem => item.ITEMAMT1)
+                        </td>
+                        <td class="text-right">
+                            @Html.DisplayFor(modelItem => item.TAXAMT1)
+                        </td>
+                        <td class="text-right">
+                            @Html.DisplayFor(modelItem => item.NETAMT1)
+                        </td>
+                        <td class="text-right">
+                            @Html.DisplayFor(modelItem => item.ITEMAMT2)
+                        </td>
+                        <td class="text-right">
+                            @Html.DisplayFor(modelItem => item.TAXAMT2)
+                        </td>
+                        <td class="text-right">
+                            @Html.DisplayFor(modelItem => item.NETAMT2)
+                        </td>
+                        <td class="text-right">
+                            @Html.DisplayFor(modelItem => item.ITEMAMT)
+                        </td>
+                        <td class="text-right">
+                            @Html.DisplayFor(modelItem => item.TAXAMT)
+                        </td>
+                        <td class="text-right">
+                            @Html.DisplayFor(modelItem => item.NETAMT)
+                        </td>
+
+                        @*<td>
+                                @Html.DisplayFor(modelItem => item.STAMP)
+                            </td>*@
+
+
+                    </tr>
+                }
+
+                <tr>
+                    <td colspan="17" style="text-align:right"><strong>Total</strong></td>
+                    <td style="text-align:right">
+                        <strong>  @tot101.ToString("N2")  </strong>
+                    </td>
+                    <td style="text-align:right">
+                        <strong>     @tot102.ToString("N2")</strong>
+                    </td>
+                    <td style="text-align:right">
+                        <strong>     @tot103.ToString("N2")</strong>
+                    </td>
+                    <td style="text-align:right">
+                        <strong>     @tot104.ToString("N2")</strong>
+                    </td>
+                    <td style="text-align:right">
+                        <strong>     @tot105.ToString("N2")</strong>
+                    </td>
+                    <td style="text-align:right">
+                        <strong>       @tot106.ToString("N2")</strong>
+                    </td>
+                    <td style="text-align:right">
+                        <strong>       @tot107.ToString("N2")</strong>
+                    </td>
+                    <td style="text-align:right">
+                        <strong>      @tot108.ToString("N2")</strong>
+                    </td>
+                    <td style="text-align:right">
+                        <strong>      @tot109.ToString("N2")</strong>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        @*<footer>
+
+                <div class="row">
+                    <div class="col-12">
+
+
+
+                    </div>
+
+                </div>
+            </footer>*@
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+﻿@model WebApplication1.CSCOSHEQ
+@using WebApplication1.Utility
+
+@{
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @Html.HiddenFor(x => x.CONO)
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.MVNO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-2">
+                @Html.EditorFor(model => model.MVNO, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.MVNO, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.MVID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                @Html.EditorFor(model => model.MVID, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.MVID, "", new { @class = "text-danger" })
+            </div>
+            @Html.LabelFor(model => model.MVSIGN, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                @Html.EditorFor(model => model.MVSIGN, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.MVSIGN, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.MVDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MVDATE, new { htmlAttributes = new { @Value = Model.MVDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                @Html.ValidationMessageFor(model => model.MVDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.PRSCODE, null, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @if (Model.MVTYPE == "Conversion")
+                {
+                    @Html.DropDownList("PRSCODE", null, "No Selection", htmlAttributes: new { @class = "form-control", @disabled = true })
+                    @Html.HiddenFor(m => m.PRSCODE)
+                }
+                else
+                {
+                    @Html.DropDownList("PRSCODE", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                }
+                @Html.ValidationMessageFor(model => model.PRSCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @Html.HiddenFor(x => x.MVNO);
+        @Html.HiddenFor(x => x.MVID);
+        @Html.HiddenFor(x => x.MVTYPE);
+        @Html.HiddenFor(x => x.MVSIGN);
+
+
+        <div id="divEditPRSCODE">
+            @{Html.RenderPartial("Partial/EditPRSCODE", @Model);}
+        </div>
+
+
+        @Html.HiddenFor(x => x.SCRIPT)
+        @Html.HiddenFor(x => x.SSHAREAMT)
+        @Html.HiddenFor(x => x.SHAREOS)
+        @Html.HiddenFor(x => x.SAMT)
+        @Html.HiddenFor(x => x.FOLIONOSRC)
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.AMT, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AMT, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AMT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @if (ViewBag.MVTYPE == "Transfer")
+        {
+            <div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.PRSCODETO, null, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-10">
+                    @Html.DropDownList("PRSCODETO", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.PRSCODETO, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            @Html.HiddenFor(x => x.FOLIONOTO)
+        }
+
+        @if (ViewBag.MVTYPE == "Split")
+        {
+            @*<div id="divEditSPLIT">
+                    @{
+                        Html.RenderPartial("Partial/EditSPLIT", @Model.Split_Denom);
+                    }
+                </div>
+                @Html.HiddenFor(x => x.Split_Denom)*@
+            <div class="form-group col-md-10 form-check-inline">
+                <div class="col-md-4">
+                    @Html.Label("Split to", htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.TotalSplit, new { htmlAttributes = new { @value = 0, @class = "form-control", @readonly = true } })
+                </div>
+                <div class="col-md-10">
+                    <table id="tblSplitDenom" class="table table-bordered table-hover table-responsive-lg table-sm">
+
+                        <tr class="label-primary">
+                            <th style="text-align:right">
+                                @Html.DisplayNameFor(model => Model.Split_Denom.First().DenomCnt)
+                            </th>
+                            <th style="text-align:right">
+                                @Html.DisplayNameFor(model => Model.Split_Denom.First().DenomUnit)
+                            </th>
+                            <th style="text-align:right">
+                                @Html.DisplayNameFor(model => Model.Split_Denom.First().DenomTotal)
+                            </th>
+                        </tr>
+
+                        @for (int i = 0; i < Model.Split_Denom.Count; i++)
+                    {
+                            <tr>
+                                <td style="text-align:right">
+                                    @Html.EditorFor(m => Model.Split_Denom[i].DenomCnt, new { htmlAttributes = new { @class = "form-control" } })
+                                </td>
+                                <td style="text-align:right">
+                                    @Html.EditorFor(m => Model.Split_Denom[i].DenomUnit, new { htmlAttributes = new { @class = "form-control" } })
+                                </td>
+                                <td style="text-align:right">
+                                    @Html.EditorFor(m => Model.Split_Denom[i].DenomTotal, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                                </td>
+                            </tr>
+
+                        }
+                    </table>
+                </div>
+            </div>
+        }
+
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        @Html.HiddenFor(x => x.REFCNT)
+        @Html.HiddenFor(x => x.COMPLETE)
+        @Html.HiddenFor(x => x.COMPLETED)
+        @Html.HiddenFor(x => x.STAMP)
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" onclick="return DoBeforeSubmit()" value="Create" class="btn btn-primary fa fa-save" Title="Create" />
+                @Html.ActionLink(" Back", "ShareMove", "CSCOSHes", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+                }
+
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        JModel = null;
+
+        $('#Split_Denom_0__DenomCnt,#Split_Denom_0__DenomUnit').change( function() {
+            $('#Split_Denom_0__DenomTotal').val( $('#Split_Denom_0__DenomCnt').val() * $('#Split_Denom_0__DenomUnit').val() );
+            $('#TotalSplit').val( parseFloat($('#Split_Denom_0__DenomTotal').val()) +  parseFloat( $('#Split_Denom_1__DenomTotal').val()) +  parseFloat($('#Split_Denom_2__DenomTotal').val()) +  parseFloat($('#Split_Denom_3__DenomTotal').val()) +  parseFloat($('#Split_Denom_4__DenomTotal').val()) )
+        })
+
+        $('#Split_Denom_1__DenomCnt,#Split_Denom_1__DenomUnit').change( function() {
+            $('#Split_Denom_1__DenomTotal').val( $('#Split_Denom_1__DenomCnt').val() * $('#Split_Denom_1__DenomUnit').val() );
+            $('#TotalSplit').val( parseFloat($('#Split_Denom_0__DenomTotal').val()) +  parseFloat( $('#Split_Denom_1__DenomTotal').val()) +  parseFloat($('#Split_Denom_2__DenomTotal').val()) +  parseFloat($('#Split_Denom_3__DenomTotal').val()) +  parseFloat($('#Split_Denom_4__DenomTotal').val()) )
+        })
+        $('#Split_Denom_2__DenomCnt,#Split_Denom_2__DenomUnit').change( function() {
+            $('#Split_Denom_2__DenomTotal').val( $('#Split_Denom_2__DenomCnt').val() * $('#Split_Denom_2__DenomUnit').val() );
+            $('#TotalSplit').val( parseFloat($('#Split_Denom_0__DenomTotal').val()) +  parseFloat( $('#Split_Denom_1__DenomTotal').val()) +  parseFloat($('#Split_Denom_2__DenomTotal').val()) +  parseFloat($('#Split_Denom_3__DenomTotal').val()) +  parseFloat($('#Split_Denom_4__DenomTotal').val()) )
+        })
+        $('#Split_Denom_3__DenomCnt,#Split_Denom_3__DenomUnit').change( function() {
+            $('#Split_Denom_3__DenomTotal').val( $('#Split_Denom_3__DenomCnt').val() * $('#Split_Denom_3__DenomUnit').val() );
+            $('#TotalSplit').val( parseFloat($('#Split_Denom_0__DenomTotal').val()) +  parseFloat( $('#Split_Denom_1__DenomTotal').val()) +  parseFloat($('#Split_Denom_2__DenomTotal').val()) +  parseFloat($('#Split_Denom_3__DenomTotal').val()) +  parseFloat($('#Split_Denom_4__DenomTotal').val()) )
+        })
+        $('#Split_Denom_4__DenomCnt,#Split_Denom_4__DenomUnit').change( function() {
+            $('#Split_Denom_4__DenomTotal').val( $('#Split_Denom_4__DenomCnt').val() * $('#Split_Denom_4__DenomUnit').val() );
+            $('#TotalSplit').val( parseFloat($('#Split_Denom_0__DenomTotal').val()) +  parseFloat( $('#Split_Denom_1__DenomTotal').val()) +  parseFloat($('#Split_Denom_2__DenomTotal').val()) +  parseFloat($('#Split_Denom_3__DenomTotal').val()) +  parseFloat($('#Split_Denom_4__DenomTotal').val()) )
+        })
+
+
+        function DoBeforeSubmit() {
+            //var LModel = [];
+            //for (r = 1; r <= 5; r++) {
+            //    qty = parseInt(document.getElementById("tblSplitDenom").rows[r].cells[0].innerHTML.split('\n')[2]);
+            //    denom = parseInt(document.getElementById("tblSplitDenom").rows[r].cells[1].innerHTML.split('\n')[2]);
+            //    if ((qty == 0) || (qty == null)) { break;}
+            //    dModel = { "DenomCnt" : qty, "DenomUnit" : denom };
+            //    LModel.push( dModel);
+
+            //}
+            //$("#Split_Denom").val( JSON.stringify(LModel));
+            //return true;
+
+            if ($('MVTYPE').val() == "Split") {
+                var diff = parseFloat($('#TotalSplit').val()) - parseFloat($("#SHAREAMT").val());
+                if ((parseFloat($('#TotalSplit').val()) != 0) && (diff != 0)) {
+                    alert( "Split Total difference :" + diff );
+                    return false;
+                } else {
+                    return true;
+                }
+            } else {
+                return true;
+            }
+        }
+
+        $(document).ready(
+            function () {
+
+                JModel = { "CONO": "@Model.CONO",  "PRSCODE": "@Model.PRSCODE",  "REM": "@Model.REM","STAMP": @Model.STAMP }
+            })
+
+
+        $("#PRSCODE").change(function () {
+            var prscode = $("#PRSCODE option:selected").text();
+            var folio = prscode.split(" | ")[1];
+            $("#FOLIONOSRC").val(folio);
+
+
+
+            JModel.CONO = $('#CONO').val();
+            JModel.PRSCODE = $('#PRSCODE').val();
+            JModel.REM = $('#REM').val();
+            JModel.STAMP = $('#STAMP').val();
+
+
+
+            var jData = JSON.stringify(JModel);
+
+
+            $("#divEditPRSCODE").load('@Url.Action("EditPRSCODE")', JModel, function () {
+
+            });
+        })
+
+
+        $("#PRSCODETO").change(function () {
+            var prscode = $("#PRSCODETO option:selected").text();
+            var folio = prscode.split(" | ")[1];
+            $("#FOLIONOTO").val(folio);
+
+        })
+
+    </script>
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,218 @@
+﻿@model WebApplication1.CSPRF
+@using WebApplication1.Utility
+
+@{
+
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">@ViewBag.Title</h2>
+</div>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.PRFNO)
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.VDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.VDATE, new { htmlAttributes = new { @Value = Model.VDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                @Html.ValidationMessageFor(model => model.VDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.DUEDAYS, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.DUEDAYS, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DUEDAYS, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CONO, "CONO", htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.DropDownList("CONO", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CONO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.DUEDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.DUEDATE, new { htmlAttributes = new { @Value = Model.DUEDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                @Html.ValidationMessageFor(model => model.DUEDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div id="divEditCompany">
+            @{Html.RenderPartial("Partial/EditCompany", @Model);}
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.ATTN, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.ATTN, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ATTN, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @Html.HiddenFor(model => model.COADDRID)
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SEQNO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.SEQNO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SEQNO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.INVALLOC, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.INVALLOC, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.INVALLOC, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.INVNO, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.INVNO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.INVNO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.INVID, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.INVID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.INVID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @Html.HiddenFor(model => model.CSCOADDR)
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary fa fa-save" Title="Save" />
+                @Html.ActionLink(" Back", "Index", null, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="width:96vw">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist" style="width:96vw">
+            <li class="nav-item">
+                <a class="nav-link active" id="tab_Alloted" data-toggle="tab" href="#Allocated">Allocated Billing Item <p class="badge badge-dark">work</p></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab_UnAlloted" data-toggle="tab" href="#UnAllocated">Open Billing Item <p class="badge badge-dark">work</p></a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="tab-content">
+        <div id="Allocated" class="container no-gutters tab-pane active ">
+            <div class="border border-info bg-info" style="width:94vw">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="h2 text-center">Allocated Billing Item</div>
+                </div>
+            </div>
+            @Html.Action("BillAllocated", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.PRFNO) })
+        </div>
+
+
+        <div id="UnAllocated" class="container no-gutters tab-pane fade">
+            <div class="border border-info bg-info" style="width:94vw">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="h2 text-center">Open Billing Item</div>
+                </div>
+            </div>
+            @Html.Action("BillOpen", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) })
+
+        </div>
+
+    </div>
+                }
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        JModel = null;
+
+        $(document).ready(
+            function () {
+
+                JModel = { "CONO": "@Model.CONO",  "ATTN": "@Model.ATTN",  "COADDR": "@Model.COADDR", "REM": "@Model.REM","STAMP": @Model.STAMP }
+            })
+
+        $('#CONO').change(function () {
+
+
+            JModel.CONO = $('#CONO').val();
+            JModel.ATTN = $('#ATTN').val();
+            JModel.COADDR = $('#COADDR').val();
+            JModel.REM = $('#REM').val();
+            JModel.STAMP = $('#STAMP').val();
+
+
+            var jData = JSON.stringify(JModel);
+
+
+            $("#divEditCompany").load('@Url.Action("EditCompany")', JModel, function () {
+
+            });
+
+        })
+
+        //$('#COADDR').change( function() {
+        //    $("#REM").val($("#COADDR option:selected").val());
+        //})
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

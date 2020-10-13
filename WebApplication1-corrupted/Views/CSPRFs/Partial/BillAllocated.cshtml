@@ -1,0 +1,167 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSBILL>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr  class="label-primary">
+	   <th>
+         @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary h4" })
+       </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BILLNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENTDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JOBNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CASENO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CASECODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ITEMDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ITEMSPEC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TAXRATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ITEMAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TAXAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NETAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ITEMAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TAXAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NETAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ITEMAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TAXAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NETAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SYSGEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRFALLOC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRFNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRFID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSITEM.ITEMDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSCOMSTR.INCCTRY)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new { id =  MyHtmlHelpers.ConvertIdToByteStr(item.BILLNO ) }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.BILLNO ) }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.BILLNO ) }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BILLNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENTDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JOBNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CASENO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CASECODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ITEMDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ITEMSPEC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAXRATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ITEMAMT1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAXAMT1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NETAMT1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ITEMAMT2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAXAMT2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NETAMT2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ITEMAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TAXAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NETAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SYSGEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRFALLOC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRFNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRFID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSITEM.ITEMDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSCOMSTR.INCCTRY)
+        </td>
+    </tr>
+}
+
+</table>

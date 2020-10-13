@@ -1,0 +1,75 @@
+﻿@model WebApplication1.CSBILL
+
+<div class="container form-check-inline" style="width:96vw">
+
+    <div class="form-group col-md-10">
+        @Html.LabelFor(model => model.JOBCASE, htmlAttributes: new { @class = "control-label" })
+        <div>
+            @Html.DropDownListFor(model => model.JOBCASE, null, "No Job Selected", htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.JOBCASE, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-group col-md-6">
+        @Html.Label("Billing Description", htmlAttributes: new { @class = "control-label" })
+        <div>
+            @Html.DropDownList("BILLDESC", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.CONO, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+<script>
+    $(document).ready(function () {
+
+        if (JModel == null) {
+            JModel = { "CONO": "@Model.CONO", "JOBNO": "@Model.JOBNO","JOBCASE": "@Model.JOBCASE", "CASENO": "@Model.CASENO", "STAMP": @Model.STAMP }
+        }
+
+        $('#JOBCASE').change(function () {
+
+            arr = $('#JOBCASE').val().split("-");
+            if (arr.length != 0) {
+                JModel.JOBNO = arr[0];
+                JModel.CASENO = arr[1];
+            } else {
+                JModel.JOBNO = "";
+                JModel.CASENO = "";
+            }
+            JModel.CONO = $('#CONO').val();
+            JModel.JOBCASE = $('#JOBCASE').val();
+            JModel.ITEMDESC = $('#ITEMDESC').val();
+            JModel.ITEMSPEC = $('#ITEMSPEC').val();
+            JModel.TAXRATE = $('#TAXRATE').val();
+            JModel.ITEMAMT1 = $('#ITEMAMT1').val();
+            JModel.ITEMAMT2 = $('#ITEMAMT2').val();
+            JModel.TAXAMT1 = $('#TAXAMT1').val();
+            JModel.TAXAMT2= $('#TAXAMT2').val();
+            JModel.CASECODE = $('#CASECODE').val();
+            JModel.ITEMTYPE = $('#ITEMTYPE').val();
+
+            var jData = JSON.stringify(JModel);
+
+
+            $("#divEditJobCase").load('@Url.Action("EditJobCase")', JModel, function () {
+                // callback once completed async call
+                // $("#divEditFileLoc2").text(jData);
+            });
+
+        })
+
+
+        //$("#JOBCASE").change();
+
+        $("#BILLDESC").change( function() {
+            $("#ITEMDESC").val( $("#BILLDESC").val());
+        })
+    })
+</script>
+
+
+

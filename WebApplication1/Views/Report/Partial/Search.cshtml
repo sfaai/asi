@@ -1,0 +1,101 @@
+﻿@model WebApplication1.PrfBillAmountType
+
+@using (Html.BeginForm("SearchPost", "Report", FormMethod.Post, new { id = "SearchRecForm" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal row">
+        <div class="form-group col-md-3 form-inline">
+
+            <div class="col-md3">
+                @Html.LabelFor(model => model.AmountType, null, htmlAttributes: new { @class = "control-label" })
+            </div>
+            <div class="col-md3">&nbsp;</div>
+            <div class="col-md6">
+                @Html.DropDownListFor(model => model.AmountType, null, htmlAttributes: new { @class = "form-control" })
+
+            </div>
+
+
+        </div>
+
+        <div class="form-group col-md-2 form-inline">
+
+            <div class="col-md3">
+                @Html.LabelFor(model => model.year, null, htmlAttributes: new { @class = "control-label" })
+            </div>
+            <div class="col-md3">&nbsp;</div>
+            <div class="col-md6">
+                @Html.DropDownListFor(model => model.year, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+
+            </div>
+
+
+        </div>
+
+        <div class="form-group col-md-2 form-inline">
+
+            <div class="col-md3">
+                @Html.LabelFor(model => model.month, null, htmlAttributes: new { @class = "control-label" })
+            </div>
+            <div class="col-md3">&nbsp;</div>
+            <div class="col-md6">
+                @Html.DropDownListFor(model => model.month, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+
+            </div>
+
+
+        </div>
+
+        <div class="form-group col-md-2 form-inline">
+
+            <div class="col-md3">
+                @Html.LabelFor(model => model.type, null, htmlAttributes: new { @class = "control-label" })
+            </div>
+            <div class="col-md3">&nbsp;</div>
+            <div class="col-md6">
+                @Html.DropDownListFor(model => model.type, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+
+            </div>
+
+
+        </div>
+
+        <div class="form-group col-md-3 form-inline">
+
+            <div class="col-md3">
+                @Html.LabelFor(model => model.category, null, htmlAttributes: new { @class = "control-label" })
+            </div>
+            <div class="col-md3">&nbsp;</div>
+            <div class="col-md6">
+                @Html.DropDownListFor(model => model.category, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+
+            </div>
+
+
+        </div>
+    </div>
+}
+
+@Scripts.Render("~/bundles/jquery")
+<script>
+    $("#AmountType").change(function () {
+        $("#SearchRecForm").submit();
+    })
+
+    $("#year").change(function () {
+        $("#SearchRecForm").submit();
+    })
+
+    $("#type").change(function () {
+        $("#SearchRecForm").submit();
+    })
+
+    $("#month").change(function () {
+        $("#SearchRecForm").submit();
+    })
+
+    $("#category").change(function () {
+        $("#SearchRecForm").submit();
+    })
+</script>
+

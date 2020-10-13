@@ -1,0 +1,98 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSJOBST>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr  class="label-primary">
+	   <th>
+         @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+       </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JOBNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CASENO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAGEFR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAGETO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INTIME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OUTDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SENDMODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INIDX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new {  /* id=item.PrimaryKey */  }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new {  /* id=item.PrimaryKey */ }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new {  /* id=item.PrimaryKey */  }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.JOBNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CASENO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAGEFR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAGETO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INTIME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OUTDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SENDMODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INIDX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+    </tr>
+}
+
+</table>

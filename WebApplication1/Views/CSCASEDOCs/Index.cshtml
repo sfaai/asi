@@ -1,0 +1,50 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSCASEDOC>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">Index</h2>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr  class="label-primary">
+	            <th>
+                @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary h4" })
+            </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOCINVDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOCINVQTY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new {  /* id=item.PrimaryKey */  }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new {  /* id=item.PrimaryKey */ }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new {  /* id=item.PrimaryKey */  }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.DOCINVDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DOCINVQTY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+    </tr>
+}
+
+</table>

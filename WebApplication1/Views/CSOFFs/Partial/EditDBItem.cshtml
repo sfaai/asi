@@ -1,0 +1,249 @@
+﻿@model WebApplication1.CSOFF
+
+<p><strong>Debit Item Offset</strong></p>
+
+<div class="form-group form-check-inline" style="width:97vw">
+    <div class="form-group col-md-6 form-check-inline">
+        <div class="col-md-2">
+            @Html.LabelFor(model => model.DBKey, htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.DBKey, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.DBKey, "", new { @class = "text-danger" })
+        </div>
+
+    </div>
+
+</div>
+
+<div class="form-group form-check-inline" style="width:97vw">
+    <div class="form-group col-md-6 form-check-inline">
+        <div class="col-md-2">
+            @*@Html.LabelFor(model => model.DBID, htmlAttributes: new { @class = "control-label" })*@
+            Information
+        </div>
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.DBTYPE, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.DBTYPE, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-3">
+            @Html.EditorFor(model => model.DBNO, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.DBNO, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.DBID, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.DBID, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-3">
+            @if (Model.CSTRANM == null)
+            {
+                @Html.EditorFor(model => model.CSTRANM.ENTDATE, new { htmlAttributes = new {  @class = "form-control date datepicker", @readonly = true } })
+            }
+            else
+            {
+            @Html.EditorFor(model => model.CSTRANM.ENTDATE, new { htmlAttributes = new { @Value = ((DateTime)Model.CSTRANM.ENTDATE).ToString("yyyy-MM-dd"), @class = "form-control date datepicker", @readonly = true } })
+            }
+        </div>
+    </div>
+
+</div>
+<div class="form-group form-check-inline" style="width:97vw">
+    <div class="form-group col-md-6 form-check-inline">
+
+
+        <div class="col-md-3">
+            @Html.EditorFor(model => model.CSTRANM.TRTYPE, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TRTYPE, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-9">
+            @Html.EditorFor(model => model.CSTRANM.TRDESC, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TRDESC, "", new { @class = "text-danger" })
+        </div>
+    </div>
+</div>
+<div class="form-group form-check-inline" style="width:92vw">
+    <div class="form-group col-md-6 form-check-inline">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-2">
+            @Html.Label("Item", htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-2">
+            @Html.Label("Tax", htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-2">
+            @Html.Label("Total", htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-2">
+            @Html.Label("Amount Bal", htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-2">
+            @Html.Label("Tax Bal", htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-2">
+            @Html.Label("Total Bal", htmlAttributes: new { @class = "control-label" })
+        </div>
+    </div>
+</div>
+<div class="form-group form-check-inline" style="width:92vw">
+    <div class="form-group col-md-6 form-check-inline">
+        <div class="col-md-2">
+            @Html.Label("Own", htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.APPDBITEM1, new { htmlAttributes = new { @class = "form-control text-right" } })
+            @Html.ValidationMessageFor(model => model.APPDBITEM1, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.APPDBTAX1, new { htmlAttributes = new { @class = "form-control text-right" } })
+            @Html.ValidationMessageFor(model => model.APPDBTAX1, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.APPDBAMT1, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.APPDBAMT1, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.CSTRANM.TRITEMOS1, new { htmlAttributes = new { @id = "DBITEMOS1", @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TRITEMOS1, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.CSTRANM.TRTAXOS1, new { htmlAttributes = new { @id = "DBTAXOS1", @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TRTAXOS1, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.CSTRANM.TROS1, new { htmlAttributes = new { @id = "DBTROS1", @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TROS1, "", new { @class = "text-danger" })
+        </div>
+    </div>
+</div>
+<div class="form-group form-check-inline" style="width:92vw">
+    <div class="form-group col-md-6 form-check-inline">
+        <div class="col-md-2">
+            @Html.Label("3rd Party", htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.APPDBITEM2, new { htmlAttributes = new { @class = "form-control text-right" } })
+            @Html.ValidationMessageFor(model => model.APPDBITEM2, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.APPDBTAX2, new { htmlAttributes = new { @class = "form-control text-right" } })
+            @Html.ValidationMessageFor(model => model.APPDBTAX2, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.APPDBAMT2, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.APPDBAMT2, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.CSTRANM.TRITEMOS2, new { htmlAttributes = new { @id = "DBITEMOS2", @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TRITEMOS2, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.CSTRANM.TRTAXOS2, new { htmlAttributes = new { @id = "DBTAXOS2", @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TRTAXOS2, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.CSTRANM.TROS2, new { htmlAttributes = new { @id = "DBTROS2", @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TROS2, "", new { @class = "text-danger" })
+        </div>
+    </div>
+</div>
+<div class="form-group form-check-inline" style="width:92vw">
+    <div class="form-group col-md-6 form-check-inline">
+        <div class="col-md-2">
+            @Html.Label("Total", htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.APPDBITEM, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.APPDBITEM, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.APPDBTAX, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.APPDBTAX, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.APPDBAMT, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.APPDBAMT, "", new { @class = "text-danger" })
+        </div>
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.CSTRANM.TRITEMOS, new { htmlAttributes = new { @id = "DBITEMOS", @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TRITEMOS, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.CSTRANM.TRTAXOS, new { htmlAttributes = new { @id = "DBTAXOS", @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TRTAXOS, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="col-md-2">
+            @Html.EditorFor(model => model.CSTRANM.TROS, new { htmlAttributes = new {@id = "DBTROS", @class = "form-control text-right", @readonly = true } })
+            @Html.ValidationMessageFor(model => model.CSTRANM.TROS, "", new { @class = "text-danger" })
+        </div>
+    </div>
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+<script>
+    $(document).ready(function () {
+
+        $(document).ready(function () {
+            $('#APPDBITEM1').change('#APPDBITEM1', AddItem);
+            $('#APPDBITEM2').change('#APPDBITEM2', AddItem);
+            $('#APPDBTAX1').change('#APPDBTAX1', AddItem);
+            $('#APPDBTAX2').change('#APPDBTAX2', AddItem);
+            UpdateTotal();
+        })
+
+        $('#DBKey').change(function () {
+            JModel.CONO = $('#CONO').val();
+            JModel.TRNO = $('#TRNO').val();
+            JModel.VDATE = $('#VDATE').val();
+            JModel.DBKey = $('#DBKey').val();
+            JModel.CRKey = $('#CRKey').val();
+            JModel.REM = $('#REM').val();
+            JModel.STAMP = $('#STAMP').val();
+            JModel.APPDBITEM = $('#APPDBITEM').val();
+            JModel.APPDBITEM1 = $('#APPDBITEM1').val();
+            JModel.APPDBITEM2 = $('#APPDBITEM2').val();
+            JModel.APPDBTAX = $('#APPDBTAX').val();
+            JModel.APPDBTAX1 = $('#APPDBTAX1').val();
+            JModel.APPDBTAX2 = $('#APPDBTAX2').val();
+            JModel.APPDBAMT = $('#APPDBAMT').val();
+            JModel.APPDBAMT1 = $('#APPDBAMT1').val();
+            JModel.APPDBAMT2 = $('#APPDBAMT2').val();
+            JModel.STAMP = $('#STAMP').val();
+
+            $("#divEditDBItem").load('@Url.Action("EditDBItem")', JModel, function (response, status, xhr) {
+                if (status != "success") {
+                    alert(xhr.statusText + "\nPlease Refresh and try again");
+                }
+            });
+        })
+
+    })
+</script>
+
+
+

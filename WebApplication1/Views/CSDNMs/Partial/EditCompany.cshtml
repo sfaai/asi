@@ -1,0 +1,78 @@
+﻿@model WebApplication1.CSDNM
+
+<div class="form-group form-check-inline" style="width:96vw">
+
+
+
+    <div class="form-group col-md-6 form-check-inline">
+        <div class="col-md-2">
+            @Html.LabelFor(model => model.COADDRID, htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-10">
+            @Html.DropDownList("COADDR", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.COADDRID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    @Html.HiddenFor(model => model.COADDRID)
+
+
+    <div class="form-group col-md-6 form-check-inline">
+        <div class="col-md-2">
+            @Html.LabelFor(model => model.ATTN, htmlAttributes: new { @class = "control-label" })
+        </div>
+        <div class="col-md-10">
+            @Html.DropDownList("ATTNDESC", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.ATTN, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+<script>
+    $(document).ready(function () {
+
+        @*if (JModel == null) {
+        JModel = { "CONO": "@Model.CONO",  "ATTN": "@Model.ATTN",  "COADDR": "@Model.COADDR", "REM": "@Model.REM","STAMP": @Model.STAMP }
+            }
+
+        $('#CONO').change(function () {
+
+            JModel.CONO = $('#CONO').val();
+            JModel.ATTN = $('#ATTN').val();
+            JModel.COADDR = $('#COADDR').val();
+            JModel.REM = $('#REM').val();
+            JModel.STAMP = $('#STAMP').val();
+
+
+            var jData = JSON.stringify(JModel);
+
+
+            $("#divEditCompany").load('@Url.Action("EditCompany")', JModel, function () {
+                // callback once completed async call
+                // $("#divEditFileLoc2").text(jData);
+            });
+
+        })*@
+
+
+
+
+        //$("#JOBCASE").change();
+
+        $('#ATTNDESC').change(function () {
+            $("#ATTN").val($("#ATTNDESC option:selected").text());
+        })
+
+        $('#COADDR').change(function () {
+            $("#COADDRID").val($('#COADDR').val().split('|')[1]);
+        })
+
+    })
+</script>
+
+
+

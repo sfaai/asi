@@ -1,0 +1,72 @@
+﻿@model WebApplication1.CSCASE
+@using WebApplication1.Utility
+
+@{
+    ViewBag.Title = "Edit Case/Fee Code";
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">@ViewBag.Title</h2>
+</div>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CASECODE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CASECODE, new { htmlAttributes = new { @class = "form-control", @readonly=true } })
+                @Html.ValidationMessageFor(model => model.CASECODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.CASEDESC, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CASEDESC, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CASEDESC, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+		   @Html.HiddenFor(model => model.CSCNDs)
+		   @Html.HiddenFor(model => model.CSCOFEEs)
+		   @Html.HiddenFor(model => model.CSDNDs)
+		   @Html.HiddenFor(model => model.CSJOBDs)
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.MAPSFIX, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MAPSFIX, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MAPSFIX, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+		   @Html.HiddenFor(model => model.SFSGNEWFEEs)
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary fa fa-save" Title="Save" />
+				@Html.ActionLink(" Back", "Index", null, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

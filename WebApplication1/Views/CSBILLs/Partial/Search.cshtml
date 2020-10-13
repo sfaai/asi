@@ -1,0 +1,136 @@
+﻿@model WebApplication1.CSBILL
+
+@using (Html.BeginForm("SearchPost","CSBILLs", FormMethod.Post, new { id = "SearchRecForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container form-check-inline" style="width:96vw">
+
+        @*<div class="form-group col-md-1">
+            <div class="align-text-bottom">
+                <br />
+                <input type="submit" value="Search" class="btn btn-lg btn-primary fa fa-filter fa-search" />
+            </div>
+        </div>*@
+        <div class="form-group col-md-2">
+            @Html.Label("Sort by", null, htmlAttributes: new { @class = "control-label" })
+            <div class="form-check-inline">
+                <button class="btn btn-lg btn-primary fa fa-search" onclick="document.getElementById('SearchRecForm').submit()"></button>
+
+                @Html.DropDownList("SORTBY", null, htmlAttributes: new { @class = "form-control" })
+
+            </div>
+        </div>
+
+        <div class="form-group col-md-3">
+            @Html.LabelFor(model => model.CSCOMSTR.CONAME, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.CSCOMSTR.CONAME, new { htmlAttributes = new { @class = "form-control" } })
+                
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.CONO, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.CSCOMSTR.COREGNO, new { htmlAttributes = new { @class = "form-control" } })
+                
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.CASECODE, null, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.DropDownListFor(model => model.CASECODE, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+               
+            </div>
+        </div>
+
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.ITEMTYPE, null, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.DropDownListFor(model => model.ITEMTYPE, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+               
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.ITEMDESC, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.ITEMDESC, new { htmlAttributes = new { @class = "form-control" } })
+               
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.BILLNO, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.BILLNO, new { htmlAttributes = new { @class = "form-control" } })
+               
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.JOBNO, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.JOBNO, new { htmlAttributes = new { @class = "form-control" } })
+              
+            </div>
+        </div>
+
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.ENTDATE, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.ENTDATE, new { htmlAttributes = new { @class = "form-control date datepicker", @Value = Model.ENTDATE.ToString("yyyy-MM-dd") } })
+
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.Label("End Date", htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.DUEDATE, new { htmlAttributes = new { @class = "form-control date datepicker", @Value = Model.DUEDATE.ToString("yyyy-MM-dd") } })
+
+            </div>
+        </div>
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    <script>
+        $("#SORTBY").change(function () {
+            $("#SearchRecForm").submit();
+        })
+
+
+        $('#ITEMTYPE').change(function () {
+            $('#SearchRecForm').submit();
+        })
+
+        $('#CASECODE').change(function () {
+            $('#SearchRecForm').submit();
+        })
+
+
+        $("#ENTDATE").change(
+function () {
+    if ($("#ENTDATE").val() == "") {
+        $("#ENTDATE").val("0001-01-01");
+    }
+}
+
+
+)
+        $("#DUEDATE").change(
+function () {
+    if ($("#DUEDATE").val() == "") {
+        $("#DUEDATE").val("0001-01-01");
+    }
+}
+
+
+)
+    </script>
+}

@@ -1,0 +1,141 @@
+﻿@model IEnumerable<WebApplication1.CSCOADDR>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MAILADDR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADDRTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADDR1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADDR2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADDR3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.POSTAL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PHONE1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PHONE2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FAX1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FAX2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OPRHRS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENDDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKCITY.CITYDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKSTATE.STATEDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKCTRY.CTRYDESC)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MAILADDR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADDRTYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADDR1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADDR2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADDR3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.POSTAL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PHONE1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PHONE2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FAX1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FAX2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OPRHRS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENDDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKCITY.CITYDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKSTATE.STATEDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKCTRY.CTRYDESC)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

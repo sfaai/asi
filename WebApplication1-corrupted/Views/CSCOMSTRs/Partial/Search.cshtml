@@ -1,0 +1,40 @@
+﻿@model WebApplication1.CSCOMSTR
+
+@using (Html.BeginForm("SearchPost","CSCOMSTRs"))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container form-check-inline" style="width:96vw">
+
+        <div class="form-group col-md-1">
+            <div class="align-text-bottom">
+                <br />
+                <input type="submit" value="Search" class="btn btn-lg btn-primary fa fa-filter fa-search" />
+            </div>
+        </div>
+        <div class="form-group col-md-5">
+            @Html.LabelFor(model => model.CONAME, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.CONAME, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CONAME, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-3">
+            @Html.LabelFor(model => model.CONO, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.CONO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CONO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-3">
+            @Html.LabelFor(model => model.STAFFCODE, "Staff", htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.DropDownListFor(model => model.STAFFCODE, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.STAFFCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+    </div>
+}

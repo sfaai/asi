@@ -1,0 +1,93 @@
+casefee_id|casefee_code|casefee_description
+1|SecFee|Secretarial Fee + Registered Office
+2|TerSec|Termination of Secretarial Services
+3|AC|Financial Statement
+4|AGM|AGM-meeting with notice
+5|AR/AGM|Annual Return
+6|Admin|Administration Support & Consultancy 
+7|Appeal|Appeal Cases
+8|BMtg|Board Meeting with notice
+9|BkChsig|Bank-Change Signatories
+10|BkFac|Bank-Facilities
+11|BkOp|Bank-Open Account[s]
+12|CCM kp|CCM Compound(s)
+13|CO |Compliance Officer Retainer Fee
+14|CPO|Purchase of CPO/Idaman
+15|CTC|Certified True Copies 
+16|ChAud|Change of Auditor
+17|ChBkSig|Changing Banking Signatory
+18|ChFYE|Change of Financial Year End
+19|ChTaxAg|Change of Tax Agent
+20|Chg Sec|Change of Secretary
+21|CIBk|Bank-Close Account(s)
+22|ConfirmL|Confirmation Letter
+23|Consult|Professional Consultancy Fee
+24|CorpGuaran|Corporate Guarantor
+25|CorpRep|Appointment of Corporate Representative
+26|DCR|Misc Director Resolution-
+27|DR|Nominee Director Fee
+28|De-S551|Withdraw De-registration Application 
+29|De-vacate|De-vacate, re-appoint secretary
+30|DeReg|De-registration
+31|DisPro|Property Disposal-DCR/MCR
+32|Dispute|Dispute among Dir/Shh handling
+33|Div|Issuance of Dividends
+34|EGM|EGM-meeting with notice
+37|S28|Change of Company Name
+38|S27|Name Reservation-
+39|S78|Increase in Paid Up Capital-Cash
+40|S78 Non Cash|Increase in Paid Up Capital- Otherwise Than Cash
+41|S105|Transfer of share(s)
+42|S360(1)|Satisfactory of Charge
+44|S201|Appointment of Directors
+45|S237(2)|Vacate Secretary Position 
+46|S236|Appointment of Secretary
+47|S58|F49-ResDir/Change Information
+48|S259(2)|Extention period of AGM
+49|S47(2)|Place of keeping Register of Members
+50|S17|Certificate of Public Company
+51|S15|Incorporation
+52|FYE|Fixing Financial Year End-DCR
+53|HPAgr|Hire Purchase Agreement(s)
+54|Immi|Immigration Works
+55|IntBanking|Internet Banking
+56|Invst|Investment(s)
+57|Letters|Misc Letters
+58|S36|M&A/Constitution changes
+59|PD 2/2017|Biz/Branch Add/Nature of biz changes
+60|MWR|Misc Members' Resolutions-
+61|MinBk|New Minutes Book
+62|Misc|Non-secretarial assignments
+63|Object|Change of Object Clause(s)/Article(s)
+64|OpBk|Open Bank Account(s)
+65|PfrShr|Preference Share
+66|PhBanking|Phone Banking Services
+67|PreCau|Pre-Cautionery doc for Nominee Directors
+68|PurMach|Machinery Purchase/Disposal
+69|PurPro|Property Purchase-DCR/MCR
+70|PurVeh|Vehicle Purchase/disposal
+71|RA|Residential Address
+72|RF|Rental
+73|RO|Registered Office
+74|RO+Mail|Registered Office+Mailing Services
+75|Redempt|Redemption/Conversion of PS
+76|RegOff|Registered Office Fee
+77|RemDir|Removal of Director(s)
+78|ResDir|Resignation of Director(s)
+79|S&P|Sale & Purchase Agreement 
+80|SecCharge|Secretary Charge out rate
+82|ShCert|Lost Share certificates/amendments
+83|Shelf|Purchase of Shelf Company(ies)
+84|ShrSale Ag|Share Sale Agreement
+85|Sundry|Miscellaneous Secretarial Job
+86|T.O.|Take Over Secretarial File(s)
+87|TM5|Trade Mark Application
+88|TM31|Trade Mark Acceptance Letter
+89|TenAgr|Tenancy Agreement (s)-DCR
+90|WP|Winding Up
+91|S46|Change Registered Office
+92|S352(1)|Create Charges
+93|S32|Adoption of Constitution
+94|LocalAgent|Nominee Local Agent Fee
+95|SecFileCharge|Secretarial Files Handling Charges
+96|S602|Rectification of Registers

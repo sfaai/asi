@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -CS Siris</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+
+        @Html.ActionLink("CS SIRIS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        <!-- Links -->
+
+        <ul class="navbar-nav">
+            @*<li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>*@
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Maintenance
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Entity</a>
+                    <a class="dropdown-item" href="#">Auditor</a>
+                    <a class="dropdown-item" href="#">Tax Agent</a>
+                    <a class="dropdown-item" href="~/CSTAXTYPEs/Index/">Tax Code <p class="badge badge-dark">work</p></a>
+                    <a class="dropdown-item" href="~/CSCASEs/Index/">Case/Fee Code <p class="badge badge-dark">work</p></a>
+                    <a class="dropdown-item" href="#">Equity Code</a>
+                    <a class="dropdown-item" href="#">Status</a>
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="~/CSCOMSTRs/Index/">Company <p class="badge badge-dark">work</p></a>
+                    <a class="dropdown-item" href="#">Company Grouping</a>
+                    <a class="dropdown-item" href="#">Billing Description</a>
+                    <a class="dropdown-item" href="#">Register Change Remark</a>
+
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="#">Parameters</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Transaction
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Job Taking</a>
+                    <a class="dropdown-item" href="#">Job StatusTracking</a>
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="#">Quotation Agreement</a>
+                    <a class="dropdown-item" href="#">Quotation Agreement Tracking</a>
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="~/CSBILLs/Index/">Billing Item <p class="badge badge-dark">work</p></a>
+                    <a class="dropdown-item" href="~/CSPRFs/Index/">Proforma Bill <p class="badge badge-dark">work</p></a>
+                    <a class="dropdown-item" href="#">Invoice</a>
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="#">Receipt from client</a>
+                    <a class="dropdown-item" href="#">Receipt from client cancellation</a>
+                    <a class="dropdown-item" href="#">Discounted Bill</a>
+                    <a class="dropdown-item" href="#">Debit Note</a>
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="#">3rd party payment</a>
+                    <a class="dropdown-item" href="#">Refund to client</a>
+                    <a class="dropdown-item" href="#">Item offset</a>
+                    <a class="dropdown-item" href="#">3rd party payment cancellation</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Process
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Begin Day</a>
+
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="#">End Day</a>
+
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Enquiry
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Entity</a>
+
+
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Report
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Listing</a>
+
+                    <a class="dropdown-item" href="~/VCSCOAR/PgIndex/">Annual Return Reminder <p class="badge badge-dark">work</p></a>
+                    <a class="dropdown-item" href="~/VCSCOAGM/PgIndex/">Audited Financial Statement Reminder <p class="badge badge-dark">work</p></a>
+                    <p class="dropdown-divider"></p>
+                    <a class="dropdown-item" href="#">Transaction Journal</a>
+                    <a class="dropdown-item" href="#">Management Report</a>
+                    <a class="dropdown-item" href="#">Statement</a>
+                    <a class="dropdown-item" href="#">Accounting Report</a>
+                </div>
+            </li>
+
+            <li class="nav-item"> @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" }) </li>
+            <li class="nav-item"> @Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" }) </li>
+            <li class="nav-item"> @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" }) </li>
+        </ul>
+        @*<ul class="navbar-nav">
+                <li class="nav-item"> @Html.ActionLink("Company", "Index", "CSCOMSTRs", null, new { @class = "nav-link" }) </li>
+            </ul>*@
+        @Html.Partial("_LoginPartial")
+
+    </nav>
+    <br />
+
+    <div class="container body-content container-fluid">
+        @RenderBody()
+        <hr />
+        <footer class="align-bottom">
+            <p>&copy; @DateTime.Now.Year - Sphinx software developers</p>
+        </footer>
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

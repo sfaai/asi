@@ -1,0 +1,251 @@
+﻿@model WebApplication1.CSTRANM
+@using WebApplication1.Utility
+
+@{
+
+}
+
+
+
+@using (Html.BeginForm("CreateAdvance", "CSRCPs", FormMethod.Post, htmlAttributes: new { id = "FORMADVANCE" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.SOURCENO)
+        @Html.HiddenFor(model => model.SOURCE)
+
+        @Html.HiddenFor(model => model.CONO)
+        @Html.HiddenFor(model => model.STAMP)
+        @Html.HiddenFor(model => model.ENTDATE)
+        @Html.HiddenFor(model => model.TRTYPE)
+        @Html.HiddenFor(model => model.TRDESC)
+        @Html.HiddenFor(model => model.TRSIGN)
+        @Html.HiddenFor(model => model.APPTYPE)
+        @Html.HiddenFor(model => model.COMPLETE)
+        @Html.HiddenFor(model => model.COMPLETED)
+        @Html.HiddenFor(model => model.SEQNO)
+        @Html.HiddenFor(model => model.REFCNT)
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-2 form-check-inline">
+                <div class="col-md-1">
+                    @Html.LabelFor(model => model.SOURCEID, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.SOURCEID, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.SOURCEID, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group col-md-10 form-check-inline">
+                <div class="col-md-1">
+                    @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-3">
+                    <input type="submit" value="Save" class="btn btn-primary fa fa-save" Title="Save" />
+
+                    @if (Model.SOURCEID != 0)
+                    {
+                        <input type="button" value="New" onclick="resetAdvance()" class="btn btn-primary fa fa-add" Title="New" />
+                        <input type="button" id="btnDeleteAdvance" value="Delete" onclick="deleteAdvance( @Model.SOURCEID )" class="btn btn-primary fa fa-trash" Title="Delete" />
+                    }
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TRITEM1, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TRITEM1, new { htmlAttributes = new { @class = "form-control text-right" } })
+                    @Html.ValidationMessageFor(model => model.TRITEM1, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TRTAX1, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TRTAX1, new { htmlAttributes = new { @class = "form-control text-right" } })
+                    @Html.ValidationMessageFor(model => model.TRTAX1, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TRAMT1, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TRAMT1, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.TRAMT1, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TRITEM2, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TRITEM2, new { htmlAttributes = new { @class = "form-control text-right" } })
+                    @Html.ValidationMessageFor(model => model.TRITEM2, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TRTAX2, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TRTAX2, new { htmlAttributes = new { @class = "form-control text-right" } })
+                    @Html.ValidationMessageFor(model => model.TRTAX2, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TRAMT2, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TRAMT2, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.TRAMT2, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TRITEM, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TRITEM, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.TRITEM, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TRTAX, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TRTAX, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.TRTAX, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-4 form-check-inline">
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.TRAMT, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TRAMT, new { htmlAttributes = new { @class = "form-control text-right", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.TRAMT, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        @*<div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+
+
+            </div>
+        </div>
+    </div>
+}
+
+
+@*
+    partial view do not render section scripts
+
+      @section Scripts {*@
+
+<script>
+    $(document).ready(function () {
+        $('#TRITEM1').change('#TRITEM1', AddItem);
+        $('#TRITEM2').change('#TRITEM2', AddItem);
+        $('#TRTAX1').change('#TRTAX1', AddItem);
+        $('#TRTAX2').change('#TRTAX2', AddItem);
+
+        UpdateTotal();
+    })
+
+
+    function UpdateTotal() {
+
+        var item1 = $('#TRITEM1').val();
+        var item2 = $('#TRITEM2').val();
+        var tax1 = $('#TRTAX1').val();
+        var tax2 = $('#TRTAX2').val();
+        $('#TRITEM').val(parseFloat(parseFloat(item1) + parseFloat(item2)).toFixed(2));
+        $('#TRTAX').val(parseFloat(parseFloat(tax1) + parseFloat(tax2)).toFixed(2));
+        $('#TRAMT1').val(parseFloat(parseFloat(item1) + parseFloat(tax1)).toFixed(2));
+        $('#TRAMT2').val(parseFloat(parseFloat(item2) + parseFloat(tax2)).toFixed(2));
+        $('#TRAMT').val(parseFloat(parseFloat(item1) + parseFloat(tax1) + parseFloat(item2) + parseFloat(tax2)).toFixed(2));
+
+    }
+
+
+    function AddItem(id) {
+
+
+        $(id.data).val(parseFloat($(id.data).val()).toFixed(2));
+        UpdateTotal();
+    }
+
+    function resetAdvance() {
+        $('#TRITEM1').val(0);
+        $('#TRITEM2').val(0);
+        $('#TRTAX1').val(0);
+        $('#TRTAX2').val(0);
+        $('#SOURCEID').prop("readonly", false);
+        $('#SOURCEID').val(0);
+        $('#SOURCEID').prop("readonly", true);
+        $('#FORMADVANCE #REM').val('');
+        $('#btnDeleteAdvance').remove();
+
+        UpdateTotal()
+    }
+
+
+    function deleteAdvance(id) {
+
+        NModel.sourceno = $('#TRNO').val();
+        NModel.id = id;
+
+        var NData = JSON.stringify(NModel);
+
+
+        $("#Allocated1").load('@Url.Action("DeleteItem")', NModel, function () {
+            $('#tab_Alloted').click();
+        })
+
+        resetAdvance();
+    }
+
+
+</script>
+
+@Scripts.Render("~/bundles/jqueryval")
+@*}*@

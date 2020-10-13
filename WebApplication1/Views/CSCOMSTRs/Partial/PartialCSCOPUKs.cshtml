@@ -1,0 +1,115 @@
+﻿@model IEnumerable<WebApplication1.CSCOPUK>
+@using WebApplication1.Utility;
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="width:96vw">
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().EFFDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().EQCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSEQ.EQDESC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSEQ.EQCAT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().EQCONSIDER)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NOOFSHARES)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NOMINAL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().PAIDAMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DUEAMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().PREMIUM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NCDET)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.First().ENDDATE)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAMP)
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (Html.Action() == "Edit")
+                    {
+                        @Html.ActionLink(" ", "Edit", "CSCOPUKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-edit", title = "Edit" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Details", "CSCOPUKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Delete", "CSCOPUKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                    else if (Html.Action() == "Details")
+                    {
+                        @Html.ActionLink(" ", "Details", "CSCOPUKs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EFFDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EQCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSEQ.EQDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSEQ.EQCAT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EQCONSIDER)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NOOFSHARES)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NOMINAL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PAIDAMT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DUEAMT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PREMIUM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NCDETStr)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.ENDDATE)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+
+
+            </tr>
+        }
+
+    </table>
+</div>

@@ -1,0 +1,133 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using WebApplication1.Utility;
+@model IPagedList<WebApplication1.CSPRF>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">@ViewBag.title</h2>
+</div>
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th>
+            @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary h4" })
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().PRFNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().VDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CONO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().COADDR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().DUEDAYS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().DUEDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ATTN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SEQNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().INVALLOC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().INVNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().INVID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CSCOADDR.MAILADDR)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+            <td>
+                @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRFNO) }, new { @class = "fa fa-edit", title = "Edit" })
+                @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRFNO) }, new { @class = "fa fa-folder", title = "Details" })
+                @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRFNO) }, new { @class = "fa fa-trash", title = "Delete" })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PRFNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.CONO)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.CSCOMSTR.CONAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COADDR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DUEDAYS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DUEDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ATTN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.REM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SEQNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.INVALLOC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.INVNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.INVID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STAMP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSCOADDR.MAILADDR)
+            </td>
+        </tr>
+    }
+
+</table>

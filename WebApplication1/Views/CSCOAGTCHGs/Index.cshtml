@@ -1,0 +1,116 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSCOAGTCHG>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr  class="label-primary">
+	   <th>
+         @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+       </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CONO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CHGEFFDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CHGREM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRSNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OCCUPATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ROWNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKNATION.NATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKRACE.RACE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSADDR.MAILADDR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSREG.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSPRSREG1.REM)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new {  /* id=item.PrimaryKey */  }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new {  /* id=item.PrimaryKey */ }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new {  /* id=item.PrimaryKey */  }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.CONO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CHGEFFDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CHGREM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRSNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OCCUPATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ROWNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKNATION.NATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKRACE.RACE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSPRSADDR.MAILADDR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSPRSREG.REM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CSPRSREG1.REM)
+        </td>
+    </tr>
+}
+
+</table>

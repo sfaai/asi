@@ -1,0 +1,290 @@
+﻿@model IQueryable<WebApplication1.CSCOMSTR>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Company Listing</title>
+    @Styles.Render("~/Content/css")
+
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+        }
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 400px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 70px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+            }
+
+            pre {
+                border:none;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="letter">
+            <header>
+                <div class="text-center">
+                    <h4 class="h4">@ViewBag.Company</h4>
+
+                </div>
+            </header>
+        </div>
+        <div id="main">
+  
+            <table class="table table-bordered table-hover table-responsive-lg table-sm">
+                <tr class="label-primary">
+  
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CONO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().INTYPE)
+                    </th>
+                    <th class="text-nowrap">
+                        @Html.DisplayNameFor(model => model.First().CONAME)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().INCDATE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().HKCTRY.CTRYDESC)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().HKCONST.CONSTDESC)
+                    </th>
+                    <th class="text-nowrap">
+                        @Html.DisplayNameFor(model => model.First().PRINOBJStr)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().PINDCODE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().SINDCODE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().WEB)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().COSTAT)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().COSTATD)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().FILETYPE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().FILELOC)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().SEALLOC)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().HKSTAFF.STAFFDESC)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().SPECIALRE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().ARRE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CMMT)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().REM)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().SXCODE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().SXNAME)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().REFCODE)
+                    </th>
+                    @*<th>
+                    @Html.DisplayNameFor(model => model.First().SEQNO)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().STAMP)
+                </th>*@
+
+
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>    
+                        <td>
+                            @Html.DisplayFor(modelItem => item.COREGNO)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.INTYPE)
+                        </td>
+                        <td class="text-nowrap">
+                            @Html.DisplayFor(modelItem => item.CONAME)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.INCDATE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HKCTRY.CTRYDESC)
+                        </td>
+                        <td class="text-nowrap">
+                            @Html.DisplayFor(modelItem => item.HKCONST.CONSTDESC)
+                        </td>
+                        <td class="text-lg-left">
+                            @Html.DisplayFor(modelItem => item.PRINOBJStr)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PINDCODE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SINDCODE)
+                        </td>
+                        <td class="text-nowrap">
+                            @Html.DisplayFor(modelItem => item.WEB)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.COSTAT)
+                        </td>
+                        <td class="text-nowrap">
+                            @Html.DisplayFor(modelItem => item.COSTATDSTR)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FILETYPE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FILELOC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SEALLOC)
+                        </td>
+
+                        <td class="text-nowrap">
+                            @Html.DisplayFor(modelItem => item.HKSTAFF.STAFFDESC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SPECIALREBool)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ARREBool)
+                        </td>
+                        <td >
+                            @Html.DisplayFor(modelItem => item.CMMTStr)
+                        </td>
+                        <td >
+                            @Html.DisplayFor(modelItem => item.REM)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SXCODE)
+                        </td>
+                        <td class="text-nowrap">
+                            @Html.DisplayFor(modelItem => item.SXNAME)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.REFCODE)
+                        </td>
+                        @*<td>
+                        @Html.DisplayFor(modelItem => item.SEQNO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.STAMP)
+                    </td>*@
+
+
+                    </tr>
+                }
+
+            </table>
+        </div>
+
+
+        <footer>
+            <div class="row">
+
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

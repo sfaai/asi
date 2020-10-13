@@ -1,0 +1,44 @@
+﻿body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 700px;
+}*/
+
+
+/* set grid column header to light*/
+th  {
+  color: #495057;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+@page {
+    size: auto;
+}
+
+.rowNoEdit {
+    background-color: lightcoral;
+}
+
+.form-group {
+  margin-bottom: 0.3rem;
+}

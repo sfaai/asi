@@ -1,0 +1,191 @@
+﻿@model IEnumerable<WebApplication1.CSCOFEE>
+
+@{
+    ViewBag.Title = "System Generate Fees";
+}
+
+<h4>@ViewBag.Title</h4>
+
+<div class="form-inline">
+
+
+    @Html.Label("Process Date ", htmlAttributes: new { @class = "control-label" })
+    &nbsp;
+    @Html.Editor("PROCDATE", new { htmlAttributes = new { type = "date", @Value = ViewBag.PROCDATE, @class = "form-control date datepicker" } })
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    @Html.Label("Total Items ", htmlAttributes: new { @class = "control-label" })
+    &nbsp;
+    @Html.Editor("PROCCNT", new { htmlAttributes = new {  @Value = @Model.Where(x => x.AutogenFlag).Count(), @class = "form-control", @readonly = true } })
+
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    @Html.Label("Total Amount ", htmlAttributes: new { @class = "control-label" })
+    &nbsp;
+    @Html.Editor("PROCAMT", new { htmlAttributes = new {  @Value = @Model.Where(x => x.AutogenFlag).Sum(x => x.FEEAMT).ToString("N2"), @class = "form-control", @readonly = true } })
+
+
+
+</div>
+<br />
+<table id="mainTable" class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AutogenFlag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LASTTOUCH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CONO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSCOMSTR.CONAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FEETYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CSCASE.CASEDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FEEAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FEEMTH)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+            <td>
+                @Html.EditorFor(modelItem => item.AutogenFlag, new { htmlAttributes = new { @class = "form-control" } })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LASTTOUCH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CONO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSCOMSTR.CONAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FEETYPE)
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CSCASE.CASEDESC)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.FEEAMT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FEEMTH)
+            </td>
+
+
+        </tr>
+    }
+
+</table>
+
+
+<button class="btn btn-primary fa fa-cogs" id="btnProc" onclick="procFee()"> Process</button>
+@Html.ActionLink(" Back", "Index", "Home", null, new { @class = "btn btn-info fa fa-arrow-left" })
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        $("#PROCDATE").change(function () {
+            var ParamModel = { "ProcDateParam": $("#PROCDATE").val() }
+
+            var jData = JSON.stringify(ParamModel);
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SetProcParam", "CSCOFEEs")',
+                data: jData,
+                //data: JSON.stringify( {RPT_START:'1/8/2018',RPT_END:'31/8/2018'} ),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    //alert(msg);
+                }
+            });
+
+            window.location.reload();
+        })
+
+        $(':checkbox').click(function () {
+            $td = $(this).closest('td');
+            var col = $td.index();
+            var row = $td.closest('tr').index();
+            var amt = parseFloat(document.getElementById("mainTable").rows[row].cells.item(6).innerHTML);
+            var total = parseFloat($('#PROCAMT').val().replace(/[^\d\.\-]/g, ""));
+  
+            if (this.checked) {
+                $('#PROCCNT').val(parseInt($('#PROCCNT').val()) + 1);
+                total += amt;
+                $('#PROCAMT').val( total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')  );
+            } else {
+                $('#PROCCNT').val(parseInt($('#PROCCNT').val()) - 1);
+                total -= amt;
+                $('#PROCAMT').val( total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') );
+            }
+        }
+            )
+
+
+
+
+        function procFee() {
+            var conoList = [];
+
+            $(':checkbox:checked').each(function (i) {
+                $td = $(this).closest('td');
+                var col = $td.index();
+                var row = $td.closest('tr').index();
+                var cono = document.getElementById("mainTable").rows[row].cells.item(2).innerHTML;
+                var feetype = document.getElementById("mainTable").rows[row].cells.item(4).innerHTML;
+                conoList.push(cono + '|' + feetype);
+            });
+            //alert(conoList);
+            //alert(JSON.stringify(conoList));
+            $.post('@Url.Action("Post", "CSCOFEEs")', { cono: conoList },
+      function (data, status) {
+          if (status == "success") {
+              window.location.reload();
+          } else {
+              alert("Data: " + data + "\nStatus: " + status);
+          }
+      });
+        }
+
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+

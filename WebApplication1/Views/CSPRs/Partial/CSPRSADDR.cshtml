@@ -1,0 +1,120 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSPRSADDR>
+
+@{
+    ViewBag.Title = "Entity Address";
+}
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th>
+            @if ((@Html.Action() == "Delete") || (@Html.Action() == "Details")) { }
+            else
+            {
+            @Html.ActionLink("Add", "Create", "CSPRSADDRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(ViewBag.PRSCODE) }, new { @class = "btn btn-primary h4" })
+            }
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().ADDRID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().MAILADDR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ADDRTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ADDR)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().POSTAL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CITYCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().STATECODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CTRYCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().PHONE)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().FAX)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().REM)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().STAMP)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+            <td>
+                @if ((@Html.Action() == "Delete") || (@Html.Action() == "Details")) { }
+                else
+                {
+                @Html.ActionLink(" ", "Edit", "CSPRSADDRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRSCODE), row = item.ADDRID }, new { @class = "fa fa-edit", title = "Edit" })
+                @Html.ActionLink(" ", "Details", "CSPRSADDRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRSCODE), row = item.ADDRID }, new { @class = "fa fa-folder", title = "Details" })
+                @Html.ActionLink(" ", "Delete", "CSPRSADDRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.PRSCODE), row = item.ADDRID }, new { @class = "fa fa-trash", title = "Delete" })
+                }
+            </td>
+
+  
+            <td>
+                @Html.DisplayFor(modelItem => item.ADDRID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MAILADDRBool)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ADDRTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ADDR)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.POSTAL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HKCITY.CITYDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HKSTATE.STATEDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HKCTRY.CTRYDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PHONE)
+            </td>
+ 
+            <td>
+                @Html.DisplayFor(modelItem => item.FAX)
+            </td>
+      
+            <td>
+                @Html.DisplayFor(modelItem => item.REM)
+            </td>
+
+ 
+            <td>
+                @Html.DisplayFor(modelItem => item.STAMP)
+            </td>
+        </tr>
+    }
+
+</table>

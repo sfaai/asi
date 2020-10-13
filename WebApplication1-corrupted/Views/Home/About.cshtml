@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "About";
+}
+
+@section scripts{
+    <script>
+
+        //Modernizr.load({
+        //    test: Modernizr.inputtypes.date,
+        //    nope: ['http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js', 'jquery-ui.css'],
+        //    complete: function () {
+        //        $('.datepicker').datepicker({
+        //            format: 'dd/mm/yyyy',
+        //            startDate: '-3d',
+
+        //        });
+        //    }
+        //});
+
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+    if (datefield.type != "date") { //if browser doesn't support input type="date", initialize date picker widget:
+        jQuery(function ($) { //on document.ready
+            $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                startDate: '-3d',
+
+            });
+
+        })
+    }
+
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#test").html($("#test").html() + " hello");
+    });
+});
+
+    </script>
+}
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>CS Siris Company Secretrial System</p>
+
+<div class="input-group" >
+    <input type="date" class="form-control  datepicker" value="20/04/2018" />
+    <div class="input-group-addon">
+        <span class="fa fa-calendar glyphicon glyphicon-th"></span>
+    </div>
+    <span id="test1">original text</span>
+
+    <input type="date" class="form-control  datepicker" value="30/04/2018" />
+    <div class="input-group-addon">
+        <span class="fa fa-calendar glyphicon glyphicon-th"></span>
+    </div>
+    <span id="test2">original text</span>
+</div>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p id="test">This is another paragraph.</p>
+
+<button>Click me</button>
+

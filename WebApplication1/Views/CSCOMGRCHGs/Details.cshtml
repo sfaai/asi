@@ -1,0 +1,159 @@
+﻿@model WebApplication1.CSCOMGRCHG
+@using WebApplication1.Utility
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "View Register of Manager ";
+}
+
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.PRSNAME</h4>
+</div>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ROWNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ROWNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CHGEFFDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CHGEFFDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CHGREM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CHGREM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NATION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NATION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RACE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RACE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDRID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CSPRSADDR.ADDR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OCCUPATION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OCCUPATION)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.REGCTRY1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REGCTRY1)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REGTYPE1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REGTYPE1)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REGID1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REGID1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REGCTRY2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REGCTRY2)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REGTYPE2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REGTYPE2)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REGID2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REGID2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.REM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REM)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink(" Edit", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO), person = Model.PRSCODE, adate = Model.ADATE, row = Model.ROWNO }, new { @class = "btn btn-primary fa fa-edit" })
+    @Html.ActionLink(" Back", "Edit", "cSCOMGRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO), person = Model.PRSCODE, adate = Model.ADATE }, new { @class = "btn btn-info fa fa-arrow-left" })
+</p>
+
+

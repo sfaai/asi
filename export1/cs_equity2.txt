@@ -1,0 +1,1 @@
+equity_id|equity_code|equity_description|equity_category

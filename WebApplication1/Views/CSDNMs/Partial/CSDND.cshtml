@@ -1,0 +1,211 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSDND>
+
+@{
+    ViewBag.Title = "Debit Note Details";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.title</h4>
+</div>
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th>
+            @Html.ActionLink("Add", "Create", "CSDNDs", new { id = MyHtmlHelpers.ConvertIdToByteStr(ViewBag.Id) }, new { @class = "btn btn-primary h4" })
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().TRID)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().CASECODE)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMSPEC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXRATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NETAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NETAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NETAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().refcnt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().LinkRef)
+        </th>
+
+        @*<th>
+                @Html.DisplayNameFor(model => model.First().Link)
+            </th>*@
+
+    </tr>
+
+    @{
+        decimal tot101 = 0;
+        decimal tot102 = 0;
+        decimal tot103 = 0;
+        decimal tot104 = 0;
+        decimal tot105 = 0;
+        decimal tot106 = 0;
+        decimal tot107 = 0;
+        decimal tot108 = 0;
+        decimal tot109 = 0;
+    }
+
+    @foreach (var item in Model)
+    {
+        tot101 += item.ITEMAMT1;
+        tot102 += item.TAXAMT1;
+        tot103 += item.NETAMT1;
+        tot104 += item.ITEMAMT2;
+        tot105 += item.TAXAMT2;
+        tot106 += item.NETAMT2;
+        tot107 += item.ITEMAMT;
+        tot108 += item.TAXAMT;
+        tot109 += item.NETAMT;
+
+
+        <tr class="text-nowrap">
+
+            @if (item.refcnt > 0)
+                {
+                <td></td>}
+                else
+                {
+                <td>
+                    @Html.ActionLink(" ", "Edit", "CSDNDs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO), row = item.TRID }, new { @class = "fa fa-edit", title = "Edit" })
+                    @Html.ActionLink(" ", "Details", "CSDNDs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO), row = item.TRID }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", "CSDNDs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO), row = item.TRID }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+            }
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.TRID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CASECODE)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEMTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEMDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEMSPEC)
+            </td>
+
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXRATE)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.ITEMAMT1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXAMT1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.NETAMT1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.ITEMAMT2)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXAMT2)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.NETAMT2)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.ITEMAMT)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXAMT)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.NETAMT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.refcnt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LinkRef)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Link)
+                </td>*@
+
+        </tr>
+    }
+
+    <tr>
+        <td colspan="7" style="text-align:right"><strong>Total</strong></td>
+        <td style="text-align:right">
+            <strong>  @tot101.ToString("N2")  </strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot102.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot103.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot104.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot105.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>       @tot106.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>       @tot107.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>      @tot108.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>      @tot109.ToString("N2")</strong>
+        </td>
+    </tr>
+
+</table>

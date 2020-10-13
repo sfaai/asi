@@ -1,0 +1,134 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSPRSADDR>
+
+@{
+    ViewBag.Title = "Entity Address";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr  class="label-primary">
+	   <th>
+         @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+       </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRSCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADDRID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MAILADDR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADDRTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADDR1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADDR2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADDR3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.POSTAL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PHONE1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PHONE2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FAX1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FAX2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKCITY.CITYDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKSTATE.STATEDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKCTRY.CTRYDESC)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new {  /* id=item.PrimaryKey */  }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new {  /* id=item.PrimaryKey */ }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new {  /* id=item.PrimaryKey */  }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.PRSCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADDRID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MAILADDR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADDRTYPE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADDR1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADDR2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADDR3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.POSTAL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PHONE1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PHONE2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FAX1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FAX2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKCITY.CITYDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKSTATE.STATEDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKCTRY.CTRYDESC)
+        </td>
+    </tr>
+}
+
+</table>

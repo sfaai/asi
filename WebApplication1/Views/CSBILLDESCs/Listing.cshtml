@@ -1,0 +1,156 @@
+﻿@model IQueryable<WebApplication1.CSBILLDESC>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Billing Description Listing</title>
+    @Styles.Render("~/Content/css")
+
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+        }
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 400px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 70px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+            }
+
+            pre {
+                border:none;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="letter">
+            <header>
+                <div class="text-center">
+                    <h4 class="h4">@ViewBag.Company</h4>
+                    <br/>
+                    <stong>Billing Description Listing</stong>
+                </div>
+            </header>
+        </div>
+        <div id="main">
+            <table class="table table-bordered table-hover table-responsive-lg table-sm">
+                <thead>
+                    <tr class="label-primary">
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().BILLDESC)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().BILLSPEC)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.First().STAMP)
+                        </th>
+
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+                <tbody>
+                    <tr class="text-nowrap">
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BILLDESC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BILLSPEC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.STAMP)
+                        </td>
+                    </tr>
+                </tbody>
+                }
+
+            </table>
+
+            <br />
+        </div>
+
+
+        <footer>
+            <div class="row">
+
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using WebApplication1.Utility;
+@model IPagedList<WebApplication1.CSRCP>
+
+@{
+    ViewBag.Title = "Receipts";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+    @Html.Action("Search")
+</div>
+
+<div class="border-0">
+    <div class="row form-inline">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+        @Html.ActionLink(" Receipts", "ReceiptList", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print receipts" })
+        @Html.ActionLink(" Listing", "Listing", null, new { @class = "btn btn-sm fa fa-print", title = "Listing" })
+        @Html.ActionLink(" ReUpdate", "ReupdateLedger", null, new { id = "All" }, new { @class = "fa fa-wrench", title = "ReUpdate Client Ledger with receipts" })
+    </div>
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th>
+                @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4", title = "Add New Receipts" })
+                @Html.ActionLink("Manual #", "Create", new { mode = 1 }, new { @class = "btn btn-primary h4", title = "Add Receipts with manual receipt number" })
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().TRNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().VDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().RCAMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKRCMODE.RCMODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().RCMAPCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ISSDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ISSREFNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKBANK.BANKDESC)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKRCISSLOC.ISSLOC)
+            </th>
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().COMAMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NETAMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AllocAmt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().detcnt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().refcnt)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.First().SEQNO)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().POST)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().STAMP)
+                </th>*@
+
+
+        </tr>
+
+        @{
+            decimal rcamt = 0;
+            decimal taxamt = 0;
+            decimal netamt = 0;
+            decimal allocamt = 0;
+            string myWarning = "White";
+        }
+
+        @foreach (var item in Model)
+        {
+
+            rcamt += item.RCAMT;
+            taxamt += item.COMAMT;
+            netamt += item.NETAMT;
+            allocamt += item.AllocAmt;
+
+            if (item.NETAMT != item.AllocAmt)
+            {
+                myWarning = "rosybrown";
+            }
+            else
+            {
+                myWarning = "white";
+            }
+            <tr class="text-nowrap" style="background-color: @myWarning">
+                <td style="background-color: white">
+                    @if (!item.archived)
+                    {
+                        @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO), page = ViewBag.page }, new { @class = "fa fa-edit", title = "Edit" })
+                    }
+                    @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO), page = ViewBag.page }, new { @class = "fa fa-folder", title = "Details" })
+                    @if ((!item.archived) && (item.refcnt == 0))
+                    {
+                        @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO), page = ViewBag.page }, new { @class = "fa fa-trash", title = "Cancel Receipt" })
+                    }
+                    @Html.ActionLink(" ", "Receipt", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.TRNO) }, new { @class = "fa fa-print", title = "print" })
+                  
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TRNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.COREGNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSCOMSTR.CONAME)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.RCAMT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKRCMODE.RCMODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RCMAPCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ISSDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ISSREFNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKBANK.BANKDESC)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKRCISSLOC.ISSLOC)
+                </td>
+
+
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.COMAMT)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.NETAMT)
+                </td>
+                <td style="text-align:right">
+
+
+                    @Html.DisplayFor(modelItem => item.AllocAmt)
+
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.detcnt)
+                </td>
+                <td style="text-align:right">
+                    @Html.DisplayFor(modelItem => item.refcnt)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.SEQNO)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.POSTBool)
+                    </td>
+
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.STAMP)
+                    </td>*@
+
+            </tr>
+
+
+        }
+        <tr>
+            <td colspan="5" style="text-align:right"> <strong>Total</strong></td>
+            <td> <strong>  @rcamt.ToString("N2")  </strong></td>
+            <td colspan="6"></td>
+            <td> <strong>  @taxamt.ToString("N2")  </strong></td>
+            <td> <strong>  @netamt.ToString("N2")  </strong></td>
+            <td> <strong>  @allocamt.ToString("N2")  </strong></td>
+        </tr>
+    </table>
+
+    @Html.ActionLink(" Receipts", "ReceiptList", new { page = ViewBag.page }, new { @class = "btn btn-sm fa fa-print", title = "print receipts" })
+
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

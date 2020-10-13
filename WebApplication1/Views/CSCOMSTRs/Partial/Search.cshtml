@@ -1,0 +1,84 @@
+﻿@model WebApplication1.CSCOMSTR
+
+@using (Html.BeginForm("SearchPost", "CSCOMSTRs", FormMethod.Post, new { id = "SearchRecForm" }))
+{
+    @Html.AntiForgeryToken()
+
+
+    string useColor = "transparent";
+    string fColor = "black";
+    if (Model.filter) { useColor = "navy"; fColor = "white"; }
+
+    <div class="form-check-inline" style="background-color: @useColor; color :@fColor; width:98vw">
+
+        <div class="form-group col-md-1">
+            <div class="align-text-bottom form-check-inline">
+
+                <button class="btn btn-lg btn-primary fa fa-search" onclick="document.getElementById('SearchRecForm').submit()" title="Search"></button>
+
+                <br />
+
+                @if (Model.filter)
+                {
+                    @*<input type="submit" value="Clear Filter" onclick="ClearFilter()" class="btn btn-lg btn-primary fa fa-filter" />*@
+                    <button class="btn btn-lg btn-primary fa fa-filter" onclick="ClearFilter()" title="clear filter"></button>
+                }
+
+
+            </div>
+        </div>
+        <div class="form-group col-md-3">
+            @Html.LabelFor(model => model.CONAME, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.CONAME, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CONAME, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-3">
+            @Html.LabelFor(model => model.COREGNO, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.COREGNO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.COREGNO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-3">
+            @Html.LabelFor(model => model.STAFFCODE, "Staff", htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.DropDownListFor(model => model.STAFFCODE, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.STAFFCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.COSTAT, null, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.DropDownListFor(model => model.COSTAT, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.COSTAT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @Html.HiddenFor(model => model.filter)
+
+    </div>
+
+}
+
+@Scripts.Render("~/bundles/jquery")
+<script>
+
+    $('#COSTAT').change(function () {
+        $('#SearchRecForm').submit();
+    })
+
+    $('#STAFFCODE').change(function () {
+        $('#SearchRecForm').submit();
+    })
+
+    function ClearFilter() {
+        $('#filter').val(false);
+    }
+</script>
+
+

@@ -1,0 +1,202 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.V_CSCOAGM>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AGM Reminder Listing</title>
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 0px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 30px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+        }
+
+        #content {
+            display: table;
+        }
+
+        #pageFooter {
+            display: table-footer-group;
+        }
+             #pageFooter:first-child {       
+                counter-reset : page 3;        
+            }
+
+            #pageFooter:after {       
+                counter-increment: page;
+                content: counter(page) "/" counter(pages);
+            }
+
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 10px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+              
+            }
+
+            thead {
+                 counter-increment: page;
+                display: table-header-group;
+            }
+
+            tfoot {
+                display: table-footer-group;
+            }
+        }
+    </style>
+
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <header></header>
+    <div id="content">
+        @*<div id="pageFooter">Page </div>*@
+        <div id="main">
+            <table class="table table-bordered table-hover table-responsive-lg table-sm">
+                <thead>
+                 
+                    <tr>
+                        <td colspan="7">
+                            @ViewBag.Company
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                            <strong>@ViewBag.ReportTitle</strong>
+                        </td>
+                            </tr>
+                    <tr class="label-primary">
+                        <th>
+                            @Html.DisplayNameFor(model => model.CONAME)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.COREGNO)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.AGMNO)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LASTFYE)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.AGMLAST)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.CReminderType)
+                        </th>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.STAFFCODE)
+                        </th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+            {
+                        <tr class="text-nowrap">
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CONAME)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.COREGNO)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.AGMNO)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LASTFYE)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.AGMLAST)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CReminderType)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.STAFFCODE)
+                            </td>
+
+                        </tr>
+                    }
+                    <tr>
+                        <td></td>
+                        <td>Total Items</td>
+                        <td> @Model.Count()</td>
+                    </tr>
+                </tbody>
+                @*<tfoot>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+
+                    </tfoot>*@
+            </table>
+        </div>
+    </div>
+
+
+
+    @*<footer>
+            End of Listing
+        </footer>*@
+</body>
+
+
+
+</html>

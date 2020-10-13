@@ -1,0 +1,450 @@
+﻿@model WebApplication1.CSTRANM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CSTRANM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CONO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CONO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JOBNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JOBNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CASENO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CASENO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CASECODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CASECODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DUEDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DUEDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENTDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENTDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRTYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRTYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRDESC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRDESC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRITEM1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRITEM1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRITEM2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRITEM2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRITEM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRITEM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRTAX1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRTAX1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRTAX2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRTAX2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRTAX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRTAX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRAMT1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRAMT1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRAMT2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRAMT2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRAMT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRAMT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRSIGN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRSIGN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRSITEM1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRSITEM1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRSITEM2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRSITEM2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRSITEM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRSITEM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRSTAX1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRSTAX1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRSTAX2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRSTAX2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRSTAX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRSTAX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRSAMT1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRSAMT1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRSAMT2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRSAMT2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRSAMT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRSAMT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRITEMOS1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRITEMOS1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRITEMOS2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRITEMOS2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRITEMOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRITEMOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRTAXOS1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRTAXOS1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRTAXOS2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRTAXOS2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TRTAXOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TRTAXOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TROS1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TROS1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TROS2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TROS2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TROS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TROS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPTYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPTYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPITEM1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPITEM1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPITEM2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPITEM2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPITEM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPITEM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPTAX1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPTAX1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPTAX2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPTAX2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPTAX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPTAX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPAMT1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPAMT1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPAMT2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPAMT2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APPAMT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APPAMT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COMPLETE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COMPLETE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COMPLETED)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COMPLETED)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEQNO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEQNO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REFCNT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REFCNT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

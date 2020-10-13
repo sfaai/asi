@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "Email Status";
+}
+
+<div class="col-sm-12 py-3">
+    <div class="card">
+        <div class="card-body text-center">
+            @if ((int)ViewBag.cnt > 0)
+            {
+                <h1 class="p-3 text-primary"><i class="fa fa-4x fa-envelope-o"></i></h1>
+            }
+            else
+            {
+                <h1 class="p-3 text-primary"><i class="fa fa-4x fa-exclamation"></i></h1>
+            }
+        </div>
+        <div class="card-footer text-center">
+
+
+            @if ((int)ViewBag.cnt > 1)
+            {
+                <h2>Your @ViewBag.cnt Emails were sent</h2>
+            }
+            else if ((int)ViewBag.cnt == 0)
+            {
+                <h2>No Emails were sent</h2>
+            }
+            else
+            {
+                <h2>Your Email was sent</h2>
+            }
+
+
+        </div>
+    </div>
+</div>

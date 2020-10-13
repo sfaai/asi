@@ -1,0 +1,44 @@
+﻿@model List<WebApplication1.CSCOSHEQSPLITDENOM>
+@using WebApplication1.Utility
+
+<div class="form-group col-md-10 form-check-inline">
+    <table id="tblSplitDenom" class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th>
+                @Html.DisplayNameFor(model => model.First().DenomCnt)
+            </th>
+
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().DenomUnit)
+            </th>
+        </tr>
+
+        @{  int i = 0;}
+        @foreach (var item in Model)
+        {
+            <tr>
+                    <td>
+                        <div contenteditable="true">
+                            @Html.DisplayFor(model => item.DenomCnt)
+                        </div>
+                    </td>
+                    <td>
+                        <div contenteditable="true">
+                            @Html.DisplayFor(model => item.DenomUnit)
+                        </div>
+                    </td>
+                </tr>
+
+        }
+    </table>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+
+<script>
+
+
+</script>
+
+

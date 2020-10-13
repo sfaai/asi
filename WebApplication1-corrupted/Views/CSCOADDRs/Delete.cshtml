@@ -1,0 +1,176 @@
+﻿@model WebApplication1.CSCOADDR
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CSCOADDR</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MAILADDR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MAILADDR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDRTYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDRTYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDR1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDR1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDR2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDR2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDR3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDR3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.POSTAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.POSTAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PHONE1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PHONE1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PHONE2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PHONE2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FAX1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FAX1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FAX2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FAX2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OPRHRS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OPRHRS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENDDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENDDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HKCITY.CITYDESC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKCITY.CITYDESC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HKSTATE.STATEDESC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKSTATE.STATEDESC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HKCTRY.CTRYDESC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKCTRY.CTRYDESC)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

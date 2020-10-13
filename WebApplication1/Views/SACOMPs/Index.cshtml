@@ -1,0 +1,109 @@
+﻿@using WebApplication1.Utility;
+
+@model IEnumerable<WebApplication1.SACOMP>
+
+@{
+    ViewBag.Title = "Company Profile";
+}
+
+<h4>@ViewBag.Title</h4>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.COREGNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COADDR1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COADDR2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COADDR3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COADDR4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COPHONE1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COPHONE2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COFAX1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COFAX2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COWEB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CTRYOPR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACCMETHOD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONAME) }) 
+            @*|@Html.ActionLink("Details", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONAME) }) |
+    @Html.ActionLink("Delete", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONAME) })*@
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COREGNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COADDR1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COADDR2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COADDR3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COADDR4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COPHONE1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COPHONE2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COFAX1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COFAX2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COWEB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CTRYOPR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACCMETHOD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+
+    </tr>
+}
+
+</table>

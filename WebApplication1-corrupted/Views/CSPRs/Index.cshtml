@@ -1,0 +1,111 @@
+﻿@model IEnumerable<WebApplication1.CSPR>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PRSNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SEX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MOBILE1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MOBILE2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OCCUPATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKCONST.CONSTDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKTITLE.TITLE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKNATION.NATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKRACE.RACE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HKCTRY.CTRYDESC)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRSNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SEX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DOB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MOBILE1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MOBILE2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMAIL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OCCUPATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKCONST.CONSTDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKTITLE.TITLE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKNATION.NATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKRACE.RACE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HKCTRY.CTRYDESC)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PRSCODE }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PRSCODE }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PRSCODE })
+        </td>
+    </tr>
+}
+
+</table>

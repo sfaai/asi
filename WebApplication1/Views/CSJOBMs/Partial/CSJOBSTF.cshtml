@@ -1,0 +1,90 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSJOBSTF>
+
+@{
+    ViewBag.Title = "Job Staff Details";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+
+        @if ((Html.Action() == "Details") ||  (Html.Action() == "Post") || (Html.Action() == "Delete")) { }
+        else
+        {
+            <th>
+                @Html.ActionLink("Add", "Create", "CSJOBSTFs", new { id = MyHtmlHelpers.ConvertIdToByteStr(ViewBag.Id) }, new { @class = "btn btn-primary h4" })
+            </th>     }
+        <th>
+            @Html.DisplayNameFor(model => model.First().ROWNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().EDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().STAFFCODE)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().HKSTAFF.STAFFDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().REM)
+        </th>
+  
+
+
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+
+            @if ((Html.Action() == "Details") ||  (Html.Action() == "Post") || (Html.Action() == "Delete")) { }
+            else
+            {
+                @*<td>
+                    @Html.ActionLink("  ", "Edit", "CSJOBSTFs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO) }, new { @class = "fa fa-edit", title = "Edit" })
+                   
+                    @Html.ActionLink("  ", "Details", "CSJOBSTFs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO)}, new { @class = "fa fa-folder", title = "Details" })
+                  
+                
+                </td>*@
+                <td></td>
+            }
+            <td>
+
+
+                @Html.DisplayFor(modelItem => item.ROWNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STAFFCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HKSTAFF.STAFFDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.REM)
+            </td>
+           
+
+
+
+        </tr>
+    }
+
+</table>

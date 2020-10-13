@@ -1,0 +1,187 @@
+﻿@model System.Data.DataTable
+@{
+}
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>@ViewBag.Title</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="text-center">
+            <h4 class="h4">@ViewBag.Company</h4>
+
+        </div>
+    </header>
+    <br /><br />
+    <span class="h4"><strong>@ViewBag.Title as at @DateTime.Today.ToString("dd/MM/yyyy")</strong></span>
+    <br /><br />
+    @{
+        int colno = 0;
+        decimal amt = 0;
+
+        decimal tot01 = 0;
+        decimal tot02 = 0;
+        decimal tot03 = 0;
+        decimal tot04 = 0;
+        decimal tot05 = 0;
+        decimal tot06 = 0;
+        decimal tot07 = 0;
+        decimal tot08 = 0;
+        decimal tot09 = 0;
+        decimal tot10 = 0;
+        decimal tot11 = 0;
+        decimal tot12 = 0;
+        decimal tot13 = 0;
+        decimal tot14 = 0;
+        decimal tot15 = 0;
+        decimal tot16 = 0;
+        decimal tot17 = 0;
+        decimal tot18 = 0;
+        decimal tot19 = 0;
+        decimal tot20 = 0;
+    }
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <thead>
+            <tr class="text-nowrap">
+                @foreach (System.Data.DataColumn col in Model.Columns)
+                {
+                    if ((col.Caption.Length > 4) && (col.Caption.Substring(0, 4) == "None")) { }
+                    else if (col.Caption == "Amount") { } //dont show amount
+                    else
+                    {
+                        <th class="text-center">@col.Caption</th>
+                    }
+                }
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (System.Data.DataRow row in Model.Rows)
+            {
+                colno = 0;
+                <tr>
+                    @foreach (var cell in row.ItemArray)
+                    {
+                        System.Data.DataColumn col = Model.Columns[colno];
+
+                        if (colno == 2)
+                        {
+                            <td class="text-nowrap">@cell.ToString()</td>
+                        }
+                        else
+                        if (colno >= 6)
+                        {
+                            amt = (decimal)cell;
+                            if ((col.Caption.Length > 4) && (col.Caption.Substring(0, 4) == "None")) { }
+                            else if (col.Caption == "Amount") { } //dont show amount
+                            else
+                            {
+                                if (amt == 0)
+                                {
+                                    <td></td>}
+                                else
+                                {
+                                    <td class="text-right">@amt.ToString("N2")</td>
+                                }
+                            }
+                            if (colno == 5) { tot01 += amt; }
+                            if (colno == 6) { tot02 += amt; }
+                            if (colno == 7) { tot03 += amt; }
+                            if (colno == 8) { tot04 += amt; }
+                            if (colno == 9) { tot05 += amt; }
+                            if (colno == 10) { tot06 += amt; }
+                            if (colno == 11) { tot07 += amt; }
+                            if (colno == 12) { tot08 += amt; }
+                            if (colno == 13) { tot09 += amt; }
+                            if (colno == 14) { tot10 += amt; }
+                            if (colno == 15) { tot11 += amt; }
+                            if (colno == 16) { tot12 += amt; }
+                            if (colno == 17) { tot13 += amt; }
+                            if (colno == 18) { tot14 += amt; }
+                            if (colno == 19) { tot15 += amt; }
+                            if (colno == 20) { tot16 += amt; }
+                            if (colno == 21) { tot17 += amt; }
+                            if (colno == 22) { tot18 += amt; }
+                            if (colno == 23) { tot19 += amt; }
+                            if (colno == 24) { tot20 += amt; }
+                        }
+                        else
+                        {
+                            <td>@cell.ToString()</td>
+                        }
+
+                        colno++;
+                    }
+                </tr>
+
+            }
+
+            <tr>
+
+                @foreach (System.Data.DataColumn col in Model.Columns)
+                {
+                    colno = col.Ordinal;
+
+                    if (colno == 5) { amt = tot01; }
+                    if (colno == 6) { amt = tot02; }
+                    if (colno == 7) { amt = tot03; }
+                    if (colno == 8) { amt = tot04; }
+                    if (colno == 9) { amt = tot05; }
+                    if (colno == 10) { amt = tot06; }
+                    if (colno == 11) { amt = tot07; }
+                    if (colno == 12) { amt = tot08; }
+                    if (colno == 13) { amt = tot09; }
+                    if (colno == 14) { amt = tot10; }
+                    if (colno == 15) { amt = tot11; }
+                    if (colno == 16) { amt = tot12; }
+                    if (colno == 17) { amt = tot13; }
+                    if (colno == 18) { amt = tot14; }
+                    if (colno == 19) { amt = tot15; }
+                    if (colno == 20) { amt = tot16; }
+                    if (colno == 21) { amt = tot17; }
+                    if (colno == 22) { amt = tot18; }
+                    if (colno == 23) { amt = tot19; }
+                    if (colno == 24) { amt = tot20; }
+
+                    if ((col.Caption.Length > 4) && (col.Caption.Substring(0, 4) == "None"))
+                    {
+                    }
+                    else if (col.Caption == "Amount") { } //dont show amount
+                    else
+                    {
+                        if (colno < 6)
+                        {
+                            <td></td>
+                        }
+                        else
+                        {
+                            if (amt == 0)
+                            {
+                                <td> </td>}
+                            else
+                            {
+                                <td class="text-right"><strong>@amt.ToString("N2")</strong></td>}
+                        }
+                    }
+
+                }
+
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

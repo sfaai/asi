@@ -1,0 +1,68 @@
+﻿@model IEnumerable<WebApplication1.CSCOLASTNO>
+@using WebApplication1.Utility;
+
+
+<div style="width:96vw">
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.LASTDESC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LASTPFIX)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LASTNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LASTWD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AUTOGEN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.STAMP)
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (Html.Action() == "Edit")
+                    {
+                        @Html.ActionLink(" ", "Edit", "CSCOLASTNOes", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), code = item.LASTCODE }, new { @class = "fa fa-edit", title = "Edit" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Details", "CSCOLASTNOes", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), code = item.LASTCODE }, new { @class = "fa fa-folder", title = "Details" })
+                    }
+                    else if (Html.Action() == "Details")
+                    {
+                        @Html.ActionLink(" ", "Details", "CSCOLASTNOes", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), code = item.LASTCODE }, new { @class = "fa fa-folder", title = "Details" })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LASTDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LASTPFIX)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LASTNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LASTWD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AUTOGENBool)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+</div>

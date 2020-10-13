@@ -1,0 +1,388 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using WebApplication1.Utility;
+@model IPagedList<WebApplication1.CSBILL>
+
+@{
+    ViewBag.Title = "Billing Item";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.title</h4>
+    @Html.Action("Search")
+</div>
+<div class="row  form-inline"  style="width:98vw">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+    Batch&nbsp;
+    @Html.DropDownList("BATCH", (IEnumerable<SelectListItem>) ViewBag.BATCHLIST)
+    @*@Html.Editor("BATCH", new { htmlAttributes = new { @type = "number", @Value = ViewBag.BATCH.ToString() } })*@
+
+    @Html.ActionLink(" Listing", "Listing", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print Billing Item" })
+    @*@Html.Editor("RPT_START", new { htmlAttributes = new { @type = "date", @Value = ViewBag.RPT_START.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+    @Html.Editor("RPT_END", new { htmlAttributes = new { @type = "date", @Value = ViewBag.RPT_END.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })*@
+
+</div>
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th>
+            @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().BILLNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ENTDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SYSGENBool)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CSCOMSTR.COREGNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().JOBNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CSITEM.ITEMDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CASENO)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().CASECODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CSCASEs.CASEDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMSPEC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXTYPE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXRCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXRATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NETAMT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NETAMT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ITEMAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().TAXAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NETAMT)
+        </th>
+
+        @*<th>
+                @Html.DisplayNameFor(model => model.First().STAMP)
+            </th>*@
+    </tr>
+    @{
+        decimal tot101 = 0;
+        decimal tot102 = 0;
+        decimal tot103 = 0;
+        decimal tot104 = 0;
+        decimal tot105 = 0;
+        decimal tot106 = 0;
+        decimal tot107 = 0;
+        decimal tot108 = 0;
+        decimal tot109 = 0;
+    }
+
+    @foreach (var item in Model)
+    {
+        tot101 += item.ITEMAMT1;
+        tot102 += item.TAXAMT1;
+        tot103 += item.NETAMT1;
+        tot104 += item.ITEMAMT2;
+        tot105 += item.TAXAMT2;
+        tot106 += item.NETAMT2;
+        tot107 += item.ITEMAMT;
+        tot108 += item.TAXAMT;
+        tot109 += item.NETAMT;
+
+        <tr  class="text-nowrap">
+            <td>
+                @if (!item.archived)
+                {
+                    @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.BILLNO), page = ViewBag.page }, new { @class = "fa fa-edit", title = "Edit" })
+                }
+                @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.BILLNO), page = ViewBag.page }, new { @class = "fa fa-folder", title = "Details" })
+                @if (!item.archived) 
+                {
+                   
+                    @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.BILLNO), page = ViewBag.page }, new { @class = "fa fa-trash", title = "Delete" })
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BILLNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ENTDATE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SYSGENBool)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSCOMSTR.COREGNO)
+            </td>
+            <td class="text-nowrap">
+                @Html.DisplayFor(modelItem => item.CSCOMSTR.CONAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JOBNO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSITEM.ITEMDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CASENO)
+            </td>
+            <td class="text-nowrap">
+                @Html.DisplayFor(modelItem => item.CSCASEs.CASEDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEMDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEMDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEMSPEC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TAXCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TAXTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TAXRCODE)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXRATE)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.ITEMAMT1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXAMT1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.NETAMT1)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.ITEMAMT2)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXAMT2)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.NETAMT2)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.ITEMAMT)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.TAXAMT)
+            </td>
+            <td class="text-right">
+                @Html.DisplayFor(modelItem => item.NETAMT)
+            </td>
+
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>*@
+
+
+        </tr>
+    }
+
+    <tr>
+        <td colspan="17" style="text-align:right"><strong>Total</strong></td>
+        <td style="text-align:right">
+            <strong>  @tot101.ToString("N2")  </strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot102.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot103.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot104.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>     @tot105.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>       @tot106.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>       @tot107.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>      @tot108.ToString("N2")</strong>
+        </td>
+        <td style="text-align:right">
+            <strong>      @tot109.ToString("N2")</strong>
+        </td>
+    </tr>
+</table>
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        var ParamModel = null;
+        var rptStart = $('#RPT_START').val();
+        var rptEnd = $('#RPT_END').val();
+        var batch = $('#BATCH').val();
+
+        $(document).ready(
+
+            function () {
+                rptStart = $('#RPT_START').val();
+                rptEnd = $('#RPT_END').val();
+                batch = $('#BATCH').val();
+                ParamModel = { "RPT_START": rptStart, "RPT_END": rptEnd, "BATCH": batch }
+            })
+
+        $('#RPT_START').change(function () {
+
+
+            ParamModel.RPT_START = $('#RPT_START').val();
+            ParamModel.RPT_END = $('#RPT_END').val();
+            ParamModel.BATCH = $('#BATCH').val()
+
+
+            var jData = JSON.stringify(ParamModel);
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SetRptParam", "Home")',
+                data: jData,
+                //data: JSON.stringify( {RPT_START:'1/8/2018',RPT_END:'31/8/2018'} ),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    //alert(msg);
+                }
+            });
+
+        })
+
+        $('#RPT_END').change(function () {
+
+
+            ParamModel.RPT_START = $('#RPT_START').val();
+            ParamModel.RPT_END = $('#RPT_END').val();
+            ParamModel.BATCH = $('#BATCH').val();
+
+
+            var jData = JSON.stringify(ParamModel);
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SetRptParam", "Home")',
+                data: jData,
+                //data: JSON.stringify( {RPT_START:'1/8/2018',RPT_END:'31/8/2018'} ),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    //alert(msg);
+                }
+            });
+
+        })
+
+
+        $('#BATCH').change(function () {
+
+
+            ParamModel.RPT_START = $('#RPT_START').val();
+            ParamModel.RPT_END = $('#RPT_END').val();
+            ParamModel.BATCH = $('#BATCH').val();
+
+
+            var jData = JSON.stringify(ParamModel);
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SetRptParam", "Home")',
+                data: jData,
+                //data: JSON.stringify( {RPT_START:'1/8/2018',RPT_END:'31/8/2018'} ),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    //alert(msg);
+                }
+            });
+
+        })
+
+        $('#BATCH').change(function () {
+            $('#SearchRecForm').submit();
+        })
+
+
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

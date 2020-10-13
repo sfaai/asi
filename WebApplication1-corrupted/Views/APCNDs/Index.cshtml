@@ -1,0 +1,105 @@
+﻿@model IEnumerable<WebApplication1.APCND>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.VDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CNNO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CNDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ITEMDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CRMAPCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BRANCHCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UNITCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRJCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAFFCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CURRCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ITEMAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CNNO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CNDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ITEMDESC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CRMAPCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BRANCHCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UNITCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRJCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAFFCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CURRCODE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ITEMAMT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STAMP)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

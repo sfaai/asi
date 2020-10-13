@@ -1,0 +1,94 @@
+﻿@model IEnumerable<WebApplication1.CSCOSEC>
+@using WebApplication1.Utility;
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="width:96vw">
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().RDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ADATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSPR.PRSNAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().PRSCODE)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONOSEC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CICL.CLNAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.First().ROWNO)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAMP)
+            </th>
+
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (Html.Action() == "Edit")
+                    {
+                        @Html.ActionLink(" ", "Edit", "CSCOSECs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, adate = item.ADATE }, new { @class = "fa fa-edit", title = "Edit" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Details", "CSCOSECs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, adate = item.ADATE }, new { @class = "fa fa-folder", title = "Details" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Delete", "CSCOSECs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, adate = item.ADATE }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                    else if (Html.Action() == "Details")
+                    {
+                        @Html.ActionLink(" ", "Details", "CSCOSECs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, adate = item.ADATE }, new { @class = "fa fa-folder", title = "Details" })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ADATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSPR.PRSNAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PRSCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CONOSEC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CICL.CLNAME)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.ROWNO)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+
+
+            </tr>
+        }
+
+    </table>
+</div>

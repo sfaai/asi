@@ -1,0 +1,163 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSCOSHEQ>
+
+@{
+
+    ViewBag.Title = "Equity Details";
+}
+
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+        <th>
+            @if (Html.Action() == "Edit")
+            {
+                if ((ViewBag.MVTYPE == "Split") || (ViewBag.MVTYPE == "Conversion"))
+                {
+                    @Html.ActionLink(" Add", "Create", "CSCOSHEQs", new { id = MyHtmlHelpers.ConvertIdToByteStr(ViewBag.Parent), mvtype = ViewBag.MVTYPE, mvno = ViewBag.MVNO, person = ViewBag.person, eqcode = ViewBag.equity  }, new { @class = "btn btn-primary fa fa-plus", title = "Add" })
+                }
+            }
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().MVID)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().MVSIGN)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.First().PRSCODE)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.First().FOLIONOSRC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().EQCODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SCRIPT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CERTNO)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().SSHAREAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().SHAREOS)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().SAMT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().REM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().REFCNT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().COMPLETE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().COMPLETED)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().STAMP)
+        </th>
+
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+
+            <td>
+                @if (Html.Action() == "Edit")
+                {
+                    if (item.REFCNT == 0)
+                    {
+                        @Html.ActionLink(" ", "Edit", "CSCOSHEQs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, mvno = item.MVNO, mvid = item.MVID, mvtype = item.MVTYPE }, new { @class = "fa fa-edit", title = "Edit" })
+                        @:&nbsp;
+                    }
+                    @Html.ActionLink(" ", "Details", "CSCOSHEQs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, mvno = item.MVNO, mvid = item.MVID, mvtype = item.MVTYPE }, new { @class = "fa fa-folder", title = "Details" })
+                    if (item.REFCNT == 0)
+                    {
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Delete", "CSCOSHEQs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, mvno = item.MVNO, mvid = item.MVID, mvtype = item.MVTYPE }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                }
+                else if (Html.Action() == "Details")
+                {
+                    @Html.ActionLink(" ", "Details", "CSCOSHEQs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), person = item.PRSCODE, mvno = item.MVNO, mvid = item.MVID, mvtype = item.MVTYPE }, new { @class = "fa fa-folder", title = "Details" })
+                }
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.MVID)
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => item.MVSIGN)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.CSCOSH.CSPR.PRSNAME)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.FOLIONOSRC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EQCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SCRIPTBool)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CERTNO)
+            </td>
+
+            <td style="text-align:right">
+                @Html.DisplayFor(modelItem => item.SSHAREAMT)
+            </td>
+            <td style="text-align:right">
+                @Html.DisplayFor(modelItem => item.SHAREOS)
+            </td>
+
+            <td style="text-align:right">
+                @Html.DisplayFor(modelItem => item.SAMT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.REM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.REFCNT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COMPLETEBool)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COMPLETED)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.STAMP)
+            </td>
+
+        </tr>
+
+    }
+
+    <tr>
+        <td colspan="7" style="text-align:right"><strong>Total</strong></td>
+        <td style="text-align:right">@Model.Sum( x => x.SSHAREAMT).ToString("N0")</td>
+        <td style="text-align:right">@Model.Sum(x => x.SHAREOS).ToString("N0")</td>
+    </tr>
+
+</table>

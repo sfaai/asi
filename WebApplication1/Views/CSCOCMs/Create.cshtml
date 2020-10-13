@@ -1,0 +1,166 @@
+﻿@model WebApplication1.CSCOCM
+@using WebApplication1.Utility
+@{
+    Layout = "~/Views/Shared/_LayoutG.cshtml";
+    ViewBag.Title = "Add Charge/Mortgage to ";
+}
+<div class="border border-info bg-info">
+    <h4 class="h4 text-center">@ViewBag.Title @Model.CSCOMSTR.CONAME</h4>
+</div>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.CONO)
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.REFNO, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.REFNO, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REFNO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.REFDATE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.REFDATE, new { htmlAttributes = new { @Value = Model.REFDATE.ToString("yyyy-MM-dd"), @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REFDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.CMSDATE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CMSDATE, new { htmlAttributes = new { @Value = Model.CMSDATE.ToString("yyyy-MM-dd"), @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CMSDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.CMEDATE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CMEDATE, new { htmlAttributes = new { @Value = Model.CMEDATE?.ToString("yyyy-MM-dd"), @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CMEDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.PRSCODE, null, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PRSCODE", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.PRSCODE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div id="divEditPRSCODE">
+            @{Html.RenderPartial("Partial/EditPRSCODE", @Model);}
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.CMNATURE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CMNATURE, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CMNATURE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.LS, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LS, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LS, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.CMINFOStr, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CMINFOStr, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CMINFO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @Html.HiddenFor(Model => Model.CMINFO)
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        @Html.HiddenFor(Model => Model.STAMP)
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                @Html.ActionLink(" Back", "Edit", "cSCOMSTRs", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO) }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        JModel = null;
+
+        $(document).ready(
+           function () {
+
+               JModel = { "CONO": "@Model.CONO",  "REFNO": "@Model.REFNO",  "ADDRID": "@Model.ADDRID", "PRSCODE": "@Model.REM","PRSCODE": @Model.STAMP }
+           })
+
+        $('#PRSCODE').change(function () {
+
+
+            JModel.CONO = $('#CONO').val();
+            JModel.REFNO = $('#REFNO').val();
+            JModel.ADDRID = $('#ADDRID').val();
+            JModel.PRSCODE = $('#PRSCODE').val();
+            JModel.STAMP = $('#STAMP').val();
+
+
+            var jData = JSON.stringify(JModel);
+
+
+            $("#divEditPRSCODE").load('@Url.Action("EditPRSCODE")', JModel, function (response, status, xhr) {
+                if (status != "success") {
+                    alert(xhr.statusText + "\nPlease Refresh and try again");
+                }
+            });
+
+        })
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

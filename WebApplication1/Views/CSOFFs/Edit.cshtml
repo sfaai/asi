@@ -1,0 +1,291 @@
+﻿@model WebApplication1.CSOFF
+@using WebApplication1.Utility
+
+@{
+    ViewBag.Title = ViewBag.Title + Model.TRNO;
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+@if (@Html.Action() == "Delete")
+{
+    <div class="border border-info bg-warning" style="width:98vw">
+        <br />
+        <h4 class="h4 text-center">ARE YOU SURE YOU WANT TO DELETE THIS</h4>
+        <br />
+    </div>
+}
+
+@using (Html.BeginForm(Html.Action(),Html.Controller(),FormMethod.Post, new { onsubmit = "return validateForm()" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @Html.HiddenFor(model => model.TRNO)
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-3 form-check-inline">
+                <div class="col-md-5">
+                    @Html.LabelFor(model => model.VDATE, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.VDATE, new { htmlAttributes = new { @Value = Model.VDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+                    @Html.ValidationMessageFor(model => model.VDATE, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-7 form-check-inline">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.CONO, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-10">
+
+                    @Html.DropDownList("CONO", null, htmlAttributes: new { @class = "form-control" })
+
+                    @Html.ValidationMessageFor(model => model.CONO, "", new { @class = "text-danger" })
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-2 form-check-inline">
+                <div class="col-md-6">
+                    @Html.LabelFor(model => model.SEQNO, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-5">
+                    @Html.EditorFor(model => model.SEQNO, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.SEQNO, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div id="divEditCompany" style="width:96vw">
+            @{Html.RenderPartial("Partial/EditCompany", @Model);}
+        </div>
+
+        <div class="form-group form-check-inline" style="width:96vw">
+            <div class="form-group col-md-12 form-check-inline">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.REM, htmlAttributes: new { @class = "control-label" })
+                </div>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.REM, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.REM, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+        </div>
+
+        @Html.HiddenFor(model => model.POST)
+        @Html.HiddenFor(model => model.STAMP)
+
+
+        @*<div class="form-group form-check-inline" style="width:96vw">
+                <div class="form-group col-md-6 form-check-inline">
+                    <div class="col-md-2">
+                        @Html.LabelFor(model => model.POST, htmlAttributes: new { @class = "control-label" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.POST, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.POST, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6 form-check-inline">
+                    <div class="col-md-2">
+                        @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label" })
+                    </div>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>*@
+
+
+
+
+
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+               
+                @if (@Html.Action() == "Details")
+                {
+                    if (!Model.archived)
+                    {
+                        @Html.ActionLink(" Edit", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.TRNO) }, new { @class = "btn btn-primary fa fa-edit", title = "Edit" })
+                    }
+                }
+                else
+                {
+                    if ((Html.Action() == "Delete") && (!ViewData.ModelState.IsValid)) { }
+                    else
+                    {
+                        <input type="submit" value="Confirm" class="btn btn-primary fa fa-bolt" Title="Confirm Execution" />
+                    }
+                }  @Html.ActionLink(" Back", "Index", null, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+
+    <script>
+        function validateForm(){
+            var isValid = true;
+            var mesg = "";
+            if ("@Html.Action()" == "Delete" ) {
+                isValid = true;
+            } else {
+                if ( $('#APPDBAMT').val() != $('#APPCRAMT').val()) {
+                    mesg = mesg +"Offset Amount must be equal\n";
+                    isValid = false;
+                } 
+                if (( parseFloat($('#APPDBAMT').val()) > parseFloat($('#DBTROS').val())) || ( parseFloat($('#APPCRAMT').val()) > parseFloat($('#CRTROS').val()))) {
+                    mesg = mesg + "Offset Amount " + $('#APPDBAMT').val() + "/" +  $('#APPCRAMT').val() + " must not exceed  Balance " + $('#DBTROS').val() + "/" + $('#CRTROS').val() +"\n";
+                    isValid = false;
+                }
+                if (( parseFloat($('#APPDBAMT1').val()) > parseFloat($('#DBTROS1').val())) || ( parseFloat($('#APPCRAMT1').val()) > parseFloat($('#CRTROS1').val()))) {
+                    mesg = mesg + "Own Offset Amount must not exceed Own Balance\n";
+                    isValid = false;
+                }
+
+                if (( parseFloat($('#APPDBAMT2').val()) > parseFloat($('#DBTROS2').val())) || ( parseFloat($('#APPCRAMT2').val()) > parseFloat($('#CRTROS2').val()))) {
+                    mesg = mesg + "3rd Party Total Offset must not exceed 3rd Party Total Balance \n";
+                    isValid = false;
+                }
+
+                if (( parseFloat($('#APPDBITEM1').val()) > parseFloat($('#DBITEMOS1').val())) || ( parseFloat($('#APPCRITEM1').val()) > parseFloat($('#CRITEMOS1').val()))) {
+                    mesg = mesg + "Own Offset Amount must not exceed Own Balance\n";
+                    isValid = false;
+                }
+
+                if (( parseFloat($('#APPDBITEM2').val()) > parseFloat($('#DBITEMOS2').val())) || ( parseFloat($('#APPCRITEM2').val()) > parseFloat($('#CRITEMOS2').val()))) {
+                    mesg = mesg + "3rd Party Offset Amount must not exceed 3rd Party Balance \n";
+                    isValid = false;
+                }
+                
+                if (( parseFloat($('#APPDBTAX1').val()) > parseFloat($('#DBTAXOS1').val())) || ( parseFloat($('#APPCRTAX1').val()) > parseFloat($('#CRTAXOS1').val()))) {
+                    mesg = mesg + "Own Tax Offset Amount must not exceed Own Tax Balance \n";
+                    isValid = false;
+                }
+
+                if (( $('#APPDBTAX2').val() > $('#DBTAXOS2').val()) || ( $('#APPCRTAX2').val() > $('#CRTAXS2').val())) {
+                    mesg = mesg + "3rd Tax Offset Amount must not exceed 3rd Party Tax Balance\n";
+                    isValid = false;
+                }
+                if (!isValid) {
+                    alert( mesg);
+                }
+            }
+            return isValid;
+        }
+
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        JModel = null;
+
+        $(document).ready(
+            function () {
+
+                JModel = { "CONO": "@Model.CONO","DBKey": "@Model.DBKey","CRKey": "@Model.CRKey", "REM": "@Model.REM","STAMP": @Model.STAMP }
+            })
+
+        $('#CONO').change(function () {
+
+
+            JModel.CONO = $('#CONO').val();
+            JModel.VDATE = $('#VDATE').val();
+            JModel.DBKey = $('#DBKey').val();
+            JModel.CRKey = $('#CRKey').val();
+            JModel.REM = $('#REM').val();
+            JModel.STAMP = $('#STAMP').val();
+
+
+            var jData = JSON.stringify(JModel);
+
+
+            $("#divEditCompany").load('@Url.Action("EditCompany")', JModel, function (response, status, xhr) {
+                if (status != "success") {
+                    alert(xhr.statusText + "\nPlease Refresh and try again");
+                }
+            });
+
+        })
+
+        $(document).ready(function () {
+            $('#APPDBITEM1').change('#APPDBITEM1', AddItem);
+            $('#APPDBITEM2').change('#APPDBITEM2', AddItem);
+            $('#APPDBTAX1').change('#APPDBTAX1', AddItem);
+            $('#APPDBTAX2').change('#APPDBTAX2', AddItem);
+            $('#APPCRITEM1').change('#APPCRITEM1', AddItem);
+            $('#APPCRITEM2').change('#APPCRITEM2', AddItem);
+            $('#APPCRTAX1').change('#APPCRTAX1', AddItem);
+            $('#APPCRTAX2').change('#APPCRTAX2', AddItem);
+            UpdateTotal();
+        })
+
+
+        function UpdateTotal() {
+
+            var item1 = $('#APPDBITEM1').val();
+            var item2 = $('#APPDBITEM2').val();
+            var tax1 = $('#APPDBTAX1').val();
+            var tax2 = $('#APPDBTAX2').val();
+            $('#APPDBITEM').val(parseFloat(parseFloat(item1) + parseFloat(item2)).toFixed(2));
+            $('#APPDBTAX').val(parseFloat(parseFloat(tax1) + parseFloat(tax2)).toFixed(2));
+            $('#APPDBAMT1').val(parseFloat(parseFloat(item1) + parseFloat(tax1)).toFixed(2));
+            $('#APPDBAMT2').val(parseFloat(parseFloat(item2) + parseFloat(tax2)).toFixed(2));
+            $('#APPDBAMT').val(parseFloat(parseFloat(item1) + parseFloat(tax1) + parseFloat(item2) + parseFloat(tax2)).toFixed(2));
+
+            var item1 = $('#APPCRITEM1').val();
+            var item2 = $('#APPCRITEM2').val();
+            var tax1 = $('#APPCRTAX1').val();
+            var tax2 = $('#APPCRTAX2').val();
+            $('#APPCRITEM').val(parseFloat(parseFloat(item1) + parseFloat(item2)).toFixed(2));
+            $('#APPCRTAX').val(parseFloat(parseFloat(tax1) + parseFloat(tax2)).toFixed(2));
+            $('#APPCRAMT1').val(parseFloat(parseFloat(item1) + parseFloat(tax1)).toFixed(2));
+            $('#APPCRAMT2').val(parseFloat(parseFloat(item2) + parseFloat(tax2)).toFixed(2));
+            $('#APPCRAMT').val(parseFloat(parseFloat(item1) + parseFloat(tax1) + parseFloat(item2) + parseFloat(tax2)).toFixed(2));
+
+        }
+
+
+        function AddItem(id) {
+            $(id.data).val(parseFloat($(id.data).val()).toFixed(2));
+            UpdateTotal();
+        }
+
+        if (("@Html.Action()" == "Details") || ("@Html.Action()" == "Delete"))  {
+            $(":input").attr("readonly", true);
+            $("select").attr("disabled", true);
+            $("input[type=checkbox]").attr("disabled", true);
+            $("#btnTax").hide();
+        }
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

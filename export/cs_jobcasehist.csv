@@ -1,0 +1,2841 @@
+history_id,case_id,history_status,history_date,history_time,history_sendmode,history_remark
+1,1,New,2017-10-12,19:34:27,,
+2,1,Out,2017-10-12,19:34:41,,"113131313131313132132
+131313131"
+3,2,New,2017-12-09,11:06:18,,
+4,3,New,2017-12-27,08:52:17,,
+5,5,New,2017-12-27,08:55:33,,
+6,4,New,2017-12-27,08:55:35,,
+7,4,Complete,2017-12-28,10:29:36,,"Filed Query @ AR 2017-08-18
+ to SSM on 27-12-2017"
+8,3,Complete,2017-12-28,10:35:37,,"Filing to SSM Q@AR on 2017-06-19
+
+"
+9,6,New,2017-12-29,09:05:29,,
+10,5,Cancel,2017-12-29,16:53:56,,Wrong job taking..it is suppose to be Poney Assets Sdn. Bhd. Query answer by Irina @ 2017-12-26
+11,10,New,2018-01-02,09:03:04,,
+12,8,New,2018-01-02,09:03:07,,
+13,7,New,2018-01-02,09:03:09,,
+14,9,New,2018-01-02,09:03:11,,
+15,10,Out,2018-01-02,09:04:59,Office Boy,DCR was sent out on 29 Dec 2017
+16,9,Out,2018-01-02,09:05:28,Office Boy,DCR was sent out on 29 Dec 2017
+17,8,Out,2018-01-02,09:05:35,Office Boy,DCR was sent out on 29 Dec 2017
+18,7,Out,2018-01-02,09:05:43,Office Boy,DCR was sent out on 29 Dec 2017
+19,11,New,2018-01-02,09:33:44,,
+20,12,New,2018-01-02,10:18:37,,
+21,13,New,2018-01-02,11:35:39,,
+22,14,New,2018-01-02,11:47:20,,
+23,15,New,2018-01-02,12:52:32,,
+24,16,New,2018-01-02,14:25:46,,
+25,17,New,2018-01-02,14:25:46,,
+26,23,New,2018-01-02,14:59:27,,
+27,22,New,2018-01-02,14:59:30,,
+28,21,New,2018-01-02,14:59:33,,
+29,19,New,2018-01-02,14:59:35,,
+500,198,Complete,2018-01-23,17:11:39,,"send out - BOT on 19.01.2018
+collect - SMBC on 17.01.2018 & Mr. Ryo on 23.01.2018
+"
+515,298,Complete,2018-01-23,18:06:37,,2018-01-23: Email out to Auditor.
+30,24,New,2018-01-02,17:23:30,,
+522,240,AGM/FS/AR,2018-01-24,09:06:57,,Doc sent out on 2018-01-22. 
+535,272,Complete,2018-01-24,15:17:05,,"S58 lodge to MyCoid on 2018-01-18. statue approved !
+"
+538,195,Complete,2018-01-24,15:24:48,,"S58 lodge in MyCoid on 2018-01-18. status approved !
+"
+31,13,Out,2018-01-02,17:26:33,By E-Mail,"Emailed to Ms. Lim.
+"
+32,25,New,2018-01-02,17:47:34,,
+33,26,New,2018-01-03,09:55:13,,
+34,24,Cancel,2018-01-03,12:24:04,,""
+35,27,New,2018-01-03,12:24:52,,
+36,28,New,2018-01-03,12:50:39,,
+544,322,New,2018-01-24,17:04:00,,
+37,25,AGM/FS/AR,2018-01-03,14:30:10,,"Docs in, payment pending"
+38,11,Out,2018-01-03,16:09:03,By E-Mail,"Emailed to Kelly on 29 Dec 2017
+"
+39,29,New,2018-01-03,16:10:59,,
+552,325,New,2018-01-25,10:58:49,,
+558,291,AGM/FS/AR,2018-01-25,12:49:05,,2018-01-24: Sent out by Wan. Received by Ms. Sue Leong.
+40,31,New,2018-01-03,16:23:38,,
+41,32,New,2018-01-03,16:49:21,,
+42,33,New,2018-01-03,17:48:31,,
+43,35,New,2018-01-03,18:12:46,,
+44,36,New,2018-01-03,18:19:23,,
+45,29,Out,2018-01-03,18:48:42,By E-Mail,Emailed to Kelly.
+46,14,AGM/FS/AR,2018-01-04,09:55:43,,Send out via email
+47,2,Cancel,2018-01-04,11:05:50,,2018-01-03: Mr. Ali informed to continue ASI Sec service
+48,37,New,2018-01-04,12:55:10,,
+49,38,New,2018-01-04,13:46:11,,
+50,39,New,2018-01-04,14:25:26,,
+565,330,New,2018-01-25,16:37:12,,
+51,43,New,2018-01-04,15:01:17,,
+52,44,New,2018-01-04,15:01:17,,
+53,45,New,2018-01-04,15:01:17,,
+54,46,New,2018-01-04,15:43:13,,
+55,49,New,2018-01-04,16:22:28,,
+56,50,New,2018-01-04,17:14:41,,
+57,52,New,2018-01-04,17:43:05,,
+58,51,New,2018-01-04,17:43:07,,
+59,55,New,2018-01-04,17:48:27,,
+60,54,New,2018-01-04,17:48:29,,
+61,53,New,2018-01-04,17:48:31,,
+62,55,Out,2018-01-04,17:48:35,By E-Mail,Email to Heidy
+63,54,Out,2018-01-04,17:48:46,By E-Mail,Email to Heidy
+64,53,Out,2018-01-04,17:48:54,By E-Mail,Email to Heidy
+65,43,Out,2018-01-04,17:49:05,Courier,Courier to Catherine
+66,56,New,2018-01-04,19:54:45,,
+67,56,Out,2018-01-04,20:01:04,By E-Mail,emailed to Lily . acct@cforce-int.com
+68,57,New,2018-01-05,08:50:07,,
+69,53,Cancel,2018-01-05,09:29:19,,"Will take in another job, as job updated to out cannot being browsed in biling item."
+70,54,Cancel,2018-01-05,09:30:11,,"Will take in another job, as job updated to out cannot being browsed in biling item."
+71,55,Cancel,2018-01-05,09:30:17,,"Will take in another job, as job updated to out cannot being browsed in biling item."
+72,59,New,2018-01-05,09:31:20,,
+73,60,New,2018-01-05,09:31:40,,
+74,61,New,2018-01-05,09:32:01,,
+75,62,New,2018-01-05,09:32:47,,
+76,58,New,2018-01-05,09:32:50,,
+77,63,New,2018-01-05,10:49:46,,
+78,64,New,2018-01-05,11:05:57,,
+79,15,AGM/FS/AR,2018-01-05,11:42:16,,Send out to Rajamani
+80,65,New,2018-01-05,11:59:16,,
+81,66,New,2018-01-05,12:25:35,,
+82,67,New,2018-01-05,12:59:49,,
+83,68,New,2018-01-05,13:15:54,,
+84,69,New,2018-01-05,13:32:01,,
+85,70,New,2018-01-05,14:02:22,,
+86,71,New,2018-01-05,14:38:51,,
+87,72,New,2018-01-05,15:12:02,,
+88,61,Out,2018-01-05,15:59:56,By E-Mail,2018-01-04: Email to Heidy
+236,155,New,2018-01-12,16:06:54,,
+89,60,Out,2018-01-05,16:00:04,By E-Mail,2018-01-04: Email to Heidy
+90,59,Out,2018-01-05,16:00:10,By E-Mail,2018-01-04: Email to Heidy
+91,70,Out,2018-01-05,16:00:57,Own Collection,Collected by client's despatch
+92,73,New,2018-01-05,17:13:21,,
+93,68,Out,2018-01-06,08:44:21,By E-Mail,2018-01-05: Email out to Louise & Mr. Tom.
+94,38,Out,2018-01-06,08:45:39,By E-Mail,2018-01-04: Email out to Ms Lim.
+95,33,Out,2018-01-06,08:46:10,By E-Mail,2018-01-05: Sent out by Wan. Received by Zira Hussin.
+96,28,Out,2018-01-06,08:46:58,By E-Mail,"2018-01-03: Email out to Rachael.
+2018-01-05: Revised DCR. Client came collect."
+97,74,New,2018-01-06,11:04:46,,
+98,75,New,2018-01-06,11:21:51,,
+99,76,New,2018-01-06,12:53:13,,
+100,31,Out,2018-01-08,08:45:11,By E-Mail,Payment in 
+101,25,AGM/FS/AR,2018-01-08,08:51:07,,Payment in
+102,77,New,2018-01-08,12:51:07,,
+103,78,New,2018-01-08,13:01:04,,
+104,79,New,2018-01-08,13:06:46,,
+501,305,New,2018-01-23,17:28:10,,
+105,82,New,2018-01-08,14:47:44,,
+106,83,New,2018-01-08,15:15:20,,
+107,33,Return,2018-01-08,16:34:06,,2018-01-08: Docs in. Pending payment
+108,84,New,2018-01-08,16:39:08,,
+516,312,New,2018-01-23,19:22:02,,
+112,85,New,2018-01-08,17:07:42,,
+113,86,New,2018-01-08,17:07:42,,
+114,87,New,2018-01-08,17:07:42,,
+115,88,New,2018-01-08,17:07:42,,
+116,14,AGM/FS/AR,2018-01-08,17:14:29,,"Docs in, payment pending"
+117,89,New,2018-01-08,17:37:00,,
+118,90,New,2018-01-08,18:58:35,,
+119,91,New,2018-01-09,09:14:31,,
+120,92,New,2018-01-09,09:27:10,,
+121,14,AGM/FS/AR,2018-01-09,10:13:35,,PAYMENT IN 
+122,93,New,2018-01-09,10:42:19,,
+123,94,New,2018-01-09,10:44:25,,
+523,130,Out,2018-01-24,09:07:49,By E-Mail,Proceed with S58. lodge in MyCoid!
+124,96,New,2018-01-09,11:09:09,,
+125,97,New,2018-01-09,11:32:43,,
+126,98,New,2018-01-09,11:35:22,,
+127,62,Out,2018-01-09,13:22:36,By E-Mail,Doc sent out to client on 09/01/2018. Ack by Hafizah
+128,62,Out,2018-01-09,13:23:48,Office Boy,Doc sent out on 09/01/2017. Ack by Hafizah
+129,58,Out,2018-01-09,13:25:03,Office Boy,Doc sent out to client on 09/01/2017. 
+130,39,AGM/FS/AR,2018-01-09,13:26:38,,Doc (AR) sent out by courier. Citylink 060301633129305
+131,101,New,2018-01-09,13:52:40,,
+132,100,New,2018-01-09,13:52:42,,
+133,99,New,2018-01-09,13:52:44,,
+134,101,Complete,2018-01-09,13:55:32,,Temporary case created for generating sec fee
+135,100,Complete,2018-01-09,13:55:50,,Temporary case created for generating sec fee
+136,99,Complete,2018-01-09,13:55:56,,Temporary case created for generating sec fee
+137,90,Out,2018-01-09,13:56:02,By Hand,Hana passed to Mr. Zhan in his restaurant.
+138,102,New,2018-01-09,14:55:07,,
+139,103,New,2018-01-10,09:39:32,,
+140,104,New,2018-01-10,09:52:49,,
+141,105,New,2018-01-10,11:16:16,,
+142,57,AGM/FS/AR,2018-01-10,12:51:06,,Doc sent out to client. 
+143,107,New,2018-01-10,12:55:33,,
+144,108,New,2018-01-10,13:10:56,,
+145,109,New,2018-01-10,13:11:35,,
+146,110,New,2018-01-10,13:45:19,,
+147,111,New,2018-01-10,13:47:13,,
+539,130,Complete,2018-01-24,15:25:39,,S58 lodge to MyCoid on 2018-01-18. status approved ! 
+148,107,Cancel,2018-01-10,14:10:15,,wrong job taking
+149,112,New,2018-01-10,14:20:31,,
+150,113,New,2018-01-10,15:14:51,,
+151,114,New,2018-01-10,16:03:48,,
+152,114,Cancel,2018-01-10,16:04:30,,Wrongly keyed in Company name 
+153,115,New,2018-01-10,16:05:35,,
+154,115,AGM/FS/AR,2018-01-10,16:28:24,,Send out by email
+155,78,Complete,2018-01-10,17:06:22,,Send out by Wan to Insolvency Department at Shah Alam. 
+156,90,Return,2018-01-10,17:06:55,,"2018-01-10: Docs returned, x$$
+Submitted reassign co sec via MYCOID, pending approval for S58 & S46 submission"
+545,323,New,2018-01-24,17:14:18,,
+553,326,New,2018-01-25,11:00:07,,
+157,32,Out,2018-01-10,17:08:50,Office Boy,""
+559,46,AGM/FS/AR,2018-01-25,12:55:03,,2018-01-22: Docs in. Pending Payment.
+158,117,New,2018-01-10,17:34:19,,
+159,118,New,2018-01-10,17:39:30,,
+566,331,New,2018-01-25,16:51:55,,
+160,117,Out,2018-01-10,17:42:21,By E-Mail,Email to Rachael
+161,120,New,2018-01-10,17:49:11,,
+162,23,Out,2018-01-10,19:03:15,Office Boy,2018-01-10: Sent out by Wan. Received by Client.
+163,19,Out,2018-01-10,19:04:57,By Hand,2018-01-10: Sent out by Wan. Received by Client.
+164,22,Out,2018-01-10,19:05:13,Office Boy,2018-01-10: Sent out by Wan. Received by Client.
+165,21,Out,2018-01-10,19:05:23,By Hand,2018-01-10: Sent out by Wan. Received by Client.
+166,67,SSM/Statutory,2018-01-11,08:42:40,,-Doc for AR @ 2018-01-23 sent out to Lumut by courier. Citylink consig 060301633129303. 
+167,25,Complete,2018-01-11,09:14:47,,Lodged to CCM @09/01/2018
+168,14,Complete,2018-01-11,09:15:15,,Lodged to CCM @2018-01-10
+169,61,Complete,2018-01-11,09:20:27,,DCR@2018-01-11
+170,60,Complete,2018-01-11,09:20:42,,DCR@2018-01-11
+171,59,Complete,2018-01-11,09:20:49,,DCR@2018-01-11
+172,122,New,2018-01-11,11:54:00,,
+173,84,Out,2018-01-11,12:52:32,By E-Mail,Doc sent 09.01.2018
+174,84,Return,2018-01-11,12:53:31,,doc rec on 11.01.2018. to send out div warrant
+572,336,New,2018-01-26,15:30:47,,
+175,77,AGM/FS/AR,2018-01-11,13:01:52,,Send out
+176,123,New,2018-01-11,13:42:31,,
+177,124,New,2018-01-11,13:45:59,,
+178,125,New,2018-01-11,14:13:00,,
+179,108,Complete,2018-01-11,15:35:56,,DCR @ 2018-01-11
+502,306,New,2018-01-23,17:35:08,,
+503,307,New,2018-01-23,17:35:08,,
+517,313,New,2018-01-23,19:22:44,,
+524,88,Return,2018-01-24,10:13:53,,2018-01-24: Docs in. Pending Payment.
+525,87,Return,2018-01-24,10:14:22,,2018-01-24: Docs in. Pending Payment.
+527,85,Return,2018-01-24,10:14:44,,2018-01-24: Docs in. Pending Payment.
+540,126,Complete,2018-01-24,15:27:22,,"S58 lodge to MyCoid on 2018-01-16. status approved!
+"
+546,324,New,2018-01-24,17:28:57,,
+554,295,Out,2018-01-25,11:16:21,By E-Mail,""
+180,67,SSM/Statutory,2018-01-11,15:39:32,,Doc in with $. can proceed filing
+181,43,Return,2018-01-11,17:06:34,,Received all signed documents. Can send out together with CTC docs & Confirmation Letter
+560,327,New,2018-01-25,14:30:18,,
+182,126,New,2018-01-11,18:17:18,,
+183,127,New,2018-01-11,18:20:44,,
+184,128,New,2018-01-11,18:23:09,,
+185,129,New,2018-01-11,18:23:09,,
+186,130,New,2018-01-11,18:25:05,,
+187,131,New,2018-01-12,08:58:15,,
+188,120,Return,2018-01-12,09:05:27,,2018-01-09: Resubmit S27. All docs in. Pyt in. To submit S14
+189,111,AGM/FS/AR,2018-01-12,09:06:35,,"2018-01-10: Courier out by Citylink (0603 01 633 129 308) to Shah Alam.
+"
+190,110,AGM/FS/AR,2018-01-12,09:10:20,,2018-01-10: Courier out by Citylink (0603 01 633 129 308) to Shah Alam.
+191,98,AGM/FS/AR,2018-01-12,09:11:54,,"2018-01-11: Courier out by Citylink (0603 01 633 129 310) to Shah Alam.
+
+"
+192,79,AGM/FS/AR,2018-01-12,09:13:02,,"2018-01-11: Sent out by Wan. Received by Client.
+"
+193,132,New,2018-01-12,09:16:05,,
+567,332,New,2018-01-25,17:00:13,,
+194,23,Complete,2018-01-12,09:31:09,,"2018-01-12: Docs in. Filed in Minutes.
+2018-01-02: Lodged to CCM.
+"
+195,22,Complete,2018-01-12,09:33:06,,"2018-01-12: Docs in. Filed in Minutes.
+2018-01-02: Lodged to CCM."
+196,21,Complete,2018-01-12,09:33:19,,"2018-01-12: Docs in. Filed in Minutes.
+2018-01-02: Lodged to CCM."
+197,19,Complete,2018-01-12,09:33:29,,"2018-01-12: Docs in. Filed in Minutes.
+2018-01-02: Lodged to CCM."
+198,33,Return,2018-01-12,09:34:41,,2018-01-11: Payment in. To submit S14.
+199,104,AGM/FS/AR,2018-01-12,09:42:48,,2018-01-11: Courier out by Citylink (0603 01 633 129 313) to Sg. Buloh.
+200,133,New,2018-01-12,09:52:41,,
+573,337,New,2018-01-26,15:35:21,,
+202,134,New,2018-01-12,09:59:58,,
+203,135,New,2018-01-12,09:59:58,,
+204,136,New,2018-01-12,10:11:40,,
+205,27,AGM/FS/AR,2018-01-12,10:21:04,,Send out to Mr Willy
+206,89,AGM/FS/AR,2018-01-12,10:21:47,,Courier out by City Link:060301633129311
+207,73,AGM/FS/AR,2018-01-12,10:24:30,,Courier by City-Link
+208,96,AGM/FS/AR,2018-01-12,10:24:43,,Courier by City-Link
+209,137,New,2018-01-12,10:44:58,,
+210,139,New,2018-01-12,10:50:54,,
+211,139,Complete,2018-01-12,10:56:18,,CTC & collect on 12.01.2018
+212,71,Complete,2018-01-12,11:23:07,,""
+213,141,New,2018-01-12,11:43:56,,
+214,142,New,2018-01-12,11:52:45,,
+215,94,Complete,2018-01-12,12:10:49,,ctc S58 sent on 12.01.2018
+216,93,Complete,2018-01-12,12:11:53,,ctc S58 sent on 12.01.2018
+217,121,New,2018-01-12,12:14:34,,
+218,121,Out,2018-01-12,12:14:39,By E-Mail,Emailed on 12.01.2018
+219,46,AGM/FS/AR,2018-01-12,13:05:13,,2018-01-12: Sent out by Wan. Received by Client.
+220,75,AGM/FS/AR,2018-01-12,13:06:07,,2018-01-12: Sent out by Wan. Received by Client.
+221,143,New,2018-01-12,13:58:24,,
+222,144,New,2018-01-12,13:58:24,,
+223,145,New,2018-01-12,14:19:50,,
+224,146,New,2018-01-12,14:19:50,,
+225,146,Complete,2018-01-12,14:21:28,,""
+226,145,Complete,2018-01-12,14:21:34,,""
+227,147,New,2018-01-12,14:23:03,,
+228,149,New,2018-01-12,14:48:51,,
+229,150,New,2018-01-12,15:52:52,,
+230,147,Complete,2018-01-12,15:55:07,,""
+231,151,New,2018-01-12,15:56:57,,
+232,152,New,2018-01-12,15:56:57,,
+233,73,AGM/FS/AR,2018-01-12,16:00:44,,Docs in
+234,153,New,2018-01-12,16:04:11,,
+235,154,New,2018-01-12,16:04:11,,
+237,176,New,2018-01-12,16:38:57,,
+238,177,New,2018-01-12,16:38:57,,
+239,179,New,2018-01-12,17:12:16,,
+504,310,New,2018-01-23,17:38:36,,
+240,177,Out,2018-01-12,17:12:24,By E-Mail,Email to Nurul Suhaila
+241,176,Out,2018-01-12,17:12:39,By E-Mail,Email to Nurul Suhaila
+242,152,Out,2018-01-12,17:12:45,By E-Mail,Email to Nurul Suhaila
+243,151,Out,2018-01-12,17:12:50,By E-Mail,Email to Nurul Suhaila
+244,180,New,2018-01-12,17:40:31,,
+245,181,New,2018-01-12,17:40:31,,
+246,92,AGM/FS/AR,2018-01-15,08:31:57,,Send out 
+247,96,Complete,2018-01-15,08:32:27,,""
+248,92,Out,2018-01-15,08:32:33,By E-Mail,""
+249,175,New,2018-01-15,08:33:57,,
+250,174,New,2018-01-15,08:34:01,,
+251,173,New,2018-01-15,08:34:04,,
+252,172,New,2018-01-15,08:34:06,,
+253,171,New,2018-01-15,08:34:10,,
+254,170,New,2018-01-15,08:34:12,,
+255,169,New,2018-01-15,08:34:15,,
+256,168,New,2018-01-15,08:34:18,,
+257,167,New,2018-01-15,08:34:21,,
+258,166,New,2018-01-15,08:34:23,,
+259,165,New,2018-01-15,08:34:26,,
+260,164,New,2018-01-15,08:34:28,,
+261,163,New,2018-01-15,08:34:31,,
+262,162,New,2018-01-15,08:34:33,,
+263,161,New,2018-01-15,08:34:36,,
+264,160,New,2018-01-15,08:34:39,,
+265,159,New,2018-01-15,08:34:42,,
+266,158,New,2018-01-15,08:34:44,,
+267,157,New,2018-01-15,08:34:46,,
+268,156,New,2018-01-15,08:34:49,,
+269,182,New,2018-01-15,09:05:06,,
+270,183,New,2018-01-15,09:42:14,,
+271,84,Complete,2018-01-15,09:42:42,,div warrant courier via city-link no. 0603-01-633-129-370 on 2018-01-15
+272,183,Complete,2018-01-15,09:43:59,,send out CTC copy to client on 2018-01-12
+273,45,Complete,2018-01-15,10:20:39,,Send out by Wan to lawyer
+274,44,Complete,2018-01-15,10:20:56,,Send out by Wan to lawyer
+275,70,SSM/Statutory,2018-01-15,10:21:09,,"2018-01-12: Lodged S105 to LHDN, pending stamping notice. "
+276,184,New,2018-01-15,10:22:31,,
+277,185,New,2018-01-15,10:32:19,,
+505,311,New,2018-01-23,17:38:36,,
+506,308,New,2018-01-23,17:38:38,,
+507,309,New,2018-01-23,17:38:38,,
+511,311,Out,2018-01-23,18:06:03,By E-Mail,2018-01-23: Email out to Nikki. 
+278,82,AGM/FS/AR,2018-01-15,10:52:36,,send out by email
+359,220,New,2018-01-17,13:49:38,,
+518,272,Out,2018-01-24,09:02:55,By E-Mail,"Proceed with S58, lodge in MyCoid."
+526,86,Return,2018-01-24,10:14:32,,2018-01-24: Docs in. Pending Payment.
+279,187,New,2018-01-15,11:15:22,,
+280,188,New,2018-01-15,11:35:46,,
+528,64,AGM/FS/AR,2018-01-24,10:16:06,,2018-01-24: Docs in. Pending Payment.
+281,49,AGM/FS/AR,2018-01-15,11:47:46,,Send out to Fadzli
+282,63,AGM/FS/AR,2018-01-15,11:48:01,,Send out to Fadzli
+283,102,AGM/FS/AR,2018-01-15,11:48:13,,Send out
+284,113,Out,2018-01-15,11:48:26,By E-Mail,""
+285,113,Out,2018-01-15,11:48:40,Office Boy,""
+286,142,Complete,2018-01-15,11:49:04,,""
+287,156,Complete,2018-01-15,11:49:09,,""
+288,157,Complete,2018-01-15,11:49:14,,""
+289,158,Complete,2018-01-15,11:49:20,,""
+290,159,Complete,2018-01-15,11:49:26,,""
+291,160,Complete,2018-01-15,11:49:45,,""
+292,161,Complete,2018-01-15,11:49:50,,""
+293,162,Complete,2018-01-15,11:49:57,,""
+294,163,Complete,2018-01-15,11:50:03,,""
+295,164,Complete,2018-01-15,11:50:08,,""
+296,165,Complete,2018-01-15,11:50:12,,""
+297,166,Complete,2018-01-15,11:50:18,,""
+298,167,Complete,2018-01-15,11:50:24,,""
+299,168,Complete,2018-01-15,11:50:29,,""
+300,169,Complete,2018-01-15,11:50:34,,""
+301,170,Complete,2018-01-15,11:50:41,,""
+302,171,Complete,2018-01-15,11:50:46,,""
+303,172,Complete,2018-01-15,11:50:51,,""
+304,173,Complete,2018-01-15,11:50:57,,""
+305,174,Complete,2018-01-15,11:51:08,,""
+306,175,Complete,2018-01-15,11:51:12,,""
+307,182,Complete,2018-01-15,12:44:55,,Send out to Mohd Shahril
+308,189,New,2018-01-15,15:38:06,,
+531,314,New,2018-01-24,12:37:44,,
+541,122,Out,2018-01-24,15:35:29,By E-Mail,Doc in with $ on 24.01.2018
+547,323,Out,2018-01-24,17:39:23,By E-Mail,2017-11-09: Name reservation extension. Valid until 2017-12-10. Pending Denise confirmation to proceed with documents
+549,323,Out,2018-01-24,17:40:32,By E-Mail,2018-01-24: Third name reservation submitted. 
+555,201,Complete,2018-01-25,11:17:13,,""
+561,327,Cancel,2018-01-25,14:32:18,,""
+309,184,Out,2018-01-15,15:50:20,By E-Mail,Email to Ms. Lim
+310,190,New,2018-01-15,16:20:21,,
+311,192,New,2018-01-15,16:51:40,,
+568,104,AGM/FS/AR,2018-01-25,18:13:42,,2018-01-25: Accounts in. Pending Docs & Payment.
+312,10,Return,2018-01-15,17:49:22,,doc in 
+313,9,Out,2018-01-15,17:49:42,By E-Mail,doc in 
+314,8,Return,2018-01-15,17:50:39,,doc in on 2018-01-10
+315,193,New,2018-01-15,17:57:16,,
+316,50,AGM/FS/AR,2018-01-16,08:52:13,,FS @ 2017-07-31 sent out. Ack by Jerry Lim. 
+317,91,AGM/FS/AR,2018-01-16,08:55:14,,AR @ 2018-01-24
+318,195,New,2018-01-16,10:45:20,,
+319,196,New,2018-01-16,11:34:44,,
+320,199,New,2018-01-16,12:57:59,,
+321,37,AGM/FS/AR,2018-01-16,13:19:30,,AR @ 2018-01-16 sent to Jalan Jelatek. Ack by Talvinder. 
+322,122,AGM/FS/AR,2018-01-16,13:21:43,,AR @ 2018-01-25 sent out .
+323,196,Complete,2018-01-16,13:28:26,,Andre & Lim come to sign & collected CTC copies.
+324,200,New,2018-01-16,14:50:12,,
+325,201,New,2018-01-16,14:58:04,,
+326,202,New,2018-01-16,15:13:02,,
+327,203,New,2018-01-16,15:59:46,,
+328,204,New,2018-01-16,15:59:46,,
+329,205,New,2018-01-16,15:59:46,,
+330,112,Complete,2018-01-16,17:30:26,,collected by courier service on 12.01.2018
+331,203,Out,2018-01-16,17:40:49,By E-Mail,Email to Wesley
+332,187,Out,2018-01-16,17:41:00,By E-Mail,Email to ROY
+508,274,AGM/FS/AR,2018-01-23,17:45:42,,Email to client
+512,310,Out,2018-01-23,18:06:13,By E-Mail,2018-01-23: Email out to Nikki. 
+333,198,New,2018-01-16,17:42:51,,
+334,197,New,2018-01-16,17:42:55,,
+335,207,New,2018-01-16,17:58:20,,
+336,208,New,2018-01-16,18:02:08,,
+337,209,New,2018-01-16,18:03:34,,
+338,210,New,2018-01-16,18:05:25,,
+519,195,Out,2018-01-24,09:03:25,By E-Mail,"Proceed with S58, lodge in MyCoid. 
+"
+529,289,Complete,2018-01-24,11:54:54,,""
+339,212,New,2018-01-16,18:16:37,,
+340,194,New,2018-01-16,18:22:35,,
+341,212,Out,2018-01-16,18:24:21,By E-Mail,Email to Mr. Gan
+342,79,AGM/FS/AR,2018-01-16,18:43:59,,"2018-01-16: vDocs, x$$, xAcc"
+532,255,AGM/FS/AR,2018-01-24,12:52:15,,"Doc sent out on 23-01-2018. Ack by  Patricia. 
+"
+536,318,New,2018-01-24,15:21:20,,
+343,155,Out,2018-01-16,18:48:15,By E-Mail,Emailed on 12 Jan 2018
+344,153,Out,2018-01-16,18:48:21,By E-Mail,Emailed on 12 Jan 2018
+345,213,New,2018-01-17,09:08:20,,
+346,76,Complete,2018-01-17,10:05:31,,Review letter collected
+347,189,AGM/FS/AR,2018-01-17,10:05:48,,2018-01-17: Docs collected by client's despatch
+348,192,Complete,2018-01-17,10:07:01,,Courier out by OCS
+349,213,Complete,2018-01-17,10:07:13,,Collected by client's despatch
+350,133,Complete,2018-01-17,10:07:25,,Collected by client's despatch on 2018-01-16
+351,194,Out,2018-01-17,10:27:19,By E-Mail,Emailed on 17.01.2018
+352,118,Complete,2018-01-17,10:59:59,,DCR @ 2018-01-16. CTC collected by despatch.
+353,26,Complete,2018-01-17,11:00:38,,DCR @ 2018-01-16. CTC collected by despatch.
+354,214,New,2018-01-17,11:19:53,,
+355,215,New,2018-01-17,11:26:49,,
+542,319,New,2018-01-24,16:30:56,,
+548,323,Out,2018-01-24,17:39:50,By E-Mail,2017-11-09: Name reservation extension. Valid until 2017-12-10. Pending Denise confirmation to proceed with documents
+556,123,AGM/FS/AR,2018-01-25,11:41:52,,"Doc AR @ 2018-01-28 return back. Pending $ 
+"
+356,218,New,2018-01-17,12:45:25,,
+562,288,Complete,2018-01-25,15:00:21,,Submitted to CCM on 2018-01-25
+357,202,Complete,2018-01-17,12:56:13,,collected by Mr. Hisatake Kamori on 16.01.2018
+358,219,New,2018-01-17,13:00:35,,
+360,221,New,2018-01-17,13:49:38,,
+361,222,New,2018-01-17,14:27:57,,
+362,201,Out,2018-01-17,15:20:00,By Hand,""
+363,200,Out,2018-01-17,15:20:19,By Hand,""
+364,214,AGM/FS/AR,2018-01-17,15:20:31,,Collected by Fadzli
+365,223,New,2018-01-17,15:22:09,,
+366,224,New,2018-01-17,15:29:53,,
+367,50,AGM/FS/AR,2018-01-17,15:46:42,,Received $ but pending DCR/MWR. 
+368,126,Out,2018-01-17,15:48:19,By E-Mail,S58 lodge to MyCoid on 2018-01-16. 
+369,123,AGM/FS/AR,2018-01-17,15:49:52,,AR @ 2018-01-28 self collect by Malin. 
+370,225,New,2018-01-17,15:54:16,,
+371,226,New,2018-01-17,15:55:10,,
+372,226,Cancel,2018-01-17,15:59:43,,Job created temporarily for sec fee bill
+373,225,Cancel,2018-01-17,16:00:13,,Job created temporarily for sec fee bill
+374,227,New,2018-01-17,16:19:23,,
+375,228,New,2018-01-17,17:27:44,,
+376,197,Out,2018-01-17,19:33:45,By E-Mail,collected by Ms. Akiko on 17.01.2018. Pending courier original page 3 from Mr. Ryo
+377,229,New,2018-01-18,09:06:37,,
+378,207,Complete,2018-01-18,10:38:07,,""
+379,208,Complete,2018-01-18,10:38:14,,""
+380,209,Complete,2018-01-18,10:38:19,,""
+381,210,Complete,2018-01-18,10:38:24,,""
+382,228,Complete,2018-01-18,10:38:29,,Send out by email to Dama
+383,230,New,2018-01-18,10:44:05,,
+569,318,Complete,2018-01-26,09:31:14,,""
+384,9,Return,2018-01-18,11:10:26,,$ settled on 17.01.2018 by client. Proceed with MYCOID on 17.01.2018
+385,8,Return,2018-01-18,11:11:28,,$ settled on 17.01.2018 by client. Proceed with MYCOID on 17.01.2018
+386,232,New,2018-01-18,11:14:44,,
+387,232,Out,2018-01-18,11:14:50,By E-Mail,send out on 17.01.2018
+388,232,Complete,2018-01-18,11:15:33,,ack receipt on 18.01.2018
+389,233,New,2018-01-18,11:22:51,,
+390,240,New,2018-01-18,13:03:37,,
+391,50,AGM/FS/AR,2018-01-18,13:35:27,,DCR/MWR for FS @ 2017-07-31 received. can proceed filing!
+392,201,Out,2018-01-18,14:02:11,By E-Mail,payment in
+393,200,Out,2018-01-18,14:02:24,By E-Mail,payment in
+394,241,New,2018-01-18,14:22:20,,
+395,244,New,2018-01-18,14:39:15,,
+396,233,Out,2018-01-18,15:45:51,Office Boy,send out on 17.01.2018
+397,233,Complete,2018-01-18,15:46:32,,ack receipt rec on 18.01.2018
+398,247,New,2018-01-18,15:50:21,,
+509,273,AGM/FS/AR,2018-01-23,17:51:41,,Doc AR @ 2018-02-04 sent to Simon by email on 23/01/2018. 
+399,249,New,2018-01-18,16:22:44,,
+513,309,Out,2018-01-23,18:06:21,By E-Mail,2018-01-23: Email out to Nikki. 
+520,199,AGM/FS/AR,2018-01-24,09:04:35,,Doc sent out on 2018-01-22. Ack by Lilian. 
+400,229,Out,2018-01-18,17:19:01,By E-Mail,emailed on 18.01.2018
+401,219,Out,2018-01-18,17:19:37,By E-Mail,emailed to en. jalil on 17.01.2018
+402,250,New,2018-01-18,18:42:10,,
+403,252,New,2018-01-18,19:25:11,,
+404,155,Complete,2018-01-19,09:00:22,,doc sent on 18 Jan 2018
+405,153,Complete,2018-01-19,09:00:54,,Doc sent on 18 Jan 2018
+406,154,Complete,2018-01-19,09:07:17,,doc sent on 18 Jan 2018
+407,254,New,2018-01-19,09:34:35,,
+408,255,New,2018-01-19,10:08:23,,
+409,260,New,2018-01-19,10:41:32,,
+410,261,New,2018-01-19,11:15:48,,
+411,262,New,2018-01-19,11:46:35,,
+412,263,New,2018-01-19,12:06:23,,
+413,264,New,2018-01-19,12:53:24,,
+530,277,Complete,2018-01-24,11:58:48,,doc sent on 23.01.2018
+533,315,New,2018-01-24,12:57:03,,
+414,127,Complete,2018-01-19,12:57:30,,"S58 lodgement in MyCoid (approved). 
+"
+415,50,Complete,2018-01-19,13:01:05,,"FS @ 2017-07-31 filing to SSM on 2018-01-19.
+"
+416,265,New,2018-01-19,13:57:54,,
+417,266,New,2018-01-19,14:02:50,,
+543,320,New,2018-01-24,16:58:30,,
+418,265,Complete,2018-01-19,14:34:10,,2018-01-19: Courier out by Citylink (0603 01 633 129 368) to Kuantan.
+419,267,New,2018-01-19,14:49:58,,
+420,262,Out,2018-01-19,15:25:37,By E-Mail,Email to Satirah
+421,269,New,2018-01-19,15:29:25,,
+422,270,New,2018-01-19,16:47:17,,
+423,271,New,2018-01-19,17:03:46,,
+424,272,New,2018-01-22,09:03:16,,
+425,88,Out,2018-01-22,09:24:21,Own Collection,2018-01-22: Mr. Jamal came collect. 
+426,87,Out,2018-01-22,09:25:20,Own Collection,2018-01-22: Mr. Jamal came collect. 
+427,86,Out,2018-01-22,09:25:34,Own Collection,2018-01-22: Mr. Jamal came collect. 
+428,64,AGM/FS/AR,2018-01-22,09:25:46,,2018-01-22: Mr. Jamal came collect. 
+429,85,Out,2018-01-22,09:26:01,Own Collection,2018-01-22: Mr. Jamal came collect. 
+430,269,Out,2018-01-22,10:22:28,By E-Mail,Email to Scott
+431,244,Out,2018-01-22,10:22:38,Office Boy,Sent out by Wan on 2018-01-19
+432,103,Complete,2018-01-22,10:27:11,,DCR@2017-09-30
+433,97,Complete,2018-01-22,10:27:28,,DCR@2018-01-09
+434,188,Complete,2018-01-22,10:29:06,,self collect by Fazli
+435,271,Complete,2018-01-22,10:29:37,,Self collect by En. Zul @ 2018-01-18
+436,69,Complete,2018-01-22,10:30:12,,Self collect by Client
+437,72,AGM/FS/AR,2018-01-22,10:32:27,,2018-01-18: Sent out to Client by Wan.
+438,65,Out,2018-01-22,10:33:05,Office Boy,2018-01-18: Sent out to Client by Wan.
+439,109,AGM/FS/AR,2018-01-22,10:33:44,,2018-01-19: Email out to Client.
+440,149,Out,2018-01-22,10:35:39,By E-Mail,"2018-01-12: Email out to Client.
+2018-01-12: Courier out Share Cert 011,012 to Signapore."
+441,141,AGM/FS/AR,2018-01-22,10:36:54,,2018-01-19: Client collect & Sign Right Away. Pending DCR.
+442,135,Out,2018-01-22,10:39:03,By E-Mail,2018-01-11: Email out to Client.
+443,134,Out,2018-01-22,10:39:43,By E-Mail,2018-01-11: Email out to Client.
+444,136,Complete,2018-01-22,10:40:38,,2018-01-16: Sent out to Client. Received by them.
+445,134,Complete,2018-01-22,10:41:35,,2018-01-16: Docs in. CTC 2 copies (Sent). Filed in Minutes.
+446,135,Complete,2018-01-22,10:42:15,,2018-01-16: Docs in. CTC 2 copies (Sent). Filed in Minutes.
+447,38,Return,2018-01-22,10:42:42,,2018-01-17: Docs in. CTC 2 copies.
+448,38,Complete,2018-01-22,10:43:19,,2018-01-19: Sent Certified DCR to client. Filed in Minutes.
+449,137,AGM/FS/AR,2018-01-22,10:46:49,,2018-01-19: Sent out Docs to client by Wan.
+450,230,AGM/FS/AR,2018-01-22,10:48:01,,2018-01-19: Sent out Docs to Client by Wan. Received by Ng.
+451,273,New,2018-01-22,13:28:27,,
+452,274,New,2018-01-22,14:42:15,,
+453,276,New,2018-01-22,15:06:17,,
+454,276,Out,2018-01-22,15:25:01,By E-Mail,Email to David
+455,277,New,2018-01-22,16:59:24,,
+456,278,New,2018-01-22,17:01:41,,
+457,278,Out,2018-01-22,17:14:38,By E-Mail,Email to Connie
+550,229,Complete,2018-01-25,09:13:59,,doc sent on 24.01.2018
+459,279,New,2018-01-22,17:15:05,,
+460,283,New,2018-01-22,17:35:08,,
+461,284,New,2018-01-22,17:54:32,,
+462,285,New,2018-01-22,17:54:32,,
+463,286,New,2018-01-22,17:54:32,,
+464,288,New,2018-01-23,08:34:56,,
+465,98,AGM/FS/AR,2018-01-23,09:26:30,,2018-01-23: Docs in. $$ in. Pending Account.
+466,68,Return,2018-01-23,09:27:30,,2018-01-22: Docs in. $$ in. To submit S58.
+467,205,Complete,2018-01-23,10:15:58,,Send out by Wan
+468,289,New,2018-01-23,10:15:45,,
+469,204,Complete,2018-01-23,10:16:14,,Send out by Wan 
+470,203,Complete,2018-01-23,10:16:38,,""
+471,262,Complete,2018-01-23,10:17:27,,""
+472,212,Complete,2018-01-23,10:17:48,,""
+473,187,Complete,2018-01-23,10:17:59,,Mr. Arul signs in office at 2018-01-19
+563,328,New,2018-01-25,15:36:28,,
+570,333,New,2018-01-26,09:31:45,,
+474,291,New,2018-01-23,10:23:20,,
+475,264,AGM/FS/AR,2018-01-23,11:16:43,,2018-01-23: Client self collect documents.
+476,150,AGM/FS/AR,2018-01-23,11:31:18,,2018-01-23: Sent out by Wan. Received by Mdm Hew.
+477,293,New,2018-01-23,11:45:15,,
+478,294,New,2018-01-23,11:45:15,,
+479,295,New,2018-01-23,11:51:48,,
+480,31,Complete,2018-01-23,12:58:34,,""
+481,32,Complete,2018-01-23,12:58:40,,""
+482,200,Complete,2018-01-23,12:59:09,,""
+483,286,Complete,2018-01-23,13:09:53,,2018-01-23: Client come & signed. ctc 2 copies. Filed in Minutes.
+484,285,Complete,2018-01-23,13:10:32,,2018-01-23: Client come & signed. ctc 2 copies. Filed in Minutes.
+485,284,Out,2018-01-23,13:10:42,By E-Mail,2018-01-23: Client come & signed. ctc 2 copies. Filed in Minutes.
+486,185,AGM/FS/AR,2018-01-23,14:06:05,,doc sent on 19.01.2018
+487,29,Complete,2018-01-23,14:26:08,,letter resignation of auditors received on 19.01.2018. SSM ack received on 23.01.2018
+488,11,Return,2018-01-23,14:27:53,,Doc received on 17.01.2018
+489,296,New,2018-01-23,14:45:45,,
+490,297,New,2018-01-23,14:45:45,,
+491,298,New,2018-01-23,14:56:07,,
+492,296,Out,2018-01-23,15:22:00,By E-Mail,Email to Ms. Ng
+493,252,AGM/FS/AR,2018-01-23,15:22:14,,2018-01-23: Received signed documents
+494,128,Out,2018-01-23,15:22:34,By E-Mail,Email to Ms. Ng
+495,299,New,2018-01-23,15:25:56,,
+496,301,New,2018-01-23,15:30:20,,
+497,300,New,2018-01-23,15:30:23,,
+498,299,Out,2018-01-23,15:37:25,By E-Mail,Email to Mr. Ali
+510,306,AGM/FS/AR,2018-01-23,17:58:42,,2018-01-23: Email to Pei Ying & Mr. Pau
+514,308,Out,2018-01-23,18:06:28,By E-Mail,2018-01-23: Email out to Nikki. 
+521,247,AGM/FS/AR,2018-01-24,09:05:47,,Doc sent out on 2018-01-22. 
+499,304,New,2018-01-23,16:30:20,,
+534,249,Complete,2018-01-24,15:11:45,,"Doc (fix FYE, Appoint Auditors & Tax Agents) received on 2018-01-24, can filing in minutes. 
+"
+537,254,AGM/FS/AR,2018-01-24,15:18:39,,"DCR/MWR sent to client on 2018-01-10, DCR/MWR return back @ 2018-01-18 with $ but still pending A/C ( Auditor not prepare yet).
+"
+551,197,Complete,2018-01-25,09:14:51,,original internet banking docs collected by ms. akiko on 24.01.2018
+557,305,AGM/FS/AR,2018-01-25,12:49:06,,Send out docs
+564,329,New,2018-01-25,16:22:30,,
+571,334,New,2018-01-26,13:41:10,,
+574,224,AGM/FS/AR,2018-01-29,09:19:09,,Send out 
+575,223,AGM/FS/AR,2018-01-29,09:19:26,,Send out
+576,338,New,2018-01-29,10:37:22,,
+577,339,New,2018-01-29,14:10:54,,
+578,340,New,2018-01-29,14:41:55,,
+579,341,New,2018-01-29,16:17:45,,
+580,342,New,2018-01-29,16:43:28,,
+1809,1051,New,2018-03-30,16:28:44,,
+1827,1060,New,2018-04-02,14:42:15,,
+581,345,New,2018-01-30,09:56:06,,
+582,346,New,2018-01-30,09:59:53,,
+583,347,New,2018-01-30,11:47:10,,
+584,347,Cancel,2018-01-30,11:47:42,,""
+585,348,New,2018-01-30,12:24:48,,
+586,349,New,2018-01-30,14:16:54,,
+587,350,New,2018-01-30,14:18:16,,
+588,351,New,2018-01-30,14:30:21,,
+589,351,Cancel,2018-01-30,14:34:42,,Wrong job taking.
+590,352,New,2018-01-30,14:35:56,,
+591,353,New,2018-01-30,17:02:07,,
+592,73,AGM/FS/AR,2018-01-30,17:29:53,,Payment in
+593,353,Out,2018-01-30,17:30:13,By E-Mail,Send out by email
+594,354,New,2018-01-30,17:32:05,,
+595,356,New,2018-01-30,18:46:43,,
+596,357,New,2018-02-02,08:12:18,,
+597,122,Complete,2018-02-02,08:26:40,,"AR @ 2018-01-25 filed to CCM on 2018-01-26. 
+"
+598,358,New,2018-02-02,09:13:38,,
+599,359,New,2018-02-02,09:27:58,,
+600,337,AGM/FS/AR,2018-02-02,09:40:23,,Send out to Mr.Savandarajan
+1835,1068,New,2018-04-02,16:54:42,,
+1860,923,Out,2018-04-03,09:24:32,By E-Mail,Send by Wan @ 02/04/2018
+1862,898,Out,2018-04-03,09:25:15,By E-Mail,Send by Wan @ 02/04/2018
+683,426,New,2018-02-06,17:17:40,,
+601,357,AGM/FS/AR,2018-02-02,10:20:35,,2018-02-02: Send out by Wan
+602,356,Out,2018-02-02,10:20:49,By E-Mail,Email to Client
+603,307,AGM/FS/AR,2018-02-02,10:21:08,,"2018-01-24: Received FS. Singapore AGM held@2017-12-29, to submit FS within 2 months from AGM"
+1810,1052,New,2018-03-30,16:47:35,,
+1828,1061,New,2018-04-02,14:50:07,,
+1836,1069,New,2018-04-02,17:01:39,,
+1861,899,Out,2018-04-03,09:24:55,By E-Mail,Send by Wan @ 02/04/2018
+1863,897,Out,2018-04-03,09:25:36,By E-Mail,Send by Wan @ 02/04/2018
+604,329,Out,2018-02-02,11:44:27,Office Boy,""
+605,362,New,2018-02-02,11:47:16,,
+606,363,New,2018-02-02,11:48:02,,
+607,364,New,2018-02-02,12:28:33,,
+1873,1028,AGM/FS/AR,2018-04-03,17:31:03,,"2018-04-03: Document collected by Client
+"
+608,364,Out,2018-02-02,12:32:45,By E-Mail,Emailed to Margaret.
+609,366,New,2018-02-02,12:34:49,,
+610,372,New,2018-02-02,14:16:48,,
+611,371,New,2018-02-02,14:16:52,,
+612,370,New,2018-02-02,14:16:56,,
+613,369,New,2018-02-02,14:16:59,,
+614,368,New,2018-02-02,14:17:02,,
+615,377,New,2018-02-02,14:33:16,,
+616,378,New,2018-02-02,14:33:16,,
+617,373,New,2018-02-02,14:33:18,,
+618,374,New,2018-02-02,14:33:18,,
+619,375,New,2018-02-02,14:33:18,,
+620,376,New,2018-02-02,14:33:18,,
+621,379,New,2018-02-02,14:45:31,,
+622,379,Out,2018-02-02,14:58:26,By E-Mail,Sze emailed to Prema.
+623,380,New,2018-02-02,15:21:54,,
+624,313,AGM/FS/AR,2018-02-02,15:29:37,,2018-02-02: Courier to Irene's house address at Klang
+625,312,Out,2018-02-02,15:30:02,By E-Mail,2018-02-02: Courier to Irene's house address at Klang
+626,377,Out,2018-02-02,18:14:06,By E-Mail,Email to Mrs. Ong 
+627,375,Out,2018-02-02,18:14:16,By E-Mail,Email to Mrs. Ong
+628,374,Out,2018-02-02,18:14:25,By E-Mail,Email to Mrs. Ong
+629,373,Out,2018-02-02,18:14:36,By E-Mail,Email to Mrs. Ong
+630,382,New,2018-02-03,09:26:51,,
+631,384,New,2018-02-03,09:49:27,,
+632,383,New,2018-02-03,09:49:30,,
+633,386,New,2018-02-03,10:24:59,,
+634,387,New,2018-02-03,10:45:42,,
+635,304,AGM/FS/AR,2018-02-03,11:12:52,,""
+636,304,AGM/FS/AR,2018-02-03,11:13:20,,Docs received
+637,388,New,2018-02-03,11:24:41,,
+638,387,Cancel,2018-02-03,11:33:40,,""
+639,389,New,2018-02-03,11:37:38,,
+640,390,New,2018-02-03,11:37:38,,
+641,274,AGM/FS/AR,2018-02-03,11:41:44,,Payment received
+1908,990,AGM/FS/AR,2018-04-05,11:46:19,,"2018-04-04 : Courier out by City-link to Shah Alam. 
+(060301638454139)"
+1918,1072,New,2018-04-06,08:41:35,,
+1928,1125,New,2018-04-06,10:29:35,,
+1951,460,Complete,2018-04-09,09:18:20,,""
+642,393,New,2018-02-03,12:44:42,,
+643,332,Complete,2018-02-03,12:49:47,,CTC DCRs & S58 on 25.01.2018 by fatin
+644,352,Complete,2018-02-05,08:36:44,,"FS @ 2017-06-30 filed to SSM. 
+"
+645,354,Out,2018-02-05,08:47:42,By E-Mail,"Doc regarding change business add email to Sally on 2018-02-03.
+"
+646,345,Out,2018-02-05,08:49:39,By E-Mail,"Doc sent out by email on 2018-01-30. 
+"
+647,394,New,2018-02-05,08:57:33,,
+648,394,Out,2018-02-05,09:43:45,By E-Mail,"DCR online banking with PBB sent out to Jessica by email on 2018-02-05. 
+"
+649,334,Out,2018-02-05,09:45:16,By E-Mail,"DCR - internet banking amended sent to Mr Simon by email on 2 Feb 2018. 
+"
+650,305,AGM/FS/AR,2018-02-05,11:31:54,,Docs received
+651,395,New,2018-02-05,11:34:59,,
+652,396,New,2018-02-05,11:58:05,,
+653,397,New,2018-02-05,15:20:16,,
+654,404,New,2018-02-05,16:45:32,,
+655,405,New,2018-02-05,16:52:30,,
+656,406,New,2018-02-05,17:17:02,,
+657,406,Out,2018-02-05,18:02:26,By E-Mail,Email to client
+658,326,AGM/FS/AR,2018-02-05,18:16:58,,"AR @ 2018-02-05 sent to clients. Ack by Velo. 
+"
+659,331,Out,2018-02-05,18:17:51,By E-Mail,Doc Alter AA sent out to client. Ack by Mr Velo. 
+1980,1156,New,2018-04-09,16:34:01,,
+660,407,New,2018-02-05,19:29:31,,
+661,408,New,2018-02-05,19:29:31,,
+662,410,New,2018-02-06,08:56:18,,
+663,295,Out,2018-02-06,09:03:23,By Hand,Docs returned
+664,219,Complete,2018-02-06,09:04:39,,"doc in on 05.02.2018, collect ctc docs on 06.02.2018"
+665,339,Complete,2018-02-06,09:22:40,,DCR@2018-01-26
+1997,1149,Complete,2018-04-10,08:58:00,,CTC statutory form self collect by Lim Chee Seng. 
+666,412,New,2018-02-06,10:17:50,,
+667,413,New,2018-02-06,10:24:24,,
+668,325,Out,2018-02-06,10:45:54,By E-Mail,""
+669,364,Complete,2018-02-06,11:20:31,,DCR @ 2018-02-05. CTC given.
+670,386,Out,2018-02-06,11:21:13,Own Collection,Collected by Newfields' despatch on 2018-02-05.
+671,46,Complete,2018-02-06,11:43:38,,Filed to CCM on 2018-02-02
+672,110,Complete,2018-02-06,11:44:00,,Lodged to CCM on 2018-02-02
+673,57,Complete,2018-02-06,11:55:18,,"AR @ 2018-01-05 filling to SSM on 2018-02-05.
+"
+674,333,Complete,2018-02-06,11:57:50,,FS @ 2017-06-30 filing to SSM on 2018-02-02. 
+675,419,New,2018-02-06,13:25:54,,
+676,421,New,2018-02-06,14:58:37,,
+677,419,Complete,2018-02-06,15:32:55,,couriur by OCS @ 6/2/2018
+678,397,Complete,2018-02-06,15:33:24,,Send by Wan @ 5/2/2018
+679,342,Complete,2018-02-06,15:33:58,,Send by Wan @ 5/2/2018
+680,369,Complete,2018-02-06,15:34:21,,Send by Wan @ 5/2/2018
+681,263,Complete,2018-02-06,15:34:42,,Self collect by En. Zul @ 15/01/2018
+682,425,New,2018-02-06,16:00:52,,
+1829,1062,New,2018-04-02,14:52:18,,
+684,429,New,2018-02-06,17:21:02,,
+685,433,New,2018-02-07,08:34:08,,
+686,434,New,2018-02-07,08:51:59,,
+687,435,New,2018-02-07,08:54:05,,
+688,436,New,2018-02-07,09:10:35,,
+689,437,New,2018-02-07,10:11:02,,
+690,439,New,2018-02-07,10:48:10,,
+691,386,Return,2018-02-07,10:47:27,,Wan collected signed doc. Need to wait for Jasmine to provide date for execution.
+692,440,New,2018-02-07,11:42:14,,
+693,441,New,2018-02-07,11:42:53,,
+694,442,New,2018-02-07,11:52:32,,
+695,443,New,2018-02-07,11:52:32,,
+696,274,AGM/FS/AR,2018-02-07,13:46:08,,docs received
+697,437,Out,2018-02-07,13:53:19,Office Boy,""
+698,412,AGM/FS/AR,2018-02-07,13:53:32,,""
+699,349,Out,2018-02-07,13:53:44,Office Boy,""
+700,338,AGM/FS/AR,2018-02-07,13:54:00,,Courier out
+701,340,AGM/FS/AR,2018-02-07,13:54:20,,courier out
+702,295,Complete,2018-02-07,13:54:44,,""
+703,325,Out,2018-02-07,13:54:51,By E-Mail,Docs returned
+704,329,Complete,2018-02-07,13:55:04,,""
+705,445,New,2018-02-07,14:12:51,,
+706,446,New,2018-02-07,14:26:19,,
+707,447,New,2018-02-07,14:34:10,,
+708,448,New,2018-02-07,14:45:18,,
+709,382,Complete,2018-02-07,15:26:57,,Collected by Anton.
+710,371,Complete,2018-02-07,15:27:15,,Collected on 5.2.2017
+711,370,Complete,2018-02-07,15:27:32,,Collected on 5.2.2017
+712,422,New,2018-02-07,15:33:07,,
+713,450,New,2018-02-07,16:38:04,,
+714,451,New,2018-02-07,16:38:04,,
+715,452,New,2018-02-07,16:43:20,,
+716,423,New,2018-02-07,16:43:31,,
+717,452,Cancel,2018-02-07,16:44:32,,Double job taking
+718,453,New,2018-02-07,17:08:34,,
+719,454,New,2018-02-07,17:09:42,,
+720,458,New,2018-02-08,08:57:17,,
+721,461,New,2018-02-08,10:36:35,,
+722,421,Return,2018-02-08,10:55:06,,2018-02-07 - Jaspall came to sign. KIV Immanual's instruction to lodge.
+723,461,Out,2018-02-08,10:55:44,Own Collection,Immanual & Latha signed in ASI office & bring to Jaspall to sign.
+724,448,Cancel,2018-02-08,10:56:29,,No idea why this come out.
+725,447,Cancel,2018-02-08,10:56:50,,No idea why this come out.
+726,446,Cancel,2018-02-08,10:56:58,,No idea why this come out.
+727,445,Cancel,2018-02-08,10:57:06,,No idea why this come out.
+728,462,New,2018-02-08,11:20:20,,
+729,421,SSM/Statutory,2018-02-08,11:56:00,,Immanual bring to SSM for own submission as MYCOID not available as co is under strike off status pending on objection result.
+730,396,AGM/FS/AR,2018-02-08,12:02:55,,2018-02-08: Sent out by Wan. Received by Client.
+731,425,Complete,2018-02-08,12:03:37,,2018-02-07: Sent out by Wan. Received by Sonia.
+732,408,Out,2018-02-08,12:08:50,Office Boy,2018-01-06: Sent out by Wan. Received by Sheeda.
+733,407,Out,2018-02-08,12:09:27,Office Boy,2018-01-06: Sent out by Wan. Received by Sheeda.
+734,380,Out,2018-02-08,12:09:39,Office Boy,2018-01-06: Sent out by Wan. Received by Sheeda.
+735,227,Out,2018-02-08,12:10:45,Office Boy,2018-01-06: Sent out by Wan. Received by Sheeda.
+736,222,Out,2018-02-08,12:10:56,Office Boy,2018-01-06: Sent out by Wan. Received by Sheeda.
+737,221,Out,2018-02-08,12:11:06,Office Boy,2018-01-06: Sent out by Wan. Received by Sheeda.
+738,220,Out,2018-02-08,12:11:16,Office Boy,2018-01-06: Sent out by Wan. Received by Sheeda.
+739,215,Out,2018-02-08,12:11:28,By E-Mail,""
+740,215,Out,2018-02-08,12:12:01,Office Boy,2018-01-06: Sent out by Wan. Received by Sheeda.
+741,359,Out,2018-02-08,12:14:16,By E-Mail,2018-01-30: Email to client.
+742,359,Return,2018-02-08,12:15:03,,2018-01-06: Docs in. Date documents & email scan copies to Mei.
+743,359,Complete,2018-02-08,12:16:16,,2018-02-06:  Mei asked to hold the Appt Auditors. Maybe they will change to New Auditors
+744,366,Out,2018-02-08,12:17:59,By E-Mail,2018-02-02: Email to Tiffany.
+745,363,Out,2018-02-08,12:18:44,By E-Mail,"2018-02-06: Email out to Rachael. 
+2018-01-30: E-Channel Application sent back to Rachael (with CTC)."
+746,358,Complete,2018-02-08,12:20:09,,2018-01-30: Courier out to Client by Citylink.
+747,320,Out,2018-02-08,12:25:02,By E-Mail,"2018-01-24: Email out to Ms. Mei & Dato Mark.
+2018-01-26: Email the amended Resolutions to Client."
+748,320,Complete,2018-02-08,12:26:09,,2018-01-29: Docs in. CTC 2 copies (each). Return back to them. Filed in Minutes.
+749,181,Out,2018-02-08,12:28:16,Office Boy,2018-01-18: Sent out by Wan. Received by Client.
+750,180,AGM/FS/AR,2018-02-08,12:28:58,,2018-01-18: Sent out by Wan. Received by Client.
+751,105,AGM/FS/AR,2018-02-08,12:29:42,,2018-01-23: Sent out to Client. Received by them.
+752,105,AGM/FS/AR,2018-02-08,12:30:34,,2018-01-26: Docs in. Payment in. Pending Account.
+753,105,AGM/FS/AR,2018-02-08,12:31:22,,"2018-01-30: Audited FS Received. 
+2017-12-31: Circulated by Acknowledgment."
+754,105,Complete,2018-02-08,12:32:46,,2018-01-30: Lodged FS to SSM. Filed Docs in Minutes.
+755,304,Complete,2018-02-08,13:37:26,,Submitted to CCM@2018-02-07
+756,274,Complete,2018-02-08,13:38:08,,Submitted to CCM@2018-02-08
+757,463,New,2018-02-08,13:56:30,,
+758,451,Out,2018-02-08,13:56:56,By E-Mail,Email to Emily
+759,450,AGM/FS/AR,2018-02-08,13:57:08,,2018-02-07: Email to Emily
+1864,937,Complete,2018-04-03,09:27:36,,Submitted @ 10.10.2017
+1874,1086,New,2018-04-03,17:34:17,,
+760,466,New,2018-02-08,14:06:44,,
+761,58,Out,2018-02-08,14:02:58,By E-Mail,- ROM approved. pending $ and CTC give to client.
+762,468,New,2018-02-08,15:09:21,,
+763,396,AGM/FS/AR,2018-02-08,15:43:18,,2018-02-08: Docs in. Full signed. Pending Pyt & Acc
+764,470,New,2018-02-08,15:54:38,,
+765,471,New,2018-02-08,16:15:55,,
+766,433,AGM/FS/AR,2018-02-08,16:54:52,,send out by email
+1811,1054,New,2018-03-30,16:52:55,,
+1830,1063,New,2018-04-02,15:26:23,,
+1847,1074,New,2018-04-02,18:29:21,,
+767,474,New,2018-02-08,18:44:38,,
+768,475,New,2018-02-09,09:25:35,,
+769,476,New,2018-02-09,09:41:59,,
+770,459,New,2018-02-09,09:42:06,,
+771,457,New,2018-02-09,09:42:09,,
+772,449,New,2018-02-09,09:42:12,,
+773,477,New,2018-02-09,09:52:22,,
+1865,703,Complete,2018-04-03,09:28:00,,Sec files collected on 02/04/2018
+1875,1086,Out,2018-04-03,17:34:25,By E-Mail,Email to Ms. Irene on 03.04.2018. 
+1888,1098,New,2018-04-04,16:50:12,,
+1909,1111,New,2018-04-05,11:56:53,,
+1919,1072,Out,2018-04-06,08:41:44,By E-Mail,emailed on 02.04.2018. doc return on 05.04.2018 but no $.
+774,478,New,2018-02-09,10:01:10,,
+775,478,Cancel,2018-02-09,10:01:55,,2018-02-09: Wrong Job taken.
+776,479,New,2018-02-09,10:04:12,,
+777,480,New,2018-02-09,10:21:48,,
+778,348,AGM/FS/AR,2018-02-09,10:56:22,,""
+779,481,New,2018-02-09,10:59:05,,
+780,481,AGM/FS/AR,2018-02-09,10:59:11,,""
+781,36,Cancel,2018-02-09,11:00:30,,Redundance job take
+1929,1083,Complete,2018-04-06,11:13:26,,DCR@03/04/2018
+1939,1134,New,2018-04-06,17:20:19,,
+1952,1141,New,2018-04-09,09:46:18,,
+1981,1140,New,2018-04-09,16:51:07,,
+1998,1148,Complete,2018-04-10,08:58:46,,CTC statutory form self collect by Lim Chee Seng. 
+782,484,New,2018-02-09,11:40:08,,
+2002,350,Complete,2018-04-10,09:18:57,,Sent to En. Alif on 30.01.2018
+2003,324,Complete,2018-04-10,09:19:14,,Sent on 25.01.2018
+783,483,New,2018-02-09,11:40:55,,
+784,388,Out,2018-02-09,11:42:36,By E-Mail,Emailed to Mr. Ali on 03.02.2018
+785,279,Out,2018-02-09,11:44:08,By E-Mail,Emailed revised docs on 08.02.2018
+786,314,Out,2018-02-09,11:45:48,By E-Mail,Emailed reso open bank with PBB on 24.01.2018 & reso internet banking with PBB on 05.02.2018
+2007,1166,New,2018-04-10,10:32:22,,
+2020,922,Complete,2018-04-10,11:43:06,,""
+2024,710,Complete,2018-04-10,11:44:16,,""
+787,362,AGM/FS/AR,2018-02-09,11:55:52,,""
+788,471,AGM/FS/AR,2018-02-09,11:56:01,,courier out
+789,458,Out,2018-02-09,11:56:18,By E-Mail,email out
+790,453,Cancel,2018-02-09,11:57:45,,redundant 
+791,405,Out,2018-02-09,11:58:09,By E-Mail,email to client
+2032,1158,Complete,2018-04-10,17:27:40,,Send by Rossy @ 10/04/2018
+2044,322,Complete,2018-04-10,17:34:46,,lodged to CCM @ 2/4/2018
+2045,713,Complete,2018-04-10,17:35:34,,DCR @ 07/03/2018
+792,486,New,2018-02-09,13:20:17,,
+793,487,New,2018-02-09,14:55:09,,
+2046,712,Complete,2018-04-10,17:35:51,,DCR @ 07/03/2018
+794,223,AGM/FS/AR,2018-02-09,16:09:51,,Docs received
+795,224,AGM/FS/AR,2018-02-09,16:10:01,,Docs received
+796,488,New,2018-02-09,16:21:21,,
+797,491,New,2018-02-09,16:30:20,,
+798,331,Out,2018-02-09,16:43:37,By E-Mail,Received doc but pending $
+799,395,Out,2018-02-09,16:44:40,Courier,Doc AR sent by Citylink 
+800,267,Out,2018-02-09,16:45:07,By E-Mail,"Doc AR return back, pending $. "
+801,492,New,2018-02-09,17:03:43,,
+2054,1173,New,2018-04-11,10:57:00,,
+2060,1178,New,2018-04-11,17:30:56,,
+802,362,AGM/FS/AR,2018-02-09,17:52:28,,Docs in
+803,185,AGM/FS/AR,2018-02-12,08:52:32,,"DCR/MWR in with $, pending A/C July 2017. "
+804,463,Out,2018-02-12,08:54:23,Office Boy,2018-02-09: Send out by Wan
+805,435,Complete,2018-02-12,08:54:46,,Email to Ben on 2018-02-09
+806,486,Return,2018-02-12,08:55:09,,2018-02-09: Incorp docs signed. Pending name reservation approval. 
+807,493,New,2018-02-12,09:15:15,,
+808,494,New,2018-02-12,10:06:24,,
+809,495,New,2018-02-12,10:06:24,,
+810,496,New,2018-02-12,10:06:24,,
+811,497,New,2018-02-12,10:06:24,,
+812,498,New,2018-02-12,10:06:24,,
+813,305,Complete,2018-02-12,10:47:13,,Lodged @ 09/2/2018
+814,499,New,2018-02-12,12:54:34,,
+815,502,New,2018-02-12,13:36:53,,
+816,503,New,2018-02-12,13:36:53,,
+817,82,AGM/FS/AR,2018-02-12,13:41:40,,Documents received
+818,73,Complete,2018-02-12,13:42:20,,Lodged to CCM@12/02/2018
+819,63,Out,2018-02-12,13:43:13,Office Boy,""
+820,404,Out,2018-02-12,14:01:52,Office Boy,""
+821,454,AGM/FS/AR,2018-02-12,14:02:06,,""
+822,504,New,2018-02-12,14:12:07,,
+823,503,Out,2018-02-12,14:21:41,By E-Mail,Email to Susan
+824,502,Out,2018-02-12,14:21:51,By E-Mail,Email to Susan
+825,82,AGM/FS/AR,2018-02-12,14:33:21,,payment received
+826,479,Out,2018-02-12,15:02:07,By E-Mail,"2018-02-12: Email out to Ms. Grace the DCR & BS, PL"
+827,475,Out,2018-02-12,15:02:49,By E-Mail,2018-02-09: Email out (PB) 00386 on the extra Name Reservation
+828,475,Complete,2018-02-12,15:04:28,,2018-02-12: Company incorporated as at 2017-12-19
+829,505,New,2018-02-12,15:17:51,,
+830,255,AGM/FS/AR,2018-02-12,16:21:59,,Patricia called to inform AR doc will return in 3rd week of March 2018. She awares about the late kp rm50.
+831,449,Complete,2018-02-12,16:42:15,,DCR@12/02/2018
+832,507,New,2018-02-12,16:43:28,,
+833,506,New,2018-02-12,16:43:42,,
+834,508,New,2018-02-12,19:10:42,,
+835,509,New,2018-02-12,19:10:42,,
+836,510,New,2018-02-12,19:10:42,,
+837,511,New,2018-02-12,19:10:42,,
+838,512,New,2018-02-12,19:10:42,,
+839,513,New,2018-02-12,19:11:42,,
+840,514,New,2018-02-13,08:40:52,,
+841,518,New,2018-02-13,10:58:04,,
+842,513,Out,2018-02-13,10:58:23,By E-Mail,Email to Annette
+843,518,Out,2018-02-13,10:58:38,By E-Mail,Email to Irene tgt with DCR for appt of tax agent
+844,312,Return,2018-02-13,10:59:23,,Docs received @ 2018-02-12. Pending confirmation of date
+845,278,Complete,2018-02-13,11:00:09,,""
+846,276,Complete,2018-02-13,11:00:16,,""
+847,269,Complete,2018-02-13,11:00:23,,""
+848,244,Complete,2018-02-13,11:00:31,,""
+849,519,New,2018-02-13,11:18:19,,
+850,429,AGM/FS/AR,2018-02-13,11:22:52,,Send out
+851,393,AGM/FS/AR,2018-02-13,11:23:03,,Send out
+852,395,AGM/FS/AR,2018-02-13,11:25:09,,"Doc AR @ 2018-02-21 received with $. can proceed filing!
+"
+1812,1055,New,2018-03-30,17:49:38,,
+853,520,New,2018-02-13,12:57:50,,
+854,522,New,2018-02-13,14:10:17,,
+855,523,New,2018-02-13,14:12:03,,
+856,524,New,2018-02-13,14:18:35,,
+1837,644,Complete,2018-04-02,17:20:07,,"Lodged to CCM@2018-04-02
+"
+857,15,AGM/FS/AR,2018-02-13,14:41:11,,payment and docs in
+858,507,Complete,2018-02-13,15:27:15,,CTC doc self collect by client. Ack by Shahrul
+859,326,AGM/FS/AR,2018-02-13,15:27:58,,"Doc in, pending $."
+860,273,AGM/FS/AR,2018-02-13,15:28:29,,Doc in
+861,247,Out,2018-02-13,15:29:37,By E-Mail,"Doc AR @ 2018-02-27 in, pending $.
+"
+862,91,AGM/FS/AR,2018-02-13,15:31:15,,"Doc in, proceed to lodge in MyCoid, pending $. "
+863,423,AGM/FS/AR,2018-02-13,15:32:45,,"FS @ 2017-06-30 filing to SSM  on 13 February 2018, Naz aware with late lodgement, pending RM50 for late filing fee. "
+864,525,New,2018-02-13,15:50:11,,
+865,526,New,2018-02-13,16:39:43,,
+866,527,New,2018-02-13,16:47:17,,
+867,528,New,2018-02-13,18:11:38,,
+868,530,New,2018-02-14,09:21:06,,
+869,530,Cancel,2018-02-14,09:34:56,,""
+870,531,New,2018-02-14,09:55:31,,
+871,532,New,2018-02-14,10:01:27,,
+872,533,New,2018-02-14,10:01:27,,
+873,534,New,2018-02-14,10:37:18,,
+874,537,New,2018-02-14,11:26:07,,
+875,538,New,2018-02-14,11:54:54,,
+876,440,SSM/Statutory,2018-02-14,12:58:24,,""
+877,440,SSM/Statutory,2018-02-14,12:58:46,,Approved. Passport send to ESD today for visa endorsement. To be collected on 20 Feb 2018.
+878,441,SSM/Statutory,2018-02-14,12:59:38,,2018-02-12 submitted to ESD.
+879,539,New,2018-02-14,14:12:40,,
+1848,1075,New,2018-04-02,18:51:36,,
+1876,1089,New,2018-04-03,18:31:08,,
+1910,977,AGM/FS/AR,2018-04-05,13:15:45,,"2018-04-05: Courier out by city-link to Pulau Pinang 
+(060301638454175)"
+1920,1121,New,2018-04-06,08:58:40,,
+1930,1013,Out,2018-04-06,11:12:25,By E-Mail,email by Shi Yun to clinet on 29/03/2018.
+1940,1135,New,2018-04-06,18:18:39,,
+1953,1142,New,2018-04-09,09:59:38,,
+880,82,Complete,2018-02-14,14:44:40,,"Lodged to CCM@2018-02-14
+"
+881,541,New,2018-02-14,14:58:47,,
+882,542,New,2018-02-14,15:11:54,,
+883,543,New,2018-02-14,15:35:18,,
+884,544,New,2018-02-14,16:15:30,,
+885,547,New,2018-02-14,16:58:17,,
+886,548,New,2018-02-14,17:42:52,,
+887,549,New,2018-02-14,18:48:04,,
+888,550,New,2018-02-15,09:26:50,,
+889,466,AGM/FS/AR,2018-02-15,11:27:38,,""
+890,362,AGM/FS/AR,2018-02-15,11:27:57,,payment in on 14/02/2018
+891,439,AGM/FS/AR,2018-02-15,11:41:38,,2018-02-14; Sent out by Wan. Received by Ang.
+892,491,AGM/FS/AR,2018-02-15,12:02:03,,2018-02-15: Email out Docs to Mr. Garlos.
+893,551,New,2018-02-15,12:20:31,,
+894,459,Complete,2018-02-15,14:15:12,,DCR @ 15/02/2018
+895,505,AGM/FS/AR,2018-02-19,11:10:01,,Send out docs @ 16/02/2018
+896,477,AGM/FS/AR,2018-02-19,11:13:43,,Send out docs @ 2018-02-15
+897,487,AGM/FS/AR,2018-02-19,11:16:23,,Send out docs @ 2018-02-14
+898,483,AGM/FS/AR,2018-02-19,11:19:14,,Send out docs by City Link (0603 01 633 129 332)
+899,492,AGM/FS/AR,2018-02-19,11:21:50,,Send out docs by City Link (0603 01 633 129 333)
+900,426,AGM/FS/AR,2018-02-19,11:25:38,,Send out docs by City Link (0603 01 633 129 326)
+901,550,Cancel,2018-02-19,11:36:21,,""
+902,547,Cancel,2018-02-19,11:36:28,,""
+903,440,Complete,2018-02-19,11:36:45,,Visa valid till 23 Sep 2019.
+904,386,Complete,2018-02-19,11:37:24,,S78 @ 2018-02-07
+905,91,Complete,2018-02-19,12:28:51,,"AR @ 2018-01-24 filing to SSM on 16-02-2018. 
+"
+906,37,Complete,2018-02-19,12:30:33,,"AR @ 2018-01-16 filing to SSM on 14 Feb 2018.
+"
+907,556,New,2018-02-19,13:50:16,,
+908,557,New,2018-02-19,15:18:13,,
+909,558,New,2018-02-19,15:48:37,,
+910,523,AGM/FS/AR,2018-02-19,16:16:58,,Send out docs
+911,520,AGM/FS/AR,2018-02-19,16:17:09,,Send out docs
+1963,1110,Out,2018-04-09,14:43:40,Office Boy,2018-04-09: Sent out client by Wan.
+1982,1140,Out,2018-04-09,16:51:13,By E-Mail,Emailed on 09.04.2018
+912,560,New,2018-02-19,16:59:58,,
+913,561,New,2018-02-19,17:09:00,,
+914,562,New,2018-02-19,17:14:31,,
+915,436,AGM/FS/AR,2018-02-19,17:41:10,,Document in
+916,543,Complete,2018-02-20,09:19:33,,DCR @ 19/02/2018
+917,563,New,2018-02-20,09:20:28,,
+918,564,New,2018-02-20,10:10:51,,
+919,526,AGM/FS/AR,2018-02-20,10:40:02,,Send out docs @ 2018-02-20
+920,566,New,2018-02-20,11:25:24,,
+921,462,AGM/FS/AR,2018-02-20,14:05:20,,2018-02-20: Ms. Teresa signed right away. Pending DCR & $$
+922,199,Complete,2018-02-20,14:14:01,,AR @ 2018-02-12 filing to SSM on 2018-02-12.
+923,273,Complete,2018-02-20,14:19:41,,"AR @ 2018-02-04 submission to SSM on 2018-02-20. 
+"
+924,569,New,2018-02-20,15:01:31,,
+925,570,New,2018-02-20,15:01:31,,
+926,571,New,2018-02-20,15:01:31,,
+927,572,New,2018-02-20,15:01:31,,
+928,573,New,2018-02-20,15:01:31,,
+929,574,New,2018-02-20,15:01:31,,
+930,575,New,2018-02-20,15:01:31,,
+1813,1056,New,2018-03-30,17:56:05,,
+1838,675,Complete,2018-04-02,17:20:45,,"Lodged to CCM@2018-04-02
+"
+1849,1076,New,2018-04-02,19:11:55,,
+1877,1091,New,2018-04-03,19:25:43,,
+1878,1092,New,2018-04-03,19:25:43,,
+1879,1090,New,2018-04-03,19:25:43,,
+1889,1100,New,2018-04-04,17:29:42,,
+1911,1112,New,2018-04-05,13:54:41,,
+1921,1122,New,2018-04-06,09:18:54,,
+1931,1116,Out,2018-04-06,11:16:35,Office Boy,"2018-04-06 : Sent out by Wan, Received by Client."
+931,578,New,2018-02-20,15:11:55,,
+932,579,New,2018-02-20,16:50:52,,
+933,562,Out,2018-02-20,17:27:26,By E-Mail,""
+934,405,AGM/FS/AR,2018-02-20,17:36:23,,Docs and payment in
+935,582,New,2018-02-21,08:40:32,,
+936,561,AGM/FS/AR,2018-02-21,08:42:21,,Courier by City-Link
+937,583,New,2018-02-21,09:37:00,,
+938,493,AGM/FS/AR,2018-02-21,09:41:03,,Send out docs @ 2018-02-20
+1941,1116,Complete,2018-04-07,09:24:03,,""
+1964,1109,Out,2018-04-09,14:44:22,Office Boy,2018-04-09: Sent out client by Wan.
+939,584,New,2018-02-21,09:52:33,,
+940,457,Complete,2018-02-21,09:43:55,,Send @ 20.02.2018
+941,585,New,2018-02-21,10:01:53,,
+942,587,New,2018-02-21,11:50:40,,
+943,441,SSM/Statutory,2018-02-21,12:08:36,,EP approved 24 mths.
+944,588,New,2018-02-21,12:09:35,,
+945,590,New,2018-02-21,12:23:41,,
+946,591,New,2018-02-21,12:23:41,,
+947,589,New,2018-02-21,12:23:44,,
+1965,1108,Out,2018-04-09,14:44:35,Office Boy,2018-04-09: Sent out client by Wan.
+948,544,AGM/FS/AR,2018-02-21,12:27:18,,Send out docs @ 2018-02-21
+949,593,New,2018-02-21,14:34:49,,
+950,410,AGM/FS/AR,2018-02-21,15:51:42,,Send out docs @ 2018-02-21
+951,578,AGM/FS/AR,2018-02-21,17:13:33,,2018-02-21: Sent out by Wan. Received by Client.
+952,594,New,2018-02-21,17:18:21,,
+953,564,AGM/FS/AR,2018-02-21,17:22:38,,2018-02-21: Sent out by Wan. Received by client.
+954,527,AGM/FS/AR,2018-02-21,17:24:03,,2018-02-21: Sent out by Wan. Received by client.
+955,362,Complete,2018-02-21,17:25:43,,Lodged to CCM @ 2018-02-21
+956,551,AGM/FS/AR,2018-02-22,08:49:23,,Send out docs @ 2018-02-21
+957,39,Complete,2018-02-22,08:55:48,,AR @ 2018-01-24 submit to SSM on 2018-02-21. 
+958,423,Complete,2018-02-22,08:57:03,,FS @ 2017-06 filing to SSM on 3 Feb 2018. Naz already paid late filing fee RM50. 
+959,595,New,2018-02-22,09:00:10,,
+960,596,New,2018-02-22,09:00:10,,
+961,522,AGM/FS/AR,2018-02-22,09:20:36,,2018-02-22: Sent out by Wan. Received by client.
+962,413,AGM/FS/AR,2018-02-22,09:22:47,,2018-02-22: Sent out by Wan. Received by Client.
+963,224,AGM/FS/AR,2018-02-22,11:22:28,,Payment in
+964,223,AGM/FS/AR,2018-02-22,11:22:39,,Payment in
+965,531,AGM/FS/AR,2018-02-22,11:27:19,,Docs out
+966,591,Complete,2018-02-22,12:00:51,,2018-02-22: Sent out by Wan. Completed.
+967,590,Out,2018-02-22,12:01:22,Office Boy,2018-02-22: Sent out by Wan. Received by Client.
+968,589,Complete,2018-02-22,12:02:02,,2018-02-22: Sent out by Wan. Completed.
+969,569,Return,2018-02-22,12:02:43,,2018-02-21: Client came. Docs signed. $$ made.
+970,570,Return,2018-02-22,12:04:05,,2018-02-22: Client came. Docs signed. $$ made.
+971,571,Return,2018-02-22,12:04:23,,"2018-02-22: Client came. Docs signed. $$ made.
+2018-02-22: S105 - Masnizam pending signing. Aminul will pass to him."
+972,572,Return,2018-02-22,12:05:38,,"2018-02-22: Client came. Docs signed. $$ made.
+2018-02-22: Hold untill S105 done."
+973,573,Return,2018-02-22,12:06:13,,"2018-02-22: Client came. Docs signed. $$ made.
+2018-02-23: Can proceed to submit to CCM."
+974,574,Return,2018-02-22,12:06:43,,"2018-02-22: Client came. Docs signed. $$ made. 
+2018-02-22: To date after S58 approved."
+975,575,Return,2018-02-22,12:07:17,,"2018-02-22: Client came. Docs signed. $$ made. 
+2018-02-22: To date after S58 approved."
+976,569,Return,2018-02-22,12:07:43,,2018-02-22: To submit S58 by MyCoid.
+977,570,Return,2018-02-22,12:08:37,,2018-02-22: To submit S58 by MyCoid.
+978,598,New,2018-02-22,12:59:36,,
+979,600,New,2018-02-22,13:54:30,,
+980,602,New,2018-02-22,16:54:46,,
+981,603,New,2018-02-22,17:00:13,,
+982,348,AGM/FS/AR,2018-02-22,17:35:18,,"Docs and payment in 
+"
+983,606,New,2018-02-23,09:10:05,,
+984,607,New,2018-02-23,09:13:30,,
+985,512,AGM/FS/AR,2018-02-23,10:15:01,,2018-02-14: Send out by Wan
+986,511,Out,2018-02-23,10:15:23,By E-Mail,2018-02-14: Send out by Wan
+987,511,Return,2018-02-23,10:15:45,,2018-02-21: Received docs signed by current director. To send out to new directors to sign
+988,510,Out,2018-02-23,10:16:27,By E-Mail,2018-02-14: Send out by Wan
+989,510,Complete,2018-02-23,10:16:54,,""
+990,508,Out,2018-02-23,10:17:33,By E-Mail,2018-02-14: Send out by Wan
+991,508,Return,2018-02-23,10:17:54,,"2018-02-21: Received signed dcr, to prepare CTC"
+992,509,Out,2018-02-23,10:18:25,Office Boy,2018-02-14: Send out by Wan
+993,509,Return,2018-02-23,10:18:49,,"2018-02-21: Received docs signed by current directors, to send out to new director"
+994,378,Complete,2018-02-23,10:20:03,,Sent to lawyer on 2018-02-14
+995,376,Complete,2018-02-23,10:20:21,,Send to lawyer on 2018-02-14
+996,377,Complete,2018-02-23,10:20:41,,""
+997,375,Complete,2018-02-23,10:20:48,,""
+998,374,Complete,2018-02-23,10:20:55,,""
+999,373,Complete,2018-02-23,10:21:01,,""
+1000,356,Complete,2018-02-23,10:21:09,,""
+1001,608,New,2018-02-23,10:35:11,,
+1002,609,New,2018-02-23,11:23:10,,
+1003,607,Complete,2018-02-23,11:26:04,,"Send by couriur-OCS @ 23/02/2018
+Congsignment Number: 126-142-630-154"
+1004,593,Complete,2018-02-23,11:27:27,,Pass to Mag @ 23/02/2018
+1005,610,New,2018-02-23,11:42:13,,
+1814,976,AGM/FS/AR,2018-04-02,08:37:04,,Send out doc @ 2018-03-29. Ack by Ms. Nazariah.
+1006,611,New,2018-02-23,12:13:39,,
+1007,612,New,2018-02-23,14:38:29,,
+1008,613,New,2018-02-23,16:00:49,,
+1009,341,Complete,2018-02-23,16:31:00,,DCR @ 21.02.2018
+1010,224,Complete,2018-02-23,17:53:18,,submit @ 23/02/2018
+1011,223,Complete,2018-02-23,17:53:39,,Submit @ 23/02/2018
+1012,594,Out,2018-02-26,08:45:57,By E-Mail,-AR @ 2018-02-15 sent to client on 23/02/2018 by Avonne Jorita. Client request to resend by email. 
+1013,410,AGM/FS/AR,2018-02-26,08:49:52,,Document in
+1014,487,AGM/FS/AR,2018-02-26,08:51:13,,Document in
+1015,492,AGM/FS/AR,2018-02-26,08:51:55,,Document in
+1831,1064,New,2018-04-02,15:27:14,,
+1839,1070,New,2018-04-02,17:27:59,,
+1850,1077,New,2018-04-02,19:15:56,,
+1016,58,Complete,2018-02-26,08:51:23,,"- Received $ on 23 Feb 2018, ROM approved!"
+1017,614,New,2018-02-26,09:02:13,,
+1018,614,Cancel,2018-02-26,09:04:18,,""
+1019,615,New,2018-02-26,09:44:14,,
+1020,616,New,2018-02-26,09:44:14,,
+1021,617,New,2018-02-26,09:56:42,,
+1022,566,AGM/FS/AR,2018-02-26,10:36:19,,""
+1023,519,AGM/FS/AR,2018-02-26,10:36:45,,""
+1024,542,AGM/FS/AR,2018-02-26,10:36:50,,""
+1025,471,AGM/FS/AR,2018-02-26,10:40:30,,Payment in
+1026,544,AGM/FS/AR,2018-02-26,11:00:42,,Document in (Received payment)
+1027,526,AGM/FS/AR,2018-02-26,11:01:18,,Document in (Received payment)
+1880,960,AGM/FS/AR,2018-04-04,09:16:30,,Send out doc @ 2018-04-03. Ack by Fatin Atira Bt Mohd Nasib
+1890,1099,New,2018-04-04,17:29:46,,
+1892,1099,Out,2018-04-04,17:30:08,By E-Mail,emailed on 04.04.2018
+1912,1113,New,2018-04-05,14:27:23,,
+1932,1069,AGM/FS/AR,2018-04-06,11:24:35,,2018-04-06: Document Collected by Client at ASI Secretarial
+1942,1136,New,2018-04-07,13:58:35,,
+1028,514,AGM/FS/AR,2018-02-26,11:12:48,,"2018-02-26: 
+Sent out by Wan. Received by Client (Ms. Kelly).
+"
+1029,504,AGM/FS/AR,2018-02-26,11:15:44,,"2018-02-26: 
+Sent out by Wan. Received by Client (Ms. Kelly)."
+1030,151,Complete,2018-02-26,11:44:17,,Lodged to CCM on 2018-02-26
+1031,176,Complete,2018-02-26,11:45:46,,Lodged to CCM on 2018-02-26
+1032,618,New,2018-02-26,11:56:16,,
+1033,573,Complete,2018-02-26,12:05:50,,2018-02-26: Submitted to SSM. Filed docs in Minutes.
+1034,570,SSM/Statutory,2018-02-26,12:06:39,,2018-02-23: Submitted S58. Waiting Approval.
+1035,569,SSM/Statutory,2018-02-26,12:07:56,,2018-02-23: Submitted S58. Waiting Approval.
+1036,86,Complete,2018-02-26,12:08:25,,2018-02-26: Submitted to SSM. Filed docs in Minutes.
+1037,85,Complete,2018-02-26,12:10:27,,2018-02-26: Submitted to SSM. Filed docs in Minutes.
+1038,348,Complete,2018-02-26,13:58:51,,Lodged to CCM@2018-02-26
+1039,619,New,2018-02-26,14:15:32,,
+1040,620,New,2018-02-26,14:54:41,,
+1041,622,New,2018-02-26,15:47:45,,
+1966,1107,Out,2018-04-09,14:44:47,Office Boy,2018-04-09: Sent out client by Wan.
+1968,1104,Out,2018-04-09,14:45:14,Office Boy,2018-04-09: Sent out client by Wan.
+1970,1102,Out,2018-04-09,14:45:39,Office Boy,2018-04-09: Sent out client by Wan.
+1042,87,SSM/Statutory,2018-02-26,16:11:42,,2018-02-26: To submit Indemnity Letter for LHDN Stamping. 
+1043,33,Complete,2018-02-26,16:12:45,,"2018-01-16: S14 Approved. Incorporated.
+2018-01-17: Submited S58 & S236 (Approved)."
+1044,120,Complete,2018-02-26,16:14:34,,"2018-01-16: S14 Approved. Incorporated.
+2018-01-17: S58 & S236 Approved."
+1045,623,New,2018-02-26,17:41:54,,
+1046,587,AGM/FS/AR,2018-02-26,17:45:55,,""
+1047,583,AGM/FS/AR,2018-02-26,17:46:04,,""
+1048,624,New,2018-02-26,18:51:17,,
+1049,625,New,2018-02-26,18:51:17,,
+1050,626,New,2018-02-27,08:36:17,,
+1051,627,New,2018-02-27,08:42:29,,
+1052,628,New,2018-02-27,09:47:39,,
+1053,629,New,2018-02-27,11:07:20,,
+2008,1167,New,2018-04-10,11:28:53,,
+2021,778,Return,2018-04-10,11:43:22,,"Docs received, pending $$ and confirmation on shareholding from client."
+1054,631,New,2018-02-27,11:38:31,,
+2022,721,Complete,2018-04-10,11:43:54,,""
+2023,711,Complete,2018-04-10,11:44:07,,""
+2033,1156,Complete,2018-04-10,17:28:05,,Send by Rossy @ 10/04/2018
+2047,641,Complete,2018-04-10,17:39:18,,DCR @ 14/03/2018
+1055,338,AGM/FS/AR,2018-02-27,11:50:32,,Docs and payment in
+1056,340,AGM/FS/AR,2018-02-27,11:50:46,,"Docs and payment in
+"
+1057,632,New,2018-02-27,12:10:29,,
+1058,633,New,2018-02-27,14:42:47,,
+1059,436,AGM/FS/AR,2018-02-28,08:46:15,,Document in (Received payment)
+1060,636,New,2018-02-28,09:56:39,,
+1061,610,AGM/FS/AR,2018-02-28,10:43:13,,Send out doc @ 2018-02-27 (Acknowledge by Mr. Tiong)
+1062,637,New,2018-02-28,12:00:53,,
+1063,638,New,2018-02-28,12:21:19,,
+1064,623,AGM/FS/AR,2018-02-28,15:32:28,,Collected by Client.
+1065,620,AGM/FS/AR,2018-02-28,15:33:27,,"Collected by Client.
+"
+2055,1174,New,2018-04-11,11:39:12,,
+2061,1179,New,2018-04-11,17:37:56,,
+2066,1183,New,2018-04-12,11:59:42,,
+2071,1095,AGM/FS/AR,2018-04-12,14:39:24,,Send out doc @ 2018-04-12. Ack by Lyn
+1066,609,AGM/FS/AR,2018-02-28,15:33:57,,"Courrier out by Citylink (060301633129339), to Midvalley."
+1067,639,New,2018-02-28,17:03:07,,
+1068,315,AGM/FS/AR,2018-02-28,17:09:59,,Doc AR @ 27-02-2018 received with $. 
+1069,270,AGM/FS/AR,2018-02-28,17:10:58,,"Received $ pending DCR/MWR and pending A/C. 
+"
+1070,123,AGM/FS/AR,2018-02-28,17:11:50,,Received $. can proceed filing. 
+1071,519,AGM/FS/AR,2018-03-01,08:31:47,,Docs and payment in
+1072,641,New,2018-03-01,08:55:20,,
+1073,642,New,2018-03-01,09:19:06,,
+1074,643,New,2018-03-01,13:30:58,,
+1075,639,AGM/FS/AR,2018-03-01,14:47:26,,Sent out by Poh Yin (trainee) . Received by Client.
+1076,644,New,2018-03-01,15:08:35,,
+1077,645,New,2018-03-01,15:13:33,,
+1815,1010,Out,2018-04-02,11:14:22,By E-Mail,Email to Jasmine
+1816,1009,Complete,2018-04-02,11:14:36,,""
+1832,1065,New,2018-04-02,15:57:58,,
+1078,646,New,2018-03-01,15:18:15,,
+1079,647,New,2018-03-01,15:22:48,,
+1840,1071,New,2018-04-02,17:57:40,,
+1851,1078,New,2018-04-03,08:01:03,,
+1866,1083,New,2018-04-03,10:50:07,,
+1080,649,New,2018-03-01,17:06:17,,
+1881,973,AGM/FS/AR,2018-04-04,09:18:13,,Send out doc @ 2018-04-03. Letak bawah pintu (With client received)
+1081,650,New,2018-03-01,17:09:20,,
+1082,487,AGM/FS/AR,2018-03-01,18:00:09,,Payment in
+1083,651,New,2018-03-01,18:11:07,,
+1084,625,AGM/FS/AR,2018-03-01,19:40:06,,2018-02-28: Email to Scott & Ben
+1085,624,Out,2018-03-01,19:40:30,By E-Mail,2018-02-28: Email to Scott & Ben
+1086,608,Out,2018-03-01,19:40:50,By E-Mail,Email to Lyn
+1087,513,Complete,2018-03-01,19:41:08,,""
+1088,184,Complete,2018-03-01,19:41:24,,""
+1089,177,Complete,2018-03-01,19:41:31,,S58@2018-02-12
+1090,152,Complete,2018-03-01,19:42:16,,S58@2018-02-12
+1091,13,Complete,2018-03-01,19:42:30,,""
+1092,117,Complete,2018-03-01,19:42:39,,""
+1093,412,Complete,2018-03-02,08:42:56,,Lodged to CCM@2018-03-01
+1094,410,Complete,2018-03-02,08:46:14,,Lodged to CCM@2018-03-01
+1095,638,Complete,2018-03-02,08:47:44,,"- CTC for AR dated 6 May 2017 sent to client on 01/03/2018. Ack by Shalini. 
+"
+1096,247,Complete,2018-03-02,08:50:46,,"AR @ 2018-02-27 filed to SSM on 01/03/2018.
+"
+1097,123,Complete,2018-03-02,08:52:31,,"AR @ 2018-01-28 filed to SSM on 01/03/2018.
+"
+1098,395,Complete,2018-03-02,08:53:30,,"AR @ 2018-02-21 filed to SSM on 01/03/2018.
+"
+1099,653,New,2018-03-02,09:39:25,,
+1891,1100,Out,2018-04-04,17:29:53,By E-Mail,emailed on 04.04.2018
+1100,654,New,2018-03-02,11:38:35,,
+1101,655,New,2018-03-02,12:16:32,,
+1102,656,New,2018-03-02,13:34:59,,
+1103,657,New,2018-03-02,13:38:58,,
+1913,1116,New,2018-04-05,17:03:28,,
+1104,654,Complete,2018-03-02,13:55:17,,Doc CTC FS for 31 June 2017 sent to client by email and also send hardcopy to Jalan Klang Lama. 
+1105,528,Complete,2018-03-02,13:56:38,,Sent out to Simon. 
+1943,1137,New,2018-04-07,14:04:41,,
+1954,1143,New,2018-04-09,10:26:37,,
+1967,1105,Out,2018-04-09,14:44:59,Office Boy,2018-04-09: Sent out client by Wan.
+1969,1103,Out,2018-04-09,14:45:27,Office Boy,2018-04-09: Sent out client by Wan.
+1106,658,New,2018-03-02,13:57:15,,
+1971,1147,Out,2018-04-09,14:46:31,By E-Mail,2018-04-09: Email out to Yogini.
+1107,240,Complete,2018-03-02,13:58:00,,AR @ 2018-02-18 submit to CCM on 26 February 2018.
+1108,67,Complete,2018-03-02,14:00:16,,"AR @ 2018-01-23 submit to CCM on 15 February 2018.
+
+"
+1109,645,Out,2018-03-02,14:03:14,By E-Mail,"Section 105 dated 18 October 2017 sent out. Ack by Abd Qayyum.
+"
+1110,563,AGM/FS/AR,2018-03-02,16:36:25,,Send out doc @ 2018-03-01
+1111,660,New,2018-03-02,16:39:28,,
+1112,661,New,2018-03-02,16:39:28,,
+1113,661,Complete,2018-03-02,16:51:50,,Collected by Client despatch
+1114,660,Complete,2018-03-02,16:53:29,,Collected by client despatch
+1115,619,AGM/FS/AR,2018-03-03,08:37:53,,Send out doc @ 2018-03-02.Ack by Lee Choo Leong
+1116,548,Cancel,2018-03-03,08:39:06,,Double job taking
+1117,662,New,2018-03-03,08:42:18,,
+1118,662,AGM/FS/AR,2018-03-03,08:42:34,,Send out doc @ 2018-02-23. Ack by Siti Shaidatul Ain
+1119,520,AGM/FS/AR,2018-03-03,08:46:29,,"Docs in
+"
+1120,523,AGM/FS/AR,2018-03-03,08:46:38,,Docs in
+1121,663,New,2018-03-03,08:58:22,,
+1122,664,New,2018-03-03,08:58:22,,
+1123,665,New,2018-03-03,08:58:22,,
+1124,666,New,2018-03-03,08:58:22,,
+1125,667,New,2018-03-03,08:58:22,,
+1126,668,New,2018-03-03,08:58:22,,
+1983,1158,New,2018-04-09,16:57:47,,
+1990,1129,Complete,2018-04-09,17:25:54,,Doc CTC self collect by Habibah on 9 April 2018. 
+2025,355,Complete,2018-04-10,11:44:31,,""
+1127,670,New,2018-03-03,11:34:50,,
+1128,671,New,2018-03-03,11:35:32,,
+1129,672,New,2018-03-03,11:36:11,,
+1130,674,New,2018-03-03,12:38:47,,
+1131,675,New,2018-03-05,10:32:41,,
+1132,676,New,2018-03-05,11:01:25,,
+1133,677,New,2018-03-05,11:39:29,,
+1134,89,AGM/FS/AR,2018-03-05,11:40:36,,Docs in 
+1135,678,New,2018-03-05,11:51:40,,
+1136,682,New,2018-03-05,13:12:37,,
+1137,683,New,2018-03-05,14:06:48,,
+1138,340,Complete,2018-03-05,15:43:05,,Lodged to CCM@2018-03-02
+1139,338,Complete,2018-03-05,15:43:33,,Lodged to CCM@2018-03-02
+1140,354,Complete,2018-03-05,15:47:49,,"PD 2/2017 dated 28 Feb 2018 submit to SSM on 5 March 2018. 
+"
+1141,315,Complete,2018-03-05,15:50:54,,"AR @ 2018-02-28 submit to CCM on 5 March 2018.
+"
+1221,750,New,2018-03-09,16:44:58,,
+1142,185,Complete,2018-03-05,15:51:44,,"FS @ 2017-07-31 filing to SSM on 5 March 2018.
+"
+1143,685,New,2018-03-05,16:56:23,,
+1144,684,New,2018-03-05,16:56:26,,
+1817,1008,Complete,2018-04-02,11:24:10,,""
+1819,845,AGM/FS/AR,2018-04-02,11:24:46,,2018-04-02: Sent by Wan
+1841,975,Complete,2018-04-02,18:02:24,,docs return on 02.04.2018. no CTC forms required as confirm by ms Lew on 27.03.2018.
+1852,1079,New,2018-04-03,08:12:02,,
+1145,686,New,2018-03-05,17:01:35,,
+1867,493,Complete,2018-04-03,11:58:59,,Annual Return @ 2018-03-03. Submission to SSM on 2018-04-03
+1882,1093,New,2018-04-04,09:36:41,,
+1893,1085,AGM/FS/AR,2018-04-05,08:45:47,,Received payment for kp AR @ 2018-02-06 on 4 April 2018. Can proceed filing! 
+1146,687,New,2018-03-05,17:29:12,,
+1147,688,New,2018-03-06,09:47:29,,
+1148,689,New,2018-03-06,09:49:41,,
+1149,690,New,2018-03-06,11:27:42,,
+1150,691,New,2018-03-06,11:58:05,,
+1151,685,Complete,2018-03-06,12:24:24,,""
+1914,1117,New,2018-04-05,17:13:40,,
+1922,652,Complete,2018-04-06,09:29:13,,Sent on 02.03.2018
+1944,1138,New,2018-04-07,14:09:27,,
+1152,684,Complete,2018-03-06,12:24:33,,""
+1955,1144,New,2018-04-09,10:32:55,,
+1153,692,New,2018-03-06,12:24:15,,
+1972,1150,New,2018-04-09,14:48:54,,
+1154,384,Complete,2018-03-06,12:24:40,,""
+1155,383,Complete,2018-03-06,12:24:56,,""
+1156,372,Complete,2018-03-06,12:25:07,,""
+1157,368,Complete,2018-03-06,12:25:16,,""
+1158,261,Complete,2018-03-06,12:25:23,,""
+1159,241,Complete,2018-03-06,12:25:30,,""
+1984,1159,New,2018-04-09,17:01:49,,
+1991,1162,New,2018-04-10,08:39:44,,
+1999,939,Complete,2018-04-10,09:03:28,,CTC and sent doc to cedar on 09.04.2018. confirm received by Siti Shaidatul Ain
+2009,1160,Out,2018-04-10,11:32:07,By E-Mail,Email to Carmen
+2010,1150,Out,2018-04-10,11:32:23,By E-Mail,2018-04-09: Email to Kim Lee 
+2026,297,Complete,2018-04-10,11:44:41,,""
+2034,1143,Complete,2018-04-10,17:28:28,,Couriur by Citylink @ 09/04/2018
+2035,895,Complete,2018-04-10,17:29:02,,Send by Wan
+2048,622,Complete,2018-04-10,17:39:58,,Company incorporated
+2049,613,Complete,2018-04-10,17:40:46,,ROA @ 02/03/2018
+1160,694,New,2018-03-06,16:56:24,,
+1161,180,SSM/Statutory,2018-03-06,18:20:50,,2018-03-06: Docs in. Pending pyt.
+1162,694,AGM/FS/AR,2018-03-06,18:21:34,,2018-03-06: Email out docs to client.
+1163,653,AGM/FS/AR,2018-03-06,18:22:07,,2018-03-02: Mr. Ragu self collected.
+1164,643,Return,2018-03-06,18:23:21,,2018-03-05: Mr. Azlan & Ms. Eliza came to the office & fully signed.
+1165,643,Return,2018-03-06,18:24:03,,2018-03-06: Payment made. Shall wait for pyt clear in the bank. To submit S14.
+1166,618,Cancel,2018-03-06,18:25:31,,2018-03-06: Job has been cancelled due to Mr. Ragu confirmed not to proceed with Incorp.
+1167,646,AGM/FS/AR,2018-03-06,18:27:00,,2018-03-02: Courier by Citylink to Shah Alam.
+1168,696,New,2018-03-06,18:54:29,,
+1169,695,New,2018-03-06,18:54:29,,
+1170,697,New,2018-03-06,19:15:31,,
+1171,698,New,2018-03-06,19:15:31,,
+1172,699,New,2018-03-06,19:15:31,,
+1173,700,New,2018-03-06,19:15:31,,
+1174,703,New,2018-03-07,09:28:28,,
+1175,704,New,2018-03-07,09:28:28,,
+1176,705,New,2018-03-07,10:51:10,,
+1177,706,New,2018-03-07,11:11:39,,
+1178,707,New,2018-03-07,11:18:39,,
+1179,643,SSM/Statutory,2018-03-07,14:01:17,,2018-03-07: Submit S14. Waiting approval.
+1180,180,AGM/FS/AR,2018-03-07,14:02:16,,2018-03-06: Docs in. Pending pyt.
+1181,708,New,2018-03-07,15:03:22,,
+1182,710,New,2018-03-07,15:29:11,,
+1183,711,New,2018-03-07,15:29:11,,
+1184,712,New,2018-03-07,15:30:22,,
+1185,713,New,2018-03-07,15:30:22,,
+1186,714,New,2018-03-07,15:48:07,,
+1187,715,New,2018-03-07,16:41:22,,
+1188,716,New,2018-03-07,16:41:22,,
+1189,717,New,2018-03-07,18:07:53,,
+1190,718,New,2018-03-07,18:07:53,,
+1191,719,New,2018-03-08,09:10:37,,
+1192,720,New,2018-03-08,09:18:14,,
+1193,722,New,2018-03-08,10:33:00,,
+1194,723,New,2018-03-08,12:56:41,,
+1195,724,New,2018-03-08,13:31:40,,
+2056,1175,New,2018-04-11,12:18:56,,
+2062,1180,New,2018-04-11,17:52:49,,
+2067,1184,New,2018-04-12,12:49:36,,
+1196,725,New,2018-03-08,13:51:35,,
+1197,726,New,2018-03-08,14:12:30,,
+1198,724,Complete,2018-03-08,14:28:50,,"Citylink to Siao Hooi''s add at Seri Kembangan.
+0603 01 633 129 354"
+1199,441,Complete,2018-03-08,14:29:52,,EP valid till 29 Feb 2020.
+1200,487,Complete,2018-03-08,14:37:26,,Lodged to CCM@2018-03-08
+1201,566,Complete,2018-03-08,14:39:00,,Lodged to CCM@2018-03-08
+1202,436,Complete,2018-03-08,14:40:23,,Lodged to CCM@2018-03-07
+1203,727,New,2018-03-08,15:05:48,,
+1204,337,AGM/FS/AR,2018-03-08,16:23:22,,payment and docs in
+1205,728,New,2018-03-08,16:33:43,,
+1206,734,New,2018-03-08,17:56:43,,
+1207,735,New,2018-03-08,17:56:43,,
+1208,737,New,2018-03-08,17:56:43,,
+1209,736,New,2018-03-08,17:56:43,,
+1210,738,New,2018-03-09,09:41:26,,
+1211,739,New,2018-03-09,10:14:53,,
+1212,741,New,2018-03-09,11:27:42,,
+1213,742,New,2018-03-09,13:41:58,,
+1214,743,New,2018-03-09,14:12:47,,
+1215,492,AGM/FS/AR,2018-03-09,14:21:54,,Payment in
+1216,744,New,2018-03-09,14:42:11,,
+1217,745,New,2018-03-09,14:59:05,,
+1218,746,New,2018-03-09,15:45:57,,
+1219,747,New,2018-03-09,16:23:01,,
+1220,748,New,2018-03-09,16:24:13,,
+1818,968,Out,2018-04-02,11:24:19,Office Boy,Sent by Wan
+1842,849,Complete,2018-04-02,18:03:57,,Docs collected on 02.04.2018.
+1222,751,New,2018-03-09,17:10:57,,
+1853,1080,New,2018-04-03,08:57:38,,
+1868,610,Complete,2018-04-03,12:04:58,,Annual Return @ 2018-03-20. Submission to SSM on 2018-04-02
+1883,1094,New,2018-04-04,09:54:26,,
+1894,1102,New,2018-04-05,09:11:18,,
+1895,1103,New,2018-04-05,09:11:18,,
+1896,1104,New,2018-04-05,09:11:18,,
+1897,1105,New,2018-04-05,09:11:18,,
+1915,1093,Out,2018-04-05,17:16:05,By E-Mail,2018-04-05: Email doc to client (SY sent email)
+1923,517,Complete,2018-04-06,09:29:44,,Returned and ctc-ed
+1223,719,Return,2018-03-09,17:39:38,,"2018-03-08: Client signed in the office. 
+2018-03-09: Payment in."
+1224,719,SSM/Statutory,2018-03-09,17:40:58,,2018-03-09: Submit S14. Waiting approval.
+1225,753,New,2018-03-12,09:04:08,,
+1226,737,AGM/FS/AR,2018-03-12,09:17:41,,2018-03-09: Sent out by Wan
+1227,736,Out,2018-03-12,09:17:59,Office Boy,2018-03-09: Send out by Wan
+1228,735,Out,2018-03-12,09:18:22,Office Boy,2018-03-09: Send out by Wan
+1229,734,Out,2018-03-12,09:18:30,Office Boy,2018-03-09: Send out by Wan
+1230,728,Out,2018-03-12,09:18:42,Office Boy,2018-03-09: Send out by Wan
+1231,718,AGM/FS/AR,2018-03-12,09:18:51,,2018-03-09: Send out by Wan
+1232,717,Out,2018-03-12,09:18:59,Office Boy,2018-03-09: Send out by Wan
+1233,706,Out,2018-03-12,09:32:43,Own Collection,"2018-03-08: Ms. Ong & employees came office to sign, Ms. Ong bring back documents for Mr. Choong to sign. "
+1234,700,AGM/FS/AR,2018-03-12,09:33:27,,2018-03-09: Send out by Wan
+1235,699,Out,2018-03-12,09:33:46,Office Boy,2018-03-09: Send out by Wan
+1236,698,Out,2018-03-12,09:33:55,Office Boy,2018-03-09: Send out by Wan
+1237,697,Out,2018-03-12,09:34:04,Office Boy,2018-03-09: Send out by Wan
+1238,690,Complete,2018-03-12,09:34:15,,""
+1239,677,AGM/FS/AR,2018-03-12,09:34:29,,2018-03-09: Pending for management account. Ms. Beryl informed account not yet complete. 
+1240,12,Complete,2018-03-12,09:35:19,,""
+1933,1127,New,2018-04-06,11:59:30,,
+1945,1128,New,2018-04-09,09:02:09,,
+1946,1101,New,2018-04-09,09:02:13,,
+1956,1122,Complete,2018-04-09,11:34:46,,CTC doc self collect by client on 6 April 2018
+1973,1137,Out,2018-04-09,14:52:27,By E-Mail,Send out by Wan @ 09/04/2018
+1985,1155,Out,2018-04-09,17:13:40,Office Boy,2018-04-09: Sent out to Client by Wan.
+1986,1154,Out,2018-04-09,17:14:07,Office Boy,2018-04-09: Sent out to Client by Wan.
+1987,1153,Out,2018-04-09,17:14:19,Office Boy,2018-04-09: Sent out to Client by Wan.
+1988,1152,Out,2018-04-09,17:14:34,Office Boy,2018-04-09: Sent out to Client by Wan.
+1992,1162,Cancel,2018-04-10,08:42:30,,""
+2004,707,Complete,2018-04-10,09:21:23,,CTC statutory form sent out to client by courier services. Consignment 060301633129351 (city link) 
+2011,1141,Out,2018-04-10,11:32:55,By E-Mail,2018-04-09: Email to Zuraida
+2027,129,Complete,2018-04-10,11:44:56,,""
+1241,765,New,2018-03-12,11:37:48,,
+1242,768,New,2018-03-12,11:52:20,,
+1243,769,New,2018-03-12,11:54:09,,
+2036,636,Complete,2018-04-10,17:29:19,,Send by Wan
+2037,1027,Complete,2018-04-10,17:29:47,,Self collect by Fazli
+1244,770,New,2018-03-12,12:19:26,,
+2041,873,Complete,2018-04-10,17:32:39,,DCR @ 10/04/2018
+1245,772,New,2018-03-12,12:47:53,,
+1246,772,Complete,2018-03-12,12:48:26,,""
+1247,773,New,2018-03-12,12:49:56,,
+1248,774,New,2018-03-12,13:34:00,,
+1249,719,SSM/Statutory,2018-03-12,13:41:38,,2018-03-12: Incorporated. Submit S236 & S58 (1st Cosec).
+1250,643,SSM/Statutory,2018-03-12,13:42:28,,"2018-03-07: Incorporated. 
+2018-03-08: Submit S236 & S58. Approved on the same day."
+1251,643,SSM/Statutory,2018-03-12,13:43:25,,2018-03-12: Submit S58 (Appt of managing director).
+1252,569,Complete,2018-03-12,13:46:06,,2018-02-23: CPO Approved. Update Cosec & Filed Docs in Minutes.
+1253,570,Complete,2018-03-12,13:46:45,,2018-02-23: CPO Approved. Update Cosec & Filed Docs in Minutes.
+1254,87,Complete,2018-03-12,13:47:28,,"2018-03-01: Letter Indemnity (stamping).
+2018-03-07: Submit/Update ROM."
+2050,132,Complete,2018-04-10,17:42:20,,Section 58 submitted @ 22/01/2018
+2057,1130,Complete,2018-04-11,14:00:56,,Doc in with payment 
+2063,1181,New,2018-04-12,09:05:54,,
+2068,1185,New,2018-04-12,14:12:22,,
+2074,1187,New,2018-04-12,16:10:06,,
+1255,775,New,2018-03-12,14:18:10,,
+1256,775,Cancel,2018-03-12,14:19:03,,Cancel
+1257,776,New,2018-03-12,15:39:26,,
+1258,777,New,2018-03-12,16:31:48,,
+1259,779,New,2018-03-12,16:57:25,,
+1260,520,AGM/FS/AR,2018-03-13,09:08:51,,Payment in
+1261,523,AGM/FS/AR,2018-03-13,09:09:01,,Payment in
+1262,583,AGM/FS/AR,2018-03-13,09:11:04,,Payment and docs in
+1263,782,New,2018-03-13,09:23:10,,
+1264,783,New,2018-03-13,09:23:42,,
+1265,748,Complete,2018-03-13,09:25:07,,""
+1266,783,Cancel,2018-03-13,09:45:25,,""
+1267,784,New,2018-03-13,10:07:06,,
+1268,785,New,2018-03-13,10:13:11,,
+1269,786,New,2018-03-13,10:30:11,,
+1270,787,New,2018-03-13,13:31:31,,
+1271,498,Out,2018-03-13,14:06:17,Own Collection,2018-02-14: Mr. Halim collected docs. Pending Docs from current Dir.
+1272,497,Out,2018-03-13,14:07:12,Own Collection,2018-02-14: Mr. Halim collected docs. Pending Docs from current Dir.
+1273,496,Out,2018-03-13,14:07:27,Own Collection,2018-02-14: Mr. Halim collected docs. Pending Docs from current Dir.
+1274,495,Out,2018-03-13,14:07:41,Own Collection,2018-02-14: Mr. Halim collected docs. Pending Docs from current Dir.
+1275,494,AGM/FS/AR,2018-03-13,14:07:54,,2018- 02-15: Mr. Ragu collect docs. 
+1276,494,AGM/FS/AR,2018-03-13,14:09:41,,2018-03-13: Docs in. Payment in. To submit to CCM.
+1277,498,Complete,2018-03-13,14:10:36,,2018-03-13: Docs fully signed. Keep in Sec File.
+1278,497,Return,2018-03-13,14:11:22,,2018-03-13: Docs in. Fully signed. Pending Acc to proceed.
+1279,496,Return,2018-03-13,14:12:03,,2018-03-13: Docs in. Fully signed. To submit CPO & S58.
+1280,495,Return,2018-03-13,14:12:38,,2018-03-13: Docs in. Fully signed. To submit CPO & S58.
+1281,747,Complete,2018-03-13,14:47:05,,Send out by Wan
+1820,844,Out,2018-04-02,11:26:41,Office Boy,Sent by Wan
+1822,842,Out,2018-04-02,11:27:46,Office Boy,Sent by Wan
+1843,1029,New,2018-04-02,18:06:28,,
+1854,1081,New,2018-04-03,09:15:33,,
+1869,631,AGM/FS/AR,2018-04-03,14:50:30,,"07/03/2018 : Courier by Citylink to Sg. Buloh
+060301633129353"
+1282,791,New,2018-03-13,15:10:03,,
+1884,1095,New,2018-04-04,11:19:45,,
+1898,1106,New,2018-04-05,09:35:02,,
+1924,599,Return,2018-04-06,09:30:26,,doc dated 21 Feb 2018 return on 06.04.2018.
+1934,1129,New,2018-04-06,14:12:43,,
+1947,1128,Out,2018-04-09,09:02:37,By E-Mail,Email on 06.04.2018
+1957,1139,Cancel,2018-04-09,11:35:32,,Double job taking. 
+1974,1136,Out,2018-04-09,14:52:51,By E-Mail,Send out by Wan @ 09/04/2018
+1989,1160,New,2018-04-09,17:21:50,,
+1993,1100,Complete,2018-04-10,08:56:36,,docs return & ctc on 10.04.2018
+2000,1130,Out,2018-04-10,09:02:43,By E-Mail,DCR access to MayBank2U sent by email on 6 April 2018. 
+2005,1163,New,2018-04-10,09:33:26,,
+2012,1135,SSM/Statutory,2018-04-10,11:33:13,,2018-04-09: Submit Incorp
+2028,1168,New,2018-04-10,14:04:02,,
+1283,594,Complete,2018-03-13,15:22:45,,AR @ 2018-02-15 filing to SSM on 13 March 2018
+1284,753,Complete,2018-03-13,15:24:04,,"Lodged to CCM@ 2018-03-12
+"
+1285,492,Complete,2018-03-13,15:24:58,,Lodged to CCM@2018-03-13
+2038,1151,Complete,2018-04-10,17:30:41,,invoice created
+2051,647,Complete,2018-04-10,17:43:20,,submitted to CCM @ 23/03/2018
+1286,62,Complete,2018-03-13,15:25:24,,Transfer Share Azmil to Azlin (ROM) submission in MyCoid on 2 March 2018.
+1287,750,Out,2018-03-13,15:26:54,By E-Mail,DCR sent out to client by email on 9 March 2018. 
+1288,600,Complete,2018-03-13,15:43:00,,Lodged to CCM on 2018-03-12
+1289,471,Complete,2018-03-13,15:43:29,,Lodged to CCM@2018-06-22
+1290,792,New,2018-03-13,15:44:27,,
+2058,1176,New,2018-04-11,14:19:26,,
+2064,1180,Out,2018-04-12,11:19:54,By Hand,Send out doc by hand to Ms. Mag on 2018-04-12.
+1291,522,Complete,2018-03-13,15:45:53,,Lodged to CCM on 2018-03-12
+1292,504,Complete,2018-03-13,15:57:55,,Lodged to CCM on 2018-03-12
+1293,794,New,2018-03-13,16:45:32,,
+1294,795,New,2018-03-13,17:09:57,,
+1295,706,SSM/Statutory,2018-03-13,17:52:46,,"2018-03-13: S105 submit to LHDN, pending notice"
+1296,774,Out,2018-03-14,11:19:31,By E-Mail,2018-03-14: Email out to Ms. Puspa.
+1297,794,Complete,2018-03-14,12:18:57,,Send by Rachael
+1298,796,New,2018-03-14,12:58:37,,
+2069,1106,AGM/FS/AR,2018-04-12,14:36:30,,Send out doc @ 2018-04-12. Ack by Lyn.
+1300,798,New,2018-03-14,14:50:47,,
+1301,799,New,2018-03-14,14:50:47,,
+1302,800,New,2018-03-14,14:50:47,,
+1303,801,New,2018-03-14,15:16:51,,
+1304,802,New,2018-03-14,15:24:56,,
+1305,804,New,2018-03-14,15:33:52,,
+2072,1144,AGM/FS/AR,2018-04-12,14:46:49,,"2018-04-12: Doc sent out by Wan , received by client.
+"
+1306,805,New,2018-03-14,15:51:36,,
+1307,538,Cancel,2018-03-14,16:21:48,,Duplicated job created.
+1308,808,New,2018-03-14,16:36:29,,
+1309,809,New,2018-03-14,17:15:49,,
+1310,810,New,2018-03-14,17:20:54,,
+1311,814,New,2018-03-14,18:53:10,,
+1312,587,AGM/FS/AR,2018-03-15,08:43:53,,docs and payment in
+1313,800,Out,2018-03-15,09:06:30,By E-Mail,2018-03-15: Email out to Cindy.
+1314,799,Out,2018-03-15,09:06:56,By E-Mail,2018-03-15: Email out to Cindy.
+1315,798,Out,2018-03-15,09:07:05,By E-Mail,2018-03-15: Email out to Cindy.
+1316,815,New,2018-03-15,09:25:09,,
+1317,818,New,2018-03-15,12:14:53,,
+2076,874,Complete,2018-04-12,16:37:34,,CTC and return to client on 04.04.2018
+2077,1189,New,2018-04-12,17:07:55,,
+2079,1190,New,2018-04-12,17:12:54,,
+2081,1192,New,2018-04-12,17:23:38,,
+1318,671,Out,2018-03-15,12:17:27,By E-Mail,Payment in
+1319,672,Out,2018-03-15,12:17:43,By E-Mail,Payment in
+1320,819,New,2018-03-15,12:20:29,,
+2083,1193,New,2018-04-13,08:42:41,,
+2085,1134,Out,2018-04-13,09:30:08,By E-Mail,Doc sent to client on 12 April 2018. 
+2087,255,Complete,2018-04-13,09:35:08,,Section 68 filing to CCM on 6 April 2018. 
+2089,962,AGM/FS/AR,2018-04-13,09:42:59,,Received document with payment @ 2018-04-13
+1321,820,New,2018-03-15,12:27:03,,
+2091,1167,Complete,2018-04-13,09:50:00,,"2018-04-12: Doc sent out by Wan, received by client.
+"
+1322,821,New,2018-03-15,12:27:09,,
+1323,583,AGM/FS/AR,2018-03-15,12:32:05,,"Lodged to CCM@2018-03-14
+"
+1324,583,Complete,2018-03-15,12:32:32,,""
+1325,520,Complete,2018-03-15,12:32:41,,"Lodged to CCM@2018-03-14
+"
+2096,1197,New,2018-04-13,11:02:57,,
+2098,1199,New,2018-04-13,11:53:52,,
+1326,267,Complete,2018-03-15,12:37:44,,AR @ 2018-02-22 filing to ssm on 2018-03-14 
+1327,822,New,2018-03-15,12:54:48,,
+1328,823,New,2018-03-15,13:03:01,,
+1329,824,New,2018-03-15,13:16:12,,
+2099,1199,Out,2018-04-13,13:26:17,By E-Mail,Email to all directors
+2101,1092,AGM/FS/AR,2018-04-13,13:28:34,,2018-04-11: Zuraida collected
+2103,1090,Out,2018-04-13,13:29:06,Own Collection,2018-04-11: Zuraida collected
+1821,843,Out,2018-04-02,11:27:15,Office Boy,Sent by Wan
+1331,825,New,2018-03-15,13:46:46,,
+1332,826,New,2018-03-15,13:46:46,,
+1333,827,New,2018-03-15,13:46:46,,
+1334,828,New,2018-03-15,13:46:46,,
+1335,829,New,2018-03-15,13:46:46,,
+1336,617,Cancel,2018-03-15,13:54:12,,2018-03-15: Double entry
+1337,831,New,2018-03-15,14:51:35,,
+1844,1029,Complete,2018-04-02,18:06:36,,docs collected on 30.03.2018.
+1330,832,New,2018-03-15,15:06:16,,
+1338,833,New,2018-03-15,15:37:51,,
+1339,834,New,2018-03-15,16:47:12,,
+1340,835,New,2018-03-15,16:53:19,,
+1341,836,New,2018-03-15,16:57:57,,
+1342,837,New,2018-03-15,18:18:54,,
+1343,838,New,2018-03-15,19:57:49,,
+1344,838,Out,2018-03-15,20:15:38,By E-Mail,Sze emailed to Mr. Raja.
+1345,821,Cancel,2018-03-15,20:15:53,,""
+1346,466,AGM/FS/AR,2018-03-16,08:28:46,,Docs and payment in
+1347,840,New,2018-03-16,09:48:04,,
+1348,841,New,2018-03-16,11:17:08,,
+1349,842,New,2018-03-16,12:18:30,,
+1350,843,New,2018-03-16,12:18:30,,
+1351,844,New,2018-03-16,12:18:30,,
+1352,845,New,2018-03-16,12:18:30,,
+1855,1056,Complete,2018-04-03,09:22:48,,Send by Wan on 02/04/2018
+1870,1084,New,2018-04-03,14:56:14,,
+1885,1096,New,2018-04-04,11:27:07,,
+1899,1087,AGM/FS/AR,2018-04-05,11:01:07,,Send out doc @ 2018-04-04. Ack by Shukri.
+1353,846,New,2018-03-16,12:50:35,,
+1354,743,Complete,2018-03-16,14:19:44,,Doc received on 14 March 2018 & give CTC to client. Payment made by client on 16 March 2018
+1355,851,New,2018-03-16,17:10:17,,
+1356,855,New,2018-03-16,17:26:52,,
+1357,856,New,2018-03-16,17:26:52,,
+1358,857,New,2018-03-16,17:26:52,,
+1359,858,New,2018-03-19,09:52:45,,
+1360,859,New,2018-03-19,09:53:36,,
+1361,846,Out,2018-03-19,10:41:20,By E-Mail,""
+1362,683,Complete,2018-03-19,10:42:33,,""
+1363,676,AGM/FS/AR,2018-03-19,10:42:46,,Docs in 15-03-2018
+1364,860,New,2018-03-19,10:46:16,,
+1365,851,Out,2018-03-19,10:49:47,By E-Mail,Doc email to Ms Nazariah on 19 March 2018. Not create bill yet. 
+1366,791,AGM/FS/AR,2018-03-19,10:51:24,,Doc FS @ 2017-09-30 sent to client on 19 March 2018. 
+1367,602,AGM/FS/AR,2018-03-19,11:17:16,,Client already paid sec fee. 
+1368,861,New,2018-03-19,12:59:36,,
+1369,862,New,2018-03-19,14:34:57,,
+1370,863,New,2018-03-19,15:39:20,,
+1371,864,New,2018-03-19,15:54:39,,
+1372,865,New,2018-03-19,16:46:50,,
+1373,725,Out,2018-03-19,16:49:44,Office Boy,2018-03-12: Sent by Wan to Client. Received by Ms. Ong
+1374,725,Return,2018-03-19,16:51:40,,2018-03-19: Docs in. Payment in. To do submission. 
+1375,738,AGM/FS/AR,2018-03-19,16:53:30,,""
+1376,644,AGM/FS/AR,2018-03-19,17:05:51,,""
+1377,674,AGM/FS/AR,2018-03-19,17:06:02,,Email to client on 09/03/2018
+1378,866,New,2018-03-19,17:19:36,,
+1379,866,AGM/FS/AR,2018-03-19,17:20:25,,Send out doc @ 2018-03-19. Ack by CAJUN ASIAN SDN. BHD.
+1380,867,New,2018-03-19,17:25:52,,
+1381,780,New,2018-03-20,09:03:58,,
+1382,869,New,2018-03-20,09:03:39,,
+1383,778,New,2018-03-20,09:04:11,,
+1384,721,New,2018-03-20,09:04:52,,
+1385,381,New,2018-03-20,09:06:39,,
+1386,355,New,2018-03-20,09:06:53,,
+1387,287,New,2018-03-20,09:07:02,,
+1388,870,New,2018-03-20,09:10:01,,
+1389,871,New,2018-03-20,09:17:48,,
+1390,872,New,2018-03-20,09:44:19,,
+1391,481,AGM/FS/AR,2018-03-20,09:44:53,,Payment and docs in
+1392,873,New,2018-03-20,09:50:57,,
+1393,875,New,2018-03-20,10:31:14,,
+1394,876,New,2018-03-20,10:41:13,,
+1395,877,New,2018-03-20,11:12:26,,
+1396,878,New,2018-03-20,11:28:23,,
+1397,849,New,2018-03-20,12:24:55,,
+1398,849,Out,2018-03-20,12:26:09,By E-Mail,CS ordered and docs email on 19.03.2018 for signature.
+1399,10,Return,2018-03-20,12:27:43,,extract DCRs appointment prepare by current sec and received on 19.03.2018 for TDS signature. send out to SLLING on 20.03.2018.Pending confirmation to collect files
+1400,788,New,2018-03-20,12:31:22,,
+1401,788,Complete,2018-03-20,12:32:03,,docs collected on 13.03.2018
+1402,880,New,2018-03-20,12:48:38,,
+1403,881,New,2018-03-20,13:33:01,,
+1404,882,New,2018-03-20,13:56:38,,
+1405,883,New,2018-03-20,14:04:58,,
+1406,884,New,2018-03-20,14:04:58,,
+1407,885,New,2018-03-20,14:04:58,,
+1408,886,New,2018-03-20,14:07:44,,
+1409,841,Out,2018-03-20,14:41:45,By E-Mail,Doc (DEREG) sent out to client on 19 March 2018. 
+1410,885,Out,2018-03-20,15:08:31,Courier,2018-03-20: Courier by City-link
+1411,884,AGM/FS/AR,2018-03-20,15:08:58,,2018-03-20: Courier by City-link
+1412,883,AGM/FS/AR,2018-03-20,15:09:08,,2018-03-20: Courier by City-link
+1413,833,Out,2018-03-20,15:09:20,Courier,""
+1414,780,Complete,2018-03-20,15:09:29,,Incorporated @ 2018-03-15
+1415,887,New,2018-03-20,15:27:09,,
+1416,888,New,2018-03-20,15:36:01,,
+1417,466,Complete,2018-03-20,15:36:51,,Lodged to CCM @ 2018-03-20
+1418,658,Complete,2018-03-20,15:41:26,,Lodged to CCM@2018-03-20
+1419,889,New,2018-03-20,15:50:19,,
+1935,987,AGM/FS/AR,2018-04-06,14:40:52,,Doc in with payment on 6 April 2018. can proceed filing!
+1420,891,New,2018-03-20,16:06:41,,
+1421,892,New,2018-03-20,16:15:52,,
+1422,894,New,2018-03-20,16:31:12,,
+1423,895,New,2018-03-20,16:56:06,,
+1424,896,New,2018-03-20,16:58:49,,
+1425,811,New,2018-03-20,17:14:19,,
+1426,811,Complete,2018-03-20,17:14:29,,Collected by Mr. Ryo on 20.03.2018
+1427,896,Complete,2018-03-20,17:15:10,,Collected by Mr. Ryo on 20.03.2018
+1428,797,New,2018-03-20,17:15:47,,
+1429,797,Complete,2018-03-20,17:15:56,,Collected by Mr. Ryo on 14.03.2018
+1430,897,New,2018-03-20,18:22:30,,
+1431,898,New,2018-03-20,18:22:30,,
+1432,899,New,2018-03-20,18:22:30,,
+1433,900,New,2018-03-20,18:50:35,,
+1434,901,New,2018-03-20,19:32:04,,
+1435,902,New,2018-03-20,19:42:07,,
+1436,903,New,2018-03-21,08:55:43,,
+1437,904,New,2018-03-21,09:22:29,,
+1438,905,New,2018-03-21,11:13:14,,
+1439,774,Return,2018-03-21,11:14:22,,2018-03-21: Docs in. Shall CTC. To confirm date with Lawyer.
+1440,590,Return,2018-03-21,11:15:14,,2018-03-21: Docs in. Shall CTC. To confirm date with Lawyer.
+1441,879,New,2018-03-21,11:17:50,,
+1442,874,New,2018-03-21,11:17:55,,
+1443,848,New,2018-03-21,11:18:19,,
+1444,830,New,2018-03-21,11:18:23,,
+1445,816,New,2018-03-21,11:18:28,,
+1446,812,New,2018-03-21,11:18:33,,
+1447,793,New,2018-03-21,11:18:37,,
+1448,781,New,2018-03-21,11:18:41,,
+1449,771,New,2018-03-21,11:18:45,,
+1450,767,New,2018-03-21,11:18:55,,
+1451,760,New,2018-03-21,11:19:01,,
+1452,759,New,2018-03-21,11:19:05,,
+1453,758,New,2018-03-21,11:19:09,,
+1454,757,New,2018-03-21,11:19:13,,
+1455,756,New,2018-03-21,11:19:17,,
+1456,755,New,2018-03-21,11:19:21,,
+1457,754,New,2018-03-21,11:19:25,,
+1458,733,New,2018-03-21,11:19:30,,
+1459,732,New,2018-03-21,11:19:34,,
+1460,731,New,2018-03-21,11:19:38,,
+1461,730,New,2018-03-21,11:19:45,,
+1462,729,New,2018-03-21,11:19:49,,
+1463,709,New,2018-03-21,11:19:54,,
+1464,702,New,2018-03-21,11:20:02,,
+1465,701,New,2018-03-21,11:20:06,,
+1466,693,New,2018-03-21,11:20:11,,
+1467,681,New,2018-03-21,11:20:15,,
+1468,680,New,2018-03-21,11:20:19,,
+1469,679,New,2018-03-21,11:20:24,,
+1470,673,New,2018-03-21,11:20:28,,
+1471,659,New,2018-03-21,11:20:32,,
+1472,652,New,2018-03-21,11:20:35,,
+1473,648,New,2018-03-21,11:20:40,,
+1474,635,New,2018-03-21,11:20:44,,
+1475,634,New,2018-03-21,11:20:48,,
+1476,630,New,2018-03-21,11:20:52,,
+1477,621,New,2018-03-21,11:20:56,,
+1478,604,New,2018-03-21,11:20:59,,
+1479,605,New,2018-03-21,11:20:59,,
+1480,599,New,2018-03-21,11:21:03,,
+1481,597,New,2018-03-21,11:21:06,,
+1482,592,New,2018-03-21,11:21:10,,
+1483,586,New,2018-03-21,11:21:14,,
+1484,581,New,2018-03-21,11:21:17,,
+1485,565,New,2018-03-21,11:21:22,,
+1486,555,New,2018-03-21,11:21:25,,
+1487,554,New,2018-03-21,11:21:29,,
+1488,553,New,2018-03-21,11:21:32,,
+1489,552,New,2018-03-21,11:21:36,,
+1490,545,New,2018-03-21,11:21:40,,
+1491,540,New,2018-03-21,11:21:43,,
+1492,536,New,2018-03-21,11:21:46,,
+1493,535,New,2018-03-21,11:21:50,,
+1494,529,New,2018-03-21,11:21:53,,
+1495,517,New,2018-03-21,11:21:57,,
+1496,516,New,2018-03-21,11:22:01,,
+1497,515,New,2018-03-21,11:22:05,,
+1498,501,New,2018-03-21,11:22:08,,
+1499,500,New,2018-03-21,11:22:12,,
+1500,473,New,2018-03-21,11:22:15,,
+1501,469,New,2018-03-21,11:22:18,,
+1502,467,New,2018-03-21,11:22:21,,
+1503,460,New,2018-03-21,11:22:24,,
+1504,456,New,2018-03-21,11:22:27,,
+1505,455,New,2018-03-21,11:22:30,,
+1506,432,New,2018-03-21,11:22:36,,
+1507,431,New,2018-03-21,11:22:40,,
+1508,430,New,2018-03-21,11:22:43,,
+1509,424,New,2018-03-21,11:22:45,,
+1510,409,New,2018-03-21,11:22:48,,
+1511,402,New,2018-03-21,11:22:50,,
+1512,400,New,2018-03-21,11:22:53,,
+1513,399,New,2018-03-21,11:22:55,,
+1514,398,New,2018-03-21,11:22:58,,
+1515,18,New,2018-03-21,11:23:01,,
+1516,908,New,2018-03-21,11:48:43,,
+1517,907,New,2018-03-21,11:48:45,,
+1518,906,New,2018-03-21,11:48:48,,
+1519,909,New,2018-03-21,11:52:17,,
+1520,910,New,2018-03-21,12:00:08,,
+1521,914,New,2018-03-21,13:13:04,,
+1522,915,New,2018-03-21,13:16:50,,
+1523,916,New,2018-03-21,13:20:09,,
+1524,917,New,2018-03-21,13:31:38,,
+1525,918,New,2018-03-21,13:49:37,,
+1526,919,New,2018-03-21,13:54:18,,
+1527,920,New,2018-03-21,14:02:11,,
+1528,921,New,2018-03-21,14:08:47,,
+1529,913,New,2018-03-21,14:15:53,,
+1530,912,New,2018-03-21,14:15:58,,
+1531,911,New,2018-03-21,14:16:01,,
+1532,483,AGM/FS/AR,2018-03-21,15:39:39,,Docs and payment in
+1533,922,New,2018-03-21,16:39:54,,
+1534,923,New,2018-03-21,17:09:49,,
+1535,924,New,2018-03-21,17:21:20,,
+1823,1055,Complete,2018-04-02,11:41:15,,Sent by Wan
+1539,925,New,2018-03-21,17:55:54,,
+1540,926,New,2018-03-21,17:55:54,,
+1541,927,New,2018-03-21,17:55:54,,
+1542,928,New,2018-03-21,17:55:54,,
+1543,929,New,2018-03-21,17:55:54,,
+1544,930,New,2018-03-21,18:34:11,,
+1545,834,Complete,2018-03-22,08:45:21,,DCR @ 15/03/2018...Dividend warrant send to Nikki on 22/03/2018
+1546,433,Complete,2018-03-22,08:46:50,,Lodged to CCM@21/03/2018
+1547,931,New,2018-03-22,09:14:47,,
+1548,932,New,2018-03-22,09:31:26,,
+1549,933,New,2018-03-22,10:23:42,,
+1550,831,AGM/FS/AR,2018-03-22,10:44:10,,2018-03-21: Sent out by Wan. Received by Afnan Hakim.
+1551,804,AGM/FS/AR,2018-03-22,10:45:23,,2018-03-21: Sent out by Wan. Received by Afnan Hakim.
+1552,888,AGM/FS/AR,2018-03-22,10:47:13,,"Courrier out by Citylink to Shah Alam.
+(0603 01 633 129 362)"
+1553,818,AGM/FS/AR,2018-03-22,10:58:55,,2018-03-22: Sent out by Wan. Received by Siti NorKiah.
+1845,1024,New,2018-04-02,18:07:29,,
+1554,774,Complete,2018-03-22,11:00:29,,2018-03-22: CTC copies sent to client. Received by Puspa. Minutes filed.
+1555,934,New,2018-03-22,11:16:01,,
+1824,1057,New,2018-04-02,13:04:59,,
+1833,1066,New,2018-04-02,16:08:15,,
+1846,1024,Complete,2018-04-02,18:09:14,,docs return & ctc on 23.03.2018
+1556,935,New,2018-03-22,11:35:18,,
+1557,936,New,2018-03-22,14:08:59,,
+1558,937,New,2018-03-22,14:29:42,,
+1559,938,New,2018-03-22,14:37:00,,
+1560,939,New,2018-03-22,15:01:24,,
+1561,706,Complete,2018-03-22,15:44:03,,""
+1562,70,Complete,2018-03-22,15:44:22,,""
+1563,940,New,2018-03-22,15:51:11,,
+1564,941,New,2018-03-22,15:56:44,,
+1565,877,Out,2018-03-22,17:20:00,Office Boy,Send out doc @ 2018-03-22. Chopped by 128 Ara Damansara SB
+1566,887,Out,2018-03-22,17:22:43,Office Boy,Send out doc @ 2018-03-22. Chopped by 128 Ara Damansara SB
+1567,867,Cancel,2018-03-22,17:26:18,,""
+1856,1051,Out,2018-04-03,09:23:13,By E-Mail,Send by Wan @ 02/04/2018
+1871,1085,New,2018-04-03,15:35:26,,
+1886,1097,New,2018-04-04,13:55:01,,
+1936,1130,New,2018-04-06,15:40:04,,
+1948,1101,Out,2018-04-09,09:03:17,By E-Mail,Email on 06.04.2018
+1958,1145,New,2018-04-09,12:55:15,,
+1959,1146,New,2018-04-09,12:55:15,,
+1975,1151,New,2018-04-09,15:31:26,,
+1568,942,New,2018-03-22,17:39:54,,
+1569,942,Out,2018-03-22,17:40:13,Office Boy,Send out doc @ 2018-03-22. Chopped by 128 Ara Damansara SB
+1570,891,Out,2018-03-22,17:45:58,Office Boy,Send out doc @ 2018-03-22. Chopped by 128 Ara Damansara SB
+1571,892,Out,2018-03-22,17:47:19,Office Boy,Send out doc @ 2018-03-22. Chopped by 128 Ara Damansara SB
+1572,871,Out,2018-03-22,17:54:48,Office Boy,Send out doc @ 2018-03-22. Chopped by 128 Ara Damansara SB
+1573,943,New,2018-03-22,17:56:40,,
+1574,944,New,2018-03-22,18:20:27,,
+1575,945,New,2018-03-22,18:20:27,,
+1994,1099,Complete,2018-04-10,08:57:14,,docs return & ctc on 10.04.2018
+1576,946,New,2018-03-22,18:26:27,,
+2001,1138,Complete,2018-04-10,09:16:19,,"2018-04-09: Sent out by Wan, Received by client."
+1577,948,New,2018-03-23,09:59:11,,
+1578,949,New,2018-03-23,10:46:54,,
+1579,950,New,2018-03-23,11:48:47,,
+1580,681,Complete,2018-03-23,11:51:06,,docs in 22.03.2018
+1581,680,Complete,2018-03-23,11:51:29,,docs in 22.03.2018
+1582,679,Complete,2018-03-23,11:51:41,,docs in 22.03.2018
+1583,951,New,2018-03-23,11:51:43,,
+1584,874,Out,2018-03-23,11:52:35,By E-Mail,emailed on 21.03.2018. Resend on 23.03.2018
+1585,879,Complete,2018-03-23,11:53:08,,docs sent on 22.03.2018
+1586,952,New,2018-03-23,13:52:16,,
+1587,931,Cancel,2018-03-23,13:54:35,,""
+1588,921,Cancel,2018-03-23,13:54:44,,""
+1589,810,Cancel,2018-03-23,13:54:53,,""
+1590,919,Cancel,2018-03-23,13:55:13,,""
+1591,905,Cancel,2018-03-23,13:55:22,,""
+1592,917,Cancel,2018-03-23,13:55:31,,""
+1593,809,Cancel,2018-03-23,13:55:40,,""
+1594,918,Cancel,2018-03-23,13:55:49,,""
+1595,920,Cancel,2018-03-23,13:55:55,,""
+1596,819,Cancel,2018-03-23,13:56:02,,""
+1597,784,Cancel,2018-03-23,13:56:09,,""
+1598,953,New,2018-03-23,14:09:46,,
+1599,954,New,2018-03-23,14:13:29,,
+1600,955,New,2018-03-23,14:21:34,,
+2013,1097,Out,2018-04-10,11:33:31,By E-Mail,Email to Sheeda
+1601,956,New,2018-03-23,14:33:04,,
+1602,885,Complete,2018-03-23,15:54:19,,""
+1603,833,Return,2018-03-23,15:54:29,,2018-03-22 : Received signed docs & $$. Can file
+1604,884,SSM/Statutory,2018-03-23,15:55:00,,"2018-03-23: vDocs, v$$, xAcc"
+1605,883,AGM/FS/AR,2018-03-23,15:55:27,,"2018-03-23: vDocs, v$$, waiting for AR date"
+1606,884,AGM/FS/AR,2018-03-23,15:55:57,,"2018-03-23: vDocs, v$$, xAcc"
+1607,960,New,2018-03-23,16:22:35,,
+1608,959,New,2018-03-23,16:40:52,,
+1609,959,Out,2018-03-23,16:40:57,By E-Mail,Docs emailed on 23.03.2018
+1610,962,New,2018-03-23,16:53:34,,
+1611,483,Complete,2018-03-23,17:20:43,,Lodged to CCM@2018-03-23
+1612,190,Complete,2018-03-23,17:31:00,,"AR @ 2018-02-22 submit to SSM on 23 March 2018. 
+"
+1613,841,Out,2018-03-23,17:34:36,By E-Mail,Doc De-Reg received on 23 March 2018 with full payments. Proceed filing to SSM!
+1614,963,New,2018-03-26,08:53:16,,
+1615,910,AGM/FS/AR,2018-03-26,09:03:20,,Send out doc @ 2018-03-23. Ack by Ms. Cecilia.
+1616,688,AGM/FS/AR,2018-03-26,09:42:02,,""
+1617,964,New,2018-03-26,09:43:54,,
+2014,1058,Out,2018-04-10,11:34:05,By E-Mail,Email to Suriani
+1618,957,New,2018-03-26,09:54:57,,
+1619,958,New,2018-03-26,09:54:57,,
+1620,965,New,2018-03-26,09:54:57,,
+1621,966,New,2018-03-26,10:01:54,,
+1622,967,New,2018-03-26,10:23:11,,
+1623,968,New,2018-03-26,11:03:30,,
+1624,945,Out,2018-03-26,11:19:06,Office Boy,2018-03-26: Sent out by Wan. Received by Lee Swee Choo.
+1625,944,Out,2018-03-26,11:19:49,Office Boy,2018-03-26: Sent out by Wan. Received by Lee Swee Choo.
+1626,934,Out,2018-03-26,11:20:03,Own Collection,2018-03-23: Mr. Halim self pick up docs.
+1627,556,AGM/FS/AR,2018-03-26,11:53:07,,"Sent out by Wan, received by Client."
+1628,840,AGM/FS/AR,2018-03-26,12:38:49,,Docs and payment in
+1629,971,New,2018-03-26,12:42:22,,
+1630,971,Cancel,2018-03-26,12:45:26,,Redundant 
+1631,969,New,2018-03-26,13:04:03,,
+1632,939,Out,2018-03-26,13:05:31,By E-Mail,Reso (open bank acc - Klang branch) emailed to Ms Irene on 22 March 2018.
+1778,656,Complete,2018-03-30,09:53:07,,""
+2029,1169,New,2018-04-10,15:26:28,,
+2039,1145,Complete,2018-04-10,17:31:04,,DCR @ 27/11/2012.. CTC @ 10/04/2018
+1633,916,Out,2018-03-26,13:07:59,By E-Mail,Doc (alter AA) Email on 22 March 2018. 
+1634,915,Out,2018-03-26,13:08:31,By E-Mail,Reso (trnsfer share) email on 22 March 2018. 
+1635,914,Out,2018-03-26,13:09:00,By E-Mail,Email on 22 March 2018. 
+1636,972,New,2018-03-26,13:11:10,,
+1637,973,New,2018-03-26,14:20:13,,
+1638,558,AGM/FS/AR,2018-03-26,14:55:26,,Sent out by Wan. Received by Client.
+1639,974,New,2018-03-26,15:11:55,,
+1640,976,New,2018-03-27,08:51:20,,
+1641,769,AGM/FS/AR,2018-03-27,08:54:54,,Send out 
+1642,977,New,2018-03-27,09:10:52,,
+1643,454,Complete,2018-03-27,09:25:56,,Lodged to CCM@2018-03-09
+1644,978,New,2018-03-27,09:31:54,,
+1645,115,Complete,2018-03-27,10:42:02,,Lodged to CCM@2018-03-26
+1646,841,SSM/Statutory,2018-03-27,10:44:03,,Dereg submit on 26 march 2018. 
+1647,980,New,2018-03-27,10:54:40,,
+1648,981,New,2018-03-27,11:01:24,,
+1649,982,New,2018-03-27,11:14:38,,
+1650,984,New,2018-03-27,11:17:59,,
+1651,909,Out,2018-03-27,11:21:43,By E-Mail,2018-03-27 email out to Daisy
+1652,985,New,2018-03-27,11:23:12,,
+1857,984,Complete,2018-04-03,09:23:34,,invoice created
+1872,1087,New,2018-04-03,17:28:45,,
+1887,998,Out,2018-04-04,16:05:58,By E-Mail,"share cert collect on 04.04.2018.
+
+docs return on 04.04.2018 but dcr not original sign by fairuz & no witness sign on letter indemnity. 
+
+docs to be dated 28.03.2018."
+1653,687,Cancel,2018-03-27,11:36:42,,Double job taking
+1654,987,New,2018-03-27,11:40:03,,
+1655,988,New,2018-03-27,11:40:57,,
+1656,988,Out,2018-03-27,11:41:04,By E-Mail,Docs emailed on 26.03.2018 together with confirmation chge AA
+1902,1107,New,2018-04-05,11:42:15,,
+1903,1109,New,2018-04-05,11:42:15,,
+1904,1110,New,2018-04-05,11:42:15,,
+1657,990,New,2018-03-27,14:16:33,,
+1658,991,New,2018-03-27,15:04:51,,
+1659,992,New,2018-03-27,15:04:51,,
+1660,993,New,2018-03-27,15:04:51,,
+1661,994,New,2018-03-27,15:04:51,,
+1662,296,Complete,2018-03-27,15:21:02,,""
+1663,128,Complete,2018-03-27,15:21:10,,""
+1664,913,Complete,2018-03-27,15:21:32,,""
+1665,912,Complete,2018-03-27,15:21:40,,""
+1666,911,Complete,2018-03-27,15:21:50,,""
+1667,886,Complete,2018-03-27,15:22:00,,""
+1668,861,Complete,2018-03-27,15:22:08,,""
+1669,301,Complete,2018-03-27,15:22:29,,""
+1670,300,Complete,2018-03-27,15:22:38,,""
+1671,782,Complete,2018-03-27,15:22:46,,""
+1905,1108,New,2018-04-05,11:42:15,,
+1925,1124,New,2018-04-06,10:04:07,,
+1937,1131,New,2018-04-06,16:32:53,,
+1949,1139,New,2018-04-09,09:04:07,,
+1960,1147,New,2018-04-09,12:59:45,,
+1995,1101,Out,2018-04-10,08:57:24,By E-Mail,docs return on 10.04.2018 but no $.
+2015,1046,Out,2018-04-10,11:41:27,By Hand,2018-04-03: Sent to Mr. Shannon
+2016,1045,AGM/FS/AR,2018-04-10,11:41:56,,2018-04-03: Sent to Mr. Shannon
+1672,587,Complete,2018-03-27,16:33:39,,Lodged to CCM@2018-03-27
+1673,523,Complete,2018-03-27,16:34:08,,Lodged to CCM@2018-03-27
+1674,881,Out,2018-03-27,16:42:48,By E-Mail,Doc sent out on 22 march 2018.
+1675,876,Out,2018-03-27,16:43:47,By E-Mail,Doc sent out on 22 March 2018. 
+1676,996,New,2018-03-27,16:44:29,,
+1677,997,New,2018-03-27,16:44:29,,
+2017,1044,Out,2018-04-10,11:42:10,By Hand,2018-04-03: Sent to Mr. Shannon
+2030,1170,New,2018-04-10,15:30:48,,
+1678,894,Out,2018-03-27,16:44:19,By E-Mail,Doc sent out on 22 March 2018. 
+1679,969,Out,2018-03-27,16:45:08,By E-Mail,Name reservation submit MyCoid rejected regarding consent letter didn't sign by all Director. Kelly inform will resent consent letter (sign by all Director) on 28 March 2018.
+1680,878,Out,2018-03-27,16:51:04,By E-Mail,"Doc sent out to Kelly on 22 m,arch 2018."
+1681,872,Out,2018-03-27,16:52:02,By E-Mail,Doc sent out on 22 March 2018.
+1682,880,Out,2018-03-27,16:52:40,By E-Mail,Doc sent out on 22 March 2018. 
+1683,820,Complete,2018-03-27,16:53:27,,Change pssport Cameron (S58) submitted in MyCOid on 23 March 2018.
+1684,995,New,2018-03-27,17:06:59,,
+1685,995,Complete,2018-03-27,17:07:04,,collected by Mr. Ryo on 27.03.2018
+1686,908,Out,2018-03-27,17:08:24,By E-Mail,Emailed to Mr. Reza on 22.03.2018
+1687,907,Out,2018-03-27,17:08:48,By E-Mail,Emailed to Mr. Reza on 22.03.2018
+1688,906,Out,2018-03-27,17:09:00,By E-Mail,Emailed to Mr. Reza on 22.03.2018
+1689,767,Out,2018-03-27,17:10:05,By E-Mail,"received signed letter from Mr. low on 20.03.2018.
+Emailed to SSM on 21.03.2018"
+1690,979,New,2018-03-27,17:11:12,,
+1691,975,New,2018-03-27,17:11:15,,
+1692,961,New,2018-03-27,17:11:23,,
+1693,979,Out,2018-03-27,17:11:30,By E-Mail,Emailed to Mr. Eugene on 27.03.2018.
+1694,975,Out,2018-03-27,17:12:26,By E-Mail,Emailed to Ms Lew on 26.03.2018. Revised reso as per format given emailed on 27.03.2018
+1695,759,Return,2018-03-27,17:14:34,,"Signed S36 received earlier.
+Duly signed reso received on 27.03.2018. pending $"
+1696,758,Complete,2018-03-27,17:23:19,,"return on 27.03.2018. Given 1 sets CTC DCRs, complete forms & passport authorised signatories on 27.03.2018."
+1697,757,Cancel,2018-03-27,17:25:39,,Client wants to cancel the resolution as per instruction on 14.03.2018
+1698,756,Complete,2018-03-27,17:27:23,,"return on 27.03.2018. Given 1 sets CTC DCRs, complete forms & passport authorised signatories on 27.03.2018."
+2040,1146,Complete,2018-04-10,17:32:04,,DCR @ 12/03/2013
+2042,336,Complete,2018-04-10,17:33:22,,Invoice created
+2052,657,Complete,2018-04-10,17:44:16,,DCR @ 21/03/2018
+1825,1058,New,2018-04-02,13:32:48,,
+1858,982,Complete,2018-04-03,09:23:52,,Invoice created
+1906,1057,AGM/FS/AR,2018-04-05,11:43:06,,"2018-04-05 : Courier out by City-link to Semenyih 
+(060301638454176) AM"
+1926,715,Complete,2018-04-06,10:05:10,,Doc sent out to client on 4 April 2018. 
+1938,1132,New,2018-04-06,17:09:57,,
+1699,999,New,2018-03-27,18:04:06,,
+1700,621,Complete,2018-03-27,18:19:12,,docs collected on 05.03.2018
+1701,793,Out,2018-03-27,18:20:19,By E-Mail,collected on 14.03.2018
+1702,816,Complete,2018-03-27,18:20:58,,Collected on 15.03.2018
+1703,597,Complete,2018-03-27,18:22:21,,Collected on 23.02.2018
+1704,1000,New,2018-03-28,10:49:37,,
+1705,949,AGM/FS/AR,2018-03-28,10:58:57,,"2018-03-28 : Sent out by Wan, received by client Daphne."
+1706,972,Out,2018-03-28,11:34:34,Courier,Doc sent out on 27 March 2018. Consignment note : 060301638454131.
+1707,1001,New,2018-03-28,13:17:25,,
+1708,1002,New,2018-03-28,13:17:25,,
+1709,1003,New,2018-03-28,14:01:09,,
+1710,1003,AGM/FS/AR,2018-03-28,14:12:57,,Send out doc by City Link (0603 01 633 129 327) @ 2018-02-09
+1711,1004,New,2018-03-28,16:11:15,,
+1712,1005,New,2018-03-28,16:39:31,,
+1713,1005,Out,2018-03-28,16:40:06,By E-Mail,Demand Letter sent to client on 28 March 2018. Waiting their respond. 
+1714,950,AGM/FS/AR,2018-03-28,16:51:58,,"2018-03-28 : Doc sent out by Wan, Received by client Soo Pei."
+1715,953,AGM/FS/AR,2018-03-28,16:52:52,,"2018-03-28: Doc sent out by Wan, received by client Soo Pei."
+1716,1008,New,2018-03-28,17:30:23,,
+1717,1009,New,2018-03-28,17:36:44,,
+1718,961,Complete,2018-03-28,18:23:52,,sent to mandy on 28.03.2018
+1719,701,Complete,2018-03-28,18:24:46,,sent by hand. confirm received by Lee Sue Kuan on 26.03.2018.
+1720,1006,New,2018-03-28,18:26:50,,
+1721,1007,New,2018-03-28,18:26:58,,
+1722,998,New,2018-03-28,18:27:01,,
+1723,998,Out,2018-03-28,18:27:08,By E-Mail,"Emailed on 28.03.2018. 
+Ms. Anges request to date docs 28.03.2018 & request to scan SC 012 first. Emailed SC on 28.03.2018"
+1724,1006,Out,2018-03-28,18:28:40,By E-Mail,Emailed docs on 28.03.2018
+1725,951,AGM/FS/AR,2018-03-29,08:31:41,,Send out doc @ 2018-03-27. Ack by Dg. Zulaikha
+1726,860,AGM/FS/AR,2018-03-29,08:33:05,,Send out doc @ 2018-03-27. Ack by Dg. Zulaikha
+1727,1010,New,2018-03-29,10:00:02,,
+1728,1012,New,2018-03-29,10:25:49,,
+1729,1012,Cancel,2018-03-29,10:27:12,,Cancelled 
+1730,1013,New,2018-03-29,10:44:29,,
+1731,1014,New,2018-03-29,11:49:44,,
+1732,1015,New,2018-03-29,11:58:35,,
+1733,1016,New,2018-03-29,12:05:38,,
+1734,1017,New,2018-03-29,12:30:02,,
+1735,1018,New,2018-03-29,12:47:42,,
+1736,962,AGM/FS/AR,2018-03-29,12:54:46,,Send out doc @ 2018-03-29. Ack by Umi Kalsom
+1737,948,AGM/FS/AR,2018-03-29,12:54:59,,"2018-03-29: Sent out by Wan, received by client.
+"
+1738,941,AGM/FS/AR,2018-03-29,12:55:37,,"2018-03-29: Sent out by Wan, recieved by Client.
+"
+1739,1019,New,2018-03-29,14:02:40,,
+1740,1020,New,2018-03-29,14:07:36,,
+1741,1021,New,2018-03-29,14:39:08,,
+1742,862,Complete,2018-03-29,15:26:55,,FS @ 2017-12-31 submission to SSM on 29 March 2018.
+1743,326,AGM/FS/AR,2018-03-29,16:54:48,,Received payment. Can proceed filing!
+1744,1022,New,2018-03-29,17:31:52,,
+1745,1011,New,2018-03-29,17:32:33,,
+1746,1011,Out,2018-03-29,17:32:40,By E-Mail,Emailed on 29.03.2018
+1747,1023,New,2018-03-29,17:40:02,,
+1748,1022,Complete,2018-03-30,08:48:55,,"Mr. Lim collected from Sze on 2018-03-29, 8.30pm."
+1749,974,Complete,2018-03-30,09:01:52,,""
+1750,1027,New,2018-03-30,09:13:37,,
+1751,1028,New,2018-03-30,09:19:03,,
+1752,745,Complete,2018-03-30,09:19:47,,self collect by En. Zul
+1753,691,Complete,2018-03-30,09:20:11,,self collect by En. Zul
+1754,628,Complete,2018-03-30,09:21:06,,Send by Wan
+1755,1004,Out,2018-03-30,09:22:14,By E-Mail,send out by Wan @ 29/03/2018
+1756,999,Out,2018-03-30,09:22:56,By E-Mail,Send out by Wan @ 28/03/2018
+1757,994,Out,2018-03-30,09:23:27,By E-Mail,send out by Wan @ 28/03/2018
+1758,993,Out,2018-03-30,09:23:51,By E-Mail,send out by Wan @ 28/03/2018
+1759,992,Out,2018-03-30,09:24:13,By E-Mail,Send out by Wan @ 28/03/2018
+1760,991,Out,2018-03-30,09:24:38,By E-Mail,Send out by Wan @ 28/03/2018
+1761,967,Out,2018-03-30,09:25:16,By E-Mail,E-mail out to Tay @ 26/03/2018
+1762,956,Complete,2018-03-30,09:25:52,,Invoice e-mail to Fodli
+1763,954,SSM/Statutory,2018-03-30,09:26:14,,Pending for $..Due date on 15.04.2018
+1764,946,Out,2018-03-30,09:34:45,By E-Mail,send out by Wan 27.03.2018
+1765,943,Out,2018-03-30,09:36:15,By E-Mail,Send out by Wan @ 27.03.2018
+1766,940,Out,2018-03-30,09:45:42,By E-Mail,send out by Wan @ 27.03.2018
+1767,938,Out,2018-03-30,09:46:03,By E-Mail,Send out by Wan @ 27.03.2018
+1768,924,Out,2018-03-30,09:46:33,By E-Mail,E-mail to Jane @ 26/03/2018
+1769,869,Out,2018-03-30,09:46:58,By E-Mail,E-mail out to Ms. Soo @  20.03.2018
+1770,836,Complete,2018-03-30,09:47:36,,e-mail to Adam @ 25/03/2018
+1771,858,Complete,2018-03-30,09:48:05,,Stamping completed post to client office on 23.03.2018
+1772,824,Complete,2018-03-30,09:49:02,,DCR @ 15.03.2018
+1773,796,Complete,2018-03-30,09:49:45,,Divident warrant send to Nikki
+1774,786,Complete,2018-03-30,09:50:10,,sec fee invpice created
+1775,835,Complete,2018-03-30,09:50:39,,e-mail to Adam 15/03/2018
+1776,882,Complete,2018-03-30,09:51:29,,the CD contents of Bid documents post to client
+1777,704,Complete,2018-03-30,09:52:04,,ROA @ 13/03/2018
+1961,1148,New,2018-04-09,14:13:01,,
+1976,1152,New,2018-04-09,16:16:27,,
+1779,650,Complete,2018-03-30,09:53:22,,DCR @ 14/03/2018
+1780,642,Complete,2018-03-30,09:54:46,,Company incorporated
+1781,16,Complete,2018-03-30,09:58:10,,DCR @ 19/01/2018
+1782,17,Complete,2018-03-30,09:58:35,,DCR @ 22/01/2018
+1783,35,Complete,2018-03-30,09:59:13,,DCR @ 14/02/2018
+1826,1059,New,2018-04-02,14:20:36,,
+1834,1067,New,2018-04-02,16:16:52,,
+1784,124,Complete,2018-03-30,10:05:47,,DCR @ 29.12.2017
+1785,125,Complete,2018-03-30,10:15:59,,DCR @ 11.01.2018
+1786,83,Complete,2018-03-30,10:16:57,,DCR @ 15/01/2018
+1787,144,Complete,2018-03-30,10:19:51,,DCR @ 19/01/2018
+1788,143,Complete,2018-03-30,10:20:26,,DCR @ 18/01/2018
+1789,1031,New,2018-03-30,10:33:01,,
+1790,1032,New,2018-03-30,10:40:02,,
+1791,1033,New,2018-03-30,10:45:19,,
+1792,637,AGM/FS/AR,2018-03-30,11:13:22,,"2018-02-28 : Courier by City-link 060301633129340 to Shah Alam.
+"
+1793,619,AGM/FS/AR,2018-03-30,11:33:06,,Document in. Payment Received.
+1794,980,AGM/FS/AR,2018-03-30,11:36:24,,Send out doc @ 2018-03-29. Stamp by BH Global Advisers SB
+1859,981,Complete,2018-04-03,09:24:12,,Invoice created
+1795,1034,New,2018-03-30,11:52:20,,
+1796,1035,New,2018-03-30,11:58:54,,
+1797,1039,New,2018-03-30,12:29:38,,
+1798,1040,New,2018-03-30,14:04:50,,
+1799,519,Complete,2018-03-30,14:50:16,,Lodged to CCM@2018-03-30
+1800,326,AGM/FS/AR,2018-03-30,15:01:40,,AR @ 2018-02-28 submission to CCM on 30 march 2018. Client  make partial payment. 
+1801,930,Out,2018-03-30,15:27:46,By E-Mail,return 1 original copy for ctc only. the other 2 copies will return later.
+1802,1041,New,2018-03-30,15:42:10,,
+1803,1042,New,2018-03-30,15:51:11,,
+1804,1043,New,2018-03-30,15:51:11,,
+1805,1044,New,2018-03-30,15:51:11,,
+1806,1045,New,2018-03-30,15:51:11,,
+1807,1046,New,2018-03-30,15:51:11,,
+1907,1096,AGM/FS/AR,2018-04-05,11:44:57,,"2018-04-04 : Courier out by City-link to Shah Alam
+(060301638464138) "
+1916,1119,New,2018-04-05,17:28:16,,
+1917,1120,New,2018-04-05,17:28:16,,
+1927,716,Complete,2018-04-06,10:06:09,,Doc sent to client on 4 April 2018. 
+1808,1049,New,2018-03-30,16:14:47,,
+1950,18,Out,2018-04-09,09:17:36,By E-Mail,Email on 06.04.2018
+1962,1149,New,2018-04-09,14:29:16,,
+1977,1153,New,2018-04-09,16:16:27,,
+1978,1154,New,2018-04-09,16:16:27,,
+1979,1155,New,2018-04-09,16:16:27,,
+1996,1127,Complete,2018-04-10,08:56:43,,CTC AR @ 12-10-2017 self collect by client. Ack Lim Cheng Seng. 
+2006,1165,New,2018-04-10,09:53:43,,
+2018,1043,Out,2018-04-10,11:42:23,By Hand,2018-04-03: Sent to Mr. Shannon
+2019,1042,Out,2018-04-10,11:42:34,By Hand,2018-04-03: Sent to Mr. Shannon
+2031,1172,New,2018-04-10,16:46:28,,
+2043,266,Complete,2018-04-10,17:33:53,,invoice created
+2053,476,Complete,2018-04-11,10:36:01,,DCR @ 10/04/2018
+2059,1177,New,2018-04-11,17:27:59,,
+2065,1182,New,2018-04-12,11:27:49,,
+2070,1111,AGM/FS/AR,2018-04-12,14:37:46,,Send out doc @ 2018-04-12. Ack by Lyn.
+2073,1186,New,2018-04-12,15:47:12,,
+2075,1188,New,2018-04-12,16:16:20,,
+2078,1184,Out,2018-04-12,17:11:10,By E-Mail,Email to Mr Henry on 12 April 2018.
+2080,1191,New,2018-04-12,17:22:49,,
+2082,11,Complete,2018-04-12,18:35:27,,Original received on 11.04.2018
+2084,1194,New,2018-04-13,09:14:53,,
+2086,1085,Complete,2018-04-13,09:33:58,,Section 68 filing to CCM on 5 April 2018. 
+2088,1163,Complete,2018-04-13,09:40:18,,Sent scan copy by email to Mr Ariff on 10 April 2018.
+2090,1159,Complete,2018-04-13,09:48:54,,"2018-04-12: CTC document sent out by Wan, received by client.
+
+"
+2092,1132,Complete,2018-04-13,09:50:29,,"2018-04-12: Doc sent out by Wan, received by client.
+"
+2094,1195,New,2018-04-13,10:50:45,,
+2095,1196,New,2018-04-13,10:50:45,,
+2097,1198,New,2018-04-13,11:49:14,,
+2093,1200,New,2018-04-13,12:51:43,,
+2100,1181,Out,2018-04-13,13:28:13,By E-Mail,Email to Heidy
+2102,1091,Complete,2018-04-13,13:28:56,,""
+2104,1089,Complete,2018-04-13,13:29:28,,""
+2105,928,Out,2018-04-13,13:30:48,Courier,2018-03-22: Courier to Johor for Pn. Farida 
+2106,927,Out,2018-04-13,13:31:00,Courier,2018-03-22: Courier to Johor for Pn. Farida 
+2107,926,Out,2018-04-13,13:31:11,Courier,2018-03-22: Courier to Johor for Pn. Farida 
+2108,925,Out,2018-04-13,13:31:27,Courier,2018-03-22: Courier to Johor for Pn. Farida 
+2109,381,Complete,2018-04-13,13:33:49,,""
+2110,287,Complete,2018-04-13,13:33:58,,""
+2111,1141,SSM/Statutory,2018-04-13,13:34:31,,2018-04-13: Express filing to SSM
+2112,1097,Complete,2018-04-13,13:34:51,,""
+2113,968,Complete,2018-04-13,13:35:21,,""
+2114,842,Complete,2018-04-13,13:35:35,,""
+2115,503,Complete,2018-04-13,13:35:55,,""
+2116,502,Complete,2018-04-13,13:36:03,,""
+2117,1190,Complete,2018-04-13,14:18:07,,submitted @ 13/04/2018
+2118,1197,Complete,2018-04-13,14:18:36,,Invoice created
+2119,1183,Complete,2018-04-13,14:18:54,,Self collect by En. Zulkifli @ 12/04/2018
+2120,1179,Complete,2018-04-13,14:19:27,,Lodged to CCM @ 13/04/2018
+2121,1178,Complete,2018-04-13,14:19:53,,Lodged to CCM @ 13/04/2018
+2122,1177,Complete,2018-04-13,14:20:20,,Lodged @ 13/04/2018
+2123,1169,Complete,2018-04-13,14:20:42,,Self collect by dispatch @ 12/04/2018
+2124,980,Complete,2018-04-13,15:21:30,,Annual Return @ 2018-04-12. Submission to SSM on 2018-04-13
+2125,1201,New,2018-04-13,15:46:06,,
+2126,1202,New,2018-04-13,16:00:41,,
+2127,1171,New,2018-04-13,16:25:05,,
+2128,1204,New,2018-04-13,16:29:10,,
+2129,1205,New,2018-04-13,16:57:27,,
+2130,1206,New,2018-04-13,17:30:28,,
+2131,1207,New,2018-04-16,09:17:22,,
+2132,1208,New,2018-04-16,09:26:10,,
+2133,1209,New,2018-04-16,10:06:42,,
+2134,1210,New,2018-04-16,10:33:51,,
+2135,1211,New,2018-04-16,11:05:53,,
+2136,1212,New,2018-04-16,11:47:50,,
+2137,1213,New,2018-04-16,11:51:25,,
+2138,1203,New,2018-04-16,12:08:19,,
+2139,1203,Complete,2018-04-16,12:08:27,,email on 13.04.2018
+2140,875,AGM/FS/AR,2018-04-16,13:09:26,,"2018-04-13: Sent out by Wan, Received by client.
+"
+2141,941,Complete,2018-04-16,14:21:35,,Lodge to SSM on 2018-04-16
+2142,1215,New,2018-04-16,14:57:50,,
+2143,1200,Out,2018-04-16,15:23:56,By E-Mail,Doc FX Agreements sent out to client on 13 April 2018. 
+2144,1166,AGM/FS/AR,2018-04-16,15:26:32,,"DCR/MWR for FYE 2017-10-31 sent to Mr Derwick on 16 April 2018 by email.
+"
+2145,1217,New,2018-04-16,17:12:42,,
+2146,1219,New,2018-04-16,17:28:20,,
+2147,1220,New,2018-04-16,17:45:40,,
+2148,1142,Complete,2018-04-17,09:49:05,,DCR @ 17/04/2018
+2149,1165,AGM/FS/AR,2018-04-17,09:52:49,,Send out doc @ 2018-04-16. Letak bawah pintu (With client received)
+2150,1121,AGM/FS/AR,2018-04-17,10:40:02,,Doc in on 17 April 2018. Pending payment. 
+2151,1184,Out,2018-04-17,12:01:09,By E-Mail,"Doc in with $, issued dividend warrant sent out to client together with CTC reso declar div."
+2152,676,Complete,2018-04-17,12:25:39,,Lodged @ 16/04/2018
+2153,1222,New,2018-04-17,12:27:30,,
+2154,1131,Complete,2018-04-17,12:31:52,,DCR @ 06/04/2018
+2155,1223,New,2018-04-17,13:53:14,,
+2156,1219,Complete,2018-04-17,14:31:13,,Send by Wan @ 17/04/2018
+2157,1224,New,2018-04-17,14:38:55,,
+2158,1225,New,2018-04-17,14:43:18,,
+2159,1226,New,2018-04-17,14:56:03,,
+2160,1227,New,2018-04-17,14:56:03,,
+2161,1228,New,2018-04-17,15:13:09,,
+2162,1221,New,2018-04-17,16:28:51,,
+2163,1216,New,2018-04-17,16:29:03,,
+2164,1214,New,2018-04-17,16:29:07,,
+2165,1230,New,2018-04-17,17:25:47,,
+2166,1072,Complete,2018-04-17,17:49:39,,S58 submitted on 10.04.2018
+2167,1216,Complete,2018-04-17,17:51:21,,doc sent on 17.04.2018
+2168,1214,Complete,2018-04-17,17:52:33,,doc sent on 17.04.2018
+2169,1232,New,2018-04-17,18:10:27,,
+2170,1233,New,2018-04-18,09:22:14,,
+2171,1229,New,2018-04-18,09:36:37,,
+2172,1218,New,2018-04-18,09:36:40,,
+2173,1037,New,2018-04-18,09:36:53,,
+2174,1036,New,2018-04-18,09:36:55,,
+2175,1161,New,2018-04-18,09:36:58,,
+2176,1115,New,2018-04-18,09:37:06,,
+2177,1218,Out,2018-04-18,09:37:16,By E-Mail,Emailed on 18.04.2018
+2178,1229,Out,2018-04-18,09:37:37,By E-Mail,Email docs on 17.04.2018
+2179,1235,New,2018-04-18,10:41:11,,
+2180,1172,AGM/FS/AR,2018-04-18,11:30:13,,Send out doc @ 2018-04-18. Ack by Fazdli
+2181,1174,AGM/FS/AR,2018-04-18,11:31:26,,Send out doc @ 2018-04-18. Ack by Fazdli.
+2182,1236,New,2018-04-18,11:35:05,,
+2183,1237,New,2018-04-18,11:49:35,,
+2184,1207,Complete,2018-04-18,14:19:08,,"17-04-2018: Sent out by Wan, Received by client. "
+2185,1168,AGM/FS/AR,2018-04-18,14:20:11,,"2018-04-18: Sent out by Wan, received by client.
+"
+2186,1170,AGM/FS/AR,2018-04-18,14:21:17,,"2018-04-18: Sent out by Wan, received by client."
+2187,1238,New,2018-04-18,15:24:43,,
+2188,1200,Complete,2018-04-18,15:52:26,,Collect by client after CTC. 
+2189,1239,New,2018-04-18,16:22:41,,
+2190,1240,New,2018-04-18,16:36:57,,
+2191,1241,New,2018-04-18,16:36:57,,
+2192,1021,SSM/Statutory,2018-04-18,16:51:40,,Dereg submit on 18 April 2018. 
+2193,962,Complete,2018-04-19,08:34:47,,Annual Return @ 2018-04-15. Submission to SSM on 2018-04-18.
+2194,1238,Out,2018-04-19,08:51:40,By E-Mail,Email to client on 19 April 2018. 
+2195,1224,Out,2018-04-19,08:53:08,By E-Mail,"Reso (internet banking) sent out to client on 17 April 2018.
+"
+2196,1184,Complete,2018-04-19,08:55:22,,CTC reso sent out to client together with Dividend Warrant (1/2018). 
+2197,345,Complete,2018-04-19,08:59:40,,Return doc together with $. 
+2278,314,Complete,2018-04-24,09:15:26,,docs send out to client on 15.03.2018
+2198,969,Return,2018-04-19,09:05:54,,"Name reservation resubmit on 26/03/2018 & get approval from SSM on 2 April 2018. 
+"
+2199,969,Return,2018-04-19,09:08:18,,"Doc in on 18/04/18, sent back to Kelly doc (Application for Shares & Director info Confirmation) and request $ before proceed incorp. "
+2200,1084,Cancel,2018-04-19,09:13:46,,Double job taking
+2201,1220,Out,2018-04-19,09:16:12,By E-Mail,"Doc send ot to client by email on 18 April 2018.
+"
+2202,832,Complete,2018-04-19,09:20:27,,"Doc in, filing in minutes book. "
+2203,785,Complete,2018-04-19,09:21:49,,Give to client 
+2204,74,Complete,2018-04-19,09:24:50,,Doc return back. proceed to filing in minutes book. 
+2205,787,AGM/FS/AR,2018-04-19,09:36:02,,Doc sent out on 21 March 2018. 
+2206,863,Out,2018-04-19,09:37:54,By E-Mail,Sent to client on 20 March 2018. 
+2207,394,Complete,2018-04-19,09:41:25,,Doc return back on 24 Jan 2018. filing in minutes book. 
+2208,750,Complete,2018-04-19,09:49:33,,"Doc received on 15 March 2018.
+"
+2209,1071,Out,2018-04-19,09:54:46,By E-Mail,Doc in on 18 Apr 2018. 
+2210,1076,Out,2018-04-19,09:57:06,By E-Mail,Doc in on 18 Apr 2018. pending $ & execute after resgn Dir (30/04/2018). 
+2211,1060,Out,2018-04-19,09:58:12,By E-Mail,Doc in on 18 April 2018. Pending $ & will execute after change Dir (30/04/2018). 
+2212,1078,Out,2018-04-19,09:59:43,By E-Mail,"Doc in on 18 April 2018, pending $ & execute after chnge Dir (30/04/2018).
+"
+2213,1077,Out,2018-04-19,10:00:35,By E-Mail,"Doc in, pending $ & will execute after chnge of Dir (30/04/2018).
+"
+2214,1079,Out,2018-04-19,10:01:37,By E-Mail,"Doc in, pending $ & will execute after chnage Dir (30/04/2018)."
+2215,1080,Out,2018-04-19,10:03:24,By E-Mail,"Doc in, pending $ & will execute after Change Dir (30/04/2018). "
+2216,1074,Out,2018-04-19,10:04:15,By E-Mail,"Doc in, pending $ & will execute after Chnge Dir (30/04/2018). "
+2217,1068,Out,2018-04-19,10:12:40,By E-Mail,"Doc in, pending $ & will execute after Chnge Dir(30/04/2018)."
+2218,1066,Out,2018-04-19,10:13:36,By E-Mail,"Doc in, pending $ & will execute after Chnge Dir (30/04/2018)."
+2219,1070,Out,2018-04-19,10:15:58,By E-Mail,"Doc in, pending $ & execute after chg Dir (30/04/2018).
+"
+2220,1075,Out,2018-04-19,10:17:57,By E-Mail,"Doc in, pending $ & will execute after chnge Dir (30/04/2018)."
+2221,1243,New,2018-04-19,10:35:20,,
+2222,960,AGM/FS/AR,2018-04-19,11:07:30,,Resend out doc @ 2018-04-18. Ack by Sim Kok Keong
+2223,1244,New,2018-04-19,11:45:00,,
+2224,1245,New,2018-04-19,11:45:00,,
+2225,1246,New,2018-04-19,13:47:28,,
+2226,1247,New,2018-04-19,14:17:00,,
+2227,1249,New,2018-04-19,15:08:31,,
+2228,1250,New,2018-04-19,15:46:31,,
+2229,1251,New,2018-04-19,16:01:03,,
+2230,1252,New,2018-04-19,17:38:02,,
+2231,1224,Complete,2018-04-20,11:13:49,,"Doc back, DCR internet banking (AMBANK & MAYBANK2U) filing in minutes book. "
+2232,1253,New,2018-04-20,11:36:00,,
+2233,1254,New,2018-04-20,14:05:35,,
+2234,1243,Out,2018-04-20,15:54:45,By Hand,Docs received by Fazdli
+2235,1255,New,2018-04-20,15:56:21,,
+2236,1256,New,2018-04-20,16:47:18,,
+2237,976,Complete,2018-04-20,17:31:46,,Annual Return @ 2018-04-10. Submission to SSM on 2018-04-19
+2238,1087,Complete,2018-04-20,17:34:15,,FS @ 2017-12-31 submit to SSM on 2018-04-20
+2239,1052,Complete,2018-04-20,17:37:59,,Dereg on 18 April 2018 submit to SSM on 19 April 2018.
+2240,1257,New,2018-04-20,18:21:12,,
+2241,1258,New,2018-04-20,18:21:12,,
+2242,1259,New,2018-04-23,09:20:03,,
+2243,1260,New,2018-04-23,09:33:26,,
+2244,1059,Out,2018-04-23,10:27:12,By E-Mail,Doc received on 23 April 2018. 
+2245,1059,Out,2018-04-23,10:37:30,By E-Mail,"Received $. 
+"
+2246,1080,Out,2018-04-23,10:47:24,By E-Mail,Received $
+2247,1078,Out,2018-04-23,10:47:55,By E-Mail,"Received $. 
+"
+2248,1060,Out,2018-04-23,10:48:42,By E-Mail,"Received $. 
+"
+2249,969,Return,2018-04-23,10:55:29,,"Received payment on 23 April 2018.
+"
+2250,1255,AGM/FS/AR,2018-04-23,11:35:01,,2018-04-23: Sent out by email to client. (Hana sent email) 
+2251,1261,New,2018-04-23,11:59:45,,
+2252,1262,New,2018-04-23,13:47:19,,
+2253,1263,New,2018-04-23,13:47:32,,
+2254,1262,Out,2018-04-23,14:06:40,By E-Mail,Email to Ryan
+2255,1241,Out,2018-04-23,14:06:55,Office Boy,2018-04-20: sent out by Wan
+2256,1240,Out,2018-04-23,14:07:15,Office Boy,Sent out by Wan
+2257,1235,Complete,2018-04-23,14:07:29,,""
+2258,1223,Complete,2018-04-23,14:07:41,,""
+2259,902,Complete,2018-04-23,14:07:58,,""
+2260,714,Complete,2018-04-23,14:08:10,,""
+2261,1254,Complete,2018-04-23,14:08:31,,""
+2262,1264,New,2018-04-23,15:42:48,,
+2263,1267,New,2018-04-23,15:57:18,,
+2264,1268,New,2018-04-23,15:57:18,,
+2265,1269,New,2018-04-23,15:59:17,,
+2266,557,AGM/FS/AR,2018-04-23,16:24:29,,"1/3/2018: courier out by Citylink (060301633129345)
+"
+2267,1270,New,2018-04-23,17:01:26,,
+2268,1236,AGM/FS/AR,2018-04-24,08:42:09,,Send out doc @ 2018-04-23. Ack by En. Nizam
+2269,1086,Complete,2018-04-24,08:50:59,,ctc returned reso & forms 1 set send out on 23.04.2018
+2270,1134,Return,2018-04-24,08:59:58,,Doc in with $ on 24 April 2018. Can proceed to LHDN stamping. 
+2271,1164,New,2018-04-24,09:05:20,,
+2272,1242,New,2018-04-24,09:05:23,,
+2273,1242,Complete,2018-04-24,09:05:33,,docs signed & ctc on 19.04.2018
+2274,1164,Out,2018-04-24,09:07:01,By E-Mail,"Email on 19.04.2018. Return DCRs, ordinary shh reso & $ on 20.04.2018. pending return preference shh reso & Share cert 011 & 016.
+
+*share cer 016 claimed not with client"
+2275,1171,Complete,2018-04-24,09:09:51,,sent to habibah (5th floor) on 10.04.2018
+2276,1006,Out,2018-04-24,09:12:03,By E-Mail,docs in with $ on 20.04.2018. Pending letter resignation from current cosec
+2277,979,Complete,2018-04-24,09:14:17,,docs sent out with CTC complete 3 sets on 05.04.2018
+2432,1356,New,2018-05-03,13:56:48,,
+2279,1229,Out,2018-04-24,09:25:33,By E-Mail,"Letter appointment tax agents & Letter to LHDN received on 24.04.2018. 
+
+Pending return reso, letter nominate & appoint auditor"
+2280,1101,Out,2018-04-24,09:26:59,By E-Mail,"proceed w/o payment. Client arranging payment ASAP as per email dated 19.04.2018
+
+S36 submit SSM on 23.04.2018"
+2281,988,Out,2018-04-24,09:29:29,By E-Mail,docs send out with CTC forms 3 sets on 17.04.2018
+2282,988,Complete,2018-04-24,09:30:54,,Wan sent to ground floor. Client claimed that the renovation completed and shall sent to her office (Level 1).
+2283,990,Complete,2018-04-24,10:54:46,,"Lodged to SSM ON 19/4/2018.
+"
+2284,1271,New,2018-04-24,11:03:08,,
+2285,1274,New,2018-04-24,11:47:48,,
+2286,1275,New,2018-04-24,12:28:58,,
+2287,1276,New,2018-04-24,14:37:23,,
+2288,1277,New,2018-04-24,16:14:05,,
+2289,1278,New,2018-04-24,16:16:02,,
+2290,1279,New,2018-04-24,16:19:19,,
+2291,1280,New,2018-04-24,16:29:44,,
+2292,1014,Complete,2018-04-24,16:33:52,,""
+2293,626,Complete,2018-04-24,16:34:09,,""
+2294,651,Complete,2018-04-24,16:34:26,,""
+2295,655,Out,2018-04-24,16:34:47,By E-Mail,""
+2296,670,AGM/FS/AR,2018-04-24,16:34:57,,""
+2297,678,AGM/FS/AR,2018-04-24,16:35:11,,""
+2298,692,Complete,2018-04-24,16:35:44,,""
+2299,720,AGM/FS/AR,2018-04-24,16:35:53,,""
+2300,722,Complete,2018-04-24,16:36:01,,""
+2301,726,Out,2018-04-24,16:36:10,By E-Mail,""
+2302,727,Complete,2018-04-24,16:36:19,,""
+2303,739,AGM/FS/AR,2018-04-24,16:36:36,,""
+2304,768,AGM/FS/AR,2018-04-24,16:36:47,,""
+2305,773,Out,2018-04-24,16:36:56,By Hand,""
+2306,776,Complete,2018-04-24,16:37:15,,""
+2307,619,AGM/FS/AR,2018-04-24,16:35:33,,Annual Return @ 2018-03-14. Submit to SSM on 2018-03-30
+2308,792,AGM/FS/AR,2018-04-24,16:37:25,,""
+2309,802,Complete,2018-04-24,16:37:35,,""
+2310,805,AGM/FS/AR,2018-04-24,16:37:46,,""
+2311,859,Complete,2018-04-24,16:37:55,,""
+2312,864,Complete,2018-04-24,16:38:04,,""
+2313,932,AGM/FS/AR,2018-04-24,16:38:12,,""
+2314,936,Complete,2018-04-24,16:38:21,,""
+2315,955,AGM/FS/AR,2018-04-24,16:38:32,,""
+2316,964,AGM/FS/AR,2018-04-24,16:38:40,,""
+2317,1015,Complete,2018-04-24,16:38:54,,""
+2318,1017,Complete,2018-04-24,16:39:10,,""
+2319,1018,Complete,2018-04-24,16:39:22,,""
+2320,1019,Complete,2018-04-24,16:39:30,,""
+2321,1020,Complete,2018-04-24,16:39:39,,""
+2322,1064,AGM/FS/AR,2018-04-24,16:39:48,,""
+2323,1067,AGM/FS/AR,2018-04-24,16:39:58,,""
+2324,1098,Out,2018-04-24,16:40:09,By E-Mail,""
+2325,1112,Out,2018-04-24,16:40:17,By E-Mail,""
+2326,1252,Complete,2018-04-24,16:40:41,,""
+2327,619,Complete,2018-04-24,16:41:43,,Annual Return @ 2018-03-14. Submit to SSM on 2018-03-30
+2328,526,Complete,2018-04-24,16:42:46,,Annual Return @ 2018-03-16. Submitted to SSM on 2018-03-21
+2329,544,Complete,2018-04-24,16:43:58,,Annual Return @ 2018-03-16. Submitted to SSM on 2018-03-21
+2330,1281,New,2018-04-24,16:51:02,,
+2331,1282,New,2018-04-24,17:25:28,,
+2332,1283,New,2018-04-25,08:38:21,,
+2333,1282,Cancel,2018-04-25,09:26:08,,Created wrongly.
+2334,1284,New,2018-04-25,09:27:42,,
+2335,1269,Out,2018-04-25,09:29:08,By E-Mail,Self collect by Dispatch @ 24.04.2018
+2336,1285,New,2018-04-25,11:56:18,,
+2337,1253,AGM/FS/AR,2018-04-25,14:16:59,,Send out doc @ 2018-04-24. Ack by Segaran
+2338,1286,New,2018-04-25,14:30:37,,
+2339,910,AGM/FS/AR,2018-04-25,15:04:09,,Doc back @ 2018-04-25. Without payment.
+2340,1287,New,2018-04-25,16:55:23,,
+2341,1288,New,2018-04-25,16:55:23,,
+2342,1289,New,2018-04-25,16:57:56,,
+2343,787,Complete,2018-04-25,17:59:11,,FS @ 2012-04-30 submission to SSM on 25 April 2018. 
+2344,540,Complete,2018-04-25,18:03:57,,"client email payment slip dated 30.03.2018 on 23.04.2018. 
+Proceed SSM submission on 24.04.2018.
+SSM acknowledgement received on 25.04.2018"
+2346,1294,New,2018-04-25,18:10:29,,
+2347,1295,New,2018-04-25,18:10:29,,
+2348,1290,New,2018-04-25,18:10:33,,
+2349,1291,New,2018-04-25,18:10:33,,
+2350,1292,New,2018-04-25,18:10:37,,
+2351,1293,New,2018-04-25,18:10:37,,
+2352,1299,New,2018-04-26,09:57:47,,
+2353,1300,New,2018-04-26,13:28:51,,
+2354,1301,New,2018-04-26,15:57:35,,
+2355,1303,New,2018-04-27,08:55:33,,
+2356,1305,New,2018-04-27,10:03:24,,
+2357,1304,New,2018-04-27,10:03:24,,
+2358,1306,New,2018-04-27,10:03:24,,
+2359,1306,Out,2018-04-27,11:17:21,By E-Mail,Email to Indira & Annette
+2360,1305,Out,2018-04-27,11:17:39,By E-Mail,Email to Indira & Annette
+2361,1304,Out,2018-04-27,11:18:18,By E-Mail,Email to Indira & Annette
+2362,1307,New,2018-04-27,11:45:49,,
+2363,1279,Complete,2018-04-27,11:58:32,,send by Wan @ 27/04/2018
+2364,1281,Complete,2018-04-27,11:59:08,,send by Wan @ 27/04/2018
+2365,978,Complete,2018-04-27,13:25:37,,AR @ 2018-04-26 submission to SSM on 26 April 2018. 
+2366,791,Complete,2018-04-27,13:27:17,,FS @ 2017-09-30 submission to SSM on 26 April 2018. 
+2367,1286,Complete,2018-04-27,13:44:17,,""
+2368,929,Complete,2018-04-27,13:44:34,,""
+2369,901,Complete,2018-04-27,13:44:44,,""
+2370,664,Complete,2018-04-27,13:44:58,,""
+2371,6,Cancel,2018-04-27,13:45:10,,Re-assigned to Jamalia
+2372,1309,New,2018-04-27,13:47:45,,
+2373,1164,Out,2018-04-27,15:22:04,By E-Mail,"PS reso returned on 25.04.2018. 
+Share cert no 016 confirm lost by Mr. James.
+To do lost share cert before proceed with the redemption."
+2374,1311,New,2018-04-27,15:54:16,,
+2375,1311,Complete,2018-04-27,15:54:23,,Whatsapp to Mr. Hossain on 2018-04-26.
+2376,1314,New,2018-04-27,17:49:24,,
+2377,1315,New,2018-04-30,09:04:09,,
+2378,674,Complete,2018-04-30,10:53:09,,""
+2379,739,Complete,2018-04-30,10:53:28,,""
+2380,768,Complete,2018-04-30,10:53:36,,""
+2381,1316,New,2018-04-30,11:40:13,,
+2382,1318,New,2018-04-30,11:49:22,,
+2383,1317,New,2018-04-30,11:49:22,,
+2384,1319,New,2018-04-30,13:17:37,,
+2385,1320,New,2018-04-30,14:57:30,,
+2386,1321,New,2018-04-30,15:55:01,,
+2387,1322,New,2018-04-30,16:11:00,,
+2388,1323,New,2018-04-30,16:11:00,,
+2389,1310,New,2018-04-30,17:21:44,,
+2390,1302,New,2018-04-30,17:21:47,,
+2391,1298,New,2018-04-30,17:21:51,,
+2392,1310,Out,2018-04-30,17:22:02,By E-Mail,Email on 30.04.2018
+2393,1302,Out,2018-04-30,17:22:30,By E-Mail,Emailed to faidah on 30.04.2018 for onward forwarding to Ms. Beryl.
+2394,1326,New,2018-05-02,10:03:03,,
+2395,1327,New,2018-05-02,10:09:29,,
+2396,969,Complete,2018-05-02,10:15:01,,Doc received on 30 April 2018. 
+2397,1328,New,2018-05-02,10:54:40,,
+2398,1324,New,2018-05-02,10:58:17,,
+2399,1325,New,2018-05-02,10:58:17,,
+2400,1324,Out,2018-05-02,10:58:26,By E-Mail,Email on 30.04.2018
+2401,1325,Out,2018-05-02,10:58:48,By E-Mail,Email on 30.04.2018
+2402,1298,Out,2018-05-02,10:59:28,By E-Mail,Emailed on 26.04.2018 & confirm received on 27.04.2018
+2403,1330,New,2018-05-02,11:46:42,,
+2404,1042,Complete,2018-05-02,11:57:27,,Lodged to CCM on 2018-04-27
+2405,1326,Out,2018-05-02,11:59:33,By E-Mail,2018-05-02 : Email out to Ryan.
+2406,1331,New,2018-05-02,14:50:22,,
+2407,1332,New,2018-05-02,14:50:22,,
+2408,1106,Complete,2018-05-02,15:20:45,,Annual Return@2018-04-15. Submit to SSM on 2018-04-30
+2409,910,Complete,2018-05-02,15:23:06,,Annual Return@2018-04-01. Submit to SSM on 2018-04-30
+2410,1333,New,2018-05-02,15:26:42,,
+2411,1334,New,2018-05-02,15:52:06,,
+2412,1329,New,2018-05-02,17:07:46,,
+2413,1329,Complete,2018-05-02,17:07:51,,Emailed on 02.05.2018
+2414,1339,New,2018-05-02,18:16:59,,
+2415,1340,New,2018-05-03,09:18:40,,
+2416,1322,Complete,2018-05-03,09:23:59,,Collected by client.
+2417,1323,Complete,2018-05-03,09:24:29,,2018-04-30 : Courier out by Citylink (060301638454154) to Klang.
+2418,1341,New,2018-05-03,09:27:54,,
+2419,1342,New,2018-05-03,09:45:24,,
+2420,1343,New,2018-05-03,09:59:17,,
+2421,1344,New,2018-05-03,10:01:54,,
+2422,1111,Complete,2018-05-03,10:15:30,,Annual Return @ 2018-04-18. Submit to SSM on 2018-05-03
+2423,1345,New,2018-05-03,10:37:59,,
+2424,1346,New,2018-05-03,10:47:56,,
+2425,1347,New,2018-05-03,10:54:54,,
+2426,1348,New,2018-05-03,11:04:54,,
+2427,1351,New,2018-05-03,11:39:44,,
+2428,1349,New,2018-05-03,11:54:29,,
+2429,1352,New,2018-05-03,11:59:06,,
+2430,1353,New,2018-05-03,12:25:45,,
+2431,1355,New,2018-05-03,13:01:28,,
+2433,729,Out,2018-05-03,14:44:28,By E-Mail,Mr. Eugene instruct to change Ahmad Fauzi to Sharifah Sabah Alsree on 30.04.2018
+2434,1357,New,2018-05-03,15:08:18,,
+2435,1359,New,2018-05-03,16:51:04,,
+2436,1360,New,2018-05-03,17:13:15,,
+2438,1362,New,2018-05-03,17:31:53,,
+2439,1363,New,2018-05-03,17:31:53,,
+2440,1364,New,2018-05-03,18:24:49,,
+2441,1365,New,2018-05-04,09:55:28,,
+2442,1366,New,2018-05-04,10:12:00,,
+2443,951,Complete,2018-05-04,10:51:12,,Annual Return @ 2018-04-26. Submit to SSM on 2018-05-03
+2444,860,Complete,2018-05-04,10:55:08,,Annual Return @ 2018-04-01. Submit to SSM on 2018-05-03
+2445,1367,New,2018-05-04,11:01:31,,
+2447,1368,New,2018-05-04,11:29:35,,
+2448,1369,New,2018-05-04,11:29:35,,
+2449,1370,New,2018-05-04,11:51:58,,
+2450,1371,New,2018-05-04,11:57:11,,
+2451,1284,AGM/FS/AR,2018-05-04,12:51:50,,"26/4/2018- Courier out by City-link to Kuantan. 
+060301638454150"
+2452,1280,AGM/FS/AR,2018-05-04,12:53:36,,"26/4/2018- Courier out by Citylink to Kuantan.
+060301638454150
+
+"
+2453,1372,New,2018-05-04,14:30:50,,
+2454,1373,New,2018-05-04,15:00:42,,
+2455,1374,New,2018-05-04,15:03:23,,
+2456,1349,Out,2018-05-04,15:08:13,Office Boy,2018-05-04: Sent out by Wan. Received by Susan.
+2457,1348,Out,2018-05-04,15:09:04,Office Boy,2018-05-04: Sent out by Wan. Received by Susan.
+2458,1346,Out,2018-05-04,15:09:24,Office Boy,2018-05-04: Sent out by Wan. Received by Susan.
+2459,1348,Complete,2018-05-04,15:09:50,,2018-05-04: Has issued Invoice. CTC docs received by them (email)
+2460,1376,New,2018-05-04,15:49:22,,
+2461,1377,New,2018-05-04,15:51:26,,
+2462,1378,New,2018-05-04,16:49:51,,
+2463,1379,New,2018-05-04,17:25:11,,
+2464,1360,Out,2018-05-05,08:38:11,Office Boy,Send out doc @ 2018-05-04. Ack by Segaran
+2465,1327,AGM/FS/AR,2018-05-05,10:35:05,,Self collect doc @ 2018-05-05 by En. Fahmi
+2466,1380,New,2018-05-05,10:44:57,,
+2467,1040,Complete,2018-05-05,11:01:40,,Annual Return @ 2018-04-10 submit to SSM on 3 May 2018. 
+2468,1079,Out,2018-05-05,11:03:20,By E-Mail,Holds per instruction from Kelly on 25 April 2018. 
+2469,1031,Complete,2018-05-05,11:05:11,,FS @ 2017-09-30 submit to SSM on 3 May 2018. 
+2470,1381,New,2018-05-05,12:08:24,,
+2471,1382,New,2018-05-05,12:08:58,,
+2472,1354,New,2018-05-05,13:29:15,,
+2473,1354,Complete,2018-05-05,13:29:28,,received on 04.05.2018
+2474,1402,New,2018-05-07,09:05:05,,
+2475,1403,New,2018-05-07,09:06:56,,
+2476,1404,New,2018-05-07,09:37:19,,
+2477,1405,New,2018-05-07,10:42:42,,
+2478,1406,New,2018-05-07,11:09:44,,
+2479,1407,New,2018-05-07,12:41:00,,
+2480,1408,New,2018-05-07,14:40:40,,
+2481,1410,New,2018-05-07,16:13:37,,
+2482,1411,New,2018-05-07,16:15:44,,
+2483,1412,New,2018-05-07,16:49:56,,
+2484,1412,Cancel,2018-05-07,16:51:38,,""
+2485,1413,New,2018-05-07,16:53:35,,
+2486,1414,New,2018-05-07,17:07:43,,
+2487,1276,Complete,2018-05-07,17:34:50,,"FS @ 2017-09-30 submission to SSM on 7 May 2018.
+"
+2488,1417,New,2018-05-08,08:40:48,,
+2489,1095,Complete,2018-05-08,08:42:17,,Annual Return @ 2018-04-26. Submit to SSM on 2018-05-07
+2490,1403,Complete,2018-05-08,08:44:26,,"CPO email to client on 7 May 2018.
+"
+2491,973,Complete,2018-05-08,08:44:32,,Annual Return @ 2018-04-05. Submit to SSM on 2018-05-07
+2492,1374,Complete,2018-05-08,08:45:22,,"S58 submit on MyCoid on 4 May 2018. 
+"
+2493,960,Complete,2018-05-08,08:46:54,,Annual Return @ 2018-04-15. Submit to SSM on 2018-05-07
+2494,1418,New,2018-05-08,08:58:21,,
+2495,1419,New,2018-05-08,08:58:00,,
+2496,1420,New,2018-05-08,09:05:31,,
+2497,1422,New,2018-05-08,09:33:15,,
+2498,1423,New,2018-05-08,09:46:38,,
+2499,1424,New,2018-05-08,10:04:12,,
+2500,1287,Out,2018-05-08,10:13:22,By E-Mail,2018-04-26: Email docs to Ms. Mazliana.
+2501,1287,Return,2018-05-08,10:14:24,,2018-05-08: Docs in. Pending DCR. To confirm date.
+2502,1426,New,2018-05-08,10:20:25,,
+2503,1427,New,2018-05-08,10:43:54,,
+2504,1428,New,2018-05-08,10:46:43,,
+2505,1415,New,2018-05-08,11:38:31,,
+2506,1416,New,2018-05-08,11:38:31,,
+2507,1409,New,2018-05-08,11:38:56,,
+2508,1415,Complete,2018-05-08,11:39:05,,docs sent to Q Sentral on 08.05.2018. 
+2509,1416,Complete,2018-05-08,11:40:02,,docs sent to Q Sentral on 08.05.2018. 
+2510,1409,Complete,2018-05-08,11:40:15,,Emailed on 07.05.2018
+2511,1036,AGM/FS/AR,2018-05-08,11:40:46,,"FS received on 07.05.2018. Pending signing reso. 
+
+Wan unable to collect 08.05.2018 due to tight schedule. Postpone on 10.05.2018"
+2512,1302,Out,2018-05-08,11:42:19,By E-Mail,Return on 08.05.2018. to proceed
+2513,1233,Complete,2018-05-08,11:46:06,,""
+2514,1250,Complete,2018-05-08,11:46:15,,""
+2515,1251,Complete,2018-05-08,11:46:22,,""
+2516,1193,AGM/FS/AR,2018-05-08,11:46:32,,""
+2517,1192,AGM/FS/AR,2018-05-08,11:46:41,,""
+2518,1188,AGM/FS/AR,2018-05-08,11:46:50,,""
+2519,1186,AGM/FS/AR,2018-05-08,11:46:58,,""
+2520,1125,AGM/FS/AR,2018-05-08,11:47:06,,""
+2521,1429,New,2018-05-08,11:48:34,,
+2522,1430,New,2018-05-08,14:02:45,,
+2523,1432,New,2018-05-08,14:20:22,,
+2524,1433,New,2018-05-08,14:50:23,,
+2525,1434,New,2018-05-08,15:21:57,,
+2526,1435,New,2018-05-08,15:41:28,,
+2527,470,AGM/FS/AR,2018-05-08,15:40:51,,"Sent out by Wan, received by client.
+"
+2528,1437,New,2018-05-08,15:44:26,,
+2529,1434,Cancel,2018-05-08,15:49:29,,""
+2530,1433,Cancel,2018-05-08,15:49:45,,""
+2531,1438,New,2018-05-08,15:52:51,,
+2532,1441,New,2018-05-08,16:08:15,,
+2535,1440,New,2018-05-08,16:16:37,,
+2536,1439,New,2018-05-08,16:16:37,,
+2537,1442,New,2018-05-08,16:16:37,,
+2538,1443,New,2018-05-08,16:41:57,,
+2539,1444,New,2018-05-08,16:41:57,,
+2540,1445,New,2018-05-08,16:41:57,,
+2541,1446,New,2018-05-08,16:49:55,,
+2542,1447,New,2018-05-08,16:49:55,,
+2543,1448,New,2018-05-08,16:54:40,,
+2544,1449,New,2018-05-08,16:54:40,,
+2545,1450,New,2018-05-10,09:34:06,,
+2546,1451,New,2018-05-10,10:04:31,,
+2547,1452,New,2018-05-10,10:44:34,,
+2548,1453,New,2018-05-10,11:00:17,,
+2549,1455,New,2018-05-10,11:07:50,,
+2550,1456,New,2018-05-10,12:11:46,,
+2551,1457,New,2018-05-10,13:43:58,,
+2552,1458,New,2018-05-10,13:43:58,,
+2553,1459,New,2018-05-10,14:00:32,,
+2554,1460,New,2018-05-10,14:15:06,,
+2555,1462,New,2018-05-10,14:25:44,,
+2556,1463,New,2018-05-10,16:18:10,,
+2557,1465,New,2018-05-10,16:28:26,,
+2558,1466,New,2018-05-10,16:28:26,,
+2559,1468,New,2018-05-10,17:01:53,,
+2560,1469,New,2018-05-11,08:44:50,,
+2561,1470,New,2018-05-11,09:10:02,,
+2562,1080,Out,2018-05-11,10:11:40,By E-Mail,Hold as per instruction from Kelly on 27 April 2018. 
+2563,1078,Complete,2018-05-11,10:12:17,,Section 58 dated 30 April 2018 submitted in MyCoid on 5 May 2018. 
+2564,1077,Complete,2018-05-11,10:13:51,,Section 58 dated 30 April 2018 submitted in MyCoid on 5 May 2018. 
+2565,1076,Complete,2018-05-11,10:14:55,,Section 58 dated 30 April 2018 submitted in MyCoid on 5 May 2018. 
+2566,1075,Complete,2018-05-11,10:15:37,,"Sectino 58 dated 30 April 2018 submitted in MyCoid on 5 May 2018, "
+2567,1074,Complete,2018-05-11,10:16:21,,Section 58 dated 30 April 2018 submitted in MyCoid on 5 May 2018. 
+2568,1071,Complete,2018-05-11,10:16:59,,Section 58 @ 2018-04-30 submitted in MyCoid on 5 May 2018. 
+2569,1334,Complete,2018-05-11,10:18:35,,Doc sent to client.
+2570,1070,Out,2018-05-11,10:19:19,By E-Mail,Section 58 @ 2018-04-30 submitted in MyCoid on 5 May 2018. 
+2571,1070,Complete,2018-05-11,10:20:04,,Submitted in MyCoid on 5 May 2018. 
+2572,1068,Complete,2018-05-11,10:20:39,,Section 58 @ 2018-04-30 submitted in MyCoid on 5 May 2018. 
+2573,1066,Complete,2018-05-11,10:21:47,,Section 58 @ 2018-04-30 submitted in MyCoid on 5 May 2018. 
+2574,894,Complete,2018-05-11,10:22:45,,Section 58 dated 30 April 2018 submitted in MyCoid on 5 May 2018. 
+2575,880,Complete,2018-05-11,10:23:29,,Section 58 dated 30 April 2018 submitted in MyCoid on 5 May 2018. 
+2576,878,Complete,2018-05-11,10:24:09,,Section 58 dated 30 April 2018 submitted in MyCoid on 5 May 2018. 
+2577,872,Complete,2018-05-11,10:24:49,,Section 58 dated 30 April 2018 submitted in MyCoid on 5 May 2018. 
+2578,972,Complete,2018-05-11,10:25:31,,AR @ 2018-04-03 submitted to CCM on 7 May 2018. 
+2579,1060,Complete,2018-05-11,10:26:25,,S58@ 2018-04-30 submitted in MyCoid on 5 May 2018. 
+2580,1220,Complete,2018-05-11,10:28:09,,"Doc in, filing in minutes book. "
+2581,876,Complete,2018-05-11,10:29:27,,S58@2018-04-30 submitted in MyCoid on 5 May 2018. 
+2582,1059,Complete,2018-05-11,10:30:09,,S58 @ 2018-04-30 submitted in MyCoid on 5 May 2018. 
+2583,851,Complete,2018-05-11,10:31:38,,"Doc in, filing in minutes book. "
+2584,1471,New,2018-05-11,10:32:33,,
+2585,863,Complete,2018-05-11,10:32:17,,"Doc in, filing in minutes book. "
+2586,1473,New,2018-05-11,10:34:03,,
+2587,1364,Out,2018-05-11,10:34:00,By E-Mail,Doc declaration of dividend sent to client by email on 5 May 2018. 
+2588,904,Complete,2018-05-11,10:35:19,,Doc sent out to client. 
+2589,1238,Complete,2018-05-11,10:36:20,,Doc in on 25 April 2018. proceed to filing. 
+2590,1475,New,2018-05-11,11:14:28,,
+2591,1475,Cancel,2018-05-11,11:15:22,,2018-05-11: Cancelled due to double key in.
+2592,1476,New,2018-05-11,11:18:50,,
+2594,1477,New,2018-05-11,13:32:44,,
+2595,1478,New,2018-05-11,13:32:44,,
+2596,1479,New,2018-05-11,13:56:30,,
+2597,1326,Return,2018-05-11,14:06:24,,2018-05-07: Docs in. To submit S76 & ROA.
+2598,1326,SSM/Statutory,2018-05-11,14:07:11,,"2018-05-11: Submit S76 & ROA (S78) - Waiting Approval.
+2018-05-14: S76 is submitted."
+2599,719,Complete,2018-05-11,14:09:02,,2018-03-12: Incorporated.
+2600,1480,New,2018-05-11,14:09:42,,
+2601,643,Complete,2018-05-11,14:10:16,,2018-03-15: S58 (Appt of MD) is approved. Set up File.
+2602,1481,New,2018-05-11,14:34:46,,
+2603,1482,New,2018-05-11,15:09:06,,
+2604,1483,New,2018-05-11,15:16:48,,
+2605,1484,New,2018-05-11,15:33:53,,
+2606,1485,New,2018-05-11,15:37:18,,
+2607,1487,New,2018-05-11,16:51:40,,
+2608,1488,New,2018-05-14,08:36:23,,
+2609,1489,New,2018-05-14,08:52:14,,
+2610,1490,New,2018-05-14,10:02:34,,
+2611,1491,New,2018-05-14,10:32:15,,
+2612,1492,New,2018-05-14,10:45:02,,
+2613,1492,Out,2018-05-14,10:59:40,By E-Mail,2018-05-14: Email out to Jasmine. To email out tax invoice later.
+2614,1493,New,2018-05-14,11:19:29,,
+2615,1140,Complete,2018-05-14,11:23:02,,Returned & ctc on 07.05.2018
+2616,1101,Complete,2018-05-14,11:23:55,,Emailed CPO on 07.05.2018
+2617,1474,New,2018-05-14,11:25:15,,
+2618,1474,Complete,2018-05-14,11:25:23,,"For Ambank (M) opening.
+ctc & pass to Mr. Ryo on 11.05.2018"
+2619,1464,New,2018-05-14,11:26:32,,
+2620,1464,Complete,2018-05-14,11:28:43,,"Emailed to auditor, N.S. Wong & Co on 10.05.2018"
+2621,1337,New,2018-05-14,11:30:55,,
+2622,1336,New,2018-05-14,11:30:58,,
+2623,1335,New,2018-05-14,11:31:00,,
+2624,1273,New,2018-05-14,11:31:05,,
+2625,1272,New,2018-05-14,11:31:08,,
+2626,1341,AGM/FS/AR,2018-05-14,13:38:21,,2018-05-14: Courier out to Balakong (060301638454157)
+2627,1326,SSM/Statutory,2018-05-14,14:53:19,,2018-05-14: ROA (S78) Approved. S76 sumiited. To update ROM.
+2628,1302,Complete,2018-05-14,15:07:41,,SSM acknowledgement received on 14.05.2018
+2629,1498,New,2018-05-14,15:43:06,,
+2630,1239,Out,2018-05-14,16:20:29,Courier,2018-04-20: Courier out to client. (060301638454) by Citylink.
+2631,1239,Return,2018-05-14,16:22:12,,"2018-05-14: Docs Returned. Confirm Shares consideration RM10.
+"
+2632,1239,SSM/Statutory,2018-05-14,16:23:08,,2018-05-14: Submit LHDN stamping details. Waiting Notis Taksiran.
+2633,1499,New,2018-05-14,16:35:35,,
+2634,1500,New,2018-05-14,16:49:17,,
+2635,1501,New,2018-05-14,16:51:44,,
+2636,1502,New,2018-05-15,08:41:56,,
+2637,1460,Complete,2018-05-15,08:49:49,,Send by Wan @ 14/05/2018
+2638,1459,Complete,2018-05-15,08:50:14,,Send by Wan @ 14/05/2018
+2639,1327,Complete,2018-05-15,08:52:13,,submitted @ 14/05/2018
+2640,1134,Complete,2018-05-15,09:06:24,,Doc CTC Section 51 dated 2018-04-25 give to client together with share certificate (#102). Ack by Lily.
+2641,1307,Complete,2018-05-15,09:13:00,,"Sent out to client. Ack by Elaine Tan.
+"
+2642,1229,Out,2018-05-15,10:15:47,By E-Mail,"received on 15.05.2018 - MWRs change of auditor, TA & FYE
+                                         - Letter appoint auditor 
+
+Pending return DCRs change of auditor, TA & FYE"
+2643,1006,Out,2018-05-15,10:17:54,By E-Mail,letter resign received on 27.04.2018. S46 submit on 15.05.2018.
+2644,1036,AGM/FS/AR,2018-05-15,10:19:52,,reso received on 15.05.2018 with $. proceed circulate & SSM submission
+2645,1503,New,2018-05-15,10:49:01,,
+2646,1504,New,2018-05-15,11:23:18,,
+2647,1505,New,2018-05-15,11:55:13,,
+2648,1506,New,2018-05-15,11:55:13,,
+2649,1508,New,2018-05-15,13:07:59,,
+2650,1510,New,2018-05-15,14:07:34,,
+2651,1511,New,2018-05-15,14:12:34,,
+2652,1513,New,2018-05-15,14:56:50,,
+2653,1514,New,2018-05-15,16:19:05,,
+2654,1515,New,2018-05-15,16:34:39,,
+2655,1516,New,2018-05-15,18:12:47,,
+2656,1517,New,2018-05-15,18:12:47,,
+2657,1519,New,2018-05-16,08:43:00,,
+2658,1476,AGM/FS/AR,2018-05-16,09:42:59,,Doc AR sent out to client. Ack by Rina Stefyca. 
+2659,1521,New,2018-05-16,09:51:08,,
+2660,1037,Return,2018-05-16,09:50:37,,received on 15.05.2018 with $
+2661,1522,New,2018-05-16,11:46:34,,
+2662,1371,AGM/FS/AR,2018-05-16,12:10:32,,Send out doc on 2018-05-16. AR@2018-05-02
+2663,1371,AGM/FS/AR,2018-05-16,12:14:20,,Send out doc on 2018-05-16. Ack by Ms. Sean. AR@2018-05-02
+2664,1523,New,2018-05-16,13:13:27,,
+2665,1345,Complete,2018-05-16,13:58:49,,DCR@16.05.2018
+2666,1524,New,2018-05-16,14:34:05,,
+2667,1525,New,2018-05-16,15:58:52,,
+2668,1526,New,2018-05-16,16:22:35,,
+2669,1527,New,2018-05-16,16:23:11,,
+2670,1528,New,2018-05-16,16:40:03,,
+2671,1530,New,2018-05-16,16:48:49,,
+2672,1530,Cancel,2018-05-16,17:18:44,,""
+2673,1531,New,2018-05-16,17:20:24,,
+2674,1218,AGM/FS/AR,2018-05-17,09:28:21,,"docs in on 17.05.2018 & $.
+Pending FS@ 2014-09-30"
+2675,1532,New,2018-05-17,10:36:24,,
+2676,1532,Cancel,2018-05-17,10:39:21,,""
+2677,1533,New,2018-05-17,11:05:15,,
+2678,1534,New,2018-05-17,11:06:45,,
+2679,1535,New,2018-05-17,11:07:55,,
+2680,1536,New,2018-05-17,11:10:31,,
+2681,1537,New,2018-05-17,14:38:13,,
+2682,1538,New,2018-05-17,14:38:13,,
+2683,1539,New,2018-05-17,14:38:13,,
+2684,1540,New,2018-05-17,15:28:44,,
+2685,1541,New,2018-05-17,15:33:49,,
+2686,1542,New,2018-05-17,15:45:06,,
+2687,1542,Cancel,2018-05-17,15:47:20,,Double job created.
+2688,1543,New,2018-05-17,15:51:54,,
+2689,1544,New,2018-05-18,08:38:18,,
+2690,1544,Out,2018-05-18,08:53:50,By E-Mail,2018-05-18: Email out Reso to Waty (5th Floor)
+2691,1526,Complete,2018-05-18,08:56:01,,2018-05-16: Courier out to Seri Kembangan by Citylink.
+2692,1545,New,2018-05-18,09:04:07,,
+2693,1546,New,2018-05-18,09:33:53,,
+2694,1547,New,2018-05-18,10:13:08,,
+2695,1524,AGM/FS/AR,2018-05-18,10:25:01,,Sent to client by courier. 
+2696,1339,AGM/FS/AR,2018-05-18,10:26:03,,Doc sent out. Ack by Shukri
+2697,1510,AGM/FS/AR,2018-05-18,10:28:55,,Doc sent out. Ack by Shukri 
+2698,1513,AGM/FS/AR,2018-05-18,10:29:30,,Doc sent out . Ack by Shukri 
+2699,1493,AGM/FS/AR,2018-05-18,10:31:35,,Doc sent out. Ack by Shukri 
+2700,1503,AGM/FS/AR,2018-05-18,10:32:33,,Doc sent out. Ack by Shukri 
+2701,1498,AGM/FS/AR,2018-05-18,10:33:06,,Doc sent out. Ack by Shukri. 
+2702,1470,AGM/FS/AR,2018-05-18,10:33:46,,Doc sent out. Ack by Shukri. 
+2703,1548,New,2018-05-18,13:44:48,,
+2704,1549,New,2018-05-18,13:44:48,,
+2705,1547,Complete,2018-05-18,14:39:39,,send via ocs 126-142-630-515 on 18.05.2018
+2706,1550,New,2018-05-18,14:58:35,,
+2707,1553,New,2018-05-18,16:57:57,,
+2708,1554,New,2018-05-18,17:52:54,,

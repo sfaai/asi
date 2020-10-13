@@ -1,0 +1,74 @@
+﻿@model WebApplication1.CSCOBANK
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CSCOBANK</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ACTYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ACTYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EFFDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EFFDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TERDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TERDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENDDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENDDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.REM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STAMP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HKBANK.BANKDESC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HKBANK.BANKDESC)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

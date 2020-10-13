@@ -1,0 +1,20 @@
+﻿@model System.String
+
+<div class="checkbox">
+    <label>
+        @if (Model == "Y")
+        {
+            <input id="@ViewData.TemplateInfo.GetFullHtmlFieldId("")" name="@ViewData.TemplateInfo.GetFullHtmlFieldId("")"
+                   type="checkbox" class="checkbox style-1" checked="checked" value="Y" />
+                <input type="hidden" id="@ViewData.TemplateInfo.GetFullHtmlFieldId("")" name="@ViewData.TemplateInfo.GetFullHtmlFieldId("")" value="N">
+        }
+        else
+        {
+            <input id="@ViewData.TemplateInfo.GetFullHtmlFieldId("")" name="@ViewData.TemplateInfo.GetFullHtmlFieldId("")"
+                   type="checkbox" class="checkbox style-1" value="N" />
+                <input type="hidden" id="@ViewData.TemplateInfo.GetFullHtmlFieldId("")" name="@ViewData.TemplateInfo.GetFullHtmlFieldId("")" value="Y">
+
+        }
+        <span>@Html.LabelFor(m => m)</span>
+    </label>
+</div>

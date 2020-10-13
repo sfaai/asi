@@ -1,0 +1,104 @@
+﻿@model WebApplication1.CSPR
+
+@using (Html.BeginForm("SearchPost","CSPRs", FormMethod.Post, new { id = "SearchRecForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container form-check-inline" style="width:96vw">
+
+        @*<div class="form-group col-md-1">
+            <div class="align-text-bottom">
+                <br />
+                <input type="submit" value="Search" class="btn btn-lg btn-primary fa fa-filter fa-search" />
+            </div>
+        </div>*@
+        <div class="form-group col-md-2">
+            @Html.Label("Sort by", null, htmlAttributes: new { @class = "control-label" })
+            <div class="form-check-inline">
+                <button class="btn btn-lg btn-primary fa fa-search" onclick="document.getElementById('SearchRecForm').submit()"></button>
+
+                @Html.DropDownList("SORTBY", null, htmlAttributes: new { @class = "form-control" })
+
+            </div>
+        </div>
+
+        <div class="form-group col-md-3">
+            @Html.LabelFor(model => model.PRSNAME, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.PRSNAME, new { htmlAttributes = new { @class = "form-control" } })
+                
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.EMAIL, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.EMAIL, new { htmlAttributes = new { @class = "form-control" } })
+                
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.NATION, null, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.DropDownListFor(model => model.NATION, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+               
+            </div>
+        </div>
+
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.CONSTCODE, null, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.DropDownListFor(model => model.CONSTCODE, null, "No Selection", htmlAttributes: new { @class = "form-control" })
+               
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.MOBILE1, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.MOBILE1, new { htmlAttributes = new { @class = "form-control" } })
+               
+            </div>
+        </div>
+
+
+        <div class="form-group col-md-2">
+            @Html.LabelFor(model => model.DOB, htmlAttributes: new { @class = "control-label" })
+            <div>
+                @Html.EditorFor(model => model.DOB, new { htmlAttributes = new { @class = "form-control date datepicker", @Value = Model.DOB?.ToString("yyyy-MM-dd") } })
+
+            </div>
+        </div>
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    <script>
+        $("#SORTBY").change(function () {
+            $("#SearchRecForm").submit();
+        })
+
+
+        $('#CONSTCODE').change(function () {
+            $('#SearchRecForm').submit();
+        })
+
+        $('#NATION').change(function () {
+            $('#SearchRecForm').submit();
+        })
+
+
+        $("#DOB").change(
+function () {
+    if ($("#DOB").val() == "") {
+        $("#DOB").val("0001-01-01");
+    }
+}
+
+
+)
+
+    </script>
+}

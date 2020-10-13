@@ -1,0 +1,210 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using System.Web.Mvc;
+@using WebApplication1.Utility;
+
+@model IPagedList<WebApplication1.CSCOMSTR>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h2 class="h2 text-center">Company List</h2>
+    @Html.Action("Search")
+</div>
+
+<div class="border-0">
+
+
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th>
+                @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary h4" })
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().INTYPE)
+            </th>
+            <th class="text-nowrap">
+                @Html.DisplayNameFor(model => model.First().CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().INCDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKCTRY.CTRYDESC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKCONST.CONSTDESC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().PRINOBJStr)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().PINDCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SINDCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().WEB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COSTAT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COSTATD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().FILETYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().FILELOC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SEALLOC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKSTAFF.STAFFDESC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SPECIALRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ARRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CMMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SXCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SXNAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REFCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SEQNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAMP)
+            </th>
+
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr class="text-nowrap">
+                <td>
+                    @Html.ActionLink(" ", "Edit", new { id =  MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new {@class="fa fa-edit", title="Edit"})
+                    @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-folder", title = "Details" })
+                    @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CONO)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.INTYPE)
+                </td>
+                <td class="text-nowrap">
+                    @Html.DisplayFor(modelItem => item.CONAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.INCDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKCTRY.CTRYDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKCONST.CONSTDESC)
+                </td>
+                <td class="text-lg-left">
+                    @Html.DisplayFor(modelItem => item.PRINOBJStr)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.PINDCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SINDCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WEB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COSTAT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COSTATDSTR)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILETYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILELOC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SEALLOC)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKSTAFF.STAFFDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SPECIALREBool)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ARREBool)
+                </td>
+                <td class="text-nowrap">
+                    @Html.DisplayFor(modelItem => item.CMMTStr)
+                </td>
+                <td class="text-nowrap"> 
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SXCODE)
+                </td>
+                <td class="text-nowrap">
+                    @Html.DisplayFor(modelItem => item.SXNAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REFCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SEQNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+
+
+            </tr>
+        }
+
+    </table>
+
+</div>
+

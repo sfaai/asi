@@ -1,0 +1,105 @@
+﻿@model IEnumerable<WebApplication1.CSCODEB>
+@using WebApplication1.Utility;
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="width:96vw">
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REFNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REFDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DEEDDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().PRSCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CSPR.PRSNAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SECUREAMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ISSUEAMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DEBCOND)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DEBINFOStr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAMP)
+            </th>
+
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (Html.Action() == "Edit")
+                    {
+                        @Html.ActionLink(" ", "Edit", "CSCODEBs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), refno = item.REFNO }, new { @class = "fa fa-edit", title = "Edit" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Details", "CSCODEBs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), refno = item.REFNO }, new { @class = "fa fa-folder", title = "Details" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Delete", "CSCODEBs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), refno = item.REFNO }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                    else if (Html.Action() == "Details")
+                    {
+                        @Html.ActionLink(" ", "Details", "CSCODEBs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), refno = item.REFNO }, new { @class = "fa fa-folder", title = "Details" })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REFNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REFDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DEEDDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PRSCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CSPR.PRSNAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SECUREAMT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ISSUEAMT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DEBCOND)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DEBINFOStr)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+
+
+            </tr>
+        }
+
+    </table>
+
+</div>

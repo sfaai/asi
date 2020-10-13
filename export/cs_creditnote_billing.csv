@@ -1,0 +1,86 @@
+billingitem_id,company_id,billingitem_entrydate,billingitem_casefeecode,billingitem_billingdesc,billingitem_billingdetails,billingitem_feetype,billingitem_feecategory,billingitem_amount,billingitem_calculatedtax,billingitem_total,billingitem_tax,creditnote_id
+1,90,2018-01-03,AGM,IV06262@2017-07-12 : Overbilled kp AR @ 2016-12-31,"Billed RM150, paid RM100 to CCM 
+",Reimbursement,OR,50.00,0.00,50.00,6.00,1
+2,445,2018-01-05,AR/AGM,IV1706-10@2010-12-21: Overbilled AR & KP AR@2010-06-30,No a/c for submission,Reimbursement,OR,350.00,0.00,350.00,6.00,2
+3,258,2018-01-09,S78,IV05134@2017-03-01: Overbilled S78@2017-02-22,"Reason: No payment required for submission
+
+",Disbursement,SR,100.00,6.00,106.00,6.00,3
+4,336,2018-01-12,Sundry,IV02430@2016-12-19: Overbilled Self-ink Rubber Stamp ,Reason: Job has been cancelled,Reimbursement,OR,70.00,0.00,70.00,6.00,4
+6,132,2018-01-23,S105,DN096-16@2016-03-29: Overbilled kp F32A @ 2016-01-30,"- Billed RM75, paid RM37.50",Reimbursement,OR,37.50,0.00,37.50,6.00,6
+5,399,2018-01-23,AC,IV05130@2017-03-01: Overbilled FS@2016-08-31,Reason: No payment required for submission prior 2017-01-31,Reimbursement,OR,50.00,0.00,50.00,6.00,5
+19,385,2018-03-01,S15,B31305@2017-08-15: Overbilled Stamp Duty for Constitution,- Reason: Company did not adopt Constitution,Reimbursement,OR,100.00,0.00,100.00,6.00,13
+7,693,2018-02-07,AR/AGM,IV1419-13@2013-12-24: Overbilled AR fee 2013-12-31,Reason: No audited financial statement for couple submission,Reimbursement,OR,150.00,0.00,150.00,6.00,7
+20,385,2018-03-01,S15,B31305@2017-08-15: Overbilled SSM Filing Fee for Constitution,- Reason: Company did not adopt constitution,Reimbursement,SR,100.00,6.00,106.00,6.00,13
+21,385,2018-03-01,S15,B31305@2017-08-15: Overbilled Image of Constitution ,- Reason: Company did not adopt constitution,Reimbursement,SR,25.00,1.50,26.50,6.00,13
+8,68,2018-02-08,AC,IV05356@2017-03-24 : Overbilled kp 8th AR@2012-12-31,"Billed RM200, paid RM100 for AR@2016-12-31
+No AR@2012-12-31 filed ",Reimbursement,OR,100.00,0.00,100.00,6.00,8
+22,344,2018-03-05,AC,IV05208@2017-03-09: Overbilled FS@2016-08-31,Reason: No submission fee is required for Financial Statements year end 2016.,Reimbursement,OR,50.00,0.00,50.00,6.00,14
+16,407,2018-03-01,S15,B31168@2017-08-02: Overbilled Stamp Duty for Consitution,- Reason: Company did not adopt constitution,Reimbursement,OR,100.00,0.00,100.00,6.00,12
+34,364,2018-03-15,S105,IV07384@2017-11-10: Overbilled LHDN - S105@2018-02-14 (Stamping Fee),- Reason: Client paid to LHDN by using own Bank Draft (RM288.00),Reimbursement,OR,3.00,0.00,3.00,6.00,19
+23,611,2018-03-05,De-S551,IV06426@2017-07-28: Overbilled SSM De- Registration,Reason: Cancel De-Registration,Reimbursement,OR,100.00,0.00,100.00,6.00,15
+9,594,2018-02-08,S15,Incorporation,IV05533@2017-04-13: Overbilled Stamp duty Constitution ,Reimbursement,OR,100.00,0.00,100.00,6.00,9
+10,594,2018-02-08,S15,Incorporation,IV0533@2017-04-13: Overbilled SSM - Image for Constitution ,Reimbursement,SR,25.00,1.50,26.50,6.00,9
+11,594,2018-02-08,S15,Incorporation,"IV05533@2017-04-13: Overbilled SSM- Constitution
+Reason: No constitution adopted",Reimbursement,SR,100.00,6.00,106.00,6.00,9
+24,611,2018-03-05,CPO,IV06426@2017-07-28: Overbilled CPO (x2),Reason: Cancel De-Registration,Reimbursement,OR,30.00,0.00,30.00,6.00,15
+25,468,2018-03-06,S78,IV05679@2017-05-03: Overbilled Section 78,Reason: No payment required for submission,Reimbursement,SR,100.00,6.00,106.00,6.00,16
+26,799,2018-03-07,S15,IV07949@2018-01-15: Overbilled Section 14 (Incorporation Fee),- Reason: Incorporation cancelled. ,Reimbursement,OR,1000.00,0.00,1000.00,6.00,17
+27,799,2018-03-07,S15,IV07949@2018-01-15: Overbilled Supply of Corporate Info to Agencies,- Reason: Incorporation cancelled.,Reimbursement,SR,10.00,0.60,10.60,6.00,17
+12,422,2018-02-13,AC,IV07733@2017-12-20: Overbilled FS@2016-08-31,- No filing fee to SSM,Reimbursement,OR,50.00,0.00,50.00,6.00,10
+13,422,2018-02-13,DeReg,IV07750@2017-12-22: Overbilled Section 550,- De-reg job cancelled. ,Reimbursement,OR,100.00,0.00,100.00,6.00,10
+14,422,2018-02-13,DeReg,IV07750@2017-12-22: Overbilled CPO ,- De-reg job cancelled,Reimbursement,SR,15.00,0.90,15.90,6.00,10
+28,799,2018-03-07,S15,IV07949@2018-01-15: Overbilled Certificate of Incorporation,- Reason: Incorporation cancelled. ,Reimbursement,SR,25.00,1.50,26.50,6.00,17
+29,799,2018-03-07,S15,IV07949@2018-01-15: Overbilled CPO ,- Reason: Incorporation cancelled. ,Reimbursement,SR,15.00,0.90,15.90,6.00,17
+30,799,2018-03-07,S15,IV07949@2018-01-15: Overbilled Secretarial Fee,- Reason: Incorporation cancelled. ,Fee,SR,840.00,50.40,890.40,6.00,17
+31,799,2018-03-07,S15,IV07949@2018-01-15: Overbilled Statutory Stationery,- Reason: Incorporation cancelled,Disbursement,SR,160.00,9.60,169.60,6.00,17
+15,601,2018-02-14,S105,IV02886@2016-04-08: Overbilled LHDN Stamp duty,Job cancelled on 26/08/2016,Reimbursement,OR,15.00,0.00,15.00,6.00,11
+17,407,2018-03-01,S15,B31168@2017-08-02: Overbilled SSM Filing Fee for Constitution,- Reason: Company did not adopt constitution,Reimbursement,SR,100.00,6.00,106.00,6.00,12
+18,407,2018-03-01,S15,B31168@2017-08-02: Overbilled Image of constitution,- Reason: Company did not adopt constitution,Reimbursement,SR,25.00,1.50,26.50,6.00,12
+32,215,2018-03-14,S78,IV08113@2018-02-08: Overbilled S78 Filing Fee,- Reason: No filing fee for submission. ,Reimbursement,SR,100.00,6.00,106.00,6.00,18
+33,215,2018-03-14,S78,IV08113@2018-02-08: Overbilled Company Profile,- Reason: Did not purchase any company profile,Reimbursement,SR,15.00,0.90,15.90,6.00,18
+35,774,2018-03-19,AC,IV05141@2017-03-02: Overbilled SSM - FS@2016-08-31,- Reason: No payment required for submission,Reimbursement,OR,50.00,0.00,50.00,6.00,20
+52,135,2018-04-12,AC,IV07554@2017-11-29: Overbilled Kp FS@2016-10-31,"-Billed RM150, paid RM100 to CCM.",Reimbursement,OR,50.00,0.00,50.00,6.00,28
+64,492,2018-04-23,S15,IV05551@2017-04-14: Overbilled for;,i) Stamp Duty for Constitution,Reimbursement,OR,100.00,0.00,100.00,6.00,32
+55,593,2018-04-17,S15,iii) Stamp Duty for Constitution,"",Reimbursement,OR,100.00,0.00,100.00,6.00,29
+56,593,2018-04-17,S15,iv) CPO - L&E Safety Consulting Sdn. Bhd.,"",Reimbursement,SR,15.00,0.90,15.90,6.00,29
+47,421,2018-04-04,S15,IV05375@2017-03-27 : Overbilled SSM - Image for Constitution ,- Reason: Constitution is no longer compulsory to be adopted by Private Company.,Reimbursement,SR,25.00,1.50,26.50,6.00,26
+65,492,2018-04-23,S15,ii) SSM - Image for Constitution,"",Reimbursement,SR,25.00,1.50,26.50,6.00,32
+49,421,2018-04-04,S15,IV05375@2017-03-27 : Overbilled SSM - Certificate of Incorporation ,"- Reason: Billed RM50.00, Actual Paid RM25.00",Reimbursement,SR,25.00,1.50,26.50,6.00,26
+50,421,2018-04-04,S105,IV05375@2017-03-27 : Overbilled CPO - Shiny Paris SB,- Reason : Not purchase. ,Reimbursement,SR,15.00,0.90,15.90,6.00,26
+38,549,2018-03-20,"",iii) SSM - Constitution,"",Reimbursement,SR,100.00,6.00,106.00,6.00,21
+39,549,2018-03-20,S32,iv) CPO - Ecoverse Sdn. Bhd. ,"",Reimbursement,SR,15.00,0.90,15.90,6.00,21
+40,549,2018-03-20,"",v) Stamp Duty for Constitution,"",Reimbursement,OR,100.00,0.00,100.00,6.00,21
+36,549,2018-03-20,S32,IV05126@2017-03-01: Overbilled for:-,i) Standard Constitution Drafting ,Secretarial Work,SR,200.00,12.00,212.00,6.00,21
+37,549,2018-03-20,"",ii) SSM - Image for Constitution,"",Reimbursement,SR,25.00,1.50,26.50,6.00,21
+41,811,2018-03-23,S15,2. LHDN Stamping Fee - M&A,"Reason: Unsuccessed incorporation, payment made in OR2588@2007-11-28",Reimbursement,OR,205.00,0.00,205.00,6.00,22
+42,811,2018-03-23,S15,IV1404-07@2007-11-21: Overbilled incorporation filing fee:-,"1. SSM - Authorised Capital (100,000)",Reimbursement,OR,1005.00,0.00,1005.00,6.00,22
+43,806,2018-03-28,S58,IV07652@2017-12-13: Overbilled KP S58@2017-07-01,"- IV07652 billed RM200.00
+- Actual payment to SSM = RM150.00",Reimbursement,OR,50.00,0.00,50.00,6.00,23
+44,287,2018-04-04,AC,IV08397@2018-03-21: Overbilled Sec Work FS@2017-12-31,"- Billed RM150.00, Actual RM140.00
+- Reason : To follow last year''s billing.",Reimbursement,SR,10.00,0.60,10.60,6.00,24
+45,470,2018-04-04,AC,IV08396@2018-03-21 : Overbilled Sec Work FS@2017-12-31,"- Billed RM170.00, Actual RM140.00
+- Reason : To follow last year''s billing
+",Reimbursement,SR,30.00,1.80,31.80,6.00,25
+66,492,2018-04-23,S15,iii) SSM - Constitution,"",Reimbursement,SR,100.00,6.00,106.00,6.00,32
+48,421,2018-04-04,S15,IV05375@2017-03-27 : Overbilled SSM - Constitution ,- Reason: Constitution is no longer compulsory to be adopted by Private Company.,Reimbursement,SR,100.00,6.00,106.00,6.00,26
+67,492,2018-04-23,S15,iv) SSM - Certificate of Incorporation,"",Reimbursement,SR,25.00,1.50,26.50,6.00,32
+46,421,2018-04-04,S15,IV05375@2017-03-27 : Overbilled Stamp Duty for Constitution,Reason: Constitution is no longer compulsory to be adopted by Private Company.,Reimbursement,OR,200.00,0.00,200.00,6.00,26
+51,55,2018-04-10,S105,IV05875@2017-05-22 : Overbilled Stamp Duty for Transfer of Share,Reason : Job has been cancelled on 2017-08-18,Reimbursement,OR,3.00,0.00,3.00,6.00,27
+71,154,2018-05-11,CPO,IV05756@2017-05-09: Overbilled for:,- CPO (CCM E-Info),Reimbursement,SR,15.00,0.90,15.90,6.00,36
+72,154,2018-05-11,S105,- LHDN-Stamping of S105@2017-05-11,"(Billed RM6, actual paid to LHDN RM3)",Reimbursement,OR,3.00,0.00,3.00,6.00,36
+68,366,2018-05-03,S58,IV06042@2017-06-13: Overbilled KP F49@2016-10-29,"- Billed RM200, actual paid to CCM RM150",Reimbursement,OR,50.00,0.00,50.00,6.00,33
+73,170,2018-05-11,AC,IV05105-Overbilled for SSM-1st AR@2016-11-27 ,"Reason : AFS @ 2016-05-31 was not ready till deadline of AR@2016-11-27. Hence, no AR 2016 submitted. ",Reimbursement,OR,150.00,0.00,150.00,6.00,37
+75,550,2018-05-17,AR/AGM,IV04975@2017-02-06: Overbilled AR@2017-03-15,"Reason: New Companies Act 2016 indicate AR on anniversary date, i.e 2017-09-15. No AR submitted in March 2017",Reimbursement,OR,150.00,0.00,150.00,6.00,39
+57,508,2018-04-17,AC,IV07312@2017-11-02: Overbilled for:-,i) FS@2016-10-31,Reimbursement,OR,50.00,0.00,50.00,6.00,30
+58,508,2018-04-17,AC,ii) KP FS@ 2016-10-31,Reason: No filing fee for FS 2016 & FS filed on current date.,Reimbursement,OR,100.00,0.00,100.00,6.00,30
+70,693,2018-05-10,AC,IV08786@2018-05-04: Overbilled for SSM-FS@2013-06-30,Reason: No SSM filing fee for AFS prior 31 January 2017,Reimbursement,OR,50.00,0.00,50.00,6.00,35
+69,427,2018-05-07,S105,IV08462@2018-03-27: Overbilled LHDN S105@2018-04-16,"- Billed RM6, actual paid to LHDN RM3",Reimbursement,OR,3.00,0.00,3.00,6.00,34
+54,593,2018-04-17,S15,ii) Image for Constitution,"",Reimbursement,SR,25.00,1.50,26.50,6.00,29
+53,593,2018-04-17,S15,IV05441@2017-04-04: Overbilled for:,i) SSM - Constitution,Reimbursement,SR,100.00,6.00,106.00,6.00,29
+59,202,2018-04-19,S15,IV05559@2017-04-17: Overbilled for;,i) LHDN Stamping Fee - M&A,Reimbursement,OR,200.00,0.00,200.00,6.00,31
+60,202,2018-04-19,S15,ii) SSM - Lodgement of Constitution,"",Reimbursement,SR,100.00,6.00,106.00,6.00,31
+61,202,2018-04-19,S15,iii) SSM - Image for Constitution,"",Reimbursement,SR,25.00,1.50,26.50,6.00,31
+62,202,2018-04-19,S15,iv) CPO - WMF CRANE SDN. BHD.,"",Reimbursement,SR,15.00,0.90,15.90,6.00,31
+63,202,2018-04-19,S15,v) SSM - Copy of Certificate of Incorporation,"",Reimbursement,SR,10.00,0.60,10.60,6.00,31
+74,834,2018-05-15,WP,IV1364-12@2012-10-23: Overbilled for Advertising in Sun Media Corp SB,"No. S3960@2012-10-08
+Billed RM300, paid RM238.50",Reimbursement,OR,61.50,0.00,61.50,6.00,38

@@ -1,0 +1,341 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using System.Web.Mvc;
+@using WebApplication1.Utility;
+
+@model IPagedList<WebApplication1.CSCOMSTR>
+
+@{
+    ViewBag.Title = "Company List";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+
+        @Html.Action("Search")
+
+</div>
+
+<div class="border-0">
+
+
+    @Html.PagedListPager(Model, page => Url.Action( "Index" , new { page }),
+    new PagedListRenderOptions()
+    {
+        Display = PagedListDisplayMode.IfNeeded,
+        DisplayPageCountAndCurrentLocation = true,
+        DisplayItemSliceAndTotal = true,
+        UlElementClasses = new[] { "pagination" },
+        LiElementClasses = new[] { "page-item", "page-link" },
+        ContainerDivClasses = new[] { "page-item", "page-link" }
+    })
+    <div class="row form-inline"  style="width:97vw">
+        @Html.ActionLink(" Register", "RegisterList", new { id = "Basic" }, new { @class = "btn btn-sm fa fa-print", title = "print all selected register for companies" })
+        @Html.ActionLink(" Full Register", "RegisterList", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print all selected full register for companies" })
+        @Html.ActionLink(" Activity", "RegisterList", new { id = "Activity" }, new { @class = "btn btn-sm fa fa-print", title = "print all selected activities for companies" })
+        @Html.ActionLink(" Due to us", "RegisterList", new { id = "Outstanding" }, new { @class = "btn btn-sm fa fa-print", title = "print all selected outstanding item for companies" })
+        @Html.ActionLink(" Due to Client", "RegisterList", new { id = "Outstanding1" }, new { @class = "btn btn-sm fa fa-print", title = "print all selected outstanding item for companies" })
+        @Html.ActionLink(" Collection", "CollectionList", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print all selected collection status for companies" })
+        @Html.ActionLink(" Ostd staff", "StaffOstd", "Report", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print all selected client oustanding by staff for companies" }) 
+        @Html.ActionLink(" Ostd status", "CoStatOstd", "Report", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print all selected client oustanding by status for companies" })
+        
+        @Html.ActionLink(" Display Board", "Publish", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "Display list of private, public limted companies & limited liability partnership" })
+        @Html.ActionLink(" Listing", "Listing", new { id = "All" }, new { @class = "btn btn-sm fa fa-print", title = "print list of companies" })
+
+        @Html.Editor("RPT_START", new { htmlAttributes = new { @type = "date", @Value = ViewBag.RPT_START.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+        @Html.Editor("RPT_END", new { htmlAttributes = new { @type = "date", @Value = ViewBag.RPT_END.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+    </div>
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th>
+                @Html.ActionLink("Add", "Create", null, new { @class = "btn btn-primary h4" })
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CONO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().INTYPE)
+            </th>
+            <th class="text-nowrap">
+                @Html.DisplayNameFor(model => model.First().CONAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().INCDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKCTRY.CTRYDESC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKCONST.CONSTDESC)
+            </th>
+            <th  class="text-nowrap">
+                @Html.DisplayNameFor(model => model.First().PRINOBJStr)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.First().PINDCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SINDCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().WEB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COSTAT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COSTATD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().FILETYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().FILELOC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SEALLOC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().HKSTAFF.STAFFDESC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SPECIALRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ARRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().CMMT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SXCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SXNAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().REFCODE)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.First().SEQNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAMP)
+            </th>*@
+
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr class="text-nowrap">
+                <td>
+                    <nav class="navbar" style="padding:0 0 0 0; height:1rem;">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item dropdown">
+                                @Html.ActionLink(" ", "Edit", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-edit", title = "Edit" })
+                                @Html.ActionLink(" ", "Details", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-folder", title = "Details" })
+                                @Html.ActionLink(" ", "Delete", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-trash", title = "Delete" })
+                                <a class="nav-link dropdown-toggle  fa fa-print" href="#" id="navbardrop" data-toggle="dropdown"></a>
+                                <div class="dropdown-menu">
+                                    @*<a class="dropdown-item">*@
+                                        @Html.ActionLink(" Register", "Register", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-print", title = "Basic Register" })
+                                    @*</a>
+                                    <a class="dropdown-item">*@
+                                        @Html.ActionLink(" Full Register", "RegisterAll", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-print", title = "Full Register" })
+                                    @*</a>
+                                    <a class="dropdown-item">*@
+                                        @Html.ActionLink(" Activity Only", "RegisterActivity", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-print", title = "Activity Only" })
+                                    @*</a>
+                                    <a class="dropdown-item">*@
+                                        @Html.ActionLink(" Due to Us", "Outstanding", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-print", title = "Outstanding Items due to us" })
+                                         @Html.ActionLink(" Due to Client", "Outstanding1", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-print", title = "Outstanding Items due to client" })
+                                    @*</a>
+                                    <a class="dropdown-item">*@
+                                        @Html.ActionLink(" Collection", "CollectionView", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO) }, new { @class = "fa fa-print", title = "Collection Status" })
+                                   @*</a>*@
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COREGNO)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.INTYPE)
+                </td>
+                <td class="text-nowrap">
+                    @Html.DisplayFor(modelItem => item.CONAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.INCDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKCTRY.CTRYDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKCONST.CONSTDESC)
+                </td>
+                <td class="text-lg-left">
+                    @Html.DisplayFor(modelItem => item.PRINOBJStr)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.PINDCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SINDCODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WEB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COSTAT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COSTATDSTR)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILETYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILELOC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SEALLOC)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.HKSTAFF.STAFFDESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SPECIALREBool)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ARREBool)
+                </td>
+                <td class="text-nowrap">
+                    @Html.DisplayFor(modelItem => item.CMMTStr)
+                </td>
+                <td class="text-nowrap">
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SXCODE)
+                </td>
+                <td class="text-nowrap">
+                    @Html.DisplayFor(modelItem => item.SXNAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REFCODE)
+                </td>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.SEQNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>*@
+
+
+            </tr>
+        }
+
+    </table>
+    @Html.ActionLink(" Register", "RegisterList", new { id = "Basic", page = @ViewBag.page }, new { @class = "btn btn-sm fa fa-print", title = "print this page register for companies" })
+    @Html.ActionLink(" Full Register", "RegisterList", new { id = "All", page = @ViewBag.page }, new { @class = "btn btn-sm fa fa-print", title = "print this page full register for companies" })
+    @Html.ActionLink(" Activity", "RegisterList", new { id = "Activity", page = @ViewBag.page }, new { @class = "btn btn-sm fa fa-print", title = "print this page activity for companies" })
+    @Html.ActionLink(" Due to Us", "RegisterList", new { id = "Outstanding", page = @ViewBag.page }, new { @class = "btn btn-sm fa fa-print", title = "print this page outstanding items for companies" })
+    @Html.ActionLink(" Due to Client", "RegisterList", new { id = "Outstanding1", page = @ViewBag.page }, new { @class = "btn btn-sm fa fa-print", title = "print this page outstanding items for companies" })
+    @Html.ActionLink(" Collection", "CollectionList", new { page = @ViewBag.page }, new { @class = "btn btn-sm fa fa-print", title = "print this page collection status for companies" })
+</div>
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+
+                });
+
+            })
+        }
+
+        var ParamModel = null;
+        var rptStart = $('#RPT_START').val();
+        var rptEnd = $('#RPT_END').val();
+
+        $(document).ready(
+
+            function () {
+                rptStart = $('#RPT_START').val();
+                rptEnd = $('#RPT_END').val();
+                ParamModel = { "RPT_START": rptStart, "RPT_END": rptEnd }
+            })
+
+        $('#RPT_START').change(function () {
+
+
+            ParamModel.RPT_START = $('#RPT_START').val();
+            ParamModel.RPT_END = $('#RPT_END').val();
+
+
+            var jData = JSON.stringify(ParamModel);
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SetRptParam", "Home")',
+                data: jData,
+                //data: JSON.stringify( {RPT_START:'1/8/2018',RPT_END:'31/8/2018'} ),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    //alert(msg);
+                }
+            });
+
+        })
+
+        $('#RPT_END').change(function () {
+
+
+            ParamModel.RPT_START = $('#RPT_START').val();
+            ParamModel.RPT_END = $('#RPT_END').val();
+
+
+            var jData = JSON.stringify(ParamModel);
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SetRptParam", "Home")',
+                data: jData,
+                //data: JSON.stringify( {RPT_START:'1/8/2018',RPT_END:'31/8/2018'} ),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (msg) {
+                    //alert(msg);
+                }
+            });
+
+        })
+
+        //$('#COADDR').change( function() {
+        //    $("#REM").val($("#COADDR option:selected").val());
+        //})
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}

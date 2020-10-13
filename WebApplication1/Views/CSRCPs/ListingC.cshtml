@@ -1,0 +1,297 @@
+﻿@model IQueryable<WebApplication1.CSRCP>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Receipt Listing</title>
+    @Styles.Render("~/Content/css")
+
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+        }
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 400px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 70px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+            }
+
+            pre {
+                border:none;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="letter">
+            <header>
+                <div class="text-center">
+                    <h4 class="h4">@ViewBag.Company</h4>
+                    <br/>
+                    <u>Receipt Cancellation Listing from @ViewBag.RPT_START to @ViewBag.RPT_END</u>
+                </div>
+            </header>
+        </div>
+        <div id="main">
+  
+            <table class="table table-bordered table-hover table-responsive-lg table-sm">
+                <tr class="label-primary">
+      
+    
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CTRNO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CVDATE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CSCOMSTR.COREGNO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CSCOMSTR.CONAME)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CREM)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().VDATE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().TRNO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().RCAMT)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().HKRCMODE.RCMODE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().RCMAPCODE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().ISSDATE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().ISSREFNO)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().HKBANK.BANKDESC)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().HKRCISSLOC.ISSLOC)
+                    </th>
+
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().COMAMT)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().NETAMT)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().AllocAmt)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().REM)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().detcnt)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().refcnt)
+                    </th>
+
+
+                </tr>
+
+                @{
+                    decimal rcamt = 0;
+                    decimal taxamt = 0;
+                    decimal netamt = 0;
+                    decimal allocamt = 0;
+                    string myWarning = "White";
+                }
+
+                @foreach (var item in Model)
+                {
+
+                    rcamt += item.RCAMT;
+                    taxamt += item.COMAMT;
+                    netamt += item.NETAMT;
+                    allocamt += item.AllocAmt;
+                    if (item.NETAMT != item.AllocAmt)
+                    {
+                        myWarning = "rosybrown";
+                    }
+                    else
+                    {
+                        myWarning = "white";
+                    }
+                    <tr class="text-nowrap" style="background-color: @myWarning">
+   
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CTRNO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CVDATE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CONO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CSCOMSTR.CONAME)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CREM)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.VDATE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TRNO)
+                        </td>
+                        <td style="text-align:right">
+                            @Html.DisplayFor(modelItem => item.RCAMT)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HKRCMODE.RCMODE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RCMAPCODE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ISSDATE)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ISSREFNO)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HKBANK.BANKDESC)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HKRCISSLOC.ISSLOC)
+                        </td>
+
+
+                        <td style="text-align:right">
+                            @Html.DisplayFor(modelItem => item.COMAMT)
+                        </td>
+                        <td style="text-align:right">
+                            @Html.DisplayFor(modelItem => item.NETAMT)
+                        </td>
+                        <td style="text-align:right">
+
+
+                            @Html.DisplayFor(modelItem => item.AllocAmt)
+
+
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.REM)
+                        </td>
+                        <td style="text-align:right">
+                            @Html.DisplayFor(modelItem => item.detcntC)
+                        </td>
+                        <td style="text-align:right">
+                            @Html.DisplayFor(modelItem => item.refcntC)
+                        </td>
+
+                    </tr>
+
+
+                }
+                <tr>
+                    <td colspan="7" style="text-align:right"> <strong>Total</strong></td>
+                    <td> <strong>  @rcamt.ToString("N2")  </strong></td>
+                    <td colspan="6"></td>
+                    <td> <strong>  @taxamt.ToString("N2")  </strong></td>
+                    <td> <strong>  @netamt.ToString("N2")  </strong></td>
+                    <td> <strong>  @allocamt.ToString("N2")  </strong></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <footer>
+            <div class="row">
+
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

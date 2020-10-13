@@ -1,0 +1,242 @@
+﻿@model WebApplication1.CSDNM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Debit Note</title>
+    @Styles.Render("~/Content/css")
+
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .letter {
+            padding: 50px, 50px, 50px, 50px;
+            margin: 50px, 50px, 50px, 50px;
+            /*border: 1px solid black;*/
+            /*background-color: lightblue;*/
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+        }
+
+        @@media print {
+            header {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                /*background-color: #333;*/
+                padding: 20px;
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            footer {
+                /*background-color: #333;*/
+                width: 100%;
+                bottom: 0;
+                height: 400px;
+                position: relative; /* OldProperty */
+                position: static; /* updated Property */
+            }
+
+            pre {
+                border: none;
+            }
+        }
+
+        @@media print {
+            #main {
+                position: relative;
+                padding-top: 70px;
+                /*height: 1000px;*/
+                overflow: visible;
+                text-align: left;
+            }
+
+            pre {
+                border:none;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="letter">
+            <header>
+                <div class="text-center">
+                    <h3 class="h3">@ViewBag.Company</h3>
+                    <p>
+                        @ViewBag.Address
+                        <br />@ViewBag.Contact
+                    </p>
+                </div>
+            </header>
+        </div>
+        <div id="main">
+            <h3 class="h3"><u>Debit Note</u></h3>
+            <br />
+            <div class="row">
+                <div class="col-6" style="text-align:left">@Model.ATTN</div>
+                <div class="col-6" style="text-align:right">Ref : @Model.TRNO</div>
+            </div>
+            <div class="row">
+                <div class="col-6" style="text-align:left"><b>@Model.CSCOMSTR.CONAME (@Model.CSCOMSTR.COREGNO)</b></div>
+                <div class="col-6" style="text-align:right">Date : @Model.VDATE.ToString("dd MMM yyyy")</div>
+            </div>
+            <div class="row">
+                <div class="col-6">@ViewBag.Addr1</div>
+               
+            </div>
+            <div class="row">
+                <div class="col-6">@ViewBag.Addr2</div>
+
+            </div>
+            <div class="row">
+                <div class="col-6">@ViewBag.Addr3</div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <br />
+                    Attention : @Model.ATTN
+
+                </div>
+                <br />
+
+            </div>
+            <br />
+            @if (Model.CSDNDs.Count > 0)
+            {
+                <div class="row">
+                    <div class="col-1 " style="text-align:center;border-bottom: 1px solid black;">
+                        No.
+                    </div>
+                    <div class="col-7 " style="text-align:left; border-bottom: 1px solid black;">
+                        Particulars
+                    </div>
+                    <div class="col-2 " style="text-align:center; border-bottom: 1px solid black;">
+                        Type
+                    </div>
+
+                    <div class="col-2" style="text-align:right; border-bottom: 1px solid black;">
+                        RM
+                    </div>
+                    <br />
+                </div>
+            }
+            @{decimal total = 0; int cnt = 0; }
+
+            @foreach (CSDND Item in Model.CSDNDs)
+            {
+                total += Item.NETAMT;
+                cnt++;
+
+                <div class="row">
+                    <div class="col-1 " style="text-align:center;">
+                        @cnt
+                    </div>
+                    <div class="col-7 " style="text-align:left;">
+                        @Html.DisplayFor(item => Item.ITEMDESC)<br />
+                        @if (!Item.ITEMSPEC.IsEmpty())
+                        {
+                            <pre>@Html.DisplayFor(item => Item.ITEMSPEC)</pre>
+                        }
+                    </div>
+                    <div class="col-2 " style="text-align:center;">
+                        @Html.DisplayFor(item => Item.ITEMTYPE)
+                    </div>
+  
+                    <div class="col-2" style="text-align:right; ">
+                        @Html.DisplayFor(item => Item.NETAMT)
+                    </div>
+                </div>
+
+            }
+
+      
+            <div class="row">
+                <div class="col-1 " style="text-align:right;">
+
+                </div>
+                <div class="col-7 " style="text-align:left;">
+                    
+                </div>
+                <div class="col-2 " style="text-align:center;">
+                    Total 
+                </div>
+
+                <div class="col-2" style="text-align:right;border-bottom: 1px solid black;border-top: 1px solid black;">
+                    @total.ToString("N2")
+                </div>
+                <br />
+            </div>
+            <br />
+        </div>
+
+
+        <footer>
+            Please feel free to call us for payment collection or directly bank into our account and email us a copy of Bank in Slip/Transaction Receipt for our reference.
+            <br />
+            <br />
+            Account Name	: ASI SECRETARIAL SERVICES SDN. BHD.
+            <br />
+            Bank Name		: RHB Bank Berhad
+            <br />
+            Bank Account No	: 2142-31000-44202
+            <br />
+            Swift Code		: RHBBMYKL
+            <br />
+            <br />
+            ************************************   Tax Invoice will be issue upon received payment.   *********************************
+            <br />
+            <br />
+            Thank you.
+            <br />
+            ASI SECRETARIAL SERVICES SDN. BHD.
+            <br />
+            <br />
+            @ViewBag.StaffName
+            <br />
+            Secretarial Executive
+            <br />
+            * This is a computer generated statement. No signature is required.
+            <br />
+        </footer>
+
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

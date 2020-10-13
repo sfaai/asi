@@ -1,0 +1,3124 @@
+address_id,company_id,address_mailing,address_type,address_address,address_postal,address_city,address_state,address_country,address_contact,address_fax
+1,1,t,Business,"2 & 4, Jalan 1/75, 
+Off Jalan Kampung Pandan, 
+55100 Kuala Lumpur.
+Wilayah Persekutuan. ",00000,Other,Other,Austria,03-92829046,""
+2,2,t,Business,"Suite 17.1, Level 17, Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur, 
+Wilayah Persekutuan.",00000,Other,Other,Austria,032031 0010,""
+5,4,t,Business,"7-2, Jalan Datuk Haji 1,Taman Tan Yew Lai,58200 Kuala Lumpur Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+6,6,t,Business,"7-2, Jalan Datuk Haji 1,Taman Tan Yew Lai,58200 Kuala Lumpur Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+9,9,t,Business,"23A, Jalan PJS 10/32,
+Bandar Sri Subang,
+46000 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+16,20,t,Business,"45-1, Block D,
+Zenith Corporate Park,
+Jalan SS7/26,
+47301 Petaling Jaya, 
+Selangor Darul Ehsan",00000,Other,Other,Austria,03-7886 3751,""
+26,30,t,Business,"Lot 15, Kawasan Perindustrian Ringan Setapak,
+Jalan Usahawan 5 , Setapak,
+53200 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,603-40232180           603-41439133,603-40229552
+14,17,t,Business,"No. 18, Jalan Suasana 5/3A,
+Bandar Tun Hussien Onn,
+ 43200 Cheras, 
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+25,29,t,Business,"Restoran Sakura Kristal,
+Lot G14 & G15,
+Giant Hypermart Subang Jaya USJ 1,
+No. 1, Persiaran Subang Permai,
+47500 Subang Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+18,22,t,Resident,"Applied De-reg @ 13/8/2014
+ Q for audited account",00000,Other,Other,Austria,"",""
+8,8,t,Business,"E-8-6, Megan Avenue 1,
+No. 189, Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+4,3,t,Resident,"A8-8,Dua Residency Condo,
+211, Jalan Tun Razak,
+50400 Kuala Lumpur,
+ Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+22,26,t,Business,"Level 36, Menara Citibank,1
+65 Jalan Ampang, 
+50450 Kuala Lumpur,
+ Wilayah Persekutuan Malaysia",00000,Other,Other,Austria,"",""
+13,15,t,Business,"Level 2, Mofaz Headquarters Buildings,
+Wisma Mofaz,2007,
+ Jalan Damansara,
+60000 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+23,27,t,Business,"Suite 20-10, 20th Floor,
+Wisma UOA II, 21 Jalan Pinang,
+50450 Kuala Lumpur, 
+Wilayah Persekutuan",00000,Other,Other,Austria,030-21646988,03-21644988
+19,23,t,Business,"No. 39, Jalan Metro Perdana Barat 7,
+Sri Edaran Industrial Park,
+7 Miles, Kepong,
+52100 Kuala Lumpur
+ Wilayah Persekutuan",00000,Other,Other,Austria,016-2208609,""
+20,24,t,Business,"83, Jalan 4,Taman Tan Yew Lai,
+Batu 6, Jalan Puchong,
+58200 Kuala Lumpur
+ Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+12,14,t,Business,"17-2, Plaza 138,
+Jalan Ampang,
+50450 Kuala Lumpur
+ Wilayah Persekutuan",00000,Other,Other,Austria,03-21815444,""
+21,25,t,Business,"No. 25, Jalan PJU 3/44,
+Sunway Damansara Technology Park,
+47810 Petaling Jaya
+ Selangor Darul Ehsan",00000,Other,Other,Austria,03-7732 7448       03-7732 7746     03-7732 7749,""
+11,12,t,Business,"23B, Jalan PJS 10/32,
+Bandar Sri Subang,
+46000 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,03-58794877,03-56358100
+24,28,t,Business,"No. 4, Jalan BP 7/14,
+Bandar Bukit Puchong,
+47100 Puchong,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+10,11,t,Business,"23B, Jalan PJS 10/32,
+Bandar Sri Subang,
+46000 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+17,21,t,Business,"Block D-69-2, Jaya One,
+No. 72A, Jalan Universiti,
+46200 Petaling Jaya
+ Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+7,7,t,Business,"7-2, Jalan Datuk Haji 1,
+Taman Tan Yew Lai,
+58200 Kuala Lumpur 
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+15,19,t,Business,"No. 47B, Jalan 10/14,
+Pusat Perdagangan Tasik Perdana,
+Pandan Perdana,
+53300 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,012-206 6684,""
+28,32,t,Resident,"No 15, Jalan PJU 1A/25A,
+Ara Damansara,
+ 47301 Petaling Jaya,
+ Selangor",00000,Other,Other,Austria,"",""
+27,31,t,Business,"29-7, Jalan SP2/1,
+Serdang Perdana,
+Seksyen 2,
+43300 Seri Kembangan
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+29,33,t,Business,"No. 8, Jalan Industri USJ 1/1,
+Taman Perindustrian USJ 1,
+47600 Subang Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-80232166,603-80236177
+30,34,t,Business,"Suite 20-04, GTower,
+199, Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+31,35,t,Business,"No. 8B,
+Jalan Industri USJ 1/1,
+Taman Perindustrian USJ 1,
+47600 Subang Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+32,36,t,Business,"No. 8G,Jalan Industri USJ 1,
+Taman Perindustrian USJ 1,
+47600 Subang Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,603-80232166,603-80236177
+33,37,t,Business,"No. 8B,Jalan Industri USJ 1/1,
+Taman Perindustrian USJ 1,
+47600 Subang Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,03-802332166,03-80236177
+34,38,t,Business,"A-8-01, Block A,
+No. 2, Jalan PJU 1A/7A,
+Oasis Ara Damansara,
+47301 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,+603-7831 3837,+603-7831 3839
+35,39,t,Business,"A-8-01, Block A,
+No. 2, Jalan PJU 1A/7A,
+Oasis Ara Damansara,
+47301 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,+603-7831 3837,+603-7831 3839
+36,40,t,Business,"C-3-8, Block C,
+Level 5, UE3,
+Menara Uncang Emas,
+Jalan Loke Yew,
+55200 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+37,41,t,Business,"C-3-8, Block C,
+Level 5, UE3,
+Menara Uncang Emas,
+Jalan Loke Yew,
+55200 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+38,42,t,Business,"24-A,  Jalan BM 1/2,
+Taman Bukit Mayang Emas,
+47301 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+39,43,t,Business,"No. 52A-2 (Second Floor),
+Fraser Business Park,
+Jalan Metro Pudu, Off Jalan Yew,
+55100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,03-92213030,03-92212181
+40,44,t,Business,"201, Block G,
+Pusat Dagangan Phileo Damansara 1,
+No. 9, Jalan 16/11,
+Off Jalan Damansara,
+46350 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+41,45,t,Business,"6th Floor, Suite 17,IOI Business Park, 
+Persiaran Puchong Jaya Selatan, 
+Bandar Puchong Jaya,
+ 47100 Puchong, 
+Selangor",00000,Other,Other,Austria,03-80758059,03-80752059
+42,46,t,Business,"14, Jalan Maju 1/6,
+Taman Lembah Maju
+68000 Ampang
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+43,47,t,Business,"No. 9-3, Jalan PJU 5/9,
+Dataran Sunway,
+Kota Damansara,
+47810 Petaling Jaya
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+44,48,t,Business,"D-S-01-05, Metropolitan Square,
+Damansara Perdana,
+Jalan PJU 8/1,
+47820 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+45,49,t,Business,"65A, Jalan Pandan Indah 4/3A,
+Pandan Indah,
+55100 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+188,213,t,Business,"20 Sin Ming Lane,
+#08-53 Midview City,
+573968 Singapore",00000,Other,Other,Austria,"",""
+46,50,t,Business,"Lot L2-09, Level 2,
+Menara Weld,
+76 Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+47,51,t,Business,"65A, Jalan Pandan Indah 4/3A,
+Pandan Indah,
+55100 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+48,52,t,Business,"C-3-8, Block C,
+Level 5, UE5
+Menara Uncang Emas,
+Jalan Loke Yew,
+55200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+49,53,t,Business,"Level 20-04, GTower,
+199, Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+50,54,t,Business,"Suite 20.05 & 20.07,
+Level 20, GTower,
+199 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+51,55,t,Business,"Suite 16-1, Level 16,
+Menara Weld,
+76 Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+52,56,t,Business,"Suite 16-1, Level 16,
+Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+53,57,t,Business,file above shela,00000,Other,Other,Austria,"",""
+54,58,t,Business,"Smart Reader Kids
+No. 13-6-1,
+Aked Esplanad, Jalan 13/155B,
+Bukit Jalil,
+57000 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+55,59,t,Business,"Level 25M, Cap Square Tower,
+No. 10, Jalan Munshi Abdullah,
+50100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+56,62,t,Resident,"J2-1-4, Desa Pandan,
+Jalan 3/76E,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+57,63,t,Business,"No 34-G , Jalan Puteri 4/8,
+Bandar Puteri Puchong,
+47100 Puchong
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+58,64,t,Business,"No. 113, JalanTiti Panjang,
+32200 Lumut
+Perak Darul Ridzuan",00000,Other,Other,Austria,"",""
+59,65,t,Resident,"29  Jalan BU 3/7,
+Bandar Utama,
+47800 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-77296288,603-89967988
+60,66,t,Business,"3A, Jalan Megah 18,
+Taman Megah Cheras,
+43200 Cheras
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+61,67,t,Business,"Suite 17-1, Level 17,
+Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+62,68,t,Business,"Apt Blk 317C, Yishun Ave 9,
+#03-252
+ 763317 Singapore",00000,Other,Other,Austria,"",""
+63,69,t,Business,"No. 113, Jalan Titi Panjang,
+32200 Lumut 
+Perak Darul Ridzuan",00000,Other,Other,Austria,"",""
+64,70,t,Business,"B-5-20, Block B, Ativo Plaza,
+No.1, Jalan PJU 9/1,
+Damansara Avenue,
+Bandar Sri Damansara PJU 9,
+52200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",603-21622762
+65,71,t,Business,"E-9-21, Plaza Mont Kiara,
+No 2, Jalan Kiara, Mont Kiara,
+50480 Kuala Lumpur 
+Wilayah Persekutuan",00000,Other,Other,Austria,603-61438833,603-62438833
+66,72,t,Business,"Plot 78, Kawasan Perindustrian
+Fasa 3,
+ 32040 Sri Manjung, 
+Perak Darul Ridzuan",00000,Other,Other,Austria,"",""
+67,73,t,Business,"65A, Jalan Pandan Indah 4/3A,
+Pandan Indah,
+55100 Kuala Lumpur
+ Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+68,74,t,Resident,"No. 8, Jalan PJU 3/20C,
+Tropicana Indah,
+Kota Damansara,
+47810 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+69,75,t,Business,"CapSquare Tower, Level 25M,
+No. 10, Jalan Munshi Abdullah,
+50100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+70,76,t,Business,"B-8-1, Northpoint Office,
+Mid Valley City,
+No. 1, Medan Syed Putra Utara,
+59200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,03-22848488,03-22848488
+72,78,t,Business,"S-09-08, First Subang Mall,
+Jalan SS15/4G,
+47500 Subang Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+73,79,t,Business,"Unit 502, Block A,
+Pusat Dagangan Phileo Damansara 2,
+No. 15, Jalan 16/11,
+Off Jalan Damansara,
+46350 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+74,80,t,Business,"No. 11A, Jalan SS 20/11,
+Damansara Utama,
+47400 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+76,82,t,Business,"No. 25, Jalan PJU 3/44,
+Sunway Damansara Technology Park,
+47810 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+77,83,t,Business,"Suite 16-1, Level 16,
+Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+78,84,t,Business,"Suite 20-04, Level 20, GTower,
+199, Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+79,90,t,Business,"No. 39, Jalan 16/155C,
+Bandar Bukit Jalil,
+57000 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+81,95,t,Business,"No. 10A, Jalan 17/155C,
+Bandar Bukit Jalil,
+57000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-89949799,603-89949299
+75,81,t,Business,"Suite 20.04, GTower,
+199, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+80,92,t,Business,"Lot 3-046, Jalan 1/149E,
+Endah Parade,
+Taman Sri Endah,
+Bandar Baru Sri Petaling,
+57000 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+82,98,t,Business,"A1-1-2, No. 1, Solaris Dutamas,
+Jalan Dutamas, Taman Sri Hartamas,
+50480 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+83,99,t,Business,"Level 36, Menara Citibank,
+165 Jalan Ampang,
+50450 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+84,100,t,Resident,"17G, 17th Floor , 
+GCB Court Condo,
+ No. 332B,Jalan Ampang,
+ 50450 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+85,101,t,Business,"No. 6, Jalan 2/10B,
+Spring Crest Industrial Park,
+68100 Batu Caves,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+86,102,t,Resident,"15, Jalan PJU 1A/25A,
+Ara Damansara,
+47301 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+87,103,t,Business,"E205, Level 2, East Wing,
+Metropolitan Square Mall,
+Jalan PJU 8/1,
+Bandar Damansara Perdana,
+47820 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+88,104,t,Business,"46-3 (3rd Floor), Jalan Wangsa Permai 2/5,
+Taman Wangsa Permai,
+52100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+89,105,t,Business,"Lot 5178,
+Balakong Jaya Light Industrial
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,03-89623233,03-89623188
+90,106,t,Business,"D-19-01, Sunway Nexis,
+No. 1, Jalan PJU 5/1,
+Kota Damansara,
+47810 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+91,107,t,Business,"L2-S3C, IPC Shopping Centre,
+No. 2, Jalan PJU 7-2,
+Mutiara Damansara,
+47800 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+92,108,t,Business,"36th Floor, Menara Maxis,
+KLCC, Off Jalan Ampang,
+50088 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+93,109,t,Business,"14-02, Level 14,
+G Tower, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+94,110,t,Business,"Suite 20-10, 20th Floor,
+Wisma UOA II, 21 Jalan Pinang,
+50450 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+95,111,t,Business,"No. 38-40, 2nd Floor,
+Guang Zhou Commercial Centre,
+Jalan Tun Tan Siew Sin,
+50100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,603-89614678,""
+96,112,t,Business,"50, Jalan Pandan 7/2,
+Pandan Jaya,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+97,113,t,Business,"D1-3, 3rd Floor,
+Dataran Palama,
+Jalan Selaman Satu,
+68000 Ampang,
+Selangor Darul Ehsan",00000,Other,Other,Austria,03-42704338,03-42703438
+98,114,t,Business,"Level 33, ILHAM Tower,
+#8, Jalan Binjai,
+50450 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+99,115,t,Business,"No.22, Jalan Setia Impian U13/8E,
+Setia Alam,
+40170 Shah Alam,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+100,116,t,Business,"Level 20, Menara Standard
+Chartered, 30,
+Jalan Sultan Ismail,
+50250 Kuala Lumpur.
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+101,117,t,Business,"Unit 341B, 3rd Floor, Block A,
+Kelana Centre Point,
+No. 3, Jalan SS7/19,
+47301 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-78037322,603-78034121
+102,118,t,Business,"No.8, Jalan Sepadu D25/D,
+Taman  Perindustrian Axis,
+Seksyen 25,
+40400 Shah Alam,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+103,119,t,Business,"Suite 16.1, Level 16,
+Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,603-20310010,603-20311998
+104,120,t,Business,"No. 11, Seventy Damansara,
+Jalan Damansara,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+105,121,t,Resident,"332B-18G, 18th Floor GCB Court,
+Jalan Ampang,
+50450 Kuala Lumpur, W. P.",00000,Other,Other,Austria,"",""
+106,122,t,Business,"B-16-05, ONE Damansara Condominium,
+Jalan PJU 10/3C Damansara Damai,
+47830 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+107,123,t,Resident,"No.332B-18G,18th Floor,GCB Court
+Jalan Ampang,
+50450 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+108,124,t,Business,"8B, Jalan Sepadu D25/D,
+Taman Perindustrian Axis,
+Seksyen 25,
+40400 Shah Alam,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+109,125,t,Resident,"No. 6, Jalan 203B,
+20 Trees,
+Taman Melawati Indah,
+Gombak,
+53100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+110,126,t,Business,"C-39-1, Jalan C180/1
+Dataran C180,
+43200 Cheras
+Selangor Darul Ehsan",00000,Other,Other,Austria,012-7775187               03-7495 5901,1700 81 3164
+112,128,t,Business,"C-39-1, Jalan C180/1,
+Dataran C180,
+43200 Cheras,
+Selangor Darul Ehsan",00000,Other,Other,Austria,017-4072133         03-7499 2331,1700 81 3165
+113,129,t,Business,"No. 8, Jalan 3, 20 Trees West,
+Taman Melawati Indah,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+114,130,t,Business,"46-3 (3rd Floor), Jalan Wangsa 2/5,
+Taman Wangsa Permai,
+52100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-62760333             603-62747833,603-62766933
+115,131,t,Business,"19-20, Level 19, Wisma Zelan,
+No. 1, Jalan Tasik Permaisuri 2,
+Bandar Tun Razak,
+56000 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+116,132,t,Resident,"87, Jalan Indah 11,
+Taman Cheras Indah,
+56100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+117,133,t,Business,"Unit 16-1, Level 16,
+Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+118,134,t,Other,"No. 23, Lorong PJS7/7K,
+Bandar Sunway,
+46150 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+119,135,t,Business,"No. 75, LG,
+Jalan Bukit Bintang,
+Wisma Golden City,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-2433757,""
+120,136,t,Business,"Suite 16-1, Level 16,
+Menara Weld,
+76 Jalan Raja Chulan,
+50200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+121,137,t,Business,"No. 26A, Jalan PJS 7/3A,
+Bandar Sunway,
+46150 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+122,138,t,Business,"Suite 16-1, Level 16,
+Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+123,139,t,Business,"Suite 16-1, Level 16,
+Menara Weld,
+76 Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+124,140,t,Business,"14 Jalan Jujur 2,
+Block 3, Bandar Tun Razak,Cheras,
+ 56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+173,194,t,Business,"No. 24A, 1st Floor,
+Jalan SS19/1D,
+47500 Subang Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+125,141,t,Business,"B-5-20, Block B, Ativo Plaza,
+No.1, Jalan PJU 9/1,
+Damansara Avenue,
+Bandar Sri Damansara PJU 9,
+52200 Kuala Lumpur, Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+126,142,t,Business,"B-5-20, Block B, Ativo Plaza,
+No.1, Jalan PJU 9/1,
+Damansara Avenue,
+Bandar Sri Damansara PJU 9,
+52200 Kuala Lumpur, Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+127,143,t,Business,"140, Block A,
+Ground Floor Lobby C,
+Kompleks Kelana Centre Point,
+No. 3, Jln SS7/19, Kelana Jaya
+47301 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,019-3206689     ,""
+128,144,t,Resident,"No 2, Jalan USJ3D/1,
+47500 Subang Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+129,145,t,Business,"Block 5-4-7 Jalan 2/127,
+Taman Gembira,
+58200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+130,146,t,Business,"No. 92B,
+Jalan Sentral 28,
+Taman Nusa Sentral,
+79100 Nusajaya,
+Johor Darul Takzim",00000,Other,Other,Austria,"",""
+131,147,t,Business,"Suite 17-1, Level 17,
+Menara Weld,
+76 Jalan Raja Chulan,
+50200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-20310010,""
+132,148,t,Business,"1-17, First Floor,
+Quill City Mall,
+Jalan Sultan Ismail
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+133,149,t,Business,"No. 169, Tingkat 2,
+Jalan Legenda 1,
+Leganda Heights,
+08000 Sungai Petani
+Kedah Darul Aman",00000,Other,Other,Austria,"",""
+134,150,t,Business,"35-3, Jalan PJU 1/37,
+Block H, JKM Buidling,
+Dataran Prima,
+47301 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+135,152,t,Business,"11A, Jalan SS 20/11,
+Damansara Utama,
+47400 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+136,153,t,Business,"Unit 502, Block A,
+Pusat Dagangan Phileo Damansara II,
+No. 15, Jalan 16/11,
+Off Jalan Damansara,
+46350 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+137,154,t,Business,"
+Lot 11.09, 11th Floor,
+Wisma Cosway,
+No. 88, Jalan Raja Chulan,
+50200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+138,155,t,Business,"Suite 16. 1, Level 16,
+Menara Weld,
+76 Jalan Raja Chulan,
+50200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+139,157,t,Business,"Suite 16-1, Level 16,
+Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+140,159,t,Business,"No.1, Jalan Tun Teja 35/19C,
+Alam Impian Shah Alam,
+47470 Shah Alam",00000,Other,Other,Austria,"",""
+141,160,t,Resident,"14 Jalan Jujur 2, Block 3,
+Bandar Tun Razak Cheras,
+56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+142,161,t,Business,"Lot G-18, Ampang Point Shopping Center,
+Jalan Mamanda 3,
+68000 Ampang 
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+143,162,t,Business,"201, Block G,
+Pusat Dagangan Phileo Damansara 1,
+No. 9, Jalan 16/11,
+46350 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+144,163,t,Business,"No.7, Jalan SS 23/11,
+Taman SEA,
+47400 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+145,164,t,Resident,"Lot 1120, Jalan BS 7/7,
+Kawasan Perindustrian
+Bukit Serdang,
+43300 Seri Kembangan,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+146,165,t,Business,"Suite 16-1, Level 16,
+Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+147,166,t,Business,"75 L/G,
+Jalan Bukit Bintang,
+Wisma Golden City,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+148,167,t,Business,"Level 2, Wisma Mofaz,
+2007, Jalan Damansara,
+60000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+149,168,t,Business,"S-09-08,
+First Subang Mall,
+Jalan SS15/4G,
+47500 Subang Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+150,169,t,Business,"No. 3, Jalan Lateh,
+Singapore 359104",00000,Other,Other,Austria,"",""
+151,170,t,Business,"61B, Jalan Anggerik Vanilla AB,
+Seksyen 31/AB,
+Kota Kemuning,
+40460 Shah Alam
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+152,171,t,Business,"No. 45-1,
+Jalan Puteri 5/20,
+Bandar Puteri Puchong,
+47100 Puchong,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+153,172,t,Business,"Suite 17-1, Level 17,
+Menara Weld,
+76 Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+154,174,t,Business,"E-7-1, Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+155,176,t,Business,"C-39-1, Jalan C180/1,
+Dataran C180,
+43200 Cheras,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+156,177,t,Business,"No. 5, Soon Lee Street,
+#03-41, Pioneer Point,
+Singapore 627607",00000,Other,Other,Austria,6397 4951/4952,6397 4953
+157,178,t,Business,"Suite 16.1, Level 16,
+Menara Weld,
+76 Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+158,179,t,Resident,"Lot 6583A,
+Kampung Paya Jaras Hilir,
+47000 Sungai Buloh
+Selangor",00000,Other,Other,Austria,"",""
+159,180,t,Resident,"17G, 17th Floor,
+GCB, Court Condo,
+N0.332B, Jalan Ampang,
+50450 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+160,181,t,Business,"Unit No A-18-4, 18th Floor Block A,
+Northpoint Offices, Mid Valley City,
+No 1, Medan Syed Putra Utara,
+59200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+161,182,t,Business,"1st Floor, No. 28,
+Travilion Commercial Centre,
+Jalan Padungan,
+93100 Kuching
+Sarawak",00000,Other,Other,Austria,"",""
+162,183,t,Business,"Suite 16-1, Level 16,
+Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+163,184,t,Business,"A-29-3A, Level 3A,
+3 Two Square,
+No. 2 Jalan 19/1, Section 19,
+46300 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+164,185,t,Business,"A-29-3A, Level 3A,
+3 Two Square,
+No. 2 Jalan 19/1, Section 19,
+46300 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+165,186,t,Business,"E-7-1,Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+166,187,t,Business,"61B, Jalan Anggerik Vanilla AB,
+Seksyen 31/AB, Kota Kemuning,
+40460 Shah Alam,
+Selangor",00000,Other,Other,Austria,"",""
+167,188,t,Business,"A-29-3A, Level 3A,
+3 Two Square,
+No. 2 Jalan 19/1, Section 19,
+46300 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+168,189,t,Business,"A-29-3A, Level 3A,
+3 Two Square,
+No. 2 Jalan 19/1, Section 19,
+46300 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+169,190,t,Business,"30A, Jalan Kemuja,
+Off Jalan Bangsar,
+59000 Kuala Lumpur",00000,Other,Other,Austria,"",""
+170,191,t,Business,"A-29-3A, Level 3A,32 Square,
+No. 2 Jalan 19/1,
+46300 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+171,192,t,Resident,"D-8-11, 
+Casa Tropicana Condominium,
+Persiaran Tropicana,
+47410 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+172,193,t,Business,"Suite 16.1, Level 16,
+Menara Weld,
+76 Jalan Raja Chulan,
+50200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+174,195,t,Resident,"No. 9-2, Jalan 2/115A,
+Jalan Kuchai Lama,
+Taman Pagar Ruyong,
+50200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+175,197,t,Business,"A-29-3A, Level 3A,
+3 Two Square,
+No. 2 Jalan 19/1, Section 19,
+46300 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+176,198,t,Business,"Unit 2-3, 3rd Floor,
+3rd Mile Square,
+No. 151, Old Klang Road,
+58100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+177,199,t,Business,"No. 45-1,Jalan Puteri 5/20,
+Bandar Puteri Puchong,
+47100 Puchong,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+178,200,t,Business,"
+Lot 8268,, Jalan Tujuan,
+SS 18/1 Persiaran Tujuan,
+47500 Subang Jaya
+Selangor",00000,Other,Other,Austria,"",""
+179,201,t,Business,"89-1, Jalan Radin Tengah,
+Bandar Sri Petaling,
+57000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+180,203,t,Business,"D17, 1st Floor,
+Block D, Plaza Pekeliling,
+Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,603-40444215,603-40444211
+181,204,t,Business,"No. 30, Jalan Istimewa 5,
+Taman Perindustrian Cemerlang,
+Ulu Tiram,
+81800 Johor Bahru,
+Johor Darul Takzim.",00000,Other,Other,Austria,"",""
+182,205,t,Other,"B-11-17, Block B, Lestari Apartment,
+Jalan Tasik Permaisuri 3, Bandar Sri Permaisuri,
+Cheras, 
+56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+184,208,t,Other,"52A, Villa Laman Tasik,
+Bandar Sri Permaisuri,
+56000 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+186,210,t,Business,"Suite 18.01(A), 18th Floor,
+Kenanga International,
+Jalan Sultan Ismail,
+50250 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+187,212,t,Business,"Unit D08-13A, Capital 4, Oasis Square,
+No.2,Jalan PJU 1A/7A,
+Oasis Damansara,
+47301 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+189,214,t,Business,"Units G2, 3, 3A & G5,
+The Capsquare Residences,
+No.2 Persiaran Capsquare,
+50100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+191,217,t,Business," 19-1, Plaza Danau 2, 
+Jalan 5/109F,Taman Danau Desa,
+58100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+192,218,t,Resident,"No.38, Jalan Sutera 2/2,
+Taman Sutera,
+43000 Kajang
+Selangor
+ Malaysia",00000,Other,Other,Austria,"",""
+194,220,t,Other,"3A, Lorong Damai 11,
+Off Jalan Damai,
+55000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+195,221,t,Business,"Suite 1-02, 1st Floor,
+Menara Hap Seng,
+Jalan P.Ramlee,
+50250 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+196,222,t,Business,"B-3-1, Plaza Damas,
+60, Jalan Sri Hartamas 1,
+Sri Hartamas 1,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+197,223,t,Business,"B-3-1, Plaza Damas,
+60, Jalan Sri Hartamas 1,
+Sri Hartamas 1,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+198,224,t,Resident,"B-3-1, Plaza Damas,
+60, Jalan Sri Hartamas 1,
+Sri Hartamas 1,
+50480 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+199,225,t,Business,"Lot No. G41, Ground Floor, The Curve,
+No. 6, Jalan PJU 7/3, Mutiara Damansara,
+47810 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+200,226,t,Business,"A-5-1, Level 7, Block A,
+Menara Uncang Emas,
+Viva Home Shopping Mall,
+No.85, Jalan Loke Yew,
+55200 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+201,227,t,Business,"Suite 17.06, G-Tower
+199 Jalan Tun Razak
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+202,228,t,Business,"Suite 17-06, 17th Floor,
+G-Tower,
+199 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+203,229,t,Business,"Unit D1-6-11, Block D1,
+Solaris Dutamas,
+No.1, Jalan Dutamas 1,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+204,230,t,Business,"No. 30A & B, Jalan Jernai,
+Medan Idaman Business Centre,
+Batu 5, Jalan Gombak,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+205,231,t,Business,"No. 30A & B,Jalan Jernai,
+Medan Idaman Business Centre,
+Batu 5, Jalan Gombak,
+53100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+206,232,t,Business,"No. 28, Jalan PJU 1A/8,
+Taman Perindustrian Jaya,
+47200 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+207,233,t,Other,"No. 10,Jalan Perkasa 5,
+Taman Maluri,
+56100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+208,234,t,Business,"Suite 17-06, 17th Floor, G-Tower,
+199 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+209,235,t,Business,"No.13, Jalan Budiman,
+Budiman Business Park,
+Jalan Sungai Long,
+43000 Kajang,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+210,236,t,Business,"No.11, Nouvelle Industrial Park,
+Lorong Teknologi B,
+Taman Sains Selangor 1,
+Kota Damansara PJU 5,
+47810 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+211,237,t,Business,"No. 20 & 22, Jalan Wangsa,
+Wangsa Biz Avenue,
+Off Jalan 34/26,
+Taman Sri Rampai,
+53300 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+212,238,t,Business,"No. 2 & 4, Jalan 1/75,
+Off Jalan Kampung Pandan,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+213,239,t,Business,"2 & 4, Jalan 1/75,
+Off Jalan Kg. Pandan,
+55100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+214,244,t,Business,"B-3-1, Plaza Damas,
+60, Jalan Sri Hartamas 1,
+Sri Hartamas,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+215,246,t,Business,"No. 77-3, Medan Setia 1,
+Plaza Damansara,
+Bukit Damansara,
+50490 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,603-26983399,603-26983366
+216,247,t,Business,"No.54A, Jalan Satu D,
+Kampung Baru Subang,
+40150 Shah Alam
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+217,248,t,Business,"No. 30A & B, Jalan Jernai,
+Medan Idaman Business Centre,
+Batu 5, Jalan Gombak,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-40246572,60340246571
+219,251,t,Business,"No. 8, Jalan Astaka U8/83,
+Seksyen U8,
+Bukit Jelutong,
+40150 Shah Alam,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+220,252,t,Business,"No. 25, Jalan Kasturi 3,
+Plaza Kasturi,
+Off Jalan Balakong, Batu 11,
+43200 Cheras,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,603-90746196,""
+221,253,t,Business,"25, Jalan Kasturi 3,
+Plaza Kasturi,
+Off Jalan Balakong, Batu 11,
+43200 Cheras,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+223,255,t,Business,"No. 61, Ground Floor,
+Jalan Sultan Ismail,
+50250 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+224,256,t,Business,"No. 15, Jalan Bendahara 12/7,
+Seksyen 7, Bandar Mahkota Cheras,
+Batu 9,
+43200 Cheras
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+225,258,t,Business,"Level 13,
+Menara Tokio Marine Life,
+No.189 Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+226,260,t,Business,"No. 17, Jalan Tembaga SD 5/2,
+Bandar Sri Damansara,
+52200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+227,261,t,Business,"72-1, Fraser Business Park,
+Jalan Metro Pudu,
+Off Jalan Loke Yew,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+228,262,t,Business,"Pearl Point Shopping Mall,
+Lot 1.0.38, Ground Floor,
+Batu 5, Jalan Klang Lama,
+58200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+229,263,t,Business,"No 11, Lorong Teknologi B,
+Nouvelle Industrial Park,
+Taman Sains Selangor 1,
+Kota Damansara PJU 5 ,
+47810 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,603-61579330,603-61571320
+230,264,t,Business,"119-2, Jalan Selingsing 5,
+Taman Sri Kuching,
+51200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,036-2526188,603-62523188
+231,265,t,Business,"45-1 & 47-1, Jalan Puteri 2/1,
+Bandar Puteri,
+47100 Puchong,
+Selangor Darul Ehsan",00000,Other,Other,Austria,012-2933793,""
+232,266,t,Business,"B-3-5, Mont Kiara Aman,
+Jalan Kiara 2,
+Sri Hartamas,
+Mont Kiara,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+233,267,t,Other,"No. 56,
+Jalan Setiamurni Satu,
+Bukit Damansara,
+50490 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+234,268,t,Business,"The Troika,
+Suite 2-3B & 2-3C,
+2nd Floor,
+19, Persiaran KLCC
+50450 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+235,269,t,Resident,"1630, Jalan Besar Air Lintas,
+Taman Ping Wah,
+Nibong Tebal,
+14300 Pulau Pinang
+Malaysia
+",00000,Other,Other,Austria,"",""
+190,215,t,Business,"No.50, Jalan Raja Abdullah,
+50300 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+236,271,t,Business,"27-2, Medan Setia 1,
+Plaza Damansara,
+Bkt Damansara,
+50490 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+238,273,t,Business,"No. 2 & 4, Jalan 1/75,
+Off Jalan Kampung Pandan,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+239,274,t,Business,"No.38, Jalan 8/91,
+Taman Shamelin Perkasa,
+56100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,92849126/9128,92849127
+240,275,t,Business,"Unit C1-3-1, Block C1,
+Solaris Dutamas,
+No.1, Jalan Dutamas 1,
+Hartamas Heights,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+241,276,t,Business,"No. 117A, Jalan Kenari 23,
+Bandar Puchong Jaya,
+47100 Puchong
+Selangor Darul Ehsan",00000,Other,Other,Austria,80768777       012-2034344,-
+243,278,t,Business,"Block A-2-3A,
+Plaza Damas 3,
+Jalan Sri Hartamas 1,
+Taman Sri Hartamas,
+50480 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+244,279,t,Business,"E-8-6, Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+245,280,t,Business,"Danau Business Park,
+Unit 5-0-2, Jalan 3/109F,
+Taman Danau Desa,
+58100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+246,281,t,Business,"No.11 Nouvelle Industrial Park,
+Lorong Teknologi B,
+Taman Sains Selangor 1,
+Kota Damansara PJU 5,
+47810 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,603-61579330,603-61571320
+247,283,t,Business,"E-10-6, Lanai Gurney Corporate Suites,
+Jalan Bukit Keramat,
+54000 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+249,286,t,Business,"Unit C3-1, Jalan Selaman 1,
+Palm Square,
+68000 Ampang
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+250,287,t,Business,"No. 30, Jalan Istimewa 5,
+Taman Perindustrian Cemerlang,
+Ulu Tiram
+ 81800 Johor Bahru,
+Johor Darul Takzim.",00000,Other,Other,Austria,"",""
+251,289,t,Business,"Level 36, Menara Citibank,
+165, Jalan Ampang,
+50450 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+253,293,t,Business,"KA 34-2-A,
+Jalan Setia Balakong 1/1,
+Taman Setia Balakong,
+43300 Balakong
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+254,294,t,Business,"40, Jalan 6/18A,
+Taman Mastiara,
+Off Batu 5, Jalan Ipoh,
+51200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+255,295,t,Business,"40, Jalan 6/18A,
+Taman Mastiara,
+Off Batu 5, Jalan Ipoh,
+51200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+256,296,t,Business,"40, Jalan 6/18A,
+Taman Mastiara,
+Off Batu 5, Jalan Ipoh,
+51200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+257,297,t,Resident,"10-3A, D''Mayang Condo,
+16 Jalan Mayang,
+Off Jalan Ampang,
+50450 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+258,298,t,Resident,"No.7, Tingkat 7,
+Pangsapuri Taman Industri,
+Lembah Jaya Selatan,
+68000 Ampang
+Selangor
+Malaysia",00000,Other,Other,Austria,"",""
+259,299,t,Resident,"2496, Jalan SJ 2/1,
+Taman Seremban Jaya,
+70450 Seremban,
+Negeri Sembilan
+Malaysia",00000,Other,Other,Austria,"",""
+260,300,t,Business,"No.13, Jalan Budiman,
+Budiman Business Park,
+Jalan Sungai Long,
+43000 Kajang,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+261,301,t,Business,"Level 33, Ilham Tower,
+No.8, Jalan Binjai,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+262,302,t,Business,"No. 11-2 & 11-3, Oval Damansara
+Menara Pertama Damansara,
+No. 685, Jalan Damansara,
+60000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+263,303,t,Resident,"K-4-3, Arcadia Apartment,
+Jalan USJ 11/2J,
+USJ 11, 
+47460 Subang Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+264,304,t,Business,"40, Jalan 6/18A,
+Taman Mastiara,
+Off Batu 5, Jalan Ipoh,
+51200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+222,254,t,Business,"A-3A-1, Northpoint Mid Valley,
+No.1, Medan Syed Putra Utara,
+59200 Kuala Lumpur, 
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+266,307,t,Business,"Suite 5.01, Level 5,Plaza 138,
+No. 138, Jalan Ampang,
+50450 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+267,308,t,Business,"No. 30A & B, Jalan Jernai,
+Medan Idaman Business Centre,
+Batu 5, Jalan Gombak,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+268,310,t,Other,"No.56, Jalan Setia Murni 1,
+Bukit Damansara,
+50490 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+269,311,t,Business,"Suite 25, 15-1, Menara 1 Mont'' Kiara,
+No.1, Jalan Kiara, Mont'' Kiara,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+270,312,t,Business,"No.56, Jalan Setiamurni Satu,
+Bukit Damansara,
+50490 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+271,313,t,Business,"No. 1, Jalan BK 5B/3,
+Bandar Kinrara,
+47100 Puchong
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-80629155,603-80629255
+272,315,t,Business,"No. 14 & 14A, Jalan 17/155C,
+Bandar Bukit Jalil,
+57000 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+273,316,t,Business,"Suite #103 MBE GTower
+LG17 Lower Ground Floor, GTower
+199 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+274,317,t,Business,"19-1 & 19-2, Plaza Danau 2,
+Jalan 5/109F, Taman Danau Desa,
+58100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+275,318,t,Business,"16 Lorong Damansara Endah,
+Bukit Damansara,
+50490 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+276,319,t,Business,"10, Jalan Laman Setia 7/1,
+Laman Setia,
+81550 Johor Bahru
+Johor Darul Takzim",00000,Other,Other,Austria,"",""
+306,354,f,Business,"No. 30A&B, Jalan Jernai,
+Medan Idaman Business Centre,
+Batu 5 Jalan Gombak,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+278,320,f,Business,"E-8-6, Block E, Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+279,321,t,Business,"Unit 17-11, Level 17, Q Sentral,
+Jalan Stesen Sentral 2,
+Kuala Lumpur Sentral,
+50470 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-27139971,""
+280,322,t,Business,"117A, Jalan Kenari 23,
+Bandar Puchong Jaya,
+47100 Puchong Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+281,326,t,Business,"No. 15 GF, Jalan Maju 1/4,
+Taman Lembah Maju,
+68000 Ampang,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+282,327,t,Business,"No 339-A, Lorong Sarawak,
+Melawati Urban 1,
+Pusat Bandar Melawati,
+53100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,603-41055152,603-41065153
+283,328,t,Business,"No. 28, Jalan Istimewa 5,
+Taman Perindustrian Cemerlang,
+Ulu Tiram,
+81800 Johor Bahru,
+Johor Darul Takzim",00000,Other,Other,Austria,607-8618610,607-8618612
+284,329,t,Business,"B1-U1-2 (Office Suite), Solari Dutamas,
+No. 1, Jalan Dutamas 1,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+285,330,t,Business,"No. 14 & 14 A, 
+Jalan 17/155C,
+Bandar Bukit Jalil,
+57000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+286,331,t,Business,"Unit 3A-01A, Level 3A,
+Glo Damansara,
+No. 699, Jalan Damansara,
+60000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+287,332,t,Business,"Unit 19-6, Block D2,
+Jalan PJU 1/39,
+Dataran Prima Business Centre,
+47301 Petaling Jaya,",00000,Other,Other,Austria,"",""
+288,334,t,Business,"Unit 19-6, Block D2, 
+Jalan PJU 1/39,
+Dataran Prima Business Centre,
+47301 Petaling Jaya,
+Selangor",00000,Other,Other,Austria,"",""
+289,335,t,Business,"Unit 19-6, Block D2,
+Jalan PJU 1/39,
+Dataran Prima Business Centre,
+47301 Petaling Jaya,
+Selangor",00000,Other,Other,Austria,03-78801040,03-78809431
+290,336,t,Business,"E-12-18, Plaza Mont'' Kiara,
+No.2, Jalan Kiara,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+291,337,t,Business,"4-6-5, Block 4, 6th Floor,
+Queen''s Avenue,
+Jalan Bayam, Cheras,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+292,338,t,Business,"19-1 & 19-2, Plaza Danau 2,
+Jalan 5/109F, Taman Danau Desa,
+58100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+293,340,t,Business,"Unit 347, Lobby C, Block A,
+Kelana Centre Point,
+Jln SS7/19, Kelana Jaya,
+47301 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+294,341,t,Business,"30B, Jalan Jernai,
+Medan Idaman Business Centre,
+Batu 5, Jalan Gombak,
+53100 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+295,342,t,Business,"165-167, Jalan Ipoh
+51200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+296,343,t,Business,"38-1, Jalan Dagang SB 4/2,
+Taman Sungai Besi Indah,
+43300 Seri Kembangan
+Selangor",00000,Other,Other,Austria,03-8948 3953,03-8948 1895
+297,344,t,Business,"Dataran Dwitasik,
+No. 56-2, Jalan Dwitasik,
+Block F,Bandar Sri Permaisuri,
+Cheras,
+56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+298,345,t,Business,"2-9, 2nd Floor,
+Dataran Pelangi Utama,
+Jalan Masjid PJU 6A,
+47400 Petaling Jaya
+Selangor",00000,Other,Other,Austria,"",""
+300,347,t,Other,"No.2, Jalan Haji Ibrahim,
+Pengkalan Berangan,
+Marang,
+21040
+Terengganu
+Malaysia",00000,Other,Other,Austria,"",""
+301,349,t,Business,"72-1, 2, 3 & 4,
+Fraser Business Park,
+Jalan Metro Pudu,
+Off Jalan Loke Yew,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,03-92213388,03-92231243
+302,350,t,Business,"No. 194, Jalan 2A,
+Kg. Baru Subang,
+40150 Shah Alam,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+304,352,t,Business,"Level 33, Ilham Tower,
+No. 8 Jalan Binjai,
+50450 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+305,353,t,Business,"301, Jalan Bandar 11,
+Taman Melawati,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+307,355,t,Business,"No. 71-3, Block G,
+Zenith Corporate Park,
+Jalan SS7/26, Kelana Jaya,
+47301 Petaling Jaya
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+308,356,t,Other,"D6-3-13A, Sentul East,
+Bangunan Perdagangan D6,
+801, Jalan Sentul, 
+51000 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+309,357,t,Business,"C-11-3A, Villa Laman Tasik Condo,
+Jalan Sri Permaisuri,
+Bandar Sri Permaisuri,
+56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+310,358,t,Other,"B-13A-3, Hampshire Place,
+157 Hampshire 1,
+Jalan Mayang Sari,
+50450 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+311,359,t,Business,"No. 20 (1st Floor), Jalan Bukit Segar 7,
+Bukit Segar, Cheras,
+56100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+299,346,t,Business,"D3-1-10, Solaris Dutamas,
+No. 1, Jalan Dutamas,
+50480 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+312,360,t,Business,"B-7-03, PJ8 Office Suites,
+No 23, Jalan Barat,
+Seksyen 8,
+47301 Petaling Jaya
+Selangor",00000,Other,Other,Austria,"",""
+314,362,t,Business,"KA 29-1-A,
+Jalan Setia Balakong 1/1,
+Taman Setia Balakong,
+43300 Balakong
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+313,361,f,Business,"G-0-2,
+I Residence,
+Section 4,
+Kota Damansara,
+47810 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+315,363,t,Business,"No. 339-A, Lorong Sarawak,
+Melawati Urban 1,
+Pusat Bandar Melawati,
+53100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+316,364,t,Other,"B-7-03, Block B West,
+PJ 8, No. 23, Jalan Barat,
+Section 8,
+46050 Petaling Jaya
+Selangor",00000,Other,Other,Austria,"",""
+317,365,t,Other,"No. 1, Lorong Bukit Setongkol 76,
+25200 Kuantan
+Pahang Darul Makmur",00000,Other,Other,Austria,"",""
+318,366,t,Business,"No. 1, Lorong Bukit Setongkol 76,
+25200 Kuantan
+Pahang Darul Makmur",00000,Other,Other,Austria,"",""
+319,367,t,Business,"Unit D1-6-11, Block D1,
+Solaris Dutamas,
+No.1, Jalan Dutamas 1,
+Hartamas Heights,
+50480 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,603-62053800,603-62053900
+320,368,t,Business,"No. 30A & B, Jalan Jernai,
+Medan Idaman Business Centre,
+Batu 5, Jalan Gombak,
+53100 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+321,369,t,Business,"9155B, Tingkat 2,
+Jalan Bandar 4,
+Taman Melawati,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+322,370,t,Other,"D6-3-13A, Sentul East,
+Bangunan Perdagangan D6,
+801, Jalan Sentul,
+51000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+323,371,f,Business,"D6-3-13A, Sentul East,
+Bangunan Perdagangan D6,
+801, Jalan Sentul,
+51000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+324,372,t,Business,"Level 33,
+Ilham Tower,
+No.8, Jalan Binjai,
+50450 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+325,373,t,Business,"1 Raffles Place,
+#41-01 One Raffles Place,
+Singapore 048616",00000,Other,Other,Austria,"",""
+327,377,t,Business,"S-25-03, Swiss Garden Residences,
+117, Jalan Pudu,
+Bukit Bintang,
+55100 Kuala Lumpur",00000,Other,Other,Austria,"",""
+329,379,t,Business,"No. 1, Jalan BK 5B/3,
+Bandar Kinrara,
+47180 Puchong,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+330,380,t,Business,"14 & 14A, Jalan 17/155C,
+Bandar Bukit Jalil,
+57000 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+332,382,t,Business,"No. 8, Jalan Astaka U8/83,
+Bukit Jelutong,
+40150 Shah Alam,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+333,383,t,Business,"14 & 16 Jalan Desa Serdang
+5 Taman Desa Serdang,
+43000 Serdang
+Selangor",00000,Other,Other,Austria,"",""
+334,384,t,Business,"15-3, Blok B,
+Platinum Walk,
+Jalan Langkawi,
+Setapak,
+53300 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+335,386,f,Business,"Level 36, Menara Cititbank,
+165 Jalan Ampang,
+50450 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+336,387,t,Business,"No. 11, 1st Floor, Nouvelle Industrial
+Park, Lorong Teknologi B,
+Taman Sains Selangor 1,
+Kota Damansara PJU 5,
+47810 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+337,388,t,Business,"66-3, Jalan SS15/4D,
+47500 Subang Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+338,389,t,Resident,"B-15-09,
+Ampang Putra Residency,
+Jalan Putra Sulaiman 6,
+68000 Ampang
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+339,390,t,Business,"19-1 & 19-2, Plaza Danau 2,
+Jalan 5/109F, Taman Danau Desa,
+58100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+340,391,t,Business,"99, Jalan Midah Barat,
+Taman Midah,
+56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+341,392,t,Business,"No. 72-1,2,3 & 4, Fraser Business Park,
+Jalan Metro Pudu,
+Off Jalan Loke Yew,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,03-9221 3388,""
+342,393,t,Business,"Lot 66 Jalan Wangsa Delima 6,
+Pusat Bandar Wangsa Maju,
+KLSC,
+53300 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+343,394,t,Business,"No. 7, Jalan Desa Serdang 3,
+Kawasan Perindustrian Desa Serdang,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,03-89441199      016-2622308,03-89441919
+344,395,t,Business,"No. 18, Taman Sulir,
+Pekan Jabi,
+85000 Segamat
+Johor Darul Takzim",00000,Other,Other,Austria,"",""
+345,396,t,Business,"No. 3-2, 3rd Floor,
+Dataran Pelangi Utama,
+No. 15, Jalan Masjid, PJU 6A,
+47400 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+346,397,t,Business,"1, Jalan BK 5B/3,
+Bandar Kinrara,
+47100 Puchong,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+347,398,t,Business,"Unit 11-3, Oval Damansara,
+Menara Permata Damansara,
+No. 685, Jalan Damansara,
+60000 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+349,400,t,Business,"E-8-6, Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,23338888,23338899
+350,401,t,Business,"No. 30A & B, Jalan Jernai,
+Medan Idaman Business Centre,
+Batu 5, Jalan Gombak,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+352,403,t,Business,"40, Jalan 6/18A,
+Taman Mastiara,
+Off Batu 5, Jalan Ipoh,
+51200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+353,404,t,Business,"E-8-6 (Suite 5.6), Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+354,405,t,Business,"No. 15 GF, Jalan Maju 1/4,
+Taman Lembah Maju,
+68000 Ampang,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+357,409,t,Business,"Lot 4-02, Quill City Mall,
+Jalan Sultan Ismail,
+52520 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+358,410,t,Resident,"No.21, Jalan Melur 11,
+Taman Melur,
+68000 Ampang
+Selangor
+Malaysia",00000,Other,Other,Austria,"",""
+359,411,t,Business,"B-5-8, Plaza Mont Kiara,
+Mont Kiara,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+360,412,t,Business,"54, Jalan F4, Taman Melawati,
+53100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+326,376,t,Business,"Unit C1-3-1, Block C1,
+Solaris Dutamas,
+No. 1, Jalan Dutamas 1,
+Hartamas Heights,
+50480 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,603-62053800,603-62053900
+328,378,t,Business,"B-5-2, Block B, Northpoint Offices,
+Mid Valley City,
+No.1, Medan Syed Putra Utara,
+59200 Kuala Lumpur, 
+Wilayah Persekutuan. 
+",00000,Other,Other,Austria,"",""
+351,402,t,Resident,"No. 9A & 9B,
+Jalan BK 5/12A,
+Bandar Kinrara,
+47180 Puchong,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+331,381,t,Business,"No. 1, Jalan BK 5B/3,
+Bandar Kinrara,
+47180 Puchong,
+Selangor Darul Ehsan.
+",00000,Other,Other,Austria,"",""
+361,413,t,Business,"No. 301, Jalan Bandar 11,
+Taman Melawati,
+53100 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+364,417,t,Other,"No.8,
+Jalan SS2/22,
+Seapark,
+47300 Petaling Jaya
+Selangor
+Malaysia",00000,Other,Other,Austria,"",""
+365,418,t,Business,"A-6-3, Desa Putra,
+Jalan Wangsa Perdana 1,
+Wangsa Maju,
+53300 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+366,419,t,Business,"No. 7A, Jalan 4/21D,
+Medan Idaman Business Centre,
+Batu 5, Jalan Gombak,
+53100 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+363,416,t,Resident,"11-5-2, Menara Hartamas,
+Jalan Sri Hartamas,
+50480 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+367,420,t,Business,"L-3-9, Plaza Damas,
+No.60, Jalan Sri Hartamas 1,
+Sri Hartamas,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+369,424,t,Business,"B1-1-2,
+Jalan Solaris Dutamas 1,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+370,425,t,Business,"No. 35, Jalan SS 24/8,
+Taman Megah,
+47301 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+371,426,t,Business,"No. 3-2, 3rd Floor,
+Dataran Pelangi Utama,
+Jalan Masjid, PJU 6A,
+47400 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+372,427,t,Business,"Unit 1-2, Block F1, Jalan PJU 1/42,
+Dataran Prima,
+47301 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,03-7611 0415,""
+373,429,t,Business,"23, Jalan SP7/1,
+Taman Segar Perdana,
+Cheras,
+43200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+374,430,t,Business,"23, Jalan SP7/1,
+Taman Segar Perdana,
+Cheras,
+43200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+375,431,t,Business,"L1-15, Level 1,Star Avenue Lifestyle Mall,
+No. 3, Jalan Zuhal U5/179,
+Seksyen U5,
+40150 Shah Alam,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+376,432,t,Business,"Lot 1.27, 1st Floor, Podium Block,
+Plaza Berjaya, Jalan Imbi, 
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+377,433,t,Other,"No. 39, Jalan 49,
+Selayang Baru,
+68100 Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+378,434,t,Business,"No.10, Jalan Sungai Rasa 37/KU1,
+Kaw. Perindustrian Sungai Rasau,
+41300 Klang,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+379,435,t,Business,"Lot No. CT-01-08, 1st Floor,
+Corporate Tower,Subang Square,
+Jalan SS 15/4G,
+47500 Subang Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,607-7991876,607-7991886
+381,437,t,Business,"No. 301, Jalan Bandar 11,
+Taman Melawati,
+53100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+382,438,t,Business,"No. 114, Block P/B,
+Lorong Lobak,
+Taman Cheras, Jalan Cheras,
+56100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+383,439,t,Business,"No. W8-09, Plaza 138,
+Hotel Maya, Jalan Ampang,
+50450 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+384,440,t,Business,"No.3-2, 3rd Floor, Dataran Pelangi Utama,
+Jalan Masjid, PJU 6A,
+47400 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+385,441,t,Business,"No.333, Lorong Sarawak,
+Melawati Urban 1,
+Taman Melawati,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+386,442,f,Business,"1207 Block A, West Point,
+Wangsa Heights,
+Wangsa Ukay,
+Ulu Kelang,
+68000 Ampang
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+387,443,t,Business,"Unit 19-6, Block D2,
+Jalan PJU 1/39,
+Dataran Prima Business Centre,
+47301 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+389,445,t,Business,"Unit 13A-15, Block A,
+Damansara Intan e-Business
+Park, No. 1, Jalan SS20/27,
+47400 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-77225155,603-77221533
+390,446,t,Business,"5-3, Jalan 11/48A,
+Sentul Raya Boulevard,
+Off Jalan Sentul,
+51000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-40448360,603-40454693
+391,447,t,Other,"Suite 5.01, Level 5,Plaza 138,
+No. 138, Jalan Ampang,
+50450 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,603-21688610,603-21688613
+392,448,t,Business,"No. 8, Jalan Astaka U8/83,
+Seksyen U8, Bukit Jelutong,
+40150 Shah Alam,
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-78453236,603-78458723            603-56372648
+393,449,t,Business,"20, Jalan Development
+Taman Kepong,
+52100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-62749091      603-62769523,603-62748192
+394,450,t,Business,"No. 2 & 4, Jalan 1/75,
+Off Jalan Kampung Pandan,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-92829046                  603-92837908,603-92837908
+395,451,t,Other,"D6-3-13A, Sentul East,
+Bangunan Perdagangan D6,
+801, Jalan Sentul,
+51000 Kuala Lumpur,
+Wilayah Persekutuan,",00000,Other,Other,Austria,"",""
+396,452,t,Business,"Suite 5.01, Level 5,
+Plaza 138, 
+No. 138, Jalan Ampang,
+50450 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+397,453,t,Business,"No. 27, Jalan Jejaka 5,
+Taman Maluri,
+55100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,603-92823970                  603-92006070,603-92008070
+398,454,t,Business,"38-1, Jalan Dagang SB 4/2,
+Taman Sungai Besi Indah,
+43300 Seri Kembangan
+Selangor 
+Malaysia",00000,Other,Other,Austria,"",""
+399,455,t,Business,"No. 32 (1st Floor), Jalan E1,
+Taman Melawati,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+400,456,t,Business,"No. 8, Jalan Astaka U8/83,
+Bukit Jelutong,
+Seksyen U8,
+40150 Shah Alam,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+401,457,t,Business,"7A, Jalan 4/21D,
+Medan Idaman Business Centre,
+Batu 5, Jalan Gombak,
+53100 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+402,458,t,Business,"Unit C3-1, 
+Jalan Selaman 1,
+Palm Square,
+68000 Ampang,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+403,459,t,Business,"Lot 2194, Jalan Kampung,
+Kampung Baru Sg. Buloh,
+47000 Sungai Buloh,
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-6150924,603-61571196
+404,460,t,Business,"27, Jalan Meranti Bukit,
+Sierramas West,
+47000 Sungai Buloh,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,603-79549068,603-79554601
+406,463,t,Other,"No.11, Jalan SS 20/22,
+Damansara Utama,
+47400 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+408,465,t,Business,"Unit 12.3, Level 12, Menara 1 Dutamas,
+Solaris Dutamas,
+No. 1 Jalan Dutamas 1,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+409,467,t,Business,"23, Jalan SP 7/1,
+Taman Segar Perdana,
+43200 Cheras
+Wilayah Persekutuan 
+Malaysia",00000,Other,Other,Austria,"",""
+380,436,t,Other,"3D, 4th Flr,Block 1,
+Worldwide Business Park,
+Jalan 13/50, Section 13,
+40675 Shah Alam
+Selangor Darul Ehsan",00000,Other,Other,Austria,55195233,55195340
+388,444,t,Business,"K3-3A-05, UOA Business Park,
+No.1, Jalan Pengaturcara U1/51a,
+Kawasan Perindustrian Temasya,
+40150 Shah Alam, 
+Selangor Darul Ehsan. ",00000,Other,Other,Austria,"",""
+368,422,t,Business,"Tingkat Bawah, Blok A,
+Pangsapuri Taman Industri,
+Lembah Jaya, Off Jalan Lembah Jaya,
+68000 Ampang, 
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+410,468,t,Business,"B-5-2, Block B, Northpoint Offices,
+Mid Valley City,
+No.1, Medan Syed Putra Utara,
+59200 Kuala Lumpur",00000,Other,Other,Austria,"",""
+411,469,t,Business,"Unit 11-3, Oval Damansara,
+Menara Permata Damansara,
+No. 685, Jalan Damansara,
+60000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+412,470,t,Business,"No.30, Jalan Istimewa 5
+Taman Perindustrian Cemerlang,
+Ulu Tiram,
+81800 Johor Bharu
+Johor
+Malaysia",00000,Other,Other,Austria,"",""
+413,471,t,Other,"A-26-3, Hampshire Park Condominium,
+No.6, Persiaran Hampshire,
+50450 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+414,472,t,Business,"F-2-8, Plaza Damas,
+No.60, Jalan Sri Hartamas,
+50480 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+415,473,t,Business,"No. 30A, Jalan Jernai,
+Medan Idaman Business Centre,
+Batu 5, Jalan Gombak,
+53100 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+416,474,t,Business,"2 & 4, Jalan 1/75,
+Off  Jalan Kampung Pandan,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-92829046,603-92837908
+418,476,t,Business,"No. 20, Jalan Setia 7/10,
+Taman Setia Indah,
+81100 Johor Bahru
+Johor Darul Takzim",00000,Other,Other,Austria,"",""
+419,478,t,Business,"31 Modena
+Irvine, California 92618
+USA",00000,Other,Other,Austria,"",""
+420,479,t,Business,"Wessex Estate In One North,
+# 01-01, Block 12,
+Woking Road,
+Singapore 138692",00000,Other,Other,Austria,"",""
+421,480,t,Business,"Level 33, ILHAM Tower,
+No. 8, Jalan Binjai,
+50450 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+422,482,t,Business,"No. 8, Jalan Astaka U8/83,
+Seksyen U8,
+Bukit Jelutong,
+40150 Shah Alam,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+423,483,t,Business,"117A, Jalan Kenari 23,
+Bandar Puchong Jaya,
+47100 Puchong Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+424,484,t,Business,"29, Jalan USJ 16/2F,
+UEP Subang Jaya,
+47630
+ Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+425,486,t,Business,"48 Toh Guan Road East
+#03-98 Enterprise Hub
+Singapore 608586",00000,Other,Other,Austria,"",""
+426,487,t,Business,"19-6, Block D2,
+Jalan PJU 1/39,
+Dataran Prima,
+47301 Petaling Jaya,
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+427,488,t,Business,"48, Jalan Brunei Utara,
+Pudu,
+55100 Kuala Lumpur,
+Kuala Lumpur,",00000,Other,Other,Austria,016-2100180                     013-6262168,603-21417194
+428,489,t,Business,"61, Ground Floor,
+Jalan Sultan Ismail,
+50250 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-21481793,603-21440178
+429,490,t,Business,"35-4-24 Axis Complex,
+Cantonment Road,
+10350 Georgetown
+Pulau Pinang",00000,Other,Other,Austria,"",""
+430,491,t,Other,"No.10 Jalan Matahari,
+Off Jalan Raya Barat,
+41100 Klang,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+431,493,t,Other,"B-2-6, Block B, No.1, PJS 8/15,
+Dataran Mentari,
+46150 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+432,494,t,Business,"46B, Level 5,
+Mentari Business Park,
+Jalan PJS 8/2,
+Dataran Mentari,
+46150 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,603-56214326                        603-56214316,603-56214184
+433,495,t,Business,"No.36, Jalan Damai Jaya 1,
+Alam Damai,
+Cheras,
+56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+434,496,t,Business,"B-5-2, 5th Floor, Block B,
+Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+435,497,t,Business,"8-2, Jalan PJU 5/21,
+The Strand,
+Kota Damansara,
+47810 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+436,498,t,Business,"C-8-1, Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-27755555,603-27755003
+437,499,t,Business,"119-2, Jln Selingsing 5,
+Taman Sri Kuching,
+Off Jln Kuching,
+51200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+438,500,t,Business,"Unit 3.09 , 3rd Floor,
+Block E, Pusat Dagangan Phileo,
+Damansara 1, No. 9, Jalan
+16/11, Off Jalan Damansara,
+46350 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+439,501,t,Business,"Unit 3.09 & 3.10, 3rd Floor,
+Block E, Pusat Dagangan Phileo
+Damansara 1, No. 9, Jalan
+16/11,Off Jalan Damansara,
+46350 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+440,502,t,Business,"No.12A-1, Jalan TP 7/2,
+Taman Perindustrian Sime UEP
+40300 Shah Alam
+Selangor",00000,Other,Other,Austria,03-51034525,03-51034525
+441,503,t,Business,"E-7-1, Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+442,504,t,Business,"E-7-1,
+Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+443,505,t,Business,"A-9-A, 9th Floor, BBT One (South Tower),
+Lebuh Batu Nilam 1,
+Bandar Bukit Tinggi,
+41100 Klang
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+444,506,t,Business,"No. 11-1, Jalan 11/48A,
+Sentul Raya Boulevard,
+Off Jalan Sentul,
+51000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+445,507,t,Business,"B-5-4, Block B,
+Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+446,508,t,Registered,"No. 32A,
+Jalan Sin Chew Kee,
+Off Jalan Pudu,
+50150 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+447,509,t,Business,"B-5-4,Block B,
+Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+448,510,t,Business,"Unit 310, 3rd Floor, Blok E,
+Pusat Dagangan Phileo, Damansara 1,
+46350 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+449,511,t,Business,"L2-14, Level 2, Avenue K,
+156, Jalan Ampang,
+50450 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+450,512,t,Business,"26 Jalan Maktab 5,
+Off Jalan Semarak,
+54000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+451,513,t,Business,"B-5-4, Block B,
+Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+452,514,t,Business,"Wisma Biforst,
+G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+453,515,t,Business,"Wisma Biforst,G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan
+Selangor Darul Ehsan",00000,Other,Other,Austria,0389431200,0389450492
+454,516,t,Business,"Wisma Biforst,
+G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+455,517,t,Business,"Wisma Biforst, 
+G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra 
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+456,518,t,Business,"Wisma Biforst, G 50,
+Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+463,525,t,Business,"Wisma Biforst, G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+464,526,t,Business,"B-08-12, Gateway Kiaramas Corp. Suites,
+No. 1 Jalan Desa Kiara, Mont Kiara,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+465,527,t,Business,"Wisma Biforst, G 50,Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+466,528,t,Business,"Wisma Biforst, G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+457,519,t,Business,"Wisma Biforst, G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan
+Selangor",00000,Other,Other,Austria,"",""
+458,520,t,Business,"Wisma Biforst, G 50, 
+Jalan Pinggiran Putra 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+459,521,t,Business,"Wisma Biforst, G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+ Seksyen 1,
+43300 Seri Kembangan
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+460,522,t,Business,"Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+461,523,t,Business,"Wisma Biforst, G 50,
+Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+462,524,t,Business,"Wisma Biforst, G 50,Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+467,529,t,Business,"No. 17-GF,  Jalan Maju 1/14,
+Taman Lembah Maju,
+56100 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,603-42960722,603-42960721
+468,530,t,Business,"C-3A-5, Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+469,531,t,Business,"C-3A-5, Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+470,532,t,Business,"E-7-1,
+Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-27708133,603-27708233
+471,533,t,Business,"Lot 900, Batu 13,
+Jalan Klang,
+47100 Puchong,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+472,534,t,Business,"No.10-1, Avenue 3,
+Avenue Ampang,
+Off Jalan Wawasan Ampang,
+68000 Ampang,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+473,535,t,Business,"10C, 3rd Floor, Block 2,
+Worldwide Business Park,
+Jalan Tinju 13/50, Section 13,
+40100 Shah Alam,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+474,536,t,Business,"No. 7A, Jalan SS 4D/2,
+People''s Park,
+47301 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+476,538,t,Business,"Suite 2A-15-2,
+Block 2A, Level 15,
+Plaza Sentral,
+Jalan Stesen Sentral 5,
+50470 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+477,539,t,Business,"No 18A, Jalan Tembaga SD5/2A,
+Bandar Sri Damansara,
+Kepong, 
+52200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,603-62725093,603-62725304
+478,540,t,Business,"No. 20-2, Jalan Wangsa,
+Wangsa Biz Avenue,
+Off Jalan 34/26,
+Taman Sri Rampai, Setapak,
+53200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+479,541,t,Business,"Block C 1-01, Damansara Intan,
+No.1, Jalan SS20/27,
+47400 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+480,542,t,Business,"Wisma Biforst, G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+481,543,t,Business,"A-10-8, Block A,
+Megan Avenue 1,
+No. 189, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+482,544,t,Business,"No 40, Jalan Sri Permaisuri 9,
+Bandar Sri Permaisuri,
+56000 Kuala Lumpur
+Kuala Lumpur",00000,Other,Other,Austria,603-91713585,603-91714585
+483,545,t,Business,"No. 40,
+Jalan Sri Permaisuri 9,
+Bandar Sri Permaisuri,
+56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-91713585,603-91714585
+484,546,t,Business,"41A & 43A Uptown 37,
+Jln SS21/37,
+Damansara Utama
+47400 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+485,547,t,Business,"No. 41 , Jalan TPP1/12,
+Taman Industri Puchong,
+Batu 12, Jalan Puchong,
+47100 Puchong,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+486,549,t,Business,"U2055B,
+Kampung Gersik Baru,
+87000 Wilayah Persekutuan
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+487,550,t,Business,"B-3A-12, Gateway Kiaramas,
+No. 1, Jalan Desa Kiara,
+Mont Kiara,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+488,551,t,Business,"No. 3-G,
+Jalan Perniagaan Masria 3,
+Pusat Perniagaan Masria,
+43200 Cheras,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+489,552,t,Business,"Unit J-6-13, Block J,
+Solaris Mont'' Kiara,
+No. 2, Jalan Solaris,
+Mont'' Kiara,
+50480 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,603-64113883               603-64113881,603-64113882
+490,553,t,Business,"C-8-1, Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+491,554,t,Business,"318, Melawati Square,
+Jalan Negara,
+Taman Melawati,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+492,555,t,Business,"Lot 6.03B, 6th floor,
+Wisma Central,
+Jalan Ampang,
+50450 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+493,556,t,Business,"B-3A-12, Gateway Kiaramas,
+No. 1, Jalan Desa Kiara,
+Mont Kiara,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+494,557,t,Other,"Wisma Biforst, G 50,Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+495,558,t,Business,"No. 7A, Jalan SS4D/2,
+People''s Park,
+47301 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+496,559,t,Business,"No. 3-G, Jalan Perniagaan Masria 3,
+Pusat Perniagaan Masria,
+43200 Cheras
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+497,560,t,Business,"B-5-3, Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur",00000,Other,Other,Austria,"",""
+498,561,t,Business,"E-7-1, Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+499,562,t,Business,"Wisma Biforst, G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,606-8950492               603-89431200,603-89451539
+502,563,t,Business,"6-2nd Floor, Block C,
+Wisma RKT,
+Jalan Raja Abdullah
+Off Jalan Sultan Ismail
+50300 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+503,564,t,Business,"Suite 32-01-70, Menara Keck Seng,
+203, Jalan Bukit Bintang,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+504,565,t,Business,"8-2, Encorp Strand,
+PJU 5/21, Kota Damansara,
+47810 Petaling Jaya
+Selangor.",00000,Other,Other,Austria,"",""
+505,566,t,Business,"No. 13, Jalan TS 6/8,
+Taman Industri Subang,
+47510 Subang Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+506,567,t,Business,"9, Jalan Welman,
+48000 Rawang,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+508,569,t,Business,"24A, Jalan Padang Walter Grenier,
+Off Jalan Imbi,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,21416149                             21425419,21446780
+512,573,t,Business,"No. 14, Jalan Para U8/103,
+Seksyen U8,
+Bukit Jelutong Industrial Park,
+40150 Shah Alam
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+514,575,t,Business,"7, Jalan 2/116 D,
+Kuchai Enterprenuer Park,
+Off Jalan Kuchai Lama,
+58200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+517,578,t,Business,"7, Jalan 2/116 D,
+Kuchai Enterprenuer Park,
+Off Jalan Kuchai Lama,
+58200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+509,570,t,Business,"24A, Jalan Padang Walter Grenier,
+Off Jalan Imbi,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,03-21416149,21446780
+510,571,t,Business,"41 & 43A, Uptown 37,
+Jalan SS 21/37,
+Damansara Utama,
+47400 Petaling Jaya
+Selangor",00000,Other,Other,Austria,"",""
+511,572,t,Business,"No. 40, Jalan Mahligai 46/KU5,
+Bandar Bukit Raja,
+41050 Klang
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+513,574,t,Business,"318C, Melawati Square,
+Jalan Negara,
+Taman Melawati,
+53100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+515,576,t,Business,"Unit 27-03, 27th Floor
+Menara Ta One,
+Jalan P. Ramlee,
+50400 Kuala Lumpur
+Selangor
+Malaysia",00000,Other,Other,Austria,"",""
+516,577,t,Business,"5 & 7, Jalan Raya 7/3,
+Kawasan Perindustrian,
+Seri Kembangan,
+43300 Seri Kembangan
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-89422332,603-89458023
+518,579,t,Business,"L18-05, PJX-HM Shah Tower,
+16A, Persiaran Barat,
+46050 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-79318773,603-79318573
+519,580,t,Business,"D7-1-1, D7@Sentul East,
+Jalan Sentul,
+51000 Kuala Lumpur
+Malaysia",00000,Other,Other,Austria,"",""
+520,581,t,Business,"16-1A, Jalan 15/1E,
+Seksyen 15,
+Bandar Baru Bangi
+43650 Bangi
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+521,582,t,Business,"No. 40, Jalan Sri Permaisuri 9
+Bandar Sri Permaisuri,
+56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-91332585,603-91311471
+522,583,t,Business,"21-2, The Boulevard Mid Valley City,
+Lingkaran Syed Putra,
+59200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+523,584,t,Business,"No. 251, Taman Bunga Raya 2,
+28600 Karak
+Pahang Darul Makmur",00000,Other,Other,Austria,"",""
+524,585,t,Business,"L18-05, PJX-HM Shah Tower,
+No. 16A, Persiaran Barat,
+46050 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-79318773,603-79318573
+525,586,t,Business,"L18-05, PJX-HM Shah Tower,
+16A, Persiaran Barat,
+46050 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-79318773,603-79378573
+526,587,t,Business,"W-09-11, Menara Melawangi,
+AMCORP Trade Centre,
+18 Jalan Persiaran Barat,
+46050 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+527,588,t,Business,"W-09-11, Menara Melawangi,
+AMCORP Trade Centre,
+18 Jalan Persiaran Barat,
+46050 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+528,590,t,Business,"76, Jalan SG 4/8,
+Taman Sri Gombak,
+68100 Batu Caves,
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-61841652,603-61841654
+529,591,t,Business,"No. 76, Jalan SG 4/8,
+Taman Sri Gombak,
+68100 Batu Caves,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+530,595,t,Business,"Suite 14.08, Level 14,
+GTower,
+199, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+531,596,t,Business,"Suite 14.07, Level 14,
+GTower,
+199, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+532,598,t,Business,"No. 6, Jalan Tegap 25/98,
+Taman Sri Muda,
+40400 Shah Alam
+Selangor
+Malaysia",00000,Other,Other,Austria,"",""
+533,599,t,Business,"21-2, The Boulevard,
+Mid Valley Centre,
+Lingkaran Syed Putra,
+59200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+534,600,t,Business,"21-2 The Boulevard Mid-Valley City,
+Lingkaran Syed Putra,
+59200 Kuala Lumpur
+Wilayah Persekutuan.",00000,Other,Other,Austria,603-22821108,""
+535,601,t,Business,"21-2, The Boulevard Mid Valley City,
+Lingkaran Syed Putra,
+59200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+536,602,t,Business,"No. B1-1-50A,
+Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+537,604,t,Business,"D-7-6, Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+538,605,t,Business,"21-2, The Boulevard,
+Mid Valley Centre,
+Lingkaran Syed Putra,
+59200 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+539,606,t,Business,"Wisma MEPRO,
+Ground & Mezzanine Floor,
+29 & 31 Jalan Ipoh,
+51200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+540,607,t,Business,"462 Crawford Lane #02-63
+Singapore 190462",00000,Other,Other,Austria,"",""
+541,608,t,Business,"405, Persiaran Desa Ampang 3,
+Taman Sri Ampang,
+68000 Ampang
+Selangor",00000,Other,Other,Austria,"",""
+542,609,t,Business,"Lot 19, Jalan Utas 15/7,
+Seksyen 15,
+40000 Shah Alam
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+543,610,t,Business,"Unit 218, 2nd Floor,
+Block A, Lobby 4,
+Damansara Intan, No. 1,
+Jalan SS20/27,
+47400 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+544,611,f,Resident,"7-13-8, Bukit OUG
+Condominiums, Jalan 3/155A,
+Jalan Klang Lama,
+58200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+545,612,t,Resident,"23-1, Jalan Damai Murni 1,
+Alam Damai Cheras,
+56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,012-3227319,""
+546,613,t,Business,"8-2, The Strand,
+PJU 5/21, Kota Damansara,
+47810 Petaling Jaya.
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+547,614,t,Business,"Suite 20-70, Level 20,
+Plaza 138, No. 138,
+Jalan Ampang,
+50450 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+548,615,t,Resident,"A-4-2, Puri Pesona Apartment,
+Bandar Sungai Long,
+43000 Kajang
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+549,616,t,Business,"No. 40,
+Jalan Sri Permaisuri 9
+Bandar Sri Permaisuri,
+56000 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,603-91713585,603-91714585
+550,617,f,Business,"96, Jalan Telawi,
+Bangsar
+59100 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+551,619,t,Business,"G-6B, Jalan PJU 8/3A,
+Perdana Business Centre,
+Bandar Damansara Perdana,
+47820 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+552,620,t,Business,"No. 332, Suite 14C, 14 Floor,
+Plaza Ampang City,
+50450 Ampang
+Kuala Lumpur",00000,Other,Other,Austria,"",""
+553,621,t,Business,"No. 332, Suite 14C, 14 Floor,
+Plaza Ampang City,
+50450 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+554,622,t,Business,"No. 19, Jalan Elektron U16/49,
+Denai Alam,
+40160 Shah Alam
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+555,623,t,Business,"8-2, Encorp Strand,
+Jalan PJU 5/21,
+Kota Damansara,
+47810 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+556,624,t,Business,"Unit 501, Level 5, Uptown 1,
+Jalan SS 21/58, Damansara Uptown,
+47400 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+557,625,t,Business,"No. 11-1, Jalan 11/48A,
+Sentul Raya Boulevard,
+Off Jalan Sentul,
+51000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-40448360                 603-40448361,603-40454693
+558,626,t,Business,"Unit 3.09, 3rd Floor, Block E,
+Pusat Dagangan Phileo Damansara 1,
+No. 9, Jalan 16/11, Off Jalan Damansara,
+46350 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+559,627,t,Resident,"15A, Jalan Maktab,
+54000 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+560,629,t,Business,"Unit 3.09 & 3.10, 3rd Floor,
+Block E, Pusat Dagangan Phileo
+Damansara 1, No. 9, Jalan 16/11,
+Off Jalan Damansara,
+46350 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+561,630,t,Business,"No.2, Jalan BP 4/1,
+Bandar Bukit Puchong,
+47100 Puchong,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+562,631,t,Resident,"15B-19-2, Everett Tower,
+Mont Kiara Pines,
+Jalan 1/0C,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-78046010,603-78806143
+563,632,t,Business,"Unit 10, 28th Floor,
+UBN Tower, Letter Box 81,
+No. 10, Jalan P. Ramlee,
+50250 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+564,633,t,Business,"87-01, Jalan Susur Larkin Perdana 1,
+Larkin Perdana,
+80350 Johor Bahru
+Johor Darul Takzim",00000,Other,Other,Austria,"",""
+565,634,t,Business,"No. 182, Jalan Datuk Sulaiman 6,
+Taman Tun Dr. Ismail,
+60000 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+566,635,t,Business,"Level 3, Wisma AAB, 
+11A, Jalan P/9B,   
+Bangi Industrial Estate,
+Seksyen 13,
+43650 Bandar Baru Bangi,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+567,636,t,Business,"Wisma Biforst, G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Seksyen 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+568,637,t,Business,"Suite A-03-06, Block Alamanda,
+10 Boulevard, Lebuhraya Sprint 6A, PJU 6A,
+47100 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+569,638,t,Business,"Unit D-7-6, Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+570,639,t,Business,"Unit 2-5, 2nd Floor, KL Trillion,
+No. 388, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,0327227141,0327850842
+571,640,t,Business,"No. 19, Jalan SP2/7,
+Seksyen 2,
+Taman Serdang Perdana,
+43300 Seri Kembangan
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+572,641,t,Business,"6A, Jalan SS4/17,
+47301 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+573,642,t,Business,"15G, GCB Court,
+Jalan Ampang
+50450 Ampang
+Kuala Lumpur",00000,Other,Other,Austria,"",""
+574,643,t,Business,"No. 30, Jalan Merbuk 6/1A,
+Seksyen 6,
+40000 Shah Alam,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+575,644,t,Business,"11-4, Jalan 11/48A,
+Sentul Raya Boulevard,
+Off Jalan Sentul,
+51000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+576,646,t,Business,"No. 17, Jalan Damai Raya 1,
+Damai Niaga,
+Alam Damai,
+56000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+577,647,t,Business,"18-1, Jalan 25/70A,
+Desa Sri Hartamas,
+50480 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+578,648,t,Business,"Lot S-067A, 2nd Floor,
+Mid Valley Megamall,
+Jalan Kelang Lama,
+58000 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+579,650,t,Business,"No. 19, Jalan SP 2/7,
+Seksyen 2,
+Taman Serdang Perdana,
+43300 Seri Kembangan
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+580,653,t,Business,"No. 19, Jalan SP 2/7,
+Seksyen 2,
+Taman Serdang Perdana,
+43300 Seri Kembangan,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,03-89438380,03-89438370
+581,654,t,Business,"No. 19, Jalan SP 2/7,
+Seksyen 2,
+Taman Serdang Perdana,
+43300 Seri Kembangan,
+Selangor Darul Ehsan",00000,Other,Other,Austria,03-8943 8380,03-8943 8370
+582,655,t,Business,"500-4-11, 4th Floor,
+Wisma Indah,
+Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+583,656,t,Business,"D-7-6, Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,03-21660621,03-21660625
+584,657,t,Business,"No. 19, Jalan SP 2/7,
+Seksyen 2,
+Taman Serdang Perdana,
+43300 Seri Kembangan,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+585,658,t,Business,"24A, Jalan Padang Walter Grenier,
+Off Jalan Imbi,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+586,659,t,Business,"24A, Jalan Padang Walter Grenier,
+Off Jalan Imbi,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-21416149            603-21425419,603-21485376
+587,660,t,Business,"No. 2-2, Pusat Perdagangan One Puchong,
+Jalan OP 1/6, Off Jalan Puchong,
+47160 Puchong
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+588,661,t,Business,"D7-1-1, D7@Sentul East, 
+Jalan Sentul,
+51000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,603-21668069,""
+589,662,t,Business,"No.7, Jalan Kenyalang 11/15I,
+PJU 5, Kota Damansara,
+47810 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+590,663,t,Business,"C1-1-2, Metropolitan Solaris Dutamas,
+ No. 1 Jalan Dutamas ,
+50480 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+591,664,t,Business,"No. B-1-2, Casa Tropicana,
+Jalan Persiaran Tropicana,
+Golf and Country Resort Home,
+47410 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+592,665,t,Business,"No. 21 & 21A, Jalan Pluto AZ U5/AZ,
+Bandar Pinggiran Subang,
+Seksyen U5,
+40150 Shah Alam
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+593,666,t,Business,"C-8-1, Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+594,668,t,Business,"6 A, First Floor,
+Jalan Tun Mohd. Fuad 2,
+Taman Tun Dr. Ismail,
+60000 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+595,669,f,Business,"128-10-3, Sri Pelangi Condo,
+Jalan Genting Kelang,
+53300 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+596,670,t,Business,"No. 7, Jalan USJ Heights 2/2C,
+Kayangan Puteri,
+USJ Heights,
+47610 Subang Jaya
+Subang Jaya",00000,Other,Other,Austria,"",""
+597,672,t,Business,"30-2-1, Jalan Medan Pusat Bandar 4,
+Sek 9, Bandar Baru Bangi,
+43650 Bangi
+Selangor",00000,Other,Other,Austria,"",""
+598,673,t,Resident,"A-13-12, Bayu Tasik Condo.,
+Bandar Sri Permaisuri,
+56000 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+599,676,f,Business,"17, Jalan Sri Hartamas 7,
+Taman Sri Hartamas,
+50480 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+600,677,t,Business,"35-4-4, Jln 1/4B Bukit Mas Apartment,
+Tmn Melawati,
+53100 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+601,678,t,Business,"No. 30-2-1, 2nd Floor,
+Jalan Medan Pusat Bandar 4,
+Seksyen 9, Bandar Baru Bangi,
+43650 Bangi
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-89250534,603-89250584
+602,679,t,Business,"Wisma Biforst,
+G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Section 1,
+43300 Seri Kembangan,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,603-89450492          603-89431200,603-89451539
+603,680,t,Business,"C-8-1, Megan Avenue 1,
+189 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+604,681,t,Business,"41 & 43A, Uptown 37,
+Jalan SS 21/37,
+Damansara Utama
+47400 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-77289262,603-77289263
+605,683,t,Business,"12, Lorong Mengkudu 1,
+Jalan Ampang,
+55000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+606,686,t,Business,"No. 7A, Jalan SS 4D/2,
+People''s Park,
+47301 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+607,687,t,Business,"Wisma Biforst, G 50, Jalan Pinggiran 1/3,
+Taman Pinggiran Putra,
+Section 1,
+43300 Seri Kembangan
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+611,691,t,Business,"2C/10 & 2C/11, Anzen Business Park,
+No. 3-9, Jalan 4/37A,
+Kawasan Industri Taman Bukit Maluri,
+52100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+612,692,t,Business,"Unit 3.09 & 3.10, 3rd Floor,
+Block E, Pusat Dagangan Phileo
+Damansara 1, No. 9, Jalan 16/11,
+Off Jalan Damansara,
+46350 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+614,695,t,Business,"Lot 900, Batu 13, Jalan Klang,
+47100 Puchong
+Selangor Darul Ehsan",00000,Other,Other,Austria,80681170/1173,80681169/1278
+610,690,t,Resident,"E-7-1, Megan Avenue 1,
+No. 189 Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+608,688,t,Business,"Lot 19, Jalan Utas 15/7,
+40000 Shah Alam
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+609,689,t,Business,"32B, Lorong Rahim Kajai 14,
+Taman Tun Dr Ismail,
+60000 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+613,694,t,Business,"Unit 3-10, Block E,
+Phileo Damansara 1,
+46350 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+615,697,t,Business,"17, Lorong Taman Pantai 2,
+Taman Bukit Pantai,
+59100 Kuala Lumpur
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+616,698,t,Business,"43-A (Tingkat Satu)
+Jalan Medan Pusat 2-D,
+Persiaran Bangi,
+43650 Bandar Baru Bangi
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+617,699,t,Business,"No. 78, Jalan SG 4/8,
+Taman Sri Gombak,
+68100 Batu Caves
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+618,700,t,Business,"C-2-6, Block C,
+Megan Avenue 1,
+189, Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+619,701,t,Business,"47, Jalan Cinta Aman
+Country Heights,
+43000 Kajang
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+620,702,t,Business,"8, Jalan Utama 1/12,
+Taman Perindustrian Puchong Utama,
+47100 Puchong,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+621,703,t,Business,"Lot 900, Batu 13, Jalan Klang,
+47100 Puchong
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-80681169       603-80681170,603-80681169
+622,704,t,Business,"11A-3 (3rd Floor), Jalan USJ 1/1A,
+Regalia Business Centre,
+47620 Subang Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-80237166,603-80230736
+623,705,t,Business,"Suite 15.02, Level 15,
+Menara Hawpar,
+Jalan Sultan Ismail,
+50250 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+624,706,t,Other,"No 41, Jalan San Ah Wing
+Lorong Gurney,
+54100 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+625,707,t,Business,"Lot 7396, Jalan SS20/1,
+Damansara Utama,
+47400 Petaling Jaya
+Selangor
+Malaysia",00000,Other,Other,Austria,"",""
+626,708,t,Business,"Lot 19, Jalan Utas 15/7,
+Seksyen 15,
+40000 Shah Alam
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+627,709,t,Business,"No. 10B, (2nd Floor),
+Jalan SS21/ 58,
+Damansara Utama,
+47400 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,03-77282611,""
+628,710,t,Business,"21-2, The Boulevard,
+Mid Valley City,
+Lingkaran Syed Putra,
+59200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+629,711,t,Business,"No. 13-5, Jalan PJU 1/37, Dataran Prima,
+47301 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,603-78802232,603-78802202
+630,712,t,Business,"119-2, Jln Selingsing 5,
+Taman Sri Kuching,
+Off Jln Kuching,
+51200 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+631,713,t,Business,"No. 8, Jalan Astaka U8 / 83,
+Seksyen U8,
+Bukit Jelutong,
+40150 Shah Alam,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+632,714,t,Resident,"Boulevard Tower C-2-12-5,
+Jalan Dutamas 1,
+50480 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia
+",00000,Other,Other,Austria,"",""
+633,716,t,Resident,"B-15-09,
+Ampang Putra Residency,
+Jalan Putra Sulaiman 6,
+68000 Ampang
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+635,718,t,Business,"Suite 30-1, First Floor,
+Jalan 4/76C, Desa Pandan,
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+636,719,t,Business,"Lot 1238F, Jalan Bukit Kemuning,
+Batu 8,
+42450 Shah Alam
+Selangor
+Malaysia",00000,Other,Other,Austria,"",""
+637,720,t,Business,"Lot 900, Batu 13,
+Jalan Klang,
+47100 Puchong
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+638,721,t,Business,"L18-05, PJX-HM Shah Tower,
+No.16A, Jalan Persiaran Barat,
+46050 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-7931 8773,603-7931 8573
+639,722,t,Business,"D7-1-1, D7@Sentul East,
+Jalan Sentul,
+51000 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+640,723,t,Business,"Lot 900, Batu 13,
+Jalan Klang,
+47100 Puchong
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+641,724,t,Business,"Unit 3.09 & 3.10, 3rd Floor, Block E, Pusat Dagangan Phileo
+Damansara 1, No. 9, Jalan16/11, 
+Off Jalan Damansara,
+46350 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,603-76650060,603-76650020
+642,725,t,Business,"Suite A03-06, Block Alamanda,
+10 Boulevard, Lebuhraya Sprint PJU 6A,
+47400 Petaling Jaya
+Selangor",00000,Other,Other,Austria,"",""
+643,726,t,Business,"No.11, Jalan TPP 1/19
+Taman Industri Puchong
+47100 Puchong
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+644,727,t,Business,"4-6-5, Block 4,
+Queen''s Avenue,
+Jalan Bayam, Cheras
+55100 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+475,537,t,Business,"Suite 7.2, E-8-6, Megan Avenue 1,
+No. 189, Jalan Tun Razak,
+50400 Kuala Lumpur,
+Wilayah Persekutuan
+Malaysia
+",00000,Other,Other,Austria,"",""
+348,399,t,Resident,"66-4, Jalan Metro Pudu,
+Fraser Business Park,
+55200 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+646,696,t,Business,"Menara Zurich, Suite 20-04B,
+Level 20, No. 15, Jalan Dato Abdullah Tahir,
+80300, Johor Bharu,
+Johor Darul Takzim
+",00000,Other,Other,Austria,"",""
+648,406,t,Business,"T-2537-C, Jalan Sungai Rasa,
+41300 Klang,
+Selangor Darul Ehsan.
+",00000,Other,Other,Austria,"",""
+407,464,t,Business,"E-7-1, Megan Avenue 1,
+189, Jalan Tun Razak
+50400 Kuala Lumpur
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+649,728,t,Business,"PT 2585, Bandar Baru,
+35800 Slim River,
+Perak Darul Ridzuan.",00000,Other,Other,Austria,"",""
+650,291,t,Business,"Level 23-1 Premier Suite,
+Menara 1Mont Kiara,
+No. 1 Jalan Kiara, Mont Kiara,
+50480 Kuala Lumpur, 
+Wilayah Persekutuan. ",00000,Other,Other,Austria,"",""
+651,436,f,Business,"No. 7C, Jalan SG 1/6,
+Bolton Industrial Park,
+68100 Batu Caves,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+652,730,t,Business,"PT 2585, BANDAR BARU,
+SLIM RIVER,
+35800
+PERAK 
+MALAYSIA",00000,Other,Other,Austria,"",""
+653,731,t,Business,"Lot 1F-3, First Floor, Bangsar Village II, No. 2, Jalan Telawi Satu, 59100 Kuala Lumpur, Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+71,77,t,Business,"Level 36, Menara Citibank,
+165, Jalan Ampang,
+50450 Kuala Lumpur,
+Wilayah Persekutuan
+",00000,Other,Other,Austria,"",""
+654,127,t,Business,"C-39-1, Jalan  C180/1, 
+Dataran C180, 
+43200 Cheras, 
+Selangor Darul Ehsan. ",00000,Other,Other,Austria,0390817728,0390827729
+655,734,t,Business,"NO. 2, JALAN ANGSANA TEMPLER VILLAS,
+TEMPLER PARK GOLD RESORT,
+48000 RAWANG, SELANGOR",00000,Other,Other,Austria,"",""
+656,745,f,Business,"Danau Business Park,
+Unit 5-0-2, Jalan 2/109f,
+Taman Desa Danau,
+58100 Kuala Lumpur,
+Wilayah Persekutuan",00000,Other,Other,Austria,"",""
+657,746,t,Business,"3.02D (East Wing),
+Level 3, Menara BRDB Bangsar,
+285 Jalan Maarof, Bukit Bandaraya,
+59000 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+658,748,t,Business,"No. 2, Jalan Meranti Jaya 15,
+Meranti Jaya Industrial Park,
+47120 Puchong,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+659,750,t,Business,"D17, 1st Floor Block D,
+Plaza Pekeliling,
+Jalan Tun Razak,
+50400 Kuala Lumpur
+Wilayah Persekutuan
+Malaysia",00000,Other,Other,Austria,"",""
+661,285,t,Business,"B-G-33, Jalan PJU 1/39,
+Dataran Prima,
+47301 Petaling Jaya, 
+Selangor Darul Ehsan. 
+",00000,Other,Other,Austria,"",""
+662,250,f,Business,"34B, Jalan Tengku Ampuan Zabedah A, 
+Section 9A,
+40100 Shah Alam, 
+Selangor Darul Ehsan. 
+",00000,Other,Other,Austria,"",""
+663,209,t,Business,"E-7-1, Megan Avenue 1, 
+189 Jalan Tun Razak, 
+50400 Kuala Lumpur, 
+Wilayah Persekutuan. 
+",00000,Other,Other,Austria,"",""
+664,272,t,Business,"B2-2-2, Solaris Dutamas,
+1 Jalan Dutamas 1,
+50480 Kuala Lumpur, 
+Wilayah Persekutuan. 
+",00000,Other,Other,Austria,"",""
+660,339,t,Business,"B2-2-2, Solaris Dutamas,
+1 Jalan Dutamas 1,
+50480 Kuala Lumpur, 
+Wilayah Persekutuan. 
+",00000,Other,Other,Austria,"",""
+665,408,t,Business,"B-5-2, Block B, Northpoint Offices,
+Mid Valley City,
+No.1, Medan Syed Putra Utara,
+59200 Kuala Lumpur, 
+Wilayah Persekutuan. 
+",00000,Other,Other,Austria,"",""
+666,742,t,Business,"No. 71-3, Block G, Zenith Corporate Park,
+Jalan SS7/26, Kelana Jaya,
+47301 Petaling Jaya, 
+Selangor Darul Ehsan. 
+",00000,Other,Other,Austria,"",""
+667,414,t,Business,"43A-1, Block G, Platinium Walk,
+No.2, Jalan Langkawi,
+53300 Setapak, 
+Wilayah Persekutuan. 
+",00000,Other,Other,Austria,"",""
+668,751,f,Business,"Unit 08-02, Capital 5, Oasis Square, No.2,Jalan PJU 1A/7A,
+Oasis Damansara, 47301 Petaling Jaya Selangor Darul Ehsan",00000,Other,Other,Austria,03 7832 4060,""
+669,207,t,Business,"Vertical Tower B, Level 17 unit 2,
+Avenue 3, Bangsar South,
+59200 Kuala Lumpur, 
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+265,305,t,Business,"Suite 34.02A Level 34, 
+Menara Citibank,
+165 Jalan Ampang,
+50450 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+670,761,t,Business,"Unit 12.3, Level 12, Menara 1 Dutamas,
+Solaris Dutamas,
+No. 1 Jalan Dutamas 1,
+50480 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,Nikki - 014-6680530,""
+671,764,t,Business,"Suite A-8-8, Menara Atlas,
+Plaza Pantai,
+Off Jalan Pantai Baharu,
+59200 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,03-22010424,""
+672,767,t,Business,"36-01, The Pearl Apartment @ KLCC
+No.2A, Jalan Stonor,
+50450 Kuala Lumpur,
+Wilayah Persekutuan,
+Malaysia.",00000,Other,Other,Austria,"",""
+673,770,t,Business,"3-3A-3A, UOA Business Park,
+No.1, Jalan Pengaturcara U1/51a,
+Kawasan Perindustrian Temasya,
+40150 Shah Alam, 
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+674,772,t,Business,"No. 71-3, Block G, Zenith Corporate Park,
+Jalan SS7/26, Kelana Jaya,
+47301 Petaling Jaya,
+Selangor Darul Ehsan. ",00000,Other,Other,Austria,"",""
+675,774,t,Business,"No. 17, Jalan Pandan Indah 5/18,
+Pandan Indah,
+Cheras,
+55100 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+676,325,t,Business,"No. 1, Lorong HJ Abdul Karim 19B, 
+Off Jalab Seruling 59, 
+Taman Klang Jaya, 
+41200 Klang, 
+Selangor",00000,Other,Other,Austria,"",""
+303,351,t,Business,"72-3 & 4,
+Fraser Business Park,
+Jalan Metro Pudu,
+Off Jalan Loke Yew,
+55100 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+677,779,f,Business,"19-20, Level 19, Wisma Zelan,
+No. 1, Jalan Tasik Permaisuri 2,
+Bandar Tun Razak, 
+56000 Kuala Lumpur,
+Wilayah Persekutuan. ",00000,Other,Other,Austria,03-4044.4214,""
+647,477,t,Business,"Level 16 Pavilion Tower,
+75 Jalan Raja Chulan,
+50200 Kuala Lumpur, 
+Wilayah Persekutuan. ",00000,Other,Other,Austria,"",""
+678,415,t,Business,"No. 16-1, Jalan 6/38D, 
+Taman Sri Sinar, 
+Segambut,
+51200 Kuala Lumpur, 
+Wilayah Persekutuan. ",00000,Other,Other,Austria,"",""
+417,475,t,Business,"B-6-21, Empire Soho,
+Empire Subang,
+Jalan SS16/1,
+47500 Subang Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+679,781,t,Business,"No. 71-3, Block G, 
+Zenith Corporate Park,
+Jalan SS7/26, Kelana Jaya,
+47301 Petaling Jaya,
+Selangor Darul Ehsan.
+",00000,Other,Other,Austria,"",""
+680,782,t,Business,"Suite 16-1, Level 16,
+Menara Weld,
+76, Jalan Raja Chulan,
+50200 Kuala Lumpur, W.P.",00000,Other,Other,Austria,"",""
+681,784,t,Business,"No. 71-3, Block G, 
+Zenith Corporate Park,
+Jalan SS7/26, Kelana Jaya,
+47301 Petaling Jaya,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+507,568,t,Other,"KEM PLKN GEO-KOSMO,
+Kg. Gesir Tengah,
+Sungai Selisek,
+44020
+Kuala Kubu Bharu,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+193,219,t,Business,"No. 21, Jalan Kamunting,
+Off Jalan Dang Wangi,
+50300 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,"",""
+688,803,t,Business,"No. 22-13A, Q Sentral,
+2A, Jalan Stesen Sentral 2,
+50470 Kuala Lumpur",00000,Other,Other,Austria,03-2615 7238,""
+683,739,t,Business,"No. 9 & 11, Jalan TPP 1/9, 
+Taman Perindustrian Puchong,
+47100 Puchong,
+Selangor Darul Ehsan. ",00000,Other,Other,Austria,03-58917287,0358917217
+682,788,t,Business,"C-39-1, Jalan C180/1, 
+Dataran C180, 
+43200 Cheras 
+Selangor Darul Ehsan",00000,Other,Other,Austria,03-9081 7728,""
+685,290,f,Business,"19, Jalan Senangin 6,
+Taman Pasir Putih, 
+81700 Pasir Gudang, 
+Johor.",00000,Other,Other,Austria,"",""
+684,789,t,Business,"Level 2, Mofaz Headquarters Buildings,
+Wisma Mofaz,
+2007, Jalan Damansara,
+60000 Kuala Lumpur",00000,Other,Other,Austria,"",""
+686,777,t,Business,"Unit 502 Block A Phileo Damansara 2
+No. 15 Jalan 16/11
+Off Jalan Damansara
+46350 Petaling Jaya
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+687,740,t,Business,"5, Jalan Puteri 5/20, Bandar Puteri, 47100 Puchong, Selangor Darul Ehsan. ",00000,Other,Other,Austria,03-58917287 / 03-80681203 (Ms. Tan) ,03-58917217/ 03-80683205
+689,765,t,Business,"B-0-3, Block B, Megan Avenue 1, 
+189 Jalan Tun Razak, 
+50400 Kuala Lumpur,
+Wilayah Persekutuan. ",00000,Other,Other,Austria,"",""
+691,787,t,Business,"G-61-1, Bistari De Kota,
+Jalan Teknologi 3/9,
+PJU 5, Kota Damansara,
+47810 Petaling Jaya,
+Selangor Darul Ehsan",00000,Other,Other,Austria,"",""
+692,810,t,Business,"No. 96, Jalan Serambi U8/32,
+Bukit Jelutong,
+40150 Shah Alam,
+Selangor Darul Ehsan.",00000,Other,Other,Austria,"",""
+183,206,t,Business,"UNIT C1-3-1, Block C1,
+Solaris Dutamas,
+No. 1, Jalan Dutamas 1,
+50480 Kuala Lumpur,
+Wilayah Persekutuan.",00000,Other,Other,Austria,603-62053800,603-62053900
+694,333,t,Business,"L28-03-03A, PJ Exchange,
+No. 16A Persiaran Barat,
+46050 Petaling Jaya, 
+Selangor Darul Ehsan. ",00000,Other,Other,Australia,"",""
+695,249,t,Business,"Suite 95, Level 1, Colony@KLCC,
+6 Jalan Kia Peng,
+50450 Kuala Lumpur,
+Wilayah Persekutuan. ",00000,Other,Other,Australia,"",""
+696,806,t,Business,"B-29-06, Block B, Jaya One,
+No. 72A, Jalan Universiti,
+46200 Petaling Jaya, 
+Selangor Darul Ehsan. ",00000,Other,Other,Australia,"",""
+697,815,f,Business,"No. 71-1, Block G, Zenith Corporate Park,
+Jalan SS7/26, Kelana Jaya,
+47301 Petaling Jaya, 
+Selangor Darul Ehsan.",00000,Other,Other,Australia,"",""
+690,809,t,Business,"No. 4021 4-1/2 Miles,
+Jalan Sungai Besi,
+Salak South,
+57100 Kuala Lumpur.",00000,Other,Other,Austria,"",""
+698,804,t,Business,"Lot 12254, B2 MTK 187,
+BT.7 1/2, Jalan Tangkak,
+84400 Sungai Mati, 
+Johor. ",00000,Other,Other,Australia,"",""
+699,818,t,Business,"B-41-03, South View Serviced Apartments,
+Lorong Kerinchi Kiri 2,
+Pantai Dalam,
+59200 Kuala Lumpur",00000,Other,Other,Australia,013-7016931,""
+693,812,t,Business,"Suite 16.1, Level 16 Menara Weld, 76 Jalan Raja Chulan, 50200 Kuala Lumpur, Wilayah Persekutuan. ",00000,Other,Other,Australia,032031 0010,032031 2531 
+700,747,t,Business,"2-8, Jalan Industri PBP 4, 
+Taman Industri Pusat Bandar,
+Puchong, 
+47100 Puchong,
+Selangor Darul Ehsan. ",00000,Other,Other,Australia,"",""
+701,824,t,Business,"7.01, Level 7, Ilham Tower, 
+8, Jalan Binjai, 
+50450 Kuala Lumpur.",00000,Other,Other,Australia,"",""
+702,814,t,Business,"B-29-06, Block B, Jaya One,
+No. 72A, Jalan Universiti,
+46200 Petaling Jaya, 
+Selangor Darul Ehsan. ",00000,Other,Other,Australia,"",""

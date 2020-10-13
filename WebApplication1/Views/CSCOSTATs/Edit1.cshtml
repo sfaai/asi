@@ -1,0 +1,181 @@
+﻿@using WebApplication1.Utility;
+@model WebApplication1.CSCOSTAT
+
+@{
+
+}
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+@if (@Html.Action() == "Delete1")
+{
+    <div class="border border-info bg-warning" style="width:98vw">
+        <br />
+        <h4 class="h4 text-center">ARE YOU SURE YOU WANT TO DELETE THIS</h4>
+        <br />
+    </div>
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group col-md-10 form-check-inline">
+
+            @Html.LabelFor(model => model.CONO, htmlAttributes: new { @class = "control-label col-md-4" })
+
+
+            <div class="col-md-10">
+
+                @Html.DropDownList("CONO", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+
+                @Html.ValidationMessageFor(model => model.CONO, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.SDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SDATE, new { htmlAttributes = new { @Value = Model.SDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker" } })
+
+
+                @Html.ValidationMessageFor(model => model.SDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.COSTAT, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.COSTAT, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.DropDownList("COSTAT", null, "No Selection", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.COSTAT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div id="divEditFileLoc">
+            @{Html.RenderPartial("Partial/EditFileLoc", @Model);}
+        </div>
+
+        <div class="form-group col-md-10 form-check-inline">
+            @Html.LabelFor(model => model.EDATE, htmlAttributes: new { @class = "control-label col-md-4" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.EDATE, new { htmlAttributes = new { @Value = Model.EDATE.ToString("yyyy-MM-dd"), @class = "form-control date datepicker", @readonly = true } })
+
+
+                @Html.ValidationMessageFor(model => model.EDATE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        @Html.HiddenFor(model => model.STAMP)
+        @Html.HiddenFor(model => model.ROWNO)
+
+        @*<div class="form-group col-md-10 form-check-inline">
+                @Html.LabelFor(model => model.STAMP, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.STAMP, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.STAMP, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        @*<div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary fa fa-save" title="Save" />
+                @Html.ActionLink(" Back", "Index", new { page = ViewBag.page }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @if (@Html.Action() == "Details1")
+                {
+
+                    @Html.ActionLink(" Edit", "Edit1", new { id = MyHtmlHelpers.ConvertIdToByteStr(Model.CONO), row = Model.ROWNO, page = ViewBag.page }, new { @class = "btn btn-primary fa fa-edit", title = "Edit" })
+                }
+                else
+                {
+                    if ((Html.Action() == "Delete") && (!ViewData.ModelState.IsValid)) { }
+                    else
+                    {
+                        <input type = "submit" value = "Confirm" class="btn btn-primary fa fa-flash" Title="Execute" />
+                    }
+                }
+                @Html.ActionLink(" Back", "Index", new { page = ViewBag.page }, new { @class = "btn btn-info fa fa-arrow-left" })
+            </div>
+        </div>
+
+    </div>
+
+
+
+                }
+
+
+@section Scripts {
+
+    <script>
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") {
+            jQuery(function ($) {
+                $('.datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    startDate: '-30000d',
+                });
+
+            })
+        }
+
+        JModel = null;
+
+        $(document).ready(
+            function () {
+                JModel = {};
+                @*JModel = @Html.Raw(Json.Encode(@Model));*@
+            }
+            )
+
+
+
+        $('#COSTAT').change(function () {
+            var status = $('#COSTAT').val();
+
+            JModel.COSTAT = $('#COSTAT').val();
+            JModel.FILETYPE = $('#FILETYPE').val();
+            JModel.FILELOC = $('#FILELOC').val();
+            JModel.SEALLOC = $('#SEALLOC').val();
+            JModel.SDATE = $('#SDATE').val();
+            JModel.EDATE = $('#EDATE').val();
+
+            var jData = JSON.stringify(JModel);
+
+            $("#divEditFileLoc").load('@Url.Action("EditFileLoc")', JModel, function () {
+                // callback once completed async call
+                // $("#divEditFileLoc2").text(jData);
+            }
+               );
+
+        })
+
+        if (("@Html.Action()" == "Details1") || ("@Html.Action()" == "Delete1")) {
+            $(":input").attr("readonly", true);
+            $("select").attr("disabled", true);
+            $("input[type=checkbox]").attr("disabled", true);
+
+        }
+
+    </script>
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

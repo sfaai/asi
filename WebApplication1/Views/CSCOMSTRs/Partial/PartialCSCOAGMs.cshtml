@@ -1,0 +1,124 @@
+﻿@model IEnumerable<WebApplication1.CSCOAGM>
+@using WebApplication1.Utility;
+
+@*@Html.ActionLink("Create New", "Create", "CSCOAGMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(ViewBag.Parent) }, new { @class = "btn btn-primary h4" })*@
+
+<div style="width:96vw">
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.AGMNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LASTFYE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FYETOFILE)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.AGMLAST)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AGMEXT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.REMINDER1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.REMINDER2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.REMINDER3)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.CIRCDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FILEDFYE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AGMDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AGMFILED)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.REM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.STAMP)
+            </th>
+
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr class="text-nowrap">
+                <td>
+                    @if (Html.Action() == "Edit")
+                    {
+                        @Html.ActionLink(" ", "Edit", "CSCOAGMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), seq = item.AGMNO }, new { @class = "fa fa-edit", title = "Edit" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "Details", "CSCOAGMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), seq = item.AGMNO }, new { @class = "fa fa-folder", title = "Details" })
+                        @:&nbsp;
+                        @Html.ActionLink(" ", "delete", "CSCOAGMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), seq = item.AGMNO }, new { @class = "fa fa-trash", title = "Delete" })
+                    }
+                    else if (Html.Action() == "Details")
+                    {
+                        @Html.ActionLink(" ", "Details", "CSCOAGMs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), seq = item.AGMNO }, new { @class = "fa fa-folder", title = "Details" })
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGMNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LASTFYE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FYETOFILE)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGMLAST)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGMEXT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMINDER1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMINDER2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REMINDER3)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.CIRCDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILEDFYE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGMDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AGMFILED)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.REM)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAMP)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+</div>

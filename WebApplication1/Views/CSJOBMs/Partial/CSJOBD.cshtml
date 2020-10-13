@@ -1,0 +1,122 @@
+﻿@using WebApplication1.Utility;
+@model IEnumerable<WebApplication1.CSJOBD>
+
+@{
+    ViewBag.Title = "Job Case Details";
+}
+
+<div class="border border-info bg-info" style="width:98vw">
+    <h4 class="h4 text-center">@ViewBag.Title</h4>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-lg table-sm">
+    <tr class="label-primary">
+
+        @if ((Html.Action() == "Details") || (Html.Action() == "EditStaff") || (Html.Action() == "Post") || (Html.Action() == "Delete")) { }
+        else
+        {
+            <th>
+                @Html.ActionLink("Add", "Create", "CSJOBDs", new { id = MyHtmlHelpers.ConvertIdToByteStr(ViewBag.Id) }, new { @class = "btn btn-primary h4" })
+            </th>     }
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().CASENO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CASECODE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CSCASE.CASEDESC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CASEMEMO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().CASEREM)
+        </th>
+        @if ((Model.Count() > 0) && (Model.First().CSJOBM.JOBPOST == "Y"))
+        {
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAGE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAGEDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().STAGETIME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COMPLETE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().COMPLETED)
+            </th>
+        }
+        <th>
+            @Html.DisplayNameFor(model => model.STAMP)
+        </th>
+
+
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr class="text-nowrap">
+
+            @if ((Html.Action() == "Details") || (Html.Action() == "EditStaff") || (Html.Action() == "Post") || (Html.Action() == "Delete")) { }
+            else
+            {
+                <td>
+                    @Html.ActionLink("  ", "Edit", "CSJOBDs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO), row = item.CASENO, rel = 0 }, new { @class = "fa fa-edit", title = "Edit" })
+                   
+                    @Html.ActionLink("  ", "Details", "CSJOBDs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO), row = item.CASENO, rel = 0 }, new { @class = "fa fa-folder", title = "Details" })
+                  
+                    @Html.ActionLink("  ", "Delete", "CSJOBDs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.JOBNO), row = item.CASENO, rel = 0 }, new { @class = "fa fa-trash", title = "Delete" })
+                </td>
+            }
+            <td>
+
+
+                @Html.DisplayFor(modelItem => item.CASENO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CASECODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CSCASE.CASEDESC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CASEMEMO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CASEREM)
+            </td>
+            @if (item.CSJOBM.JOBPOST == "Y")
+                {
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAGE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.STAGEDATE)
+                </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.STAGETIME)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.COMPLETEBool)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.COMPLETED)
+                    </td>
+            }
+            <td>
+                @Html.DisplayFor(modelItem => item.STAMP)
+            </td>
+
+
+        </tr>
+    }
+
+</table>

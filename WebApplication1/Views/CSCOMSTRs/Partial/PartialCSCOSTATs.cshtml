@@ -1,0 +1,80 @@
+﻿@using WebApplication1.Utility
+@model IEnumerable<WebApplication1.CSCOSTAT>
+
+<div style="width:96vw">
+    <table class="table table-bordered table-hover table-responsive-lg table-sm">
+        <tr class="label-primary">
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.SDATE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.COSTAT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FILETYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FILELOC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SEALLOC)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.EDATE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.STAMP)
+                </th>*@
+
+        </tr>
+        @{int cnt = 0;}
+        @foreach (var item in Model)
+        {
+            cnt++;
+            <tr class="text-nowrap">
+
+                <td>
+                    @if (cnt == 1)
+                    {
+                        if (Html.Action() == "Edit")
+                        {
+                            @Html.ActionLink(" ", "Edit", "CSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-edit", title = "Edit" })
+                            @:&nbsp;
+                            @Html.ActionLink(" ", "Details", "CSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                            @:&nbsp;
+                            @Html.ActionLink(" ", "Delete", "CSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-trash", title = "Delete" })
+                        }
+                        else if (Html.Action() == "Details")
+                        {
+                            @Html.ActionLink(" ", "Details", "CSCOSTATs", new { id = MyHtmlHelpers.ConvertIdToByteStr(item.CONO), row = item.ROWNO }, new { @class = "fa fa-folder", title = "Details" })
+                        }
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SDATE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.COSTAT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILETYPE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FILELOC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SEALLOC)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.EDATE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.STAMP)
+                    </td>*@
+
+            </tr>
+        }
+
+    </table>
+</div>
